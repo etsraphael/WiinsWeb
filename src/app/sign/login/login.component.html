@@ -1,0 +1,52 @@
+<!-- Card -->
+<div class="container container-form">
+  <div class="row mx-0 container-title">
+    <h1 class="display-3">Sign In</h1>
+  </div>
+  <div class="row mx-0">
+    <div class="col-6">
+      <button class="w-100 btn-choice p-3" [routerLink]="['/sign/in']" routerLinkActive="active">
+        <span>{{ 'LOGIN-REGISTRER.Login' | translate}}</span>
+      </button>
+    </div>
+    <div class="col-6">
+      <button class="w-100 btn-choice p-3" [routerLink]="['/sign/up']" routerLinkActive="active">
+        <span>{{ 'LOGIN-REGISTRER.Register' | translate}}</span>
+      </button>
+    </div>
+  </div>
+  <form [formGroup]="loginForm" class="row mx-0 my-4">
+    <div class="col-6">
+      <div class="container">
+        <div class="row">
+          <p class="h5">{{'LOGIN-REGISTRER.PseudoOrEmail' | translate}}</p>
+        </div>
+        <div class="row">
+          <input class="w-100 p-3" type="text" formControlName="email">
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="container">
+        <div class="row">
+          <p class="h5">{{'PLACEHOLDER.Your-Password' | translate}}</p>
+        </div>
+        <div class="row">
+          <input class="w-100 p-3" type="password" formControlName="password">
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row mx-0 pr-3 my-3">
+    <a [routerLink]="['/sign/password-setting']" class="ml-auto container-forgot-password">
+      <p class="h5 text-danger">{{ 'LOGIN-REGISTRER.ForgotPassword' | translate }}</p>
+    </a>
+  </div>
+  <div class="row mx-0 my-3">
+    <div class="col-6">
+      <button class="w-100 btn-choice btn-submit-log-in p-3" (click)="onSubmit()">
+        <span class="text-white">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</div>

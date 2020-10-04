@@ -1,0 +1,73 @@
+<!-- Component Body -->
+<div class="container">
+  <!-- Block an account  -->
+  <div class="card row my-5 mx-0" *ngIf="false">
+    <div class="card-body row">
+      <div class="col">
+        <div class="mx-3 my-2">
+          <h5 class="card-title">{{'SETTING.other.temporarily-block'|translate}}</h5>
+          <p class="card-text">{{'SETTING.other.temporarily-block-d'|translate}}</p>
+          <div class="row">
+            <a (click)="blockoption = !blockoption"
+              class="ml-auto btn btn-warning sub-btn">{{'SETTING.other.temporarly-btn'|translate}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="blockoption" class="card-body row content-warning">
+      <form>
+        <div class="col row px-3">
+          <div class="col-md-4 mx-3 my-2">
+            <p class="card-text">{{'SETTING.other.adv'|translate}}</p>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div class="form-group">
+              <input type="password" class="form-control" [placeholder]="'PLACEHOLDER.Your-Password'|translate">
+            </div>
+          </div>
+          <div class="col-md-3 mt-4">
+            <div class="btn-valid">
+              <button class="mx-2 mt-1 block-btn" mat-raised-button color="warn">{{'SETTING.other.temporarly-btn'|translate}}</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Delete the account -->
+  <div class="card row my-5 mx-0">
+    <div class="card-body row">
+      <div class="col">
+        <div class="mx-3 my-2">
+          <h5 class="card-title">{{'SETTING.other.delete-account'|translate}}</h5>
+          <p class="card-text">{{'SETTING.other.delete-account-d'|translate}}</p>
+          <div class="row">
+            <a (click)="deleteoption = !deleteoption" class="ml-auto btn btn-danger sub-btn">{{'SETTING.other.delete-account-btn'|translate}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="deleteoption" class="card-body row content-warning">
+      <form>
+        <div class="col row px-3">
+          <div class="col-md-4 mx-3 my-2">
+            <p class="card-text">{{'SETTING.other.adv'|translate}}</p>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div class="form-group mb-0">
+              <input type="password" class="form-control" [placeholder]="'PLACEHOLDER.Your-Password'|translate"
+               [(ngModel)]="deletingPassword" [ngModelOptions]="{standalone: true}">
+            </div>
+          </div>
+          <div class="col-md-3 mt-4">
+            <div class="btn-valid">
+              <button class="mx-2 mt-1 block-btn" mat-raised-button color="warn" (click)="deleteMyAccount()">
+                {{'SETTING.other.delete-account-btn'|translate}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

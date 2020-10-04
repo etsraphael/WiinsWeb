@@ -1,0 +1,256 @@
+<!-- Main -->
+<div class="card card-publication">
+  <div class="cardbox bg-white">
+    <div class="container">
+      <div class="row cardbox-heading p-3" *ngIf="(myprofile | async); let mp">
+        <div *ngIf="friendTagged.length == 0" class="col-9 col-md-9 row mx-0">
+          <div class="col-4 col-md-4">
+            <div class="avatar rounded-circle" [routerLink]="['/myprofile']">
+              <img class="w-100 h-100" [src]="(myprofile | async).pictureprofile">
+            </div>
+          </div>
+          <div class="col-8 col-md-8 pl-0 description my-auto">
+            <p class="m-0">{{mp._meta.pseudo}}</p>
+            <small><span><i class="icon ion-md-time"></i> {{'CORE.Now'|translate}}</span></small>
+          </div>
+        </div>
+        <!-- Someone tagged -->
+        <div *ngIf="friendTagged.length !== 0" class="col-9 col-md-9" [ngSwitch]="friendTagged.length">
+          <div class="row mx-0 list-avatar" *ngSwitchCase="1">
+            <div class="col-4 col-md-4 px-0">
+              <div class="avatar rounded-circle">
+                <img class="w-100 h-100" [src]="(myprofile | async).pictureprofile">
+              </div>
+              <div class="avatar rounded-circle">
+                <img class="w-100 h-100" [src]="friendTagged[0].pictureprofile">
+                <button (click)="deleteTag(friendTagged[0])" class="btn-delete"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="col-8 col-md-8 my-auto px-0 description">
+              <p class="m-0">{{mp._meta.pseudo}}</p>
+              <small><span><i class="icon ion-md-time"></i> {{'CORE.Now'|translate}}</span></small>
+            </div>
+          </div>
+          <div class="row mx-0 list-avatar" *ngSwitchCase="2">
+            <div class="col-6 col-md-6 px-0">
+              <div class="avatar rounded-circle">
+                <img class="w-100 h-100" [src]="(myprofile | async).pictureprofile">
+              </div>
+              <div class="avatar rounded-circle" *ngFor="let p of friendTagged">
+                <img class="w-100 h-100" [src]="p.pictureprofile">
+                <button (click)="deleteTag(p)" class="btn-delete"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 my-auto px-0 description">
+              <p class="m-0">{{mp._meta.pseudo}}</p>
+              <small><span><i class="icon ion-md-time"></i> {{'CORE.Now'|translate}}</span></small>
+            </div>
+          </div>
+          <div class="list-avatar" *ngSwitchDefault>
+            <div class="row mx-0" *ngIf="!listProfilTagged">
+              <div class="col-6 col-md-6 px-0">
+                <div class="avatar rounded-circle">
+                  <img class="w-100 h-100" [src]="(myprofile | async).pictureprofile">
+                </div>
+                <div class="avatar rounded-circle">
+                  <img class="w-100 h-100" [src]="friendTagged[0].pictureprofile">
+                  <button (click)="deleteTag(friendTagged[0])" class="btn-delete"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="more-avatar" (click)="showListTagged()">
+                  <img class="img-fluid rounded-circle w-100 h-100" [src]="friendTagged[1].pictureprofile"
+                    alt="User">
+                  <span>+{{friendTagged.length - 1}}</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 my-auto px-0 description">
+                <p class="m-0">{{mp._meta.pseudo}}</p>
+                <small><span><i class="icon ion-md-time"></i> {{'CORE.Now'|translate}}</span></small>
+              </div>
+            </div>
+            <div class="row mx-0" *ngIf="listProfilTagged">
+              <div class="col">
+                <div class="avatar rounded-circle">
+                  <img class="w-100 h-100" [src]="(myprofile | async).pictureprofile">
+                </div>
+                <div class="avatar rounded-circle" *ngFor="let t of friendTagged">
+                  <img class="w-100 h-100" [src]="t.pictureprofile">
+                  <button (click)="deleteTag(t)" class="btn-delete"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Open button -->
+        <div class="col-3 col-md-3 my-auto">
+          <button (click)="openpublication()" class="ml-auto mr-2 btn btn-rotation"
+            [ngClass]="{'button_close': firstcard, 'button-open': !firstcard }" type="button"
+            [@btn-open-publication]='buttonturned'>
+            <em class="fa fa-plus"></em>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="firstcard">
+      <form [formGroup]="feedPublicationForm">
+        <div class="cardbox-item new-picture" [ngSwitch]="activeZone">
+          <!-- Loading Bar -->
+          <div class="w-100 loading-bar" *ngIf="(uploadPicture !== 0) && (uploadPicture !== 100)">
+            <div class="container-bar h-100" [style.width.%]="uploadPicture"></div>
+          </div>
+          <!-- Video mode -->
+          <div *ngSwitchCase="'videozone'">
+            <div class="card-video">
+              <div class="upload-poster row mt-2 mx-2">
+                <input hidden id="upload" #poster type="file" accept='image/*' (change)="previewposter(poster.files)" />
+                <label for="upload" class="poster-button"></label>
+                <div *ngIf="postedposter">
+                  <button type="button" class="fa fa-check photo-valid"></button>
+                  <span *ngIf="editedposter">
+                    <h5 class="ml-2 mt-1">{{'FEED-PUBLICATION.Picture-received'|translate}}</h5>
+                  </span>
+                </div>
+              </div>
+              <video preload="auto" poster={{postervideo}} controls controlsList="nodownload">
+                <source [src]="videoURL" [type]="videoType">
+              </video>
+              <div class="border-comment cardbox-comments m-1">
+                <span class="comment-logo mr-2">
+                  <button class="m-1"><i class="fa fa-comment"></i></button>
+                </span>
+                <div class="search">
+                  <textarea formControlName="text" maxlength="100"
+                    [placeholder]="'FEED-PUBLICATION.Write-a-comment'|translate" type="text"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Picture mode -->
+          <div *ngSwitchCase="'imgzone'" class="container-picture-publication position-relative">
+            <img class="img-fluid" [src]="imgURL" />
+            <div class="container-description w-100">
+              <div class="container py-4">
+                <div class="row d-flex justify-content-center title-comment pb-2">
+                  <span>{{'FEED-PUBLICATION.Write-a-comment'|translate}}</span>
+                  <i class="fa fa-angle-down mx-2 my-auto pt-1"></i><br>
+                </div>
+                <div class="display-hover">
+                  <textarea autosize formControlName="text" [placeholder]="'PLACEHOLDER.Start-to-write'|translate"
+                    class="content-title pt-4 w-100 text-center" maxlength="220"></textarea>
+                  <div class="row mx-0 mb-3">
+                    <div class="ml-auto col-md-5 pl-0">
+                      <div class="container-hastag row mx-0">
+                        <div class="col-1 my-auto"><span class="hastag-icon">#</span></div>
+                        <div class="col-9 px-0">
+                          <input class="col-md-11 py-1 pl-0" type="text" [placeholder]="'PLACEHOLDER.Hastags'|translate"
+                            maxlength="12">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post -->
+          <div *ngSwitchCase="'postzone'" class="new-post" [style.backgroundImage]="background">
+            <div class="post-text">
+              <textarea autosize name="text" (keydown.enter)="false" formControlName="text" maxlength="200"
+                class="content-text mx-4 mt-4 mb-2  p-2"
+                [placeholder]="'PLACEHOLDER.Start-to-write'|translate"></textarea>
+              <div class="row mx-0 bg-option-hastag py-3 d-flex justify-content-center">
+                <div (click)="changebackground(choice1)" class="col-xs-4 blockBox choice1"></div>
+                <div (click)="changebackground(choice2)" class="col-xs-4 blockBox choice2"></div>
+                <div (click)="changebackground(choice3)" class="col-xs-4 blockBox choice3"></div>
+                <div (click)="changebackground(choice4)" class="col-xs-4 blockBox choice4"></div>
+                <div (click)="changebackground(choice5)" class="col-xs-4 blockBox choice5"></div>
+                <div (click)="changebackground(choice6)" class="col-xs-4 blockBox choice6"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Choice of page -->
+          <div *ngSwitchCase="'none'">
+            <div class="container py-3 bg-gradient-primary container-choice-page">
+              <div class="row my-3"><span class="mx-auto title">{{'PAGE.choose-a-page'|translate}}</span></div>
+              <div class="row list-page" *ngIf="(groups$|async); let groups">
+                <div class="col-7 mx-auto bg-list-page">
+                  <div class="row onePage py-3" *ngFor="let g of groups" (click)="selectGroup(g)">
+                    <div class="col-3">
+                      <img class="avatar rounded-circle" [src]="g.pictureprofile">
+                    </div>
+                    <div class="col-9 my-auto">
+                      <span>{{g.name}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Do catergorie choice -->
+          <div *ngSwitchCase="'category-choice'" id="button-download">
+            <div class="d-flex justify-content-center py-5 picture-download">
+              <div class="d-inline mx-2">
+                <input hidden id="upload_picture" #picture type="file" accept='image/* | video/*'
+                  (change)="preview(picture.files)" />
+                <label for="upload_picture"></label>
+              </div>
+              <div class="d-inline mx-2">
+                <button (click)="postmode()" class="btn btn-flat btn-flat-icon btn-choice" type="button">
+                  <em class="fa fa-pencil-square-o pl-1"></em>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Card Footer -->
+
+          <div class="row d-flex justify-content-center mx-0 py-3">
+
+
+            <button (click)="closepublication()" class="btn-back btn" type="button">
+              <em class="fa fa-undo"></em>
+            </button>
+
+            <button class="btn btn-send" (click)="createFeedPublication()">{{'FEED-PUBLICATION.Post-it'|translate}}</button>
+
+            <div ngbDropdown class="dropdown menu-visibility my-auto ml-3" #myDrop="ngbDropdown">
+              <button id="openSearch" ngbDropdownToggle class="btn btn-flat btn-flat-icon" type="button"
+                aria-haspopup="true" aria-expanded="false">
+                <em class="fa fa-users"></em>
+              </button>
+              <div ngbDropdownMenu class="dropdown-menu dropdown-scale dropdown-menu-right" role="menu"
+                aria-labelledby="openSearch">
+                <div class="row mx-0 w-100">
+                  <div class="col-md-9">
+                    <input [formControl]="searchField" type="text" class="w-100" [placeholder]="'PLACEHOLDER.Type-t-pseudo'|translate"
+                      autofocus>
+                  </div>
+                  <div class="col-md-3 row mx-0 my-auto">
+                    <i class="mx-auto fa fa-search"></i>
+                  </div>
+                </div>
+                <div class="dropdown-divider mb-0"></div>
+                <div class="container-feat-avatar" *ngIf="resultsProfile$ | async; let resultsProfile">
+                  <div class="row mx-0 profile-found py-1" *ngFor="let profile of resultsProfile">
+                    <div class="col-md-4 my-auto">
+                      <div class="avatar row">
+                        <img class="mx-auto" [src]="profile.pictureprofile" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-8 my-auto">
+                      <span class="pseudo">{{profile?._meta?.pseudo}}</span>
+                      <span class="add" (click)="tagAdded(profile); myDrop.close()">{{'Core.Add'|translate}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

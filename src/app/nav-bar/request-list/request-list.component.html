@@ -1,0 +1,84 @@
+<!-- Component Body -->
+<div ngbDropdown #myDrop="ngbDropdown">
+
+  <!-- Users icon -->
+  <button ngbDropdownToggle class="nav-link fa fa-users" data-toggle="dropdown" role="button" aria-haspopup="true"
+    aria-expanded="false" [ngClass]="{'notifTrue': (numberNewRequest$|async) > 0}" (click)="initialiseRequest()">
+  </button>
+
+  <!-- Number of notifications -->
+  <div class="number" *ngIf="(numberNewRequest$|async) > 0">
+    <span>{{(numberNewRequest$|async)}}</span>
+  </div>
+
+  <!-- Dropdown Btn -->
+  <div ngbDropdownMenu class="dropdown-menu py-0">
+    <div *ngIf="(requestList$ | async); let request">
+      <!-- List Notification -->
+      <div *ngFor="let r of request" class="new-request my-2" [ngSwitch]="r.type">
+        <!-- Profile  -->
+        <div class="row pb-2 w-100" *ngSwitchCase="'FriendRequest'">
+          <div class="col-3 pr-0">
+            <img class="d-flex mx-auto mt-1" [src]="r.from.pictureprofile">
+          </div>
+          <div class="col-6 px-0 my-auto pt-1">
+            <a [routerLink]="'/profile/' + r.from._id" (click)="myDrop.close();">
+              <span>
+                <strong>
+                  <p class="title">{{r.from._meta.pseudo}}</p>
+                </strong>
+              </span>
+            </a>
+            <p>{{r.from.mutualFriend}} {{'PROFILE.commun-friend'|translate}}</p>
+          </div>
+          <div class="col-3 my-auto btn-respond">
+            <div (click)="acceptFriend(r.from._id)" class="accept mx-2 mt-1">
+              <i class="fa fa-check"></i>
+            </div>
+            <div (click)="refuseFriend(r.from._id)" class="refuse mx-3 mt-1">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Group -->
+        <div class="row pb-2 w-100" *ngSwitchCase="'GroupRequest'">
+          <div class="col-3 pr-0">
+            <img class="d-flex mx-auto mt-1" [src]="r.group.pictureprofile">
+          </div>
+          <div class="col-6 px-0 my-auto pt-1">
+            <a>
+              <span>
+                <strong><p class="title">{{r.group.name}}</p></strong>
+              </span>
+            </a>
+            <p>{{r.group.members_total}} members</p>
+          </div>
+          <div class="col-3 my-auto btn-respond">
+            <div (click)="confirmGroup(r.group._id)" class="accept mx-2 mt-1">
+              <i class="fa fa-check"></i>
+            </div>
+            <div (click)="refuseGroup(r.group._id)" class="refuse mx-3 mt-1">
+              <i class="fa fa-times"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Loading Listing -->
+      <div *ngIf="(isLoading$|async) && (request.length == 0)">
+        <div class="container">
+          <div class="lds-ripple mx-auto my-3"><div></div><div></div></div>
+        </div>
+      </div>
+      <!-- Empty List -->
+      <div class="row no-found" *ngIf="(request.length == 0) && !(isLoading$|async)">
+        <div class="col-md-2 row mx-0 my-auto">
+          <i class="color-no-request fa fa-times-circle-o fa-2x ml-4"></i>
+        </div>
+        <div class="col-md-9 py-3">
+          <span class="no-request">{{'EMPTY-MESSAGE.no-friend-request'|translate}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

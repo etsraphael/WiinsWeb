@@ -1,0 +1,56 @@
+<!-- Component Body -->
+<div class="container-fluid" *ngIf="!(loading$|async)">
+  <!-- Switch Button Navigation && followers video -->
+  <div class="swith-navigation row m-3 px-4 pb-2">
+    <div class="col text-left my-auto">
+      <div *ngIf="(tubeMenu$|async)?.following.length > 0">
+        <span class="title-section">{{'MAIN-MUSIC.My-wiinsers'|translate}} |</span>
+        <span class="sub-title mx-2">{{'CORE.See-more'|translate}}</span>
+      </div>
+    </div>
+    <div class="col text-right">
+      <button type="button" class="btn trend mx-2 px-3">
+        <i class="my-auto mr-2 fa fa-line-chart"></i>
+        <span>{{'MAIN-MUSIC.Trend'|translate}}</span>
+      </button>
+      <button type="button" class="btn time mx-2">
+        <i class="fa fa-clock-o"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Following video-->
+  <div class="row mx-0" *ngIf="(tubeMenu$|async)?.following; let tubes">
+    <div class="col-md-3 my-2 px-2" *ngFor="let t of tubes">
+      <div class="card">
+        <div class="poster-video" [routerLink]="['../watching-video/' + t.tube._id ]">
+          <img class="profile" [src]="t.tube.profile.pictureprofile" >
+          <div class="time px-2">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <img class="photo-video" [src]="t.tube.posterLink">
+        </div>
+        <div class="card-body py-1 px-3">
+          <h4><strong>{{t.tube.name}}</strong></h4>
+          <div class="row mx-0">
+            <p class="mr-auto">{{t.tube.totalView}}K views</p>
+            <p class="ml-auto">0min</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Animation -->
+<div class="container" *ngIf="(loading$|async)"> 
+  <div class="row mt-8">
+    <div class="sk-chase mx-auto">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+</div>

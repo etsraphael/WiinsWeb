@@ -1,0 +1,26 @@
+// Font Awesome
+@import "~font-awesome/css/font-awesome.css";
+
+// Material Design
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Bootstrap Wiins
+@import 'src/assets/scss/custom/functions';
+@import 'src/assets/scss/custom/variables';
+@import 'src/assets/scss/custom/mixins';
+
+// Bootstrap Package
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/utilities";
+
+// Bootstap Custom
+@import "src/assets/scss/custom/utilities";
+@import "src/assets/scss/custom/chart";
+@import "src/assets/scss/custom/card";
+@import "src/assets/scss/custom/navbar";
+@import "src/assets/scss/custom/default";
+@import "src/assets/scss/custom/loading";
+@import "src/assets/scss/custom/comment";
+
+// Angular Differences
+@import "src/assets/scss/angular-differences/angular-differences"

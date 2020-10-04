@@ -1,0 +1,70 @@
+<!-- Body Component -->
+<div class="w-100 h-100" *ngIf="true">
+  <!-- Container -->
+  <div class="container-fluid px-0 h-100">
+    <div class="row mx-0 h-100">
+      <!-- Left Side -->
+      <div class="col-md-5 bg-lighterh-100 px-0 container-img d-none d-md-block">
+        <div class="container">
+          <div class="row p-5 mx-0">
+            <h1 class="display-1 text-white title-brand">{{'CORE.Wiins.io'|translate}}</h1>
+          </div>
+          <div class="row p-5 mx-0">
+            <h1 class="display-2 text-dark title-brand">{{'CORE.Towards-an-infinit-space'|translate}}</h1>
+          </div>
+          <div class="card-footer w-50 p-0 container-donation">
+            <div class="row mx-0">
+              <div class="col-6 px-0">
+                <img class="btc-image w-100" src="./../../assets/img/btc.png">
+              </div>
+              <div class="col-6 my-auto">
+                <div class="container px-0">
+                  <div class="row mx-0">
+                    <p class="h3">{{'DONATION.To-support-the-dev-community'|translate}}</p>
+                  </div>
+                  <div class="row mx-0">
+                    <a target="_blank" href="https://twitter.com/espace_s">{{'CORE.Know-us'|translate}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div class="col-md-7 bg-sign">
+        <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
+          <!-- Setting -->
+          <div class="row my-3 mx-0 header-bar-setting">
+            <div class="ml-auto">
+              <mat-form-field class="btn p-0">
+                <mat-select [(value)]="selectedLang">
+                  <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+                    {{l.language}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <a [routerLink]="['/term-of-use']" class="mx-2">
+                <span>{{'CORE.Term-of-use'|translate}}</span>
+              </a>
+            </div>
+          </div>
+          <!-- Router Container -->
+          <div class="container">
+            <div class="row h-100">
+              <div class="col-11 col-sm-10 mx-auto mt-md-8">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Login -->
+        <div class="container h-100" *ngIf="(loading$ | async) || (profileLoading$ | async)">
+          <div class="row h-100 mx-0">
+            <div class="loader m-auto">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,186 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.information-profil {
+  min-height: 2rem;
+  z-index: 1;
+
+  span {
+    color: grey;
+  }
+
+  ul {
+    list-style-type: none;
+
+    .friend-user {
+      margin: 6px 0px 0px -8px !important;
+      padding: 0px 0px 0px 0px !important;
+      display: inline-block;
+
+      img {
+        width: 50px;
+        border: #ffffff solid 2px;
+      }
+    }
+  }
+
+  .like-button {
+    i {
+      background: #f8f9fa;
+      border-radius: 50%;
+      box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.175) !important;
+      cursor: pointer;
+      -webkit-transition: background-color 1s ease-out;
+      -moz-transition: background-color 1s ease-out;
+      -o-transition: background-color 1s ease-out;
+      transition: background-color 1s ease-out;
+    }
+
+    i:hover {
+      color: white;
+      background-color: #3f51b5;
+      -webkit-transition: background-color 1s ease-out;
+      -moz-transition: background-color 1s ease-out;
+      -o-transition: background-color 1s ease-out;
+      transition: background-color 1s ease-out;
+    }
+  }
+}
+
+
+/* Avatar */
+
+.container-img-profile {
+  position: absolute;
+  bottom: -4rem;
+  z-index: 2;
+
+  img {
+    width: 195px;
+    height: 195px;
+    border: #ffffff solid 3px;
+    object-fit: cover;
+  }
+
+  span {
+    color: #87898a;
+
+    p {
+      padding-top: 145px;
+      font-size: 1.9rem;
+    }
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+.container-cover-picture {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  .pseudo {
+    color: white;
+    font: 400 2rem "Pacifico", cursive;
+  }
+
+}
+
+.swith-space {
+  z-index: 1;
+
+  .btn {
+    border-radius: 25px;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .175) !important;
+
+    i {
+      border-radius: 50%;
+      border: 1px solid #e1e2e2;
+    }
+
+    .fa-music {
+      background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .fa-video-camera {
+      background: -webkit-gradient(linear, left top, left bottom, from(#ff6699), to(#ff9933));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .fa-camera {
+      background: -webkit-gradient(linear, left top, left bottom, from(#ff6565), to(#4441d4));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+
+.active {
+  button {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+  }
+}
+
+.container-header {
+  height: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0) 96%);
+}
+
+.dropdown-menu {
+  left: -11rem !important;
+}
+
+.container-btn-dropdown {
+  cursor: pointer;
+}
+
+.container-btn-dropdown:hover {
+  background: #f8f6f6;
+}
+
+.btn-option-profile {
+  background-color: #d5d5d53d;
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  position: relative;
+
+  i {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    top: 5px;
+    left: 8.2px;
+  }
+
+}
+
+.no-cursor-hand {
+  cursor: default;
+}
+
+.btn-outline-grey {
+  color: #adb5bd;
+  background-color: #686868b8;
+
+}
+
+.btn-outline-light, .btn-option-profile {
+  background-color: #686868b8;
+}

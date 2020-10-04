@@ -1,0 +1,40 @@
+<!-- Component Body -->
+
+<!-- If we have a type -->
+<div *ngIf="feedPublication.type">
+
+  <!-- Type of the publicaton -->
+  <div class="container-img" [ngSwitch]="feedPublication.type">
+
+    <!-- Post publication -->
+    <div *ngSwitchCase="'PostPublication'">
+      <div class="card mx-auto" [style.backgroundImage]="feedPublication.background">
+        <span class="m-auto">{{feedPublication.text}}</span>
+      </div>
+    </div>
+
+    <!-- Picture publication  -->
+    <div *ngSwitchCase="'PicturePublication'">
+      <div class="card mx-auto">
+        <img [src]="feedPublication.file" alt="">
+      </div>
+    </div>
+
+    <!-- Video publication -->
+    <div *ngSwitchCase="'VideoPublication'">
+      <div class="card mx-auto" *ngIf="feedPublication.poster">
+        <img [src]="feedPublication.poster" alt="">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- If we don't have a type -->
+<div *ngIf="!feedPublication.type">
+  <div class="container-img">
+    <div class="card mx-auto">
+      <img [src]="feedPublication.pictureUrl">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+::ng-deep .mat-dialog-container {
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.card-body {
+  max-height: 28rem;
+  overflow-y: scroll;
+}

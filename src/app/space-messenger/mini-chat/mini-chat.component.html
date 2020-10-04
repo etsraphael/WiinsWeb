@@ -1,0 +1,43 @@
+<!-- Component Body -->
+<div class="mini-chat">
+  <!-- Search Bar-->
+  <div class="row mx-0">
+    <div class="input-group w-100 custom-search-input m-2 px-2 py-1">
+      <input [formControl]="searchField" type="text" class="form-control input-lg pl-3"
+      [placeholder]="'MINI-CHAT.text-a-friend'|translate" />
+      <span class="input-group-btn my-auto mr-2">
+        <button class="btn btn-info btn-lg pb-1" type="button">
+          <i class="fa fa-search mt-1"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+  <!-- Content of chat -->
+  <div class="container" [ngSwitch]="true">
+    <!-- List of current Discission -->
+    <div *ngSwitchCase="(searchField.value == null || searchField.value == '')" class="row">
+      <div *ngFor="let r of room$ | async" class="col-md-4 my-2 oneRoom">
+        <div class="notif" *ngIf="r.roomOption.participants[0].notification !== 0">
+          <span class="number w-100">{{r.roomOption.participants[0].notification}}</span>
+        </div>
+        <div [ngSwitch]="r.participants.length" class="w-100 h-100">
+          <div *ngSwitchCase="1" class="container-avatar" (click)="choiceDialog(r, $event)">
+            <img class="m-auto avatar my-2 rounded-circle" [src]="r.participants[0].pictureprofile">
+          </div>
+          <div *ngSwitchCase="2" class="container-divided-picture rounded-circle" (click)="choiceDialog(r, $event)">
+            <img class="w-50 h-100 m-auto avatar my-2 left-picture" [src]="r.participants[0].pictureprofile">
+            <img class="w-50 h-100 m-auto avatar my-2 right-picture" [src]="r.participants[1].pictureprofile">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search list -->
+    <div *ngSwitchCase="(resultsProfile$ | async) && searchField.value !== ''" class="row">
+      <div *ngFor="let p of resultsProfile$ | async" class="col-md-4">
+        <a class="row px-0 container-avatar" (click)="getRoom(p)">
+          <img class="mx-auto avatar my-2 rounded-circle" [src]="p.pictureprofile">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

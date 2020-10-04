@@ -1,0 +1,35 @@
+<!-- Suggest Bar -->
+<div class="row mx-0 nav py-3" *ngIf="(suggestList$|async); let suggest">
+  <div class="col-md-1 title d-flex justify-content-center my-auto">
+    <span>{{'CORE.Trend'|translate}}</span>
+  </div>
+  <div class="col-md-11 my-auto container-list-hastag">
+    <div class="row mx-0 container-scroll">
+      <div class="mx-3 oneHastag" *ngFor="let item of suggest">
+        <a (click)="resetTag(item)" [ngClass]="{'active': item == seletedHastag}">
+          <span>#{{item}}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Feed's Zone -->
+<div *ngIf="(loading$ | async) && !(publication$|async)" class="row mx-0 w-100">
+  <div class="m-auto" id="preloader">
+    <div id="loader"></div>
+  </div>
+</div>
+
+<!-- Publication List -->
+<div class="mx-3 pt-3">
+  <div class="publications-space row mx-0 w-100">
+    <ngx-masonry class="row mx-0 w-100" [useImagesLoaded]="true" [options]="optionMasonry" infiniteScroll
+      [infiniteScrollDistance]="1" [infiniteScrollThrottle]="50" [infiniteScrollContainer]="'.container-router'"
+      [fromRoot]="true" (scrolled)="onScroll()">
+      <div ngxMasonryItem *ngFor="let p of publication$ | async; let i = index" class="col-md-4 item">
+        <app-feed-publication-standard class="mb-0" [publication]="p" [space]="space"></app-feed-publication-standard>
+      </div>
+    </ngx-masonry>
+  </div>
+</div>

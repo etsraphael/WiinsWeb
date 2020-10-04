@@ -1,0 +1,118 @@
+<!-- Component Body -->
+
+<!-- Header -->
+<div class="panel-header bg-gradient-warning">
+</div>
+
+<!-- Card Update -->
+<div class="main mt--8 container-fluid main-info" *ngIf="(profile$|async); let p">
+  <!-- First Row -->
+  <div class="row px-5">
+    <!-- Main Info -->
+    <div class="col-md-6 col-lg-8">
+      <div class="card">
+        <form [formGroup]="registerForm">
+          <div class="card-header">
+            <h5 class="title pl-3">{{'SETTING.profile.Edit-t-profile'|translate}}</h5>
+            <div class="btn-footer float-right">
+              <button class="mx-2 btn-primary px-2" (click)="udapteInfo()">{{'CORE.Update'|translate}}</button>
+              <button class="mx-2 btn-neutral px-2" (click)="resetInfo()">{{'CORE.Cancel'|translate}}</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row w-100 mx-0">
+              <div class="col-12 col-xs-12 col-md-12 col-lg-4">
+                <div class="form-group">
+                  <label>{{'PROFILE.Pseudo'|translate}}</label>
+                  <input #pseudo type="text" class="form-control pl-4" formControlName="pseudo" [placeholder]="p._meta.pseudo">
+                </div>
+                <div class="text-right error-message" *ngIf="f.pseudo.value">
+                  <span *ngIf="f.pseudo.value.length < 4" class="text-danger">{{'ERROR-MESSAGE.Your-username-must-have-at-least-4-char'|translate}}</span>
+                  <span *ngIf="f.pseudo.errors" class="text-danger">{{'ERROR-MESSAGE.Pseudo-contains-invalid-caracters'|translate}}</span>
+                </div>
+              </div>
+              <div class="col-12 col-xs-12 col-md-12 col-lg-8">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">{{'PROFILE.Email'|translate}}</label>
+                  <input type="email" class="form-control pl-4" formControlName="email" [placeholder]="p._meta.email">
+                </div>
+                <div class="text-right error-message" *ngIf="f.email.value">
+                  <span *ngIf="f.email.errors" class="text-danger">{{'ERROR-MESSAGE.Email-invalid'|translate}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row w-100 mx-0">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="form-group">
+                  <label>{{'PROFILE.BirthDate'|translate}}</label>
+                  <div class="form-date">
+                    <div class="form-control date-form">
+                      <div class="content-date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <input class="pl-5" formControlName="birthDate" matInput [max]="maxDate" [matDatepicker]="picker" [placeholder]="p.birthDate | date">
+                        <mat-datepicker #picker></mat-datepicker>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-danger text-right error-message" *ngIf="f.birthDate.errors?.ageValid && f.birthDate.touched">{{'ERROR-MESSAGE.16-years-minimum'|translate}}</div>
+              </div>
+            </div>
+            <div class="row w-100 mx-0">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>{{'PROFILE.About-me'|translate}}</label>
+                  <textarea maxlength="130" #intro rows="4" cols="80" class="form-control" formControlName="introduction"
+                  [placeholder]="p.introduction || 'SETTING.profile.h-can-b-yr-description'|translate"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Visual Info -->
+    <div class="col-md-6 col-lg-4" *ngIf="(profile$|async); let p">
+      <div class="card card-user">
+        <app-profile-cover [profile]="p" class="image"></app-profile-cover>
+        <div class="card-body">
+          <div class="author">
+            <app-profile-picture [profile]="p"></app-profile-picture>
+            <h5 class="title pseudo mb-2" *ngIf="pseudo.value.length == 0">{{p._meta.pseudo}}</h5>
+            <h5 class="title pseudo mb-2" *ngIf="pseudo.value.length > 0">{{pseudo.value}}</h5>
+          </div>
+          <p class="px-5 description text-center" *ngIf="intro.value.length == 0 && p.introduction !== null && p.introduction !== ' '">{{p.introduction}}</p>
+          <p class="px-5 description text-center" *ngIf="intro.value.length > 0">{{intro.value}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Second Row -->
+  <div class="row px-5">
+    <div class="col col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title pl-3">{{'PROFILE.Followers-And-Friends'|translate}}</h5>
+          <div class="btn-footer float-right">
+          </div>
+        </div>
+        <div class="card-body pt-0">
+          <div class="container">
+            <div class="row my-3">
+              <div class="col-1">
+                <mat-slide-toggle [checked]="p.follow.friend" (change)="changeFriendOption($event.checked)"></mat-slide-toggle>
+              </div>
+              <div class="col-11">{{'SETTING.profile.btn-friend'|translate}}</div>
+            </div>
+            <div class="row my-3">
+              <div class="col-1">
+                <mat-slide-toggle [checked]="p.follow.viewer" (change)="changeViewverOption($event.checked)"></mat-slide-toggle>
+              </div>
+              <div class="col-11">{{'SETTING.profile.btn-followers'|translate}}"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

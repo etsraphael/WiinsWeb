@@ -1,0 +1,14 @@
+.title, .fa-lock {
+  background: linear-gradient(130deg, #ffa34f, #ff6f68);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  display: inherit;
+  text-align: center;
+}

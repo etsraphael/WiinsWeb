@@ -1,0 +1,181 @@
+<input hidden #mainRoomID [value]="(room$ | async)?._id" />
+
+<div class="container-dialog w-100 h-100" *ngIf="(room$ | async) let r">
+  <div class="row header-conversation">
+    <div class="col-md-8 row mx-0 my-auto" [ngSwitch]="r.participants.length">
+      <div *ngSwitchCase="1" class="container-avatar col-md-2 text-center">
+        <img class="img-responsive rounded-circle" [src]="r.participants[0].pictureprofile">
+      </div>
+      <div *ngSwitchCase="2" class="col-md-2 row mx-0">
+        <div class="container-divided-picture rounded-circle mx-auto">
+          <img class="w-50 h-100 m-auto avatar my-2 left-picture" [src]="r.participants[0].pictureprofile">
+          <img class="w-50 h-100 m-auto avatar my-2 right-picture" [src]="r.participants[1].pictureprofile">
+        </div>
+      </div>
+      <div class="col-md-10 my-auto" [ngSwitch]="true">
+        <div *ngSwitchCase="r.participants.length == 1">
+          <p class="mb-0">{{r.participants[0]._meta.pseudo}}</p>
+        </div>
+        <div *ngSwitchCase="r.participants.length == 2">
+          <p class="mb-0">{{r.participants[0]._meta.pseudo}} et {{r.participants[1]._meta.pseudo}} </p>
+        </div>
+        <div *ngSwitchCase="r.participants.length > 2">
+          <p class="mb-0">{{r.participants[0]._meta.pseudo}}, {{r.participants[1]._meta.pseudo}}... </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="((room$ | async)?._id != null) && !search" class="col-md-4 row mx-0 my-auto" ngbDropdown>
+      <div class="ml-auto mr-5 container-btn-header">
+        <i *ngIf="(room$|async)?.roomOption.participants[0].mute === true" class="mx-2 fa fa-bell-slash"
+          (click)="unMuteRoom()"></i>
+        <i ngbDropdownToggle class="mx-3 fa fa-cogs"></i>
+      </div>
+      <div ngbDropdownMenu aria-labelledby="settingRoom" class="dropdownSetting">
+        <button *ngIf="(room$|async)?.roomOption.participants[0].mute === false" ngbDropdownItem (click)="muteRoom()">
+          <div class="row">
+            <div class="col-md-2"><i class="fa fa-bell-slash"></i></div>
+            <div class="col-md-10"><span>{{'CHAT.Mute'| translate}}</span></div>
+          </div>
+        </button>
+        <button *ngIf="(room$|async)?.roomOption.participants[0].mute === true" ngbDropdownItem class="row mx-0"
+          (click)="unMuteRoom()">
+          <div class="row">
+            <div class="col-md-2"><i class="fa fa-bell"></i></div>
+            <div class="col-md-10"><span>{{'CHAT.Enable-notification'| translate}}</span></div>
+          </div>
+        </button>
+        <button ngbDropdownItem class="row mx-0" (click)="changeMode('deleteRoom')">
+          <div class="row">
+            <div class="col-md-2"><i class="fa fa-trash"></i></div>
+            <div class="col-md-10"><span>{{'CORE.Delete'|translate}}</span></div>
+          </div>
+        </button>
+        <button ngbDropdownItem class="row mx-0" (click)="toogleSearch()">
+          <div class="row">
+            <div class="col-md-2"><i class="fa fa-users"></i></div>
+            <div class="col-md-10"><span>{{'CORE.Add-someone'|translate}}</span></div>
+          </div>
+        </button>
+        <button ngbDropdownItem class="row mx-0">
+          <div class="row">
+            <div class="col-md-2"><i class="fa fa-minus-circle"></i></div>
+            <div class="col-md-10"><span>{{'CORE.Block'|translate}}</span></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="search" class="col-md-4 row mx-0 my-auto container-search">
+      <div class="col-md-9 my-auto pr-0">
+        <input [matAutocomplete]="auto" matInput class="w-100 py-1 pl-3 pr-2" type="text"
+         [placeholder]="'CORE.Search'|translate" [formControl]="searchField">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let p of (resultsProfile$ | async)" class="suggest-friend" (click)="addParticipant(p)">
+            <div class="row mx-0 my-2">
+              <div class="col-md-3 container-img-suggest">
+                <img class="rounded-circle shadow" [src]="p.pictureprofile">
+              </div>
+              <div class="col-md-9 container-pseudo-suggest">
+                <span>
+                  <p class="mb-0">{{p._meta.pseudo}}</p>
+                </span>
+              </div>
+            </div>
+          </mat-option>
+        </mat-autocomplete>
+      </div>
+      <div class="col-md-3 my-auto pr-0 pl-2">
+        <button class="btn btn-outline-primary shadow" (click)="toogleSearch()">{{'CORE.Cancel'|translate}}</button>
+      </div>
+    </div>
+  </div>
+  <div #contentMain class="trend-conversation container pt-2" infiniteScroll [infiniteScrollUpDistance]="1"
+    [infiniteScrollThrottle]="50" [scrollWindow]="false" (scrolledUp)="onScrollUp()" [ngSwitch]="mode">
+    <div class="row mx-0 h-100" *ngSwitchCase="'deleteRoom'">
+      <div class="container-adv m-auto">
+        <div class="title text-center">
+          <span>{{'CONFIRMATION.Delete-Room'|translate}}</span>
+        </div>
+        <div class="container-btn row my-3">
+          <div class="mx-auto">
+            <button class="btn btn-outline-primary slideup mx-2 shadow" (click)="deleteRoom(r._id)">{{'CORE.Delete'|translate}}</button>
+            <button class="btn btn-light slidebottomright mx-2 shadow" (click)="changeMode('default')">{{'CORE.Cancel'|translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 h-100 container-bubble-message" *ngSwitchDefault>
+      <div *ngIf="participantAdded.length !== 0" class="container-participated w-100">
+        <div class="row">
+          <div class="card col-md-6 mx-auto shadow mb-0">
+            <div class="card-header">
+              <div *ngFor="let p of participantAdded" class="tag-btn shadow m-2">
+                <div class="tag row mx-0">
+                  <div class="container-img-tag">
+                    <img [src]="p.pictureprofile" class="w-100 h-100 rounded-circle">
+                    <i class="fa fa-times" (click)="deleteParticipant(p._id)"></i>
+                  </div>
+                  <span class="mx-3 my-auto">{{p._meta.pseudo}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer row mx-0">
+              <button class="btn btn-outline-primary slideup mx-auto shadow" (click)="checkGroup()">
+                {{'CHAT.Creat-group'|translate}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div #messagesMain class="spacing-scrolling"
+        *ngFor="let m of r.message; let last = last; let i = index; let first = first">
+        <div class="w-100 h-100" [ngSwitch]="true">
+          <div class="row my-2 message message-received" *ngSwitchCase="m.owner !== (myprofile$|async)?._id">
+            <figure class="col-md-2 pt-1">
+              <div class="avatar" *ngIf="(last == true) || (r.message[i+1].owner !== m.owner)">
+                <img [src]="getAvatarChat(r.participants, m.owner)" class="rounded-circle shadow">
+              </div>
+            </figure>
+            <span class="col-md-7 mr-auto content-text" [ngClass]="{
+             'pt-0': first == false && r.message[i-1].owner == m.owner,
+             'mb-0': last == true
+              }">
+              <p class="px-3 py-1" [ngClass]="{'mb-0': last == false && r.message[i+1].owner == m.owner}">{{m.text}}</p>
+            </span>
+          </div>
+          <div class="row mr-5 my-1 message message-sended" *ngSwitchDefault>
+            <span class="col-md-9 ml-auto row content-text">
+              <div ngbDropdown class="col-md-2 row mx-0 btn-delete-message">
+                <button ngbDropdownToggle class="m-auto rounded-circle">
+                  <i class="fa fa-ellipsis-h"></i>
+                </button>
+                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" (click)="deleteMessage(r._id, m._id)">{{'CORE.Delete'| translate}}</a>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <p class="px-3 py-1 mb-0">{{m.text}}</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row container-input">
+    <div class="row col message-box">
+      <textarea [(ngModel)]="text" (keyup.enter)="send(mainRoomID.value)" (keydown.enter)="false" type="text"
+        class="message-input col-md-9 pl-5 my-auto" [placeholder]="'PLACEHOLDER.Your-message'|translate"></textarea>
+      <div class="col-md-3 my-auto row mx-0">
+        <button class="ml-auto message-submit" type="submit" (click)="send(mainRoomID.value)">
+          {{'CHAT.Send'|translate}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-no-dialog row w-100 h-100 mx-0" *ngIf="!(room$ | async)">
+  <div class="m-auto">
+    <!-- <span>No room is selected</span> -->
+  </div>
+</div>

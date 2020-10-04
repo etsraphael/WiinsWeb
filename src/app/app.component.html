@@ -1,0 +1,9 @@
+<!-- Container Body -->
+
+<!-- Loading Bar -->
+<!-- <mat-progress-bar *ngIf="loading" color="accent" mode="indeterminate"></mat-progress-bar> -->
+
+<!-- Router -->
+<div [@mainSpace]="prepareRoute(outlet)" class="w-100 h-100">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

@@ -1,0 +1,158 @@
+<!-- Main -->
+<div class="card card-publication" *ngIf="(page$ | async)">
+  <div class="cardbox bg-white">
+    <!-- Card Header -->
+    <div class="cardbox-heading p-3">
+      <div class="row mx-0">
+        <div class="col-2 avatar-page my-auto">
+          <img class="rounded-circle rounded-circle" [src]="(page$ | async).pictureprofile" alt="User">
+        </div>
+        <div class="col-7 my-auto">
+          <div class="container">
+            <div class="row">
+              <p class="m-0">{{(page$ | async).name}}</p>
+            </div>
+            <div class="row"><small><span>{{'CORE.Now'|translate}}</span></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 my-auto">
+          <button (click)="openpublication()" class="btn ml-auto"
+            [ngClass]="{'button_close': firstcard, 'button-open': !firstcard }" type="button"
+            [@btn-open-publication]='buttonturned'>
+            <em class="fa fa-plus"></em>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="buttonturned">
+      <form [formGroup]="feedPublicationForm">
+        <div class="cardbox-item new-picture" [ngSwitch]="activeZone">
+          <!-- Loading Bar -->
+          <div class="w-100 loading-bar" *ngIf="(uploadPicture !== 0) && (uploadPicture !== 100)">
+            <div class="container-bar h-100" [style.width.%]="uploadPicture"></div>
+          </div>
+          <!-- Video mode -->
+          <div *ngSwitchCase="'videozone'">
+            <div class="card-video">
+              <div class="upload-poster row mt-2 mx-2">
+                <input hidden id="upload" #poster type="file" accept='image/*' (change)="previewposter(poster.files)" />
+                <label for="upload" class="poster-button"></label>
+                <div *ngIf="postedposter">
+                  <button type="button" class="fa fa-check photo-valid"></button>
+                  <span *ngIf="editedposter">
+                    <h5 class="ml-2 mt-1">{{'FEED-PUBLICATION.Picture-received'|translate}}</h5>
+                  </span>
+                </div>
+              </div>
+              <video preload="auto" poster={{posterUrl}} controls controlsList="nodownload">
+                <source [src]="videoURL" [type]="videoType">
+              </video>
+              <div class="border-comment cardbox-comments m-1">
+                <span class="comment-logo mr-2">
+                  <button class="m-1"><i class="fa fa-comment"></i></button>
+                </span>
+                <div class="search">
+                  <textarea formControlName="text" maxlength="100"
+                    [placeholder]="'FEED-PUBLICATION.Write-a-comment'|translate" type="text"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Picture mode -->
+          <div *ngSwitchCase="'imgzone'" class="container-picture-publication position-relative">
+            <img class="img-fluid" [src]="imgURL" />
+            <div class="container-description w-100">
+              <div class="container py-4">
+                <div class="row d-flex justify-content-center title-comment pb-2">
+                  <span>{{'FEED-PUBLICATION.Write-a-comment'|translate}}</span>
+                  <i class="fa fa-angle-down mx-2 my-auto pt-1"></i><br>
+                </div>
+                <div class="display-hover">
+                  <textarea autosize formControlName="text" [placeholder]="'PLACEHOLDER.Start-to-write'|translate"
+                    class="content-title pt-4 w-100 text-center" maxlength="220"></textarea>
+                  <div class="row mx-0 container-oneHastag px-4 pb-2">
+                    <div class="oneHastag py-1 mx-1 my-1" *ngFor="let item of hastagList">
+                      <span class="col pr-0">#{{item}}</span>
+                      <i (click)="removeHastag(item)" class="fa fa-times ml-2 mr-3"></i>
+                    </div>
+                  </div>
+                  <div class="row mx-0 mb-3">
+                    <div class="ml-auto col-md-6 pl-0">
+                      <div class="container-hastag row mx-0">
+                        <div class="col-1 my-auto"><span class="hastag-icon">#</span></div>
+                        <div class="col-9 px-0 pl-2">
+                          <input #hastagContent (keydown.enter)="addHastag(); false"
+                            (keypress)="omit_special_char($event)" class="col-md-11 py-1 pl-0" type="text"
+                            [placeholder]="'PLACEHOLDER.Hastags'|translate" maxlength="12">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post -->
+          <div *ngSwitchCase="'postzone'" class="new-post" [style.backgroundImage]="background">
+            <div class="post-text">
+              <textarea autosize name="text" (keydown.enter)="false" formControlName="text" maxlength="200"
+                class="content-text mx-4 mt-4 mb-2  p-2"
+                [placeholder]="'PLACEHOLDER.Start-to-write'|translate"></textarea>
+              <div class="row mx-0 container-oneHastag px-4 pb-2">
+                <div class="oneHastag py-1 mx-1 my-1" *ngFor="let item of hastagList">
+                  <span class="col pr-0">#{{item}}</span>
+                  <i (click)="removeHastag(item)" class="fa fa-times ml-2 mr-3"></i>
+                </div>
+              </div>
+              <div class="row mx-0 bg-option-hastag py-3">
+                <div id="choice-color" class="row d-flex justify-content-center mx-0 col-md-7 my-auto">
+                  <div (click)="changebackground(choice1)" class="col-xs-4 blockBox choice1"></div>
+                  <div (click)="changebackground(choice2)" class="col-xs-4 blockBox choice2"></div>
+                  <div (click)="changebackground(choice3)" class="col-xs-4 blockBox choice3"></div>
+                  <div (click)="changebackground(choice4)" class="col-xs-4 blockBox choice4"></div>
+                  <div (click)="changebackground(choice5)" class="col-xs-4 blockBox choice5"></div>
+                  <div (click)="changebackground(choice6)" class="col-xs-4 blockBox choice6"></div>
+                </div>
+                <div class="col-md-5 pl-0">
+                  <div class="container-hastag row mx-0">
+                    <div class="col-1 my-auto"><span class="hastag-icon">#</span></div>
+                    <div class="col-9 px-0">
+                      <input #hastagContent (keydown.enter)="addHastag(); false" (keypress)="omit_special_char($event)"
+                        class="col-md-11 py-1 pl-0" type="text" [placeholder]="'PLACEHOLDER.Hastags'|translate"
+                        maxlength="12">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Do a choice -->
+          <div *ngSwitchCase="'none'" id="button-download">
+            <div class="d-flex justify-content-center py-5 picture-download">
+              <div class="d-inline mx-2">
+                <input hidden id="upload_picture" #picture type="file" accept='image/* | video/*'
+                  (change)="preview(picture.files)" />
+                <label for="upload_picture"></label>
+              </div>
+              <div class="d-inline mx-2">
+                <button (click)="postmode()" class="btn btn-flat btn-flat-icon" type="button">
+                  <em class="fa fa-pencil-square-o pl-1"></em>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Footer -->
+          <div class="row mx-0 d-flex justify-content-center py-3">
+            <button (click)="closepublication()" class="btn-back btn" type="button">
+              <em class="fa fa-undo"></em>
+            </button>
+            <button class="btn btn-send" (click)="createFeedPublication()">
+              {{'FEED-PUBLICATION.Post-it'|translate}}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<!-- Header's Profil -->
+<div class="container-cover" *ngIf="(myprofile$|async)">
+  <div class="row w-100 mx-0 header-cover">
+    <div class="content-pseudo col-5 col-md-3 d-flex justify-content-center pt-2">
+      <span>{{(myprofile$|async)._meta.pseudo}}</span>
+    </div>
+    <div class="ml-auto col-2 col-md-2 cover-edit my-auto text-right">
+      <input hidden #cover type='file' name="photo" id="coverUpload" accept=".png, .jpg, .jpeg"
+        (change)=previewCover($event) />
+      <label for="coverUpload"></label>
+    </div>
+  </div>
+  <img class="cover-picture" [(src)]="pictureCover">
+  <div class="loading-cover w-100" *ngIf="updatepicture == 'cover'">
+  </div>
+  <div class="row container-img-profile mx-auto w-100">
+    <div class="profile-img mx-auto">
+      <img class="rounded-circle w-100 img-profile" [src]="pictureProfile" alt="picture_profile">
+      <div class="avatar-edit">
+        <input hidden #profile type='file' id="profileUpload" name="photo" accept=".png, .jpg, .jpeg"
+          (change)=previewProfile($event) />
+        <label for="profileUpload"></label>
+      </div>
+      <!-- Profile Loading Logo -->
+      <div class="position-absolute w-100 loader-index" *ngIf="updatepicture == 'profile'">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sub Header -->
+<div class="information-profil row mx-0 my-3 px-5">
+  <div class="nav-space mr-auto">
+    <button *ngIf="(myprofile$|async)?.actifSpace !== 1" type="button" class="mx-2 p-2 btn" [routerLink]="['Story']"
+      routerLinkActive="active">
+      <i class="fa fa-bolt"></i>
+      <span class="mx-2">{{'PROFILE.my-story'|translate}}</span>
+    </button>
+    <button *ngIf="(myprofile$|async)?.actifSpace === 2 || (myprofile$|async)?.actifSpace === 4" type="button"
+      class="mx-2 p-2 btn" [routerLink]="['Music']" routerLinkActive="active">
+      <i class="p-2 fa fa-music"></i>
+      <span class="mx-2">{{'PROFILE.my-musics'|translate}}</span>
+    </button>
+    <button *ngIf="(myprofile$|async)?.actifSpace === 3 || (myprofile$|async)?.actifSpace === 4" type="button"
+      class="mx-2 p-2 btn" [routerLink]="['Tube']" routerLinkActive="active">
+      <i class="p-2 fa fa-video-camera"></i>
+      <span class="mx-2">{{'PROFILE.my-videos'|translate}}</span>
+    </button>
+  </div>
+  <div class="nav-space ml-auto">
+    <div class="mx-2 py-2 px-3 btn-community" [routerLink]="['Community']">
+      {{'CORE.My-community'|translate}}
+    </div>
+  </div>
+</div>
+
+<!-- Feed's Zone -->
+<div class="container-fluid publications-space">
+  <div class="row" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet class="w-100" #outlet="outlet"></router-outlet>
+  </div>
+</div>

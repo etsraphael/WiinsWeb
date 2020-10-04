@@ -1,0 +1,34 @@
+<!-- Component Body -->
+<div class="container-fluid p-0 h-100">
+
+  <!-- Image Crooper Container -->
+  <image-cropper class="p-0 container-crooper" [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
+    [resizeToWidth]="config.resizeToWidth" [cropperMinWidth]="128" [onlyScaleDown]="true" [roundCropper]="config.roundCropper"
+    format="png" outputType="base64" (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded()"
+    (loadImageFailed)="loadImageFailed()" [style.display]="showCropper ? null : 'none'"
+    [alignImage]="'center'" [aspectRatio]="config.aspectRatio">
+  </image-cropper>
+
+  <!-- Loading bar before to get the picture -->
+  <div class="row h-100 pt-5 mt-5 pb-3" *ngIf="!showCropper">
+    <div class="m-auto" id="preloader">
+      <div id="loader"></div>
+    </div>
+  </div>
+
+  <!-- Btn footer -->
+  <div class="row mx-0 py-2 d-flex justify-content-center bg-footer" *ngIf="showCropper && (loadingProgress == 0)">
+    <button class="mx-2 btn btn-secondary" (click)="closeDialog()">{{'CORE.Cancel'|translate}}</button>
+    <button class="mx-2 btn btn-info" (click)="confirm()">{{'CORE.Confirm'|translate}}</button>
+  </div>
+
+  <!-- Loading Animation -->
+  <div class="row mx-0 py-2 d-flex justify-content-center bg-footer" *ngIf="showCropper && (loadingProgress !== 0)">
+    <div class="spinner mx-auto my-3">
+      <div class="bounce1 mx-2"></div>
+      <div class="bounce2 mx-2"></div>
+      <div class="bounce3 mx-2"></div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+<!-- Component Body -->
+<div class="container">
+  <div class="row mt-3 container-button">
+    <div class="switch-space mx-auto text-center">
+      <!-- List of btn -->
+      <a [routerLink]="[b.link]" routerLinkActive="active" *ngFor="let b of btnList">
+        <button class="mx-3 my-2" [ngClass]="b.gradientColor">
+          <div class="d-flex py-1">
+            <i class=" my-auto ml-2 fa" [ngClass]="b.icon"></i>
+            <span class="px-2">{{b.name|translate}}</span>
+          </div>
+        </button>
+      </a>
+      <!-- <a hidden [routerLink]="['event']" routerLinkActive="active">
+        <button class="btn-event mx-3 my-2">
+          <div class="d-flex py-auto">
+            <i class="my-auto ml-2 fa fa-calendar-check-o"></i>
+            <span class="px-2">{{'CREATION.Create-event'|translate}}</span>
+          </div>
+        </button>
+      </a>
+      <a hidden>
+        <button class="btn-playlist-video mx-3 my-2">
+          <div class="d-flex py-auto">
+            <i class="my-auto ml-2 fa fa-film"></i>
+            <span class="px-2">{{'CREATION.Create-video-P'|translate}}</span>
+          </div>
+        </button>
+      </a> -->
+    </div>
+  </div>
+  <hr>
+</div>
+
+<!-- Active Page -->
+<div class="container mb-5">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,38 @@
+.card {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 9px;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.375);
+  overflow: hidden;
+
+  span {
+    color: white;
+    font-size: 0.4rem;
+    display: inline-block;
+    width: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.logo {
+  text-align: center;
+
+  .fa-camera {
+    background: -webkit-linear-gradient(#63fc47, #356dd2);
+    opacity: 0.9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}

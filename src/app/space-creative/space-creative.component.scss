@@ -1,0 +1,11 @@
+@import 'src/assets/scss/button.scss';
+
+.switch-space {
+
+  button:hover,
+  .active button {
+    transition: 0.5s;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.375);
+  }
+
+}

@@ -1,0 +1,64 @@
+<!-- Component Body -->
+<div class="suggestion-search col-md-6 ml-5 px-0">
+  <!-- Container suggestion -->
+  <div class="row mx-0 content-suggestion">
+    <!-- Profile List -->
+    <div class="col-lg-4 mx-0 px-0 list-user my-auto">
+      <div *ngIf="resultsProfile$ | async; let resultsProfile">
+        <li class="row list-group-item mx-0 py-2" *ngFor="let profile of resultsProfile" (click)="gotToProfile(profile._id)">
+          <div class="col-md-4">
+            <img class="img-fluid img-user" [src]="profile.pictureprofile" alt="User">
+          </div>
+          <div class="col-md-8 content-text px-0">
+            <a>{{profile?._meta?.pseudo}}</a>
+            <p *ngIf="profile.mutalFriends !== 0" class="mb-0">{{profile.mutalFriends}} amis en communs</p>
+            <p *ngIf="profile.mutalFriends == 0" class="mb-0">0 {{'CORE.mutual-friends'|translate}}</p>
+          </div>
+        </li>
+        <div class="row no-found mx-0" *ngIf="resultsProfile.length === 0">
+          <div class="col-md-3 row mx-0 my-auto">
+            <i class="color-no-profile fa fa-times-circle-o fa-2x mx-auto"></i>
+          </div>
+          <div class="col-md-9 mx-auto py-3 px-0">
+            <span class="no-pseudo">{{'ERROR-MESSAGE.Nobody-has-this-pseudo'|translate}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page list -->
+    <div class="col-lg-8 px-4 pr-4 pt-2 list-popular">
+      <div class="container h-100">
+        <div class="row h-100" *ngIf="resultsPage$ | async; let resultsPage">
+          <div class="col-md-3 my-1" *ngFor="let page of resultsPage">
+            <div class="row page">
+              <div class="d-flex mx-auto content-publication">
+                <a (click)="gotToPage(page._id)">
+                  <img class="img-responsive cover" [src]="page.pictureprofile">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <a class="d-flex mx-auto pt-1" (click)="gotToPage(page._id)">{{page.name}}</a>
+            </div>
+          </div>
+          <div class="row no-found mx-0 w-100 my-auto" *ngIf="resultsPage.length === 0">
+            <div class="col-md-3 row mx-0 my-auto">
+              <i class="color-no-page fa fa-times-circle-o fa-2x mx-auto"></i>
+            </div>
+            <div class="col-md-9 mx-auto py-3 px-0">
+              <span class="no-pseudo">{{'ERROR-MESSAGE.No-page-has-this-name'|translate}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Avanced Research -->
+  <div class="row avanced-search" *ngIf="false">
+    <div class="d-flex mx-auto">
+      <div class="col py-1">
+        <p>{{'CORE.Advanced-search'|translate}}</p>
+      </div>
+    </div>
+  </div>
+</div>

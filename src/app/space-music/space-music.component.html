@@ -1,0 +1,26 @@
+<!-- Nav Btn -->
+<div class="row mx-0 mt-3">
+  <div class="switch-space mx-auto">
+    <a [routerLink]="['trend']" routerLinkActive="active">
+      <button class="btn-tendance mx-3">
+        <div class="d-flex py-auto">
+          <i class="my-auto ml-2 fa fa-leaf"></i>
+          <span class="px-2">{{'MAIN-MUSIC.Trend'|translate}}</span>
+        </div>
+      </button>
+    </a>
+    <a [routerLink]="['save']" routerLinkActive="active">
+      <button class="btn-save mx-3">
+        <div class="d-flex py-auto">
+          <i class=" my-auto ml-2 fa fa-heart-o"></i>
+          <span class="px-2">{{'CORE.Favorites'|translate}}</span>
+        </div>
+      </button>
+    </a>
+  </div>
+</div>
+
+<!-- Router -->
+<div class="container-space mt-2">
+  <router-outlet></router-outlet>
+</div>

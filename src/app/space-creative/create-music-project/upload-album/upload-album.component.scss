@@ -1,0 +1,169 @@
+@import 'src/app/space-creative/create-music-project/create-music-project.component.scss';
+
+.logo-green {
+  color: #6aec6a;
+}
+
+.no-border {
+  border: 0 !important;
+}
+
+.errorMessage {
+  span {
+    color: #f25d5d;
+  }
+}
+
+.border-red {
+  border: 1px solid red !important;
+  border-radius: 3px;
+  height: 2.5rem !important;
+}
+
+.add-feat {
+  .btn-plus {
+    border-radius: 50%;
+    background: #e3e3e3;
+    border: 2px solid white;
+    height: 36px;
+    width: 36px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19);
+
+    i {
+      color: white;
+    }
+  }
+}
+
+.array-music {
+  overflow: visible !important;
+}
+
+.example-box:first-child {
+  border-radius: 0 15px 0 0;
+}
+
+.dropdown-menu {
+  border-radius: 19px;
+  position: absolute;
+  border: 1px solid #e4dfdf;
+  top: -14rem !important;
+  left: -8.5rem !important;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) !important;
+  display: block;
+  visibility: hidden;
+  transition: .5s ease all;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.175) !important;
+  width: 16rem;
+  z-index: 3;
+
+  input {
+    border: 0;
+    font-size: 0.9rem;
+  }
+
+  .fa-search {
+    color: grey;
+  }
+}
+
+.feat-avatar {
+  position: relative;
+
+  img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.275);
+  }
+}
+
+.feat-avatar:not(:first-child) {
+  margin: 0px 0px 0px -16px !important;
+}
+
+.container-feat-avatar {
+  height: 12rem;
+  overflow-y: scroll;
+
+  img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.275) !important;
+    border: 2px solid white;
+  }
+
+  .add {
+    display: none;
+    cursor: pointer;
+  }
+
+  span {
+    color: grey;
+  }
+
+}
+
+.profile-found:hover {
+  background-color: #ebebeb;
+
+  .pseudo {
+    display: none;
+  }
+
+  .add {
+    display: block;
+  }
+}
+
+.dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: .3s ease all;
+}
+
+.feat-avatar:hover {
+  img {
+    border: none;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    padding: 4px
+  }
+
+  .btn-delete {
+    display: block;
+  }
+}
+
+.btn-delete {
+  border-radius: 50%;
+  height: 28px;
+  width: 31px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  background-color: transparent;
+  border: 0;
+  display: none;
+
+  i {
+    color: white;
+    text-shadow: 0 0 2px black;
+  }
+}
+
+
+.btn-send {
+  .fa-arrow-circle-o-right:before {
+    position: relative;
+    bottom: -1px;
+  }
+}

@@ -1,0 +1,16 @@
+<!-- Loading Logo -->
+<div *ngIf="(loading$ | async) && !(publication$|async)" class="row mx-0 w-100">
+  <div class="m-auto" id="preloader">
+    <div id="loader"></div>
+  </div>
+</div>
+
+<!-- If we have publication -->
+<div class="row w-100" *ngIf="(publication$ | async)">
+  <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
+    [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()" [infiniteScrollContainer]="'.container-router'" [fromRoot]="true">
+    <app-feed-publication-standard ngxMasonryItem *ngFor="let p of publication$ | async; let i = index"
+      class="col col-sm-12 col-md-6 col-lg-6 col-xl-4 my-1" [publication]="p" [space]="space"></app-feed-publication-standard>
+  </ngx-masonry>
+</div>

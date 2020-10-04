@@ -1,0 +1,161 @@
+<!-- Var -->
+<span hidden>{{musicUrl}}</span>
+<span hidden>{{pictureUrl}}</span>
+<input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg" (change)=openCrooperMusicImg($event) />
+
+<!-- Space Music -->
+<div class="container">
+  <div class="mt-4">
+    <!-- Title -->
+    <div class="title row mx-0 mb-4">
+      <span>{{'WIINS-MUSIC.Creation-of-t-music'|translate}}</span>
+    </div>
+    <!-- Music Visual -->
+    <div class="row mx-4 mt-4" *ngIf="musicUploaded">
+      <audio controls class="col-md-10 mx-auto" controlsList="nodownload">
+        <source [src]="musicUploaded" [type]="musicType">
+      </audio>
+    </div>
+    <!-- Music Info -->
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-12 col-md-5 my-auto pb-5">
+          <div class="row container-img mx-auto" [ngClass]="{'no-border': pictureImg}">
+            <label for="pic" class="my-auto img-upload" *ngIf="!pictureImg">
+              <i class="fa fa-camera fa-2x"></i>
+            </label>
+            <img *ngIf="pictureImg" [src]="pictureImg" alt="">
+            <div class="edit-picture row" *ngIf="pictureImg">
+              <label for="pic" class="ml-2 my-auto">
+                <span>{{'CORE.Edit'|translate}}</span>
+              </label>
+            </div>
+          </div>
+          <div class="container mt-5 container-feat" *ngIf="featArray.length !== 0">
+            <div class="row mx-0">
+              <h4 class="mx-auto">{{'CORE.With'|translate}}</h4>
+            </div>
+            <div class="row mx-0 d-flex justify-content-center">
+              <div class="mx-2 oneFeat position-relative" *ngFor="let p of featArray">
+                <img class="rounded-circle" [src]="p.pictureprofile">
+                <button class="btn-delete" (click)="deleteFeat(p._id)"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7">
+          <div class="container">
+            <form [formGroup]="musicForm" class="information w-100">
+              <div class="row">
+                <div class="col-10">
+                  <div class="form-group">
+                    <label>{{'WIINS-MUSIC.Music-name'|translate}}</label>
+                    <input type="text" class="form-control pl-4" formControlName="title">
+                  </div>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="ml-auto pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{'is-valid': !f.title.errors}"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="form-date">
+                    <div class="form-group">
+                      <label>{{'CORE.Visibility-date'|translate}}</label>
+                      <div class="form-date">
+                        <div class="form-control">
+                          <div class="content-date">
+                            <mat-datepicker-toggle matSuffix [for]="picker" class="position-absolute"></mat-datepicker-toggle>
+                            <input class="no-border" matInput [matDatepicker]="picker"
+                              [placeholder]="'CORE.Chosse-a-date'|translate" formControlName="dateVisibility">
+                            <mat-datepicker #picker></mat-datepicker>
+                          </div>
+                        </div>
+                        <div *ngIf="f.dateVisibility.errors?.date && f.dateVisibility.touched">
+                          <span
+                            class="ml-3 ml-1 alert-date">{{'ERROR-MESSAGE.Date-must-b-after-today'|translate}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 my-auto">
+                  <i class="ml-auto fa fa-2x fa-check-circle-o"
+                    [ngClass]="{'is-valid': !f.dateVisibility.errors?.date}"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="form-date w-100">
+                    <div class="form-group mb-0">
+                      <label class="d-block">{{'WIINS-MUSIC.Link-music'|translate}}</label>
+                      <label for="musicUpload" class="w-100">
+                        <div class="form-date w-100">
+                          <div class="form-control form-upload">
+                            <div class="content-link pt-2 pl-5 pr-3">
+                              <div for="musicUpload" class="btn-upload">
+                                <i class="fa fa-folder-open"></i>
+                              </div>
+                              <input hidden #music type='file' name="photo" id="musicUpload" accept=".mp3"
+                                (change)=previewLink(music.files) />
+                              <span *ngIf="!fileName" class="mt-1">{{'WIINS-MUSIC.Upload-yr-music'|translate}}</span>
+                              <span *ngIf="fileName" class="file-name">
+                                <p class="mb-0">{{fileName}}</p>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="modify">
+                      <label for="musicUpload" class="w-100">
+                        <span *ngIf="fileName">{{'CORE.Edit'|translate}}</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 my-auto">
+                  <i class="ml-auto fa fa-2x fa-check-circle-o" [ngClass]="{'is-valid': !!musicUrl}"></i>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <label>{{'CORE.With'|translate}}: ({{'CORE.optional'|translate}})</label>
+                </div>
+                <div class="row">
+                  <div class="input-group col-8 h-100 px-0">
+                    <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3 mt-0"
+                      [placeholder]="'PLACEHOLDER.Pseudo'|translate" [formControl]="searchField">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addFeat(profile)">
+                        <div class="oneSuggest row mx-0 py-3">
+                          <div class="col-3 profile-img my-auto">
+                            <img class="rounded-circle" [src]="profile.pictureprofile">
+                          </div>
+                          <div class="col-9 mt-2 my-auto">
+                            <span>{{profile._meta.pseudo}}</span>
+                          </div>
+                        </div>
+                      </mat-option>
+                    </mat-autocomplete>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmation -->
+<div class="row mt-3 mb-5">
+  <div class="d-flex mx-auto">
+    <button class="btn-confirm ml-5 my-2" (click)="submit()">
+      <div class="d-flex py-auto">
+        <span class="px-2">{{'CORE.Confirm'|translate}}</span>
+      </div>
+    </button>
+  </div>
+</div>

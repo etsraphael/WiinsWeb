@@ -1,0 +1,26 @@
+<!-- Component Body -->
+<div class="container mt-4">
+  <!-- Setting card -->
+  <div class="card row my-3 mx-2">
+    <div class="card-body row">
+      <div class="col mx-3 mt-2">
+        <h5 class="card-title">{{'SETTING.lang.lang-of-plateforme'|translate}}</h5>
+        <div class="row">
+          <p class="col-md-8 card-text">{{'SETTING.lang.lang-of-btn-title-others'|translate}}</p>
+          <div class="col-md-4 input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text">{{'CORE.Choice'|translate}}</label>
+            </div>
+            <select #langSelect (change)="switchLanguage(langSelect.value)" class="custom-select" id="inputGroupSelect01" [(value)]="selectedLanguage">
+              <option *ngFor="let l of languageList" [value]="l.code">{{l.language}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Save Btn -->
+  <div class="row saveContainer">
+    <button (click)="save()" type="button" class="ml-auto mr-4 btn btn-primary">{{'CORE.Save'|translate}}</button>
+  </div>
+</div>

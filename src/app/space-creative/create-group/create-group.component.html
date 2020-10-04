@@ -1,0 +1,143 @@
+<!-- Var -->
+<span hidden>{{avatarSaved}}</span>
+
+<!-- Header's Group -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6 d-flex justify-content-center my-auto">
+      <div class="container-uplodaer position-relative">
+        <img class="rounded-circle groupPicture" [src]="avatarGroup" alt="group_picture">
+        <!-- Icon Avatar -->
+        <div class="container-logo position-absolute w-100 h-100">
+          <div class="row mx-0 h-100">
+            <label for="upload_avatar" class="btn-upload m-auto">
+              <i class="fa fa-camera"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="container container-information">
+        <div class="row title my-2">
+          <span class="col">{{'CORE.Information'|translate}}</span>
+        </div>
+        <!-- Form -->
+        <form [formGroup]="groupForm" class="mt-4">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>{{'GROUP.Name-group'|translate}}</label>
+                <input formControlName="name" type="text" class="form-control pl-3"
+                  [placeholder]="'CORE.Name'|translate">
+              </div>
+            </div>
+            <div class="mx-2">
+              <div class="d-flex mt-4">
+                <i [ngClass]="{ 'is-valid': !f.name.errors }" class="ml-auto pt-2 fa fa-2x fa-check-circle-o"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <mat-form-field class="w-100">
+                <mat-label>{{'CORE.Visibility'|translate}}</mat-label>
+                <mat-select formControlName="visibility">
+                  <mat-option value="private">{{'CORE.Private'|translate}}</mat-option>
+                  <mat-option value="public">{{'CORE.Public'|translate}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="mx-2">
+              <div>
+                <i [ngClass]="{ 'is-valid': !f.visibility.errors }" class="ml-auto pt-2 fa fa-2x fa-check-circle-o"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Information for Creation -->
+<div class="container-fluid management-team-updated mt-4 container-profile">
+  <div class="row title my-2">
+    <span class="col">{{'ADMIN.Add-administrator'|translate}}</span>
+  </div>
+  <div class="row form-group">
+    <div class="input-group col-4 h-100 mt-3 mb-2">
+      <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3"
+        [placeholder]="'PLACEHOLDER.Pseudo'|translate" [formControl]="searchField">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addAdmin(profile)">
+          <div class="oneSuggest row mx-0 py-3">
+            <div class="col-3 profile-img my-auto">
+              <img class="rounded-circle" [src]="profile.pictureprofile">
+            </div>
+            <div class="col-9 mt-2 my-auto">
+              <span>{{profile._meta.pseudo}}</span>
+            </div>
+          </div>
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="oneAdmin row m-2 py-2">
+        <div class="col-md-2 row mx-0 px-0">
+          <img class="mx-auto img-fluid" [src]="(myprofile$ | async)?.pictureprofile">
+        </div>
+        <div class="col-md-5 my-auto adminPseudo">
+          <span>{{(myprofile$|async)?._meta.pseudo}}</span>
+        </div>
+        <div ngbDropdown class="col-md-5 chooseRole my-auto">
+          <button ngbDropdownToggle id="showRole" class="btn-role w-100 row mx-0 px-0 shadow role-0 not-allowed">
+            <span class="col-md-9 py-1">{{'ADMIN.President'|translate}}</span>
+            <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6" *ngFor="let a of adminAdded">
+      <div class="oneAdmin row mx-0 m-2 py-2">
+        <div class="col-6 col-md-2 row mx-0 px-0">
+          <img class="mx-auto img-fluid" [src]="a.profile.pictureprofile" alt="">
+        </div>
+        <div class="col-md-5 my-auto adminPseudo">
+          <span>{{a.profile._meta.pseudo}}</span>
+        </div>
+        <div ngbDropdown class="col-md-5 chooseRole my-auto">
+          <button ngbDropdownToggle id="showRole" class="btn-role w-100 row mx-0 px-0 shadow"
+            [ngClass]="'role-'+ a.role">
+            <span class="col-md-9 py-1">{{ 'ADMIN.Code.' + (a.role + 1) | translate}}</span>
+            <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="showRole">
+            <a *ngFor="let c of roleAdmin; let i = index" class="dropdown-item"
+              (click)="updateRole(a.profile._id, i+1)">{{c.role}}</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="removeAddAdmin(a.profile._id)">{{'CORE.Delete'| translate}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Confirm -->
+<div class="row mx-0 mt-3 mb-5">
+  <div class="mx-auto">
+    <button class="btn-confirm ml-5 my-2" (click)="sendGroup()">
+      <div class="d-flex py-auto">
+        <span class="px-2">{{'CORE.Confirm'|translate}}</span>
+      </div>
+    </button>
+  </div>
+</div>
+
+<!-- Link -->
+<input hidden id="upload_avatar" type="file" accept='image/*' #avatar (change)=previewProfile(avatar.files)>

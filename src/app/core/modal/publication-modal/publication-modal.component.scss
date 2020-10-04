@@ -1,0 +1,98 @@
+.card {
+  border: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  min-height: 84vh;
+}
+
+
+.card-container {
+  height: 84vh;
+}
+
+.avatar-header {
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+  border: 2px solid white;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+}
+
+.container-comment {
+  position: relative;
+  max-height: 84vh;
+
+  .card-footer {
+    max-height: 25rem;
+    overflow-y: scroll;
+  }
+}
+
+
+.fa-clock-o {
+  font-size: 14px;
+}
+
+
+.container-stats-comment {
+  span {
+    font-size: 0.8rem;
+    color: grey;
+    cursor: pointer;
+  }
+
+  span:hover {
+    text-decoration: underline;
+  }
+}
+
+.container-scroll {
+  overflow-y: scroll;
+  height: calc(100% - 6rem);
+}
+
+.container-btn-option {
+
+  button:hover {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+}
+
+.date-publication {
+  font-size: 0.8rem;
+}
+
+.container-stat {
+  position: absolute;
+
+}
+
+// a mettre au propre
+
+.text-posted {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+::ng-deep .mat-dialog-container {
+  padding: 0;
+  max-height: 80%;
+  max-width: 70;
+  border-radius: 12px;
+}
+
+.container-picture-publication img {
+  object-fit: contain;
+}
+
+.cursor-pointer { 
+  cursor: pointer;
+}

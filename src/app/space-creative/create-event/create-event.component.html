@@ -1,0 +1,281 @@
+<!-- Visualisaton Card & Form -->
+<div class="row">
+  <div class="col-md-6">
+    <!-- Title-->
+    <div class="title row my-2">
+      <span class="mx-auto">{{'CORE.Visibility'|translate}}</span>
+    </div>
+    <!-- Card Event -->
+    <div class="card card-event">
+      <div class="cardbox shadow-lg">
+        <!-- Heading card -->
+        <div class="cardbox-heading container">
+
+          <div class="row h-100">
+            <div class="col-2 d-flex justify-content-center my-auto">
+              <img class="my-avatar-card img-fluid rounded-circle" [src]="(profile$|async)?.pictureprofile" alt="User">
+            </div>
+            <div class="col-8 my-auto pt-1">
+              <h4 class="mb-0">{{(profile$|async)?._meta.pseudo}}</h4>
+              <span>{{'CORE.Now'|translate}}</span>
+            </div>
+            <div class="col-2 my-auto">
+              <button class="btn btn-flat btn-flat-icon" type="button">
+                <i class="fa fa-ellipsis-h"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Image Card-->
+        <div class="cardbox-item">
+          <!-- Download Picture -->
+          <div *ngIf="imgShowed" id="button-download">
+            <div class="d-flex p-5 picture-download">
+              <input hidden id="upload" #file type="file" accept='image/*' (change)="previewPublication(file.files)" />
+              <label for="upload" class="mx-auto"></label>
+            </div>
+          </div>
+          <div *ngIf="!imgShowed" class="cardbox-item">
+            <div class="container-event-img">
+              <div class="modif">
+                <input hidden id="upload" #file type="file" accept='image/*' />
+                <button type="button" class="btn p-3">
+                  <label for="upload" class="mx-auto my-0">
+                    <span>{{'CORE.Change-the-photo'|translate}}</span>
+                  </label>
+                </button>
+              </div>
+              <div class="btn-participate">
+                <button type="button" class="btn">{{'CORE.Participate'|translate}}</button>
+              </div>
+              <div class="btn-date">
+                <button type="button" class="btn">{{dateStartEvent | date : 'mediumDate'}}</button>
+              </div>
+              <img class="img-fluid" [src]="imgURL" alt="Image">
+            </div>
+          </div>
+        </div>
+        <div class="space-not-allowed">
+          <!-- Info Stat -->
+          <div class="cardbox-base">
+            <ul class="float-right">
+              <li><a><i class="fa fa-comments"></i></a></li>
+              <li><a><em class="mr-5">12</em></a></li>
+              <li><a><i class="fa fa-share-alt"></i></a></li>
+              <li><a><em class="mr-3">03</em></a></li>
+            </ul>
+            <ul>
+              <li><a href><i class="fa fa-thumbs-up"></i></a></li>
+              <li><a href="#"><img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" class="img-fluid rounded-circle"
+                    alt="User"></a></li>
+              <li><a href="#"><img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" class="img-fluid rounded-circle"
+                    alt="User"></a></li>
+              <li><a href="#"><img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" class="img-fluid rounded-circle"
+                    alt="User"></a></li>
+              <li><a href="#"><img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" class="img-fluid rounded-circle"
+                    alt="User"></a></li>
+              <li><a><span>0 Likes</span></a></li>
+            </ul>
+          </div>
+          <!-- Comment -->
+          <div class="container-comment">
+            <div class="messages container py-2">
+              <div class="view-comment m-2 row">
+                <div class="content-img col-1 p-0">
+                  <img class="rounded-circle" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" />
+                </div>
+                <div class="col-11 my-0">
+                  <p class="my-0">
+                    {{'ADS.CREATION.The-most-popular-comment-will-end-up-in-this-location-this-is-an-example'}}
+                    <strong>3 512</strong>
+                    <i class="px-2 fa fa-thumbs-o-up"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-1 mx-5">
+          <!-- Write a comment -->
+          <div class="cardbox-comments row mx-0">
+            <span class="comment-avatar col-2">
+             <img class="rounded-circle" [src]="(profile$|async)?.pictureprofile">
+            </span>
+            <div class="new-comment col-10 position-relative">
+              <textarea class="w-100" placeholder="Write a comment" type="text"></textarea>
+              <button class="container-btn-card-footer position-absolute"><i class="fa fa-camera"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <!-- Title-->
+    <div class="title row my-2">
+      <span class="ml-4">{{'CORE.Stages'|translate}}</span>
+    </div>
+    <!-- Form -->
+    <form [formGroup]="eventForm">
+      <div class="information mt-3">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label>{{'WIINS-EVENT.Event-name'|translate}}</label>
+              <input type="text" class="form-control" formControlName="nameEvent" [(ngModel)]="nameEvent">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex mt-4">
+              <i [ngClass]="{ 'is-valid': !f.nameEvent.errors }" class="ml-auto pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-date">
+              <div class="form-group">
+                <label>{{'WIINS-EVENT.Event-date'|translate}}</label>
+                <div class="form-date">
+                  <div class="form-control">
+                    <div class="content-date">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <input formControlName="dateStartEvent" [min]="minDate" matInput [matDatepicker]="picker"
+                        placeholder="Choose a date" [(ngModel)]="dateStartEvent">
+                      <mat-datepicker #picker></mat-datepicker>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex mt-4">
+              <i [ngClass]="{ 'is-valid': !f.dateStartEvent.errors }"
+                class="ml-auto pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-date">
+              <div class="form-group">
+                <label>{{'WIINS-EVENT.CREATION.End-of-the-event-optional'|translate}}</label>
+                <div class="form-date">
+                  <div class="form-control">
+                    <div class="content-date">
+                      <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+                      <input formControlName="dateEndEvent" [min]="minEndDate" matInput [matDatepicker]="pickerEnd"
+                        placeholder="Choose a date" [(ngModel)]="dateEndEvent">
+                      <mat-datepicker #pickerEnd></mat-datepicker>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex mt-4">
+              <i [ngClass]="{ 'is-valid': !f.dateEndEvent.errors }" class="ml-auto pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label>{{'CORE.Visibility'|translate}}</label>
+              <select class="form-control" formControlName="visibility">
+                <option>{{'WIINS-EVENT.CREATION.Visible-to-everyone'|translate}}</option>
+                <option>{{'WIINS-EVENT.CREATIONVisible-to-guests'|translate}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex mt-4">
+              <i [ngClass]="{ 'is-valid': !f.visibility.errors }" class="ml-auto pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label>{{'ADMIN.Add-administrator'|translate}}</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex mt-4">
+              <i class="ml-auto pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row description">
+          <div class="col-md-10">
+            <div class="form-group group-introduction">
+              <label>{{'CORE.Introduction'|translate}}</label>
+              <textarea type="text" class="form-control p-4" formControlName="introduction"></textarea>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="mt-4 btn-description">
+              <i [ngClass]="{ 'is-valid': !f.introduction.errors }" class="pt-1 fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<hr class="mb-4">
+
+<!-- Visualiton Event Page -->
+<div class="title row my-2">
+  <span class="mx-auto">{{'CORE.Visualisation'|translate}}</span>
+</div>
+
+<!-- Cover Page -->
+<div class="site-blocks-cover overlay inner-page-cover col-md-11 m-3 mx-auto" data-stellar-background-ratio="0.5">
+  <div class="cover-picture">
+    <h2>{{this.nameEvent}}</h2>
+    <button class="participate-cover">
+      <i class="px-2 py-auto fa fa-user-plus"></i>
+      <span class="px-2 py-1">{{'CORE.Participate'|translate}}</span>
+    </button>
+    <!-- Upload the Cover -->
+    <div *ngIf="imgCoverShowed">
+      <div class="d-flex p-5 picture-download">
+        <input hidden id="uploaderCover" #file type="file" accept='image/*' (change)="previewCover(file.files)" />
+        <label for="uploaderCover" class="mx-auto"></label>
+      </div>
+    </div>
+    <!-- Cover uploaded -->
+    <div *ngIf="!imgCoverShowed">
+      <img [src]="imgcoverURL">
+      <div class="modif">
+        <input hidden id="uploaderCover" #file type="file" accept='image/*' (change)="previewCover(file.files)" />
+        <button type="button" class="btn p-3">
+          <label for="uploaderCover" class="mx-auto my-0">
+            <span>{{'CORE.Change-the-photo'|translate}}</span>
+          </label>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Error Message -->
+<div *ngIf="true" class="row">
+  <div class="d-flex mx-auto">
+    <span>{{'ERROR-MESSAGE.Els-are-incorrects'|translate}}</span>
+  </div>
+</div>
+
+<!-- Confirm -->
+<div class="row mt-3 mb-5">
+  <div class="row d-flex mx-auto container-button">
+    <button (click)="onSubmit()" class="btn-confirm ml-5 my-2">
+      <div class="d-flex py-auto">
+        <span class="px-2">{{'CORE.Confirm'|translate}} </span>
+      </div>
+    </button>
+  </div>
+</div>

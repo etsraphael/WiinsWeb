@@ -1,0 +1,19 @@
+<!-- For the beta -->
+<div *ngIf="false">
+  <div [@Tube]="prepareRoute(outlet)" class="w-100 h-100 bg-not-available">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <!-- Message Coming Soom -->
+  <div class="position-absolute w-100 h-100 container-message">
+    <div class="row my-auto mx-0 h-100">
+      <span class="m-auto avaiblable-message">{{'CORE.Coming-soon'|translate}}</span>
+    </div>
+  </div>
+</div>
+
+<!-- For the video -->
+<div *ngIf="true">
+  <div [@Tube]="prepareRoute(outlet)" class="w-100 h-100">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>

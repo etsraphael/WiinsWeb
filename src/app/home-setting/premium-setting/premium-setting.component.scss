@@ -1,0 +1,23 @@
+.price-span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card-sold {
+    border-radius: 0.375rem;
+}
+
+.select-container-price {
+    border-radius: 0.375rem;
+    overflow: hidden;
+
+
+    .input-group-prepend span, input {
+        border: 0;
+        border-radius: 0;
+    }
+
+    .input-group-text {
+        background: #f6f6f6;
+    }
+}

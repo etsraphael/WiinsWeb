@@ -1,0 +1,162 @@
+<!-- Var -->
+<input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg" (change)=openCrooperMusicImg($event) />
+<span hidden>{{pictureUrl}}</span>
+
+<!-- Component Video -->
+<div class="container mb-5">
+  <!-- Sample Visual -->
+  <div class="container-example row py-3">
+    <div class="row mx-0">
+      <div class="title mr-auto ml-4">
+        <span>{{'CORE.Example'|translate}}</span>
+      </div>
+    </div>
+    <div class="row my-2 w-100 mx-3">
+      <div class="row mx-0 py-3 oneMusic w-100">
+        <div class="col-md-1 my-auto">
+         <span class="row">
+           <i class="fa fa-play mx-auto"></i>
+         </span>
+        </div>
+        <div class="col-md-1">
+          <div class="avatar row">
+            <img class="img-fluid mx-auto" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 name my-auto">
+         <span class="ml-1 row title"><p>{{'CORE.Title'|translate}}</p></span>
+        </div>
+        <div class="col-md-4 row feat">
+         <span class="my-auto mr-4"><p>{{'CORE.With'|translate}} : </p></span>
+         <div class="avatar">
+           <img class="img-fluid" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png">
+         </div>
+         <div class="avatar">
+            <img class="img-fluid" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png">
+          </div>
+        </div>
+        <div class="col-md-1 mt-2">
+          <i class="fa fa-heart"></i>
+        </div>
+        <div class="col-md-1 mt-2">
+          <button class="option-button" id="navbarOption" data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-ellipsis-h"></i>
+          </button>
+          <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item">{{'PUBLICATION.generate-t-id'|translate}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Info playlist -->
+  <div class="my-4 pb-5">
+    <div class="title ml-4">
+      <span>{{'WIINS-MUSIC.Creation-playlist'|translate}}</span>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-md-5 my-auto">
+        <div class="row container-img mx-auto" [ngClass]="{'no-border': pictureImg}" >
+          <label for="pic" class="my-auto img-upload" *ngIf="!pictureImg">
+            <i class="fa fa-camera fa-2x"></i>
+          </label>
+          <img *ngIf="pictureImg" [src]="pictureImg">
+          <div class="edit-picture row" *ngIf="pictureImg">
+            <label for="pic" class="ml-2 my-auto">
+              <span>{{'CORE.Edit'|translate}}</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <form class="information" [formGroup]="playlistForm">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>{{'WIINS-MUSIC.Playlist-name'|translate}}</label>
+                <input type="text" class="form-control" formControlName="title">
+              </div>
+            </div>
+            <div class="d-flex mt-4">
+              <i class="ml-auto pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{'is-valid': !f.title.errors}"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>{{'WIINS-MUSIC.id-musics'|translate}}</label>
+                <input [placeholder]="'WIINS-MUSIC.copy-h-id-music'|translate"
+                type="text" class="form-control boxId pl-4" [formControl]="musicId"
+                [ngClass]="{'border-red': notfounded}">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Array Music -->
+  <div class="row mx-0 array-music mt-5" cdkDropList (cdkDropListDropped)="drop($event)">
+    <div class="newMusic row mx-0" *ngFor="let m of musicList; let i = index" cdkDrag>
+      <div class="row m-auto w-100">
+        <div class="col-md-1 my-auto">
+          <div class="row">
+            <div class="mx-auto">
+              <span>{{i+1}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 idMusic row mx-0" *ngIf="m.name === null">
+          <span class="col-md-7 mx-auto my-auto pt-1" type="text">
+            <p>{{'WIINS-MUSIC.pending-music'|translate}}</p>
+          </span>
+        </div>
+        <div class="col-md-10 row mx-0 newMusic" *ngIf="m.name !== null">
+          <div class="col-md-1 my-auto">
+           <span class="row">
+             <i class="fa fa-play mx-auto"></i>
+           </span>
+          </div>
+          <div class="col-md-1 my-auto">
+            <div class="avatar row">
+              <img class="img-fluid mx-auto" [src]="m.profile.pictureprofile" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 name my-auto">
+           <span class="ml-1 row title"><p>{{m.name}}</p></span>
+          </div>
+          <div class="col-md-4 row feat my-auto">
+           <span class="my-auto mr-4"><p>{{'CORE.With'|translate}} : </p></span>
+           <div class="avatar">
+             <img class="img-fluid" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" alt="">
+           </div>
+           <div class="avatar">
+              <img class="img-fluid" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/profile-placeholder.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-2 my-auto">
+            <i class="fa fa-heart"></i>
+          </div>
+        </div>
+        <div class="col-md-1 my-auto">
+          <div class="row">
+            <div class="mx-auto">
+              <i class="fa fa-times" (click)="delete(m)" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mx-0 w-100 my-3">
+      <div class="col-md-4 row mx-auto">
+        <div class="mx-auto">
+          <button class="btn btn-send" type="button" (click)="submit()">
+            <em class="fa fa-arrow-circle-o-right"></em>
+            <span class="mx-2">{{'CORE.Send'|translate}}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

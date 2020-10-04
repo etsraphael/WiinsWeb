@@ -1,0 +1,86 @@
+.card {
+  border: 1px solid #f4f4f4;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 40px -12px #999;
+  box-shadow: 2px 2px 40px -12px #999;
+  position: relative;
+}
+
+.description {
+  height: 60%;
+}
+
+.player {
+  height: 40%;
+
+  .progress-bar {
+    background-color: grey;
+    height: 4px;
+    border-radius: 5px;
+  }
+
+  .fa-backward {
+    padding: 4px 10px 0 0;
+  }
+
+  .fa-play {
+    padding: 4px 0px 4px 4px;
+  }
+
+  .fa-forward {
+    padding: 5px 0px 0 4px;
+  }
+
+  .fa-pause {
+    padding: 4px 0 0 0;
+  }
+}
+
+button {
+  border: none;
+}
+
+.album {
+  img {
+    height: 13rem;
+    border-radius: 11px;
+    box-shadow: 2px 2px 40px -12px #999;
+    object-fit: cover;
+  }
+}
+
+.information {
+  span {
+    color: grey;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .group {
+    font-size: 1rem;
+  }
+}
+
+
+button {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.fa {
+  font-size: 1.4rem;
+  color: #9e9e9e;
+  padding: 7px 0px 0 1px;
+}
+
+button:hover {
+  background-color: #dadada;
+  .fa {
+    color: white;
+    transition: 0.2s;
+  }
+}
+

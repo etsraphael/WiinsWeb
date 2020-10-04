@@ -1,0 +1,84 @@
+.oneMember {
+  border-radius: 15px;
+
+
+  .container-img-profile {
+    img {
+      object-fit: cover;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border: white solid 2px;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+      -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    }
+  }
+
+  .container-pseudo {
+    span {
+      color: #88898a;
+    }
+    .pseudo {
+      font-weight: 500 !important;
+      font-size: 1.1rem;
+    }
+
+    .role {
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+
+  .dropdown-menu {
+    cursor: pointer;
+  }
+
+
+  .dropdown, .dropup {
+    button {
+      display: none;
+      border-radius: 50%;
+      background-color: #eaeaeaa6;
+      border: 0;
+
+      i {
+        color: #88898a;
+        top: 1px;
+        position: relative;
+      }
+    }
+
+  }
+}
+
+.oneMember:hover {
+  background-color: #cbcbcb2e;
+
+
+  .dropdown button, .dropup button {
+    display: block;
+  }
+}
+
+.container-search {
+  input {
+    border-radius: 5px;
+    border: 1px solid #e3e6f0;
+    color: grey;
+  }
+}
+
+.oneSuggest {
+  .profile-img img {
+    height: 2rem;
+    width: 2rem;
+    border: white solid 2px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.175);
+    -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.175);
+    object-fit: cover;
+  }
+}
+
+::ng-deep .mat-autocomplete-panel {
+  border-radius: 9px;
+}

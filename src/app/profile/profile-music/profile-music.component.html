@@ -1,0 +1,58 @@
+<!-- List of Publications  -->
+<div *ngFor="let p of musicProject$ | async" class="my-3">
+  <div class="card row mx-0">
+    <div class="row mx-0 my-auto">
+      <div class="col-md-3 musicImg my-auto py-2">
+        <img class="img-fluid" [src]="p.picture">
+      </div>
+      <div class="col-md-9 my-auto py-2">
+        <div class="row my-3 mx-0">
+          <span class="col-md-3 mr-auto">{{p.visibilityDate | date}}</span>
+          <span class="album-span col-md-5 ml-auto text-center">{{p.name}}</span>
+        </div>
+        <div class="row mx-0 py-3 oneMusic" *ngFor="let m of p.musicList">
+          <div class="col-md-1 my-auto">
+           <span class="row">
+             <i *ngIf="( audioPlaying$ | async)?.file !== m.file || ((musicPlaying$ | async) === false)"
+             class="fa fa-play mx-auto" (click)="controlMusicService.play(m, p.musicList)"></i>
+             <i *ngIf="( audioPlaying$ | async)?.file == m.file && ((musicPlaying$ | async) === true)"
+             class="fa fa-pause mx-auto" (click)="controlMusicService.pause()"></i>
+           </span>
+          </div>
+          <div class="col-md-1">
+            <div class="avatar row">
+              <img class="img-fluid mx-auto" [src]="p.profile.pictureprofile">
+            </div>
+          </div>
+          <div class="col-md-4 name my-auto">
+            <span class="ml-1 row title" [id]="'music' + m._id">
+              <p>{{m.name}}</p>
+            </span>
+          </div>
+          <div class="col-md-4">
+            <div class=" row mx-0 feat" *ngIf="m.feat">
+              <span class="my-auto mr-4"><p>{{'CORE.With'|translate}} : </p></span>
+              <div class="avatar" *ngFor="let p of m.feat">
+                <a [routerLink]="'../../profile/' + p._id">
+                  <img class="img-fluid" [src]="p.pictureprofile">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 mt-2">
+            <i class="fa fa-heart" [ngClass]="{'isLiked': m.isLiked}" (click)="like(m, p._id)"></i>
+          </div>
+          <div ngbDropdown class="col-md-1 mt-2">
+            <button ngbDropdownToggle  class="option-button" id="navbarOption" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-ellipsis-h"></i>
+            </button>
+            <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarOption">
+              <a (click)="getId(m._id)" class="dropdown-item">{{'PUBLICATION.generate-t-id'|translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

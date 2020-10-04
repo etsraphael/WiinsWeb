@@ -1,0 +1,130 @@
+.clickModal, .cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-like,
+.btn-liked {
+  cursor: pointer;
+}
+
+.btn-like {
+  width: 2rem;
+}
+
+.btn-liked {
+  width: 1.75rem;
+}
+
+.cardbox-base {
+  font-weight: 300;
+}
+
+.btn-see-more a {
+  color: white;
+}
+
+.card {
+  border: 0;
+}
+
+.commented {
+  position: relative;
+  border: 2px solid #f4f4f4;
+  background-color: #a0d5572e;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  min-height: 55px;
+
+  span {
+    font-size: 1rem;
+    color: #97d543;
+  }
+
+  .fa {
+    font-size: 1.5rem;
+    color: #8ed433;
+  }
+}
+
+.dropdown-menu {
+  top: 40px !important;
+  left: -126px !important;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) !important;
+  display: block;
+  visibility: hidden;
+  transition: .5s ease all;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: .3s ease all;
+}
+
+.container-btn-play {
+  position: absolute;
+
+  .btn-play {
+    width: 5rem;
+    background: #c7c7c77d;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .btn-play:hover {
+    transition: 0.2s;
+    width: 6rem;
+    background: #b3b3b38c;
+  }
+}
+
+.zone-modal-video {
+  z-index: 1;
+  position: absolute;
+  height: 69%;
+}
+
+.content-list-tag {
+  cursor: pointer;
+  position: absolute;
+  background: white;
+  bottom: calc(100% + 3px);
+  border-radius: 5px;
+  min-height: 4rem;
+  max-height: 13rem;
+  box-shadow: 8px -10px 20px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 8px -10px 20px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 8px -10px 20px 0px rgba(0, 0, 0, 0.45);
+  overflow-y: scroll;
+
+  .oneSuggest:hover {
+    background-color: #f0f0f0;
+  }
+
+  .oneSuggest {
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+      -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+      overflow: hidden;
+      border: 2px solid white;
+      object-fit: cover;
+    }
+
+    p {
+      flex: 0 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

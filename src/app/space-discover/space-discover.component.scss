@@ -1,0 +1,62 @@
+#preloader {
+  padding-top: 13%;
+}
+
+
+.nav {
+  box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .oneHastag {
+    display: inline-block;
+  }
+
+  .title {
+    border-right: 1px solid #d1d1d1;
+  }
+
+  span {
+    color: #767676;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+    line-height: 1.6;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: #82a5f4;
+    transition: 0.1s;
+  }
+
+  .active span {
+    color: #82a5f4 !important;
+  }
+
+  .container-scroll {
+    overflow-x: scroll;
+    display: -webkit-box;
+    white-space: nowrap;
+  }
+
+  .container-scroll:after {
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    right: 0;
+    display: block;
+    width: 100px;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff 95%,#fff);
+  }
+
+  .oneHastag:last-child{
+    padding-right: 3rem;
+  }
+
+}

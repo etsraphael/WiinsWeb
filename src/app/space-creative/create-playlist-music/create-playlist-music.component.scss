@@ -1,0 +1,153 @@
+@import 'src/app/space-creative/create-music-project/create-music-project.component.scss';
+
+.oneMusic {
+  background-color: #ececec;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+
+  .fa-play, .fa-pause, .fa-ellipsis-h {
+    background-color: white;
+  }
+
+  .option-button  {
+    display: block;
+  }
+
+  .dropdown-menu {
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    background-color: #b7ceb7;
+  }
+
+  .dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  .option-button {
+    border: 0;
+    background: transparent;
+
+    .fa-ellipsis-h{
+      color: grey;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 100%;
+      padding: 8px 9px 6px 10px;
+      width: 32px;
+      height: 32px;
+      background-color: #b7ceb7;
+    }
+  }
+
+  .is-valid {
+    color: #8ed433;
+    transition: 0.5s;
+  }
+}
+
+.newMusic {
+  border-bottom: 1px solid #e4e4e4;
+  height: 100px;
+}
+
+.idMusic {
+  input {
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #E3E3E3;
+    text-align: center;
+  }
+}
+
+.cdk-drag {
+  width: 100%;
+}
+
+.fa-times {
+  color: grey;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+p {
+  margin-bottom: 0;
+  text-align: center;
+  color: grey;
+}
+
+.boxId::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.border-red {
+  border: 1px solid red !important;
+}
+
+.feat {
+  .avatar:not(:first-child) {
+    margin: 0px 0px 0px -16px !important;
+  }
+}
+
+.fa-heart{
+  color: white !important;
+  background-image: linear-gradient(to right top, #e91010, #ff557d, #ff5272, #ff4e4e, #ff0000);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  border: #d9d9d9 solid 1px;
+  padding: 7px 7px 6px 7px;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  img:hover{
+    width: 55px;
+    height: 55px;
+    transition: 0.3s;
+  }
+}
+
+.fa-play {
+  cursor: pointer;
+  padding: 10px 10px 10px 12px;
+  border-radius: 50%;
+  color: grey;
+}
+
+
+
+

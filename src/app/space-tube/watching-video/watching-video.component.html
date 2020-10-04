@@ -1,0 +1,215 @@
+<!-- Component Body -->
+<div *ngIf="!(loading$|async) && (tubePage$|async)">
+  <!-- Main video & comments -->
+  <div class="container-fluid px-0 shadow">
+    <div class="row container-video-and-comment mx-0">
+      <div class="col-md-8 container-video h-100 px-0">
+        <video controls class="video-file w-100 h-100" controlsList="nodownload" autoplay
+          [poster]="(tubePage$|async).tube.posterLink">
+          <source [src]="(tubePage$|async).tube.videoLink" type="video/mp4">
+          <source [src]="(tubePage$|async).tube.videoLink" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-4 h-100 px-0">
+        <div class="container-list-comment-base w-100 h-100">
+          <div class="card-header row mx-0 py-1 px-1">
+            <div class="col-2 my-auto">
+              <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
+            </div>
+            <div class="col-6 pt-1 my-auto container-info-header">
+              <div class="container">
+                <div class="row">
+                  <h4 class="mb-0">{{(tubePage$|async).tube.profile._meta.pseudo}}</h4>
+                </div>
+                <div class="row">
+                  <span class="number-follower">N.A {{'CORE.followers'|translate}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 my-auto pt-1">
+              <button type="button" class="btn btn-warning">
+                <span>{{'CORE.Subscribe'|translate}}</span>
+              </button>
+            </div>
+          </div>
+          <!-- Comment List -->
+          <div class="container-list-comment">
+            <div class="oneComment mb-2" *ngFor="let c of (tubePage$|async).comments; let first = first; let i = index">
+              <hr class="mb-2 mt-0 mx-2" *ngIf="!first">
+              <div class="row mx-0">
+                <div class="col-md-3 pt-2 d-flex justify-content-center">
+                  <a [routerLink]="'/profile/' + c.idProfil._id">
+                    <img class="avatar-oneComment rounded-circle" [src]="c.idProfil.pictureprofile">
+                  </a>
+                </div>
+                <div class="col-md-7 px-0 my-auto">
+                  <span>
+                    <h4 class="d-inline pseudo-comment" [routerLink]="'/profile/' + c.idProfil._id">
+                      {{c.idProfil._meta.pseudo}}</h4>
+                    <p class="d-inline ml-1">{{c.text}}</p>
+                    <div class="d-inline mx-2 btn-response">
+                      <span class="d-inline-block">{{'CORE.reply..'|translate}}</span>
+                    </div>
+                  </span>
+                </div>
+                <div ngbDropdown class="col-md-2 d-flex justify-content-center my-auto px-0">
+                  <button ngbDropdownToggle class="option-one-comment">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </button>
+                  <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button ngbDropdownItem *ngIf="(myprofile|async)._id !== c.idProfil._id">Signalez</button>
+                    <button ngbDropdownItem *ngIf="(myprofile|async)._id == c.idProfil._id">Modifier</button>
+                    <button ngbDropdownItem *ngIf="(myprofile|async)._id == c.idProfil._id">Supprimer</button>
+                  </div>
+                  <i class="fa fa-heart" [ngClass]="{'liked-comment': c.liked}"></i>
+                </div>
+              </div>
+              <div *ngIf="(c.like > 0 || c.response > 0)"
+                class="row mx-0 d-flex justify-content-center container-stats-comment pt-1">
+                <div class="d-inline mx-2" *ngIf="c.like > 0"><span>{{c.like}} like(s)</span></div>
+                <div class="d-inline mx-2" *ngIf="c.response > 0"><span>{{c.response}} reponse(s)</span></div>
+              </div>
+              <!-- <div class="container" *ngIf="(response$ | async)[0]?.baseComment == c._id">
+                <div *ngFor="let r of (response$ | async)" class="row oneResponse">
+                  <div class="col-md-1 line-response"></div>
+                  <div class="col-md-3 pt-2 d-flex justify-content-center">
+                    <a [routerLink]="'/profile/' + r.comment(myprofile|async)._id">
+                      <img class="avatar-comment rounded-circle" [src]="r.commentProfile.pictureprofile">
+                    </a>
+                  </div>
+                  <div class="col-md-9 my-auto py-2 px-0 container-input-response">
+                    <h4 class="d-inline pseudo-comment"
+                      [routerLink]="'/profile/' + r.comment(myprofile|async)._id">{{r.commentProfile._meta.pseudo}}</h4>
+                    <span class="d-inline mx-2">{{r.text}}</span>
+                    <span class="d-inline-block mx-2 btn-like-response">
+                      <i class="fa fa-heart mx-2" [ngClass]="{'liked-comment': r.liked}"></i>
+                      {{r.like}} like(s)
+                    </span>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="container container-new-response mt-2 mb-4" *ngIf="indexResponse == i">
+                <div class="row">
+                  <div class="col-md-1 line-response"></div>
+                  <div class="col-md-2">
+                    <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
+                  </div>
+                  <div class="col-md-9 my-auto py-2 container-input-response" (keydown.enter)="false">
+                    <span #responseComment class="span-new-response" contenteditable
+                      placeholder="Write your response here.."></span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="container-card-footer w-100 container-footer-comment">
+          <!-- <div class="row container-list-friend shadow mx-4" *ngIf="(resultsProfile$ | async)?.length > 0">
+          <div class="container">
+            <div class="row py-2 oneSuggest" *ngFor="let p of (resultsProfile$ | async)">
+              <div class="col-md-3 px-0 d-flex justify-content-center">
+                <img class="rounded-circle" [src]="p.pictureprofile">
+              </div>
+              <div class="col-md-9 my-auto pl-0">
+                <span>
+                  <p class="mb-0">{{p._meta.pseudo}}</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+          <div class="card-footer mx-4">
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-center">
+                <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
+              </div>
+              <div class="col-md-9 my-auto py-2 container-new-comment" (keydown.enter)="false">
+                <span class="content-comment-span w-100" #newComment contenteditable
+                  placeholder="Write your comment here.."></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- List other videos -->
+  <div class="container-card-video container-fluid">
+    <div class="row mx-0 mt-4">
+      <div class="col-md-3 my-2 px-2" *ngFor="let t of (tubePage$|async).tubes">
+        <div class="card">
+          <div class="poster-video" [routerLink]="['../watching-video/' + t.tube._id ]">
+            <img class="profile" [src]="t.tube.profile.pictureprofile">
+            <div class="time px-2">
+              <i class="fa fa-clock-o"></i>
+            </div>
+            <img class="photo-video" [src]="t.tube.posterLink">
+          </div>
+          <div class="card-body py-1 px-3">
+            <h4><strong>{{t.tube.name}}</strong></h4>
+            <div class="row mx-0">
+              <p class="mr-auto">{{t.tube.totalView}}K views</p>
+              <p class="ml-auto">0min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Animation -->
+<div *ngIf="(loading$|async)">
+  <!-- Main video & comments -->
+  <div class="container-fluid px-0 shadow">
+    <div class="row container-video-and-comment mx-0">
+      <div class="col-md-8 container-video h-100 px-0 bg-gradient-loading"></div>
+      <div class="col-md-4 h-100 px-0">
+        <div class="container-list-comment-base w-100 h-100">
+          <div class="card-header row mx-0 py-1 px-1">
+            <div class="col-2 my-auto">
+              <div class="rounded-circle bg-gradient-loading avatar-loading"></div>
+            </div>
+            <div class="col-6 pt-1 my-auto container-info-header">
+              <div class="container">
+                <div class="row">
+                  <h4 class="mb-0">{{(tubePage$|async)?.tube.profile._meta.pseudo}}</h4>
+                </div>
+                <div class="row">
+                  <span class="number-follower">N.A {{'CORE.followers'|translate}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 my-auto pt-1">
+              <button type="button" class="btn btn-warning">
+                <span>{{'CORE.Subscribe'|translate}}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-card-footer w-100 container-footer-comment">
+          <div class="card-footer mx-4">
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-center">
+                <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
+              </div>
+              <div class="col-md-9 my-auto py-2 container-new-comment">
+                <span class="content-comment-span w-100" contenteditable placeholder="Write your comment here.."></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- List other videos -->
+  <div class="container-card-video container-fluid">
+    <div class="row mx-0 mt-4">
+      <div class="col-md-3 my-2 px-2" *ngFor="let t of [1,2,3,4,5,6,7,8]">
+        <div class="card bg-gradient-loading fake-card">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

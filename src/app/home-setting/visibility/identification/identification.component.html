@@ -1,0 +1,56 @@
+<!-- Component Body -->
+
+<!-- Friends identification -->
+<div class="card row my-5">
+  <div class="card-body row">
+    <div class="col-md-1 mt-4">
+      <input class="size-button d-flex mx-auto" type="radio">
+    </div>
+    <div class="col-md-10">
+      <h5 class="card-title">{{'SETTING.profile.My-friends-can-identify-me'|translate}}</h5>
+      <p class="card-text">{{'SETTING.profile.My-friends-can-identify-me-D'|translate}}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Friends tagged -->
+<div class="card row my-5">
+  <div class="card-body row">
+    <div class="col-md-1 mt-4">
+      <input class="size-button d-flex mx-auto" type="radio">
+    </div>
+    <div class="col-md-10">
+      <h5 class="card-title">{{'SETTING.profile.My-nobody-can-identify-me'|translate}}</h5>
+      <p class="card-text">{{'SETTING.profile.My-nobody-can-identify-me-D'|translate}}</p>
+    </div>
+  </div>
+</div>
+
+<!-- People can't identified me -->
+<div class="card row my-5">
+  <div class="card-body row">
+    <div class="col">
+      <div class="mx-3 my-2">
+        <h5 class="card-title">{{'SETTING.profile.List-of-people-who-cannot-identify-me-on-a-publication'|translate}}</h5>
+        <p class="card-text">{{'SETTING.profile.List-of-people-who-cannot-identify-me-on-a-publication-D'|translate}}</p>
+        <div class="row">
+          <div *ngIf="searchbar" class="input-group col-md-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" [placeholder]="'PLACEHOLDER.Type-t-pseudo'|translate" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <a (click)="searchbar = !searchbar" class="ml-auto btn btn-primary add-user">{{'CORE.Add-someone'|translate}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container list-pseudo">
+    <div class="m-2">
+      <button type="button" class="btn btn-light">
+        BadPerson <span class="badge badge-light">x</span>
+      </button>
+    </div>
+  </div>
+</div>

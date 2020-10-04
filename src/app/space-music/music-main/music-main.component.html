@@ -1,0 +1,84 @@
+<!-- Component Body -->
+<div class="container-section mt-2">
+  <!-- Menu -->
+  <div class="space-playlist my-4" *ngIf="(menuPlaylist$|async); let m">
+    <!-- Following Project -->
+    <div *ngIf="m.followingUsersPlaylist.length !== 0">
+      <div class="linePlaylist" *ngIf="m.followingUsersPlaylist; let p">
+        <div class="container header">
+          <div class="header-title row">
+            <span class="title mx-2">{{'MAIN-MUSIC.My-wiinsers'|translate}}</span>
+            <span *ngIf="m.followingUsersPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
+          </div>
+        </div>
+        <div class="row container-list mx-0 p-3">
+          <div class="card mx-3" *ngFor="let item of p" [routerLink]="['../playlist/' + item._id]"
+            [style.background-image]="'url(' + item.picture + ')'">
+            <div class="btnPlay p-2">
+              <i class="fa fa-play fa-2x"></i>
+            </div>
+            <div class="footer-info w-100">
+              <span class="title">{{item.name}}</span>
+              <div class="row" *ngIf="false">
+                <span class="views col-md-5">4k views</span>
+                <span class="views col-md-5">
+                  <i class="fa fa-heart"></i> 200
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trending Project -->
+    <div *ngIf="m.trendPlaylist.length !== 0">
+      <div class="linePlaylist" *ngIf="m.trendPlaylist; let p">
+        <div class="container header">
+          <div class="header-title row">
+            <span class="title mx-2">{{'CORE.Trend'|translate}}</span>
+            <span *ngIf="m.trendPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
+          </div>
+        </div>
+        <div class="row container-list mx-0 p-3">
+          <div class="card mx-3" *ngFor="let item of p" [routerLink]="['../playlist/' + item._id]"
+            [style.background-image]="'url(' + item.picture + ')'">
+            <div class="btnPlay p-2">
+              <i class="fa fa-play fa-2x"></i>
+            </div>
+            <div class="footer-info w-100">
+              <span class="title">{{item.name}}</span>
+              <div class="row" *ngIf="false">
+                <span class="views col-md-5">4k views</span>
+                <span class="views col-md-5">
+                  <i class="fa fa-heart"></i> 200
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Project -->
+    <div *ngIf="m.topPlaylist.length !== 0">
+      <div class="linePlaylist" *ngIf="m.topPlaylist; let p">
+        <div class="container header">
+          <div class="header-title row">
+            <span class="title mx-2">{{'MAIN-MUSIC.Tops'|translate}}</span>
+            <span *ngIf="m.topPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-coutries']">| {{'CORE.Show-more'|translate}}</span>
+          </div>
+        </div>
+        <div #secondLine class="row container-list mx-0 p-3" *ngIf="p.length !== 0">
+          <div *ngFor="let item of p" [routerLink]="['../playlist/' + item._id]" class="card mx-3">
+            <img class="img-fluid h-100 w-100" [src]="item.picture" alt="">
+            <div class="btnPlay p-2">
+              <i class="fa fa-play fa-2x"></i>
+            </div>
+            <div class="footer-info w-100">
+              <span class="title mb-2">{{item.name}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="mini-player-music mb-1" *ngIf="musicList$ | async; let p">
+  <div class="progress-bar" [style.width.%]="progress"></div>
+  <div class="container-img" *ngIf="audio$ | async; let m">
+    <img *ngIf="m.imgUrl" [(src)]="m.imgUrl">
+  </div>
+  <div class="container-description h-100" *ngIf="audio$ | async; let m">
+    <div class="tile-and-autor row mx-0">
+      <div class="col-md-9 my-auto container-name">
+        <div class="row mx-auto">
+          <h1>{{m.name}}</h1>
+        </div>
+        <div class="row mx-auto">
+          <span *ngIf="p.name">{{p.name}}</span>
+          <span *ngIf="p.name == null">Single</span>
+        </div>
+      </div>
+      <div class="col-md-3 px-0">
+        <div class="mt-2">
+          <i class="fa fa-heart" [ngClass]="{'isLiked': m.isLiked}" (click)="like(m)"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row controls mx-0">
+      <div class="col-md-4 row mx-0 h-100">
+        <i class="m-auto fa fa-backward" (click)="controlMusicService.previous(m, p, progress)"></i>
+      </div>
+      <div class="col-md-4 row mx-0 h-100">
+        <i *ngIf="!(musicPlaying$ | async)" class="m-auto fa fa-play" (click)="controlMusicService.continue()"></i>
+        <i *ngIf="(musicPlaying$ | async)" class="m-auto fa fa-pause" (click)="controlMusicService.pause()"></i>
+      </div>
+      <div class="col-md-4 row mx-0 h-100">
+        <i class="m-auto fa fa-forward" (click)="controlMusicService.next(m, p)"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div hidden *ngIf="(audio$ | async); let m">
+  <audio #currentMusic autoplay>
+    <source [src]="m.file" type="audio/mpeg">
+  </audio>
+</div>

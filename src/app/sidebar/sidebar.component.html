@@ -1,0 +1,30 @@
+<div class="sidebar">
+
+  <!-- Space Zone -->
+  <div class="container-brand">
+    <a class="navbar-brand row d-flex justify-content-center w-100 h-100 mx-0" [routerLink]="['/SpaceStory']">
+      <span class="brand my-auto pl-3">Wiins</span>
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav p-3">
+      <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item">
+        <a [routerLink]="[menuItem.path]" class="w-100 row mx-0">
+          <div class="d-inline-block">
+            <img [src]="'./../../assets/png/' + menuItem.icon + '.png'">
+          </div>
+          <div class="d-inline-block pl-3 my-auto">
+            <p>{{menuItem.title | translate}}</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mini player music -->
+  <app-mini-player-music *ngIf="(audio$|async)"></app-mini-player-music>
+
+  <!-- Mini chat -->
+  <app-mini-chat></app-mini-chat>
+
+</div>

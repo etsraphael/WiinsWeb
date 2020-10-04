@@ -1,0 +1,48 @@
+<!-- Header's Profil -->
+<div *ngIf="(page$ | async) let p" class="container-cover-picture position-relative"
+  [style.background-image]="'url(' + p.picturecover + ')'">
+  <div class="container-header-bar row mx-0 w-100 position-absolute pt-1">
+    <div class="col-3 ml-3 mr-auto text-left">
+      <span class="content-title">{{p.name}}</span>
+    </div>
+    <div class="col-3 mr-auto text-left"></div>
+  </div>
+  <img class="cover-picture" [src]="p.picturecover">
+</div>
+
+<!-- NavBar Admin -->
+<div class="container container-nab-bar py-3">
+  <div class="row">
+    <div class="col-4 col-md-5">
+      <div class="d-flex justify-content-center row mx-0">
+        <div class="col-6">
+          <div routerLinkActive="active" [routerLink]="linkHome" class="card py-3 h-100 border-left-primary text-center font-weight-bold">
+            {{'CORE.Story'|translate}}
+          </div>
+        </div>
+        <div class="col-6">
+          <div routerLinkActive="active" [routerLink]="linkTeam" class="card py-3 h-100 border-left-success text-center font-weight-bold">
+            {{'CORE.Members'|translate}}
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 col-md-2 d-flex container-picture-img justify-content-center">
+      <img class="mx-auto img-responsive rounded-circle picture-profile-img position-absolute" [src]="(page$ | async)?.pictureprofile" alt="">
+    </div>
+    <div class="col-4 col-md-5">
+      <div class="d-flex justify-content-center row mx-0">
+        <div class="col-6">
+          <div class="card py-3 h-100 border-left-info text-center font-weight-bold">
+            {{(page$|async)?.followers}} {{'CORE.Followers'|translate}}
+          </div>
+        </div>
+        <div class="col-6">
+          <div routerLinkActive="active" [routerLink]="linkSetting" class="card py-3 h-100 border-left-warning text-center font-weight-bold" *ngIf="myrole === 'pr'">
+            {{'CORE.Setting'|translate}}
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

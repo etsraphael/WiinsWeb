@@ -1,0 +1,53 @@
+.logo-title {
+  border-radius: 50%;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
+  border: 3px solid #e0e0e0;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+.card {
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
+
+  input {
+    cursor: pointer;
+  }
+
+  button {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 14px 2px rgba(39, 39, 39, 0.2);
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    span {
+      color: white;
+      font-size: 1.1rem;
+    }
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #2e4ff2, #2BC0E4);
+  }
+}
+
+span {
+  color: #6c757d;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.fa-eye {
+  background: -webkit-linear-gradient(#63fc47, #356dd2);
+  opacity: 0.9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

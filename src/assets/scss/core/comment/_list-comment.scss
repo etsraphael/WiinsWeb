@@ -1,0 +1,177 @@
+.container-footer-comment,
+.container-list-comment-base {
+  .avatar-comment {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    border: 2px solid white;
+  }
+}
+
+.container-list-comment-base {
+  .line-response {
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+  }
+
+  .oneResponse {
+    min-height: 3rem;
+  }
+
+  .option-one-comment {
+    position: absolute;
+    left: -12px;
+    top: -5px;
+    border: 0;
+    color: #8080806b;
+    background: white;
+    border-radius: 50%;
+    height: 24px;
+    display: none;
+  }
+
+  .dropdown-menu {
+    left: -8rem !important
+  }
+
+  .container-new-response {
+
+    .span-new-response:empty:before {
+      content: attr(placeholder);
+      display: block;
+      /* For Firefox */
+    }
+  
+    .container-input-response {
+      cursor: text;
+      border: #dadada solid 1px;
+      border-radius: 9px;
+    }
+  
+  }
+
+  .liked {
+    color: red;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .avatar-oneComment {
+    object-fit: cover;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .oneComment:hover {
+    .option-one-comment {
+      display: block;
+    }
+  }
+
+
+.oneComment {
+
+    .fa-heart {
+      color: #80808054;
+      cursor: pointer;
+    }
+  
+    .fa-heart.liked-comment, .fa-heart:hover {
+      color: #ff4646;
+    }
+  
+    .pseudo-comment {
+      cursor: pointer;
+    }
+  
+    .btn-response {
+      cursor: pointer;
+    }
+  
+    .btn-response:hover {
+      color: #5f5fe8;
+    }
+  
+    .avatar-comment {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+  }
+  
+  .btn-response, .btn-like-response {
+    font-size: 0.8rem;
+    color: grey;
+  
+  }
+  .btn-like-response {
+    .fa-heart {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+.container-footer-comment {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+
+
+  .container-list-friend {
+    position: absolute;
+    bottom: calc(100% - 1rem);
+    left: 24%;
+    width: 16rem;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+
+    .oneSuggest:hover {
+      background-color: #a4c3f242;
+    }
+  }
+
+  .oneSuggest {
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: cover;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+      -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+      border: 2px solid white;
+    }
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 0 1 auto;
+      min-width: 0;
+    }
+  }
+
+  .container-new-comment {
+    border: #dadada solid 1px;
+    border-radius: 9px;
+  
+    span {
+      cursor: text;
+      display: inline-block;
+    }
+  
+    :empty:before {
+      content: attr(placeholder);
+      display: block;
+      /* For Firefox */
+    }
+  }
+
+
+}

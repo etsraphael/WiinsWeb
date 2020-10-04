@@ -1,0 +1,60 @@
+<!-- Component Body -->
+<div class="card" *ngIf="(musicList$ | async); let m">
+  <!-- Music List -->
+  <div class="oneMusic row mx-0 py-3" *ngFor="let item of m.musicList; let i = index">
+    <div class="col-md-1 my-auto">
+      <span class="row index">
+        <!-- Index -->
+        <p class="mx-auto"
+          *ngIf="(audioPlaying$|async)?.file !== item.file || ((musicPlaying$ | async) === false)">{{i+1}}</p>
+        <!-- Icon Play -->
+        <i *ngIf="(audioPlaying$|async)?.file !== item.file || ((musicPlaying$ | async) === false)"
+          class="mx-auto fa fa-play" (click)="controlMusicService.play(item, m.musicList)"></i>
+        <!-- Icon Pause -->
+        <i *ngIf="(audioPlaying$|async)?.file == item.file && ((musicPlaying$ | async) === true)"
+          class="mx-auto fa fa-pause" (click)="controlMusicService.pause()"></i>
+      </span>
+    </div>
+    <div class="col-md-1">
+      <div class="avatar row">
+        <img [routerLink]="'/profile/' + item.profile._id" class="img-fluid mx-auto"
+          [src]="item.profile.pictureprofile" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 name">
+      <span class="ml-1 row title">
+        <p>{{item.name}}</p>
+      </span>
+      <span class="ml-1 row pseudo">
+        <p>{{item.profile._meta.pseudo}}</p>
+      </span>
+    </div>
+    <div class="col-md-4 row feat">
+      <span *ngIf="false" class="mt-3 mr-4">
+        <p>{{'CORE.With'|translate}} : </p>
+      </span>
+      <div *ngIf="false" class="avatar">
+        <img class="img-fluid"
+          src="https://images.unsplash.com/photo-1534664393936-5220914620f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+          alt="">
+      </div>
+      <div *ngIf="false" class="avatar">
+        <img class="img-fluid"
+          src="https://images.unsplash.com/photo-1533629087757-3c6c8733d553?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+          alt="">
+      </div>
+    </div>
+    <div class="col-md-2 mt-2">
+      <i class="fa fa-heart" [ngClass]="{'isLiked': item.isLiked}" (click)="like(item)"></i>
+    </div>
+  </div>
+  <!-- Empty playlist -->
+  <div class="container" *ngIf="m.musicList.length == 0">
+    <div class="row my-5">
+      <div class="m-auto row">
+        <i class="fa fa-5x fa-clock-o"></i>
+        <span class="my-auto mx-3 error-message">{{'ERROR-MESSAGE.t-playlist-unvalaible'|translate}}</span>
+      </div>
+    </div>
+  </div>
+</div>

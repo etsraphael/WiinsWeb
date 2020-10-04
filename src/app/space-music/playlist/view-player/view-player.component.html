@@ -1,0 +1,38 @@
+<!-- Component Body -->
+<div class="card h-100">
+  <!-- Music List -->
+  <div *ngIf="musicList$ | async; let p" class="h-100">
+    <!-- If a music was chosen -->
+    <div class="description row mx-0 h-100" *ngIf="audio$ | async; let m">
+      <!-- Info -->
+      <div class="col-8">
+        <div class="row h-100">
+          <div class="col-md-7 album my-auto">
+            <img class="img-fluid" [src]="m.imgUrl">
+          </div>
+          <div class="col-md-5 information my-auto">
+            <div class="name">
+              <span>{{m.name}}</span>
+            </div>
+            <div class="group">
+              <span>{{m.profile._meta.pseudo}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Control and like -->
+      <div class="btn-description col-4 my-auto">
+        <div class="row">
+          <div class="mx-auto">
+            <button class="mx-2">
+              <i class="fa fa-heart"></i>
+            </button>
+            <button class="mx-2" *ngIf="false">
+              <i class="fa fa-random"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

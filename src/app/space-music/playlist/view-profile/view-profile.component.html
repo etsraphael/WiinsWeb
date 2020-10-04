@@ -1,0 +1,42 @@
+<!-- Component Body -->
+<div class="card h-100 card-profile" *ngIf="artist$ | async; let p">
+  <!-- Cover picture -->
+  <div class="background-cover">
+    <img class="w-100" [src]="p.picturecover">
+  </div>
+  <!-- Header Card -->
+  <div class="header w-100">
+    <div class="row p-4 m-4">
+      <div class="col-md-4">
+        <div class="row containerImgProfile">
+          <img class="mx-auto img-fluid" [src]="p.pictureprofile">
+        </div>
+      </div>
+      <div class="col-md-8 my-auto descriptionProfile">
+        <div class="row pseudo">
+          <span>{{p._meta.pseudo}}</span>
+        </div>
+        <!-- <div class="row lastActif">
+          <span>Active 13h ago</span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Card Footer -->
+  <div class="footer container-button row my-auto w-100 mx-0">
+    <div class="row mx-auto">
+      <div class="ml-auto my-auto">
+        <button [routerLink]="'/profile/' + p._id" class="mx-auto btn-create-tube">
+          <i class="my-auto fa fa-leaf px-2"></i>
+          <span class="mx-2">{{"CORE.Profile"| translate}}</span>
+        </button>
+      </div>
+      <div class="mx-2 my-auto">
+        <button class="mx-auto btn-group">
+          <i class="my-auto fa fa-leaf px-2"></i>
+          <span class="mx-2">{{"CORE.Follow"| translate}}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

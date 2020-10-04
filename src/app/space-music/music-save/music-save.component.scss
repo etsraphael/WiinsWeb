@@ -1,0 +1,109 @@
+.filter {
+  input {
+    padding: 4px 4px 4px 25px;
+    border-radius: 25px;
+    box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15);
+    color: #7D7A71;
+    border: 0;
+    height: 45px;
+    width: 100%;
+  }
+
+  input:hover,
+  input:focus-within {
+    box-shadow: 0 28px 32px rgba(255, 255, 255, 0.25), 0 1px 35px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card {
+  border: 0;
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+
+.oneMusic:hover {
+  .index p {
+    display: none;
+  }
+
+  .fa-play {
+    display: block;
+  }
+}
+
+.fa-play,
+.fa-pause {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fa-play {
+  padding: 10px 10px 10px 12px;
+  display: none;
+
+}
+
+.fa-pause {
+  padding: 10px 11px 10px 11px;
+}
+
+.avatar {
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e6e6e6;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  img:hover {
+    width: 55px;
+    height: 55px;
+    transition: 0.3s;
+  }
+}
+
+span {
+  color: grey;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.name {
+  .title {
+    font-size: 1.1rem
+  }
+
+  .pseudo {
+    font-size: 0.9rem
+  }
+}
+
+.feat {
+  .avatar:not(:first-child) {
+    margin: 0px 0px 0px -16px !important;
+  }
+}
+
+
+.card>.oneMusic:hover {
+  cursor: pointer;
+  background-color: #ececec;
+}
+
+.fa-times {
+  color: rgb(192, 192, 192);
+  transition: 0.3s;
+}
+
+.fa-times:hover {
+  font-size: 24px;
+  transition: 0.3s;
+}

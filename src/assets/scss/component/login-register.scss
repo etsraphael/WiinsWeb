@@ -1,0 +1,265 @@
+.title-brand {
+  font-family: Arial;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 9%;
+  background-color: white;
+  will-change: transform;
+  -webkit-animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
+  animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
+  -webkit-filter: drop-shadow(0 5px 30px rgba(8, 17, 37, .15));
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@keyframes loop__float--fixed {
+  0% {
+    transform: translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+.btn-choice.active {
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  box-shadow: 13px 15px 21px #fe8c0061;
+
+  span {
+    color: white
+  }
+}
+
+.btc-image {
+  width: 9rem;
+}
+
+@media (max-width: 1283px) {
+  .container-donation {
+    display: none;
+  }
+}
+
+.container-translate,
+.container-btn-footer-left {
+  z-index: 2;
+}
+
+::ng-deep .header-bar-setting {
+
+  .mat-select-panel {
+    position: relative;
+    left: -3rem;
+    border-radius: 15px !important;
+  }
+
+  .footer-sign {
+    .mat-form-field-infix {
+      padding: 0;
+    }
+  }
+
+  .mat-select-value {
+    text-align: end;
+    padding-right: 1rem;
+    color: #5e71e4;
+  }
+
+  .mat-form-field {
+    // background-color: white;
+    border-radius: 15px;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0;
+    }
+
+    .mat-form-field-underline {
+      display: none;
+    }
+
+    .mat-form-field-infix {
+      border-bottom: 7px solid transparent;
+      border-top: 7px solid transparent;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+    }
+  }
+
+}
+
+.btn-tou {
+  border-radius: 14px;
+  border: 0;
+  background: white;
+  box-shadow: -10px 10px 12px -1px rgba(0, 0, 0, 0.28);
+}
+
+.btn-tou:hover {
+  background: #e6e6e66b;
+}
+
+.navbar {
+  bottom: 0;
+}
+
+.container-donation {
+  bottom: 3rem;
+  left: 2rem;
+  z-index: 2;
+
+  .card {
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .twitter-link {
+    bottom: -69%;
+  }
+}
+
+
+.title-brand {
+  font-family: Arial;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 9%;
+  background-color: white;
+  will-change: transform;
+  -webkit-animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
+  animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
+  -webkit-filter: drop-shadow(0 5px 30px rgba(8, 17, 37, .15));
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+@keyframes loop__float--fixed {
+  0% {
+    transform: translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+
+.btn-choice {
+  border-radius: 13px;
+  color: #212529;
+  border: 0;
+  transition: .5s;
+
+  span {
+    font-weight: 800;
+  }
+}
+
+.btn-sign-in {
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  box-shadow: 13px 15px 21px #fe8c0061;
+}
+
+.btn-sign-up {
+  background: #edf6ff;
+  box-shadow: 13px 15px 21px rgba(0, 0, 0, .19);
+}
+
+.btn-choice {
+  background: #edf6ff;
+  box-shadow: 13px 15px 21px rgba(0, 0, 0, .19);
+  border-radius: 13px;
+  color: #212529;
+  border: 0;
+  transition: .5s;
+
+  span {
+    color: #212529;
+    font-weight: 800;
+
+  }
+}
+
+.container-form {
+  input {
+    border: 0;
+    border-radius: 12px;
+    background-color: #ebf5ff;
+  }
+
+  input.ng-touched.ng-invalid {
+    border: 1px solid #ff000069;
+    background: #e7f0fe52;
+  }
+}
+
+.btn-submit-log-in,
+.btn-submit-sign-up {
+  background: #FF0099;
+  background: -webkit-linear-gradient(to left, #493240, #FF0099);
+  background: linear-gradient(to left, #493240, #FF0099);
+  box-shadow: 13px 15px 21px #fa089640;
+}
+
+.btc-image {
+  width: 9rem;
+}
+
+.logo-calendar {
+  position: absolute;
+  left: 28px;
+  top: 32px;
+}
+
+.input-calendar {
+  padding-left: 4rem !important;
+}
+
+.input-calendar.ng-touched.ng-dirty.ng-invalid {
+  border: 0 !important;
+  background: #ebf5ff !important;
+}
+
+.fa-check-circle {
+  color: #3fa433;
+}
+
+@media (max-width: 1283px) {
+  .container-donation {
+    display: none;
+  }
+}
+
+.container-forgot-password:hover p {
+  text-decoration: underline;
+}
+
+.bg-sign {
+  background: #C9D6FF;
+  background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);
+  background: linear-gradient(to bottom, #E2E2E2, #C9D6FF);
+}

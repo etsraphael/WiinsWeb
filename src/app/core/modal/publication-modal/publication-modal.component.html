@@ -1,0 +1,175 @@
+<!-- Component Body -->
+<div class="card">
+  <div class="card-container row w-100 mx-0">
+    <!-- Publication Container -->
+    <div class="col-md-7 px-0 bg-lighter h-100" [ngSwitch]="data.publication.type">
+      <div class="w-100 h-100">
+        <div *ngSwitchCase="'PicturePublication'" class="container-picture-publication h-100 row mx-0 my-auto">
+          <img [src]="data.publication.file" class="w-100 my-auto h-100">
+        </div>
+        <div *ngSwitchCase="'PostPublication'" class="w-100 h-100 row mx-0 my-auto" [style.backgroundImage]="data.publication.background">
+          <div class="w-100 h-100 row mx-0 px-3">
+            <span class="m-auto text-posted px-5 w-100">{{data.publication.text}}</span>   
+          </div>
+        </div>
+        <div *ngSwitchCase="'VideoPublication'" class="h-100 row mx-0 my-auto">
+          <video class="w-100 my-auto" controls controlsList="nodownload noremoteplayback" autoplay>
+           <source [src]="data.publication.file" type="video/mp4">
+           <source [src]="data.publication.file" type="video/ogg">
+         </video>
+        </div>
+      </div>
+    </div>
+    <!-- Publication Information -->
+    <div class="col-md-5 container-comment px-0">
+      <!-- Comment List and Header Info -->
+      <div class="container-scroll container-list-comment-base">
+        <div class="card-header mx-2">
+          <div class="container">
+            <div class="row mx-0">
+              <div class="col-3 col-sm-4 col-md-3 px-0 my-auto">
+                <a [routerLink]="[link]" (click)="dialogRef.close()">
+                  <img [src]="this.avatarPublication" class="avatar-header rounded-circle img-fluid">
+                </a>
+              </div>
+              <div class="col-9 col-sm-8 col-md-9 my-auto pr-0">
+                <div class="container">
+                  <div class="row">{{name}}</div>
+                  <div class="row ">
+                    <span class="date-publication">
+                      <i class="fa fa-clock-o my-auto pr-1"></i>
+                      {{translateService.getDateTranslated(data.publication.createdAt)}}
+                    </span>
+                  </div>
+                  <div class="row w-100 container-stat">
+                    <div class="ml-auto">
+                      <span class="cursor-pointer" *ngIf="numberLike > 0" (click)="openLikedList()">
+                        <i>{{numberLike}}</i>
+                        <i class="fa fa-heart mx-2"></i>
+                      </span>
+                      <span *ngIf="numberComment > 0">
+                        <i>{{numberComment}}</i>
+                        <i class="fa fa-comment mx-2"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-header mx-4 py-2 px-0 container-btn-option">
+          <div class="row mx-0">
+            <div class="col">
+              <button class="btn w-100 py-1 px-0" [ngClass]="{liked: isLiked}" (click)="btnLike()">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{'CORE.Like'|translate}}</span>
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn w-100 py-1 px-0" (click)="focusComment()">
+                <i class="fa fa-comment mr-2"></i>
+                <span>{{'CORE.Comment'|translate}}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="container-list-comment">
+            <!-- Comments -->
+            <div class="oneComment mb-2" *ngFor="let c of (comment$ | async); let first = first; let i = index">
+              <hr class="mb-2 mt-0 mx-2" *ngIf="!first">
+              <div class="row mx-0">
+                <div class="col-2 pt-1 px-sm-2">
+                  <a (click)="closeModal()" [routerLink]="'/profile/' + c.idProfil._id">
+                    <img class="avatar-oneComment rounded-circle img-fluid" [src]="c.idProfil.pictureprofile">
+                  </a>
+                </div>
+                <div class="col-8 px-0 my-auto">
+                  <span>
+                    <h4 class="d-inline pseudo-comment" (click)="closeModal()" [routerLink]="'/profile/' + c.idProfil._id">{{c.idProfil._meta.pseudo}}</h4>
+                    <p class="d-inline ml-1">{{c.text}}</p>
+                    <div class="d-inline mx-2 btn-response" (click)="createResponse(i)">
+                      <span class="d-inline-block">{{'CORE.reply..'|translate}}</span>
+                    </div>
+                  </span>
+                </div>
+                <div ngbDropdown class="col-2 d-flex justify-content-center my-auto px-0">
+                  <button ngbDropdownToggle  class="option-one-comment">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </button>
+                  <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button ngbDropdownItem *ngIf="profile._id !== c.idProfil._id">{{'BTN-DROPDOWN.Report'|translate}}</button>
+                    <button ngbDropdownItem (click)="deleteComment(c._id)"
+                     *ngIf="profile._id == c.idProfil._id || idOwner == profile._id || mypageId == true">{{'CORE.Delete'| translate}}</button>
+                  </div>
+                  <i class="fa fa-heart" [ngClass]="{'liked-comment': c.liked}" (click)="btnLikeComment(c)"></i>
+                </div>
+              </div>
+              <div *ngIf="(c.like > 0 || c.response > 0)" class="row mx-0 d-flex justify-content-center container-stats-comment pt-1">
+                <div class="d-inline mx-2" *ngIf="c.like > 0"><span>{{c.like}} {{'CORE.likes'|translate}}</span></div>
+                <div class="d-inline mx-2" *ngIf="c.response > 0" (click)="showReponse(c._id)"><span>{{c.response}} {{'CORE.responses'|translate}}</span></div>
+              </div>
+              <!-- Response -->
+              <div class="container" *ngIf="(response$ | async)[0]?.baseComment == c._id">
+                <div *ngFor="let r of (response$ | async)" class="row oneResponse">
+                  <div class="col-md-1 line-response"></div>
+                  <div class="col-md-2 pt-2">
+                    <a [routerLink]="'/profile/' + r.commentProfile._id" (click)="closeModal()">
+                      <img class="avatar-comment rounded-circle" [src]="r.commentProfile.pictureprofile">
+                    </a>
+                  </div>
+                  <div class="col-md-9 my-auto py-2 px-0 container-input-response">
+                    <h4 class="d-inline pseudo-comment" (click)="closeModal()" [routerLink]="'/profile/' + r.commentProfile._id">{{r.commentProfile._meta.pseudo}}</h4>
+                    <span class="d-inline mx-2" >{{r.text}}</span>
+                    <span class="d-inline-block mx-2 btn-like-response">
+                      <i class="fa fa-heart mx-2" (click)="btnLikeResponse(r)" [ngClass]="{'liked-comment': r.liked}"></i>
+                      {{r.like}} {{'CORE.likes'|translate}}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="container container-new-response mt-2 mb-4" *ngIf="indexResponse == i">
+                <div class="row">
+                  <div class="col-md-1 line-response"></div>
+                  <div class="col-md-2">
+                    <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
+                  </div>
+                  <div class="col-md-9 my-auto py-2 container-input-response" (keydown.enter)="sendResponse(responseComment, c); false">
+                    <span #responseComment class="span-new-response" contenteditable placeholder="Write your response here.."></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- New comment -->
+      <div class="container-card-footer w-100 container-footer-comment">
+        <div class="row container-list-friend shadow mx-4" *ngIf="(resultsProfile$ | async)?.length > 0">
+          <div class="container">
+            <div class="row py-2 oneSuggest" *ngFor="let p of (resultsProfile$ | async)" (click)="addTag(p)">
+              <div class="col-md-3 px-0 d-flex justify-content-center">
+                <img class="rounded-circle" [src]="p.pictureprofile">
+              </div>
+              <div class="col-md-9 my-auto pl-0">
+                <span><p class="mb-0">{{p._meta.pseudo}}</p></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer mx-4">
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+              <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
+            </div>
+            <div class="col-md-9 my-auto py-2 container-new-comment" 
+             (keydown.enter)="sendComment(); false" (keydown)="writeComment($event)">
+              <span class="content-comment-span w-100" #newComment contenteditable placeholder="Write your comment here.."></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.container-scroll {
+  overflow-y: scroll;
+}
+
+.container-page {
+  height: calc(100% - 4rem);
+}
+
+.container-description-section {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+
+  h1 {
+    color: #9d66e4;
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+}
+
+.container-title {
+  .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .one-section {
+    cursor: pointer;
+  }
+
+  .one-section:hover {
+    background-color: rgba(128, 128, 128, 0.109);
+  }
+}
+
+.container-main-title {
+  span {
+    font-size: 4rem;
+  }
+}
+
+.container-description-section span {
+  white-space: pre-wrap;
+}
+
+.container-description-section h2 {
+  color: #de6b9a;
+}

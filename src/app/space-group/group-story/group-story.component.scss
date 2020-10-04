@@ -1,0 +1,24 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
+.main-group {
+
+  .list-group {
+    height: 100%;
+    border-left: 2px solid #e7e7e7;
+    overflow-y: scroll;
+    background: #fafafa;
+  }
+
+  .list-publication {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+}
+
+#preloader {
+  padding-top: 25%;
+}

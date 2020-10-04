@@ -1,0 +1,23 @@
+.first-message {
+  border: 2px dashed #dadada;
+  border-radius: 25px;
+  background-color: #f8f9fa;
+}
+
+.message {
+  position: relative;
+  .close {
+    position: absolute;
+    right: 5px;
+  }
+  .title span {
+      font-size: 1.3rem;
+  }
+  .close {
+    cursor: pointer;
+  }
+}
+
+span {
+  color: grey;
+}

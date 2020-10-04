@@ -1,0 +1,216 @@
+<!-- Component Body -->
+<div ngbDropdown #myDrop="ngbDropdown">
+
+  <!-- Bell icon -->
+  <button ngbDropdownToggle class="nav-link fa fa-bell" data-toggle="dropdown" role="button" aria-haspopup="true"
+    aria-expanded="false" [ngClass]="{'notifTrue': (numberNewActivity$|async) > 0 }" (click)="showNotifActivity()">
+  </button>
+
+  <!-- Number of notifications -->
+  <div class="number" *ngIf="(numberNewActivity$|async) > 0">
+    <span>{{(numberNewActivity$|async)}}</span>
+  </div>
+
+  <!-- Dropdown Btn -->
+  <div ngbDropdownMenu class="dropdown-menu py-0" x-placement="bottom-start">
+
+    <!-- List container -->
+    <div *ngIf="(notifActivity$ | async); let activity">
+      <!-- List Notification -->
+      <div class="list-notif row py-2 mx-0" *ngFor="let n of activity" (click)="goToNotif(n); myDrop.close()"
+        [ngClass]="{'no-read': !n.read}">
+        <!-- Profile Or Page -->
+        <div class="col-md-3 my-auto" *ngIf="n.type !== 'NotificationReport'">
+          <img class="d-flex mx-auto" [src]="n.profile.pictureprofile">
+        </div>
+        <!-- Admin -->
+        <div class="col-md-3 my-auto d-flex justify-content-center" *ngIf="n.type == 'NotificationReport'">
+          <img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/icon-wiins.png">
+        </div>
+        <div class="col-md-6 px-0 mt-2" [ngSwitch]="n.type">
+          <div *ngSwitchCase="'NotificationTagCommentFeedPublication'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong>{{'NOTIFICATIONS.tag-you-in-comment'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationTagCommentPlaylist'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.tag-you-in-playlist'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationRequest'">
+            <span class="row">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.and-you-are-friend'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-users mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationTagPublication'">
+            <span class="row">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.identify-you-in-a-publication'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationComment'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.commented-your-publication'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.new-comments'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-comment mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationCommentResponsePlaylist'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.respond-your-comment'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.repond-on-your-comment'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-comment mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationResponse'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.respond-your-comment'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.responds-your-comment'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-comment mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationLike'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.liked-your-publication'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}} {{'NOTIFICATIONS.s-liked-your-publication'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationCommentLike'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.like-your-comment'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p>{{translateService.getNotificationTranslatedForManyUser(n.profile._meta.pseudo, n.quantity - 1)}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationCommentLikePlaylist'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.like-your-comment'|translate}}</p>
+            </span>
+            <span class="row" *ngIf="n.quantity !== 1">
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}} {{'NOTIFICATIONS.likes-your-comment'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationFeatPublication'">
+            <span class="row">
+              <p> {{'NOTIFICATIONS.you-appear-in-project-of'|translate}} <strong>{{n.profile._meta.pseudo}}</strong></p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-music mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationReport'">
+            <span class="row">
+              <p>{{'NOTIFICATIONS.Message-from-wiins-moderators'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-ban mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-auto" *ngIf="n.publication || n.musicProject">
+          <app-publication-miniature [feedPublication]="n.publication || n.musicProject"></app-publication-miniature>
+        </div>
+        <div class="col-md-3 my-auto row mx-0"
+          *ngIf="n.type === 'NotificationCommentResponsePlaylist' || n.type === 'NotificationCommentLikePlaylist'">
+          <i class="fa fa-music fa-2x mx-auto"></i>
+        </div>
+      </div>
+      <!-- Loading Listing -->
+      <div *ngIf="(isLoading$|async) && (activity.length == 0)">
+        <div class="container">
+          <div class="lds-ripple mx-auto my-3"><div></div><div></div></div>
+        </div>
+      </div>
+      <!-- Empty List -->
+      <div class="row no-found" *ngIf="(activity.length === 0) && !(isLoading$|async)">
+        <div class="col-md-3 row mx-0 my-auto">
+          <i class="color-no-page fa fa-times-circle-o fa-2x mx-auto"></i>
+        </div>
+        <div class="col-md-9 mx-auto py-3 px-0">
+          <span class="no-pseudo">{{'EMPTY-MESSAGE.no-notification'|translate}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- See more notifations -->
+    <div class="see-more row" *ngIf="false">
+      <div class="mx-auto py-1">
+        <span>{{'CORE.See-more'|translate}}</span>
+      </div>
+    </div>
+  
+  </div>
+
+</div>
