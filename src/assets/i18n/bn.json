@@ -654,7 +654,8 @@
     "only-f-can-see": "কেবল বন্ধুরা প্রকাশনা দেখতে পারে"
   },
   "PUBLICATION": {
-    "generate-t-id": "পদচিহ্ন তৈরি করুন"
+    "generate-t-id": "পদচিহ্ন তৈরি করুন",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

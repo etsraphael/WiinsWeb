@@ -654,7 +654,8 @@
     "only-f-can-see": "Sólo los amigos pueden ver las publicaciones"
   },
   "PUBLICATION": {
-    "generate-t-id": "Generar huella"
+    "generate-t-id": "Generar huella",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

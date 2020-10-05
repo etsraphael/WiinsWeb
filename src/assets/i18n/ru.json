@@ -654,7 +654,8 @@
     "only-f-can-see": "Только друзья могут видеть публикации"
   },
   "PUBLICATION": {
-    "generate-t-id": "Создать след"
+    "generate-t-id": "Создать след",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

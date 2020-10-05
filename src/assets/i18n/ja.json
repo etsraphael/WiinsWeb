@@ -654,7 +654,8 @@
     "only-f-can-see": "出版物を見ることができるのは友人だけです"
   },
   "PUBLICATION": {
-    "generate-t-id": "フットプリントを生成"
+    "generate-t-id": "フットプリントを生成",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

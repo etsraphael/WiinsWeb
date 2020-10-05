@@ -654,7 +654,8 @@
     "only-f-can-see": "Só amigos podem ver as publicações"
   },
   "PUBLICATION": {
-    "generate-t-id": "Gerar presença"
+    "generate-t-id": "Gerar presença",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

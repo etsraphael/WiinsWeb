@@ -654,7 +654,8 @@
     "only-f-can-see": "친구만 출판물을 볼 수 있습니다."
   },
   "PUBLICATION": {
-    "generate-t-id": "발자국 생성"
+    "generate-t-id": "발자국 생성",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

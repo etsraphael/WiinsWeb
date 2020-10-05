@@ -654,7 +654,8 @@
     "only-f-can-see": "Nur Freunde können die Publikationen sehen"
   },
   "PUBLICATION": {
-    "generate-t-id": "Fußabdruck erzeugen"
+    "generate-t-id": "Fußabdruck erzeugen",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

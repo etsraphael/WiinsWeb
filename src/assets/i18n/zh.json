@@ -654,7 +654,8 @@
     "only-f-can-see": "只有朋友才能看到出版物"
   },
   "PUBLICATION": {
-    "generate-t-id": "产生足迹"
+    "generate-t-id": "产生足迹",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

@@ -654,7 +654,8 @@
     "only-f-can-see": "केवल मित्र ही प्रकाशन देख सकते हैं"
   },
   "PUBLICATION": {
-    "generate-t-id": "पदचिह्न उत्पन्न करें"
+    "generate-t-id": "पदचिह्न उत्पन्न करें",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

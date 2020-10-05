@@ -654,7 +654,8 @@
     "only-f-can-see": "ਸਿਰਫ਼ ਦੋਸਤ ਹੀ ਪ੍ਰਕਾਸ਼ਨ ਦੇਖ ਸਕਦੇ ਹਨ"
   },
   "PUBLICATION": {
-    "generate-t-id": "ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ ਤਿਆਰ ਕਰੋ"
+    "generate-t-id": "ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ ਤਿਆਰ ਕਰੋ",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

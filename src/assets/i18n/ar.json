@@ -654,7 +654,8 @@
     "only-f-can-see": "يمكن للأصدقاء فقط رؤية المنشورات"
   },
   "PUBLICATION": {
-    "generate-t-id": "توليد البصمة"
+    "generate-t-id": "توليد البصمة",
+    "delete-t-project": ""
   },
   "REPORT": {
     "Code-Categorie": {

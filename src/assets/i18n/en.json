@@ -654,7 +654,8 @@
     "only-f-can-see": "Only friends can see the publications"
   },
   "PUBLICATION": {
-    "generate-t-id": "Generate the footprint"
+    "generate-t-id": "Generate the footprint",
+    "delete-t-project": "Delete this project"
   },
   "REPORT": {
     "Code-Categorie": {

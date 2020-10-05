@@ -654,7 +654,8 @@
     "only-f-can-see": "Seul les amis peuvent voir les publications"
   },
   "PUBLICATION": {
-    "generate-t-id": "Générer l'empreinte"
+    "generate-t-id": "Générer l'empreinte",
+    "delete-t-project": "Supprimer ce projet"
   },
   "REPORT": {
     "Code-Categorie": {
