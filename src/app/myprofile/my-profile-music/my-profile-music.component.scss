@@ -214,6 +214,10 @@ span {
   cursor: pointer;
 }
 
+.dropdown-toggle {
+  background-color: transparent;
+}
+
 .dropdown-menu.show {
   border: 0;
   display: block;
