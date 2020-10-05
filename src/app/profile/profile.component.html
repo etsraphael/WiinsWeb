@@ -7,7 +7,7 @@
           <h2 class="pseudo ml-5">{{p._meta.pseudo}}</h2>
         </div>
         <div class="col-8 col-md-7 my-auto d-flex justify-content-end">
-          <div class="col-5 col-md-4 text-right" *ngIf="p.follow.viewer && p.relation !== 'friend'">
+          <div class="col-5 col-md-4 text-right" *ngIf="p.follow.following && p.relation !== 'friend'">
             <div *ngIf="!p.userRelation">
               <button class="btn btn-outline-light w-100" (click)="follow(p._id)">
                 <i class="px-2 py-auto fa fa-user-plus"></i>

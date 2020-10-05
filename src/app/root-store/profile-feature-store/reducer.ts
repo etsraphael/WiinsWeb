@@ -42,7 +42,7 @@ export function featureReducerProfile(state: StateProfile = initialStateProfile,
     }
     case ActionTypes.CHANGE_BTN_FOLLOW_SUCCESS: {
       if (typeof action.payload.friend !== 'undefined') state.profile.follow.friend = action.payload.friend
-      if (typeof action.payload.viewer !== 'undefined') state.profile.follow.viewer = action.payload.viewer
+      if (typeof action.payload.following !== 'undefined') state.profile.follow.following = action.payload.following
       return state
     }
     case '@user/log_out' as any: return initialStateProfile

@@ -33,11 +33,11 @@ export class ProfileModel extends BaseModel {
 
 export class BtnFollow {
   friend: boolean
-  viewer: boolean
+  following: boolean
 
-  constructor(friend: boolean, viewer: boolean){
+  constructor(friend: boolean, following: boolean){
     this.friend = friend
-    this.viewer = viewer
+    this.following = following
   }
 }
 
