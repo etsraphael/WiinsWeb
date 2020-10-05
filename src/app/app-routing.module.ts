@@ -154,7 +154,7 @@ const routes: Routes = [
           { path: 'page', component: CreatePageComponent },
           { path: 'tube', component: CreateTubePublicationComponent },
           {
-            path: 'music', component: CreateMusicProjectComponent,
+            path: 'musicProject', component: CreateMusicProjectComponent,
             children: [
               { path: '', redirectTo: 'album', pathMatch: 'full' },
               { path: 'album', component: UploadAlbumComponent },
