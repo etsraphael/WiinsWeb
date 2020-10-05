@@ -559,7 +559,9 @@
     "Register": "নিবন্ধন",
     "Registration": "নিবন্ধন",
     "accept-tou": " আমি ব্যবহারের শর্তাদি গ্রহণ করি",
-    "click-on-email": "ইমেল লিঙ্ক ক্লিক করুন"
+    "click-on-email": "ইমেল লিঙ্ক ক্লিক করুন",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "আমার গান",

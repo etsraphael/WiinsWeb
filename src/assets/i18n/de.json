@@ -559,7 +559,9 @@
     "Register": "Registrieren",
     "Registration": "Anmeldung",
     "accept-tou": "Ich akzeptiere die Nutzungsbedingungen",
-    "click-on-email": "Bitte klicken Sie auf den E-Mail-Link"
+    "click-on-email": "Bitte klicken Sie auf den E-Mail-Link",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "Meine Musik",

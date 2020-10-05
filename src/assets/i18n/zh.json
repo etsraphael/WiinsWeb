@@ -559,7 +559,9 @@
     "Register": "寄存器",
     "Registration": "注册",
     "accept-tou": "我接受使用条款和条件",
-    "click-on-email": "请点击电子邮件链接"
+    "click-on-email": "请点击电子邮件链接",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "我的音乐",

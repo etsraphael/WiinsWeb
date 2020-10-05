@@ -559,7 +559,9 @@
     "Register": "登録",
     "Registration": "登録",
     "accept-tou": "利用規約に同意します",
-    "click-on-email": "メールのリンクをクリックしてください"
+    "click-on-email": "メールのリンクをクリックしてください",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "私の音楽",

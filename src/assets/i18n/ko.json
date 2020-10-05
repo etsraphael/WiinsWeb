@@ -559,7 +559,9 @@
     "Register": "레지스터",
     "Registration": "기재",
     "accept-tou": "이용 약관에 동의합니다.",
-    "click-on-email": "이메일 링크를 클릭하십시오"
+    "click-on-email": "이메일 링크를 클릭하십시오",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "내 음악",

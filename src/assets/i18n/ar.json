@@ -559,7 +559,9 @@
     "Register": "تسجيل",
     "Registration": "التسجيل",
     "accept-tou": "أقبل شروط وأحكام الاستخدام",
-    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني"
+    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "موسيقاي",

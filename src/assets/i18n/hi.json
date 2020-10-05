@@ -559,7 +559,9 @@
     "Register": "रजिस्टर करें",
     "Registration": "पंजीकरण",
     "accept-tou": "मैं उपयोग के नियम ों और शर्तों को स्वीकार करता हूं",
-    "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें"
+    "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें",
+    "Sign-up": "",
+    "Already-have-an-account": ""
   },
   "MAIN-MUSIC": {
     "My-music": "मेरा संगीत",
