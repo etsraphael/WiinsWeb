@@ -33,7 +33,7 @@ export class NotificationService {
 
   GetNotifications(page: string): Observable<ListNotificationResponse> {
     const limit = '6';
-    return this.http.get<ListNotificationResponse>(`${this.baseUrl}/notification/activity/all`, {
+    return this.http.get<ListNotificationResponse>(`${this.baseUrl}/notification/activity/list`, {
       params: {
         limit: limit, page
       }

@@ -126,7 +126,7 @@ export class CoreService {
   }
 
   UpdatePictureProfile(link: string, type: string): Observable<LinkResponse> {
-    return this.http.post<LinkResponse>(`${this.baseUrl}/profile/udpatePicture/${type}`, { link });
+    return this.http.post<LinkResponse>(`${this.baseUrl}/profile/updatePicture/${type}`, { link });
   }
 
 }

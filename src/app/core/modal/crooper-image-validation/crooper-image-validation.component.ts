@@ -78,7 +78,6 @@ export class CrooperImageValidationComponent implements OnInit, OnDestroy {
       case 'tall_spon_img':
         this.config.aspectRatio = (2 / 3)
         break;
-
     }
   }
 
