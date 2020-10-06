@@ -569,7 +569,9 @@
     "My-music": "내 음악",
     "My-wiinsers": "내 비너서",
     "Tops": "탑스",
-    "Trend": "경향"
+    "Trend": "경향",
+    "Lastest-tube": "",
+    "Lastest-Project": ""
   },
   "MINI-CHAT": {
     "text-a-friend": "친구에게 문자 보내기"

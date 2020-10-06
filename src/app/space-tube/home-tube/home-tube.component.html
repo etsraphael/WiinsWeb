@@ -5,7 +5,7 @@
     <div class="col text-left my-auto">
       <div *ngIf="(tubeMenu$|async)?.following.length > 0">
         <span class="title-section">{{'MAIN-MUSIC.My-wiinsers'|translate}} |</span>
-        <span class="sub-title mx-2">{{'CORE.See-more'|translate}}</span>
+        <span class="sub-title mx-2" (click)="supportMessage()">{{'CORE.See-more'|translate}}</span>
       </div>
     </div>
     <div class="col text-right">
@@ -23,7 +23,36 @@
     <div class="col-md-3 my-2 px-2" *ngFor="let t of tubes">
       <div class="card">
         <div class="poster-video" [routerLink]="['../watching-video/' + t.tube._id ]">
-          <img class="profile" [src]="t.tube.profile.pictureprofile" >
+          <img class="profile" [src]="t.tube.profile.pictureprofile">
+          <div class="time px-2">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <img class="photo-video" [src]="t.tube.posterLink">
+        </div>
+        <div class="card-body py-1 px-3">
+          <h4><strong>{{t.tube.name}}</strong></h4>
+          <div class="row mx-0">
+            <p class="mr-auto">{{t.tube.totalView}}K views</p>
+            <!-- <p class="ml-auto">0min</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lastest video -->
+  <div class="swith-navigation row m-3 px-4 pb-2">
+    <div class="col text-left my-auto">
+      <div *ngIf="(tubeMenu$|async)?.lastest.length > 0">
+        <span class="title-section">{{'MAIN-MUSIC.Lastest-tube'|translate}} |</span>
+        <span class="sub-title mx-2" (click)="supportMessage()">{{'CORE.See-more'|translate}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-0" *ngIf="(tubeMenu$|async)?.lastest; let tubes">
+    <div class="col-md-3 my-2 px-2" *ngFor="let t of tubes">
+      <div class="card">
+        <div class="poster-video" [routerLink]="['../watching-video/' + t.tube._id ]">
+          <img class="profile" [src]="t.tube.profile.pictureprofile">
           <div class="time px-2">
             <i class="fa fa-clock-o"></i>
           </div>
@@ -42,7 +71,7 @@
 </div>
 
 <!-- Loading Animation -->
-<div class="container" *ngIf="(loading$|async)"> 
+<div class="container" *ngIf="(loading$|async)">
   <div class="row mt-8">
     <div class="sk-chase mx-auto">
       <div class="sk-chase-dot"></div>

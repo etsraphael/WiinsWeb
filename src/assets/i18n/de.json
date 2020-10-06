@@ -569,7 +569,9 @@
     "My-music": "Meine Musik",
     "My-wiinsers": "Meine wiinsers",
     "Tops": "Die Spitzen",
-    "Trend": "Trend"
+    "Trend": "Trend",
+    "Lastest-tube": "",
+    "Lastest-Project": ""
   },
   "MINI-CHAT": {
     "text-a-friend": "Text einen Freund"

@@ -569,7 +569,9 @@
     "My-music": "Ma Musique",
     "My-wiinsers": "Mes wiinsers",
     "Tops": "Les tops",
-    "Trend": "Tendance"
+    "Trend": "Tendance",
+    "Lastest-tube": "Derniers tubes",
+    "Lastest-Project": "Derniers projet"
   },
   "MINI-CHAT": {
     "text-a-friend": "Texter un ami"
@@ -580,7 +582,7 @@
     "Dev-Community": "Dev community",
     "Logout": "Se déconnecter",
     "My-pages": "Mes pages",
-    "MyProfile": "Mon profile",
+    "MyProfile": "Mon profil",
     "SearchBar": "Rechercher",
     "Setting": "Paramètre"
   },
