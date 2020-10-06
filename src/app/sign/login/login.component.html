@@ -4,19 +4,19 @@
     <h1 class="display-3">Sign In</h1>
   </div>
   <div class="row mx-0">
-    <div class="col-6">
+    <div class="col-md-6 col-12 my-2">
       <button class="w-100 btn-choice p-3" [routerLink]="['/sign/in']" routerLinkActive="active">
         <span>{{ 'LOGIN-REGISTRER.Already-have-an-account' | translate}}</span>
       </button>
     </div>
-    <div class="col-6">
+    <div class="col-md-6 col-12 my-2">
       <button class="w-100 btn-choice p-3" [routerLink]="['/sign/up']" routerLinkActive="active">
         <span>{{ 'LOGIN-REGISTRER.Sign-up' | translate}}</span>
       </button>
     </div>
   </div>
   <form [formGroup]="loginForm" class="row mx-0 my-4">
-    <div class="col-6">
+    <div class="col-md-6 col-12">
       <div class="container">
         <div class="row">
           <p class="h5">{{'LOGIN-REGISTRER.PseudoOrEmail' | translate}}</p>
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-md-6 col-12">
       <div class="container">
         <div class="row">
           <p class="h5">{{'PLACEHOLDER.Your-Password' | translate}}</p>
@@ -43,7 +43,7 @@
     </a>
   </div>
   <div class="row mx-0 my-3">
-    <div class="col-6">
+    <div class="col-md-6 col-12">
       <button class="w-100 btn-choice btn-submit-log-in p-3" (click)="onSubmit()">
         <span class="text-white">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</span>
       </button>

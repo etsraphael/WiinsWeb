@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "Информация",
     "Introduction": "Вступление",
+    "Join": "Присоединиться к",
     "Know-us": "Знайте нас",
     "Leave": "Уехать",
     "Like": "Нравиться",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "Пожертвование",
     "Donation-for-the-beta": "Пожертвование для бета-версии",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Функция недоступна на данный момент, присоединиться к нашей розни, чтобы помочь с созданием",
     "To-support-the-dev-community": "Поддержка сообщества разработчиков"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "Он будет исключен из группы"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Уже есть учетная запись",
     "ForgotPassword": "я забыл мой пароль",
     "Log-In": "Авторизоваться",
     "Login": "Авторизоваться",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "Псевдоним или адрес электронной почты",
     "Register": "регистр",
     "Registration": "Постановка на учет",
+    "Sign-up": "Регистрация",
     "accept-tou": "Я принимаю условия использования",
-    "click-on-email": "Пожалуйста, нажмите на ссылку электронной почты",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "Пожалуйста, нажмите на ссылку электронной почты"
   },
   "MAIN-MUSIC": {
     "My-music": "Моя музыка",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "Объявления",
     "CreationSpace": "Креативное пространство",
+    "Dev-Community": "Дев сообщества",
     "Logout": "Выйти",
     "My-pages": "Мои страницы",
     "MyProfile": "Мой профиль",
@@ -654,8 +657,8 @@
     "only-f-can-see": "Только друзья могут видеть публикации"
   },
   "PUBLICATION": {
-    "generate-t-id": "Создать след",
-    "delete-t-project": ""
+    "delete-t-project": "Удалить этот проект",
+    "generate-t-id": "Создать след"
   },
   "REPORT": {
     "Code-Categorie": {

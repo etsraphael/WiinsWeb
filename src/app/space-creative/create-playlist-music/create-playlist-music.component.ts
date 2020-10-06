@@ -119,7 +119,7 @@ export class CreatePlaylistMusicComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.title-required'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })
@@ -130,7 +130,7 @@ export class CreatePlaylistMusicComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })

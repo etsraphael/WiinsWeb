@@ -86,13 +86,13 @@ export class SettingPageComponent implements OnInit, OnDestroy {
           case 'email_or_password_invalid':
             this._snackBar.open(
               this.translate.instant('ERROR-MESSAGE.Invalid-password'),
-              null, { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+              null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
             )
             break;
           case 'success':
             this._snackBar.open(
               this.translate.instant('VALID-MESSAGE.update-is-done'),
-              null, { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+              null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
             )
             this.blockoption = false;
             break;
@@ -106,7 +106,7 @@ export class SettingPageComponent implements OnInit, OnDestroy {
       this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-type-yr-password'),
         this.translate.instant('CORE.close'),
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
@@ -128,7 +128,7 @@ export class SettingPageComponent implements OnInit, OnDestroy {
       case 'email_or_password_invalid': return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Invalid-password'),
         this.translate.instant('CORE.close'),
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
       default:
         break;

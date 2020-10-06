@@ -104,6 +104,7 @@
     "ID": "معرف",
     "Information": "معلومات",
     "Introduction": "المقدمة",
+    "Join": "الانضمام",
     "Know-us": "تعرف علينا",
     "Leave": "غادر",
     "Like": "مثل",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "التبرع",
     "Donation-for-the-beta": "التبرع للبيتا",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "وظيفة غير متوفرة في الوقت الراهن، والانضمام إلى خلاف لدينا للمساعدة في خلق",
     "To-support-the-dev-community": "دعم مجتمع التنمية"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "سيتم طرده من المجموعة"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "لديك حساب بالفعل",
     "ForgotPassword": "لقد نسيت كلمة المرور",
     "Log-In": "تسجيل الدخول",
     "Login": "تسجيل الدخول",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "الاسم المستعار أو البريد الإلكتروني",
     "Register": "تسجيل",
     "Registration": "التسجيل",
+    "Sign-up": "التسجيل",
     "accept-tou": "أقبل شروط وأحكام الاستخدام",
-    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني"
   },
   "MAIN-MUSIC": {
     "My-music": "موسيقاي",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "إعلانات",
     "CreationSpace": "الفضاء الإبداعي",
+    "Dev-Community": "مجتمع ديف",
     "Logout": "تسجيل خروج",
     "My-pages": "صفحاتي",
     "MyProfile": "ملف التعريف الخاص بي",
@@ -654,8 +657,8 @@
     "only-f-can-see": "يمكن للأصدقاء فقط رؤية المنشورات"
   },
   "PUBLICATION": {
-    "generate-t-id": "توليد البصمة",
-    "delete-t-project": ""
+    "delete-t-project": "حذف هذا المشروع",
+    "generate-t-id": "توليد البصمة"
   },
   "REPORT": {
     "Code-Categorie": {

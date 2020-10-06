@@ -71,7 +71,7 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
     return this._snackBar.open(
       this.translate.instant('ERROR-MESSAGE.Email-invalid'), null,
       {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       }

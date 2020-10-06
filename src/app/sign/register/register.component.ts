@@ -128,7 +128,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     // to show the error snackbar
     return this._snackBar.open(
       this.translate.instant(message), null,
-      { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+      { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
     )
   }
 

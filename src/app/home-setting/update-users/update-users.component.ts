@@ -84,7 +84,7 @@ export class UpdateUsersComponent implements OnInit {
         this.translate.instant('ERROR-MESSAGE.No-changes-hv-been-made'),
         this.translate.instant('CORE.close'),
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }
@@ -97,7 +97,7 @@ export class UpdateUsersComponent implements OnInit {
         this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
         this.translate.instant('CORE.close'),
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }

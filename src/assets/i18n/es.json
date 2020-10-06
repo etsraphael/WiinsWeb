@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "Información",
     "Introduction": "Introducción",
+    "Join": "Unirse",
     "Know-us": "Conócenos",
     "Leave": "Salir",
     "Like": "Gusta",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "Donación",
     "Donation-for-the-beta": "Donación para beta",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Función no disponible en este momento, unirse a nuestra discordia para ayudar con la creación",
     "To-support-the-dev-community": "Apoyar a la comunidad de desarrollo"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "Será expulsado del grupo"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Ya tiene una cuenta",
     "ForgotPassword": "Olvidé mi contraseña",
     "Log-In": "Iniciar sesión",
     "Login": "Iniciar sesión",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "Apodo o correo electrónico",
     "Register": "Registrarse",
     "Registration": "Registro",
+    "Sign-up": "Únete",
     "accept-tou": "Acepto los términos y condiciones de uso",
-    "click-on-email": "Por favor haga clic en el enlace del correo electrónico",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "Por favor haga clic en el enlace del correo electrónico"
   },
   "MAIN-MUSIC": {
     "My-music": "Mi música",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "Anuncios",
     "CreationSpace": "Espacio creativo",
+    "Dev-Community": "Comunidad de desarrollo",
     "Logout": "Cerrar sesión",
     "My-pages": "Mis paginas",
     "MyProfile": "Mi perfil",
@@ -654,8 +657,8 @@
     "only-f-can-see": "Sólo los amigos pueden ver las publicaciones"
   },
   "PUBLICATION": {
-    "generate-t-id": "Generar huella",
-    "delete-t-project": ""
+    "delete-t-project": "Eliminar este proyecto",
+    "generate-t-id": "Generar huella"
   },
   "REPORT": {
     "Code-Categorie": {

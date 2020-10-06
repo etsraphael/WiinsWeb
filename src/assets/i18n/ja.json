@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "情報",
     "Introduction": "前書き",
+    "Join": "参加",
     "Know-us": "私たちを知る",
     "Leave": "去る",
     "Like": "お気に入り",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "寄付",
     "Donation-for-the-beta": "ベータ版の寄付",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "現時点では機能が利用できない、作成を支援するために私たちの不和に参加",
     "To-support-the-dev-community": "開発コミュニティをサポートするため"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "彼はグループから追放されます"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "すでにアカウントを持っている",
     "ForgotPassword": "パスワードを忘れた",
     "Log-In": "ログインする",
     "Login": "ログインする",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "ニックネームまたはメール",
     "Register": "登録",
     "Registration": "登録",
+    "Sign-up": "サインアップ",
     "accept-tou": "利用規約に同意します",
-    "click-on-email": "メールのリンクをクリックしてください",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "メールのリンクをクリックしてください"
   },
   "MAIN-MUSIC": {
     "My-music": "私の音楽",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "広告",
     "CreationSpace": "クリエイティブスペース",
+    "Dev-Community": "開発コミュニティ",
     "Logout": "ログアウト",
     "My-pages": "マイページ",
     "MyProfile": "自分のプロフィール",
@@ -654,8 +657,8 @@
     "only-f-can-see": "出版物を見ることができるのは友人だけです"
   },
   "PUBLICATION": {
-    "generate-t-id": "フットプリントを生成",
-    "delete-t-project": ""
+    "delete-t-project": "このプロジェクトを削除",
+    "generate-t-id": "フットプリントを生成"
   },
   "REPORT": {
     "Code-Categorie": {

@@ -7,6 +7,8 @@ import { filter, skipWhile } from 'rxjs/operators';
 import { TubePageModel } from 'src/app/core/models/tube/tubePage.model'
 import { ActivatedRoute } from '@angular/router';
 import { TubePageStoreActions, TubePageStoreSelectors } from 'src/app/root-store/tube-page-store';
+import { MatSnackBar } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-watching-video',
@@ -26,7 +28,9 @@ export class WatchingVideoComponent implements OnInit {
   
   constructor(
     private store$: Store<RootStoreState.State>,
-    private route: ActivatedRoute  
+    private route: ActivatedRoute,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService,
   ) { }
 
   ngOnInit() {
@@ -67,6 +71,18 @@ export class WatchingVideoComponent implements OnInit {
   changeTube(tubeId: string){
     this.store$.dispatch(new TubePageStoreActions.ResetPageTube)
     this.store$.dispatch(new TubePageStoreActions.LoadPageTube(tubeId))
+  }
+
+  supportMessage(){
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
 
 }

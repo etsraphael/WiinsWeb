@@ -53,7 +53,7 @@ export class GroupValidationComponent implements OnInit {
         this.translate.instant('ERROR-MESSAGE.Please-type-yr-password'),
         this.translate.instant('CORE.close'),
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }
