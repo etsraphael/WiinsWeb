@@ -184,7 +184,8 @@
     "reply..": "जवाब दे दो",
     "responses": "प्रतिक्रियाओं",
     "soon": "जल्द ही",
-    "views": "विचारों"
+    "views": "विचारों",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "दान",
     "Donation-for-the-beta": "बीटा के लिए दान",
-    "To-support-the-dev-community": "देव समुदाय का समर्थन करने के लिए"
+    "To-support-the-dev-community": "देव समुदाय का समर्थन करने के लिए",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "आपको अभी तक संगीत पसंद नहीं आया है",

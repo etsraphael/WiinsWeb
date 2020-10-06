@@ -156,7 +156,7 @@ export class GroupManagementComponent implements OnInit, OnDestroy {
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.Th-person-is-already-a-member'),
           this.translate.instant('CORE.close'), {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         })
@@ -200,7 +200,7 @@ export class GroupManagementComponent implements OnInit, OnDestroy {
     this._snackBar.open(
       this.translate.instant('ERROR-MESSAGE.you-hav-to-upgrad-a-manager-before-leave'),
       this.translate.instant('CORE.close'), {
-      horizontalPosition: 'left',
+      horizontalPosition: 'center',
       verticalPosition: 'bottom',
       duration: 5000,
     })

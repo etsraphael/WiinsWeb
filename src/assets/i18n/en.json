@@ -184,7 +184,8 @@
     "reply..": "reply..",
     "responses": "responses",
     "soon": "soon",
-    "views": "views"
+    "views": "views",
+    "Join": "Join"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "Donation",
     "Donation-for-the-beta": "Donation for beta",
-    "To-support-the-dev-community": "To support the dev community"
+    "To-support-the-dev-community": "To support the dev community",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Function unavailable at the moment, join our discord to help with creation"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "You haven't liked music yet",

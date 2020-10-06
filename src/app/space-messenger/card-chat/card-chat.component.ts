@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, OnDestroy, ElementRef, ViewChild, QueryList, ViewChildren } from '@angular/core'
 import { Room } from 'src/app/core/models/messenger/room.model'
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material'
+import { MatDialogRef, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material'
 import { Observable, Subscription, combineLatest } from 'rxjs'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, RoomByIdStoreActions, RoomByIdStoreSelectors, CurrentRoomStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors, AllRoomsStoreActions } from 'src/app/root-store'
@@ -10,6 +10,7 @@ import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { StatePlarformService } from 'src/app/core/statePlarform/state-plarform.service'
 import { FormControl } from '@angular/forms'
 import { TranslationService } from 'src/app/core/services/translation/translation.service'
+import { TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-card-chat',
@@ -52,6 +53,8 @@ export class CardChatComponent implements OnInit, OnDestroy {
     public dialogRef: MatDialogRef<CardChatComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DataMiniChat,
     private store$: Store<RootStoreState.State>,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService,
     public translateService: TranslationService,
   ) { }
 
@@ -215,8 +218,17 @@ export class CardChatComponent implements OnInit, OnDestroy {
 
   muteRoom(roomID: string) {
     // to mute a group
-    this.store$.dispatch(new RoomByIdStoreActions.currentRoomMute(roomID, 1))
-    this.changeMode('default')
+    // this.store$.dispatch(new RoomByIdStoreActions.currentRoomMute(roomID, 1))
+    // this.changeMode('default')
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
 
   unMuteRoom(room: Observable<Room>) {
@@ -265,7 +277,16 @@ export class CardChatComponent implements OnInit, OnDestroy {
 
   activeSearch() {
     // to show the search bar
-    this.addingContainer = true
+    // this.addingContainer = true // pending now
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
 
   cancelSearch() {

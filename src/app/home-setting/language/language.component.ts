@@ -56,7 +56,7 @@ export class LanguageComponent implements OnInit {
       this.translate.use(this.selectedLanguage)
       this._snackBar.open(
         this.translate.instant('VALID-MESSAGE.update-is-done'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
       sub.unsubscribe()
     })

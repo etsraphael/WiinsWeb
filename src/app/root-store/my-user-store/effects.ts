@@ -67,7 +67,7 @@ export class MyUserEffects {
         this._snackBar.open(
           this.translate.instant('VALID-MESSAGE.update-is-done'), null,
           {
-            horizontalPosition: 'left',
+            horizontalPosition: 'center',
             verticalPosition: 'bottom',
             duration: 5000,
           }

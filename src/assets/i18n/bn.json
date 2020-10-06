@@ -184,7 +184,8 @@
     "reply..": "উত্তর",
     "responses": "প্রতিক্রিয়া",
     "soon": "শীঘ্রই",
-    "views": "মতামত"
+    "views": "মতামত",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "দান",
     "Donation-for-the-beta": "বিটার জন্য দান",
-    "To-support-the-dev-community": "দেব সম্প্রদায়কে সমর্থন করা"
+    "To-support-the-dev-community": "দেব সম্প্রদায়কে সমর্থন করা",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "আপনি এখনও গান পছন্দ করেন নি",

@@ -32,7 +32,7 @@ export class OthersComponent {
     if (this.deletingPassword == null) return this._snackBar.open(
       this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
       this.translate.instant('CORE.close'),
-      { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+      { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
     )
 
 
@@ -43,7 +43,7 @@ export class OthersComponent {
         // redirection & alert
         this._snackBar.open(
           this.translate.instant('VALID-MESSAGE.Yr-account-has-been-deleted'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
 
         return this.router.navigate(['sign/in'])
@@ -52,7 +52,7 @@ export class OthersComponent {
         // if the user have some page 
         if (error == 'manage_group_or_page_before') return this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.y-h-to-delete-yr-page-or-group-before'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }
     )

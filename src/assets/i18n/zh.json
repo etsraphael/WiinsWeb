@@ -184,7 +184,8 @@
     "reply..": "回复",
     "responses": "回应",
     "soon": "不久",
-    "views": "意见"
+    "views": "意见",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "捐赠",
     "Donation-for-the-beta": "为测试版捐款",
-    "To-support-the-dev-community": "支持开发社区"
+    "To-support-the-dev-community": "支持开发社区",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "你还不喜欢音乐",

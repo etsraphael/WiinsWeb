@@ -50,7 +50,7 @@ export class RegisterConfirmationComponent implements OnInit, OnDestroy {
         this.profileReceived = 'profileFailed'
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       })
   }

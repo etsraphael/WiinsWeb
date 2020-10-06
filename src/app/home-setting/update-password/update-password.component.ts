@@ -52,7 +52,7 @@ export class UpdatePasswordComponent implements OnInit {
     if (this.passwordForm.invalid) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
@@ -67,13 +67,13 @@ export class UpdatePasswordComponent implements OnInit {
       if (action === 'password_changed') {
         this._snackBar.open(
           this.translate.instant('VALID-MESSAGE.update-is-done'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }
       else {
         this._snackBar.open(
           this.translate.instant('SETTING.password.Old-password-is-invalid'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }
       this.passwordForm.reset();

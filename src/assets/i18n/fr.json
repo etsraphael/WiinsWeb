@@ -184,7 +184,8 @@
     "reply..": "répondre..",
     "responses": "réponses",
     "soon": "bientôt",
-    "views": "vues"
+    "views": "vues",
+    "Join": "Rejoindre"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "Donation",
     "Donation-for-the-beta": "Donation pour la bêta",
-    "To-support-the-dev-community": "Supporter la communauté des devs"
+    "To-support-the-dev-community": "Supporter la communauté des devs",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Fonction indisponible pour le moment, rejoignez notre discord pour aider à la création"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Vous n'avez pas aimé de musique pour l'instant",

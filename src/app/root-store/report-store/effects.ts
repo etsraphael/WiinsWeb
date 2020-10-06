@@ -30,7 +30,7 @@ export class ReportEffects {
   showSnackBar(message: string): MatSnackBarRef<SimpleSnackBar> {
     return this._snackBar.open(
       this.translate.instant('REPORT.Report-Reponsed.' + message), null,
-      { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+      { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
     )
   }
 

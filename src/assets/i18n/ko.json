@@ -184,7 +184,8 @@
     "reply..": "댓글",
     "responses": "응답",
     "soon": "곧",
-    "views": "견해"
+    "views": "견해",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "기부",
     "Donation-for-the-beta": "베타 를 위한 기부",
-    "To-support-the-dev-community": "개발자 커뮤니티지원"
+    "To-support-the-dev-community": "개발자 커뮤니티지원",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "당신은 아직 음악을 좋아하지 않은",

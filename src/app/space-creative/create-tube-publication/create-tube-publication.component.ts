@@ -92,7 +92,7 @@ export class CreateTubePublicationComponent implements OnInit {
         return this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.the-video-must-be-longer-than-30-sec'),
           this.translate.instant('CORE.close'), {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000
         })
@@ -185,14 +185,14 @@ export class CreateTubePublicationComponent implements OnInit {
     if (!this.videoUrl) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
     if (!this.pictureUrl) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
@@ -200,14 +200,14 @@ export class CreateTubePublicationComponent implements OnInit {
     if (!this.videoName) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.els-ar-missing'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
     if (!this.categorieSeleteted.code) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.els-ar-missing'), null,
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 

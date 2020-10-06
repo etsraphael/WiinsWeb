@@ -184,7 +184,8 @@
     "reply..": "応答",
     "responses": "反応",
     "soon": "すぐに",
-    "views": "景色"
+    "views": "景色",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "寄付",
     "Donation-for-the-beta": "ベータ版の寄付",
-    "To-support-the-dev-community": "開発コミュニティをサポートするため"
+    "To-support-the-dev-community": "開発コミュニティをサポートするため",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "あなたはまだ音楽が好きじゃない",

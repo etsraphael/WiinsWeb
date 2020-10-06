@@ -195,7 +195,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })
@@ -206,7 +206,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.2-music-min'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })

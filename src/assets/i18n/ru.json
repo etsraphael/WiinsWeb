@@ -184,7 +184,8 @@
     "reply..": "Ответить",
     "responses": "ответы",
     "soon": "скоро",
-    "views": "взгляды"
+    "views": "взгляды",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "Пожертвование",
     "Donation-for-the-beta": "Пожертвование для бета-версии",
-    "To-support-the-dev-community": "Поддержка сообщества разработчиков"
+    "To-support-the-dev-community": "Поддержка сообщества разработчиков",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Вам еще не понравилась музыка",

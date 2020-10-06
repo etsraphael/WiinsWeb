@@ -184,7 +184,8 @@
     "reply..": "ਜਵਾਬ",
     "responses": "ਜਵਾਬ",
     "soon": "ਜਲਦੀ",
-    "views": "ਵਿਚਾਰ"
+    "views": "ਵਿਚਾਰ",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "ਦਾਨ",
     "Donation-for-the-beta": "ਬੀਟਾ ਲਈ ਦਾਨ",
-    "To-support-the-dev-community": "ਦੇਵ ਭਾਈਚਾਰੇ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ"
+    "To-support-the-dev-community": "ਦੇਵ ਭਾਈਚਾਰੇ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "ਤੁਹਾਨੂੰ ਅਜੇ ਤੱਕ ਸੰਗੀਤ ਪਸੰਦ ਨਹੀਂ ਹੈ",

@@ -184,7 +184,8 @@
     "reply..": "الرد",
     "responses": "استجابات",
     "soon": "هكذا",
-    "views": "الآراء"
+    "views": "الآراء",
+    "Join": ""
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -462,7 +463,8 @@
   "DONATION": {
     "Donation": "التبرع",
     "Donation-for-the-beta": "التبرع للبيتا",
-    "To-support-the-dev-community": "دعم مجتمع التنمية"
+    "To-support-the-dev-community": "دعم مجتمع التنمية",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "لم تحب الموسيقى بعد",

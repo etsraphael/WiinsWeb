@@ -229,7 +229,7 @@ export class CardFeedGroupPublicationComponent implements OnInit, OnDestroy {
         this.translate.instant('ERROR-MESSAGE.els-ar-missing'),
         this.translate.instant('CORE.close'),
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }

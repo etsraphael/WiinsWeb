@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.router.navigate(['/setting/premium'])
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.Account-temporarily-disabled'), null,
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }
     })

@@ -108,7 +108,7 @@ export class CreatePageComponent implements OnInit {
       this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Th-person-is-already-a-member'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       });
@@ -140,7 +140,7 @@ export class CreatePageComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-add-a-page-name-valid'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })
@@ -151,7 +151,7 @@ export class CreatePageComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-add-page-photo'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })
