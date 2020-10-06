@@ -104,6 +104,7 @@
     "ID": " ਆਈਡੀ",
     "Information": "ਜਾਣਕਾਰੀ",
     "Introduction": "ਜਾਣ ਪਛਾਣ",
+    "Join": "ਜੁੜੋ",
     "Know-us": "ਸਾਨੂੰ ਜਾਣੋ",
     "Leave": "ਛੱਡੋ",
     "Like": "ਪਸੰਦ ਹੈ",
@@ -184,8 +185,7 @@
     "reply..": "ਜਵਾਬ",
     "responses": "ਜਵਾਬ",
     "soon": "ਜਲਦੀ",
-    "views": "ਵਿਚਾਰ",
-    "Join": ""
+    "views": "ਵਿਚਾਰ"
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "ਦਾਨ",
     "Donation-for-the-beta": "ਬੀਟਾ ਲਈ ਦਾਨ",
-    "To-support-the-dev-community": "ਦੇਵ ਭਾਈਚਾਰੇ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "ਇਸ ਸਮੇਂ ਫੰਕਸ਼ਨ ਅਣਉਪਲਬਧ, ਰਚਨਾ ਵਿੱਚ ਸਹਾਇਤਾ ਲਈ ਸਾਡੇ ਵਿਵਾਦ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "To-support-the-dev-community": "ਦੇਵ ਭਾਈਚਾਰੇ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "ਤੁਹਾਨੂੰ ਅਜੇ ਤੱਕ ਸੰਗੀਤ ਪਸੰਦ ਨਹੀਂ ਹੈ",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "ਉਸਨੂੰ ਸਮੂਹ ਵਿੱਚੋਂ ਕੱ from ਦਿੱਤਾ ਜਾਵੇਗਾ"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Ya tiene una cuenta",
     "ForgotPassword": "ਮੈਂ ਆਪਣਾ ਪਾਸਵਰਡ ਭੁੱਲ ਗਿਆ ਹਾਂ",
     "Log-In": "ਲਾਗਿਨ",
     "Login": "ਲਾਗਿਨ",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "ਉਪਨਾਮ ਜਾਂ ਈਮੇਲ",
     "Register": "ਰਜਿਸਟਰ",
     "Registration": "ਰਜਿਸਟ੍ਰੇਸ਼ਨ",
+    "Sign-up": "ਸਾਇਨ ਅਪ",
     "accept-tou": "ਮੈਂ ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਦਾ ਹਾਂ",
-    "click-on-email": "ਕਿਰਪਾ ਕਰਕੇ ਈਮੇਲ ਲਿੰਕ ਤੇ ਕਲਿੱਕ ਕਰੋ",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "ਕਿਰਪਾ ਕਰਕੇ ਈਮੇਲ ਲਿੰਕ ਤੇ ਕਲਿੱਕ ਕਰੋ"
   },
   "MAIN-MUSIC": {
     "My-music": "ਮੇਰਾ ਸੰਗੀਤ",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "ਵਿਗਿਆਪਨ",
     "CreationSpace": "ਰਚਨਾਤਮਕ ਜਗ੍ਹਾ",
+    "Dev-Community": "ਦੇਵ ਕਮਿ communityਨਿਟੀ",
     "Logout": "ਲਾੱਗ ਆਊਟ, ਬਾਹਰ ਆਉਣਾ",
     "My-pages": "ਮੇਰੇ ਪੇਜ",
     "MyProfile": "ਮੇਰੀ ਪ੍ਰੋਫਾਈਲ",
     "SearchBar": "ਖੋਜ",
-    "Setting": "ਸੈਟਿੰਗ",
-    "Dev-Community": ""
+    "Setting": "ਸੈਟਿੰਗ"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "ਵਿਨਜ਼ ਸੰਚਾਲਕਾਂ ਦਾ ਸੁਨੇਹਾ",
@@ -657,8 +657,8 @@
     "only-f-can-see": "ਸਿਰਫ਼ ਦੋਸਤ ਹੀ ਪ੍ਰਕਾਸ਼ਨ ਦੇਖ ਸਕਦੇ ਹਨ"
   },
   "PUBLICATION": {
-    "generate-t-id": "ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ ਤਿਆਰ ਕਰੋ",
-    "delete-t-project": ""
+    "delete-t-project": "ਇਸ ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਮਿਟਾਓ",
+    "generate-t-id": "ਪੈਰਾਂ ਦੇ ਨਿਸ਼ਾਨ ਤਿਆਰ ਕਰੋ"
   },
   "REPORT": {
     "Code-Categorie": {

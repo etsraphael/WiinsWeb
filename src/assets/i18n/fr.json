@@ -104,6 +104,7 @@
     "ID": "ID",
     "Information": "Information",
     "Introduction": "Introduction",
+    "Join": "Rejoindre",
     "Know-us": "Nous connaître",
     "Leave": "Quitter",
     "Like": "Like",
@@ -184,8 +185,7 @@
     "reply..": "répondre..",
     "responses": "réponses",
     "soon": "bientôt",
-    "views": "vues",
-    "Join": "Rejoindr"
+    "views": "vues"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "Donation",
     "Donation-for-the-beta": "Donation pour la bêta",
-    "To-support-the-dev-community": "Supporter la communauté des devs",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Fonction indisponible pour le moment, rejoignez notre discord pour aider à la création"
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Fonction indisponible pour le moment, rejoignez notre discord pour aider à la création",
+    "To-support-the-dev-community": "Supporter la communauté des devs"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Vous n'avez pas aimé de musique pour l'instant",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "Il sera expulsé du groupe"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Déjà un compte",
     "ForgotPassword": "J'ai oublié mon mot de passe",
     "Log-In": "Se connecter",
     "Login": "Se connecter",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "Pseudo ou courriel",
     "Register": "S'inscrire",
     "Registration": "Inscription",
-    "accept-tou": "J'accepte les conditions d'utilisations",
-    "click-on-email": "Veuillez cliquer sur le lien du courriel",
     "Sign-up": "S'inscrire",
-    "Already-have-an-account": "Déjà un compte"
+    "accept-tou": "J'accepte les conditions d'utilisations",
+    "click-on-email": "Veuillez cliquer sur le lien du courriel"
   },
   "MAIN-MUSIC": {
     "My-music": "Ma Musique",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "Publicités",
     "CreationSpace": "Espace de création",
+    "Dev-Community": "Dev community",
     "Logout": "Se déconnecter",
     "My-pages": "Mes pages",
     "MyProfile": "Mon profile",
     "SearchBar": "Rechercher",
-    "Setting": "Paramètre",
-    "Dev-Community": "Dev community"
+    "Setting": "Paramètre"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "Message des modérateurs de Wiins",
@@ -657,8 +657,8 @@
     "only-f-can-see": "Seul les amis peuvent voir les publications"
   },
   "PUBLICATION": {
-    "generate-t-id": "Générer l'empreinte",
-    "delete-t-project": "Supprimer ce projet"
+    "delete-t-project": "Supprimer ce projet",
+    "generate-t-id": "Générer l'empreinte"
   },
   "REPORT": {
     "Code-Categorie": {

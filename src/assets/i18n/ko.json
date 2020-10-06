@@ -104,6 +104,7 @@
     "ID": "자료",
     "Information": "정보",
     "Introduction": "소개",
+    "Join": "가입",
     "Know-us": "우리를 알고",
     "Leave": "떠나다",
     "Like": "처럼",
@@ -184,8 +185,7 @@
     "reply..": "댓글",
     "responses": "응답",
     "soon": "곧",
-    "views": "견해",
-    "Join": ""
+    "views": "견해"
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "기부",
     "Donation-for-the-beta": "베타 를 위한 기부",
-    "To-support-the-dev-community": "개발자 커뮤니티지원",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "현재 사용할 수 없는 기능, 창조에 도움이 우리의 불화에 가입",
+    "To-support-the-dev-community": "개발자 커뮤니티지원"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "당신은 아직 음악을 좋아하지 않은",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "그는 그룹에서 추방 될 것이다"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "이미 계정이 있습니다.",
     "ForgotPassword": "비밀번호를 잊었습니다",
     "Log-In": "로그인",
     "Login": "로그인",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "닉네임 또는 이메일",
     "Register": "레지스터",
     "Registration": "기재",
+    "Sign-up": "등록하세요",
     "accept-tou": "이용 약관에 동의합니다.",
-    "click-on-email": "이메일 링크를 클릭하십시오",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "이메일 링크를 클릭하십시오"
   },
   "MAIN-MUSIC": {
     "My-music": "내 음악",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "광고",
     "CreationSpace": "창조적 공간",
+    "Dev-Community": "개발자 커뮤니티",
     "Logout": "로그 아웃",
     "My-pages": "내 페이지",
     "MyProfile": "내 프로필",
     "SearchBar": "검색",
-    "Setting": "환경",
-    "Dev-Community": ""
+    "Setting": "환경"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "Wiins 운영자의 메시지",
@@ -657,8 +657,8 @@
     "only-f-can-see": "친구만 출판물을 볼 수 있습니다."
   },
   "PUBLICATION": {
-    "generate-t-id": "발자국 생성",
-    "delete-t-project": ""
+    "delete-t-project": "이 프로젝트 삭제",
+    "generate-t-id": "발자국 생성"
   },
   "REPORT": {
     "Code-Categorie": {

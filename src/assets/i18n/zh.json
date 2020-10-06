@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "信息",
     "Introduction": "介绍",
+    "Join": "加入",
     "Know-us": "了解我们",
     "Leave": "离开",
     "Like": "喜欢",
@@ -184,8 +185,7 @@
     "reply..": "回复",
     "responses": "回应",
     "soon": "不久",
-    "views": "意见",
-    "Join": ""
+    "views": "意见"
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "捐赠",
     "Donation-for-the-beta": "为测试版捐款",
-    "To-support-the-dev-community": "支持开发社区",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "功能目前不可用， 加入我们的不和谐， 以帮助创建",
+    "To-support-the-dev-community": "支持开发社区"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "你还不喜欢音乐",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "他将被开除"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "已有帐户",
     "ForgotPassword": "我忘记了我的密码",
     "Log-In": "登录",
     "Login": "登录",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "昵称或电子邮件",
     "Register": "寄存器",
     "Registration": "注册",
+    "Sign-up": "登记",
     "accept-tou": "我接受使用条款和条件",
-    "click-on-email": "请点击电子邮件链接",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "请点击电子邮件链接"
   },
   "MAIN-MUSIC": {
     "My-music": "我的音乐",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "广告",
     "CreationSpace": "创意空间",
+    "Dev-Community": "开发社区",
     "Logout": "登出",
     "My-pages": "我的页面",
     "MyProfile": "我的个人资料",
     "SearchBar": "搜索",
-    "Setting": "设置",
-    "Dev-Community": ""
+    "Setting": "设置"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "来自 Wiins 版主的消息",
@@ -657,8 +657,8 @@
     "only-f-can-see": "只有朋友才能看到出版物"
   },
   "PUBLICATION": {
-    "generate-t-id": "产生足迹",
-    "delete-t-project": ""
+    "delete-t-project": "删除此项目",
+    "generate-t-id": "产生足迹"
   },
   "REPORT": {
     "Code-Categorie": {

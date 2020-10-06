@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "Em formação",
     "Introduction": "Introdução",
+    "Join": "Juntar",
     "Know-us": "Conheça-nos",
     "Leave": "Sair",
     "Like": "Curti",
@@ -184,8 +185,7 @@
     "reply..": "resposta",
     "responses": "respostas",
     "soon": "em breve",
-    "views": "visualizações",
-    "Join": ""
+    "views": "visualizações"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "Doação",
     "Donation-for-the-beta": "Doação para beta",
-    "To-support-the-dev-community": "Para apoiar a comunidade de dev",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Função indisponível no momento, junte-se à nossa discórdia para ajudar na criação",
+    "To-support-the-dev-community": "Para apoiar a comunidade de dev"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Você ainda não gostou de música.",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "Ele será expulso do grupo"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Já tenho uma conta",
     "ForgotPassword": "Esqueci a minha senha",
     "Log-In": "Conecte-se",
     "Login": "Conecte-se",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "Apelido ou email",
     "Register": "Registro",
     "Registration": "Cadastro",
+    "Sign-up": "Inscrição",
     "accept-tou": "Eu aceito os termos e condições de uso",
-    "click-on-email": "Por favor, clique no link do email",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "Por favor, clique no link do email"
   },
   "MAIN-MUSIC": {
     "My-music": "Minha música",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "Publicidades",
     "CreationSpace": "Espaço criativo",
+    "Dev-Community": "Comunidade de dev",
     "Logout": "Sair",
     "My-pages": "Minhas páginas",
     "MyProfile": "Meu perfil",
     "SearchBar": "Procurar",
-    "Setting": "Configuração",
-    "Dev-Community": ""
+    "Setting": "Configuração"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "Mensagem dos moderadores de Wiins",
@@ -657,8 +657,8 @@
     "only-f-can-see": "Só amigos podem ver as publicações"
   },
   "PUBLICATION": {
-    "generate-t-id": "Gerar presença",
-    "delete-t-project": ""
+    "delete-t-project": "Exclua este projeto",
+    "generate-t-id": "Gerar presença"
   },
   "REPORT": {
     "Code-Categorie": {

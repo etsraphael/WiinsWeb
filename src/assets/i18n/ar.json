@@ -104,6 +104,7 @@
     "ID": "معرف",
     "Information": "معلومات",
     "Introduction": "المقدمة",
+    "Join": "الانضمام",
     "Know-us": "تعرف علينا",
     "Leave": "غادر",
     "Like": "مثل",
@@ -184,8 +185,7 @@
     "reply..": "الرد",
     "responses": "استجابات",
     "soon": "هكذا",
-    "views": "الآراء",
-    "Join": ""
+    "views": "الآراء"
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "التبرع",
     "Donation-for-the-beta": "التبرع للبيتا",
-    "To-support-the-dev-community": "دعم مجتمع التنمية",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": ""
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "وظيفة غير متوفرة في الوقت الراهن، والانضمام إلى خلاف لدينا للمساعدة في خلق",
+    "To-support-the-dev-community": "دعم مجتمع التنمية"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "لم تحب الموسيقى بعد",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "سيتم طرده من المجموعة"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "لديك حساب بالفعل",
     "ForgotPassword": "لقد نسيت كلمة المرور",
     "Log-In": "تسجيل الدخول",
     "Login": "تسجيل الدخول",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "الاسم المستعار أو البريد الإلكتروني",
     "Register": "تسجيل",
     "Registration": "التسجيل",
+    "Sign-up": "التسجيل",
     "accept-tou": "أقبل شروط وأحكام الاستخدام",
-    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني"
   },
   "MAIN-MUSIC": {
     "My-music": "موسيقاي",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "إعلانات",
     "CreationSpace": "الفضاء الإبداعي",
+    "Dev-Community": "مجتمع ديف",
     "Logout": "تسجيل خروج",
     "My-pages": "صفحاتي",
     "MyProfile": "ملف التعريف الخاص بي",
     "SearchBar": "بحث",
-    "Setting": "ضبط",
-    "Dev-Community": ""
+    "Setting": "ضبط"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "رسالة من مشرفي Wiins",
@@ -657,8 +657,8 @@
     "only-f-can-see": "يمكن للأصدقاء فقط رؤية المنشورات"
   },
   "PUBLICATION": {
-    "generate-t-id": "توليد البصمة",
-    "delete-t-project": ""
+    "delete-t-project": "حذف هذا المشروع",
+    "generate-t-id": "توليد البصمة"
   },
   "REPORT": {
     "Code-Categorie": {

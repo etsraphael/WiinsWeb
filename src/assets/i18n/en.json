@@ -104,6 +104,7 @@
     "ID": "ID",
     "Information": "Information",
     "Introduction": "Introduction",
+    "Join": "Join",
     "Know-us": "Know us",
     "Leave": "Leave",
     "Like": "Like",
@@ -184,8 +185,7 @@
     "reply..": "reply..",
     "responses": "responses",
     "soon": "soon",
-    "views": "views",
-    "Join": "Join"
+    "views": "views"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -463,8 +463,8 @@
   "DONATION": {
     "Donation": "Donation",
     "Donation-for-the-beta": "Donation for beta",
-    "To-support-the-dev-community": "To support the dev community",
-    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Function unavailable at the moment, join our discord to help with creation"
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Function unavailable at the moment, join our discord to help with creation",
+    "To-support-the-dev-community": "To support the dev community"
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "You haven't liked music yet",
@@ -553,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "He will be expelled from the group"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Already have an account",
     "ForgotPassword": "I forgot my password",
     "Log-In": "Log in",
     "Login": "Log in",
@@ -560,10 +561,9 @@
     "PseudoOrEmail": "Nickname or email",
     "Register": "Register",
     "Registration": "Registration",
-    "accept-tou": "I accept the terms and conditions of use",
-    "click-on-email": "Please click on the email link",
     "Sign-up": "Sign up",
-    "Already-have-an-account": "Already have an account"
+    "accept-tou": "I accept the terms and conditions of use",
+    "click-on-email": "Please click on the email link"
   },
   "MAIN-MUSIC": {
     "My-music": "My music",
@@ -577,12 +577,12 @@
   "NAVBAR": {
     "Ads": "Ads",
     "CreationSpace": "Creative space",
+    "Dev-Community": "Dev community",
     "Logout": "Log out",
     "My-pages": "My pages",
     "MyProfile": "My profile",
     "SearchBar": "Search",
-    "Setting": "Setting",
-    "Dev-Community": "Dev community"
+    "Setting": "Setting"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "Message from Wiins moderators",
@@ -657,8 +657,8 @@
     "only-f-can-see": "Only friends can see the publications"
   },
   "PUBLICATION": {
-    "generate-t-id": "Generate the footprint",
-    "delete-t-project": "Delete this project"
+    "delete-t-project": "Delete this project",
+    "generate-t-id": "Generate the footprint"
   },
   "REPORT": {
     "Code-Categorie": {
