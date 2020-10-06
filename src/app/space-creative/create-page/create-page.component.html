@@ -2,166 +2,181 @@
 <span hidden>{{coverUrl}}</span>
 <span hidden>{{avatarUrl}}</span>
 
-<!-- Header's Page -->
-<div class="container-header">
-  <div class="container-cover">
-    <div class="row mx-0 py-3 header-row position-absolute w-100">
-      <div class="title col mr-auto text-left my-auto">
-        <h2 class="ml-2" *ngIf="titlepage.value.length == 0">{{'PAGE.Name-page'|translate}}</h2>
-        <h2 class="ml-2" *ngIf="titlepage.value.length > 0">{{titlepage.value}}</h2>
+<div class="w-100 h-100" [hidden]="(loading$|async)">
+
+  <!-- Header's Page -->
+  <div class="container-header">
+    <div class="container-cover">
+      <div class="row mx-0 py-3 header-row position-absolute w-100">
+        <div class="title col mr-auto text-left my-auto">
+          <h2 class="ml-2" *ngIf="titlepage.value.length == 0">{{'PAGE.Name-page'|translate}}</h2>
+          <h2 class="ml-2" *ngIf="titlepage.value.length > 0">{{titlepage.value}}</h2>
+        </div>
+        <div class="follow col ml-auto text-right my-auto">
+          <button>
+            <i class="px-2 py-auto fa fa-heart-o"></i>
+            <span class="px-2 py-1">{{'CORE.Follow'|translate}}</span>
+          </button>
+        </div>
       </div>
-      <div class="follow col ml-auto text-right my-auto">
-        <button>
-          <i class="px-2 py-auto fa fa-heart-o"></i>
-          <span class="px-2 py-1">{{'CORE.Follow'|translate}}</span>
+      <img class="w-100 h-100" *ngIf="imgCover" [src]="imgCover">
+    </div>
+    <div class="row container-profile">
+      <img class="mx-auto" *ngIf="imgProfile" [src]="imgProfile">
+    </div>
+  </div>
+
+  <!-- Information for Creation -->
+  <form [formGroup]="pageForm" class="container-form container mt-5">
+
+    <!-- Title -->
+    <div class="row mx-0 my-3">
+      <div class="col title ml-2">
+        <span>{{'CORE.Stages'|translate}}</span>
+      </div>
+    </div>
+
+    <!-- Information -->
+    <div class="row mx-0">
+
+      <!-- Manage information -->
+      <div class="col-md-6 information">
+        <!-- Form -->
+        <div class="row">
+          <div class="col-8">
+            <div class="form-group">
+              <label>{{'PAGE.Name-page'|translate}}</label>
+              <input #titlepage formControlName="name" type="text" class="form-control pl-3"
+                [placeholder]="'PAGE.Name-page'|translate">
+            </div>
+          </div>
+          <div class="col-2 my-auto">
+            <i [ngClass]="{ 'is-valid': !f.name.errors }" class="pt-2 fa fa-2x fa-check-circle-o"></i>
+          </div>
+        </div>
+        <!-- Add coverPicture -->
+        <div class="row my-4 upload">
+          <div class="col-4 col-md-4 col-sm-12 text-center">
+            <input hidden id="upload_cover" type="file" accept='image/*' #cover (change)=previewCover($event)>
+            <label for="upload_cover" class="btn btn-upload">
+              <i class="fa fa-download mr-2"></i>
+              <span>{{'CORE.Upload'|translate}}</span>
+            </label>
+          </div>
+          <div class="col-8 col-md-8 col-sm-12 my-auto">
+            <div class="row mx-0 text-center my-auto">
+              <span>{{'UPLOAD.add-cover-picture'|translate}}</span>
+              <i [ngClass]="{ 'is-valid': coverUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Add profilePicture -->
+        <div class="row my-4 upload">
+          <div class="col-4 col-md-4 col-sm-12 text-center">
+            <input hidden id="upload_profile" type="file" accept='image/*' #profile (change)=previewProfile($event)>
+            <label for="upload_profile" class="btn btn-upload">
+              <i class="fa fa-download mr-2"></i>
+              <span>{{'CORE.Upload'|translate}}</span>
+            </label>
+          </div>
+          <div class="col-8 col-md-8 col-sm-12 my-auto">
+            <div class="row mx-0 text-center my-auto">
+              <span>{{'UPLOAD.add-profile-picture'|translate}}</span>
+              <i [ngClass]="{ 'is-valid': avatarUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Manage team -->
+      <div class="col-md-6">
+        <div class="row mx-0 my-2">
+          <span class="mx-auto">{{'ADMIN.Add-administrator'|translate}}
+            ({{'ERROR-MESSAGE.y-have-to-be-friend'|translate}})</span>
+        </div>
+        <div class="container-user">
+          <div class="row mx-0">
+            <div class="input-group col-8 h-100 mt-3 mb-2">
+              <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3"
+                [placeholder]="'PLACEHOLDER.Type-t-pseudo'|translate" [formControl]="searchField">
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addAdmin(profile)">
+                  <div class="oneSuggest row mx-0 py-3">
+                    <div class="col-3 profile-img my-auto">
+                      <img class="rounded-circle" [src]="profile.pictureprofile">
+                    </div>
+                    <div class="col-9 mt-2 my-auto">
+                      <span>{{profile._meta.pseudo}}</span>
+                    </div>
+                  </div>
+                </mat-option>
+              </mat-autocomplete>
+            </div>
+          </div>
+          <div class="container-admin mt-2">
+            <li class="myprofile">
+              <div class="row mx-0 py-2">
+                <div class="col-md-2 row mx-0 px-0" *ngIf="(myprofile$|async)">
+                  <img class="mx-auto img-fluid" [src]="(myprofile$|async)?.pictureprofile">
+                </div>
+                <div class="col-md-5 my-auto adminPseudo">
+                  <span>{{(myprofile$ | async)?._meta.pseudo}}</span>
+                </div>
+                <div ngbDropdown class="col-md-5 chooseRole my-auto">
+                  <button ngbDropdownToggle id="showRole"
+                    class="btn-role w-100 row mx-0 px-0 shadow role-0 not-allowed">
+                    <span class="col-md-9 py-1">{{'ADMIN.President'|translate}}</span>
+                    <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li *ngFor="let a of adminAdded">
+              <div class="row mx-0 py-2">
+                <div class="col-md-2 row mx-0 px-0">
+                  <img class="mx-auto img-fluid" [src]="a.profile.pictureprofile" alt="">
+                </div>
+                <div class="col-md-5 my-auto adminPseudo">
+                  <span>{{a.profile._meta.pseudo}}</span>
+                </div>
+                <div ngbDropdown class="col-md-5 chooseRole my-auto">
+                  <button ngbDropdownToggle id="showRole" class="btn-role w-100 row mx-0 px-0 shadow"
+                    [ngClass]="'role-'+ a.role">
+                    <span class="col-md-9 py-1">{{ 'ADMIN.Code.' + (a.role + 1) | translate}}</span>
+                    <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
+                  </button>
+                  <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="showRole">
+                    <a *ngFor="let c of roleAdmin; let i = index" class="dropdown-item"
+                      (click)="updateRole(a.profile._id, i+1)">{{c.role}}</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" (click)="removeAddAdmin(a.profile._id)">{{'CORE.Delete'| translate}}</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Confirm -->
+    <div class="row mt-3 mb-5">
+      <div class="d-flex mx-auto">
+        <button (click)="submit()" class="btn-confirm ml-5 my-2">
+          <div class="d-flex py-auto">
+            <span class="px-2">{{'CORE.Confirm'|translate}}</span>
+          </div>
         </button>
       </div>
     </div>
-    <img class="w-100 h-100" *ngIf="imgCover" [src]="imgCover">
-  </div>
-  <div class="row container-profile">
-    <img class="mx-auto" *ngIf="imgProfile" [src]="imgProfile">
-  </div>
+
+  </form>
+
 </div>
 
-<!-- Information for Creation -->
-<form [formGroup]="pageForm" class="container-form container mt-5">
-
-  <!-- Title -->
-  <div class="row mx-0 my-3">
-    <div class="col title ml-2">
-      <span>{{'CORE.Stages'|translate}}</span>
+<!-- Loading Anination -->
+<div class="container" *ngIf="(loading$|async)">
+  <div class="row">
+    <div class="mx-auto">
+      <div class="loader m-auto">Loading...</div>
     </div>
   </div>
-
-  <!-- Information -->
-  <div class="row mx-0">
-
-    <!-- Manage information -->
-    <div class="col-md-6 information">
-      <!-- Form -->
-      <div class="row">
-        <div class="col-8">
-          <div class="form-group">
-            <label>{{'PAGE.Name-page'|translate}}</label>
-            <input #titlepage formControlName="name" type="text" class="form-control pl-3" [placeholder]="'PAGE.Name-page'|translate">
-          </div>
-        </div>
-        <div class="col-2 my-auto">
-          <i [ngClass]="{ 'is-valid': !f.name.errors }" class="pt-2 fa fa-2x fa-check-circle-o"></i>
-        </div>
-      </div>
-      <!-- Add coverPicture -->
-      <div class="row my-4 upload">
-        <div class="col-4 col-md-4 col-sm-12 text-center">
-          <input hidden id="upload_cover" type="file" accept='image/*' #cover (change)=previewCover($event)>
-          <label for="upload_cover" class="btn btn-upload">
-            <i class="fa fa-download mr-2"></i>
-            <span>{{'CORE.Upload'|translate}}</span>
-          </label>
-        </div>
-        <div class="col-8 col-md-8 col-sm-12 my-auto">
-          <div class="row mx-0 text-center my-auto">
-            <span>{{'UPLOAD.add-cover-picture'|translate}}</span>
-            <i [ngClass]="{ 'is-valid': coverUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
-          </div>
-        </div>
-      </div>
-      <!-- Add profilePicture -->
-      <div class="row my-4 upload">
-        <div class="col-4 col-md-4 col-sm-12 text-center">
-          <input hidden id="upload_profile" type="file" accept='image/*' #profile
-            (change)=previewProfile($event)>
-          <label for="upload_profile" class="btn btn-upload">
-            <i class="fa fa-download mr-2"></i>
-            <span>{{'CORE.Upload'|translate}}</span>
-          </label>
-        </div>
-        <div class="col-8 col-md-8 col-sm-12 my-auto">
-          <div class="row mx-0 text-center my-auto">
-            <span>{{'UPLOAD.add-profile-picture'|translate}}</span>
-            <i [ngClass]="{ 'is-valid': avatarUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Manage team -->
-    <div class="col-md-6">
-      <div class="row mx-0 my-2">
-        <span class="mx-auto">{{'ADMIN.Add-administrator'|translate}} ({{'ERROR-MESSAGE.y-have-to-be-friend'|translate}})</span>
-      </div>
-      <div class="container-user">
-        <div class="row mx-0">
-          <div class="input-group col-8 h-100 mt-3 mb-2">
-            <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3"
-             [placeholder]="'PLACEHOLDER.Type-t-pseudo'|translate" [formControl]="searchField">
-            <mat-autocomplete #auto="matAutocomplete">
-              <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addAdmin(profile)">
-                <div class="oneSuggest row mx-0 py-3">
-                  <div class="col-3 profile-img my-auto">
-                    <img class="rounded-circle" [src]="profile.pictureprofile">
-                  </div>
-                  <div class="col-9 mt-2 my-auto">
-                    <span>{{profile._meta.pseudo}}</span>
-                  </div>
-                </div>
-              </mat-option>
-            </mat-autocomplete>
-          </div>
-        </div>
-        <div class="container-admin mt-2">
-          <li class="myprofile">
-            <div class="row mx-0 py-2">
-              <div class="col-md-2 row mx-0 px-0" *ngIf="(myprofile$|async)">
-                <img class="mx-auto img-fluid" [src]="(myprofile$|async)?.pictureprofile">
-              </div>
-              <div class="col-md-5 my-auto adminPseudo">
-                <span>{{(myprofile$ | async)?._meta.pseudo}}</span>
-              </div>
-              <div ngbDropdown class="col-md-5 chooseRole my-auto">
-                <button ngbDropdownToggle id="showRole" class="btn-role w-100 row mx-0 px-0 shadow role-0 not-allowed">
-                  <span class="col-md-9 py-1">{{'ADMIN.President'|translate}}</span>
-                  <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
-                </button>
-              </div>
-            </div>
-          </li>
-          <li *ngFor="let a of adminAdded">
-            <div class="row mx-0 py-2">
-              <div class="col-md-2 row mx-0 px-0">
-                <img class="mx-auto img-fluid" [src]="a.profile.pictureprofile" alt="">
-              </div>
-              <div class="col-md-5 my-auto adminPseudo">
-                <span>{{a.profile._meta.pseudo}}</span>
-              </div>
-              <div ngbDropdown class="col-md-5 chooseRole my-auto">
-                <button ngbDropdownToggle id="showRole" class="btn-role w-100 row mx-0 px-0 shadow"
-                  [ngClass]="'role-'+ a.role">
-                  <span class="col-md-9 py-1">{{ 'ADMIN.Code.' + (a.role + 1) | translate}}</span>
-                  <div class="col-md-3 my-auto"><i class="fa fa-angle-down pt-1"></i></div>
-                </button>
-                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="showRole">
-                  <a *ngFor="let c of roleAdmin; let i = index" class="dropdown-item"
-                    (click)="updateRole(a.profile._id, i+1)">{{c.role}}</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" (click)="removeAddAdmin(a.profile._id)">{{'CORE.Delete'| translate}}</a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Confirm -->
-  <div class="row mt-3 mb-5">
-    <div class="d-flex mx-auto">
-      <button (click)="submit()" class="btn-confirm ml-5 my-2">
-        <div class="d-flex py-auto">
-          <span class="px-2">{{'CORE.Confirm'|translate}}</span>
-        </div>
-      </button>
-    </div>
-  </div>
-
-</form>
+</div>

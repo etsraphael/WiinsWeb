@@ -7,5 +7,6 @@ export class MenuPlaylistModel {
   trendPlaylist: Playlist[]
   friendsCard: Playlist[]
   discoverPlaylist: Playlist[]
+  lastestPlaylist: Playlist[]
 
 }

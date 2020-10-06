@@ -150,7 +150,7 @@
     "To-chosse": "Choose",
     "To-signal-an-issue": "Report a problem",
     "Total": "Total",
-    "Towards-an-infinit-space": "Towards an ini-finite  space",
+    "Towards-an-infinit-space": "Towards an inifinite space",
     "Trend": "Trend",
     "Unsubscribe": "Unsubscribe",
     "Update": "Update",
@@ -569,7 +569,9 @@
     "My-music": "My music",
     "My-wiinsers": "My wiinsers",
     "Tops": "The tops",
-    "Trend": "Trend"
+    "Trend": "Trend",
+    "Lastest-tube": "Lastest tube",
+    "Lastest-Project": "Lastest project"
   },
   "MINI-CHAT": {
     "text-a-friend": "Text a friend"

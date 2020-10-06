@@ -4,6 +4,8 @@ import { RootStoreState, PlaylistMusicStoreActions, PlaylistMusicStoreSelectors 
 import { Observable } from 'rxjs'
 import { skipWhile, filter } from 'rxjs/operators'
 import { MenuPlaylistModel } from 'src/app/core/models/music/menuplaylist.model'
+import { MatSnackBar } from '@angular/material'
+import { TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-music-main',
@@ -18,7 +20,9 @@ export class MusicMainComponent implements OnInit {
 
 
   constructor(
-    private store$: Store<RootStoreState.State>
+    private store$: Store<RootStoreState.State>,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -33,6 +37,18 @@ export class MusicMainComponent implements OnInit {
       filter(value => value !== undefined)
     )
 
+  }
+
+  supportMessage(): void {
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
   
 }

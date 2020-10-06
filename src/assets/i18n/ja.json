@@ -569,7 +569,9 @@
     "My-music": "私の音楽",
     "My-wiinsers": "私のウィインサー",
     "Tops": "トップス",
-    "Trend": "傾向"
+    "Trend": "傾向",
+    "Lastest-tube": "",
+    "Lastest-Project": ""
   },
   "MINI-CHAT": {
     "text-a-friend": "友達にメッセージを送る"
