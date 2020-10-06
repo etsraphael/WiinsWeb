@@ -105,7 +105,7 @@ export class MiniChatComponent implements OnInit {
       backdropClass: '.no-backdrop',
       height: '27.5rem',
       width: '21rem',
-      position: { left: position.x + 30 + 'px', top: position.y - 2650 + 'px' },
+      position: { left: position.x + 30 + 'px', top: position.y - 2350 + 'px' },
       data: { cardHeader: room.participants, currentRoom: room, myProfileID: this.user.profile, searching: false }
     });
 
