@@ -190,7 +190,6 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
   // send the new feed publication
   createFeedPublication() {
     let publication = this.constructFeedPublication()
-    console.log(publication)
     if (this.checkVerification(publication.type) == false) {
       this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.els-ar-missing'),
@@ -220,7 +219,7 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
   }
 
   // update in store
-  sendPublication(publication:FeedPublication) {
+  sendPublication(publication: FeedPublication) {
     this.store$.dispatch(new FeedPublicationStoreActions.AddFeedPublication(publication))
     this.closepublication()
   }
@@ -246,7 +245,7 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
   }
 
   // choose type of card
-  constructFeedPublication(): FeedPublication{
+  constructFeedPublication(): FeedPublication {
     let pageID = this.route.parent.snapshot.paramMap.get('id')
 
     switch (this.publicationType) {
@@ -364,7 +363,7 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
   updateProgress(event: HttpEvent<{}>, urlSigned: UrlSigned, type: string): void {
     switch (event.type) {
       case HttpEventType.UploadProgress: { this.uploadPicture = Math.round((100 * event.loaded) / event.total); break }
-      case HttpEventType.Response: { this.updateUrl(type, urlSigned.Bucket, 'image'); break }
+      case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
       default: break
     }
   }
