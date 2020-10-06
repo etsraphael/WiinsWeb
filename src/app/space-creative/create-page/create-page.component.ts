@@ -4,10 +4,10 @@ import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { FormControl, FormGroup, Validators } from '@angular/forms'
 import { filter, debounceTime, distinctUntilChanged, skipWhile, map } from 'rxjs/operators'
 import { Store, select } from '@ngrx/store'
-import { RootStoreState, ProfileFeatureStoreSelectors, SearchProfileStoreActions, SearchProfileStoreSelectors, PageFeatureStoreActions } from 'src/app/root-store'
+import { RootStoreState, ProfileFeatureStoreSelectors, SearchProfileStoreActions, SearchProfileStoreSelectors, PageFeatureStoreActions, PageFeatureStoreSelectors } from 'src/app/root-store'
 import { Observable, Subscription, combineLatest } from 'rxjs'
 import { ActivatedRoute } from '@angular/router'
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar, MatDialog, MatDialogRef } from '@angular/material'
+import { MatSnackBar, MatDialog, MatDialogRef } from '@angular/material'
 import { PageModel } from 'src/app/core/models/page/page.model'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
@@ -53,6 +53,8 @@ export class CreatePageComponent implements OnInit {
   dialogS: Subscription
   updatepicture: string
 
+  // page
+  loading$: Observable<boolean>
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -94,6 +96,13 @@ export class CreatePageComponent implements OnInit {
       select(ProfileFeatureStoreSelectors.selectProfile),
       skipWhile(val => val === null),
       filter(profile => !!profile),
+    )
+
+    // to select the page in loading
+    this.loading$ = this.store$.pipe(
+      select(PageFeatureStoreSelectors.selectIsLoading),
+      filter(value => value !== undefined),
+      skipWhile(val => val == null)
     )
 
   }
@@ -230,7 +239,7 @@ export class CreatePageComponent implements OnInit {
         return null
       }
 
-      if (!!result.url) { 
+      if (!!result.url) {
         if (this.updatepicture == 'profile-page') this.avatarUrl = result.url
         if (this.updatepicture == 'cover-page') this.coverUrl = result.url
       }
