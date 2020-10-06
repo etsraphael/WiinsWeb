@@ -169,7 +169,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })
@@ -180,7 +180,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000
       })
@@ -225,7 +225,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.user-already-in-t-music'),
         null, {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })

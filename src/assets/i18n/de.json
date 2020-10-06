@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "Information",
     "Introduction": "Einführung",
+    "Join": "Beitreten",
     "Know-us": "Kennen Sie uns",
     "Leave": "Verlassen",
     "Like": "Gefällt",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "Spende",
     "Donation-for-the-beta": "Spende für Beta",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "Funktion im Moment nicht verfügbar, verbinden Sie unsere Zwietracht, um bei der Erstellung zu helfen",
     "To-support-the-dev-community": "Zur Unterstützung der Entwickler-Community"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "Er wird aus der Gruppe ausgeschlossen"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "Haben bereits ein Konto",
     "ForgotPassword": "Ich habe mein Passwort vergessen",
     "Log-In": "Einloggen",
     "Login": "Einloggen",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "Spitzname oder E-Mail",
     "Register": "Registrieren",
     "Registration": "Anmeldung",
+    "Sign-up": "Anmelden",
     "accept-tou": "Ich akzeptiere die Nutzungsbedingungen",
-    "click-on-email": "Bitte klicken Sie auf den E-Mail-Link",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "Bitte klicken Sie auf den E-Mail-Link"
   },
   "MAIN-MUSIC": {
     "My-music": "Meine Musik",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "Anzeigen",
     "CreationSpace": "Kreativer Raum",
+    "Dev-Community": "Dev-Community",
     "Logout": "Ausloggen",
     "My-pages": "Meine Seiten",
     "MyProfile": "Mein Profil",
@@ -654,8 +657,8 @@
     "only-f-can-see": "Nur Freunde können die Publikationen sehen"
   },
   "PUBLICATION": {
-    "generate-t-id": "Fußabdruck erzeugen",
-    "delete-t-project": ""
+    "delete-t-project": "Dieses Projekt löschen",
+    "generate-t-id": "Fußabdruck erzeugen"
   },
   "REPORT": {
     "Code-Categorie": {

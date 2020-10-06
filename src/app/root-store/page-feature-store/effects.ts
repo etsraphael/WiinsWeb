@@ -52,7 +52,7 @@ export class PageFeatureEffects {
         this._snackBar.open(
           this.translate.instant('VALID-MESSAGE.update-is-done'),
           this.translate.instant('CORE.close'),
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }),
       map(items => new featureActions.DeletePageSuccess(items.message)),

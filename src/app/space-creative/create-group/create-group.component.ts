@@ -109,7 +109,7 @@ export class CreateGroupComponent implements OnInit {
       this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Th-person-is-already-a-member'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       });
@@ -175,7 +175,7 @@ export class CreateGroupComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-enter-missing-informations'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })
@@ -186,7 +186,7 @@ export class CreateGroupComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Please-add-group-photo'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })

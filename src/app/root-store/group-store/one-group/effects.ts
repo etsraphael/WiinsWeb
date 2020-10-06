@@ -35,7 +35,7 @@ export class GroupEffects {
       tap(() => this._snackBar.open(
         this.translate.instant('VALID-MESSAGE.update-is-done'), 
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       })),
@@ -127,7 +127,7 @@ export class GroupEffects {
     return this._snackBar.open(
       this.translate.instant('VALID-MESSAGE.update-is-done'),
       this.translate.instant('CORE.close'), {
-      horizontalPosition: 'left',
+      horizontalPosition: 'center',
       verticalPosition: 'bottom',
       duration: 5000,
     });

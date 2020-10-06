@@ -47,7 +47,7 @@ export class ChangingPasswordComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.8-char-minimum'), null,
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }
@@ -59,7 +59,7 @@ export class ChangingPasswordComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('SETTING.password.Erorr-password-different'), null,
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }
@@ -71,7 +71,7 @@ export class ChangingPasswordComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'), null,
         {
-          horizontalPosition: 'left',
+          horizontalPosition: 'center',
           verticalPosition: 'bottom',
           duration: 5000,
         }
@@ -92,7 +92,7 @@ export class ChangingPasswordComponent implements OnInit {
         this._snackBar.open(
           this.translate.instant('VALID-MESSAGE.update-is-done'), null,
           {
-            horizontalPosition: 'left',
+            horizontalPosition: 'center',
             verticalPosition: 'bottom',
             duration: 5000,
           }
@@ -103,7 +103,7 @@ export class ChangingPasswordComponent implements OnInit {
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
           {
-            horizontalPosition: 'left',
+            horizontalPosition: 'center',
             verticalPosition: 'bottom',
             duration: 5000,
           }

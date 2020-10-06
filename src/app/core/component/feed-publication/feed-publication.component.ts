@@ -173,7 +173,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
     if (files[0].size > 50000000) return this._snackBar.open(
       this.translate.instant('ERROR-MESSAGE.file-over-50mb'),
       this.translate.instant('CORE.close'),
-      { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+      { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
     )
 
     // get the file
@@ -220,7 +220,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
           return this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.not-more-than-30-sec-in-this-space'),
             this.translate.instant('CORE.close'), {
-            horizontalPosition: 'left',
+            horizontalPosition: 'center',
             verticalPosition: 'bottom',
             duration: 5000,
           })
@@ -279,7 +279,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
         if (this.feedPublicationForm.controls.text.status == 'INVALID') {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.els-ar-missing'), null,
-            { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
         }
@@ -288,7 +288,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
         if (!this.pictureUrl) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
-            { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
         }
@@ -297,7 +297,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
         if (!this.videoUrl || !this.pictureUrl) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
-            { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
         }
@@ -392,7 +392,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.not-more-5-hastags'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       });
@@ -403,7 +403,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.T-hashtag-is-already-there'),
         this.translate.instant('CORE.close'), {
-        horizontalPosition: 'left',
+        horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 5000,
       });

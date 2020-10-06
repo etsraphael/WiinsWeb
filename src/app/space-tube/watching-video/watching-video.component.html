@@ -124,7 +124,7 @@
               <div class="col-md-3 d-flex justify-content-center">
                 <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
               </div>
-              <div class="col-md-9 my-auto py-2 container-new-comment" (keydown.enter)="false">
+              <div class="col-md-9 my-auto py-2 container-new-comment" (keydown.enter)="supportMessage()">
                 <span class="content-comment-span w-100" #newComment contenteditable
                   placeholder="Write your comment here.."></span>
               </div>

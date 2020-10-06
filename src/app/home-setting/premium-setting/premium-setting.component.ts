@@ -62,7 +62,7 @@ export class PremiumSettingComponent implements OnInit {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.els-ar-missing'),
         this.translate.instant('CORE.close'),
-        { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
@@ -91,7 +91,7 @@ export class PremiumSettingComponent implements OnInit {
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'),
           this.translate.instant('CORE.close'),
-          { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
       }
     )

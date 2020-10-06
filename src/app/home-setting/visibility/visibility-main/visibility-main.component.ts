@@ -63,7 +63,7 @@ export class VisibilityMainComponent implements OnInit, OnDestroy {
       this.visibilityForm.value.visibility = null;
       this._snackBar.open(
         this.translate.instant('VALID-MESSAGE.update-is-done'),
-        null, { horizontalPosition: 'left', verticalPosition: 'bottom', duration: 5000 }
+        null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     })
 

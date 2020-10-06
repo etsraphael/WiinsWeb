@@ -9,6 +9,8 @@ import { FormControl } from '@angular/forms';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { ActivatedRoute } from '@angular/router';
 import { Room } from 'src/app/core/models/messenger/room.model';
+import { MatSnackBar } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-thread-message',
@@ -51,6 +53,8 @@ export class ThreadMessageComponent implements OnInit {
   constructor(
     private store$: Store<RootStoreState.State>,
     public activatedRoute: ActivatedRoute,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService
   ) {
     this.user = activatedRoute.parent.snapshot.data['loadedUser']
   }
@@ -172,16 +176,18 @@ export class ThreadMessageComponent implements OnInit {
 
   unMuteRoom() {
     // to unmute the room
-    this.room$.pipe(take(1)).subscribe(data => {
-      this.store$.dispatch(new FullRoomByIdStoreActions.roomMute(data._id, 0))
-    })
+    // this.room$.pipe(take(1)).subscribe(data => {
+    //   this.store$.dispatch(new FullRoomByIdStoreActions.roomMute(data._id, 0))
+    // })
+    this.supportMessage()
   }
 
   muteRoom() {
     // to mute the room
-    this.room$.pipe(take(1)).subscribe(data => {
-      this.store$.dispatch(new FullRoomByIdStoreActions.roomMute(data._id, 1))
-    })
+    // this.room$.pipe(take(1)).subscribe(data => {
+    //   this.store$.dispatch(new FullRoomByIdStoreActions.roomMute(data._id, 1))
+    // })
+    this.supportMessage()
   }
 
   deleteRoom(idRoom: string) {
@@ -192,15 +198,17 @@ export class ThreadMessageComponent implements OnInit {
 
   toogleSearch() {
     // to show the search bar
-    this.participantAdded = []
-    this.search = !this.search
+    // this.participantAdded = []
+    // this.search = !this.search
+    this.supportMessage()
   }
 
   addParticipant(profile: ProfileModel) {
     // to add an user in the room
-    this.store$.dispatch(new SearchProfileStoreActions.ResetSearch)
-    this.participantAdded.push(profile)
-    this.searchField.setValue('')
+    // this.store$.dispatch(new SearchProfileStoreActions.ResetSearch)
+    // this.participantAdded.push(profile)
+    // this.searchField.setValue('')
+    this.supportMessage()
   }
 
   deleteParticipant(profileID: string) {
@@ -222,5 +230,17 @@ export class ThreadMessageComponent implements OnInit {
   deleteMessage(roomID: string, messageID: string){
     // to delete the message
     this.store$.dispatch(new FullRoomByIdStoreActions.deleteMessage(roomID, messageID))
+  }
+
+  supportMessage(): void {
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
 }

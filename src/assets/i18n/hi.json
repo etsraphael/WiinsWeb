@@ -104,6 +104,7 @@
     "ID": "Id",
     "Information": "जानकारी",
     "Introduction": "परिचय",
+    "Join": "सम्मिलित हों",
     "Know-us": "हमें पता है",
     "Leave": "छोड़ना",
     "Like": "पसंद",
@@ -462,6 +463,7 @@
   "DONATION": {
     "Donation": "दान",
     "Donation-for-the-beta": "बीटा के लिए दान",
+    "Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation": "इस समय अनुपलब्ध कार्य करें, निर्माण में मदद करने के लिए हमारे मनमुटाव में शामिल हों",
     "To-support-the-dev-community": "देव समुदाय का समर्थन करने के लिए"
   },
   "EMPTY-MESSAGE": {
@@ -551,6 +553,7 @@
     "user-will-be-expelled-from-t-group": "उसे समूह से निष्कासित कर दिया जाएगा"
   },
   "LOGIN-REGISTRER": {
+    "Already-have-an-account": "पहले से ही एक खाता है",
     "ForgotPassword": "मैं अपना पासवर्ड भूल गया",
     "Log-In": "लॉग इन करें",
     "Login": "लॉग इन करें",
@@ -558,10 +561,9 @@
     "PseudoOrEmail": "उपनाम या ईमेल",
     "Register": "रजिस्टर करें",
     "Registration": "पंजीकरण",
+    "Sign-up": "नाम लिखो",
     "accept-tou": "मैं उपयोग के नियम ों और शर्तों को स्वीकार करता हूं",
-    "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें",
-    "Sign-up": "",
-    "Already-have-an-account": ""
+    "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें"
   },
   "MAIN-MUSIC": {
     "My-music": "मेरा संगीत",
@@ -575,6 +577,7 @@
   "NAVBAR": {
     "Ads": "विज्ञापन",
     "CreationSpace": "रचनात्मक स्थान",
+    "Dev-Community": "देव समुदाय",
     "Logout": "लॉग आउट",
     "My-pages": "मेरे पेज",
     "MyProfile": "मेरा प्रोफाइल",
@@ -654,8 +657,8 @@
     "only-f-can-see": "केवल मित्र ही प्रकाशन देख सकते हैं"
   },
   "PUBLICATION": {
-    "generate-t-id": "पदचिह्न उत्पन्न करें",
-    "delete-t-project": ""
+    "delete-t-project": "इस प्रोजेक्ट को हटाएं",
+    "generate-t-id": "पदचिह्न उत्पन्न करें"
   },
   "REPORT": {
     "Code-Categorie": {
