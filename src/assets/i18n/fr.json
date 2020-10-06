@@ -185,7 +185,7 @@
     "responses": "réponses",
     "soon": "bientôt",
     "views": "vues",
-    "Join": "Rejoindre"
+    "Join": "Rejoindr"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -581,7 +581,8 @@
     "My-pages": "Mes pages",
     "MyProfile": "Mon profile",
     "SearchBar": "Rechercher",
-    "Setting": "Paramètre"
+    "Setting": "Paramètre",
+    "Dev-Community": "Dev community"
   },
   "NOTIFICATIONS": {
     "Message-from-wiins-moderators": "Message des modérateurs de Wiins",

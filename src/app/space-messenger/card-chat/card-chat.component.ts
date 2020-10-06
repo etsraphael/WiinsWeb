@@ -216,6 +216,18 @@ export class CardChatComponent implements OnInit, OnDestroy {
     this.close()
   }
 
+  blockUser(){
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
+  }
+
   muteRoom(roomID: string) {
     // to mute a group
     // this.store$.dispatch(new RoomByIdStoreActions.currentRoomMute(roomID, 1))
