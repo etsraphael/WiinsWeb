@@ -139,7 +139,7 @@
     <div class="row mx-0 mt-4">
       <div class="col-md-3 my-2 px-2" *ngFor="let t of (tubePage$|async).tubes">
         <div class="card">
-          <div class="poster-video" [routerLink]="['../watching-video/' + t.tube._id ]">
+          <div class="poster-video" [routerLink]="['../' + t.tube._id ]" (click)="changeTube(t.tube._id)">
             <img class="profile" [src]="t.tube.profile.pictureprofile">
             <div class="time px-2">
               <i class="fa fa-clock-o"></i>
@@ -150,7 +150,7 @@
             <h4><strong>{{t.tube.name}}</strong></h4>
             <div class="row mx-0">
               <p class="mr-auto">{{t.tube.totalView}}K views</p>
-              <p class="ml-auto">0min</p>
+              <!-- <p class="ml-auto">0min</p> -->
             </div>
           </div>
         </div>

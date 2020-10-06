@@ -7,6 +7,8 @@ export enum ActionTypes {
   LOAD_TUBE_PAGE_FAIL = '@page_tube/load__fail',
   LOAD_TUBE_PAGE_SUCCESS = '@page_tube/load_success',
 
+  RESET_TUBE_PAGE = '@page_tube/reset'
+
 }
 
 export class LoadPageTube implements Action {
@@ -24,7 +26,12 @@ export class LoadPageTubeSuccess implements Action {
   constructor(public payload: TubePageModel) { }
 }
 
+export class ResetPageTube implements Action {
+  readonly type = ActionTypes.RESET_TUBE_PAGE
+}
+
 export type PageTubeActions =
   | LoadPageTube
   | LoadPageTubeFail
   | LoadPageTubeSuccess
+  | ResetPageTube

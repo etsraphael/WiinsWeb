@@ -25,6 +25,7 @@ export function featureReducer(state = initialState, action: PageTubeActions): S
         error: action.payload
       }    
     }
+    case ActionTypes.RESET_TUBE_PAGE: 
     case '@user/log_out' as any: return initialState
     default: return state
   }

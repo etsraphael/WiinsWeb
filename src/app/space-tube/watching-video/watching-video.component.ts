@@ -64,4 +64,9 @@ export class WatchingVideoComponent implements OnInit {
 
   }
 
+  changeTube(tubeId: string){
+    this.store$.dispatch(new TubePageStoreActions.ResetPageTube)
+    this.store$.dispatch(new TubePageStoreActions.LoadPageTube(tubeId))
+  }
+
 }
