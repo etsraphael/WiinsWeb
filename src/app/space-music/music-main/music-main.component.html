@@ -8,7 +8,8 @@
         <div class="container header">
           <div class="header-title row">
             <span class="title mx-2">{{'MAIN-MUSIC.My-wiinsers'|translate}}</span>
-            <span *ngIf="m.followingUsersPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
+            <span *ngIf="m.followingUsersPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more"
+              [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
           </div>
         </div>
         <div class="row container-list mx-0 p-3">
@@ -36,7 +37,8 @@
         <div class="container header">
           <div class="header-title row">
             <span class="title mx-2">{{'CORE.Trend'|translate}}</span>
-            <span *ngIf="m.trendPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
+            <span *ngIf="m.trendPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more"
+              [routerLink]="['../list/playlist/generator-trend']">| {{'CORE.Show-more'|translate}}</span>
           </div>
         </div>
         <div class="row container-list mx-0 p-3">
@@ -64,12 +66,35 @@
         <div class="container header">
           <div class="header-title row">
             <span class="title mx-2">{{'MAIN-MUSIC.Tops'|translate}}</span>
-            <span *ngIf="m.topPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" [routerLink]="['../list/playlist/generator-coutries']">| {{'CORE.Show-more'|translate}}</span>
+            <span *ngIf="m.topPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more"
+              [routerLink]="['../list/playlist/generator-coutries']">| {{'CORE.Show-more'|translate}}</span>
           </div>
         </div>
         <div #secondLine class="row container-list mx-0 p-3" *ngIf="p.length !== 0">
           <div *ngFor="let item of p" [routerLink]="['../playlist/' + item._id]" class="card mx-3">
             <img class="img-fluid h-100 w-100" [src]="item.picture" alt="">
+            <div class="btnPlay p-2">
+              <i class="fa fa-play fa-2x"></i>
+            </div>
+            <div class="footer-info w-100">
+              <span class="title mb-2">{{item.name}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Lastest Project -->
+    <div *ngIf="m.lastestPlaylist.length !== 0">
+      <div class="linePlaylist" *ngIf="m.lastestPlaylist; let p">
+        <div class="container header">
+          <div class="header-title row">
+            <span class="title mx-2">{{'MAIN-MUSIC.Lastest-Project'|translate}}</span>
+            <span *ngIf="m.lastestPlaylist.length == 6" class="sub-title mx-2 pt-3 see-more" (click)="supportMessage()">| {{'CORE.Show-more'|translate}}</span>
+          </div>
+        </div>
+        <div #secondLine class="row container-list mx-0 p-3" *ngIf="p.length !== 0">
+          <div *ngFor="let item of p" [routerLink]="['../playlist/' + item._id]" class="card mx-3">
+            <img class="img-fluid h-100 w-100 fit-cover" [src]="item.picture" alt="">
             <div class="btnPlay p-2">
               <i class="fa fa-play fa-2x"></i>
             </div>

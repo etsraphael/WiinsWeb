@@ -569,7 +569,9 @@
     "My-music": "Моя музыка",
     "My-wiinsers": "Мои wiinsers",
     "Tops": "Вершины",
-    "Trend": "тенденция"
+    "Trend": "тенденция",
+    "Lastest-tube": "",
+    "Lastest-Project": ""
   },
   "MINI-CHAT": {
     "text-a-friend": "Напиши другу"

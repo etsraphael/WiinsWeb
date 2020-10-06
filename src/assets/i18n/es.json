@@ -569,7 +569,9 @@
     "My-music": "Mi música",
     "My-wiinsers": "Mis salchichas",
     "Tops": "Las tapas",
-    "Trend": "Tendencia"
+    "Trend": "Tendencia",
+    "Lastest-tube": "",
+    "Lastest-Project": ""
   },
   "MINI-CHAT": {
     "text-a-friend": "De texto a un amigo"
