@@ -27,7 +27,7 @@ The only 3 dependencies are [Angular](https://angular.io), [Bootstrap 4](https:/
 | [Angular 10](https://discord.gg/EuhRBQc)  | 25$ |
 | [Messenger card](https://discord.gg/JWHbF7C)  | 15$ |
 | [Order of the publications](https://discord.gg/RvMgXZP)  | 65$ |
-| [Animation of the publications](https://discord.gg/vqqHSM9)  | 15$ |
+| [Animation of the publications](https://discord.gg/vqqHSM9)  | 25$ |
 | [Others minor update](https://discord.gg/JWHbF7C)  | 0$ |
 
 
