@@ -120,7 +120,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     )
 
     // send the new user
-    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend('fr', new Date(date))))
+    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend('en', new Date(date))))
 
   }
 
