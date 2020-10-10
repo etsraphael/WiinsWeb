@@ -1,6 +1,6 @@
 # WiinsWeb
 [![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)
-[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress-git)](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)
+[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)
 
 Wiins is a social media with the particularity of centralizing all web functions to improve the entertainment, security, comfort and ease of use.
 
