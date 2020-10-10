@@ -1,7 +1,6 @@
-# WiinsWeb
-[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to-git.png)](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to-git.png)
-[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress-git.png)](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress-git.png)
-
+# Wiins.io
+[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)
+[![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)
 
 Wiins is a social media with the particularity of centralizing all web functions to improve the entertainment, security, comfort and ease of use.
 
@@ -77,4 +76,3 @@ The build artifacts will be stored in the `dist/` directory. Use the `--prod` fl
 ## Contacts
 
 My twitter : [iamraphaelsalei](https://twitter.com/iamraphaelsalei)
-# Wiins.io-Web
