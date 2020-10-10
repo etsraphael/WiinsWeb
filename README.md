@@ -1,4 +1,4 @@
-# WiinsWeb
+# Wiins.io
 [![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)
 [![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)](https://eps-git.s3.eu-west-3.amazonaws.com/donations-adress.png)
 
@@ -76,4 +76,3 @@ The build artifacts will be stored in the `dist/` directory. Use the `--prod` fl
 ## Contacts
 
 My twitter : [iamraphaelsalei](https://twitter.com/iamraphaelsalei)
-# Wiins.io-Web
