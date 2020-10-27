@@ -1,67 +1,79 @@
 <!-- NavBar -->
-<nav class="navbar py-1">
+<nav class="navbar py-1 w-100">
   <div class="row mx-0 h-100 w-100">
 
     <!-- Search Bar -->
-    <div class="col-6 col-sm-6 col-md-7 pl-5">
-      <div class="row h-100 py-1">
-        <input type="text" class="pl-4 col h-100" [placeholder]="'CORE.Search'|translate" [formControl]="searchField">
+    <div class="col-6 col-sm-6 col-md-4">
+      <div class="row h-100 py-1 mx-auto w-50 container-search-bar-input">
+        <input type="text" class="pl-5 col h-100" [placeholder]="'CORE.Search'|translate" [formControl]="searchField">
         <i class="fa fa-search mt-1"></i>
       </div>
     </div>
 
-    <!-- Notification -->
+    <!-- Navigation -->
     <div class="col-4 col-sm-4 col-md-4 row px-0">
       <div class="m-auto">
         <div class="btn-nav-bar row">
-          <div class="dropdown mx-4" (click)="loadRequestList()">
-            <app-request-list></app-request-list>
-          </div>
-          <div class="dropdown mx-4" (click)="loadNotificationList()">
-            <app-notification-list></app-notification-list>
+          <div routerLinkActive="active" class="container-btn-nav" *ngFor="let item of menuItems">
+            <a [routerLink]="[item.path]">
+              <div class="row mx-0 px-4">
+                <img [ngClass]="item.class" class="nav-icon" [src]="'../../assets/icon/' + item.icon" alt="">
+              </div>
+              <div class="row mx-0">
+                <div class="line w-100"></div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Avatar -->
-    <div class="col-2 col-sm-2 col-md-1 col-md-1">
-      <div ngbDropdown class="avatar dropdown h-100 row pt-1" *ngIf="myprofile$| async; let p">
-        <button ngbDropdownToggle class="avatar-nav-bar nav-link py-0 my-auto ml-auto w-100" id="navbarDropdown"
-          role="button" aria-haspopup="true" aria-expanded="false">
-          <img [src]="p.pictureprofile" class="rounded-circle z-depth-0 my-avatar">
-        </button>
-        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a [routerLink]="['/myprofile']" class="dropdown-item">{{'NAVBAR.MyProfile'|translate}}</a>
-          <a [routerLink]="['/setting']" class="dropdown-item">{{'NAVBAR.Setting'|translate}}</a>
-          <a [routerLink]="['/SpaceCreative']" class="dropdown-item">{{'NAVBAR.CreationSpace'|translate}}</a>
-          <a target="_blank" href="https://discord.gg/jMyc443"
-            class="dropdown-item">{{'NAVBAR.Dev-Community'|translate}}</a>
-          <a target="_blank" href="https://twitter.com/espace_s"
-            class="dropdown-item">{{'CORE.To-signal-an-issue'|translate}}</a>
-          <div class="dropdown-divider"></div>
-          <div *ngIf="p.adminsPage.length !== 0">
-            <button class="w-100 w-100 btn-collapse text-left pl-4 bg-white" (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-              <span>{{'NAVBAR.My-pages'|translate}}</span>
-              <i class="fa fa-angle-down float-right pr-3 pt-1"></i>
-            </button>
-            <div id="collapseExample" [ngbCollapse]="!isCollapsed">
-              <div ngbDropdownToggle class="row mx-0 onePage py-2" *ngFor="let page of p.adminsPage"
-                (click)="goToPage(page._id); isCollapsed = !isCollapsed">
-                <div class="col-md-4">
-                  <img class="rounded-circle page-avatar" [src]="page.pictureprofile">
-                </div>
-                <div class="col-md-8 my-auto px-0">
-                  <span class="pageName">
-                    <p class="mb-0">{{page.name}}</p>
-                  </span>
+    <div class="col-2 col-sm-2 col-md-4 col-md-1">
+      <div class="row mx-0 d-flex justify-content-center">
+        <div class="dropdown mx-4 my-auto" (click)="loadRequestList()">
+          <app-request-list></app-request-list>
+        </div>
+        <div class="dropdown mx-4 my-auto" (click)="loadNotificationList()">
+          <app-notification-list></app-notification-list>
+        </div>
+        <div ngbDropdown class="avatar dropdown h-100 row pt-1 mx-4" *ngIf="myprofile$| async; let p">
+          <button ngbDropdownToggle class="avatar-nav-bar nav-link py-0 my-auto ml-auto w-100" id="navbarDropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">
+            <img [src]="p.pictureprofile" class="rounded-circle z-depth-0 my-avatar" alt="avatar">
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a [routerLink]="['/myprofile']" class="dropdown-item">{{'NAVBAR.MyProfile'|translate}}</a>
+            <a [routerLink]="['/setting']" class="dropdown-item">{{'NAVBAR.Setting'|translate}}</a>
+            <a [routerLink]="['/SpaceCreative']" class="dropdown-item">{{'NAVBAR.CreationSpace'|translate}}</a>
+            <a href="https://discord.gg/jMyc443" target="_blank"
+              class="dropdown-item">{{'NAVBAR.Dev-Community'|translate}}</a>
+            <a target="_blank" href="https://twitter.com/espace_s"
+              class="dropdown-item">{{'CORE.To-signal-an-issue'|translate}}</a>
+            <div class="dropdown-divider"></div>
+            <div *ngIf="p.adminsPage.length !== 0">
+              <button class="w-100 w-100 btn-collapse text-left pl-4 bg-white" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                <span>{{'NAVBAR.My-pages'|translate}}</span>
+                <i class="fa fa-angle-down float-right pr-3 pt-1"></i>
+              </button>
+              <div id="collapseExample" [ngbCollapse]="!isCollapsed">
+                <div ngbDropdownToggle class="row mx-0 onePage py-2" *ngFor="let page of p.adminsPage"
+                  (click)="goToPage(page._id); isCollapsed = !isCollapsed">
+                  <div class="col-md-4">
+                    <img class="rounded-circle page-avatar" [src]="page.pictureprofile" alt="avatar">
+                  </div>
+                  <div class="col-md-8 my-auto px-0">
+                    <span class="pageName">
+                      <p class="mb-0">{{page.name}}</p>
+                    </span>
+                  </div>
                 </div>
               </div>
+              <div class="dropdown-divider"></div>
             </div>
-            <div class="dropdown-divider"></div>
+            <a (click)="logOut()" class="dropdown-item">{{'NAVBAR.Logout'|translate}}</a>
           </div>
-          <a (click)="logOut()" class="dropdown-item">{{'NAVBAR.Logout'|translate}}</a>
         </div>
       </div>
     </div>
