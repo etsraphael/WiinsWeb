@@ -5,11 +5,10 @@
 }
 
 .bar-container {
-  background-color: #FFFFFF;
   border-radius: 12px 12px 0 0;
-  border: 1px solid #a8a8a847;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  backdrop-filter: blur(10px);
+  background-color: #ffffffcc;
 }
 
 .fa-search {
@@ -19,6 +18,7 @@
 
 .search-input {
   border: 0;
+  background-color: transparent;
 }
 
 .nav-icon {
@@ -38,4 +38,21 @@
   img {
     object-fit: cover;
   }
+}
+
+.fa-paper-plane {
+  font-size: 1.2rem;
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to left, #f83600, #fe8c00);
+  background: linear-gradient(to left, #f83600, #fe8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new-message-title {
+  color: #838383;
+  font-size: 18px;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+  text-align: center;
 }
