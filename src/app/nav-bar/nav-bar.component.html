@@ -3,7 +3,7 @@
   <div class="row mx-0 h-100 w-100">
 
     <!-- Search Bar -->
-    <div class="col-6 col-sm-6 col-md-4">
+    <div class="col-7 col-sm-7 col-md-6 col-xl-4">
       <div class="row h-100 py-1 mx-auto w-50 container-search-bar-input">
         <input type="text" class="pl-5 col h-100" [placeholder]="'CORE.Search'|translate" [formControl]="searchField">
         <i class="fa fa-search mt-1"></i>
@@ -11,10 +11,10 @@
     </div>
 
     <!-- Navigation -->
-    <div class="col-4 col-sm-4 col-md-4 row px-0">
-      <div class="m-auto">
-        <div class="btn-nav-bar row">
-          <div routerLinkActive="active" class="container-btn-nav" *ngFor="let item of menuItems">
+    <div class="col-xl-4 row px-0 d-none d-sm-none d-md-none d-xl-block">
+      <div class="m-auto h-100">
+        <div class="btn-nav-bar row d-flex justify-content-center h-100">
+          <div routerLinkActive="active" class="container-btn-nav my-auto" *ngFor="let item of menuItems">
             <a [routerLink]="[item.path]">
               <div class="row mx-0 px-4">
                 <img [ngClass]="item.class" class="nav-icon" [src]="'../../assets/icon/' + item.icon" alt="">
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Avatar -->
-    <div class="col-2 col-sm-2 col-md-4 col-md-1">
+    <div class="col-5 col-sm-5 col-md-6 col-xl-4">
       <div class="row mx-0 d-flex justify-content-center">
         <div class="dropdown mx-4 my-auto" (click)="loadRequestList()">
           <app-request-list></app-request-list>
