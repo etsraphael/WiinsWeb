@@ -1,0 +1,41 @@
+.container-footer {
+  position: fixed;
+  height: 4rem;
+  bottom: 0;
+}
+
+.bar-container {
+  background-color: #FFFFFF;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #a8a8a847;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.fa-search {
+  font-size: 1.2rem;
+  color: #858585;
+}
+
+.search-input {
+  border: 0;
+}
+
+.nav-icon {
+  width: 2rem;
+}
+
+.reverse-icon {
+  transform: scaleX(-1);
+}
+
+.one-room {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -6,4 +6,6 @@
   <div [@mainSpace]="prepareRoute(outlet)" class="container-router h-100">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
+  <!-- Footer -->
+  <app-footer-core *ngIf="router.url !== '/Messenger'"></app-footer-core>
 </div>

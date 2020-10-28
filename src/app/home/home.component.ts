@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(
     private store$: Store<RootStoreState.State>,
-    private router: Router,
+    public router: Router,
     private _snackBar: MatSnackBar,
     private translate: TranslateService
   ) { }

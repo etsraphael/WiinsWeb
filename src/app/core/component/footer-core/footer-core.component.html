@@ -1,0 +1,42 @@
+<div class="container-footer w-100">
+  <div class="row w-100 h-100 mx-0">
+    <!-- Search bar -->
+    <div class="col-xl-3 h-100">
+      <div class="container bar-container h-100 my-auto">
+        <div class="row mx-0 h-100">
+          <input class="col-10 pl-5 search-input" type="text" placeholder="Search a friends">
+          <div class="col-2 m-auto">
+            <i class="fa fa-search my-auto pt-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Last Room -->
+    <div class="col-xl-6 h-100">
+      <div class="bar-container h-100">
+        <div class="row mx-0 h-100">
+          <div class="col-1 my-auto cursor-pointer">
+            <img class="nav-icon reverse-icon" src="../../../../assets/icon/circle-go-right.png" alt="">
+          </div>
+          <div class="col-10 my-auto px-0">
+            <div class="row mx-0">
+              <div class="one-room rounded-circle mx-3 p-1" *ngFor="let item of [1,2,3,4,5,6,7]">
+                <img class="w-100 h-100 rounded-circle "
+                  src="https://images.unsplash.com/photo-1603560723100-89850d210055?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-1 my-auto cursor-pointer">
+            <img class="nav-icon" src="../../../../assets/icon/circle-go-right.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New Room -->
+    <div class="col-xl-3 h-100">
+      <div class="bar-container h-100">
+      </div>
+    </div>
+  </div>
+</div>
