@@ -64,12 +64,19 @@ nav {
   }
 }
 
-.home-icon {
-  width: 2.15rem;
+.home-icon .line, .message-icon .line {
+  top: 16px;
 }
 
-.music-icon,
-.tube-icon {
+.tube-icon .line {
+  top: 14px;
+}
+
+.group-icon .line {
+  top: 19px;
+}
+
+.nav-icon {
   width: 1.6rem;
 }
 
@@ -241,10 +248,8 @@ nav {
     background: linear-gradient(to right, #fc6767, #ec008c);
     display: none;
   }
-  
+
   .active .line {
     display: block;
   }
 }
-
-

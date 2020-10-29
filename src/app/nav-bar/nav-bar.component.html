@@ -15,9 +15,9 @@
       <div class="m-auto h-100">
         <div class="btn-nav-bar row d-flex justify-content-center h-100">
           <div routerLinkActive="active" class="container-btn-nav my-auto" *ngFor="let item of menuItems">
-            <a [routerLink]="[item.path]">
+            <a [routerLink]="[item.path]" [ngClass]="item.class">
               <div class="row mx-0 px-4">
-                <img [ngClass]="item.class" class="nav-icon" [src]="'../../assets/icon/' + item.icon" alt="">
+                <img class="nav-icon" [src]="'../../assets/icon/' + item.icon" alt="">
               </div>
               <div class="row mx-0">
                 <div class="line w-100"></div>
