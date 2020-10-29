@@ -17,11 +17,6 @@
   color: #858585;
 }
 
-.search-input {
-  border: 0;
-  background-color: transparent;
-}
-
 .nav-icon {
   width: 2rem;
 }
@@ -77,4 +72,31 @@
     padding-right: 1px;
     text-align: center;
   }
+}
+
+.container-disk {
+  position: absolute;
+  top: -1.5rem;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.125);
+  }
+
+}
+
+.music-btn-control {
+  border: 0;
+  background: transparent;
+
+  .fa {
+    font-size: 1.5rem;
+  }
+}
+
+.btn-like {
+  width: 2rem
 }
