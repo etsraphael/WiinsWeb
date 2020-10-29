@@ -32,8 +32,8 @@
 .one-room {
   width: 3rem;
   height: 3rem;
-  overflow: hidden;
   cursor: pointer;
+  position: relative;
 
   img {
     object-fit: cover;
@@ -55,4 +55,25 @@
   letter-spacing: -0.48px;
   line-height: 24px;
   text-align: center;
+}
+
+.notif {
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: red;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.375);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+
+  .number {
+    color: white;
+    font-size: 0.7rem;
+    position: absolute;
+    padding-right: 1px;
+    text-align: center;
+  }
 }

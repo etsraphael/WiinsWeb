@@ -1,7 +1,7 @@
 <div class="container-footer w-100">
   <div class="row w-100 h-100 mx-0">
     <!-- Search bar -->
-    <div class="d-none d-sm-none d-md-none d-xl-block col-xl-3 h-100">
+    <div class="d-none d-sm-none d-md-none d-xl-block col-xl-3 h-100" (click)="supportMessage()">
       <div class="container bar-container h-100 my-auto">
         <div class="row mx-0 h-100">
           <input class="col-10 pl-5 search-input" type="text" placeholder="Search a friends">
@@ -15,26 +15,27 @@
     <div class="col-md-8 col-xl-6 h-100">
       <div class="bar-container h-100">
         <div class="row mx-0 h-100">
-          <div class="col-1 my-auto cursor-pointer">
+          <div class="col-1 my-auto cursor-pointer" (click)="supportMessage()">
             <img class="nav-icon reverse-icon" src="../../../../assets/icon/circle-go-right.png" alt="">
           </div>
           <div class="col-10 my-auto px-0">
             <div class="row mx-0">
-              <div class="one-room rounded-circle mx-3" *ngFor="let item of [1,2,3,4,5,6,7]">
-                <img class="w-100 h-100 rounded-circle "
-                  src="https://images.unsplash.com/photo-1603560723100-89850d210055?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80"
-                  alt="">
+              <div class="one-room rounded-circle mx-3" *ngFor="let r of (room$|async)" (click)="openChat(r, $event)">
+                <img class="w-100 h-100 rounded-circle" [src]="r.participants[0].pictureprofile" alt="">
+                <div class="notif" *ngIf="r.roomOption.participants[0].notification !== 0">
+                  <span class="number w-100">{{r.roomOption.participants[0].notification}}</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-1 my-auto cursor-pointer">
+          <div class="col-1 my-auto cursor-pointer" (click)="supportMessage()">
             <img class="nav-icon" src="../../../../assets/icon/circle-go-right.png" alt="">
           </div>
         </div>
       </div>
     </div>
     <!-- New Room -->
-    <div class="d-none d-sm-none d-md-block col-md-4 col-xl-3 h-100">
+    <div class="d-none d-sm-none d-md-block col-md-4 col-xl-3 h-100" (click)="supportMessage()">
       <div class="container bar-container h-100 my-auto">
         <div class="row mx-0 h-100">
           <div class="col-8 pl-5 search-input my-auto text-center">
