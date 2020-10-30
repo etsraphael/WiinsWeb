@@ -84,19 +84,75 @@
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 -1rem 2rem rgba(0, 0, 0, 0.125);
+
   }
 
 }
 
-.music-btn-control {
-  border: 0;
-  background: transparent;
-
-  .fa {
-    font-size: 1.5rem;
+.container-disk.playing {
+  img {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
   }
 }
 
-.btn-like {
-  width: 2rem
+.container-mini-player {
+
+  button {
+    border: 0;
+    background: transparent;
+  }
+
+  .music-btn-control {
+
+    display: block;
+    color: #d6dee7;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1;
+    border-radius: 7px;
+
+    .fa {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .music-btn-control:hover {
+    background-color: #d6d6de80;
+
+    .fa {
+      color: #fff;
+    }
+  }
+
+  .btn-like {
+    width: 2rem
+  }
+
 }
+
+.container-extra-player {
+  background-color: red;
+  height: 4.5rem;
+  top: -4.5rem;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  display: none;
+  width: 90%;
+}
+
+.container-mini-player:hover {
+
+  .container-extra-player {
+    display: block
+  }
+
+}
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
