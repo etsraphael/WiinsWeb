@@ -21,7 +21,7 @@ import { StatePlarformService } from '../../statePlarform/state-plarform.service
   styleUrls: ['./footer-core.component.scss']
 })
 
-export class FooterCoreComponent implements OnInit, OnDestroy {
+export class FooterCoreComponent implements OnInit {
 
   // search bar
   searchField: FormControl;
@@ -40,14 +40,7 @@ export class FooterCoreComponent implements OnInit, OnDestroy {
   user: UserModel;
 
   // music
-  musicPlaying$: Observable<Boolean>
-  musicList$: Observable<Music[]>
   audio$: Observable<Music>
-  command$: Observable<string>
-  SubMusicPlaying: Subscription
-  progress: number = 0
-  duration: number = 0
-  @ViewChild('currentMusic', { static: false }) audioRef: ElementRef;
 
   constructor(
     private store$: Store<FriendsFeatureStoreState.State>,
@@ -56,7 +49,7 @@ export class FooterCoreComponent implements OnInit, OnDestroy {
     public activatedRoute: ActivatedRoute,
     private translate: TranslateService,
     private _snackBar: MatSnackBar,
-    public controlMusicService: ControlMusicService,
+    public controlMusicService: ControlMusicService
   ) {
     this.user = activatedRoute.snapshot.data['loadedUser']
   }
@@ -129,62 +122,12 @@ export class FooterCoreComponent implements OnInit, OnDestroy {
   }
 
   playerListener() {
-
-    // to select if the music was choosen
-    this.musicPlaying$ = this.store$.pipe(
-      select(PlayerMusicStoreSelectors.selectIfPlaying),
-      skipWhile(val => val === null),
-      filter(value => value !== undefined),
-    )
-
-    // to select all the music in the list
-    this.musicList$ = this.store$.pipe(
-      select(PlayerMusicStoreSelectors.selectMusicList),
-      skipWhile(val => val === null),
-      filter(value => value !== undefined),
-    )
-
-    // to know if a music is playing
+    // to know is a music is playing
     this.audio$ = this.store$.pipe(
       select(PlayerMusicStoreSelectors.selectMusicIsPlaying),
       distinctUntilChanged(),
-      skipWhile(val => val === null),
       filter(value => value !== undefined),
     )
-
-    // to controls the music
-    this.command$ = this.store$.pipe(
-      select(PlayerMusicStoreSelectors.selectCommand),
-      filter(value => (value !== undefined) && (value !== null)),
-    )
-
-    // to do somes actions for each command
-    this.SubMusicPlaying = this.command$.subscribe(action => {
-      switch (action) {
-        case 'continue':
-          this.audioRef.nativeElement.play()
-          this.store$.dispatch(new PlayerMusicStoreActions.Continue)
-          break;
-        case 'pause':
-          this.audioRef.nativeElement.pause()
-          this.store$.dispatch(new PlayerMusicStoreActions.Pause)
-          break;
-        default: break;
-      }
-      // reset the command
-      this.store$.dispatch(new PlayerMusicStoreActions.Command(null))
-    })
-
-    // get the current time for the progress bar
-    this.audioRef.nativeElement.addEventListener('timeupdate', (data: any) => {
-      this.progress = Math.round((data.target.currentTime / data.target.duration) * 100)
-    })
-
-  }
-
-  ngOnDestroy(): void {
-    // unsubscribe all var
-    if (this.SubMusicPlaying) this.SubMusicPlaying.unsubscribe()
   }
 
 }

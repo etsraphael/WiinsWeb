@@ -72,7 +72,7 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
           this.audioRef.nativeElement.play()
           this.store$.dispatch(new PlayerMusicStoreActions.Continue)
           break;
-        case 'pause': 
+        case 'pause':
           this.audioRef.nativeElement.pause()
           this.store$.dispatch(new PlayerMusicStoreActions.Pause)
           break;
@@ -114,6 +114,11 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     // unsubscribe all var
     if(this.SubMusicPlaying) this.SubMusicPlaying.unsubscribe()
+  }
+
+
+  test(){
+    console.log('boum!')
   }
 
 }

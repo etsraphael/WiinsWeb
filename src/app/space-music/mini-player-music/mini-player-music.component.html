@@ -1,4 +1,4 @@
-<div class="mini-player-music mb-1" *ngIf="musicList$ | async; let p">
+<!-- <div class="mini-player-music mb-1" *ngIf="musicList$ | async; let p">
   <div class="progress-bar" [style.width.%]="progress"></div>
   <div class="container-img" *ngIf="audio$ | async; let m">
     <img *ngIf="m.imgUrl" [(src)]="m.imgUrl">
@@ -33,6 +33,70 @@
       </div>
     </div>
   </div>
+</div> -->
+
+
+<div *ngIf="(musicList$|async); let p" class="container-mini-player container h-100 my-auto">
+  <div class="row d-flex justify-content-center">
+    <div id="slide" class="container-extra-player">
+      <div class="container-info h-100">
+        <div class="row">
+          <div class="offset-3 col-9">
+            <div class="container pt-1">
+              <div class="row mx-0">
+                <span class="title-project">name1</span>
+              </div>
+              <div class="row mx-0">
+                <span class="pseudo-profile">pseudo-profile</span>
+              </div>
+              <div class="row justify-content-between mx-0 current-time">
+                <span>00:00</span>
+                <span>00:00</span>
+              </div>
+              <div class="row mx-0 container-progress">
+                <div class="seek-bar" [style.width.%]="40"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-0 h-100">
+    <div class="col-4 d-flex justify-content-center">
+      <div class="container-disk" [ngClass]="{'playing': (musicPlaying$|async)}" *ngIf="(audio$|async); let m">
+        <img *ngIf="m.imgUrl" class="rounded-circle" [(src)]="m.imgUrl" alt="">
+      </div>
+    </div>
+    <div class="col-8 my-auto px-0">
+      <div class="row mx-0" *ngIf="(audio$|async) let m">
+        <button (click)="like(m)" class="col px-0">
+          <img class="btn-like" src="../../../../assets/svg/heart-icon.svg">
+        </button>
+        <button (click)="controlMusicService.previous(m, p, progress)"
+          class="col music-btn-control p-2 d-flex justify-content-center">
+          <i class="fa fa-backward"></i>
+        </button>
+        <button (click)="controlMusicService.continue()"
+         class="col music-btn-control p-2 d-flex justify-content-center"
+          *ngIf="!(musicPlaying$|async)">
+          <i class="fa fa-play"></i>
+        </button>
+        <button class="col music-btn-control p-2 d-flex justify-content-center"
+        (click)="controlMusicService.pause()" *ngIf="(musicPlaying$|async)">
+          <i class="fa fa-pause"></i>
+        </button>
+        <button (click)="controlMusicService.next(m, p)"
+        class="col music-btn-control p-2 d-flex justify-content-center">
+          <i class="fa fa-forward"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </div>
 
 <div hidden *ngIf="(audio$ | async); let m">
