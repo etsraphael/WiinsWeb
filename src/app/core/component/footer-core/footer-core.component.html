@@ -1,65 +1,63 @@
 <div class="container-footer w-100">
   <div class="row w-100 h-100 mx-0">
     <!-- Search Bar -->
-    <div class="d-none d-sm-none d-md-none d-xl-block col-xl-3 h-100" (click)="supportMessage()">
-      <div class="container bar-container h-100 my-auto container-mini-player">
-        <div class="row d-flex justify-content-center">
-          <div id="slide" class="container-extra-player">
-            <div class="container-info h-100">
-
-              <div class="row">
-                <div class="offset-3 col-9">
-                  <div class="container pt-1">
-                    <div class="row mx-0">
-                      <span class="title-project">title-project</span>
-                    </div>
-                    <div class="row mx-0">
-                      <span class="pseudo-profile">pseudo-profile</span>
-                    </div>
-                    <div class="row justify-content-between mx-0 current-time">
-                      <span>00:00</span>
-                      <span>00:00</span>
-                    </div>
-                    <div class="row mx-0 container-progress">
-                      <div class="seek-bar" [style.width.%]="40"></div>
+    <div class="d-none d-sm-none d-md-none d-xl-block col-xl-3 h-100">
+      <div class="bar-container container-mini-player h-100">
+        <div *ngIf="(musicList$|async); let p" class="container h-100 my-auto">
+          <div class="row d-flex justify-content-center">
+            <div id="slide" class="container-extra-player">
+              <div class="container-info h-100">
+                <div class="row">
+                  <div class="offset-3 col-9">
+                    <div class="container pt-1">
+                      <div class="row mx-0">
+                        <span class="title-project">title-project</span>
+                      </div>
+                      <div class="row mx-0">
+                        <span class="pseudo-profile">pseudo-profile</span>
+                      </div>
+                      <div class="row justify-content-between mx-0 current-time">
+                        <span>00:00</span>
+                        <span>00:00</span>
+                      </div>
+                      <div class="row mx-0 container-progress">
+                        <div class="seek-bar" [style.width.%]="40"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              
-
-
-
             </div>
+          </div>
+          <div class="row mx-0 h-100">
+            <div class="col-4 d-flex justify-content-center">
+              <div class="container-disk" [ngClass]="{'playing': (musicPlaying$|async)}" *ngIf="(audio$|async); let m">
+                <img class="rounded-circle" [(src)]="m.imgUrl" alt="">
+              </div>
+            </div>
+            <div class="col-8 my-auto px-0">
+              <div class="row mx-0" *ngIf="audio$ | async; let m">
+                <button class="col px-0">
+                  <img class="btn-like" src="../../../../assets/svg/heart-icon.svg">
+                </button>
+                <button (click)="controlMusicService.previous(m, p, progress)"
+                  class="col music-btn-control p-2 d-flex justify-content-center">
+                  <i class="fa fa-backward"></i>
+                </button>
+                <button class="col music-btn-control p-2 d-flex justify-content-center">
+                  <i (click)="controlMusicService.pause()" *ngIf="!(musicPlaying$|async)" class="fa fa-play"></i>
+                  <i (click)="controlMusicService.continue()" *ngIf="(musicPlaying$|async)" class="fa fa-pause"></i>
+                </button>
+                <button class="col music-btn-control p-2 d-flex justify-content-center">
+                  <i class="fa fa-forward"></i>
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="row mx-0 h-100">
-          <div class="col-4 d-flex justify-content-center">
-            <div class="container-disk playing">
-              <img class="rounded-circle"
-                src="https://images.unsplash.com/photo-1603712314237-7e92e4523da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
-                alt="">
-            </div>
-          </div>
-          <div class="col-8 my-auto px-0">
-            <div class="row mx-0">
-              <button class="col px-0">
-                <img class="btn-like" src="../../../../assets/svg/heart-icon.svg">
-              </button> 
-              <button class="col music-btn-control p-2 d-flex justify-content-center">
-                <i class="fa fa-backward"></i>
-              </button> 
-              <button class="col music-btn-control p-2 d-flex justify-content-center">
-                <i class="fa fa-play"></i>
-              </button> 
-              <button class="col music-btn-control p-2 d-flex justify-content-center">
-                <i class="fa fa-forward"></i>
-              </button>
-            </div>
-          </div>
 
-        </div>
+
       </div>
     </div>
     <!-- Last Room -->
@@ -99,4 +97,10 @@
       </div>
     </div>
   </div>
+</div>
+
+<div hidden *ngIf="(audio$ | async); let m">
+  <audio #currentMusic autoplay>
+    <source [src]="m.file" type="audio/mpeg">
+  </audio>
 </div>

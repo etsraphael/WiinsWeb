@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialog, MatSnackBar } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable } from 'rxjs';
-import { filter, skipWhile } from 'rxjs/operators';
-import { CurrentRoomStoreActions, CurrentRoomStoreSelectors, FriendsFeatureStoreState, RoomByIdStoreActions } from 'src/app/root-store';
+import { Observable, Subscription } from 'rxjs';
+import { distinctUntilChanged, filter, skipWhile } from 'rxjs/operators';
+import { CurrentRoomStoreActions, CurrentRoomStoreSelectors, FriendsFeatureStoreState, PlayerMusicStoreActions, PlayerMusicStoreSelectors, RoomByIdStoreActions } from 'src/app/root-store';
 import { CardChatComponent } from 'src/app/space-messenger/card-chat/card-chat.component';
 import { ProfileModel } from '../../models/baseUser/profile.model';
 import { UserModel } from '../../models/baseUser/user.model';
 import { Room } from '../../models/messenger/room.model';
+import { Music } from '../../models/publication/music/music.model';
+import { ControlMusicService } from '../../services/control-music/control-music.service';
 import { StatePlarformService } from '../../statePlarform/state-plarform.service';
 
 @Component({
@@ -19,7 +21,7 @@ import { StatePlarformService } from '../../statePlarform/state-plarform.service
   styleUrls: ['./footer-core.component.scss']
 })
 
-export class FooterCoreComponent implements OnInit {
+export class FooterCoreComponent implements OnInit, OnDestroy {
 
   // search bar
   searchField: FormControl;
@@ -37,19 +39,31 @@ export class FooterCoreComponent implements OnInit {
   // user
   user: UserModel;
 
+  // music
+  musicPlaying$: Observable<Boolean>
+  musicList$: Observable<Music[]>
+  audio$: Observable<Music>
+  command$: Observable<string>
+  SubMusicPlaying: Subscription
+  progress: number = 0
+  duration: number = 0
+  @ViewChild('currentMusic', { static: false }) audioRef: ElementRef;
+
   constructor(
     private store$: Store<FriendsFeatureStoreState.State>,
     private stateP: StatePlarformService,
     public dialog: MatDialog,
     public activatedRoute: ActivatedRoute,
     private translate: TranslateService,
-    private _snackBar: MatSnackBar
+    private _snackBar: MatSnackBar,
+    public controlMusicService: ControlMusicService,
   ) {
-    this.user = activatedRoute.snapshot.data['loadedUser'];
+    this.user = activatedRoute.snapshot.data['loadedUser']
   }
 
   ngOnInit() {
     this.displayCurrentRooms()
+    this.playerListener()
   }
 
   displayCurrentRooms() {
@@ -102,7 +116,7 @@ export class FooterCoreComponent implements OnInit {
 
   }
 
-  supportMessage(){
+  supportMessage() {
     const errorModal = this._snackBar.open(
       this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
       this.translate.instant('CORE.Join'), {
@@ -112,6 +126,65 @@ export class FooterCoreComponent implements OnInit {
     })
 
     errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
+  }
+
+  playerListener() {
+
+    // to select if the music was choosen
+    this.musicPlaying$ = this.store$.pipe(
+      select(PlayerMusicStoreSelectors.selectIfPlaying),
+      skipWhile(val => val === null),
+      filter(value => value !== undefined),
+    )
+
+    // to select all the music in the list
+    this.musicList$ = this.store$.pipe(
+      select(PlayerMusicStoreSelectors.selectMusicList),
+      skipWhile(val => val === null),
+      filter(value => value !== undefined),
+    )
+
+    // to know if a music is playing
+    this.audio$ = this.store$.pipe(
+      select(PlayerMusicStoreSelectors.selectMusicIsPlaying),
+      distinctUntilChanged(),
+      skipWhile(val => val === null),
+      filter(value => value !== undefined),
+    )
+
+    // to controls the music
+    this.command$ = this.store$.pipe(
+      select(PlayerMusicStoreSelectors.selectCommand),
+      filter(value => (value !== undefined) && (value !== null)),
+    )
+
+    // to do somes actions for each command
+    this.SubMusicPlaying = this.command$.subscribe(action => {
+      switch (action) {
+        case 'continue':
+          this.audioRef.nativeElement.play()
+          this.store$.dispatch(new PlayerMusicStoreActions.Continue)
+          break;
+        case 'pause':
+          this.audioRef.nativeElement.pause()
+          this.store$.dispatch(new PlayerMusicStoreActions.Pause)
+          break;
+        default: break;
+      }
+      // reset the command
+      this.store$.dispatch(new PlayerMusicStoreActions.Command(null))
+    })
+
+    // get the current time for the progress bar
+    this.audioRef.nativeElement.addEventListener('timeupdate', (data: any) => {
+      this.progress = Math.round((data.target.currentTime / data.target.duration) * 100)
+    })
+
+  }
+
+  ngOnDestroy(): void {
+    // unsubscribe all var
+    if (this.SubMusicPlaying) this.SubMusicPlaying.unsubscribe()
   }
 
 }
