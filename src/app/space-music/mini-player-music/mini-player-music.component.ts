@@ -23,7 +23,8 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
 
   // progress bar
   progress: number = 0
-  duration: number = 0
+  timerStart: string = '00:00'
+  timerEnd: string = '00:00'
 
   @ViewChild('currentMusic', { static: false }) audioRef: ElementRef;
 
@@ -93,8 +94,20 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
     // get the current time for the progress bar
     return this.audioRef.nativeElement.addEventListener('timeupdate', (data: any) => {
       this.progress = Math.round((data.target.currentTime / data.target.duration) * 100)
+      this.getTimerEndAndStart(data.target.currentTime, data.target.duration)
     })
   }
+
+
+  getTimerEndAndStart(position: number, duration: number){
+    if (position <= 0) return null
+    const minutes = Math.floor(position / 60)
+    let seconds = Math.round(position - minutes * 60)
+    this.timerStart = (minutes + ':' + seconds)
+    this.timerEnd = String( (-1 * (minutes - Math.floor(duration / 60)) + ':' + -(seconds - 60)))
+  }
+
+
 
   like(music: Music) {
 
@@ -114,11 +127,6 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     // unsubscribe all var
     if(this.SubMusicPlaying) this.SubMusicPlaying.unsubscribe()
-  }
-
-
-  test(){
-    console.log('boum!')
   }
 
 }
