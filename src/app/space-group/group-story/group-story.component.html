@@ -1,33 +1,35 @@
 <!-- Component Body -->
-<div class="main-group row mx-0 h-100">
-  <!-- Publication List  -->
-  <div class="list-publication col-md-9 px-0 h-100">
-    <!-- Feed's Zone -->
-    <div *ngIf="(loading$ | async) && !(publication$|async)" class="row mx-0 w-100">
-      <div class="m-auto" id="preloader">
-        <div id="loader"></div>
+<div class="container h-100">
+  <div class="main-group row mx-0 h-100">
+    <!-- Publication List  -->
+    <div class="list-publication col-md-9 px-0 h-100">
+      <!-- Feed's Zone -->
+      <div *ngIf="(loading$ | async) && !(publication$|async)" class="row mx-0 w-100">
+        <div class="m-auto" id="preloader">
+          <div id="loader"></div>
+        </div>
+      </div>
+      <div class="container mt-3 publications-space">
+        <!-- If we have publication -->
+        <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
+          [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"
+          (scrolled)="onScroll()" [infiniteScrollContainer]="'.list-publication'" [fromRoot]="true">
+          <app-card-feed-group-publication *ngIf="(publication$ | async)?.length > 0" ngxMasonryItem [space]="'group-story'"
+            class="col col-sm-12 col-md-6 col-lg-6 my-1">
+          </app-card-feed-group-publication>
+          <app-feed-publication-standard ngxMasonryItem *ngFor="let p of publication$ | async; let i = index"
+            class="col col-sm-12 col-md-6 col-lg-6 my-1" [publication]="p" [space]="'story-group'"></app-feed-publication-standard>
+        </ngx-masonry>
+        <!-- If don't have publication -->
+        <div *ngIf="(publication$ | async)?.length == 0" class="row mx-0 w-100">
+          <app-card-feed-group-publication [space]="'group-story'" class="col col-sm-12 col-md-6 col-lg-6 my-1">
+          </app-card-feed-group-publication>
+        </div>
       </div>
     </div>
-    <div class="container-fluid mt-3 publications-space">
-      <!-- If we have publication -->
-      <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
-        [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"
-        (scrolled)="onScroll()" [infiniteScrollContainer]="'.list-publication'" [fromRoot]="true">
-        <app-card-feed-group-publication *ngIf="(publication$ | async)?.length > 0" ngxMasonryItem [space]="'group-story'"
-          class="col col-sm-12 col-md-6 col-lg-6 my-1">
-        </app-card-feed-group-publication>
-        <app-feed-publication-standard ngxMasonryItem *ngFor="let p of publication$ | async; let i = index"
-          class="col col-sm-12 col-md-6 col-lg-6 my-1" [publication]="p" [space]="'story-group'"></app-feed-publication-standard>
-      </ngx-masonry>
-      <!-- If don't have publication -->
-      <div *ngIf="(publication$ | async)?.length == 0" class="row mx-0 w-100">
-        <app-card-feed-group-publication [space]="'group-story'" class="col col-sm-12 col-md-6 col-lg-6 my-1">
-        </app-card-feed-group-publication>
-      </div>
+    <!-- Navigation Groups -->
+    <div class="list-group col-md-3 pt-2 px-0">
+      <app-list-group></app-list-group>
     </div>
-  </div>
-  <!-- Navigation Groups -->
-  <div class="list-group col-md-3 pt-2 px-0">
-    <app-list-group></app-list-group>
   </div>
 </div>

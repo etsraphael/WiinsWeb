@@ -1,0 +1,75 @@
+.container-footer {
+  z-index: 1;
+  position: fixed;
+  height: 4rem;
+  bottom: 0;
+}
+
+.bar-container {
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  backdrop-filter: blur(10px);
+  background-color: #ffffffcc;
+}
+
+.fa-search {
+  font-size: 1.2rem;
+  color: #858585;
+}
+
+.nav-icon {
+  width: 2rem;
+}
+
+.reverse-icon {
+  transform: scaleX(-1);
+}
+
+.one-room {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.fa-paper-plane {
+  font-size: 1.2rem;
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to left, #f83600, #fe8c00);
+  background: linear-gradient(to left, #f83600, #fe8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new-message-title {
+  color: #838383;
+  font-size: 18px;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.notif {
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: red;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.375);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+
+  .number {
+    color: white;
+    font-size: 0.7rem;
+    position: absolute;
+    padding-right: 1px;
+    text-align: center;
+  }
+}

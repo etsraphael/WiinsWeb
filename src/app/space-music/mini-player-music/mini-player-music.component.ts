@@ -5,6 +5,8 @@ import { RootStoreState, PlayerMusicStoreSelectors, PlayerMusicStoreActions, MyM
 import { skipWhile, filter, distinctUntilChanged } from 'rxjs/operators';
 import { Music } from '../../core/models/publication/music/music.model';
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service';
+import { TranslateService } from '@ngx-translate/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-mini-player-music',
@@ -23,13 +25,16 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
 
   // progress bar
   progress: number = 0
-  duration: number = 0
+  timerStart: string = '00:00'
+  timerEnd: string = '00:00'
 
   @ViewChild('currentMusic', { static: false }) audioRef: ElementRef;
 
   constructor(
     private store$: Store<RootStoreState.State>,
     public controlMusicService: ControlMusicService,
+    private translate: TranslateService,
+    private _snackBar: MatSnackBar
   ) { }
 
   ngOnInit() {
@@ -72,7 +77,7 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
           this.audioRef.nativeElement.play()
           this.store$.dispatch(new PlayerMusicStoreActions.Continue)
           break;
-        case 'pause': 
+        case 'pause':
           this.audioRef.nativeElement.pause()
           this.store$.dispatch(new PlayerMusicStoreActions.Pause)
           break;
@@ -93,7 +98,29 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
     // get the current time for the progress bar
     return this.audioRef.nativeElement.addEventListener('timeupdate', (data: any) => {
       this.progress = Math.round((data.target.currentTime / data.target.duration) * 100)
+      this.getTimerEndAndStart(data.target.currentTime, data.target.duration)
     })
+  }
+
+
+  getTimerEndAndStart(position: number, duration: number){
+    if (position <= 0) return null
+    const minutes = Math.floor(position / 60)
+    let seconds = Math.round(position - minutes * 60)
+    this.timerStart = (minutes + ':' + seconds)
+    this.timerEnd = String( (-1 * (minutes - Math.floor(duration / 60)) + ':' + -(seconds - 60)))
+  }
+
+  supportMessage() {
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }
 
   like(music: Music) {

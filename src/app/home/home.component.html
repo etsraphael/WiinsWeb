@@ -1,14 +1,11 @@
 <!-- Component Body -->
 <div class="wrapper">
-  <!-- SideBar -->
-  <app-sidebar class="sidebar"></app-sidebar>
-  <!-- Main -->
-  <div class="main-panel">
-    <!-- NavBar -->
-    <app-nav-bar></app-nav-bar>
-    <!-- Space Actif -->
-    <div [@mainSpace]="prepareRoute(outlet)" class="container-router h-100">
-      <router-outlet #outlet="outlet"></router-outlet>
-    </div>
+  <!-- NavBar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- Space Actif -->
+  <div [@mainSpace]="prepareRoute(outlet)" class="container-router h-100 mb-5">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
+  <!-- Footer -->
+  <app-footer-core *ngIf="router.url !== '/Messenger'"></app-footer-core>
 </div>

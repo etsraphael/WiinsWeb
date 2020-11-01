@@ -39,7 +39,7 @@ export const SpaceAnimation =[
     transition(
       'Story => Music, Story => Tube, Story => Music, Story => Messenger, Story => Group,' +
       'Music => Tube, Music => MyProfile, Music => Messenger,' + 
-      'Music => Group, Tube => Messenger, Tube => Group, Messenger => Group,' + 
+      'Music => Group, Messenger => Tube, Tube => Group, Messenger => Group,' + 
       'Story => Discover, Music => Discover, Tube => Discover, Messenger => Discover, Group => Discover',
     [
       query(':enter, :leave',
@@ -58,7 +58,7 @@ export const SpaceAnimation =[
         ], { optional: true }),
       ])
     ]),
-    transition('Tube => Music, Messenger => Music, Group => Music, Messenger => Tube, Group => Tube, Group => Messenger,' + 
+    transition('Tube => Music, Messenger => Music, Group => Music, Tube => Messenger, Group => Tube, Group => Messenger,' + 
     'Tube => Story, Messenger => Story, Music => Story, Group => Story, Discover => Story, Discover => Music,' +
     'Discover => Tube, Discover => Messenger, Discover => Group',
     [

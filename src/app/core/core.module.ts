@@ -24,7 +24,7 @@ import { WsService } from './services/ws/ws.service'
 import { UploadService } from './services/upload/upload.service'
 import { UploadWithoutInjectorService } from './services/upload/upload-without-injector.service'
 import { FeedService } from './services/publications/feed/feed.service'
-import { MusicService } from './services/publications/music/music.service'
+import { MusicService } from './services/publications/music/music.service';
 
 @NgModule({
   imports: [ CommonModule,  HttpClientModule, ReactiveFormsModule ],
@@ -36,6 +36,7 @@ import { MusicService } from './services/publications/music/music.service'
     PageResolver, UploadService, UploadWithoutInjectorService,
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-  ]
+  ],
+  declarations: []
 })
 export class CoreModule { }
