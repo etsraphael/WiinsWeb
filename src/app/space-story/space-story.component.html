@@ -6,7 +6,7 @@
 </div>
 <!-- Publication List -->
 <div *ngIf="(publication$|async)" class="pt-3">
-  <div class="container-fluid publications-space">
+  <div class="publications-space container px-0">
     <!-- If we have publications -->
     <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
       [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"

@@ -136,6 +136,7 @@ import { CommunityListComponent } from './core/component/community-list/communit
 import { ReportModalComponent } from './core/modal/report-modal/report-modal.component'
 import { ReportMessageComponent } from './core/modal/report-message/report-message.component';
 import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component'
+import { FooterCoreComponent } from './core/component/footer-core/footer-core.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -159,12 +160,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent, RequestListComponent,
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
     ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, MyProfileMusicComponent,
-    MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent, 
+    MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
     ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent,
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
-    ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent,ChangingPasswordComponent,
-    ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent,
+    ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
+    ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent
   ],
   imports: [
