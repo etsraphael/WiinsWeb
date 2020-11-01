@@ -34,7 +34,7 @@
     </div>
     <div class="col-8 my-auto px-0">
       <div class="row mx-0" *ngIf="(audio$|async) let m">
-        <button (click)="like(m)" class="col px-0">
+        <button class="col px-0" (click)="supportMessage()">
           <img class="btn-like" src="../../../../assets/svg/heart-icon.svg">
         </button>
         <button (click)="controlMusicService.previous(m, p, progress)"

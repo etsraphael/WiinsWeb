@@ -5,6 +5,8 @@ import { RootStoreState, PlayerMusicStoreSelectors, PlayerMusicStoreActions, MyM
 import { skipWhile, filter, distinctUntilChanged } from 'rxjs/operators';
 import { Music } from '../../core/models/publication/music/music.model';
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service';
+import { TranslateService } from '@ngx-translate/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-mini-player-music',
@@ -31,6 +33,8 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
   constructor(
     private store$: Store<RootStoreState.State>,
     public controlMusicService: ControlMusicService,
+    private translate: TranslateService,
+    private _snackBar: MatSnackBar
   ) { }
 
   ngOnInit() {
@@ -107,7 +111,17 @@ export class MiniPlayerMusicComponent implements OnInit, OnDestroy {
     this.timerEnd = String( (-1 * (minutes - Math.floor(duration / 60)) + ':' + -(seconds - 60)))
   }
 
+  supportMessage() {
+    const errorModal = this._snackBar.open(
+      this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
+      this.translate.instant('CORE.Join'), {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
 
+    errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
+  }
 
   like(music: Music) {
 
