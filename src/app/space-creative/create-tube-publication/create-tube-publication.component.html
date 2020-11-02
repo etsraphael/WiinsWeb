@@ -3,155 +3,162 @@
 <span hidden>{{videoUrl}}</span>
 <span hidden>{{videoDuration}}</span>
 
-<app-first-tuto-message></app-first-tuto-message>
-<!-- <app-message-monetization></app-message-monetization> -->
+<!-- If the user is not certified -->
+<div class="container" *ngIf="true">
+  <app-verification-space-unlocked></app-verification-space-unlocked>
+</div>
 
-<!-- Container Video Creation -->
-<div class="row mt-4">
-  <!-- Container Form -->
-  <div class="col-12 col-6 col-md-6">
-    <!-- Title -->
-    <div class="title text-center">
-      <span>{{'WIINS-TUBE.CREATION.Video-creation'|translate}}</span>
+<div class="container" *ngIf="false">
+  <!-- Container Video Creation -->
+  <div class="row mt-4">
+    <!-- Container Form -->
+    <div class="col-12 col-6 col-md-6">
+      <!-- Title -->
+      <div class="title text-center">
+        <span>{{'WIINS-TUBE.CREATION.Video-creation'|translate}}</span>
+      </div>
+      <!-- Info -->
+      <div class="row mt-3">
+        <div class="information">
+          <!-- Title -->
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>{{'WIINS-TUBE.CREATION.Video-name'|translate}}</label>
+                <input type="text" class="form-control" [(ngModel)]="videoName" [ngModelOptions]="{standalone: true}">
+              </div>
+            </div>
+            <div class="mx-2">
+              <div class="d-flex mt-4">
+                <i class="ml-auto pt-2 fa fa-2x fa-check-circle-o"
+                  [ngClass]="{ 'is-valid': videoName?.length > 3 }"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Categorie -->
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>{{'CORE.Category'|translate}}</label>
+                <mat-form-field>
+                  <mat-select>
+                    <mat-optgroup *ngFor="let group of groupCategorie; let i = index" [label]="group.groupTitle">
+                      <mat-option *ngFor="let categorie of group.subGroup" [value]="categorie.name"
+                        (click)="selectCategorie(group.code, categorie.code)">{{categorie.name}}</mat-option>
+                    </mat-optgroup>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="mx-2">
+              <div class="d-flex mt-4">
+                <i class="ml-auto pt-2 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!categorieSeleteted }"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Add video -->
+          <div class="add-file row my-4">
+            <div class="mx-3">
+              <input hidden id="upload_video" type="file" accept='video/*,.mkv' #video (change)=uploadVideo($event)>
+              <label for="upload_video" class="btn btn-upload">
+                <i class="fa fa-download mr-2"></i>
+                <span>{{'CORE.Upload'|translate}}</span>
+              </label>
+            </div>
+            <div class="mx-3 pt-1 my-auto">
+              <span>{{'WIINS-TUBE.CREATION.Upload-the-video'|translate}}</span>
+            </div>
+            <div class="mx-3 my-auto">
+              <div class="d-flex">
+                <i class="pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!videoUrl }"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Add poster -->
+          <div class="add-file row my-4">
+            <div class="mx-3">
+              <input hidden id="upload_profile" type="file" accept='image/*' #miniature
+                (change)=previewMiniature($event)>
+              <label for="upload_profile" class="btn btn-upload">
+                <i class="fa fa-download mr-2"></i>
+                <span>{{'CORE.Upload'|translate}}</span>
+              </label>
+            </div>
+            <div class="mx-3 pt-1 my-auto">
+              <span>{{'WIINS-TUBE.CREATION.Upload-the-poster'|translate}}</span>
+            </div>
+            <div class="mx-3 my-auto">
+              <div class="d-flex">
+                <i class="pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!pictureUrl }"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Info -->
-    <div class="row mt-3">
-      <div class="information">
-        <!-- Title -->
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>{{'WIINS-TUBE.CREATION.Video-name'|translate}}</label>
-              <input type="text" class="form-control" [(ngModel)]="videoName" [ngModelOptions]="{standalone: true}">
+    <!-- Visualisation -->
+    <div class="col-12 col-6 col-md-6">
+      <div class="title text-center">
+        <span>{{'WIINS-TUBE.CREATION.Visualisation-of-the-video'|translate}}</span>
+      </div>
+      <!-- Card visualisation -->
+      <div class="row">
+        <div class="col-8 mx-auto">
+          <div class="card mt-5 card-video">
+            <div class="poster-video">
+              <img *ngIf="(myprofile$|async)" class="profile" [src]="(myprofile$|async)?.pictureprofile">
+              <div class="time px-2">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <div class="container-video">
+                <img *ngIf="!!pictureImg" class="photo-video" [src]="pictureImg">
+              </div>
             </div>
-          </div>
-          <div class="mx-2">
-            <div class="d-flex mt-4">
-              <i class="ml-auto pt-2 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': videoName?.length > 3 }"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Categorie -->
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>{{'CORE.Category'|translate}}</label>
-              <mat-form-field>
-                <mat-select >
-                  <mat-optgroup *ngFor="let group of groupCategorie; let i = index" [label]="group.groupTitle">
-                    <mat-option *ngFor="let categorie of group.subGroup" [value]="categorie.name" (click)="selectCategorie(group.code, categorie.code)">{{categorie.name}}</mat-option>
-                  </mat-optgroup>
-                </mat-select>
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="mx-2">
-            <div class="d-flex mt-4">
-              <i class="ml-auto pt-2 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!categorieSeleteted }"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Add video -->
-        <div class="add-file row my-4">
-          <div class="mx-3">
-            <input hidden id="upload_video" type="file" accept='video/*,.mkv' #video (change)=uploadVideo($event)>
-            <label for="upload_video" class="btn btn-upload">
-              <i class="fa fa-download mr-2"></i>
-              <span>{{'CORE.Upload'|translate}}</span>
-            </label>
-          </div>
-          <div class="mx-3 pt-1 my-auto">
-            <span>{{'WIINS-TUBE.CREATION.Upload-the-video'|translate}}</span>
-          </div>
-          <div class="mx-3 my-auto">
-            <div class="d-flex">
-              <i class="pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!videoUrl }"></i>
-            </div>
-          </div>
-        </div>
-        <!-- Add poster -->
-        <div class="add-file row my-4">
-          <div class="mx-3">
-            <input hidden id="upload_profile" type="file" accept='image/*' #miniature (change)=previewMiniature($event)>
-            <label for="upload_profile" class="btn btn-upload">
-              <i class="fa fa-download mr-2"></i>
-              <span>{{'CORE.Upload'|translate}}</span>
-            </label>
-          </div>
-          <div class="mx-3 pt-1 my-auto">
-            <span>{{'WIINS-TUBE.CREATION.Upload-the-poster'|translate}}</span>
-          </div>
-          <div class="mx-3 my-auto">
-            <div class="d-flex">
-              <i class="pt-1 fa fa-2x fa-check-circle-o" [ngClass]="{ 'is-valid': !!pictureUrl }"></i>
+            <div class="card-body py-1 px-3">
+              <h3 class="mb-0">
+                <strong *ngIf="!videoName">{{'WIINS-TUBE.CREATION.Video-name'|translate}}</strong>
+                <strong *ngIf="videoName">
+                  <p class="content-title-video">{{videoName}}</p>
+                </strong>
+              </h3>
+              <div class="row mx-0">
+                <p class="mr-auto">0 {{'CORE.views'|translate}}</p>
+                <p class="ml-auto">00:00</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Visualisation -->
-  <div class="col-12 col-6 col-md-6">
-    <div class="title text-center">
-      <span>{{'WIINS-TUBE.CREATION.Visualisation-of-the-video'|translate}}</span>
+
+  <!-- Loading Bar -->
+  <div class="container" *ngIf="uploadVideoProgress !== 0">
+
+    <!-- Separator -->
+    <div class="row mx-0">
+      <hr class="w-100">
     </div>
-    <!-- Card visualisation -->
-    <div class="row">
-      <div class="col-8 mx-auto">
-        <div class="card mt-5 card-video">
-          <div class="poster-video">
-            <img *ngIf="(myprofile$|async)" class="profile" [src]="(myprofile$|async)?.pictureprofile">
-            <div class="time px-2">
-              <i class="fa fa-clock-o"></i>
-            </div>
-            <div class="container-video">
-              <img *ngIf="!!pictureImg" class="photo-video" [src]="pictureImg">
-            </div>
-          </div>
-          <div class="card-body py-1 px-3">
-            <h3 class="mb-0">
-              <strong *ngIf="!videoName">{{'WIINS-TUBE.CREATION.Video-name'|translate}}</strong>
-              <strong *ngIf="videoName">
-                <p class="content-title-video">{{videoName}}</p>
-              </strong>
-            </h3>
-            <div class="row mx-0">
-              <p class="mr-auto">0 {{'CORE.views'|translate}}</p>
-              <p class="ml-auto">00:00</p>
-            </div>
-          </div>
-        </div>
+
+    <!-- Progress Bar -->
+    <div class="progress row mx-0">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+        [style.width.%]="uploadVideoProgress">
+        {{uploadVideoProgress}}%
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Loading Bar -->
-<div class="container" *ngIf="uploadVideoProgress !== 0">
-
-  <!-- Separator -->
-  <div class="row mx-0">
-    <hr class="w-100">
   </div>
 
-  <!-- Progress Bar -->
-  <div class="progress row mx-0">
-    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"
-      [style.width.%]="uploadVideoProgress">
-      {{uploadVideoProgress}}%
-    </div>
-  </div>
-
-</div>
-
-<!-- To send -->
-<div class="container mt-3">
-  <div class="row mx-0">
-    <div class="mx-auto">
-      <button class="btn btn-send" type="button" (click)="submit()">
-        <em class="fa fa-arrow-circle-o-right position-relative text-white"></em>
-        <span class="mx-2">{{'CORE.Send'|translate}}</span>
-      </button>
+  <!-- To send -->
+  <div class="container mt-3">
+    <div class="row mx-0">
+      <div class="mx-auto">
+        <button class="btn btn-send" type="button" (click)="submit()">
+          <em class="fa fa-arrow-circle-o-right position-relative text-white"></em>
+          <span class="mx-2">{{'CORE.Send'|translate}}</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

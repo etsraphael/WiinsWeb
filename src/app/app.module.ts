@@ -136,7 +136,8 @@ import { CommunityListComponent } from './core/component/community-list/communit
 import { ReportModalComponent } from './core/modal/report-modal/report-modal.component'
 import { ReportMessageComponent } from './core/modal/report-message/report-message.component';
 import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component'
-import { FooterCoreComponent } from './core/component/footer-core/footer-core.component'
+import { FooterCoreComponent } from './core/component/footer-core/footer-core.component';
+import { VerificationSpaceUnlockedComponent } from './space-creative/verification-space-unlocked/verification-space-unlocked.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -166,7 +167,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
-    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent
+    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent, VerificationSpaceUnlockedComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
