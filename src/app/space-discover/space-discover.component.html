@@ -1,3 +1,15 @@
+<!-- Discover or for you -->
+<div class="container">
+  <div class="row mt-4 mb-2 mx-0">
+    <div class="col-md-4 mx-auto">
+      <div class="row mx-0">
+        <a class="col mx-2 py-2 btn btn-nav" [routerLink]="['/SpaceStory']" routerLinkActive="selected">For You</a>
+        <a class="col mx-2 py-2 btn btn-nav" [routerLink]="['/SpaceDiscover/#']" routerLinkActive="selected">Discover</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Suggest Bar -->
 <div class="row mx-0 nav py-3" *ngIf="(suggestList$|async); let suggest">
   <div class="col-md-1 title d-flex justify-content-center my-auto">
