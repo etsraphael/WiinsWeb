@@ -27,7 +27,6 @@ import { AppComponent } from './app.component'
 import { LoginComponent } from './sign/login/login.component'
 import { RegisterComponent } from './sign/register/register.component'
 import { HomeComponent } from './home/home.component'
-import { SidebarComponent } from './sidebar/sidebar.component'
 import { NavBarComponent } from './nav-bar/nav-bar.component'
 import { MyProfileComponent } from './myprofile/myprofile.component'
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component'
@@ -137,7 +136,8 @@ import { ReportModalComponent } from './core/modal/report-modal/report-modal.com
 import { ReportMessageComponent } from './core/modal/report-message/report-message.component';
 import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component'
 import { FooterCoreComponent } from './core/component/footer-core/footer-core.component';
-import { VerificationSpaceUnlockedComponent } from './space-creative/verification-space-unlocked/verification-space-unlocked.component'
+import { VerificationSpaceUnlockedComponent } from './space-creative/verification-space-unlocked/verification-space-unlocked.component';
+import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -146,7 +146,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegisterComponent, HomeComponent, SidebarComponent, NavBarComponent,
+    AppComponent, LoginComponent, RegisterComponent, HomeComponent, NavBarComponent,
     MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent, ProfilePictureComponent,
     ProfileCoverComponent, FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
     VisibilityMainComponent, IdentificationComponent, BlacklistComponent, LanguageComponent, NotificationComponent,
@@ -167,7 +167,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
-    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent, VerificationSpaceUnlockedComponent
+    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent, VerificationSpaceUnlockedComponent, CertificationMenuComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,

@@ -61,6 +61,7 @@ import { ForgotPasswordComponent } from './sign/forgot-password/forgot-password.
 import { ChangingPasswordComponent } from './sign/changing-password/changing-password.component';
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component';
+import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 
 
 const routes: Routes = [
@@ -244,7 +245,8 @@ const routes: Routes = [
       { path: 'notification', component: NotificationComponent },
       { path: 'others', component: OthersComponent },
       { path: 'visibility', component: VisibilityComponent },
-      { path : 'premium', component: PremiumSettingComponent }
+      { path: 'premium', component: PremiumSettingComponent },
+      { path: 'certificate', component: CertificationMenuComponent }
     ]
   }
 

@@ -1,14 +1,23 @@
 <!-- Component Body -->
+
+<!-- NavBar -->
+<app-nav-bar></app-nav-bar>
+
+<!-- Main -->
 <div class="wrapper">
-  <!-- Sidebar-Setting -->
-  <app-sidebar-setting></app-sidebar-setting>
-  <!-- Main -->
-  <div class="main-panel">
-    <!-- NavBar -->
-    <app-nav-bar></app-nav-bar>
-    <!-- Space Setting Actif -->
-    <div class="container-router">
-      <router-outlet></router-outlet>
+  <div class="main-panel h-100 container">
+    <div class="row mx-0">
+      <!-- Sidebar-Setting -->
+      <div class="col-3">
+        <app-sidebar-setting></app-sidebar-setting>
+      </div>
+      <!-- Space Setting Actif -->
+      <div class="col-9">
+        <div class="container-router">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
