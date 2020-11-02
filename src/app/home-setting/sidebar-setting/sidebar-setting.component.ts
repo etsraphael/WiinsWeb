@@ -15,14 +15,14 @@ export class SidebarSettingComponent implements OnInit {
 
   // menu 
   menuItems = [
-    { path: '../SpaceStory', title: 'SIDEBAR-SETTING.Return-Home', icon: 'fa fa-reply' },
     { path: 'update-users', title: 'SIDEBAR-SETTING.User-Profile', icon: 'fa fa-user' },
     { path: 'update-password', title: 'SIDEBAR-SETTING.Password', icon: 'fa fa-lock' },
     { path: 'visibility', title: 'SIDEBAR-SETTING.Vibility', icon: 'fa fa-eye-slash' },
     { path: 'language', title: 'SIDEBAR-SETTING.Language', icon: 'fa fa-language' },
     // { path: 'notification', title: 'SIDEBAR-SETTING.Notification', icon: 'fa fa-bell-o' },
     { path: 'others', title: 'SIDEBAR-SETTING.Others', icon: 'fa fa-wrench' },
-    { path: 'premium', title: 'CORE.Premium', icon: 'fa fa-ticket' }
+    { path: 'premium', title: 'CORE.Premium', icon: 'fa fa-ticket' },
+    { path: 'certificate', title: 'CORE.Certification', icon: 'fa fa-certificate' }
   ]
 
   // user

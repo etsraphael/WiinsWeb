@@ -1,65 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-
 /* SideBar */
 
-@media (min-width: 991px) {
-  .sidebar {
-    display: block;
-    box-shadow: 0px 2px 22px 0 rgba(0, 0, 0, 0.2), 0px 2px 30px 0 rgba(0, 0, 0, 0.35);
-  }
-
-}
-
-.sidebar,
-.off-canvas-sidebar {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  bottom: 0;
-  width: 260px;
-  left: 0;
-  z-index: 50;
-}
-
-.sidebar .sidebar-wrapper,
-.off-canvas-sidebar .sidebar-wrapper {
-  position: relative;
-  height: calc(100vh - 75px);
-  overflow: auto;
-  width: 260px;
-  z-index: 4;
-  padding-bottom: 100px;
-}
-
-.sidebar .nav,
-.off-canvas-sidebar .nav {
-  margin-top: 10px;
-  display: block;
+.sidebar {
+  border: 1px solid #d8d8d8;
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
+  display: block;
   list-style: none;
 }
 
-.sidebar .nav li.active>a,
-.off-canvas-sidebar .nav li.active>a {
+.sidebar .nav li.active>a{
   background-color: #FFFFFF;
   box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
+  border-left: 3px solid #9e9e9e;
 }
 
-.sidebar .nav li:first-child>a,
-.off-canvas-sidebar .nav li:first-child>a {
-  margin: 0 15px;
-}
-
-.sidebar .nav li>a,
-.off-canvas-sidebar .nav li>a {
-  margin: 10px 15px 0;
-  border-radius: 30px;
+.sidebar .nav li>a {
   color: #6c757d;
   display: block;
   text-decoration: none;
@@ -71,13 +27,7 @@
   line-height: 1.625rem;
 }
 
-.sidebar[data-color="red"] .nav li.active>a i,
-.off-canvas-sidebar[data-color="red"] .nav li.active>a i {
-  color: #FF3636;
-}
-
-.sidebar .nav i,
-.off-canvas-sidebar .nav i {
+.sidebar .nav i {
   font-size: 20px;
   float: left;
   margin-right: 12px;
@@ -88,8 +38,7 @@
   position: relative;
 }
 
-.sidebar .nav p,
-.off-canvas-sidebar .nav p {
+.sidebar .nav p {
   margin: 0;
   line-height: 30px;
   position: relative;
@@ -99,26 +48,6 @@
 }
 
 .sidebar .nav li:hover:not(.active)>a,
-.sidebar .nav li:focus:not(.active)>a,
-.off-canvas-sidebar .nav li:hover:not(.active)>a,
-.off-canvas-sidebar .nav li:focus:not(.active)>a {
-  background-color: #D3D3D3;
-}
-
-.navbar-brand {
-  border-color: #e7e7e7;
-  color: #777;
-  font: 400 100px/1.5 'Pacifico', cursive;
-  font-size: 1.3rem;
-  margin: 0;
-  margin-top: 11px;
-  width: 100%;
-  text-align: center;
-}
-
-.container-brand {
-  border-bottom: 1px solid #e7e7e7;
-  height: 40px;
-  height: 57px;
-  background-color: #f8f9fa !important;
+.sidebar .nav li:focus:not(.active)>a {
+  border-left: 3px solid #9e9e9e;
 }

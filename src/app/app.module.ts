@@ -27,7 +27,6 @@ import { AppComponent } from './app.component'
 import { LoginComponent } from './sign/login/login.component'
 import { RegisterComponent } from './sign/register/register.component'
 import { HomeComponent } from './home/home.component'
-import { SidebarComponent } from './sidebar/sidebar.component'
 import { NavBarComponent } from './nav-bar/nav-bar.component'
 import { MyProfileComponent } from './myprofile/myprofile.component'
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component'
@@ -146,7 +145,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegisterComponent, HomeComponent, SidebarComponent, NavBarComponent,
+    AppComponent, LoginComponent, RegisterComponent, HomeComponent, NavBarComponent,
     MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent, ProfilePictureComponent,
     ProfileCoverComponent, FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
     VisibilityMainComponent, IdentificationComponent, BlacklistComponent, LanguageComponent, NotificationComponent,

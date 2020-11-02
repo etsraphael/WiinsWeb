@@ -1,15 +1,11 @@
 <!-- Component Body -->
-<div class="sidebar" data-color="red">
-  <!-- Header -->
-  <div class="container-brand">
-    <a class="navbar-brand" [routerLink]="['/']">Wiins</a>
-  </div>
+<div class="sidebar">
   <!-- Btn Nav -->
   <div class="sidebar-wrapper">
     <ul class="nav">
       <!-- Nav Button -->
       <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item">
-        <a [routerLink]="[menuItem.path]">
+        <a [routerLink]="[menuItem.path]" class="py-3">
           <i class="now-ui-icons {{menuItem.icon}}"></i>
           <p>{{ menuItem.title | translate }}</p>
         </a>
