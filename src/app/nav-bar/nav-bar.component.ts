@@ -27,15 +27,6 @@ export class NavBarComponent implements OnInit {
   // page
   isCollapsed = false;
 
-  // navigation
-  menuItems = [
-    { path: '/SpaceStory', title: 'SIDEBAR-HOME.Feed', icon: 'nav-home-empty.png', class: 'home-icon' },
-    { path: '/SpaceMusic', title: 'SIDEBAR-HOME.Music', icon: 'nav-music-empty.png', class: 'music-icon' },
-    { path: '/Messenger', title: 'SIDEBAR-HOME.Messenger', icon: 'nav-message-empty.png', class: 'message-icon' },
-    { path: '/SpaceTube', title: 'SIDEBAR-HOME.Tube', icon: 'nav-tube-empty.png', class: 'tube-icon' },
-    { path: '/SpaceGroup', title: 'SIDEBAR-HOME.Group', icon: 'nav-groups-empty.png', class: 'group-icon' },
-  ]
-
   constructor(
     private store$: Store<RootStoreState.State>,
     public router: Router
