@@ -4,7 +4,6 @@
 
 
 .nav {
-  box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);
 
   ::-webkit-scrollbar {
     display: none;
@@ -12,6 +11,7 @@
 
   .oneHastag {
     display: inline-block;
+    border: 1px solid #76767645;
   }
 
   .title {
@@ -56,7 +56,52 @@
   }
 
   .oneHastag:last-child{
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
 
+}
+
+
+.btn-nav {
+  letter-spacing: 0;
+  box-shadow: none;
+  font-size: 1rem;
+}
+
+.btn-nav:hover,
+.btn-nav {
+  letter-spacing: 5px;
+}
+
+.btn-nav:after,
+.btn-nav:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(grey, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-nav:hover:after,
+.btn-nav:hover:before,
+.btn-nav.selected:after,
+.btn-nav.selected:before {
+  backface-visibility: hidden;
+  border-color: grey;
+  transition: width 350ms ease-in-out;
+  width: 90%;
+}
+
+.btn-nav.selected:before,
+.btn-nav:hover:before {
+  bottom: 3px;
+}
+
+.btn-nav:hover:after,
+.btn-nav.selected:after {
+  bottom: -3px;
 }
