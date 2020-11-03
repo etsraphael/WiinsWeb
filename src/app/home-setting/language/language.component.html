@@ -1,7 +1,7 @@
 <!-- Component Body -->
 <div class="container mt-4">
   <!-- Setting card -->
-  <div class="card row my-3 mx-2">
+  <div class="card row my-3 mx-0">
     <div class="card-body row">
       <div class="col mx-3 mt-2">
         <h5 class="card-title">{{'SETTING.lang.lang-of-plateforme'|translate}}</h5>
@@ -11,7 +11,7 @@
             <div class="input-group-prepend">
               <label class="input-group-text">{{'CORE.Choice'|translate}}</label>
             </div>
-            <select #langSelect (change)="switchLanguage(langSelect.value)" class="custom-select" id="inputGroupSelect01" [(value)]="selectedLanguage">
+            <select #langSelect (change)="switchLanguage(langSelect.value)" class="custom-select h-100" id="inputGroupSelect01" [(value)]="selectedLanguage">
               <option *ngFor="let l of languageList" [value]="l.code">{{l.language}}</option>
             </select>
           </div>

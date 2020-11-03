@@ -32,8 +32,6 @@ import { MyProfileComponent } from './myprofile/myprofile.component'
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component'
 import { HomeSettingComponent } from './home-setting/home-setting.component'
 import { UpdatePasswordComponent } from './home-setting/update-password/update-password.component'
-import { ProfilePictureComponent } from './home-setting/update-users/profile-picture/profile-picture.component'
-import { ProfileCoverComponent } from './home-setting/update-users/profile-cover/profile-cover.component'
 import { SidebarSettingComponent } from './home-setting/sidebar-setting/sidebar-setting.component'
 import { VisibilityComponent } from './home-setting/visibility/visibility.component'
 import { IdentificationComponent } from './home-setting/visibility/identification/identification.component'
@@ -147,8 +145,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent, LoginComponent, RegisterComponent, HomeComponent, NavBarComponent,
-    MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent, ProfilePictureComponent,
-    ProfileCoverComponent, FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
+    MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent,
+    FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
     VisibilityMainComponent, IdentificationComponent, BlacklistComponent, LanguageComponent, NotificationComponent,
     OthersComponent, MiniChatComponent, MiniPlayerMusicComponent, SpaceStoryComponent,
     ProfileComponent, SpaceMessengerComponent, ThreadMessageComponent, UserListMessageComponent, ProfileStoryComponent,

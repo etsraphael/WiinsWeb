@@ -1,15 +1,8 @@
 <!-- Component Body -->
-
-<!-- Header -->
-<div class="panel-header bg-gradient-warning">
-</div>
-
-<!-- Card Update -->
-<div class="main mt--8 container-fluid main-info" *ngIf="(profile$|async); let p">
+<div class="container-fluid main-info py-5" *ngIf="(profile$|async); let p">
   <!-- First Row -->
-  <div class="row px-5">
-    <!-- Main Info -->
-    <div class="col-md-6 col-lg-8">
+  <div class="row mx-0">
+    <div class="col">
       <div class="card">
         <form [formGroup]="registerForm">
           <div class="card-header">
@@ -58,38 +51,14 @@
                 <div class="text-danger text-right error-message" *ngIf="f.birthDate.errors?.ageValid && f.birthDate.touched">{{'ERROR-MESSAGE.16-years-minimum'|translate}}</div>
               </div>
             </div>
-            <div class="row w-100 mx-0">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label>{{'PROFILE.About-me'|translate}}</label>
-                  <textarea maxlength="130" #intro rows="4" cols="80" class="form-control" formControlName="introduction"
-                  [placeholder]="p.introduction || 'SETTING.profile.h-can-b-yr-description'|translate"></textarea>
-                </div>
-              </div>
-            </div>
           </div>
         </form>
       </div>
     </div>
-    <!-- Visual Info -->
-    <div class="col-md-6 col-lg-4" *ngIf="(profile$|async); let p">
-      <div class="card card-user">
-        <app-profile-cover [profile]="p" class="image"></app-profile-cover>
-        <div class="card-body">
-          <div class="author">
-            <app-profile-picture [profile]="p"></app-profile-picture>
-            <h5 class="title pseudo mb-2" *ngIf="pseudo.value.length == 0">{{p._meta.pseudo}}</h5>
-            <h5 class="title pseudo mb-2" *ngIf="pseudo.value.length > 0">{{pseudo.value}}</h5>
-          </div>
-          <p class="px-5 description text-center" *ngIf="intro.value.length == 0 && p.introduction !== null && p.introduction !== ' '">{{p.introduction}}</p>
-          <p class="px-5 description text-center" *ngIf="intro.value.length > 0">{{intro.value}}</p>
-        </div>
-      </div>
-    </div>
   </div>
   <!-- Second Row -->
-  <div class="row px-5">
-    <div class="col col-md-8">
+  <div class="row mx-0">
+    <div class="col">
       <div class="card">
         <div class="card-header">
           <h5 class="title pl-3">{{'PROFILE.Followers-And-Friends'|translate}}</h5>
