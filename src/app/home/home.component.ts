@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     // check if the user is active
     this.userSub = this.user$.subscribe((action: UserModel) => {
       if (!action.active) {
-        this.router.navigate(['/setting/premium'])
+        this.router.navigate(['/setting/ledger'])
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.Account-temporarily-disabled'), null,
           { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }

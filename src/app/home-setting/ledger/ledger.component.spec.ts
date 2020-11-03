@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PremiumSettingComponent } from './premium-setting.component';
+import { LedgerComponent } from './ledger.component';
 
-describe('PremiumSettingComponent', () => {
-  let component: PremiumSettingComponent;
-  let fixture: ComponentFixture<PremiumSettingComponent>;
+describe('LedgerComponent', () => {
+  let component: LedgerComponent;
+  let fixture: ComponentFixture<LedgerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PremiumSettingComponent ]
+      declarations: [ LedgerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PremiumSettingComponent);
+    fixture = TestBed.createComponent(LedgerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

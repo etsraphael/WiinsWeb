@@ -1,0 +1,71 @@
+<!-- Component Body -->
+<div class="container py-5">
+
+    <!-- Header Info -->
+    <div class="row my-2 d-flex justify-content-center">
+  
+      <div class="mx-2 card py-2 px-3 mx-3 card-sold my-2">
+        <h3 class="mb-0">Votre solde : {{(user$|async).config.totalCharged}} $</h3>
+      </div>
+  
+      <div class="select-container-price my-2" *ngIf="chargedBtnCliked">
+        <div class="row mx-0">
+          <div class="col-3 px-0 input-group-prepend">
+            <span class="input-group-text w-100" id="basic-addon1">USD$</span>
+          </div>
+          <input [(ngModel)]="price" type="text" class="col-9 form-control" placeholder="Entrez un montant"
+            aria-describedby="basic-addon1">
+        </div>
+      </div>
+  
+      <button *ngIf="!chargedBtnCliked" type="button" class="m-2 btn btn-primary mr-4"
+        (click)="showChargeInput()">Recharge</button>
+      <button *ngIf="chargedBtnCliked" type="button" class="m-2 btn btn-primary mr-4"
+        (click)="generatePayment()">Pay</button>
+  
+    </div>
+  
+    <!-- Payment Message -->
+    <div class="row my-4 mx-0" *ngIf="showMessagePayment">
+      <span class="mx-auto">The udpate can take 15min after the confirmation</span>
+    </div>
+  
+    <!-- Inactive message -->
+    <div class="row my-4 mx-0" *ngIf="!(user$|async).active">
+      <div class="container">
+        <div class="row">
+          <div class="card w-100 py-4">
+            <div class="row mx-0">
+              <div class="col my-auto text-center">
+                <span class="text-danger px-5">Account temporarily disabled, you are invisible on the platforme now. If your account is inactive for the next payment, 4.99 will be withdrawn of your next sold to enjoy the next 30 days.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Card Package -->
+    <div class="row my-4 mx-0">
+      <div class="container">
+        <div class="row">
+          <div class="card w-100 py-4">
+            <div class="row mx-0">
+              <div class="col-12 pl-4 col-md-8 mb-4">
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</span>
+              </div>
+              <div class="col-12 col-md-4 my-auto text-center">
+                <span class="price-span row mx-0 d-flex justify-content-center">4.99$ / months</span>
+                <span class="row mx-0 d-flex justify-content-center">Prochaine facturation : {{(user$|async).chargedUntil | date }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>

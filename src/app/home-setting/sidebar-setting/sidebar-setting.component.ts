@@ -21,7 +21,7 @@ export class SidebarSettingComponent implements OnInit {
     { path: 'language', title: 'SIDEBAR-SETTING.Language', icon: 'fa fa-language' },
     // { path: 'notification', title: 'SIDEBAR-SETTING.Notification', icon: 'fa fa-bell-o' },
     { path: 'others', title: 'SIDEBAR-SETTING.Others', icon: 'fa fa-wrench' },
-    { path: 'premium', title: 'CORE.Premium', icon: 'fa fa-ticket' },
+    { path: 'ledger', title: 'CORE.Ledger', icon: 'fa fa-ticket' },
     { path: 'certificate', title: 'CORE.Certification', icon: 'fa fa-certificate' }
   ]
 

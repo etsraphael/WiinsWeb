@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription, Observable } from 'rxjs';
-import { TranslateService } from '@ngx-translate/core';
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
-import { PaymentService, CoinBaseResponse } from 'src/app/core/services/payment/payment.service';
 import { ActivatedRoute } from '@angular/router';
-import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
+import { select, Store } from '@ngrx/store';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable, Subscription } from 'rxjs';
+import { filter, skipWhile } from 'rxjs/operators';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
-import { RootStoreState, MyUserStoreSelectors } from 'src/app/root-store';
-import { Store, select } from '@ngrx/store';
-import { skipWhile, filter } from 'rxjs/operators';
+import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
+import { CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
+import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
-  selector: 'app-premium-setting',
-  templateUrl: './premium-setting.component.html',
-  styleUrls: ['./premium-setting.component.scss']
+  selector: 'app-ledger',
+  templateUrl: './ledger.component.html',
+  styleUrls: ['./ledger.component.scss']
 })
-
-export class PremiumSettingComponent implements OnInit {
+export class LedgerComponent implements OnInit {
 
   // visual
   chargedBtnCliked = false
