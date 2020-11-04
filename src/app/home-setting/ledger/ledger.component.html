@@ -29,6 +29,23 @@
     <div class="row my-4 mx-0" *ngIf="showMessagePayment">
       <span class="mx-auto">The udpate can take 15min after the confirmation</span>
     </div>
+
+    <!-- Account List -->
+
+    <div class="row mx-0 my-4">
+      <div class="card w-100 text-center">
+        <div class="container-fluid px-0">
+          <div class="row mx-0 py-3 bg-header">
+            <div class="col"><strong>Currency</strong></div>
+            <div class="col"><strong>Amount</strong></div>
+          </div>
+          <div class="row mx-0 py-3 one-currency" *ngFor="let item of [1,2,3]">
+            <div class="col">Bitcoin</div>
+            <div class="col">150$</div>
+          </div>
+        </div>
+      </div>
+    </div>
   
     <!-- Inactive message -->
     <div class="row my-4 mx-0" *ngIf="!(user$|async).active">
