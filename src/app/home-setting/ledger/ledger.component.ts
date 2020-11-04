@@ -16,6 +16,7 @@ import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
   templateUrl: './ledger.component.html',
   styleUrls: ['./ledger.component.scss']
 })
+
 export class LedgerComponent implements OnInit {
 
   // visual
@@ -30,7 +31,11 @@ export class LedgerComponent implements OnInit {
 
   // my user
   user$: Observable<UserModel>
-  accountBalance: string
+  currencyArray = [
+    { currency: 'Bitcoin (BTC)', amount: 150 },
+    { currency: 'Ethereum (ETH)', amount: 110 },
+    { currency: 'Bitcoin Cash (BCH)', amount: 50 }
+  ]
 
   constructor(
     private translate: TranslateService,
@@ -50,10 +55,6 @@ export class LedgerComponent implements OnInit {
       skipWhile(val => val == null),
       filter(val => !!val)
     )
-
-    this.user$.pipe(take(1)).subscribe((user: UserModel) => { 
-      this.accountBalance = this.translationService.getAccountBalance(user.config.totalCharged)
-    })
 
   }
 
@@ -103,6 +104,10 @@ export class LedgerComponent implements OnInit {
     )
 
 
+  }
+
+  getTotalAccount(): string{
+    return this.currencyArray.map(x => x.amount).reduce((a, b) => a + b, 0) + ' $USD'
   }
 
 
