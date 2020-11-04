@@ -7,8 +7,8 @@ import { Observable, Subscription } from 'rxjs';
 import { filter, skipWhile, take } from 'rxjs/operators';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
+import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
 import { CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
-import { TranslationService } from 'src/app/core/services/translation/translation.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
@@ -31,12 +31,8 @@ export class LedgerComponent implements OnInit {
 
   // my user
   user$: Observable<UserModel>
-  currencyArray = [
-    { currency: 'Bitcoin (BTC)', amount: 0.004 },
-    { currency: 'Ethereum (ETH)', amount: 2.1 },
-    { currency: 'Bitcoin Cash (BCH)', amount: 0.0145 },
-    { currency: 'Litecoin (LTC)', amount: 1.3 }
-  ]
+  currencyArray = []
+  totalBalance = 0
 
   constructor(
     private translate: TranslateService,
@@ -44,7 +40,7 @@ export class LedgerComponent implements OnInit {
     private paymentService: PaymentService,
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
-    private translationService: TranslationService
+    private cryptoServiceService: CryptoServiceService
   ) { }
 
 
@@ -56,6 +52,25 @@ export class LedgerComponent implements OnInit {
       skipWhile(val => val == null),
       filter(val => !!val)
     )
+
+    // get the crypto assets in real time
+    this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
+
+      this.currencyArray = [
+        { code: 'BTC', currency: 'Bitcoin (BTC)', amount: 0.004 },
+        { code: 'ETH', currency: 'Ethereum (ETH)', amount: 2.1 },
+        { code: 'BCH', currency: 'Bitcoin Cash (BCH)', amount: 0.0145 },
+        { code: 'LTC', currency: 'Litecoin (LTC)', amount: 1.3 }
+      ]
+
+      for(let item of this.currencyArray){
+        item.price_usd = 
+        (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
+        * item.amount).toFixed(2)
+        this.totalBalance += Number(item.price_usd)
+      }
+
+    })
 
   }
 
@@ -104,13 +119,8 @@ export class LedgerComponent implements OnInit {
       }
     )
 
-
   }
 
-  getTotalAccount(): string{
-    return '152 $USD'
-    // return this.currencyArray.map(x => x.amount).reduce((a, b) => a + b, 0) + ' $USD'
-  }
 
 
 }

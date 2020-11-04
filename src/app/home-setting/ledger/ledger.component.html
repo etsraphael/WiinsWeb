@@ -26,7 +26,7 @@
   </div>
 
   <!-- Account List -->
-  <div class="row mx-0 my-4">
+  <div class="row mx-0 my-4" *ngIf="!!currencyArray">
     <div class="card w-100 text-center">
       <div class="container-fluid px-0">
         <div class="row mx-0 py-3 bg-header">
@@ -38,7 +38,7 @@
         <div class="row mx-0 py-3 one-currency" *ngFor="let item of currencyArray">
           <div class="col my-auto">{{item.currency}}</div>
           <div class="col my-auto">{{item.amount}}</div>
-          <div class="col my-auto">15$</div>
+          <div class="col my-auto">${{item.price_usd}}</div>
           <div class="col my-auto">
             <button class="btn btn-gradient-color-green py-1">Transfer</button>
           </div>
@@ -46,7 +46,7 @@
         <div class="row mx-0 py-3 bg-footer">
           <div class="col"><strong>{{'CORE.Total'|translate}}</strong></div>
           <div class="col"></div>
-          <div class="col"><strong>{{getTotalAccount()}}</strong></div>
+          <div class="col"><strong>{{totalBalance.toFixed(2)}} $USD</strong></div>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
           <div class="row mx-0">
             <div class="col my-auto text-center">
               <span class="text-danger px-5">Account temporarily disabled, you are invisible on the platforme now. If
-                your account is inactive for the next payment, 4.99 will be withdrawn of your next sold to enjoy the
+                your account is inactive for the next payment, 14.99 will be withdrawn of your next sold to enjoy the
                 next 30 days.</span>
             </div>
           </div>
@@ -83,7 +83,7 @@
                 officia deserunt mollit anim id est laborum.</span>
             </div>
             <div class="col-12 col-md-4 my-auto text-center">
-              <span class="price-span row mx-0 d-flex justify-content-center">4.99$ / months</span>
+              <span class="price-span row mx-0 d-flex justify-content-center">14.99$ / months</span>
               <span class="row mx-0 d-flex justify-content-center">Prochaine facturation :
                 {{(user$|async).chargedUntil | date }}</span>
             </div>
