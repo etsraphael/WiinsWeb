@@ -185,7 +185,10 @@
     "reply..": "الرد",
     "responses": "استجابات",
     "soon": "هكذا",
-    "views": "الآراء"
+    "views": "الآراء",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": ""
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -792,6 +795,13 @@
       "my-publications-are-visible-to-every-one": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
       "who-c-find-me": "من يستطيع أن يجدني؟",
       "who-c-find-me-d": "عند إدخال اسم المستخدم الخاص بك في شريط البحث، سيتمكن هؤلاء الأشخاص من مشاهدة ملفك الشخصي معروضًا.  "
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +924,21 @@
       "Video-creation": "إنشاء الفيديو",
       "Video-name": "اسم الفيديو",
       "Visualisation-of-the-video": "تصور الفيديو"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

@@ -185,7 +185,10 @@
     "reply..": "応答",
     "responses": "反応",
     "soon": "すぐに",
-    "views": "景色"
+    "views": "景色",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -792,6 +795,13 @@
       "my-publications-are-visible-to-every-one": "物事を変えようとする手段としての暴力の受け入れ",
       "who-c-find-me": "誰が私を見つけることができますか?",
       "who-c-find-me-d": "検索バーにユーザー名を入力すると、プロフィールが表示されます。"
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +924,21 @@
       "Video-creation": "ビデオ作成",
       "Video-name": "ビデオ名",
       "Visualisation-of-the-video": "ビデオの視覚化"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

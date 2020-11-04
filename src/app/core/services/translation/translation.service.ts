@@ -7,11 +7,11 @@ import { TranslateService } from '@ngx-translate/core'
 
 export class TranslationService {
 
-  constructor( private translate: TranslateService ) { }
+  constructor(private translate: TranslateService) { }
 
   getDateTranslated(date: Date): String {
 
-    const DayDiff =  ((new Date(Date.now()).getTime() - new Date(date).getTime()) / 86400000)
+    const DayDiff = ((new Date(Date.now()).getTime() - new Date(date).getTime()) / 86400000)
 
     switch (true) {
 
@@ -21,12 +21,12 @@ export class TranslationService {
         // few secondes
         if (minDiff <= 1) return this.translate.instant('DATE.few-sec')
         // minutes ago
-        if ((minDiff > 1) && (minDiff <= 50) ) {
+        if ((minDiff > 1) && (minDiff <= 50)) {
           return this.translate.instant('DATE.x-min-ago', { value: Math.round(minDiff) })
         }
         // hours ago
         if (minDiff > 50) {
-          const hoursDiff = Math.abs((new Date(date).getTime() - new Date().getTime())/ 3600000)
+          const hoursDiff = Math.abs((new Date(date).getTime() - new Date().getTime()) / 3600000)
           return this.translate.instant('DATE.x-hours-ago', { value: Math.round(hoursDiff) })
         }
       }
@@ -62,12 +62,16 @@ export class TranslationService {
 
   }
 
-  getNotificationTranslatedForManyUser(lastUser: string, otherUsers: number){
+  getNotificationTranslatedForManyUser(lastUser: string, otherUsers: number) {
     return this.translate.instant('NOTIFICATIONS.profile1-&-others-users-liked-your-comment', { lastUser, otherUsers })
   }
 
-  getErrorTranslatedCountryAlreadyOnTheDefaultArea(country: string){
+  getErrorTranslatedCountryAlreadyOnTheDefaultArea(country: string) {
     return this.translate.instant('ADS.CREATION.Country-already-in-the-default-area', { country })
+  }
+
+  getAccountBalance(balance: number) {
+    return this.translate.instant('SETTING.ledger.Yr-account-balance-is', { value: balance + ' $USD' })
   }
 
 }

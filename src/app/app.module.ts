@@ -60,8 +60,6 @@ import { CreateGroupComponent } from './space-creative/create-group/create-group
 import { CreatePageComponent } from './space-creative/create-page/create-page.component'
 import { CreateTubePublicationComponent } from './space-creative/create-tube-publication/create-tube-publication.component'
 import { CreateMusicProjectComponent } from './space-creative/create-music-project/create-music-project.component'
-import { FirstTutoMessageComponent } from './space-creative/first-tuto-message/first-tuto-message.component'
-import { MessageMonetizationComponent } from './space-creative/message-monetization/message-monetization.component'
 import { NotfoundComponent } from './notfound/notfound.component'
 import { NoprofileComponent } from './notfound/noprofile/noprofile.component'
 import { SiPipeModule } from 'ng-si'
@@ -153,7 +151,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ProfileMusicComponent, ProfileTubeComponent, SpaceMusicComponent, MusicMainComponent, MusicSaveComponent,
     SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent,
     SpaceCreativeComponent, CreateEventComponent, CreateGroupComponent, CreatePageComponent, CreateTubePublicationComponent,
-    CreateMusicProjectComponent, FirstTutoMessageComponent, MessageMonetizationComponent, NotfoundComponent,
     NoprofileComponent, RegisterConfirmationComponent, PublicationModalComponent, ChoiceComponent, PageComponent,
     PageStoryComponent, PlaylistComponent, MypageComponent, DefaultPageComponent, FeedPageAdminStandardComponent,
     AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent, RequestListComponent,
@@ -166,7 +163,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
-    CertificationMenuComponent, LedgerComponent
+    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,

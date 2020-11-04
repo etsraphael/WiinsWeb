@@ -4,10 +4,11 @@ import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
-import { filter, skipWhile } from 'rxjs/operators';
+import { filter, skipWhile, take } from 'rxjs/operators';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
 import { CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
+import { TranslationService } from 'src/app/core/services/translation/translation.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
@@ -29,6 +30,7 @@ export class LedgerComponent implements OnInit {
 
   // my user
   user$: Observable<UserModel>
+  accountBalance: string
 
   constructor(
     private translate: TranslateService,
@@ -36,6 +38,7 @@ export class LedgerComponent implements OnInit {
     private paymentService: PaymentService,
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
+    private translationService: TranslationService
   ) { }
 
 
@@ -47,6 +50,10 @@ export class LedgerComponent implements OnInit {
       skipWhile(val => val == null),
       filter(val => !!val)
     )
+
+    this.user$.pipe(take(1)).subscribe((user: UserModel) => { 
+      this.accountBalance = this.translationService.getAccountBalance(user.config.totalCharged)
+    })
 
   }
 
@@ -97,5 +104,6 @@ export class LedgerComponent implements OnInit {
 
 
   }
+
 
 }

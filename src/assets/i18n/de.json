@@ -185,7 +185,10 @@
     "reply..": "Antworten",
     "responses": "Antworten",
     "soon": "bald",
-    "views": "Ansichten"
+    "views": "Ansichten",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -792,6 +795,13 @@
       "my-publications-are-visible-to-every-one": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
       "who-c-find-me": "Wer kann mich finden ?",
       "who-c-find-me-d": "Wenn Ihr Benutzername in die Suchleiste eingegeben wird, können diese Personen Ihr Profil anzeigen.  "
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +924,21 @@
       "Video-creation": "Videoerstellung",
       "Video-name": "Videoname",
       "Visualisation-of-the-video": "Visualisierung des Videos"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

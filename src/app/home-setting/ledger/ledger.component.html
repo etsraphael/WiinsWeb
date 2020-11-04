@@ -5,7 +5,7 @@
     <div class="row my-2 d-flex justify-content-center">
   
       <div class="mx-2 card py-2 px-3 mx-3 card-sold my-2">
-        <h3 class="mb-0">Votre solde : {{(user$|async).config.totalCharged}} $</h3>
+        <h3 class="mb-0">{{accountBalance}}</h3>
       </div>
   
       <div class="select-container-price my-2" *ngIf="chargedBtnCliked">
