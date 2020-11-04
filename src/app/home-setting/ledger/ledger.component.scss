@@ -12,14 +12,20 @@
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   overflow: hidden;
 
+  input::placeholder {
+    color: #576582;
+  }
+
   .input-group-prepend span,
   input {
     border: 0;
     border-radius: 0;
+    color: #576582;
   }
 
   .input-group-text {
     background: #f6f6f6;
+    color: #576582;
   }
 }
 
@@ -30,11 +36,11 @@
 }
 
 .bg-header {
-    background-color: #fd426a6b;
+  background-color: #fd426a6b;
 }
 
 .bg-footer {
-    background-color: #e0e0e061;
+  background-color: #e0e0e061;
 }
 
 .one-currency {
@@ -46,4 +52,13 @@
   background: #FF416C;
   background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
   background: linear-gradient(to right, #FF4B2B, #FF416C);
+}
+
+
+.btn-gradient-color-green {
+  color: white;
+  border: 0;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
 }

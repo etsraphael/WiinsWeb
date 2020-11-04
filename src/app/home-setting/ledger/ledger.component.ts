@@ -32,9 +32,10 @@ export class LedgerComponent implements OnInit {
   // my user
   user$: Observable<UserModel>
   currencyArray = [
-    { currency: 'Bitcoin (BTC)', amount: 150 },
-    { currency: 'Ethereum (ETH)', amount: 110 },
-    { currency: 'Bitcoin Cash (BCH)', amount: 50 }
+    { currency: 'Bitcoin (BTC)', amount: 0.004 },
+    { currency: 'Ethereum (ETH)', amount: 2.1 },
+    { currency: 'Bitcoin Cash (BCH)', amount: 0.0145 },
+    { currency: 'Litecoin (LTC)', amount: 1.3 }
   ]
 
   constructor(
@@ -107,7 +108,8 @@ export class LedgerComponent implements OnInit {
   }
 
   getTotalAccount(): string{
-    return this.currencyArray.map(x => x.amount).reduce((a, b) => a + b, 0) + ' $USD'
+    return '152 $USD'
+    // return this.currencyArray.map(x => x.amount).reduce((a, b) => a + b, 0) + ' $USD'
   }
 
 

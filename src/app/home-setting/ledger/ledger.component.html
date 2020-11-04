@@ -1,5 +1,5 @@
 <!-- Component Body -->
-<div class="container py-5">
+<div class="container py-3">
 
   <!-- Header Info -->
   <div class="row my-2 d-flex justify-content-center">
@@ -32,19 +32,25 @@
         <div class="row mx-0 py-3 bg-header">
           <div class="col"><strong>Currency</strong></div>
           <div class="col"><strong>Amount</strong></div>
+          <div class="col"><strong>USD</strong></div>
+          <div class="col"></div>
         </div>
         <div class="row mx-0 py-3 one-currency" *ngFor="let item of currencyArray">
-          <div class="col">{{item.currency}}</div>
-          <div class="col">{{item.amount}} $USD</div>
+          <div class="col my-auto">{{item.currency}}</div>
+          <div class="col my-auto">{{item.amount}}</div>
+          <div class="col my-auto">15$</div>
+          <div class="col my-auto">
+            <button class="btn btn-gradient-color-green py-1">Transfer</button>
+          </div>
         </div>
         <div class="row mx-0 py-3 bg-footer">
           <div class="col"><strong>{{'CORE.Total'|translate}}</strong></div>
+          <div class="col"></div>
           <div class="col"><strong>{{getTotalAccount()}}</strong></div>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- Inactive message -->
   <div class="row my-4 mx-0" *ngIf="!(user$|async).active">
