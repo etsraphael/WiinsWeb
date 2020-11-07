@@ -11,14 +11,34 @@ import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 export class TransfertCryptoModalComponent implements OnInit {
 
   currentPage: number = 0
+  amountUsdChoosed: number = 0
+  placeHolderAdress: string
+  currencyChoosed: string
 
   constructor(
     public dialogRef: MatDialogRef<TransfertCryptoModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public transfert: TransfertAccount
+    @Inject(MAT_DIALOG_DATA) public data: { transfertAccount: TransfertAccount }
   ) { }
 
   ngOnInit() {
-    console.log(this.transfert)
+    switch (this.data.transfertAccount.currency) {
+      case 'btc':
+        this.placeHolderAdress = 'Address bitcoin'
+        this.currencyChoosed = 'BTC'
+        break;
+      case 'eth':
+        this.placeHolderAdress = 'Address ethereum'
+        this.currencyChoosed = 'ETH'
+        break;
+      case 'bch':
+        this.placeHolderAdress = 'Address bitcoin cash'
+        this.currencyChoosed = 'BCH'
+        break;
+      case 'ltc':
+        this.placeHolderAdress = 'Address litecoin'
+        this.currencyChoosed = 'LTC'
+        break;
+    }
   }
 
   nextPage(page: number) {
@@ -37,6 +57,14 @@ export class TransfertCryptoModalComponent implements OnInit {
         break;
       default: return null
     }
+  }
+
+  previousPage() {
+    --this.currentPage
+  }
+
+  updateAmount(){
+    console.log(this.amountUsdChoosed)
   }
 
 }
