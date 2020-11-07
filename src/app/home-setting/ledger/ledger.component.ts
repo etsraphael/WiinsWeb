@@ -8,7 +8,7 @@ import { filter, skipWhile, take } from 'rxjs/operators';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
 import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
-import { CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
+import { AccountBalanceResponse, CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
@@ -56,22 +56,21 @@ export class LedgerComponent implements OnInit {
     // get the crypto assets in real time
     this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
 
-      this.paymentService.getAccountBalance().pipe(take(1)).subscribe(console.log)
+      this.paymentService.getAccountBalance().pipe(take(1)).subscribe((action: AccountBalanceResponse) => {
+        this.currencyArray = [
+          { code: 'BTC', currency: 'Bitcoin (BTC)', amount: action.result.btc },
+          { code: 'ETH', currency: 'Ethereum (ETH)', amount: action.result.eth },
+          { code: 'BCH', currency: 'Bitcoin Cash (BCH)', amount: action.result.bch },
+          { code: 'LTC', currency: 'Litecoin (LTC)', amount: action.result.ltc }
+        ]
 
-      this.currencyArray = [
-        { code: 'BTC', currency: 'Bitcoin (BTC)', amount: 0.004 },
-        { code: 'ETH', currency: 'Ethereum (ETH)', amount: 2.1 },
-        { code: 'BCH', currency: 'Bitcoin Cash (BCH)', amount: 0.0145 },
-        { code: 'LTC', currency: 'Litecoin (LTC)', amount: 1.3 }
-      ]
-
-      for(let item of this.currencyArray){
-        item.price_usd = 
-        (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
-        * item.amount).toFixed(2)
-        this.totalBalance += Number(item.price_usd)
-      }
-
+        for(let item of this.currencyArray){
+          item.price_usd = 
+          (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
+          * item.amount).toFixed(2)
+          this.totalBalance += Number(item.price_usd)
+        }
+      })
     })
 
   }
@@ -93,7 +92,7 @@ export class LedgerComponent implements OnInit {
 
     // create the card
     const cardPayment = new CardPayment(
-      'title',
+      '',
       this.translate.instant('WARNING.BC-make-sure-you-have-the-correct-address'),
       'fixed_price',
       { amount: this.price, currency: 'USD' },

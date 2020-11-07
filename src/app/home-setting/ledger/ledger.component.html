@@ -35,12 +35,14 @@
           <div class="col"><strong>USD</strong></div>
           <div class="col"></div>
         </div>
-        <div class="row mx-0 py-3 one-currency" *ngFor="let item of currencyArray">
-          <div class="col my-auto">{{item.currency}}</div>
-          <div class="col my-auto">{{item.amount}}</div>
-          <div class="col my-auto">${{item.price_usd}}</div>
-          <div class="col my-auto">
-            <button class="btn btn-gradient-color-green py-1">Transfer</button>
+        <div *ngFor="let item of currencyArray">
+          <div class="row mx-0 py-3 one-currency" *ngIf="item.amount !== 0">
+            <div class="col my-auto">{{item.currency}}</div>
+            <div class="col my-auto">{{item.amount}}</div>
+            <div class="col my-auto">${{item.price_usd}}</div>
+            <div class="col my-auto">
+              <button class="btn btn-gradient-color-green py-1">Transfer</button>
+            </div>
           </div>
         </div>
         <div class="row mx-0 py-3 bg-footer d-flex justify-content-center">
