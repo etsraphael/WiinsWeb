@@ -1,0 +1,94 @@
+<div class="container">
+  <div [ngSwitch]="currentPage">
+    <div *ngSwitchCase="0">
+      <div class="container">
+        <div class="row mx-0">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</span>
+        </div>
+        <div class="row mx-0">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Adress to send</th>
+                <td><input type="text" class="w-100"></td>
+              </tr>
+              <tr>
+                <th scope="row">Amount</th>
+                <td>100$</td>
+              </tr>
+              <tr>
+                <th scope="row">Admin Fees (15%)</th>
+                <td>15$</td>
+              </tr>
+              <tr>
+                <th scope="row">Amount to transfert</th>
+                <td>85$</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>You are going to transfert 100$ to this adresse. Are you sure ? The administration will confirm the
+            transaction in a 24h delay.</span>
+          <span class="text-danger">Be carefule, make sure you have the right adresse. No refund is possible after
+            confirmation of the transfer.</span>
+        </div>
+        <div class="row mx-0">
+          <button class="btn btn-primary ml-auto" (click)="nextPage(1)">Next</button>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="1">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="mx-auto">
+            <h3>Receipt</h3>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Adress to send</th>
+                <td>sdfkjsdfnsdflmsdofsdfnsdjfq30rsdcvnsd</td>
+              </tr>
+              <tr>
+                <th scope="row">Amount</th>
+                <td>100$</td>
+              </tr>
+              <tr>
+                <th scope="row">Admin Fees (15%)</th>
+                <td>15$</td>
+              </tr>
+              <tr>
+                <th scope="row">Amount to transfert</th>
+                <td>85$</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>You are going to transfert 100$ to this adresse. Are you sure ? The administration will confirm the
+            transaction in a 24h delay.</span>
+          <span class="text-danger">Be carefule, make sure you have the right adresse. No refund is possible after
+            confirmation of the transfer.</span>
+        </div>
+        <div class="row mx-0">
+          <button class="btn btn-primary ml-auto" (click)="nextPage(2)">Next</button>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="2">
+      <div class="container">
+        <div class="row mx-0">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</span>
+        </div>
+        <div class="row mx-0">
+          <button class="btn btn-primary ml-auto" (click)="nextPage(3)">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

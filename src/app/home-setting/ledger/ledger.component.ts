@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
+import { MatDialog, MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
 import { filter, skipWhile, take } from 'rxjs/operators';
+import { TransfertCryptoModalComponent } from 'src/app/core/modal/transfert-crypto-modal/transfert-crypto-modal.component';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
 import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
@@ -41,6 +42,7 @@ export class LedgerComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
     private cryptoServiceService: CryptoServiceService,
+    public dialog: MatDialog,
   ) { }
 
 
@@ -122,12 +124,12 @@ export class LedgerComponent implements OnInit {
 
   }
 
-  openTransfertModal(amount: number): void | MatSnackBarRef<SimpleSnackBar> {
+  openTransfertModal(amount: number, currency: string) {
 
     // not enougt to transfert
-    if(amount < 5){
+    if (amount < 1) {
       return this._snackBar.open(
-        'the minimum is 5$',
+        'the minimum is 1$',
         '', {
         horizontalPosition: 'center',
         verticalPosition: 'bottom',
@@ -136,9 +138,19 @@ export class LedgerComponent implements OnInit {
     }
     // open the modal to transfert
     else {
-      alert('good')
+      const transfertAccount: TransfertAccount = { amount, currency: currency.toLowerCase() }
+      return this.dialog.open(TransfertCryptoModalComponent, {
+        panelClass: ['col-md-8', 'col-xl-6'],
+        data: { transfertAccount }
+      })
     }
 
   }
 
+}
+
+
+export interface TransfertAccount {
+  amount: number
+  currency: string
 }

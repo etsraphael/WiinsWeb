@@ -41,7 +41,7 @@
             <div class="col my-auto">{{item.amount}}</div>
             <div class="col my-auto">${{item.price_usd}}</div>
             <div class="col my-auto">
-              <button class="btn btn-gradient-color-green py-1" (click)="openTransfertModal(item.price_usd)">Transfer</button>
+              <button class="btn btn-gradient-color-green py-1" (click)="openTransfertModal(item.price_usd, item.code)">Transfer</button>
             </div>
           </div>
         </div>

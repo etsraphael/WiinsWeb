@@ -25,7 +25,7 @@ import { UploadService } from './services/upload/upload.service'
 import { UploadWithoutInjectorService } from './services/upload/upload-without-injector.service'
 import { FeedService } from './services/publications/feed/feed.service'
 import { MusicService } from './services/publications/music/music.service';
-import { PaymentService } from './services/payment/payment.service'
+import { PaymentService } from './services/payment/payment.service';
 
 @NgModule({
   imports: [ CommonModule,  HttpClientModule, ReactiveFormsModule ],

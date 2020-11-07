@@ -134,6 +134,7 @@ import { FooterCoreComponent } from './core/component/footer-core/footer-core.co
 import { VerificationSpaceUnlockedComponent } from './space-creative/verification-space-unlocked/verification-space-unlocked.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component'
+import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-modal/transfert-crypto-modal.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -149,7 +150,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     OthersComponent, MiniChatComponent, MiniPlayerMusicComponent, SpaceStoryComponent,
     ProfileComponent, SpaceMessengerComponent, ThreadMessageComponent, UserListMessageComponent, ProfileStoryComponent,
     ProfileMusicComponent, ProfileTubeComponent, SpaceMusicComponent, MusicMainComponent, MusicSaveComponent,
-    SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent,
+    SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent, TransfertCryptoModalComponent,
     SpaceCreativeComponent, CreateEventComponent, CreateGroupComponent, CreatePageComponent, CreateTubePublicationComponent,
     NoprofileComponent, RegisterConfirmationComponent, PublicationModalComponent, ChoiceComponent, PageComponent,
     PageStoryComponent, PlaylistComponent, MypageComponent, DefaultPageComponent, FeedPageAdminStandardComponent,
@@ -181,7 +182,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   bootstrap: [AppComponent],
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,
-    GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent,
+    GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent, TransfertCryptoModalComponent,
     ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent
   ]
 })

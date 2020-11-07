@@ -29,7 +29,6 @@ export class PaymentService {
 
 }
 
-
 export interface CoinBaseResponse {
   data: {
     hosted_url: string,
