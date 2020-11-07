@@ -46,7 +46,7 @@
         </div>
         <div class="row mx-0">
           <button *ngIf="(amountCryptoChoosed == 0) || (amountLimit < 0) || (addressToSend == null)" class="btn btn-secondary ml-auto">{{'CORE.Next'|translate}}</button>
-          <button *ngIf="(amountCryptoChoosed !== 0) && (amountLimit > 0) && (addressToSend !== null)" class="btn btn-primary ml-auto" (click)="nextPage(1)">{{'CORE.Next'|translate}}</button>
+          <button *ngIf="(amountCryptoChoosed !== 0) && (amountLimit >= 0) && (addressToSend !== null)" class="btn btn-primary ml-auto" (click)="nextPage(1)">{{'CORE.Next'|translate}}</button>
         </div>
       </div>
     </div>
@@ -62,26 +62,28 @@
             <tbody>
               <tr>
                 <th scope="row">Adress to send</th>
-                <td>sdfkjsdfnsdflmsdofsdfnsdjfq30rsdcvnsd</td>
+                <td>{{addressToSend}}</td>
               </tr>
               <tr>
                 <th scope="row">Amount</th>
-                <td>100$</td>
+                <td>{{amountCryptoChoosed.toFixed(6)}} {{currencyChoosed}}</td>
               </tr>
               <tr>
-                <th scope="row">Admin Fees (15%)</th>
-                <td>15$</td>
+                <th scope="row">Admin Fees (3%)</th>
+                <td>{{0.03*amountCryptoChoosed.toFixed(6)}} {{currencyChoosed}}</td>
               </tr>
               <tr>
                 <th scope="row">Amount to transfert</th>
-                <td>85$</td>
+                <td>{{getTotalInCrypto()}} ETH</td>
+              </tr>
+              <tr class="bg-grey">
+                <th scope="row">Total in USD</th>
+                <td> {{getAmountInUsd()}} $USD ({{ data.transfertAccount.currentTime | date:'medium' }})</td>
               </tr>
             </tbody>
           </table>
-          <span>You are going to transfert 100$ to this adresse. Are you sure ? The administration will confirm the
+          <span>You are going to transfert to this adresse. Are you sure ? The administration will confirm the
             transaction in a 24h delay.</span>
-          <span class="text-danger">Be carefule, make sure you have the right adresse. No refund is possible after
-            confirmation of the transfer.</span>
         </div>
         <div class="row mx-0 d-flex justify-content-end">
           <button class="btn btn-secondary mx-2" (click)="previousPage()">{{'CORE.Back'|translate}}</button>
