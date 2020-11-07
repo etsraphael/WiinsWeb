@@ -40,7 +40,7 @@ export class LedgerComponent implements OnInit {
     private paymentService: PaymentService,
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
-    private cryptoServiceService: CryptoServiceService
+    private cryptoServiceService: CryptoServiceService,
   ) { }
 
 
@@ -64,10 +64,10 @@ export class LedgerComponent implements OnInit {
           { code: 'LTC', currency: 'Litecoin (LTC)', amount: action.result.ltc }
         ]
 
-        for(let item of this.currencyArray){
-          item.price_usd = 
-          (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
-          * item.amount).toFixed(2)
+        for (let item of this.currencyArray) {
+          item.price_usd =
+            (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
+              * item.amount).toFixed(2)
           this.totalBalance += Number(item.price_usd)
         }
       })
@@ -122,6 +122,23 @@ export class LedgerComponent implements OnInit {
 
   }
 
+  openTransfertModal(amount: number): void | MatSnackBarRef<SimpleSnackBar> {
 
+    // not enougt to transfert
+    if(amount < 5){
+      return this._snackBar.open(
+        'the minimum is 5$',
+        '', {
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        duration: 8000
+      })
+    }
+    // open the modal to transfert
+    else {
+      alert('good')
+    }
+
+  }
 
 }
