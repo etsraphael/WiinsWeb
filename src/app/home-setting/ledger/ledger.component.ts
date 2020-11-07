@@ -56,6 +56,8 @@ export class LedgerComponent implements OnInit {
     // get the crypto assets in real time
     this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
 
+      this.paymentService.getAccountBalance().pipe(take(1)).subscribe(console.log)
+
       this.currencyArray = [
         { code: 'BTC', currency: 'Bitcoin (BTC)', amount: 0.004 },
         { code: 'ETH', currency: 'Ethereum (ETH)', amount: 2.1 },

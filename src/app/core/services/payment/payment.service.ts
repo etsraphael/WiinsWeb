@@ -3,6 +3,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environments/environment'
 import { Observable } from 'rxjs';
 import { CardPayment } from '../../models/payment/cardPayment.model';
+import { BalanceAccount } from '../../models/crypto/balanceAccount.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,10 @@ export class PaymentService {
     return this.http.post<CoinBaseResponse>(`${this.coinBaseUrl}/charges`, payload, options);
   }
 
+  getAccountBalance(): Observable<AccountBalanceResponse> {
+    return this.http.get<AccountBalanceResponse>(`${this.baseUrl}/payment/getMyLedger`)
+  }
+
 }
 
 
@@ -30,4 +35,9 @@ export interface CoinBaseResponse {
     hosted_url: string,
     code: string
   }
+}
+
+export interface AccountBalanceResponse {
+  status: number
+  result: BalanceAccount
 }
