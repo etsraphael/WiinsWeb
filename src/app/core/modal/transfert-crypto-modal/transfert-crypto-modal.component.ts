@@ -10,6 +10,8 @@ import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 
 export class TransfertCryptoModalComponent implements OnInit {
 
+  // first page
+  addressToSend: string
   currentPage: number = 0
   amountCryptoChoosed: number = 0
   placeHolderAdress: string
