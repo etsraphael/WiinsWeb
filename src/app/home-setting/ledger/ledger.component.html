@@ -36,7 +36,7 @@
           <div class="col"></div>
         </div>
         <div *ngFor="let item of currencyArray">
-          <div class="row mx-0 py-3 one-currency" *ngIf="item.amount !== 0">
+          <div class="row mx-0 py-3 one-currency" *ngIf="item.amount > 0">
             <div class="col my-auto">{{item.currency}}</div>
             <div class="col my-auto">{{item.amount}}</div>
             <div class="col my-auto">${{item.price_usd}}</div>
@@ -83,7 +83,7 @@
                 officia deserunt mollit anim id est laborum.</span>
             </div>
             <div class="col-12 col-md-4 my-auto text-center">
-              <span class="price-span row mx-0 d-flex justify-content-center">14.99$ / months</span>
+              <span class="price-span row mx-0 d-flex justify-content-center">4.99$ / months</span>
               <span class="row mx-0 d-flex justify-content-center">Prochaine facturation :
                 {{(user$|async).chargedUntil | date }}</span>
             </div>
