@@ -126,7 +126,7 @@ export class LedgerComponent implements OnInit {
 
   }
 
-  openTransfertModal(amount: number, currency: string, marketPriceUsd: number) {
+  openTransfertModal(amount: number, currency: string, marketPriceUsd: number, balanceAccount: number) {
 
     // not enougt to transfert
     if (amount < 1) {
@@ -144,6 +144,7 @@ export class LedgerComponent implements OnInit {
       const transfertAccount: TransfertAccount = { 
         amount,
         marketPriceUsd,
+        balanceAccount,
         currency: currency.toLowerCase(),
         currentTime: Date.now(),
       }
@@ -165,4 +166,5 @@ export interface TransfertAccount {
   currency: string
   currentTime: number
   marketPriceUsd: number
+  balanceAccount: number
 }

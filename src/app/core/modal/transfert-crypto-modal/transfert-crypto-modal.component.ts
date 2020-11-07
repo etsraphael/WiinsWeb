@@ -11,9 +11,10 @@ import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 export class TransfertCryptoModalComponent implements OnInit {
 
   currentPage: number = 0
-  amountUsdChoosed: number = 0
+  amountCryptoChoosed: number = 0
   placeHolderAdress: string
   currencyChoosed: string
+  amountLimit = 0
 
   constructor(
     public dialogRef: MatDialogRef<TransfertCryptoModalComponent>,
@@ -64,12 +65,23 @@ export class TransfertCryptoModalComponent implements OnInit {
     --this.currentPage
   }
 
-  updateAmount(){
-    console.log(this.amountUsdChoosed)
+  updateAmount(): void {
+    this.amountLimit =
+      this.data.transfertAccount.balanceAccount
+      - 1.03*this.amountCryptoChoosed
   }
 
-  getAmountInUsd(cryptoValue: number): string{
-    return (((cryptoValue * 1.05) + cryptoValue) * this.data.transfertAccount.marketPriceUsd).toFixed(2)
+  getAmountInUsd(): string {
+    return (((this.amountCryptoChoosed * 1.03)) * this.data.transfertAccount.marketPriceUsd).toFixed(2)
+  }
+
+  getTotalInCrypto(): string {
+    return (this.amountCryptoChoosed * 0.03 + this.amountCryptoChoosed).toFixed(6)
+  }
+
+  setMaxAccount() {
+    this.amountCryptoChoosed = this.data.transfertAccount.balanceAccount - (this.data.transfertAccount.balanceAccount * 0.03)
+    this.amountCryptoChoosed = Number(this.amountCryptoChoosed.toFixed(6))
   }
 
 }

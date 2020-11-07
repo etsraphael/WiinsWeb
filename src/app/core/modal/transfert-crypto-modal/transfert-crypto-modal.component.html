@@ -20,22 +20,23 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">{{currencyChoosed}}</span>
                     </div>
-                    <input [(ngModel)]="amountUsdChoosed" type="number" min="0" (ngModelChange)="updateAmount()"
-                    class="form-control" aria-describedby="basic-addon1">
+                    <input [(ngModel)]="amountCryptoChoosed" type="number" min="0" (ngModelChange)="updateAmount()"
+                    class="form-control" aria-describedby="basic-addon1" [ngClass]="{'is-invalid': this.amountLimit < 0}">
+                    <button (click)="setMaxAccount()" class="btn btn-outline-secondary btn-max" type="button" id="button-addon2">Max</button>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row">Admin Fees (5%)</th>
-                <td>{{amountUsdChoosed * 1.05}} {{currencyChoosed}}</td>
+                <th scope="row">Fees (3%)</th>
+                <td>{{0.03*amountCryptoChoosed.toFixed(6)}} {{currencyChoosed}}</td>
               </tr>
               <tr>
                 <th scope="row">{{'CORE.Total'|translate}}</th>
-                <td>{{(amountUsdChoosed * 1.05) + amountUsdChoosed}} ETH</td>
+                <td>{{getTotalInCrypto()}} ETH</td>
               </tr>
               <tr class="bg-grey">
                 <th scope="row">Total in USD</th>
-                <td> {{getAmountInUsd(amountUsdChoosed)}} $USD ({{ data.transfertAccount.currentTime | date:'medium' }})</td>
+                <td> {{getAmountInUsd()}} $USD ({{ data.transfertAccount.currentTime | date:'medium' }})</td>
               </tr>
             </tbody>
           </table>
