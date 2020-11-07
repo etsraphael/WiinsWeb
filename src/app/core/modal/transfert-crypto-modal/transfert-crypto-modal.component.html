@@ -35,7 +35,7 @@
               </tr>
               <tr class="bg-grey">
                 <th scope="row">Total in USD</th>
-                <td> 0 $USD</td>
+                <td> {{getAmountInUsd(amountUsdChoosed)}} $USD ({{ data.transfertAccount.currentTime | date:'medium' }})</td>
               </tr>
             </tbody>
           </table>

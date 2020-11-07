@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
@@ -70,6 +71,7 @@ export class LedgerComponent implements OnInit {
           item.price_usd =
             (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd))
               * item.amount).toFixed(2)
+          item.market_price_usd = (Number(response.data.filter(obj => obj.symbol == item.code).map(x => x.metrics.market_data.price_usd)))
           this.totalBalance += Number(item.price_usd)
         }
       })
@@ -124,7 +126,7 @@ export class LedgerComponent implements OnInit {
 
   }
 
-  openTransfertModal(amount: number, currency: string) {
+  openTransfertModal(amount: number, currency: string, marketPriceUsd: number) {
 
     // not enougt to transfert
     if (amount < 1) {
@@ -138,11 +140,19 @@ export class LedgerComponent implements OnInit {
     }
     // open the modal to transfert
     else {
-      const transfertAccount: TransfertAccount = { amount, currency: currency.toLowerCase() }
+
+      const transfertAccount: TransfertAccount = { 
+        amount,
+        marketPriceUsd,
+        currency: currency.toLowerCase(),
+        currentTime: Date.now(),
+      }
+
       return this.dialog.open(TransfertCryptoModalComponent, {
         panelClass: ['col-md-8', 'col-xl-6'],
         data: { transfertAccount }
       })
+      
     }
 
   }
@@ -153,4 +163,6 @@ export class LedgerComponent implements OnInit {
 export interface TransfertAccount {
   amount: number
   currency: string
+  currentTime: number
+  marketPriceUsd: number
 }

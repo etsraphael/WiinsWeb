@@ -21,6 +21,7 @@ export class TransfertCryptoModalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
     switch (this.data.transfertAccount.currency) {
       case 'btc':
         this.placeHolderAdress = 'Address bitcoin'
@@ -65,6 +66,10 @@ export class TransfertCryptoModalComponent implements OnInit {
 
   updateAmount(){
     console.log(this.amountUsdChoosed)
+  }
+
+  getAmountInUsd(cryptoValue: number): string{
+    return (((cryptoValue * 1.05) + cryptoValue) * this.data.transfertAccount.marketPriceUsd).toFixed(2)
   }
 
 }
