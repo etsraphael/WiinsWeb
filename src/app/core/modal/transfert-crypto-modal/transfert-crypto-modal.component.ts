@@ -10,12 +10,15 @@ import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 
 export class TransfertCryptoModalComponent implements OnInit {
 
-  // first page
+  // form
   addressToSend: string
   currentPage: number = 0
   amountCryptoChoosed: number = 0
   placeHolderAdress: string
   currencyChoosed: string
+  password: string
+
+  // verification
   amountLimit = 0
 
   constructor(
@@ -84,6 +87,10 @@ export class TransfertCryptoModalComponent implements OnInit {
   setMaxAccount() {
     this.amountCryptoChoosed = this.data.transfertAccount.balanceAccount - (this.data.transfertAccount.balanceAccount * 0.03)
     this.amountCryptoChoosed = Number(this.amountCryptoChoosed.toFixed(6))
+  }
+
+  getNumberFees(): string {
+    return (0.03*this.amountCryptoChoosed).toFixed(6)
   }
 
 }
