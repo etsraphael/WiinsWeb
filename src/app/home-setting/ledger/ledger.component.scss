@@ -43,8 +43,26 @@
   background-color: #e0e0e061;
 }
 
-.one-currency {
+.one-currency, .one-transfert-request {
   border-bottom: 1px solid #dee2e6
+}
+
+.header-color-title {
+  color: #525f7f;
+}
+
+.bg-sub-header {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.cancel-btn {
+  color: #5e72e4;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  text-decoration: underline;
 }
 
 .btn-gradient-color {

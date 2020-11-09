@@ -25,6 +25,35 @@
     <span class="mx-auto">The udpate can take 15min after the confirmation</span>
   </div>
 
+  <!-- Pending Transfert Request -->
+  <div *ngIf="(transfertsRequests$|async); let transfertsRequests">
+
+    <div class="card container-fluid px-0 container-transfert-request text-center">
+
+      <div class="row mx-0 py-3 bg-header">
+        <h3 class="pl-4 mb-0 header-color-title">Pending Transfert Request</h3>
+      </div>
+
+      <div class="row mx-0 bg-sub-header py-3">
+        <div class="col">Address</div>
+        <div class="col">Amount</div>
+        <div class="col">Status</div>
+        <div class="col"></div>
+      </div>
+
+      <div *ngFor="let item of transfertsRequests" class="row mx-0 one-transfert-request py-3">
+        <div class="col my-auto">{{item.address}}</div>
+        <div class="col my-auto">{{item.amount}} {{item.currency.toUpperCase()}}</div>
+        <div class="col my-auto">Pending</div>
+        <div class="col my-auto cancel-btn">Cancel</div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
   <!-- Account List -->
   <div class="row mx-0 my-4" *ngIf="!!currencyArray">
     <div class="card w-100 text-center">
@@ -41,7 +70,8 @@
             <div class="col my-auto">{{item.amount.toFixed(6)}}</div>
             <div class="col my-auto">${{item.price_usd}}</div>
             <div class="col my-auto">
-              <button class="btn btn-gradient-color-green py-1" (click)="openTransfertModal(item.price_usd, item.code, item.market_price_usd, item.amount)">Transfer</button>
+              <button class="btn btn-gradient-color-green py-1"
+                (click)="openTransfertModal(item.price_usd, item.code, item.market_price_usd, item.amount)">Transfer</button>
             </div>
           </div>
         </div>

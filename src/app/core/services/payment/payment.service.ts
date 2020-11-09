@@ -4,6 +4,7 @@ import { environment } from '../../../../environments/environment'
 import { Observable } from 'rxjs';
 import { CardPayment } from '../../models/payment/cardPayment.model';
 import { BalanceAccount } from '../../models/crypto/balanceAccount.model';
+import { TransfertRequest } from '../../models/payment/TransfertRequest.model';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,15 @@ export class PaymentService {
     return this.http.get<AccountBalanceResponse>(`${this.baseUrl}/payment/getMyLedger`)
   }
 
+  getTransfertRequest(): Observable<TransfertRequestSingle> {
+    return this.http.get<TransfertRequestSingle>(`${this.baseUrl}/payment/getTransfertRequestByUser`)
+  }
+
+}
+
+export interface TransfertRequestSingle {
+  status: number
+  result: TransfertRequest[]
 }
 
 export interface CoinBaseResponse {

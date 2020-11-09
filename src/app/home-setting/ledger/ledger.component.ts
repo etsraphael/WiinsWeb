@@ -9,8 +9,9 @@ import { filter, skipWhile, take } from 'rxjs/operators';
 import { TransfertCryptoModalComponent } from 'src/app/core/modal/transfert-crypto-modal/transfert-crypto-modal.component';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
+import { TransfertRequest } from 'src/app/core/models/payment/TransfertRequest.model';
 import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
-import { AccountBalanceResponse, CoinBaseResponse, PaymentService } from 'src/app/core/services/payment/payment.service';
+import { AccountBalanceResponse, CoinBaseResponse, PaymentService, TransfertRequestSingle } from 'src/app/core/services/payment/payment.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
@@ -36,6 +37,10 @@ export class LedgerComponent implements OnInit {
   currencyArray = []
   totalBalance = 0
 
+  // pending request
+  transfertsRequests$: Observable<TransfertRequest[]>
+
+
   constructor(
     private translate: TranslateService,
     private _snackBar: MatSnackBar,
@@ -43,9 +48,8 @@ export class LedgerComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
     private cryptoServiceService: CryptoServiceService,
-    public dialog: MatDialog,
+    public dialog: MatDialog
   ) { }
-
 
   ngOnInit(): void {
 
@@ -55,6 +59,13 @@ export class LedgerComponent implements OnInit {
       skipWhile(val => val == null),
       filter(val => !!val)
     )
+
+    // load pending transfert
+    this.transfertsRequests$ = this.paymentService.getTransfertRequest().pipe(
+      select((x: TransfertRequestSingle) => x.result)
+    )
+
+    this.transfertsRequests$.subscribe(console.log)
 
     // get the crypto assets in real time
     this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
@@ -141,7 +152,7 @@ export class LedgerComponent implements OnInit {
     // open the modal to transfert
     else {
 
-      const transfertAccount: TransfertAccount = { 
+      const transfertAccount: TransfertAccount = {
         amount,
         marketPriceUsd,
         balanceAccount,
@@ -153,7 +164,7 @@ export class LedgerComponent implements OnInit {
         panelClass: ['col-md-8', 'col-xl-6'],
         data: { transfertAccount }
       })
-      
+
     }
 
   }
