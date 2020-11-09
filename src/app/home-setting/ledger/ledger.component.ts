@@ -6,6 +6,7 @@ import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
 import { filter, skipWhile, take } from 'rxjs/operators';
+import { PasswordValidationComponent } from 'src/app/core/modal/password-validation/password-validation.component';
 import { TransfertCryptoModalComponent } from 'src/app/core/modal/transfert-crypto-modal/transfert-crypto-modal.component';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
@@ -64,8 +65,6 @@ export class LedgerComponent implements OnInit {
     this.transfertsRequests$ = this.paymentService.getTransfertRequest().pipe(
       select((x: TransfertRequestSingle) => x.result)
     )
-
-    this.transfertsRequests$.subscribe(console.log)
 
     // get the crypto assets in real time
     this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
@@ -167,6 +166,14 @@ export class LedgerComponent implements OnInit {
 
     }
 
+  }
+
+  openValidationModal(id: string) {
+    // to open the modal
+    this.dialog.open(PasswordValidationComponent, {
+      panelClass: ['col-md-4'],
+      data: { type: 'cancelTransfertResquest', id }
+    })
   }
 
 }

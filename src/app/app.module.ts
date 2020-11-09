@@ -135,6 +135,7 @@ import { VerificationSpaceUnlockedComponent } from './space-creative/verificatio
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component'
 import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-modal/transfert-crypto-modal.component'
+import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -158,7 +159,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
     ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, MyProfileMusicComponent,
     MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
-    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent,
+    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, PasswordValidationComponent,
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
@@ -183,7 +184,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,
     GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent, TransfertCryptoModalComponent,
-    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent
+    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent, PasswordValidationComponent
   ]
 })
 

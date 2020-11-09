@@ -36,8 +36,7 @@ import { PaymentService } from './services/payment/payment.service';
     FileUploadService, ProfileResolver, UserResolver, MessengerService,
     PageResolver, UploadService, UploadWithoutInjectorService, PaymentService,
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-  ],
-  declarations: []
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+  ]
 })
 export class CoreModule { }
