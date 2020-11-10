@@ -185,7 +185,13 @@
     "reply..": "回复",
     "responses": "回应",
     "soon": "不久",
-    "views": "意见"
+    "views": "意见",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": "",
+    "Previous": "",
+    "Receipt": "",
+    "Close": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -792,6 +798,13 @@
       "my-publications-are-visible-to-every-one": "接受暴力作为试图改变事物的手段",
       "who-c-find-me": "谁能找到我 ？",
       "who-c-find-me-d": "当您的用户名在搜索栏中输入时，这些人将能够看到显示您的个人资料。"
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +927,21 @@
       "Video-creation": "视频创建",
       "Video-name": "视频名称",
       "Visualisation-of-the-video": "视频的可视化"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

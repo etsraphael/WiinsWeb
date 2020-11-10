@@ -25,6 +25,7 @@ import { UploadService } from './services/upload/upload.service'
 import { UploadWithoutInjectorService } from './services/upload/upload-without-injector.service'
 import { FeedService } from './services/publications/feed/feed.service'
 import { MusicService } from './services/publications/music/music.service';
+import { PaymentService } from './services/payment/payment.service';
 
 @NgModule({
   imports: [ CommonModule,  HttpClientModule, ReactiveFormsModule ],
@@ -33,10 +34,9 @@ import { MusicService } from './services/publications/music/music.service';
     CommentService, LikeService, PageService, FriendService, PlaylistMusicService,
     NotificationService, SearchService, WsService, MusicService, FriendRequestService,
     FileUploadService, ProfileResolver, UserResolver, MessengerService,
-    PageResolver, UploadService, UploadWithoutInjectorService,
+    PageResolver, UploadService, UploadWithoutInjectorService, PaymentService,
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-  ],
-  declarations: []
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
+  ]
 })
 export class CoreModule { }

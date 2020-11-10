@@ -1,15 +1,15 @@
 <!-- Discover or for you -->
 <div class="container">
   <div class="row mt-4 mb-2 mx-0">
-    <div class="col-md-4 mx-auto">
+    <div class="col-12 col-md-8 col-xl-6 mx-auto">
       <div class="row mx-0">
         <a class="col mx-2 py-2 btn btn-nav" [routerLink]="['/SpaceStory']" routerLinkActive="selected">For You</a>
-        <a class="col mx-2 py-2 btn btn-nav" [routerLink]="['/SpaceDiscover/#']" routerLinkActive="selected">Discover</a>
+        <a class="col mx-2 py-2 btn btn-nav" [routerLink]="['/SpaceDiscover/#']"
+          routerLinkActive="selected">Discover</a>
       </div>
     </div>
   </div>
 </div>
-
 <!-- Suggest Bar -->
 <div class="container">
   <div class="row mx-0 nav py-3" *ngIf="(suggestList$|async); let suggest">
@@ -27,15 +27,12 @@
     </div>
   </div>
 </div>
-
-
 <!-- Feed's Zone -->
 <div *ngIf="(loading$ | async) && !(publication$|async)" class="row mx-0 w-100">
   <div class="m-auto" id="preloader">
     <div id="loader"></div>
   </div>
 </div>
-
 <!-- Publication List -->
 <div class="mx-3 pt-3">
   <div class="container publications-space">

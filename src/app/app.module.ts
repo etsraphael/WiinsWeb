@@ -32,8 +32,6 @@ import { MyProfileComponent } from './myprofile/myprofile.component'
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component'
 import { HomeSettingComponent } from './home-setting/home-setting.component'
 import { UpdatePasswordComponent } from './home-setting/update-password/update-password.component'
-import { ProfilePictureComponent } from './home-setting/update-users/profile-picture/profile-picture.component'
-import { ProfileCoverComponent } from './home-setting/update-users/profile-cover/profile-cover.component'
 import { SidebarSettingComponent } from './home-setting/sidebar-setting/sidebar-setting.component'
 import { VisibilityComponent } from './home-setting/visibility/visibility.component'
 import { IdentificationComponent } from './home-setting/visibility/identification/identification.component'
@@ -62,8 +60,6 @@ import { CreateGroupComponent } from './space-creative/create-group/create-group
 import { CreatePageComponent } from './space-creative/create-page/create-page.component'
 import { CreateTubePublicationComponent } from './space-creative/create-tube-publication/create-tube-publication.component'
 import { CreateMusicProjectComponent } from './space-creative/create-music-project/create-music-project.component'
-import { FirstTutoMessageComponent } from './space-creative/first-tuto-message/first-tuto-message.component'
-import { MessageMonetizationComponent } from './space-creative/message-monetization/message-monetization.component'
 import { NotfoundComponent } from './notfound/notfound.component'
 import { NoprofileComponent } from './notfound/noprofile/noprofile.component'
 import { SiPipeModule } from 'ng-si'
@@ -134,10 +130,12 @@ import { DeviceDetectorModule } from 'ngx-device-detector';
 import { CommunityListComponent } from './core/component/community-list/community-list.component'
 import { ReportModalComponent } from './core/modal/report-modal/report-modal.component'
 import { ReportMessageComponent } from './core/modal/report-message/report-message.component';
-import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component'
 import { FooterCoreComponent } from './core/component/footer-core/footer-core.component';
 import { VerificationSpaceUnlockedComponent } from './space-creative/verification-space-unlocked/verification-space-unlocked.component';
-import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component'
+import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
+import { LedgerComponent } from './home-setting/ledger/ledger.component'
+import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-modal/transfert-crypto-modal.component'
+import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -147,27 +145,27 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent, LoginComponent, RegisterComponent, HomeComponent, NavBarComponent,
-    MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent, ProfilePictureComponent,
-    ProfileCoverComponent, FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
+    MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent,
+    FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
     VisibilityMainComponent, IdentificationComponent, BlacklistComponent, LanguageComponent, NotificationComponent,
     OthersComponent, MiniChatComponent, MiniPlayerMusicComponent, SpaceStoryComponent,
     ProfileComponent, SpaceMessengerComponent, ThreadMessageComponent, UserListMessageComponent, ProfileStoryComponent,
     ProfileMusicComponent, ProfileTubeComponent, SpaceMusicComponent, MusicMainComponent, MusicSaveComponent,
-    SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent,
+    SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent, TransfertCryptoModalComponent,
     SpaceCreativeComponent, CreateEventComponent, CreateGroupComponent, CreatePageComponent, CreateTubePublicationComponent,
-    CreateMusicProjectComponent, FirstTutoMessageComponent, MessageMonetizationComponent, NotfoundComponent,
     NoprofileComponent, RegisterConfirmationComponent, PublicationModalComponent, ChoiceComponent, PageComponent,
     PageStoryComponent, PlaylistComponent, MypageComponent, DefaultPageComponent, FeedPageAdminStandardComponent,
     AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent, RequestListComponent,
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
     ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, MyProfileMusicComponent,
     MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
-    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent,
+    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, PasswordValidationComponent,
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
-    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, PremiumSettingComponent, VerificationSpaceUnlockedComponent, CertificationMenuComponent
+    ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
+    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
@@ -185,8 +183,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   bootstrap: [AppComponent],
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,
-    GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent,
-    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent
+    GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent, TransfertCryptoModalComponent,
+    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent, PasswordValidationComponent
   ]
 })
 

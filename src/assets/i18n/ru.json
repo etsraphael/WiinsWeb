@@ -185,7 +185,13 @@
     "reply..": "Ответить",
     "responses": "ответы",
     "soon": "скоро",
-    "views": "взгляды"
+    "views": "взгляды",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": "",
+    "Previous": "",
+    "Receipt": "",
+    "Close": ""
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -792,6 +798,13 @@
       "my-publications-are-visible-to-every-one": "Принятие насилия как средства, пытаясь изменить ситуацию",
       "who-c-find-me": "Кто может найти меня?",
       "who-c-find-me-d": "Когда ваше имя пользователя будет введено в панель поиска, эти люди смогут видеть ваш профиль отображается.  "
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +927,21 @@
       "Video-creation": "Создание видео",
       "Video-name": "Название видео",
       "Visualisation-of-the-video": "Визуализация видео"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

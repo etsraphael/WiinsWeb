@@ -60,8 +60,8 @@ import { ListPlaylistMusicComponent } from './space-music/list-playlist-music/li
 import { ForgotPasswordComponent } from './sign/forgot-password/forgot-password.component';
 import { ChangingPasswordComponent } from './sign/changing-password/changing-password.component';
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
-import { PremiumSettingComponent } from './home-setting/premium-setting/premium-setting.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
+import { LedgerComponent } from './home-setting/ledger/ledger.component';
 
 
 const routes: Routes = [
@@ -245,7 +245,7 @@ const routes: Routes = [
       { path: 'notification', component: NotificationComponent },
       { path: 'others', component: OthersComponent },
       { path: 'visibility', component: VisibilityComponent },
-      { path: 'premium', component: PremiumSettingComponent },
+      { path: 'ledger', component: LedgerComponent },
       { path: 'certificate', component: CertificationMenuComponent }
     ]
   }

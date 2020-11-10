@@ -14,14 +14,6 @@
   overflow: hidden;
 }
 
-.panel-header {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-size: 105%;
-  position: relative;
-  overflow: hidden;
-}
-
 /* main */
 
 .main-content {
@@ -32,11 +24,9 @@
 
 .card {
   border: 0;
-  display: inline-block;
-  position: relative;
   width: 100%;
   margin-bottom: 20px;
-  box-shadow: 0 1px 15px 1px rgba(39, 39, 39, 0.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -44,7 +34,6 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border-radius: 25px;
   overflow: hidden;
 }
 

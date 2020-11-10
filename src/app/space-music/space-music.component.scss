@@ -1,45 +1,43 @@
-.switch-space {
-    button {
-        border-radius: 5px;
-        color: #212529;
-        border: 0;
-        box-shadow: 0 2px 23px rgba(0, 0, 0, 0.190);
-        transition: 0.5s;
-
-        span {
-            font-size: 1.2rem;
-            color: white;
-        }
-
-        .fa {
-            color: white;
-        }
-    }
-
-    button:hover,
-    .active button {
-        font-size: 30px;
-        transition: 0.5s;
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.275);
-
-        span {
-            font-size: 1.4rem;
-        }
-    }
-
-    .btn-tendance {
-        background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-        background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-        background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
-    }
-
-    .btn-save {
-        background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-        background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-        background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
-    }
+.btn-nav {
+  letter-spacing: 0;
+  box-shadow: none;
+  font-size: 1rem;
 }
 
-.container-space {
-  height: calc(100% - 132px);
+.btn-nav:hover,
+.btn-nav {
+  letter-spacing: 5px;
+}
+
+.btn-nav:after,
+.btn-nav:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(grey, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-nav:hover:after,
+.btn-nav:hover:before,
+.btn-nav.selected:after,
+.btn-nav.selected:before {
+  backface-visibility: hidden;
+  border-color: grey;
+  transition: width 350ms ease-in-out;
+  width: 90%;
+}
+
+.btn-nav.selected:before,
+.btn-nav:hover:before {
+  bottom: 3px;
+}
+
+.btn-nav:hover:after,
+.btn-nav.selected:after {
+  bottom: -3px;
 }

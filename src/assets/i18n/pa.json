@@ -185,7 +185,13 @@
     "reply..": "ਜਵਾਬ",
     "responses": "ਜਵਾਬ",
     "soon": "ਜਲਦੀ",
-    "views": "ਵਿਚਾਰ"
+    "views": "ਵਿਚਾਰ",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": "",
+    "Previous": "",
+    "Receipt": "",
+    "Close": ""
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -792,6 +798,13 @@
       "my-publications-are-visible-to-every-one": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਹਰ ਕਿਸੇ ਨੂੰ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ",
       "who-c-find-me": "ਮੈਨੂੰ ਕੌਣ ਲੱਭ ਸਕਦਾ ਹੈ ?",
       "who-c-find-me-d": "ਜਦੋਂ ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਸਰਚ ਬਾਰ ਵਿੱਚ ਦਾਖਲ ਹੁੰਦਾ ਹੈ, ਇਹ ਲੋਕ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ."
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +927,21 @@
       "Video-creation": "ਵੀਡੀਓ ਬਣਾਉਣਾ",
       "Video-name": "ਵੀਡੀਓ ਨਾਮ",
       "Visualisation-of-the-video": "ਵੀਡੀਓ ਦਾ ਵਿਜ਼ੂਅਲਾਈਜ਼ੇਸ਼ਨ"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

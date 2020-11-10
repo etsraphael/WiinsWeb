@@ -185,7 +185,13 @@
     "reply..": "जवाब दे दो",
     "responses": "प्रतिक्रियाओं",
     "soon": "जल्द ही",
-    "views": "विचारों"
+    "views": "विचारों",
+    "Ledger": "",
+    "You-can-do-it-here": "",
+    "Certification": "",
+    "Previous": "",
+    "Receipt": "",
+    "Close": ""
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -792,6 +798,13 @@
       "my-publications-are-visible-to-every-one": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
       "who-c-find-me": "मुझे कौन पा सकता है ?",
       "who-c-find-me-d": "जब आपका उपयोगकर्ता नाम खोज बार में दर्ज हो जाएगा, तो ये लोग आपकी प्रोफ़ाइल प्रदर्शित देख पाएंगे।  "
+    },
+    "ledger": {
+      "Yr-account-balance-is": ""
+    },
+    "verified": {
+      "Verified-zone": "",
+      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +927,21 @@
       "Video-creation": "वीडियो निर्माण",
       "Video-name": "वीडियो का नाम",
       "Visualisation-of-the-video": "वीडियो का विज़ुअलाइज़ेशन"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

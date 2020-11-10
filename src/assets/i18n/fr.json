@@ -185,7 +185,13 @@
     "reply..": "répondre..",
     "responses": "réponses",
     "soon": "bientôt",
-    "views": "vues"
+    "views": "vues",
+    "Ledger": "Ledger",
+    "You-can-do-it-here": "Vous pouvez le faire ici",
+    "Certification": "Certification",
+    "Previous": "Précédent",
+    "Receipt": "",
+    "Close": ""
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -792,6 +798,13 @@
       "my-publications-are-visible-to-every-one": "Mes publications sont visible par tout le monde",
       "who-c-find-me": "Qui peut me trouver ?",
       "who-c-find-me-d": "Lorsque votre pseudo est écrit dans la barre de recherche ces personnes pourront voir votre profile affiché. "
+    },
+    "ledger": {
+      "Yr-account-balance-is": "Le solde de votre compte est : {{value}}"
+    },
+    "verified": {
+      "Verified-zone": "Zone verifiée",
+      "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée"
     }
   },
   "SIDEBAR-HOME": {
@@ -914,6 +927,21 @@
       "Video-creation": "Creation de la video",
       "Video-name": "Nom de la vidéo",
       "Visualisation-of-the-video": "Rendue de la video"
+    }
+  },
+  "TUBE": {
+    "Categorie": {
+      "Trending": "",
+      "Gaming": "",
+      "Dance": "",
+      "News": "",
+      "Travel": "",
+      "Beauty": "",
+      "Comedy": "",
+      "Movies": "",
+      "How-to": "",
+      "Sport": "",
+      "Music": ""
     }
   }
 }

@@ -3,6 +3,8 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environments/environment'
 import { Observable } from 'rxjs';
 import { CardPayment } from '../../models/payment/cardPayment.model';
+import { BalanceAccount } from '../../models/crypto/balanceAccount.model';
+import { TransfertRequest } from '../../models/payment/TransfertRequest.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,12 +24,38 @@ export class PaymentService {
     return this.http.post<CoinBaseResponse>(`${this.coinBaseUrl}/charges`, payload, options);
   }
 
+  getAccountBalance(): Observable<AccountBalanceResponse> {
+    return this.http.get<AccountBalanceResponse>(`${this.baseUrl}/payment/getMyLedger`)
+  }
+
+  getTransfertRequest(): Observable<TransfertRequestSingle> {
+    return this.http.get<TransfertRequestSingle>(`${this.baseUrl}/payment/getTransfertRequestByUser`)
+  }
+
+  cancelTransfertRequest(id: string): Observable<TransfertRequestSingle> {
+    return this.http.get<TransfertRequestSingle>(`${this.baseUrl}/payment/cancelTransfertRequestById/${id}`)
+  }
+
 }
 
+export interface StatutAndMessageResponse {
+  status: number
+  message: string
+}
+
+export interface TransfertRequestSingle {
+  status: number
+  result: TransfertRequest[]
+}
 
 export interface CoinBaseResponse {
   data: {
     hosted_url: string,
     code: string
   }
+}
+
+export interface AccountBalanceResponse {
+  status: number
+  result: BalanceAccount
 }
