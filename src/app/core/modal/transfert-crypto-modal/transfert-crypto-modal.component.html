@@ -52,7 +52,7 @@
           </table>
         </div>
         <div class="row mx-0">
-          <button *ngIf="(amountCryptoChoosed == 0) || (amountLimit < 0) || (addressToSend == null)"
+          <button (click)="incompletMessage()" *ngIf="(amountCryptoChoosed == 0) || (amountLimit < 0) || (addressToSend == null)"
             class="btn btn-secondary ml-auto">{{'CORE.Next'|translate}}</button>
           <button *ngIf="(amountCryptoChoosed !== 0) && (amountLimit >= 0) && (addressToSend !== null)"
             class="btn btn-primary ml-auto" (click)="nextPage(1)">{{'CORE.Next'|translate}}</button>

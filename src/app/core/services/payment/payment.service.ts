@@ -36,6 +36,9 @@ export class PaymentService {
     return this.http.get<TransfertRequestSingle>(`${this.baseUrl}/payment/cancelTransfertRequestById/${id}`)
   }
 
+  createTransfertRequest(payload: TransfertRequest): Observable<StatutAndMessageResponse> {
+    return this.http.post<StatutAndMessageResponse>(`${this.baseUrl}/payment/createTransfertResquest`, payload)
+  }
 }
 
 export interface StatutAndMessageResponse {
