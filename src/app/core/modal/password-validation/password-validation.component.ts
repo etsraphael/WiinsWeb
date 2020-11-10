@@ -38,9 +38,19 @@ export class PasswordValidationComponent implements OnInit {
   }
 
   confirm() {
-    alert('bla')
 
     if (this.sendForm.invalid) return null
+
+
+
+    switch (this.data.type) {
+      case 'cancelTransfertResquest':
+        console.log(this.data)
+        break;
+    
+      default:
+        break;
+    }
 
   }
 
