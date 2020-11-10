@@ -26,7 +26,7 @@
   </div>
 
   <!-- Pending Transfert Request -->
-  <div *ngIf="(transfertsRequests$|async); let transfertsRequests">
+  <div *ngIf="transfertsRequests.length > 0">
 
     <div class="card container-fluid px-0 container-transfert-request text-center">
 
@@ -47,9 +47,6 @@
         <div class="col my-auto">Pending</div>
         <div (click)="openValidationModal(item._id)" class="col my-auto cancel-btn">Cancel</div>
       </div>
-
-
-
 
     </div>
   </div>

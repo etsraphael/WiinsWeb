@@ -1,4 +1,3 @@
-import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
@@ -39,8 +38,7 @@ export class LedgerComponent implements OnInit {
   totalBalance = 0
 
   // pending request
-  transfertsRequests$: Observable<TransfertRequest[]>
-
+  transfertsRequests: TransfertRequest[] = []
 
   constructor(
     private translate: TranslateService,
@@ -62,9 +60,9 @@ export class LedgerComponent implements OnInit {
     )
 
     // load pending transfert
-    this.transfertsRequests$ = this.paymentService.getTransfertRequest().pipe(
-      select((x: TransfertRequestSingle) => x.result)
-    )
+    this.paymentService.getTransfertRequest().pipe(
+      select((x: TransfertRequestSingle) => x.result) 
+    ).subscribe((data: TransfertRequest[]) => this.transfertsRequests = data)
 
     // get the crypto assets in real time
     this.cryptoServiceService.getCryptoAssetPrice().pipe(take(1)).subscribe((response: AssetCryptoResponse) => {
