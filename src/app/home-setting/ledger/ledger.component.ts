@@ -158,6 +158,7 @@ export class LedgerComponent implements OnInit {
       }
 
       return this.dialog.open(TransfertCryptoModalComponent, {
+        disableClose: true,
         panelClass: ['col-md-8', 'col-xl-6'],
         data: { transfertAccount }
       })

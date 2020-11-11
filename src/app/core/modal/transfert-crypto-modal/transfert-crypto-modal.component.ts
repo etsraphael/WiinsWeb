@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { take } from 'rxjs/operators';
 import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 import { TransfertRequest } from '../../models/payment/TransfertRequest.model';
-import { PaymentService } from '../../services/payment/payment.service';
+import { PaymentService, StatutAndMessageResponse } from '../../services/payment/payment.service';
 
 @Component({
   selector: 'app-transfert-crypto-modal',
@@ -24,6 +24,12 @@ export class TransfertCryptoModalComponent implements OnInit {
 
   // verification
   amountLimit = 0
+
+  // service
+  loadingReponse = false
+  errorResponse = false
+  validResponse = false
+  errorMessage: string
 
   constructor(
     private paymentService: PaymentService,
@@ -65,6 +71,7 @@ export class TransfertCryptoModalComponent implements OnInit {
         }
         break;
       case 2:
+        this.loadingReponse = true
         this.currentPage++
         this.sendRequestTransfert()
         break;
@@ -75,6 +82,10 @@ export class TransfertCryptoModalComponent implements OnInit {
         break;
       default: return null
     }
+  }
+
+  closeModal(): void {
+    return this.dialogRef.close()
   }
 
   previousPage() {
@@ -114,10 +125,25 @@ export class TransfertCryptoModalComponent implements OnInit {
     })
   }
 
-  sendRequestTransfert(){
-    this.paymentService.createTransfertRequest(new TransfertRequest(this.password, this.amountCryptoChoosed, this.currencyChoosed, this.addressToSend))
-    .pipe(take(1))
-    .subscribe(console.log)
+  sendRequestTransfert() {
+    this.paymentService
+      .createTransfertRequest(new TransfertRequest(this.password, this.amountCryptoChoosed, this.currencyChoosed, this.addressToSend))
+      .pipe(take(1))
+      .subscribe(
+        () => {
+          this.loadingReponse = false
+          this.validResponse = true
+        },
+        (error: string) => {
+          this.loadingReponse = false
+          this.errorResponse = true
+          switch (error) {
+            case 'password_invalid': this.errorMessage = 'password_invalid'; break;
+            case 'insufficient_amount': this.errorMessage = 'insufficient_amount'; break;
+            default: this.errorMessage = 'error_occured'; break;
+          }
+        }
+      )
   }
 
 }
