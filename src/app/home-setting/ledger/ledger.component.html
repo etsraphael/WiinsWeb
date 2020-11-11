@@ -42,7 +42,7 @@
       </div>
 
       <div *ngFor="let item of transfertsRequests" class="row mx-0 one-transfert-request py-3">
-        <div class="col my-auto">{{item.address}}</div>
+        <div class="col my-auto container-address">{{item.address}}</div>
         <div class="col my-auto">{{item.amount}} {{item.currency.toUpperCase()}}</div>
         <div class="col my-auto">Pending</div>
         <div (click)="openValidationModal(item._id)" class="col my-auto cancel-btn">Cancel</div>
