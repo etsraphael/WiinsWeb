@@ -191,7 +191,9 @@
     "Certification": "",
     "Previous": "",
     "Receipt": "",
-    "Close": ""
+    "Close": "",
+    "Status": "",
+    "Pending": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -800,7 +802,15 @@
       "who-c-find-me-d": "当您的用户名在搜索栏中输入时，这些人将能够看到显示您的个人资料。"
     },
     "ledger": {
-      "Yr-account-balance-is": ""
+      "Yr-account-balance-is": "",
+      "Amount": "",
+      "Address": "",
+      "Pending-Transfert-Request": "",
+      "T-update-can-take-15min-after-the-confirmation": "",
+      "Currency": "",
+      "Transfer": "",
+      "Account-disable-now-description": "",
+      "price-per-month": ""
     },
     "verified": {
       "Verified-zone": "",

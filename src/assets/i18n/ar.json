@@ -191,7 +191,9 @@
     "Certification": "",
     "Previous": "",
     "Receipt": "",
-    "Close": ""
+    "Close": "",
+    "Status": "",
+    "Pending": ""
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -800,7 +802,15 @@
       "who-c-find-me-d": "عند إدخال اسم المستخدم الخاص بك في شريط البحث، سيتمكن هؤلاء الأشخاص من مشاهدة ملفك الشخصي معروضًا.  "
     },
     "ledger": {
-      "Yr-account-balance-is": ""
+      "Yr-account-balance-is": "",
+      "Amount": "",
+      "Address": "",
+      "Pending-Transfert-Request": "",
+      "T-update-can-take-15min-after-the-confirmation": "",
+      "Currency": "",
+      "Transfer": "",
+      "Account-disable-now-description": "",
+      "price-per-month": ""
     },
     "verified": {
       "Verified-zone": "",
