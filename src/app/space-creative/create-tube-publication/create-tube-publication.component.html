@@ -4,11 +4,11 @@
 <span hidden>{{videoDuration}}</span>
 
 <!-- If the user is not certified -->
-<div class="container" *ngIf="false">
+<div class="container" *ngIf="(myprofile$|async)?.levelCertification == 0">
   <app-verification-space-unlocked></app-verification-space-unlocked>
 </div>
 
-<div class="container" *ngIf="true">
+<div class="container" *ngIf="(myprofile$|async)?.levelCertification !== 0">
   <!-- Container Video Creation -->
   <div class="row mt-4">
     <!-- Container Form -->

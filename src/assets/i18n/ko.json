@@ -191,7 +191,11 @@
     "Certification": "",
     "Previous": "",
     "Receipt": "",
-    "Close": ""
+    "Close": "",
+    "Status": "",
+    "Pending": "",
+    "Max": "",
+    "Not-enough": ""
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -539,7 +543,8 @@
     "y-h-to-accept-the-tou": "이용 약관에 동의해야 합니다.",
     "y-h-to-delete-yr-page-or-group-before": "먼저 페이지 또는 그룹을 삭제해야 합니다.",
     "y-have-to-be-friend": "당신은 친구 여야합니다",
-    "you-hav-to-upgrad-a-manager-before-leave": "그룹을 떠나기 전에 관리자를 승진시켜야합니다"
+    "you-hav-to-upgrad-a-manager-before-leave": "그룹을 떠나기 전에 관리자를 승진시켜야합니다",
+    "Insufficient_amount": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "사진이 접수되었습니다",
@@ -800,7 +805,25 @@
       "who-c-find-me-d": "검색 표시줄에 사용자 이름을 입력하면 이러한 사용자가 회원님의 프로필을 볼 수 있습니다.  "
     },
     "ledger": {
-      "Yr-account-balance-is": ""
+      "Yr-account-balance-is": "",
+      "Amount": "",
+      "Address": "",
+      "Pending-Transfert-Request": "",
+      "T-update-can-take-15min-after-the-confirmation": "",
+      "Currency": "",
+      "Transfer": "",
+      "Account-disable-now-description": "",
+      "price-per-month": "",
+      "Card-description-payment-subscription": "",
+      "Next-facturation-date": "",
+      "Are-y-sure-t-cancel-t-transaction": "",
+      "Address-to-send": "",
+      "Be-careful-make-sure-y-have-the-right-address-d": "",
+      "Fees-3": "",
+      "T-admin-ll-take-24h-d": "",
+      "Total-in-USD": "",
+      "Amount-to-transfert": "",
+      "Y-are-going-t-transfert-to-this-address-d": ""
     },
     "verified": {
       "Verified-zone": "",

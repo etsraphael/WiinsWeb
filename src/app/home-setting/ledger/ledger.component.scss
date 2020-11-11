@@ -3,6 +3,13 @@
   font-weight: 600;
 }
 
+.container-address {
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card-sold {
   border-radius: 0.375rem;
 }

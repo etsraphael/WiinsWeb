@@ -74,4 +74,9 @@ export class TranslationService {
     return this.translate.instant('SETTING.ledger.Yr-account-balance-is', { value: balance + ' $USD' })
   }
 
+  getNumberOfDayBeforeTheNextRecharge(endDate: Date): string{
+    const DayDiff = Math.round(( (new Date(endDate).getTime() - new Date(Date.now()).getTime()) / 86400000))
+    return this.translate.instant('SETTING.ledger.Next-facturation-date', { value: DayDiff })
+  }
+
 }

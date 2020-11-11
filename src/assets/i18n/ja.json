@@ -191,7 +191,11 @@
     "Certification": "",
     "Previous": "",
     "Receipt": "",
-    "Close": ""
+    "Close": "",
+    "Status": "",
+    "Pending": "",
+    "Max": "",
+    "Not-enough": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -539,7 +543,8 @@
     "y-h-to-accept-the-tou": "使用条件に同意する必要があります。",
     "y-h-to-delete-yr-page-or-group-before": "前にページまたはグループを削除する必要があります。",
     "y-have-to-be-friend": "あなたは友達でなければなりません",
-    "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります"
+    "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります",
+    "Insufficient_amount": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -800,7 +805,25 @@
       "who-c-find-me-d": "検索バーにユーザー名を入力すると、プロフィールが表示されます。"
     },
     "ledger": {
-      "Yr-account-balance-is": ""
+      "Yr-account-balance-is": "",
+      "Amount": "",
+      "Address": "",
+      "Pending-Transfert-Request": "",
+      "T-update-can-take-15min-after-the-confirmation": "",
+      "Currency": "",
+      "Transfer": "",
+      "Account-disable-now-description": "",
+      "price-per-month": "",
+      "Card-description-payment-subscription": "",
+      "Next-facturation-date": "",
+      "Are-y-sure-t-cancel-t-transaction": "",
+      "Address-to-send": "",
+      "Be-careful-make-sure-y-have-the-right-address-d": "",
+      "Fees-3": "",
+      "T-admin-ll-take-24h-d": "",
+      "Total-in-USD": "",
+      "Amount-to-transfert": "",
+      "Y-are-going-t-transfert-to-this-address-d": ""
     },
     "verified": {
       "Verified-zone": "",

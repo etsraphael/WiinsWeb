@@ -3,24 +3,25 @@
     <div *ngSwitchCase="0">
       <div class="container">
         <div class="row mx-0 my-3">
-          <span class="text-danger">Be careful, make sure you have the right address. No refund after
-            confirmation of the transfer.</span>
+          <span class="text-danger">
+            {{'SETTING.ledger.Be-careful-make-sure-y-have-the-right-address-d'|translate}}
+          </span>
         </div>
         <div class="row mx-0">
           <table class="table">
             <tbody>
               <tr>
-                <th scope="row">Your Password</th>
+                <th scope="row">{{'CORE.Your-Password..'|translate}}</th>
                 <td><input autocomplete="off" [(ngModel)]="password" type="password" class="w-100 form-control"
-                    [placeholder]="password"></td>
+                    [placeholder]="'CORE.Password'|translate"></td>
               </tr>
               <tr>
-                <th scope="row">Address to send</th>
+                <th scope="row">{{'SETTING.ledger.Address-to-send'|translate}}</th>
                 <td><input [(ngModel)]="addressToSend" type="text" class="w-100 form-control"
                     [placeholder]="placeHolderAdress"></td>
               </tr>
               <tr>
-                <th scope="row">Amount</th>
+                <th scope="row">{{'SETTING.ledger.Amount'|translate}}</th>
                 <td>
                   <div class="input-group row mx-0">
                     <div class="input-group-prepend">
@@ -29,20 +30,20 @@
                     <input [(ngModel)]="amountCryptoChoosed" type="number" min="0" (ngModelChange)="updateAmount()"
                       class="form-control" aria-describedby="basic-addon1" [ngClass]="{'is-invalid': amountLimit < 0}">
                     <button (click)="setMaxAccount()" class="btn btn-outline-secondary btn-max" type="button"
-                      id="button-addon2">Max</button>
+                      id="button-addon2">{{'CORE.Max'|translate}}</button>
                   </div>
                   <div class="row mx-0" *ngIf="amountLimit < 0">
-                    <h5 class="text-danger">Not enough</h5>
+                    <h5 class="text-danger">{{'CORE.Not-enough'|translate}}</h5>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row">Fees (3%)</th>
+                <th scope="row">{{'SETTING.ledger.Fees-3'|translate}}</th>
                 <td>{{getNumberFees()}} {{currencyChoosed}}</td>
               </tr>
               <tr>
                 <th scope="row">{{'CORE.Total'|translate}}</th>
-                <td>{{getTotalInCrypto()}} ETH</td>
+                <td>{{getTotalInCrypto()}} {{currencyChoosed}}</td>
               </tr>
               <tr class="bg-grey">
                 <th scope="row">Total in USD</th>
@@ -51,11 +52,19 @@
             </tbody>
           </table>
         </div>
-        <div class="row mx-0">
-          <button *ngIf="(amountCryptoChoosed == 0) || (amountLimit < 0) || (addressToSend == null)"
-            class="btn btn-secondary ml-auto">{{'CORE.Next'|translate}}</button>
+        <div class="row mx-0 d-flex justify-content-end">
+          <button (click)="closeModal()" class="btn btn-danger mx-2">
+            {{'CORE.Cancel'|translate}}
+          </button>
+          <button (click)="incompletMessage()"
+            *ngIf="(amountCryptoChoosed == 0) || (amountLimit < 0) || (addressToSend == null)"
+            class="btn btn-secondary mx-2">
+            {{'CORE.Next'|translate}}
+          </button>
           <button *ngIf="(amountCryptoChoosed !== 0) && (amountLimit >= 0) && (addressToSend !== null)"
-            class="btn btn-primary ml-auto" (click)="nextPage(1)">{{'CORE.Next'|translate}}</button>
+            class="btn btn-primary mx-2" (click)="nextPage(1)">
+            {{'CORE.Next'|translate}}
+          </button>
         </div>
       </div>
     </div>
@@ -70,29 +79,28 @@
           <table class="table">
             <tbody>
               <tr>
-                <th scope="row">Adress to send</th>
+                <th scope="row">{{'SETTING.ledger.Address-to-send'|translate}}</th>
                 <td>{{addressToSend}}</td>
               </tr>
               <tr>
-                <th scope="row">Amount</th>
+                <th scope="row">{{'SETTING.ledger.Amount'|translate}}</th>
                 <td>{{amountCryptoChoosed.toFixed(6)}} {{currencyChoosed}}</td>
               </tr>
               <tr>
-                <th scope="row">Admin Fees (3%)</th>
+                <th scope="row">{{'SETTING.ledger.Fees-3'|translate}}</th>
                 <td>{{getNumberFees()}} {{currencyChoosed}}</td>
               </tr>
               <tr>
-                <th scope="row">Amount to transfert</th>
-                <td>{{getTotalInCrypto()}} ETH</td>
+                <th scope="row">{{'SETTING.ledger.Amount-to-transfert'|translate}}</th>
+                <td>{{getTotalInCrypto()}} {{currencyChoosed}}</td>
               </tr>
               <tr class="bg-grey">
-                <th scope="row">Total in USD</th>
+                <th scope="row">{{'SETTING.ledger.Total-in-USD'|translate}}</th>
                 <td> {{getAmountInUsd()}} $USD ({{ data.transfertAccount.currentTime | date:'medium' }})</td>
               </tr>
             </tbody>
           </table>
-          <span>You are going to transfert to this adresse. Are you sure ? The administration will confirm the
-            transaction in a 24h delay. <span class="text-danger">This operation is irreversible</span>
+          <span>{{'SETTING.ledger.Y-are-going-t-transfert-to-this-address-d'|translate}} <span class="text-danger">{{'VALIDATION.T-operation-is-irreversible'|translate}}</span>
           </span>
         </div>
         <div class="row mx-0 d-flex justify-content-end">
@@ -103,9 +111,17 @@
     </div>
     <div *ngSwitchCase="2">
       <div class="container">
-        <div class="row mx-0">
-          <span>After check and verefied with the link sent by email. The administration will take 24h to transfer the
-            crypto. Thank you to your trust</span>
+        <!-- Loading Animations -->
+        <div *ngIf="loadingReponse" class="row mx-0 container-loading">
+          <div class="loader m-auto">Loading...</div>
+        </div>
+        <!-- Error Response -->
+        <div *ngIf="errorResponse" class="row mx-0 text-center py-3">
+          <span>{{errorMessage}}</span>
+        </div>
+        <!-- Valid Response-->
+        <div *ngIf="validResponse" class="row mx-0">
+          <span>{{'SETTING.ledger.T-admin-ll-take-24h-d'|translate}}</span>
         </div>
         <div class="row mx-0">
           <button class="btn btn-primary ml-auto" (click)="nextPage(3)">{{'CORE.Close'|translate}}</button>

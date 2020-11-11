@@ -1,6 +1,10 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
+import { take } from 'rxjs/operators';
 import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
+import { TransfertRequest } from '../../models/payment/TransfertRequest.model';
+import { PaymentService, StatutAndMessageResponse } from '../../services/payment/payment.service';
 
 @Component({
   selector: 'app-transfert-crypto-modal',
@@ -21,7 +25,16 @@ export class TransfertCryptoModalComponent implements OnInit {
   // verification
   amountLimit = 0
 
+  // service
+  loadingReponse = false
+  errorResponse = false
+  validResponse = false
+  errorMessage: string
+
   constructor(
+    private paymentService: PaymentService,
+    private translate: TranslateService,
+    private _snackBar: MatSnackBar,
     public dialogRef: MatDialogRef<TransfertCryptoModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: { transfertAccount: TransfertAccount }
   ) { }
@@ -51,19 +64,28 @@ export class TransfertCryptoModalComponent implements OnInit {
   nextPage(page: number) {
     switch (page) {
       case 1:
-        this.currentPage++
+        if (this.amountLimit < 0 || this.amountCryptoChoosed == 0 || !this.addressToSend) {
+          return this.incompletMessage()
+        } else {
+          this.currentPage++
+        }
         break;
-
       case 2:
+        this.loadingReponse = true
         this.currentPage++
+        this.sendRequestTransfert()
         break;
-      // close the modal
       case 3:
+        // close the modal
         this.dialogRef.close()
         setTimeout(() => location.reload(), 1000);
         break;
       default: return null
     }
+  }
+
+  closeModal(): void {
+    return this.dialogRef.close()
   }
 
   previousPage() {
@@ -73,7 +95,7 @@ export class TransfertCryptoModalComponent implements OnInit {
   updateAmount(): void {
     this.amountLimit =
       this.data.transfertAccount.balanceAccount
-      - 1.03*this.amountCryptoChoosed
+      - 1.03 * this.amountCryptoChoosed
   }
 
   getAmountInUsd(): string {
@@ -90,7 +112,38 @@ export class TransfertCryptoModalComponent implements OnInit {
   }
 
   getNumberFees(): string {
-    return (0.03*this.amountCryptoChoosed).toFixed(6)
+    return (0.03 * this.amountCryptoChoosed).toFixed(6)
+  }
+
+  incompletMessage() {
+    return this._snackBar.open(
+      this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
+      '', {
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom',
+      duration: 8000
+    })
+  }
+
+  sendRequestTransfert() {
+    this.paymentService
+      .createTransfertRequest(new TransfertRequest(this.password, this.amountCryptoChoosed, this.currencyChoosed, this.addressToSend))
+      .pipe(take(1))
+      .subscribe(
+        () => {
+          this.loadingReponse = false
+          this.validResponse = true
+        },
+        (error: string) => {
+          this.loadingReponse = false
+          this.errorResponse = true
+          switch (error) {
+            case 'password_invalid': this.errorMessage = this.translate.instant('ERROR-MESSAGE.Invalid-password'); break;
+            case 'insufficient_amount': this.errorMessage = this.translate.instant('ERROR-MESSAGE.Insufficient_amount'); break;
+            default: this.errorMessage = this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'); break;
+          }
+        }
+      )
   }
 
 }

@@ -191,7 +191,11 @@
     "Certification": "",
     "Previous": "",
     "Receipt": "",
-    "Close": ""
+    "Close": "",
+    "Status": "",
+    "Pending": "",
+    "Max": "",
+    "Not-enough": ""
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -539,7 +543,8 @@
     "y-h-to-accept-the-tou": " ਤੁਹਾਨੂੰ ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ",
     "y-h-to-delete-yr-page-or-group-before": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਆਪਣੇ ਪੰਨਿਆਂ ਜਾਂ ਸਮੂਹਾਂ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ",
     "y-have-to-be-friend": "ਤੁਹਾਨੂੰ ਦੋਸਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
-    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ"
+    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ",
+    "Insufficient_amount": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ਫੋਟੋ ਮਿਲੀ ਹੈ",
@@ -800,7 +805,25 @@
       "who-c-find-me-d": "ਜਦੋਂ ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਸਰਚ ਬਾਰ ਵਿੱਚ ਦਾਖਲ ਹੁੰਦਾ ਹੈ, ਇਹ ਲੋਕ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ."
     },
     "ledger": {
-      "Yr-account-balance-is": ""
+      "Yr-account-balance-is": "",
+      "Amount": "",
+      "Address": "",
+      "Pending-Transfert-Request": "",
+      "T-update-can-take-15min-after-the-confirmation": "",
+      "Currency": "",
+      "Transfer": "",
+      "Account-disable-now-description": "",
+      "price-per-month": "",
+      "Card-description-payment-subscription": "",
+      "Next-facturation-date": "",
+      "Are-y-sure-t-cancel-t-transaction": "",
+      "Address-to-send": "",
+      "Be-careful-make-sure-y-have-the-right-address-d": "",
+      "Fees-3": "",
+      "T-admin-ll-take-24h-d": "",
+      "Total-in-USD": "",
+      "Amount-to-transfert": "",
+      "Y-are-going-t-transfert-to-this-address-d": ""
     },
     "verified": {
       "Verified-zone": "",
