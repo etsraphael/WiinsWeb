@@ -28,6 +28,7 @@ export class ProfileModel extends BaseModel {
   mutalFriends: number
   follow: BtnFollow
   actifSpace: number
+  levelCertification: number
 }
 
 
