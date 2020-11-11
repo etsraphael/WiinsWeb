@@ -810,7 +810,9 @@
       "Currency": "",
       "Transfer": "",
       "Account-disable-now-description": "",
-      "price-per-month": ""
+      "price-per-month": "",
+      "Card-description-payment-subscription": "",
+      "Next-facturation-date": ""
     },
     "verified": {
       "Verified-zone": "",

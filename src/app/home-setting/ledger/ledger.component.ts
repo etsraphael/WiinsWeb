@@ -12,6 +12,7 @@ import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
 import { TransfertRequest } from 'src/app/core/models/payment/TransfertRequest.model';
 import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
 import { AccountBalanceResponse, CoinBaseResponse, PaymentService, TransfertRequestSingle } from 'src/app/core/services/payment/payment.service';
+import { TranslationService } from 'src/app/core/services/translation/translation.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
 
 @Component({
@@ -28,6 +29,7 @@ export class LedgerComponent implements OnInit {
 
   // info
   price: string
+  dayLeftSentence: string
 
   // payment
   paymentSub: Subscription
@@ -47,7 +49,8 @@ export class LedgerComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
     private cryptoServiceService: CryptoServiceService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private translationService: TranslationService
   ) { }
 
   ngOnInit(): void {
@@ -61,7 +64,7 @@ export class LedgerComponent implements OnInit {
 
     // load pending transfert
     this.paymentService.getTransfertRequest().pipe(
-      select((x: TransfertRequestSingle) => x.result) 
+      select((x: TransfertRequestSingle) => x.result)
     ).subscribe((data: TransfertRequest[]) => this.transfertsRequests = data)
 
     // get the crypto assets in real time
@@ -85,6 +88,10 @@ export class LedgerComponent implements OnInit {
       })
     })
 
+    // get number of days before the next charge
+    this.user$.pipe(take(1)).subscribe((data: UserModel) =>
+      this.dayLeftSentence = this.translationService.getNumberOfDayBeforeTheNextRecharge(data.chargedUntil)
+    )
   }
 
   showChargeInput(): void {
@@ -176,7 +183,6 @@ export class LedgerComponent implements OnInit {
   }
 
 }
-
 
 export interface TransfertAccount {
   amount: number

@@ -810,7 +810,9 @@
       "Currency": "Currency",
       "Transfer": "Transfer",
       "Account-disable-now-description": "Account temporarily disabled, you are invisible on the platforme now. If  your account is inactive for the next payment, 4.99 will be withdrawn of your next sold to enjoy the next 30 days.",
-      "price-per-month": "4.99$ / months"
+      "price-per-month": "4.99$ / months",
+      "Card-description-payment-subscription": "The subscription allows you to remain in this platform with all functionalities. All your information are privately secured within this platform. Wiins will never share your information to third party companies. Every content stays within the platform. Welcome to Wiins.",
+      "Next-facturation-date": "Next facturation in {{value}} days"
     },
     "verified": {
       "Verified-zone": "Verified zone",
