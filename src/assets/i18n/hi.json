@@ -193,7 +193,9 @@
     "Receipt": "",
     "Close": "",
     "Status": "",
-    "Pending": ""
+    "Pending": "",
+    "Max": "",
+    "Not-enough": ""
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -541,7 +543,8 @@
     "y-h-to-accept-the-tou": "आपको उपयोग के नियम और शर्तों को स्वीकार करना होगा",
     "y-h-to-delete-yr-page-or-group-before": "इससे पहले आपको अपने पेज या समूह ों को हटाना होगा",
     "y-have-to-be-friend": "आप दोस्त होने चाहिए",
-    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए"
+    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए",
+    "Insufficient_amount": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -812,7 +815,15 @@
       "Account-disable-now-description": "",
       "price-per-month": "",
       "Card-description-payment-subscription": "",
-      "Next-facturation-date": ""
+      "Next-facturation-date": "",
+      "Are-y-sure-t-cancel-t-transaction": "",
+      "Address-to-send": "",
+      "Be-careful-make-sure-y-have-the-right-address-d": "",
+      "Fees-3": "",
+      "T-admin-ll-take-24h-d": "",
+      "Total-in-USD": "",
+      "Amount-to-transfert": "",
+      "Y-are-going-t-transfert-to-this-address-d": ""
     },
     "verified": {
       "Verified-zone": "",

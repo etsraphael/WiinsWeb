@@ -117,7 +117,7 @@ export class TransfertCryptoModalComponent implements OnInit {
 
   incompletMessage() {
     return this._snackBar.open(
-      'Some elements are incorrects',
+      this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
       '', {
       horizontalPosition: 'center',
       verticalPosition: 'bottom',
@@ -138,9 +138,9 @@ export class TransfertCryptoModalComponent implements OnInit {
           this.loadingReponse = false
           this.errorResponse = true
           switch (error) {
-            case 'password_invalid': this.errorMessage = 'password_invalid'; break;
-            case 'insufficient_amount': this.errorMessage = 'insufficient_amount'; break;
-            default: this.errorMessage = 'error_occured'; break;
+            case 'password_invalid': this.errorMessage = this.translate.instant('ERROR-MESSAGE.Invalid-password'); break;
+            case 'insufficient_amount': this.errorMessage = this.translate.instant('ERROR-MESSAGE.Insufficient_amount'); break;
+            default: this.errorMessage = this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'); break;
           }
         }
       )

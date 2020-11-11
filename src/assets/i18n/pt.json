@@ -193,7 +193,9 @@
     "Receipt": "",
     "Close": "",
     "Status": "",
-    "Pending": ""
+    "Pending": "",
+    "Max": "",
+    "Not-enough": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -541,7 +543,8 @@
     "y-h-to-accept-the-tou": "Você deve aceitar os termos e condições de uso",
     "y-h-to-delete-yr-page-or-group-before": "Você deve excluir suas páginas ou grupos antes",
     "y-have-to-be-friend": "você deve ser amigo",
-    "you-hav-to-upgrad-a-manager-before-leave": "Você deve promover um gerente antes de sair do grupo"
+    "you-hav-to-upgrad-a-manager-before-leave": "Você deve promover um gerente antes de sair do grupo",
+    "Insufficient_amount": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",
@@ -812,7 +815,15 @@
       "Account-disable-now-description": "",
       "price-per-month": "",
       "Card-description-payment-subscription": "",
-      "Next-facturation-date": ""
+      "Next-facturation-date": "",
+      "Are-y-sure-t-cancel-t-transaction": "",
+      "Address-to-send": "",
+      "Be-careful-make-sure-y-have-the-right-address-d": "",
+      "Fees-3": "",
+      "T-admin-ll-take-24h-d": "",
+      "Total-in-USD": "",
+      "Amount-to-transfert": "",
+      "Y-are-going-t-transfert-to-this-address-d": ""
     },
     "verified": {
       "Verified-zone": "",

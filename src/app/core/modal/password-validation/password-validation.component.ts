@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
 import { take } from 'rxjs/operators';
-import { PaymentService, StatutAndMessageResponse } from '../../services/payment/payment.service';
+import { PaymentService } from '../../services/payment/payment.service';
 
 @Component({
   selector: 'app-password-validation',

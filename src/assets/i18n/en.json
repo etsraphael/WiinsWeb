@@ -193,7 +193,9 @@
     "Receipt": "Receipt",
     "Close": "Close",
     "Status": "Status",
-    "Pending": "Pending"
+    "Pending": "Pending",
+    "Max": "Max",
+    "Not-enough": "Not enough"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -541,7 +543,8 @@
     "y-h-to-accept-the-tou": "You must accept the terms and conditions of use",
     "y-h-to-delete-yr-page-or-group-before": "You must delete your pages or groups before",
     "y-have-to-be-friend": "you must be friends",
-    "you-hav-to-upgrad-a-manager-before-leave": "You must promote a manager before leaving the group"
+    "you-hav-to-upgrad-a-manager-before-leave": "You must promote a manager before leaving the group",
+    "Insufficient_amount": "The amount is insufficient"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -812,7 +815,15 @@
       "Account-disable-now-description": "Account temporarily disabled, you are invisible on the platforme now. If  your account is inactive for the next payment, 4.99 will be withdrawn of your next sold to enjoy the next 30 days.",
       "price-per-month": "4.99$ / months",
       "Card-description-payment-subscription": "The subscription allows you to remain in this platform with all functionalities. All your information are privately secured within this platform. Wiins will never share your information to third party companies. Every content stays within the platform. Welcome to Wiins.",
-      "Next-facturation-date": "Next facturation in {{value}} days"
+      "Next-facturation-date": "Next facturation in {{value}} days",
+      "Are-y-sure-t-cancel-t-transaction": "Are you sure to cancel this transaction ?",
+      "Address-to-send": "Address to send",
+      "Be-careful-make-sure-y-have-the-right-address-d": "Be careful, make sure you have the right address. No refund after confirmation of the transfer.",
+      "Fees-3": "Fees (3%)",
+      "T-admin-ll-take-24h-d": "The administration will take 24h to transfer the crypto. Thank you to your trust",
+      "Total-in-USD": "Total in USD",
+      "Amount-to-transfert": "Amount to transfert",
+      "Y-are-going-t-transfert-to-this-address-d": "You are going to transfert to this address. Are you sure ? The administration will confirm the transaction in a 24h delay."
     },
     "verified": {
       "Verified-zone": "Verified zone",
