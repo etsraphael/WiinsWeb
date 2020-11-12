@@ -135,7 +135,9 @@ import { VerificationSpaceUnlockedComponent } from './space-creative/verificatio
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component'
 import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-modal/transfert-crypto-modal.component'
-import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component'
+import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component';
+import { CertificationStepsComponent } from './home-setting/certification-menu/certification-steps/certification-steps.component';
+import { VeritificationStepsComponent } from './home-setting/certification-menu/veritification-steps/veritification-steps.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -165,7 +167,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
-    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent
+    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, CertificationStepsComponent, VeritificationStepsComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,

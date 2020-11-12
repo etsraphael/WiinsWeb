@@ -16,6 +16,9 @@ export class CertificationMenuComponent implements OnInit {
   // profile 
   myprofile$: Observable<ProfileModel>
 
+  // nav
+  placeSelected: string = 'menu'
+
   constructor(
     private store$: Store<RootStoreState.State>
   ) { }
@@ -28,7 +31,11 @@ export class CertificationMenuComponent implements OnInit {
       skipWhile(val => val === null),
       filter(profile => !!profile),
     )
-    
+
+  }
+
+  selectPlace(place: string): void {
+    this.placeSelected = place
   }
 
 }
