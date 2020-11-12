@@ -1,5 +1,4 @@
 .card {
-  height: 35rem;
   overflow: hidden;
 }
 
@@ -16,22 +15,27 @@
 }
 
 .container-upload {
-    border: 1px solid #dedede;
-    border-radius: 5px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  cursor: pointer;
+
+  svg {
+    width: 25px;
     cursor: pointer;
+  }
 
-    svg {
-        width: 25px;
-        cursor: pointer;
-    }
+  .upload-link {
+    white-space: nowrap;
+    width: calc(100% - 25px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    direction: rtl;
+    text-align: left;
+  }
+}
 
-    .upload-link {
-        white-space: nowrap;
-        width: calc(100% - 25px);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        cursor: pointer;
-        direction: rtl;
-        text-align: left;
-    }
+.input-desc {
+  font-size: 0.9rem;
+  color: #b3b3b3;
 }

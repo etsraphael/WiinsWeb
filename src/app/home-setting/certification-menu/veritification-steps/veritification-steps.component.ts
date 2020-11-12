@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material';
+import { MatCheckboxChange, MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-veritification-steps',
@@ -16,7 +17,10 @@ export class VeritificationStepsComponent implements OnInit {
   // form
   checkedCond = false
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService,
+    private _snackBar: MatSnackBar,
+  ) { }
 
   ngOnInit() {
   }
@@ -34,7 +38,11 @@ export class VeritificationStepsComponent implements OnInit {
   changeCheckBtn(event: MatCheckboxChange){
     this.checkedCond = event.checked
   }
-
-
-
+  
+  confirm(): void | MatSnackBarRef<SimpleSnackBar>{
+    return this._snackBar.open(
+      this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'), null,
+      { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+    )
+  }
 }
