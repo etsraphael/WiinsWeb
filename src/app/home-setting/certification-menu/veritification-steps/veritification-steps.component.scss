@@ -2,6 +2,14 @@
   overflow: hidden;
 }
 
+.pending-message-container {
+  height: 26rem;
+
+  .bi {
+    color: #9e9e9e;
+  }
+}
+
 .bg-side {
   background: #80808036;
 }
@@ -38,4 +46,12 @@
 .input-desc {
   font-size: 0.9rem;
   color: #b3b3b3;
+}
+
+.msg-confirm {
+  font-size: 17px;
+  letter-spacing: 0.89px;
+  line-height: 27px;
+  color: #9e9e9e;
+  text-align: center;
 }

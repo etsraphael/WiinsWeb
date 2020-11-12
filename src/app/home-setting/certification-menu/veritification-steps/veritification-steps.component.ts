@@ -17,6 +17,9 @@ export class VeritificationStepsComponent implements OnInit {
   // form
   checkedCond = false
 
+  // service 
+  requestPending:boolean = false
+
   constructor(
     private translate: TranslateService,
     private _snackBar: MatSnackBar,
