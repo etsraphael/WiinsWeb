@@ -49,3 +49,8 @@ export class VeritificationStepsComponent implements OnInit {
     )
   }
 }
+
+export interface VerificationForm {
+  identityFile: string
+  pictureTakeFile: string
+}
