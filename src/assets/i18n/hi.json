@@ -73,10 +73,12 @@
     "Cancel": "रद्द करने के लिए",
     "Cancel-the-request": "अनुरोध रद्द करें",
     "Category": "श्रेणी",
+    "Certification": "प्रमाणीकरण",
     "Change": "बदल",
     "Change-the-photo": "फोटो बदलें",
     "Choice": "पसंद",
     "Chosse-a-date": "एक तारीख का चयन करें",
+    "Close": "बंद करना",
     "Coming-soon": "जल्दी ही आगमन",
     "Comment": "टिप्पणी करने के लिए",
     "Confirm": "पुष्टि करने के लिए",
@@ -107,13 +109,16 @@
     "Join": "सम्मिलित हों",
     "Know-us": "हमें पता है",
     "Leave": "छोड़ना",
+    "Ledger": "खाता बही",
     "Like": "पसंद",
     "Manage": "का प्रबंधन करें",
+    "Max": "अधिकतम",
     "Members": "सदस्यों",
     "My-Favorites": "मेरे पसंदीदा",
     "My-community": "मेरा समुदाय",
     "Name": "नाम",
     "Next": "अगला",
+    "Not-enough": "पर्याप्त नहीं",
     "Now": "अभी",
     "Or": "या",
     "Others": "अन्य",
@@ -121,13 +126,16 @@
     "Participate": "भाग लेने",
     "Password": "कुंजिका",
     "Payment": "भुगतान",
+    "Pending": "लंबित",
     "Period": "अवधि",
     "Premium": "प्रीमियम",
+    "Previous": "पिछला",
     "Price": "पुरस्कार",
     "Private": "निजी",
     "Profile": "प्रोफ़ाइल",
     "Public": "जनता",
     "Rate": "दरों",
+    "Receipt": "प्राप्ति",
     "Redirection": "अनुप्रेषित",
     "Reset": "रीसेट",
     "Save": "सहेजें",
@@ -141,6 +149,7 @@
     "Sponsored": "दरों",
     "Stages": "चरणों",
     "Start": "प्रारंभ",
+    "Status": "स्थिति",
     "Story": "कहानी",
     "Subscribe": "सदस्यता लें",
     "Taxes": "करों",
@@ -164,6 +173,7 @@
     "Wiins": "वाइज",
     "Wiins.io": "Wiins.io",
     "With": "साथ में",
+    "You-can-do-it-here": "आप इसे यहां कर सकते हैं",
     "Your-Password..": "आपका पासवर्ड",
     "Your-Pseudo..": "तुम्हारा प्रयोगकर्ती नाम",
     "and": "तथा",
@@ -185,17 +195,7 @@
     "reply..": "जवाब दे दो",
     "responses": "प्रतिक्रियाओं",
     "soon": "जल्द ही",
-    "views": "विचारों",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "views": "विचारों"
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -495,6 +495,7 @@
     "Email-invalid": "ईमेल अमान्य है",
     "Email_already_exist": "यह ईमेल पहले से मौजूद है",
     "Incorrect": "गलत",
+    "Insufficient_amount": "राशि अपर्याप्त है",
     "Invalid-password": "आपका पासवर्ड गलत है",
     "No-changes-hv-been-made": "कोई बदलाव नहीं किया गया है",
     "No-page-has-this-name": "कोई बदलाव नहीं किया गया है",
@@ -543,8 +544,7 @@
     "y-h-to-accept-the-tou": "आपको उपयोग के नियम और शर्तों को स्वीकार करना होगा",
     "y-h-to-delete-yr-page-or-group-before": "इससे पहले आपको अपने पेज या समूह ों को हटाना होगा",
     "y-have-to-be-friend": "आप दोस्त होने चाहिए",
-    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए",
-    "Insufficient_amount": ""
+    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -577,12 +577,12 @@
     "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "लास्ट प्रोजेक्ट",
+    "Lastest-tube": "लास्ट ट्यूब",
     "My-music": "मेरा संगीत",
     "My-wiinsers": "मेरे वाइजर्स",
     "Tops": "अव्वल तो",
-    "Trend": "ट्रेंड",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "ट्रेंड"
   },
   "MINI-CHAT": {
     "text-a-friend": "एक दोस्त पाठ"
@@ -759,6 +759,27 @@
       "lang-of-btn-title-others": "इस डिवाइस पर बटन, शीर्षक और मंच के अन्य ग्रंथों के लिए भाषा",
       "lang-of-plateforme": "मंच की भाषा"
     },
+    "ledger": {
+      "Account-disable-now-description": "खाता अस्थायी रूप से अक्षम है, अब आप प्लेटफ़ॉर्म पर अदृश्य हैं। अगर आपका खाता अगले भुगतान के लिए निष्क्रिय है, तो अगले 30 दिनों का आनंद लेने के लिए 4.99 आपके अगले बेचे गए हिस्से को वापस ले लिया जाएगा.",
+      "Address": "पता",
+      "Address-to-send": "भेजने के लिए पता",
+      "Amount": "कुल धनराशि",
+      "Amount-to-transfert": "हस्तांतरण के लिए राशि",
+      "Are-y-sure-t-cancel-t-transaction": "क्या आप इस लेन-देन को रद्द करना सुनिश्चित कर रहे हैं?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "सावधान रहें, सुनिश्चित करें कि आपके पास सही पता है। स्थानांतरण की पुष्टि के बाद कोई वापसी नहीं।",
+      "Card-description-payment-subscription": "सदस्यता आपको सभी कार्यक्षमताओं के साथ इस मंच में रहने की अनुमति देती है। आपकी सभी जानकारी निजी तौर पर इस मंच के भीतर सुरक्षित हैं। Wiins तीसरी पार्टी कंपनियों के लिए अपनी जानकारी साझा कभी नहीं होगा। हर सामग्री मंच के भीतर रहती है। Wiins में आपका स्वागत है।",
+      "Currency": "मुद्रा",
+      "Fees-3": "फीस (3%)",
+      "Next-facturation-date": "{{मूल्य}} दिनों में अगला तथ्य",
+      "Pending-Transfert-Request": "लंबित ट्रांसफरट अनुरोध",
+      "T-admin-ll-take-24h-d": "क्रिप्टो को स्थानांतरित करने के लिए प्रशासन 24h लेगा। आपके विश्वास के लिए धन्यवाद",
+      "T-update-can-take-15min-after-the-confirmation": "अद्यतन पुष्टि के बाद 15min ले जा सकते है",
+      "Total-in-USD": "USD में कुल",
+      "Transfer": "स्थानांतरण",
+      "Y-are-going-t-transfert-to-this-address-d": "आप इस पते पर स्थानांतरण करने जा रहे हैं। क्या आपको यकीन है? प्रशासन 24h देरी में लेनदेन की पुष्टि करेगा ।",
+      "Yr-account-balance-is": "आपका खाता शेष है: {{value}}",
+      "price-per-month": "4.99 $ / महीने"
+    },
     "notif": {
       "enable-sound": "ध्वनि सूचनाएं",
       "enable-sound-d": "जब आपके पास कोई सूचना हो तो ध्वनि सक्षम करें"
@@ -798,36 +819,15 @@
       "btn-friend": "फ्रेंड रिक्वेस्ट बटन उपलब्ध कराएं",
       "h-can-b-yr-description": "आप विवरण डाल सकते हैं"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "इस सुविधा का उपयोग करने के लिए सत्यापन की आवश्यकता है",
+      "Verified-zone": "सत्यापित क्षेत्र"
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
       "my-publications-are-visible-to-every-one": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
       "who-c-find-me": "मुझे कौन पा सकता है ?",
       "who-c-find-me-d": "जब आपका उपयोगकर्ता नाम खोज बार में दर्ज हो जाएगा, तो ये लोग आपकी प्रोफ़ाइल प्रदर्शित देख पाएंगे।  "
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +877,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "आपका संगीत पहचानकर्ता"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "उदाहरण",
+      "Comedy": "मनोरंजकता",
+      "Dance": "उछल-कूद करना",
+      "Gaming": "गेमिंग",
+      "How-to": "कैसे",
+      "Movies": "फिल्मों",
+      "Music": "राग",
+      "News": "समाचार",
+      "Sport": "खेल",
+      "Travel": "यात्रा",
+      "Trending": "ट्रेंडिंग"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "एक कवर चित्र जोड़ें",
@@ -950,21 +965,6 @@
       "Video-creation": "वीडियो निर्माण",
       "Video-name": "वीडियो का नाम",
       "Visualisation-of-the-video": "वीडियो का विज़ुअलाइज़ेशन"
-    }
-  },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
     }
   }
 }

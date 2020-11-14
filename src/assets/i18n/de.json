@@ -73,10 +73,12 @@
     "Cancel": "Abbrechen",
     "Cancel-the-request": "Abbrechen der Anforderung",
     "Category": "Kategorie",
+    "Certification": "Zertifizierung",
     "Change": "Veränderung",
     "Change-the-photo": "Ändern des Fotos",
     "Choice": "Wahl",
     "Chosse-a-date": "Wählen Sie ein Datum",
+    "Close": "Schließen",
     "Coming-soon": "Demnächst",
     "Comment": "Kommentieren",
     "Confirm": "Bestätigen",
@@ -107,13 +109,16 @@
     "Join": "Beitreten",
     "Know-us": "Kennen Sie uns",
     "Leave": "Verlassen",
+    "Ledger": "Hauptbuch",
     "Like": "Gefällt",
     "Manage": "Verwalten",
+    "Max": "Max",
     "Members": "Mitglieder",
     "My-Favorites": "Meine Favoriten",
     "My-community": "Meine Gemeinschaft",
     "Name": "Name",
     "Next": "nächster",
+    "Not-enough": "Nicht genug",
     "Now": "Jetzt",
     "Or": "Oder",
     "Others": "Andere",
@@ -121,13 +126,16 @@
     "Participate": "Teilnehmen",
     "Password": "Passwort",
     "Payment": "Zahlung",
+    "Pending": "Ausstehende",
     "Period": "Zeitraum",
     "Premium": "Premium",
+    "Previous": "Vorherigen",
     "Price": "Auszeichnungen",
     "Private": "Privat",
     "Profile": "Profil",
     "Public": "Öffentlichkeit",
     "Rate": "Preise",
+    "Receipt": "Beleg",
     "Redirection": "Umleiten",
     "Reset": "Zurücksetzen",
     "Save": "Speichern",
@@ -141,6 +149,7 @@
     "Sponsored": "Preise",
     "Stages": "Stufen",
     "Start": "Starten",
+    "Status": "Status",
     "Story": "Geschichte",
     "Subscribe": "Abonnieren",
     "Taxes": "Steuern",
@@ -164,6 +173,7 @@
     "Wiins": "Wiins",
     "Wiins.io": "Wiins.io",
     "With": "Mit",
+    "You-can-do-it-here": "Sie können es hier tun",
     "Your-Password..": "Ihr Passwort",
     "Your-Pseudo..": "Dein Benutzername",
     "and": "und",
@@ -185,17 +195,7 @@
     "reply..": "Antworten",
     "responses": "Antworten",
     "soon": "bald",
-    "views": "Ansichten",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "views": "Ansichten"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -495,6 +495,7 @@
     "Email-invalid": "E-mail ist ungültig für",
     "Email_already_exist": "Diese E-Mail ist bereits vorhanden.",
     "Incorrect": "Falsche",
+    "Insufficient_amount": "Der Betrag ist nicht ausreichend",
     "Invalid-password": "Ihr Passwort ist falsch",
     "No-changes-hv-been-made": "wurden keine Änderungen vorgenommen",
     "No-page-has-this-name": "Keine Seite hat diesen Namen",
@@ -543,8 +544,7 @@
     "y-h-to-accept-the-tou": "Sie müssen die Nutzungsbedingungen akzeptieren",
     "y-h-to-delete-yr-page-or-group-before": "Sie müssen Ihre Seiten oder Gruppen löschen, bevor",
     "y-have-to-be-friend": "Sie müssen Freunde sein",
-    "you-hav-to-upgrad-a-manager-before-leave": "Sie müssen einen Manager befördern, bevor Sie die Gruppe verlassen",
-    "Insufficient_amount": ""
+    "you-hav-to-upgrad-a-manager-before-leave": "Sie müssen einen Manager befördern, bevor Sie die Gruppe verlassen"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",
@@ -577,12 +577,12 @@
     "click-on-email": "Bitte klicken Sie auf den E-Mail-Link"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "Letztes Projekt",
+    "Lastest-tube": "Letzte Röhre",
     "My-music": "Meine Musik",
     "My-wiinsers": "Meine wiinsers",
     "Tops": "Die Spitzen",
-    "Trend": "Trend",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "Trend"
   },
   "MINI-CHAT": {
     "text-a-friend": "Text einen Freund"
@@ -759,6 +759,27 @@
       "lang-of-btn-title-others": "Sprache für die Schaltflächen, Titel und anderen Texte der Plattform auf diesem Gerät",
       "lang-of-plateforme": "Plattformsprache"
     },
+    "ledger": {
+      "Account-disable-now-description": "Konto vorübergehend deaktiviert, sind Sie jetzt auf der Plattform unsichtbar. Wenn Ihr Konto für die nächste Zahlung inaktiv ist, wird 4.99 von Ihrem nächsten verkauften abgehoben, um die nächsten 30 Tage zu genießen.",
+      "Address": "Adresse",
+      "Address-to-send": "Zu sendende Adresse",
+      "Amount": "Menge",
+      "Amount-to-transfert": "Zu übertragender Betrag",
+      "Are-y-sure-t-cancel-t-transaction": "Sind Sie sicher, dass Sie diese Transaktion abbrechen?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "Seien Sie vorsichtig, stellen Sie sicher, dass Sie die richtige Adresse haben. Keine Rückerstattung nach Bestätigung der Übertragung.",
+      "Card-description-payment-subscription": "Das Abonnement ermöglicht es Ihnen, in dieser Plattform mit allen Funktionen zu bleiben. Alle Ihre Informationen sind auf dieser Plattform privat gesichert. Wiins wird Ihre Daten niemals an Dritte weitergeben. Jeder Inhalt bleibt innerhalb der Plattform. Willkommen bei Wiins.",
+      "Currency": "Währung",
+      "Fees-3": "Gebühren (3%)",
+      "Next-facturation-date": "Nächste Fakturierung in den Tagen des Wertes",
+      "Pending-Transfert-Request": "Ausstehende Übertragungsanforderung",
+      "T-admin-ll-take-24h-d": "Die Verwaltung wird 24h dauern, um die Krypto zu übertragen. Vielen Dank an Ihr Vertrauen",
+      "T-update-can-take-15min-after-the-confirmation": "Das Update kann 15min nach der Bestätigung dauern",
+      "Total-in-USD": "Gesamt in USD",
+      "Transfer": "Transfer",
+      "Y-are-going-t-transfert-to-this-address-d": "Sie werden an diese Adresse übertragen. Bist du sicher? Die Verwaltung wird die Transaktion in einer 24-Stunden-Verzögerung bestätigen.",
+      "Yr-account-balance-is": "Ihr Kontostand ist : {{value}}",
+      "price-per-month": "4,99 $ / Monate"
+    },
     "notif": {
       "enable-sound": "Tonbenachrichtigungen",
       "enable-sound-d": "Aktivieren Sie den Ton, wenn Sie eine Benachrichtigung haben"
@@ -798,36 +819,15 @@
       "btn-friend": "Die Schaltfläche \"Freund-Anfrage\" verfügbar machen",
       "h-can-b-yr-description": "Sie können eine Beschreibung"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "Diese Funktion erfordert eine Überprüfung, um",
+      "Verified-zone": "Verifizierte Zone"
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
       "my-publications-are-visible-to-every-one": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
       "who-c-find-me": "Wer kann mich finden ?",
       "who-c-find-me-d": "Wenn Ihr Benutzername in die Suchleiste eingegeben wird, können diese Personen Ihr Profil anzeigen.  "
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +877,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "Ihre Musikkennung"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "Schönheit",
+      "Comedy": "Komödie",
+      "Dance": "Tanz",
+      "Gaming": "Gaming",
+      "How-to": "How-to",
+      "Movies": "Filme",
+      "Music": "Musik",
+      "News": "Nachrichten",
+      "Sport": "Sport",
+      "Travel": "reise",
+      "Trending": "Trend"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "Hinzufügen eines Titelbilds",
@@ -950,21 +965,6 @@
       "Video-creation": "Videoerstellung",
       "Video-name": "Videoname",
       "Visualisation-of-the-video": "Visualisierung des Videos"
-    }
-  },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
     }
   }
 }

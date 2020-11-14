@@ -73,10 +73,12 @@
     "Cancel": "ਰੱਦ ਕਰਨ ਲਈ",
     "Cancel-the-request": "ਬੇਨਤੀ ਨੂੰ ਰੱਦ ਕਰੋ",
     "Category": "ਸ਼੍ਰੇਣੀ",
+    "Certification": "ਸਰਟੀਫਿਕੇਟ",
     "Change": "ਬਦਲੋ",
     "Change-the-photo": "ਫੋਟੋ ਬਦਲੋ",
     "Choice": "ਚੋਣ",
     "Chosse-a-date": "ਇੱਕ ਮਿਤੀ ਦੀ ਚੋਣ ਕਰੋ",
+    "Close": "ਬੰਦ ਕਰੋ",
     "Coming-soon": "ਆਨ ਵਾਲੀ",
     "Comment": "ਟਿੱਪਣੀ ਕਰਨ ਲਈ",
     "Confirm": "ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ",
@@ -107,13 +109,16 @@
     "Join": "ਜੁੜੋ",
     "Know-us": "ਸਾਨੂੰ ਜਾਣੋ",
     "Leave": "ਛੱਡੋ",
+    "Ledger": "ਲੇਜਰ",
     "Like": "ਪਸੰਦ ਹੈ",
     "Manage": "ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+    "Max": "ਅਧਿਕਤਮ",
     "Members": "ਸਦੱਸ",
     "My-Favorites": "ਮੇਰੇ ਮਨਪਸੰਦ",
     "My-community": "ਮੇਰਾ ਭਾਈਚਾਰਾ",
     "Name": "ਨਾਮ",
     "Next": " ਅਗਲਾ",
+    "Not-enough": "ਕਾਫ਼ੀ ਨਹੀ",
     "Now": "ਹੁਣ",
     "Or": "ਜਾਂ",
     "Others": "ਹੋਰ",
@@ -121,13 +126,16 @@
     "Participate": "ਭਾਗ ਲਓ",
     "Password": "ਪਾਸਵਰਡ",
     "Payment": " ਭੁਗਤਾਨ",
+    "Pending": "ਬਕਾਇਆ",
     "Period": " ਪੀਰੀਅਡ",
     "Premium": "ਪ੍ਰੀਮੀਅਮ",
+    "Previous": "Anterior",
     "Price": " ਅਵਾਰਡ",
     "Private": "ਨਿਜੀ",
     "Profile": "ਪ੍ਰੋਫਾਈਲ",
     "Public": "ਜਨਤਕ",
     "Rate": "ਰੇਟ",
+    "Receipt": "ਰਸੀਦ",
     "Redirection": " ਰੀਡਾਇਰੈਕਟ",
     "Reset": "ਰੀਸੈੱਟ",
     "Save": "ਸੇਵ",
@@ -141,6 +149,7 @@
     "Sponsored": "ਰੇਟ",
     "Stages": "ਪੜਾਅ",
     "Start": " ਸ਼ੁਰੂ ਕਰੋ",
+    "Status": "ਸਥਿਤੀ",
     "Story": "ਕਹਾਣੀ",
     "Subscribe": "ਗਾਹਕ ਬਣੋ",
     "Taxes": " ਟੈਕਸ",
@@ -164,6 +173,7 @@
     "Wiins": "ਵਿਨ",
     "Wiins.io": "ਵਿਨਸ.ਆਈਓ",
     "With": "ਨਾਲ",
+    "You-can-do-it-here": "ਤੁਸੀਂ ਇਹ ਇਥੇ ਕਰ ਸਕਦੇ ਹੋ",
     "Your-Password..": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ",
     "Your-Pseudo..": "ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ",
     "and": "ਅਤੇ",
@@ -185,17 +195,7 @@
     "reply..": "ਜਵਾਬ",
     "responses": "ਜਵਾਬ",
     "soon": "ਜਲਦੀ",
-    "views": "ਵਿਚਾਰ",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "views": "ਵਿਚਾਰ"
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -495,6 +495,7 @@
     "Email-invalid": "ਈਮੇਲ ਅਵੈਧ ਹੈ",
     "Email_already_exist": "ਇਹ ਈਮੇਲ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ",
     "Incorrect": " ਗਲਤ",
+    "Insufficient_amount": "ਰਕਮ ਨਾਕਾਫੀ ਹੈ",
     "Invalid-password": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਗਲਤ ਹੈ",
     "No-changes-hv-been-made": "ਕੋਈ ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਗਈ ਹੈ",
     "No-page-has-this-name": "ਕੋਈ ਤਬਦੀਲੀ ਨਹੀਂ ਕੀਤੀ ਗਈ ਹੈ",
@@ -543,8 +544,7 @@
     "y-h-to-accept-the-tou": " ਤੁਹਾਨੂੰ ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ",
     "y-h-to-delete-yr-page-or-group-before": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਆਪਣੇ ਪੰਨਿਆਂ ਜਾਂ ਸਮੂਹਾਂ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ",
     "y-have-to-be-friend": "ਤੁਹਾਨੂੰ ਦੋਸਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
-    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ",
-    "Insufficient_amount": ""
+    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ਫੋਟੋ ਮਿਲੀ ਹੈ",
@@ -577,12 +577,12 @@
     "click-on-email": "ਕਿਰਪਾ ਕਰਕੇ ਈਮੇਲ ਲਿੰਕ ਤੇ ਕਲਿੱਕ ਕਰੋ"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "ਤਾਜ਼ਾ ਪ੍ਰੋਜੈਕਟ",
+    "Lastest-tube": "ਤਾਜ਼ਾ ਟਿ .ਬ",
     "My-music": "ਮੇਰਾ ਸੰਗੀਤ",
     "My-wiinsers": "ਮੇਰੇ ਵਾਈਨਰਜ਼",
     "Tops": "ਸਿਖਰ",
-    "Trend": "ਰੁਝਾਨ",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "ਰੁਝਾਨ"
   },
   "MINI-CHAT": {
     "text-a-friend": "ਇੱਕ ਦੋਸਤ ਨੂੰ ਲਿਖੋ"
@@ -759,6 +759,27 @@
       "lang-of-btn-title-others": "ਇਸ ਡਿਵਾਈਸ ਤੇ ਪਲੇਟਫਾਰਮ ਦੇ ਬਟਨਾਂ, ਸਿਰਲੇਖਾਂ ਅਤੇ ਹੋਰ ਟੈਕਸਟ ਲਈ ਭਾਸ਼ਾ",
       "lang-of-plateforme": "ਪਲੇਟਫਾਰਮ ਭਾਸ਼ਾ"
     },
+    "ledger": {
+      "Account-disable-now-description": "ਖਾਤਾ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਅਸਮਰੱਥ ਹੈ, ਤੁਸੀਂ ਹੁਣ ਪਲੇਟਫਾਰਮ' ਤੇ ਅਦਿੱਖ ਹੋ. ਜੇ ਤੁਹਾਡਾ ਖਾਤਾ ਅਗਲੀ ਭੁਗਤਾਨ ਲਈ ਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਤਾਂ ਅਗਲੇ 30 ਦਿਨਾਂ ਦਾ ਆਨੰਦ ਮਾਣਨ ਲਈ ਤੁਹਾਡੀ ਅਗਲੀ ਵਿਕਰੀ ਵਿੱਚੋਂ 4.99 ਵਾਪਸ ਲੈ ਲਿਆ ਜਾਵੇਗਾ.",
+      "Address": "ਪਤਾ",
+      "Address-to-send": "ਭੇਜਣ ਲਈ ਪਤਾ",
+      "Amount": "ਦੀ ਰਕਮ",
+      "Amount-to-transfert": "ਤਬਦੀਲ ਕਰਨ ਦੀ ਰਕਮ",
+      "Are-y-sure-t-cancel-t-transaction": "ਕੀ ਤੁਹਾਨੂੰ ਯਕੀਨ ਹੈ ਕਿ ਇਹ ਲੈਣ-ਦੇਣ ਰੱਦ ਕਰਨਾ ਹੈ?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "ਸਾਵਧਾਨ ਰਹੋ, ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਹਾਡਾ ਸਹੀ ਪਤਾ ਹੈ. ਤਬਾਦਲੇ ਦੀ ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਕੋਈ ਰਿਫੰਡ ਨਹੀਂ ਹੈ.",
+      "Card-description-payment-subscription": "ਗਾਹਕੀ ਤੁਹਾਨੂੰ ਸਾਰੀਆਂ ਕਾਰਜਕੁਸ਼ਲਤਾਵਾਂ ਦੇ ਨਾਲ ਇਸ ਪਲੇਟਫਾਰਮ ਵਿੱਚ ਰਹਿਣ ਦੀ ਆਗਿਆ ਦਿੰਦੀ ਹੈ. ਤੁਹਾਡੀ ਸਾਰੀ ਜਾਣਕਾਰੀ ਨਿੱਜੀ ਤੌਰ ਤੇ ਇਸ ਪਲੇਟਫਾਰਮ ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਹੈ. ਵਾਈਨ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਨੂੰ ਤੀਜੀ ਧਿਰ ਦੀਆਂ ਕੰਪਨੀਆਂ ਨੂੰ ਕਦੇ ਵੀ ਸਾਂਝਾ ਨਹੀਂ ਕਰੇਗਾ. ਹਰ ਸਮਗਰੀ ਪਲੇਟਫਾਰਮ ਦੇ ਅੰਦਰ ਰਹਿੰਦੀ ਹੈ. ਵਾਈਨਾਂ ਵਿੱਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ.",
+      "Currency": "ਮੁਦਰਾ",
+      "Fees-3": "ਫੀਸ (3%)",
+      "Next-facturation-date": "Fact {ਮੁੱਲ}} ਦਿਨਾਂ ਵਿੱਚ ਅਗਲੀ ਤੱਥ",
+      "Pending-Transfert-Request": "ਬਕਾਇਆ ਟ੍ਰਾਂਸਫਰਟ ਬੇਨਤੀ",
+      "T-admin-ll-take-24h-d": "ਪ੍ਰਸ਼ਾਸਨ ਕ੍ਰਿਪਟੂ ਨੂੰ ਤਬਦੀਲ ਕਰਨ ਲਈ 24 ਘੰਟੇ ਲਵੇਗਾ. ਤੁਹਾਡੇ ਭਰੋਸੇ ਲਈ ਧੰਨਵਾਦ",
+      "T-update-can-take-15min-after-the-confirmation": "ਪੁਸ਼ਟੀ ਹੋਣ ਤੋਂ ਬਾਅਦ ਅਪਡੇਟ ਵਿੱਚ 15 ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ",
+      "Total-in-USD": "ਕੁੱਲ ਡਾਲਰ ਵਿੱਚ",
+      "Transfer": "ਟ੍ਰਾਂਸਫਰ",
+      "Y-are-going-t-transfert-to-this-address-d": "ਤੁਸੀਂ ਇਸ ਪਤੇ ਤੇ ਟ੍ਰਾਂਸਫਰ ਕਰਨ ਜਾ ਰਹੇ ਹੋ. ਤੁਹਾਨੂੰ ਪੂਰਾ ਵਿਸ਼ਵਾਸ ਹੈ ? ਪ੍ਰਸ਼ਾਸਨ 24 ਘੰਟੇ ਦੇਰੀ ਨਾਲ ਲੈਣ-ਦੇਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੇਗਾ.",
+      "Yr-account-balance-is": "ਤੁਹਾਡਾ ਖਾਤਾ ਬਕਾਇਆ ਹੈ: {{value}}",
+      "price-per-month": "99.9999. / ਮਹੀਨੇ"
+    },
     "notif": {
       "enable-sound": "ਧੁਨੀ ਸੂਚਨਾਵਾਂ",
       "enable-sound-d": "ਜਦੋਂ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ ਸੂਚਨਾ ਹੋਵੇ ਤਾਂ ਆਵਾਜ਼ ਨੂੰ ਸਮਰੱਥ ਕਰੋ"
@@ -798,36 +819,15 @@
       "btn-friend": "ਮਿੱਤਰਤਾ ਬੇਨਤੀ ਬਟਨ ਉਪਲਬਧ ਕਰਵਾਉ",
       "h-can-b-yr-description": "ਤੁਸੀਂ ਵੇਰਵਾ ਦੇ ਸਕਦੇ ਹੋ"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਵਰਤਣ ਲਈ ਤਸਦੀਕ ਦੀ ਲੋੜ ਹੈ",
+      "Verified-zone": "ਪ੍ਰਮਾਣਿਤ ਜ਼ੋਨ"
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਸਿਰਫ ਮੇਰੇ ਦੋਸਤਾਂ ਦੁਆਰਾ ਦ੍ਰਿਸ਼ਮਾਨ ਹਨ",
       "my-publications-are-visible-to-every-one": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਹਰ ਕਿਸੇ ਨੂੰ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ",
       "who-c-find-me": "ਮੈਨੂੰ ਕੌਣ ਲੱਭ ਸਕਦਾ ਹੈ ?",
       "who-c-find-me-d": "ਜਦੋਂ ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਸਰਚ ਬਾਰ ਵਿੱਚ ਦਾਖਲ ਹੁੰਦਾ ਹੈ, ਇਹ ਲੋਕ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ."
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +877,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "ਤੁਹਾਡਾ ਸੰਗੀਤ ਪਛਾਣਕਰਤਾ"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "ਸੁੰਦਰਤਾ",
+      "Comedy": "ਕਾਮੇਡੀ",
+      "Dance": "ਡਾਂਸ",
+      "Gaming": "ਗੇਮਿੰਗ",
+      "How-to": "Como fazer",
+      "Movies": "ਫਿਲਮਾਂ",
+      "Music": "ਸੰਗੀਤ",
+      "News": "ਖ਼ਬਰਾਂ",
+      "Sport": "ਖੇਡ",
+      "Travel": "ਯਾਤਰਾ",
+      "Trending": "ਰੁਝਾਨ"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "ਇੱਕ ਕਵਰ ਤਸਵੀਰ ਸ਼ਾਮਲ ਕਰੋ",
@@ -950,21 +965,6 @@
       "Video-creation": "ਵੀਡੀਓ ਬਣਾਉਣਾ",
       "Video-name": "ਵੀਡੀਓ ਨਾਮ",
       "Visualisation-of-the-video": "ਵੀਡੀਓ ਦਾ ਵਿਜ਼ੂਅਲਾਈਜ਼ੇਸ਼ਨ"
-    }
-  },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
     }
   }
 }

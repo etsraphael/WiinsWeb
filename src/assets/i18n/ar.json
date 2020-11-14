@@ -73,10 +73,12 @@
     "Cancel": "لالغاء",
     "Cancel-the-request": "إلغاء الطلب",
     "Category": "الفئه",
+    "Certification": "شهاده",
     "Change": "تغيير",
     "Change-the-photo": "تغيير الصورة",
     "Choice": "خيار",
     "Chosse-a-date": "اختر التاريخ",
+    "Close": "اغلاق",
     "Coming-soon": "قريباً",
     "Comment": "للتعليق",
     "Confirm": "للتأكيد",
@@ -107,13 +109,16 @@
     "Join": "الانضمام",
     "Know-us": "تعرف علينا",
     "Leave": "غادر",
+    "Ledger": "دفتر الاستاذ",
     "Like": "مثل",
     "Manage": "يدير",
+    "Max": "ماكس",
     "Members": "أعضاء",
     "My-Favorites": "المفضلة",
     "My-community": "مجتمعي",
     "Name": "اسم",
     "Next": "التالي",
+    "Not-enough": "لا يكفي",
     "Now": "الآن",
     "Or": "او",
     "Others": "الآخرين",
@@ -121,13 +126,16 @@
     "Participate": "المشاركه",
     "Password": "كلمه السر",
     "Payment": "الدفع",
+    "Pending": "المعلقه",
     "Period": "الفتره",
     "Premium": "بريميوم",
+    "Previous": "السابقه",
     "Price": "جوائز",
     "Private": "نشر",
     "Profile": "الملف الشخصي",
     "Public": "عامة",
     "Rate": "معدلات",
+    "Receipt": "استلام",
     "Redirection": "اعاده توجيه",
     "Reset": "إعادة تعيين",
     "Save": "حفظ",
@@ -141,6 +149,7 @@
     "Sponsored": "معدلات",
     "Stages": "مراحل",
     "Start": "بدء",
+    "Status": "حاله",
     "Story": "قصة",
     "Subscribe": "الاشتراك",
     "Taxes": "الضرائب",
@@ -164,6 +173,7 @@
     "Wiins": "Wiins",
     "Wiins.io": "Wiins.io",
     "With": "مع",
+    "You-can-do-it-here": "يمكنك أن تفعل ذلك هنا",
     "Your-Password..": "كلمة مرورك",
     "Your-Pseudo..": "اسم المستخدم الخاص بك",
     "and": "و",
@@ -185,17 +195,7 @@
     "reply..": "الرد",
     "responses": "استجابات",
     "soon": "هكذا",
-    "views": "الآراء",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "views": "الآراء"
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -495,6 +495,7 @@
     "Email-invalid": "البريد الإلكتروني غير صالح",
     "Email_already_exist": "هذا البريد الإلكتروني موجود بالفعل",
     "Incorrect": "غير صحيحه",
+    "Insufficient_amount": "المبلغ غير كاف",
     "Invalid-password": "كلمة مرورك غير صحيحة",
     "No-changes-hv-been-made": "تم إجراء أية تغييرات",
     "No-page-has-this-name": "تم إجراء أية تغييرات",
@@ -543,8 +544,7 @@
     "y-h-to-accept-the-tou": "يجب عليك قبول شروط وأحكام الاستخدام",
     "y-h-to-delete-yr-page-or-group-before": "يجب حذف صفحاتك أو مجموعاتك قبل",
     "y-have-to-be-friend": "يجب ان نكون اصدقاء",
-    "you-hav-to-upgrad-a-manager-before-leave": "يجب ترقية مدير قبل مغادرة المجموعة",
-    "Insufficient_amount": ""
+    "you-hav-to-upgrad-a-manager-before-leave": "يجب ترقية مدير قبل مغادرة المجموعة"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",
@@ -577,12 +577,12 @@
     "click-on-email": "الرجاء الضغط على رابط البريد الإلكتروني"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "آخر مشروع",
+    "Lastest-tube": "آخر أنبوب",
     "My-music": "موسيقاي",
     "My-wiinsers": "بلدي wiinsers",
     "Tops": "الأوائل",
-    "Trend": "اتجاه",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "اتجاه"
   },
   "MINI-CHAT": {
     "text-a-friend": "نص صديق"
@@ -759,6 +759,27 @@
       "lang-of-btn-title-others": "لغة الأزرار والعناوين والنصوص الأخرى للمنصة على هذا الجهاز",
       "lang-of-plateforme": "لغة المنبر"
     },
+    "ledger": {
+      "Account-disable-now-description": "تم تعطيل الحساب مؤقتًا، فأنت غير مرئي على النظام الأساسي الآن. إذا كان حسابك غير نشط للدفعة التالية، سيتم سحب 4.99 من بيعك المقبل للاستمتاع بالـ 30 يومًا التالية.",
+      "Address": "عنوان",
+      "Address-to-send": "العنوان الذي يتم إرساله",
+      "Amount": "المبلغ",
+      "Amount-to-transfert": "المبلغ المطلوب تحويله",
+      "Are-y-sure-t-cancel-t-transaction": "هل أنت متأكد من إلغاء هذه المعاملة؟",
+      "Be-careful-make-sure-y-have-the-right-address-d": "كن حذرا، تأكد من أن لديك العنوان الصحيح. لا استرداد بعد تأكيد التحويل.",
+      "Card-description-payment-subscription": "الاشتراك يسمح لك بالبقاء في هذا النظام الأساسي مع جميع الوظائف. جميع المعلومات الخاصة بك هي آمنة بشكل خاص داخل هذا النظام الأساسي. Wiins لن تشارك معلوماتك مع شركات طرف ثالث. يبقى كل محتوى داخل المنصة. مرحباً بك في (ويينز)",
+      "Currency": "العمله",
+      "Fees-3": "الرسوم (3%)",
+      "Next-facturation-date": "حقائق تالية في {{value}} يوم",
+      "Pending-Transfert-Request": "تاريخ التحويل التاليبطلب النقل في {{value}} أيام",
+      "T-admin-ll-take-24h-d": "الإدارة سوف تتخذ 24h لنقل التشفير. شكراً لك على ثقتك",
+      "T-update-can-take-15min-after-the-confirmation": "يمكن أن يستغرق التحديث 15min بعد تأكيد",
+      "Total-in-USD": "المجموع بالدولار الأمريكي",
+      "Transfer": "نقل",
+      "Y-are-going-t-transfert-to-this-address-d": "أنت ستتحول إلى هذا العنوان هل أنت متأكد؟ ستقوم الإدارة بتأكيد المعاملة في تأخير 24h.",
+      "Yr-account-balance-is": "رصيد حسابك هو : {{value}}",
+      "price-per-month": "4.99$ / أشهر"
+    },
     "notif": {
       "enable-sound": "الإخطارات الصوتية",
       "enable-sound-d": "تمكين الصوت عندما يكون لديك إشعار"
@@ -798,36 +819,15 @@
       "btn-friend": "جعل زر طلب الصداقة متاحًا",
       "h-can-b-yr-description": "يمكنك وضع وصف"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "تتطلب هذه الميزة التحقق من استخدامها",
+      "Verified-zone": "منطقة تم التحقق منها"
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
       "my-publications-are-visible-to-every-one": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
       "who-c-find-me": "من يستطيع أن يجدني؟",
       "who-c-find-me-d": "عند إدخال اسم المستخدم الخاص بك في شريط البحث، سيتمكن هؤلاء الأشخاص من مشاهدة ملفك الشخصي معروضًا.  "
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +877,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "معرف الموسيقى"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "الجمال",
+      "Comedy": "الكوميديا",
+      "Dance": "الرقص",
+      "Gaming": "الالعاب",
+      "How-to": "كيفية",
+      "Movies": "افلام",
+      "Music": "الموسيقي",
+      "News": "اخبار",
+      "Sport": "الرياضه",
+      "Travel": "السفر",
+      "Trending": "تتجه"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "إضافة صورة غلاف",
@@ -950,21 +965,6 @@
       "Video-creation": "إنشاء الفيديو",
       "Video-name": "اسم الفيديو",
       "Visualisation-of-the-video": "تصور الفيديو"
-    }
-  },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
     }
   }
 }

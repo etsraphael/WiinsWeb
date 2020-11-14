@@ -73,10 +73,12 @@
     "Cancel": "বাতিল করা",
     "Cancel-the-request": "অনুরোধ বাতিল করুন",
     "Category": "বিভাগ",
+    "Certification": "শংসাপত্র",
     "Change": "পরিবর্তন",
     "Change-the-photo": "ফটো পরিবর্তন করুন",
     "Choice": "পছন্দ",
     "Chosse-a-date": "একটি তারিখ নির্বাচন করুন",
+    "Close": "বন্ধ",
     "Coming-soon": "শীঘ্রই আসছে",
     "Comment": "মন্তব্য করতে",
     "Confirm": "নিশ্চিত করতে",
@@ -107,13 +109,16 @@
     "Join": "যোগদান",
     "Know-us": "আমাদের জানুন",
     "Leave": "ছুটি",
+    "Ledger": "লেজার",
     "Like": "মত",
     "Manage": "পরিচালনা করা",
+    "Max": "সর্বাধিক",
     "Members": "সদস্যদের",
     "My-Favorites": "আমার পছন্দের",
     "My-community": "আমার সম্প্রদায়",
     "Name": "নাম",
     "Next": " পরবর্তী",
+    "Not-enough": "যথেষ্ট না",
     "Now": "এখন",
     "Or": "বা",
     "Others": "অন্যান্য",
@@ -121,13 +126,16 @@
     "Participate": "অংশগ্রহণ",
     "Password": "পাসওয়ার্ড",
     "Payment": " পারিশ্রমিক",
+    "Pending": "বিচারাধীন",
     "Period": " কাল",
     "Premium": "প্রিমিয়াম",
+    "Previous": "আগে",
     "Price": " পুরস্কার",
     "Private": "ব্যক্তিগত",
     "Profile": "প্রোফাইল",
     "Public": "প্রকাশ্য",
     "Rate": "হার",
+    "Receipt": "প্রাপ্তি",
     "Redirection": " পুনর্চালনা",
     "Reset": "রিসেট",
     "Save": "সংরক্ষণ",
@@ -141,6 +149,7 @@
     "Sponsored": "হার",
     "Stages": "ধাপ",
     "Start": " শুরু",
+    "Status": "স্থিতি",
     "Story": "গল্প",
     "Subscribe": "সাবস্ক্রাইব",
     "Taxes": " করের",
@@ -164,6 +173,7 @@
     "Wiins": "উইনস",
     "Wiins.io": "Wiins.io",
     "With": "সঙ্গে",
+    "You-can-do-it-here": "আপনি এখানে এটা করতে পারেন",
     "Your-Password..": "আপনার পাসওয়ার্ড",
     "Your-Pseudo..": "আপনার ব্যবহারকৃত নাম",
     "and": "এবং",
@@ -185,17 +195,7 @@
     "reply..": "উত্তর",
     "responses": "প্রতিক্রিয়া",
     "soon": "শীঘ্রই",
-    "views": "মতামত",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "views": "মতামত"
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -495,6 +495,7 @@
     "Email-invalid": "ইমেল অবৈধ",
     "Email_already_exist": "এই ইমেলটি ইতিমধ্যে বিদ্যমান",
     "Incorrect": " ত্রুটিপূর্ণ",
+    "Insufficient_amount": "পরিমাণ অপর্যাপ্ত",
     "Invalid-password": "আপনার পাসওয়ার্ড ভুল",
     "No-changes-hv-been-made": "কোনও পরিবর্তন করা হয়নি",
     "No-page-has-this-name": "কোনও পরিবর্তন করা হয়নি",
@@ -543,8 +544,7 @@
     "y-h-to-accept-the-tou": "আপনাকে অবশ্যই ব্যবহারের শর্তাবলী মেনে নিতে হবে",
     "y-h-to-delete-yr-page-or-group-before": "আপনাকে অবশ্যই আপনার পৃষ্ঠা বা গোষ্ঠীগুলি মুছতে হবে",
     "y-have-to-be-friend": "আপনি অবশ্যই বন্ধু হতে হবে",
-    "you-hav-to-upgrad-a-manager-before-leave": "গ্রুপটি ছাড়ার আগে আপনাকে অবশ্যই একজন পরিচালককে প্রচার করতে হবে",
-    "Insufficient_amount": ""
+    "you-hav-to-upgrad-a-manager-before-leave": "গ্রুপটি ছাড়ার আগে আপনাকে অবশ্যই একজন পরিচালককে প্রচার করতে হবে"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",
@@ -577,12 +577,12 @@
     "click-on-email": "ইমেল লিঙ্ক ক্লিক করুন"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "সর্বশেষ প্রকল্প",
+    "Lastest-tube": "সর্বশেষ নল",
     "My-music": "আমার গান",
     "My-wiinsers": "আমার উইনসর",
     "Tops": "টপস",
-    "Trend": "প্রবণতা",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "প্রবণতা"
   },
   "MINI-CHAT": {
     "text-a-friend": "একটি বন্ধু পাঠ্য"
@@ -759,6 +759,27 @@
       "lang-of-btn-title-others": "এই ডিভাইসে প্ল্যাটফর্মের বোতাম, শিরোনাম এবং অন্যান্য পাঠ্যগুলির জন্য ভাষা",
       "lang-of-plateforme": "প্ল্যাটফর্মের ভাষা"
     },
+    "ledger": {
+      "Account-disable-now-description": "অ্যাকাউন্ট অস্থায়ীভাবে অক্ষম, আপনি এখন প্ল্যাটফর্মে অদৃশ্য। যদি আপনার অ্যাকাউন্টটি পরবর্তী অর্থ প্রদানের জন্য নিষ্ক্রিয় থাকে, তবে পরবর্তী 30 দিন উপভোগ করার জন্য আপনার পরবর্তী বিক্রয় থেকে 4.99 প্রত্যাহার করা হবে।",
+      "Address": "ঠিকানা",
+      "Address-to-send": "ঠিকানা পাঠাতে হবে",
+      "Amount": "পরিমাণ",
+      "Amount-to-transfert": "স্থানান্তর করার পরিমাণ",
+      "Are-y-sure-t-cancel-t-transaction": "আপনি কি এই লেনদেন বাতিল করার বিষয়ে নিশ্চিত?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "সতর্কতা অবলম্বন করুন, নিশ্চিত করুন যে আপনার সঠিক ঠিকানা রয়েছে। স্থানান্তর নিশ্চিত হওয়ার পরে কোনও ফেরত পাওয়া যাবে না।",
+      "Card-description-payment-subscription": "সাবস্ক্রিপশন আপনাকে সমস্ত কার্যকারিতা সহ এই প্ল্যাটফর্মে থাকতে দেয়। আপনার প্ল্যাটফর্মের মধ্যে সমস্ত তথ্য ব্যক্তিগতভাবে সুরক্ষিত। উইনগুলি তৃতীয় পক্ষের সংস্থাগুলিতে কখনই আপনার তথ্য ভাগ করে নেবে না। প্রতিটি সামগ্রী প্ল্যাটফর্মের মধ্যে থাকে। উইনস এ স্বাগতম",
+      "Currency": "মুদ্রা",
+      "Fees-3": "ফি (3%)",
+      "Next-facturation-date": "Fact {মান}} দিনগুলিতে পরবর্তী ফ্যাক্টরিয়েশন",
+      "Pending-Transfert-Request": "মুলতুবি স্থানান্তর অনুরোধ",
+      "T-admin-ll-take-24h-d": "প্রশাসন ক্রিপ্টো স্থানান্তর করতে 24 ঘন্টা সময় নেবে। আপনার বিশ্বাসের জন্য আপনাকে ধন্যবাদ",
+      "T-update-can-take-15min-after-the-confirmation": "আপডেটটি নিশ্চিত হওয়ার পরে 15 মিনিট সময় নিতে পারে",
+      "Total-in-USD": "মোট মার্কিন ডলার",
+      "Transfer": "স্থানান্তর",
+      "Y-are-going-t-transfert-to-this-address-d": "আপনি এই ঠিকানায় স্থানান্তর করতে যাচ্ছেন। তুমি কি নিশ্চিত ? প্রশাসন 24 ঘন্টা বিলম্বের মধ্যে লেনদেনের বিষয়টি নিশ্চিত করবে।",
+      "Yr-account-balance-is": "আপনার অ্যাকাউন্ট ব্যালেন্স হয়: {{value}}",
+      "price-per-month": "4.99। / মাস"
+    },
     "notif": {
       "enable-sound": "শব্দ বিজ্ঞপ্তি",
       "enable-sound-d": "আপনার কাছে কোনও বিজ্ঞপ্তি থাকলে শব্দ সক্ষম করুন"
@@ -798,36 +819,15 @@
       "btn-friend": "বন্ধুর অনুরোধ বোতামটি উপলব্ধ করুন",
       "h-can-b-yr-description": "আপনি একটি বিবরণ রাখতে পারেন"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "এই বৈশিষ্ট্যটির ব্যবহারের জন্য যাচাইকরণ প্রয়োজন",
+      "Verified-zone": "যাচাই করা অঞ্চল"
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "আমার প্রকাশনাগুলি কেবলমাত্র আমার বন্ধুদের দ্বারা দৃশ্যমান",
       "my-publications-are-visible-to-every-one": "আমার প্রকাশনা সকলের কাছে দৃশ্যমান",
       "who-c-find-me": "কে আমাকে খুঁজে পাবে?",
       "who-c-find-me-d": "যখন আপনার ব্যবহারকারীর নাম অনুসন্ধান বারে প্রবেশ করা হবে তখন এই ব্যক্তিরা আপনার প্রোফাইল প্রদর্শিত দেখতে সক্ষম হবেন।"
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +877,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "আপনার সংগীত শনাক্তকারী"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "সৌন্দর্য",
+      "Comedy": "কৌতুক",
+      "Dance": "নাচ",
+      "Gaming": "গেমিং",
+      "How-to": "কিভাবে",
+      "Movies": "সিনেমা",
+      "Music": "ਸੰਗੀਤ",
+      "News": "খবর",
+      "Sport": "খেলা",
+      "Travel": "ভ্রমণ",
+      "Trending": "চলমান"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "একটি কভার ছবি যুক্ত করুন",
@@ -950,21 +965,6 @@
       "Video-creation": "ভিডিও নির্মাণ",
       "Video-name": "ভিডিও নাম",
       "Visualisation-of-the-video": "ভিডিওটির ভিজ্যুয়ালাইজেশন"
-    }
-  },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
     }
   }
 }
