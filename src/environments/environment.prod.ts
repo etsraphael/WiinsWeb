@@ -21,6 +21,7 @@ export const environment = {
   link_music_img: 'eps-file-music-img',
   link_music_img_playlist: 'eps-file-playlist-music-img',
   link_tube_video: 'eps-file-tube',
-  link_tube_poster: 'eps-tube-poster'
+  link_tube_poster: 'eps-tube-poster',
+  link_verification: 'eps-file-verification'
   
 }

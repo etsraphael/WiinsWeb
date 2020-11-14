@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatCheckboxChange, MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
+import { take } from 'rxjs/operators';
+import { CertificationService } from 'src/app/core/services/certification/certification.service';
 
 @Component({
   selector: 'app-veritification-steps',
@@ -23,9 +25,17 @@ export class VeritificationStepsComponent implements OnInit {
   constructor(
     private translate: TranslateService,
     private _snackBar: MatSnackBar,
+    private certificationService: CertificationService
   ) { }
 
   ngOnInit() {
+
+    // to know if the request is already sent
+    this.certificationService.getVerificationProfile().pipe(take(1)).subscribe(
+      () => { this.requestPending = true },
+      () => { this.requestPending = false }
+    )
+
   }
 
   saveIdFile(event: any){
