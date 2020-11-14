@@ -58,12 +58,22 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     if (files.length === 0) return null
     this.fileIdname = files[0].name
     this.fileId = files[0]
+
+    // send the fileId
+    const reader = new FileReader()
+    reader.onloadend = _event => { this.uploadFile(this.fileId, 'fileId') }
+    reader.readAsDataURL(this.fileId)
   }
 
   savepictureTakeFile(files: any) {
     if (files.length == 0) return null
     this.pictureTakeName = files[0].name
     this.pictureTake = files[0]
+
+    // send the pictureTake and send the verification
+    const reader2 = new FileReader()
+    reader2.onloadend = _event => { this.uploadFile(this.pictureTake, 'pictureTake') }
+    reader2.readAsDataURL(this.pictureTake)
   }
 
   changeCheckBtn(event: MatCheckboxChange) {
@@ -72,25 +82,42 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
 
   confirm(): void | MatSnackBarRef<SimpleSnackBar> {
 
-    if (!this.fileIdname || !this.pictureTakeName) {
+    if(!this.checkedCond){
       return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'), null,
+        this.translate.instant('ERROR-MESSAGE.y-h-to-accept-the-tou'), null,
         { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )
     }
 
     this.loading = true
 
-    // send the fileId
-    const reader = new FileReader()
-    reader.onloadend = _event => { this.uploadFile(this.fileId, 'fileId') }
-    reader.readAsDataURL(this.fileId)
+    if (!this.pictureTakeLink || !this.fileIdLink) {
+      this.loading = false
+      return this._snackBar.open(
+        this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+      )
+    } else {
+      const verificationForm: VerificationForm = {
+        identityFile: this.fileIdLink,
+        pictureTakeFile: this.pictureTakeLink
+      }
+      this.certificationService.createVerificationProfile(verificationForm).pipe(take(1)).subscribe(
+        action => {
+          this.loading = false
+          this.requestPending = true
+        },
+        error => {
+          console.log(error)
+          this.loading = false
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+        }
+      )
+    }
 
-    // send the pictureTake and send the verification
-    const reader2 = new FileReader()
-    reader2.onloadend = _event => { this.uploadFile(this.pictureTake, 'pictureTake') }
-    reader2.readAsDataURL(this.pictureTake)
-    
   }
 
   // to upload a file
@@ -134,26 +161,42 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
         break;
       case 'pictureTake':
         this.pictureTakeLink = this.uploadService.getFileUrlAfterUpload(bucketName, key)
-        this.sendVerification()
         break;
     }
   }
 
   sendVerification(): void | MatSnackBarRef<SimpleSnackBar> {
-    
-      if (!this.pictureTakeLink || !this.fileIdLink) {
-        return this._snackBar.open(
-          this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
-          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-        )
+
+    if (!this.pictureTakeLink || !this.fileIdLink) {
+      return this._snackBar.open(
+        this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+      )
+    } else {
+      const verificationForm: VerificationForm = {
+        identityFile: this.fileIdLink,
+        pictureTakeFile: this.pictureTakeLink
       }
-  
-      this.loading = false
-      this.requestPending = true
+      this.certificationService.createVerificationProfile(verificationForm).pipe(take(1)).subscribe(
+        action => {
+          this.loading = false
+          this.requestPending = true
+        },
+        error => {
+          this.loading = false
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+        }
+      )
+    }
+
+
   }
 
   ngOnDestroy(): void {
-    if(this.uploadSubFileId) this.uploadSubFileId.unsubscribe()
+    if (this.uploadSubFileId) this.uploadSubFileId.unsubscribe()
   }
 
 }

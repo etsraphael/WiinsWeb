@@ -20,7 +20,7 @@
             <div class="container">
               <!-- Upload idFile -->
               <div class="my-2">
-                <div class="container-upload">
+                <div class="container-upload" [ngClass]="{'valid-upload': !!fileIdLink}">
                   <label for="idUpload" class="mb-0 w-100 row mx-0 p-2">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
               </div>
               <!-- Upload picture taken -->
               <div class="my-2">
-                <div class="container-upload">
+                <div class="container-upload" [ngClass]="{'valid-upload': !!pictureTakeLink}">
                   <label for="pictureTakenFile" class="mb-0 w-100 row mx-0 p-2">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
