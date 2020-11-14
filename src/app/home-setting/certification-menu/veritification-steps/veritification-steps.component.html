@@ -1,13 +1,13 @@
 <!-- Var -->
 <input hidden type='file' accept='image/*' id="idUpload" #idUpload (change)=saveIdFile(idUpload.files)>
-<input hidden type='file' accept='image/*' id="pictureTakenFile" (change)=savepictureTakeFile($event)>
+<input hidden type='file' accept='image/*' id="pictureTakenFile" #pictureTakenFile (change)=savepictureTakeFile(pictureTakenFile.files)>
 
 <!-- Body -->
 <div class="card shadow">
   <div class="row mx-0 h-100">
     <!-- Form -->
     <div class="col-12 col-sm-12 col-md-8 col-xl-6 description-side">
-      <div class="container-fluid">
+      <div class="container-fluid" *ngIf="!loading">
         <div class="row mx-0 my-3">
           <h1 class="title-card">Verification</h1>
         </div>
@@ -53,7 +53,6 @@
                     <span class="upload-link pl-3" *ngIf="!pictureTakeName" for="pictureTakenFile">Upload your file
                       here</span>
                   </label>
-                  
                 </div>
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">Upload a photo holding the ID with a sheet of paper with today’s date
@@ -87,6 +86,11 @@
                 email.</span>
         </div>
           </div>
+        </div>
+      </div>
+      <div class="container-fluid" *ngIf="loading">
+        <div class="row mx-0 container-loading">
+          <div class="loader m-auto">Loading...</div>
         </div>
       </div>
     </div>
