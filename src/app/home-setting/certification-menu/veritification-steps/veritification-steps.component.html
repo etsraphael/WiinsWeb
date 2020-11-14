@@ -1,3 +1,8 @@
+<!-- Var -->
+<input hidden type='file' accept='image/*' id="idUpload" #idUpload (change)=saveIdFile(idUpload.files)>
+<input hidden type='file' accept='image/*' id="pictureTakenFile" (change)=savepictureTakeFile($event)>
+
+<!-- Body -->
 <div class="card shadow">
   <div class="row mx-0 h-100">
     <!-- Form -->
@@ -16,7 +21,7 @@
               <!-- Upload idFile -->
               <div class="my-2">
                 <div class="container-upload">
-                  <label for="profileUpload" class="mb-0 w-100 row mx-0 p-2">
+                  <label for="idUpload" class="mb-0 w-100 row mx-0 p-2">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd"
@@ -27,8 +32,6 @@
                     <span class="upload-link pl-3" *ngIf="fileIdname" for="profileUpload">{{fileIdname}}</span>
                     <span class="upload-link pl-3" *ngIf="!fileIdname" for="profileUpload">Upload your file here</span>
                   </label>
-                  <input hidden #idFile type='file' id="profileUpload" name="photo" accept=".png, .jpg, .jpeg"
-                    (change)=saveIdFile($event)>
                 </div>
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">Upload your password, id identity or driver license.</p>
@@ -50,8 +53,7 @@
                     <span class="upload-link pl-3" *ngIf="!pictureTakeName" for="pictureTakenFile">Upload your file
                       here</span>
                   </label>
-                  <input hidden #pictureTakenFile type='file' id="pictureTakenFile" name="photo"
-                    accept=".png, .jpg, .jpeg" (change)=savepictureTakeFile($event)>
+                  
                 </div>
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">Upload a photo holding the ID with a sheet of paper with today’s date
