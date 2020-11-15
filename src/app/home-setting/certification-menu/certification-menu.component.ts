@@ -17,7 +17,7 @@ export class CertificationMenuComponent implements OnInit {
   myprofile$: Observable<ProfileModel>
 
   // nav
-  placeSelected: string = 'verification'
+  placeSelected: string = 'certification'
 
   constructor(
     private store$: Store<RootStoreState.State>
