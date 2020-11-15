@@ -108,7 +108,6 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
           this.requestPending = true
         },
         error => {
-          console.log(error)
           this.loading = false
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,

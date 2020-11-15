@@ -29,6 +29,7 @@ export class ProfileModel extends BaseModel {
   follow: BtnFollow
   actifSpace: number
   levelCertification: number
+  communityTotal: number
 }
 
 
