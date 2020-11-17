@@ -195,7 +195,10 @@
     "reply..": "जवाब दे दो",
     "responses": "प्रतिक्रियाओं",
     "soon": "जल्द ही",
-    "views": "विचारों"
+    "views": "विचारों",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "आपको उपयोग के नियम और शर्तों को स्वीकार करना होगा",
     "y-h-to-delete-yr-page-or-group-before": "इससे पहले आपको अपने पेज या समूह ों को हटाना होगा",
     "y-have-to-be-friend": "आप दोस्त होने चाहिए",
-    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए"
+    "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "इस सुविधा का उपयोग करने के लिए सत्यापन की आवश्यकता है",
-      "Verified-zone": "सत्यापित क्षेत्र"
+      "Verified-zone": "सत्यापित क्षेत्र",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
@@ -966,5 +975,8 @@
       "Video-name": "वीडियो का नाम",
       "Visualisation-of-the-video": "वीडियो का विज़ुअलाइज़ेशन"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

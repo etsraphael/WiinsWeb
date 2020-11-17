@@ -195,7 +195,10 @@
     "reply..": "الرد",
     "responses": "استجابات",
     "soon": "هكذا",
-    "views": "الآراء"
+    "views": "الآراء",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "يجب عليك قبول شروط وأحكام الاستخدام",
     "y-h-to-delete-yr-page-or-group-before": "يجب حذف صفحاتك أو مجموعاتك قبل",
     "y-have-to-be-friend": "يجب ان نكون اصدقاء",
-    "you-hav-to-upgrad-a-manager-before-leave": "يجب ترقية مدير قبل مغادرة المجموعة"
+    "you-hav-to-upgrad-a-manager-before-leave": "يجب ترقية مدير قبل مغادرة المجموعة",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "تتطلب هذه الميزة التحقق من استخدامها",
-      "Verified-zone": "منطقة تم التحقق منها"
+      "Verified-zone": "منطقة تم التحقق منها",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
@@ -966,5 +975,8 @@
       "Video-name": "اسم الفيديو",
       "Visualisation-of-the-video": "تصور الفيديو"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

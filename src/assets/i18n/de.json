@@ -195,7 +195,10 @@
     "reply..": "Antworten",
     "responses": "Antworten",
     "soon": "bald",
-    "views": "Ansichten"
+    "views": "Ansichten",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "Sie müssen die Nutzungsbedingungen akzeptieren",
     "y-h-to-delete-yr-page-or-group-before": "Sie müssen Ihre Seiten oder Gruppen löschen, bevor",
     "y-have-to-be-friend": "Sie müssen Freunde sein",
-    "you-hav-to-upgrad-a-manager-before-leave": "Sie müssen einen Manager befördern, bevor Sie die Gruppe verlassen"
+    "you-hav-to-upgrad-a-manager-before-leave": "Sie müssen einen Manager befördern, bevor Sie die Gruppe verlassen",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Diese Funktion erfordert eine Überprüfung, um",
-      "Verified-zone": "Verifizierte Zone"
+      "Verified-zone": "Verifizierte Zone",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
@@ -966,5 +975,8 @@
       "Video-name": "Videoname",
       "Visualisation-of-the-video": "Visualisierung des Videos"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

@@ -195,7 +195,10 @@
     "reply..": "応答",
     "responses": "反応",
     "soon": "すぐに",
-    "views": "景色"
+    "views": "景色",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "使用条件に同意する必要があります。",
     "y-h-to-delete-yr-page-or-group-before": "前にページまたはグループを削除する必要があります。",
     "y-have-to-be-friend": "あなたは友達でなければなりません",
-    "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります"
+    "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "この機能を使用するには、検証が必要です。",
-      "Verified-zone": "確認済みゾーン"
+      "Verified-zone": "確認済みゾーン",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "物事を変えようとする手段としての暴力の受け入れ",
@@ -966,5 +975,8 @@
       "Video-name": "ビデオ名",
       "Visualisation-of-the-video": "ビデオの視覚化"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

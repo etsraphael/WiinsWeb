@@ -195,7 +195,10 @@
     "reply..": "Ответить",
     "responses": "ответы",
     "soon": "скоро",
-    "views": "взгляды"
+    "views": "взгляды",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "Вы должны принять условия использования",
     "y-h-to-delete-yr-page-or-group-before": "Вы должны удалить свои страницы или группы, прежде чем",
     "y-have-to-be-friend": "вы должны быть друзьями",
-    "you-hav-to-upgrad-a-manager-before-leave": "Вы должны продвинуть менеджера, прежде чем покинуть группу"
+    "you-hav-to-upgrad-a-manager-before-leave": "Вы должны продвинуть менеджера, прежде чем покинуть группу",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фото получено",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Эта функция требует проверки для использования",
-      "Verified-zone": "Проверенная зона"
+      "Verified-zone": "Проверенная зона",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Принятие насилия как средства, пытаясь изменить ситуацию",
@@ -966,5 +975,8 @@
       "Video-name": "Название видео",
       "Visualisation-of-the-video": "Визуализация видео"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

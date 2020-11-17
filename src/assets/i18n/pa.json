@@ -195,7 +195,10 @@
     "reply..": "ਜਵਾਬ",
     "responses": "ਜਵਾਬ",
     "soon": "ਜਲਦੀ",
-    "views": "ਵਿਚਾਰ"
+    "views": "ਵਿਚਾਰ",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": " ਅੰਡੋਰਾ",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": " ਤੁਹਾਨੂੰ ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਤੇ ਸ਼ਰਤਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ",
     "y-h-to-delete-yr-page-or-group-before": "ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਆਪਣੇ ਪੰਨਿਆਂ ਜਾਂ ਸਮੂਹਾਂ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ",
     "y-have-to-be-friend": "ਤੁਹਾਨੂੰ ਦੋਸਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ",
-    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ"
+    "you-hav-to-upgrad-a-manager-before-leave": "ਸਮੂਹ ਛੱਡਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰਚਾਰ ਕਰਨਾ ਪਵੇਗਾ",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ਫੋਟੋ ਮਿਲੀ ਹੈ",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਵਰਤਣ ਲਈ ਤਸਦੀਕ ਦੀ ਲੋੜ ਹੈ",
-      "Verified-zone": "ਪ੍ਰਮਾਣਿਤ ਜ਼ੋਨ"
+      "Verified-zone": "ਪ੍ਰਮਾਣਿਤ ਜ਼ੋਨ",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਸਿਰਫ ਮੇਰੇ ਦੋਸਤਾਂ ਦੁਆਰਾ ਦ੍ਰਿਸ਼ਮਾਨ ਹਨ",
@@ -966,5 +975,8 @@
       "Video-name": "ਵੀਡੀਓ ਨਾਮ",
       "Visualisation-of-the-video": "ਵੀਡੀਓ ਦਾ ਵਿਜ਼ੂਅਲਾਈਜ਼ੇਸ਼ਨ"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

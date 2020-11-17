@@ -195,7 +195,10 @@
     "reply..": "respuesta",
     "responses": "respuestas",
     "soon": "pronto",
-    "views": "vistas"
+    "views": "vistas",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "Debe aceptar los términos y condiciones de uso",
     "y-h-to-delete-yr-page-or-group-before": "Debe eliminar sus páginas o grupos antes de",
     "y-have-to-be-friend": "debes ser amigo",
-    "you-hav-to-upgrad-a-manager-before-leave": "Debes promocionar a un gerente antes de abandonar el grupo"
+    "you-hav-to-upgrad-a-manager-before-leave": "Debes promocionar a un gerente antes de abandonar el grupo",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La foto es recibida",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Esta función requiere verificación para usar",
-      "Verified-zone": "Zona verificada"
+      "Verified-zone": "Zona verificada",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
@@ -966,5 +975,8 @@
       "Video-name": "Nombre del vídeo",
       "Visualisation-of-the-video": "Visualización del vídeo"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

@@ -195,7 +195,10 @@
     "reply..": "répondre..",
     "responses": "réponses",
     "soon": "bientôt",
-    "views": "vues"
+    "views": "vues",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "Vous devez accepter les conditions d'utilisations",
     "y-h-to-delete-yr-page-or-group-before": "Vous devez supprimer vos pages ou groupes avant",
     "y-have-to-be-friend": "vous devez être amis",
-    "you-hav-to-upgrad-a-manager-before-leave": "Vous devez promouvoir un manageur avant de quitter le groupe"
+    "you-hav-to-upgrad-a-manager-before-leave": "Vous devez promouvoir un manageur avant de quitter le groupe",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée",
-      "Verified-zone": "Zone verifiée"
+      "Verified-zone": "Zone verifiée",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mes publications sont visible uniquement par mes amis",
@@ -966,5 +975,8 @@
       "Video-name": "Nom de la vidéo",
       "Visualisation-of-the-video": "Rendue de la video"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }

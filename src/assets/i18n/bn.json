@@ -195,7 +195,10 @@
     "reply..": "উত্তর",
     "responses": "প্রতিক্রিয়া",
     "soon": "শীঘ্রই",
-    "views": "মতামত"
+    "views": "মতামত",
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": ""
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -544,7 +547,8 @@
     "y-h-to-accept-the-tou": "আপনাকে অবশ্যই ব্যবহারের শর্তাবলী মেনে নিতে হবে",
     "y-h-to-delete-yr-page-or-group-before": "আপনাকে অবশ্যই আপনার পৃষ্ঠা বা গোষ্ঠীগুলি মুছতে হবে",
     "y-have-to-be-friend": "আপনি অবশ্যই বন্ধু হতে হবে",
-    "you-hav-to-upgrad-a-manager-before-leave": "গ্রুপটি ছাড়ার আগে আপনাকে অবশ্যই একজন পরিচালককে প্রচার করতে হবে"
+    "you-hav-to-upgrad-a-manager-before-leave": "গ্রুপটি ছাড়ার আগে আপনাকে অবশ্যই একজন পরিচালককে প্রচার করতে হবে",
+    "You-hv-to-be-verified": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",
@@ -821,7 +825,12 @@
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "এই বৈশিষ্ট্যটির ব্যবহারের জন্য যাচাইকরণ প্রয়োজন",
-      "Verified-zone": "যাচাই করা অঞ্চল"
+      "Verified-zone": "যাচাই করা অঞ্চল",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "আমার প্রকাশনাগুলি কেবলমাত্র আমার বন্ধুদের দ্বারা দৃশ্যমান",
@@ -966,5 +975,8 @@
       "Video-name": "ভিডিও নাম",
       "Visualisation-of-the-video": "ভিডিওটির ভিজ্যুয়ালাইজেশন"
     }
+  },
+  "STAT": {
+    "Better-reference": ""
   }
 }
