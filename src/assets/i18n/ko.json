@@ -198,7 +198,9 @@
     "views": "견해",
     "Music-publication": "",
     "Tube-publication": "",
-    "Monetization": ""
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -548,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "먼저 페이지 또는 그룹을 삭제해야 합니다.",
     "y-have-to-be-friend": "당신은 친구 여야합니다",
     "you-hav-to-upgrad-a-manager-before-leave": "그룹을 떠나기 전에 관리자를 승진시켜야합니다",
-    "You-hv-to-be-verified": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "사진이 접수되었습니다",
@@ -830,7 +833,19 @@
       "I-w-t-b-certified": "",
       "Certification-badge": "",
       "Already-verified": "",
-      "Already-certified": ""
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "폭력을 변화를 위한 수단으로 받아들이는 것",

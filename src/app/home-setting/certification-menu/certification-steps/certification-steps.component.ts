@@ -71,7 +71,7 @@ export class CertificationStepsComponent implements OnInit {
       }
 
       // send the request
-      // else {
+      else {
       this.loading = true
       this.certificationService.createCertificationProfile().pipe(take(1)).subscribe(
         action => {
@@ -86,7 +86,7 @@ export class CertificationStepsComponent implements OnInit {
           )
         }
       )
-      // }
+      }
 
 
 

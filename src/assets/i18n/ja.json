@@ -198,7 +198,9 @@
     "views": "景色",
     "Music-publication": "",
     "Tube-publication": "",
-    "Monetization": ""
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -548,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "前にページまたはグループを削除する必要があります。",
     "y-have-to-be-friend": "あなたは友達でなければなりません",
     "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります",
-    "You-hv-to-be-verified": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -830,7 +833,19 @@
       "I-w-t-b-certified": "",
       "Certification-badge": "",
       "Already-verified": "",
-      "Already-certified": ""
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "物事を変えようとする手段としての暴力の受け入れ",

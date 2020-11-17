@@ -198,7 +198,9 @@
     "views": "意见",
     "Music-publication": "",
     "Tube-publication": "",
-    "Monetization": ""
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -548,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "您必须在删除页面或组之前",
     "y-have-to-be-friend": "你一定是朋友",
     "you-hav-to-upgrad-a-manager-before-leave": "您必须先晋升经理才能离开小组",
-    "You-hv-to-be-verified": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -830,7 +833,19 @@
       "I-w-t-b-certified": "",
       "Certification-badge": "",
       "Already-verified": "",
-      "Already-certified": ""
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "接受暴力作为试图改变事物的手段",

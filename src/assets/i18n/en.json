@@ -198,7 +198,9 @@
     "views": "views",
     "Music-publication": "Music publication",
     "Tube-publication": "Tube publication",
-    "Monetization": "Monetization"
+    "Monetization": "Monetization",
+    "Loading": "Loading",
+    "Upload-yr-file-here": "Upload your file here"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -548,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "You must delete your pages or groups before",
     "y-have-to-be-friend": "you must be friends",
     "you-hav-to-upgrad-a-manager-before-leave": "You must promote a manager before leaving the group",
-    "You-hv-to-be-verified": "You have to be verified"
+    "You-hv-to-be-verified": "You have to be verified",
+    "You-hv-to-get-t-community": "You have to get the community"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -830,7 +833,19 @@
       "I-w-t-b-certified": "I want to be certified",
       "Certification-badge": "Certification Badge",
       "Already-verified": "Already verified",
-      "Already-certified": "Already certified"
+      "Already-certified": "Already certified",
+      "Certification": "Certification",
+      "Y-m-complet-t-following-cdt-t-b-certified": "You must complete the following conditions to be certified.",
+      "B-verified": "Be verified",
+      "H-m-t-1000-user-in-t-community": "Have more than 1000 users in the community",
+      "Have-content-t-d-not-offend-the-community": "Have content that does not offend the community",
+      "T-b-accepted-b-t-administration": "To be accepted by the administration",
+      "Yr-profil-is-currently-being-checked-D": "Your profile is currently being checked. We will contact you within 48 hours by email.",
+      "Verification": "Verification",
+      "Pl-s-t-docs-a-complet-t-form-below": "Please send the necessary documents and complete the form below.",
+      "Upload-yr-password-id-identity-or-driver-license": "Upload your password, id identity or driver license.",
+      "Upload-a-photo-holding-t-ID-D": "Upload a photo holding the ID with a sheet of paper with today’s date and \"Wiins\" writes on it.",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "I agree that my data may be used to check my account."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "My publications are visible only by my friends",

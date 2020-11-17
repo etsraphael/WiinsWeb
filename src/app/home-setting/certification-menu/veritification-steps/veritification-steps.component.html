@@ -1,6 +1,7 @@
 <!-- Var -->
 <input hidden type='file' accept='image/*' id="idUpload" #idUpload (change)=saveIdFile(idUpload.files)>
-<input hidden type='file' accept='image/*' id="pictureTakenFile" #pictureTakenFile (change)=savepictureTakeFile(pictureTakenFile.files)>
+<input hidden type='file' accept='image/*' id="pictureTakenFile" #pictureTakenFile
+  (change)=savepictureTakeFile(pictureTakenFile.files)>
 
 <!-- Body -->
 <div class="card shadow">
@@ -9,12 +10,12 @@
     <div class="col-12 col-sm-12 col-md-8 col-xl-6 description-side">
       <div class="container-fluid" *ngIf="!loading">
         <div class="row mx-0 my-3">
-          <h1 class="title-card">Verification</h1>
+          <h1 class="title-card">{{'SETTING.verified.Verification'|translate}}</h1>
         </div>
         <!-- If the request is not pending -->
         <div *ngIf="!requestPending">
           <div class="row mx-0 mt-2">
-            <p>Please send the necessary documents and complete the form below.</p>
+            <p>{{'SETTING.verified.Pl-s-t-docs-a-complet-t-form-below'|translate}}</p>
           </div>
           <div class="row mx-0">
             <div class="container">
@@ -30,11 +31,13 @@
                         d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
                     </svg>
                     <span class="upload-link pl-3" *ngIf="fileIdname" for="profileUpload">{{fileIdname}}</span>
-                    <span class="upload-link pl-3" *ngIf="!fileIdname" for="profileUpload">Upload your file here</span>
+                    <span class="upload-link pl-3" *ngIf="!fileIdname"
+                      for="profileUpload">{{'CORE.Upload-yr-file-here'|translate}}</span>
                   </label>
                 </div>
                 <div class="row mx-0">
-                  <p class="pl-1 pt-1 input-desc">Upload your password, id identity or driver license.</p>
+                  <p class="pl-1 pt-1 input-desc">
+                    {{'SETTING.verified.Upload-yr-password-id-identity-or-driver-license'|translate}}</p>
                 </div>
               </div>
               <!-- Upload picture taken -->
@@ -50,20 +53,19 @@
                     </svg>
                     <span class="upload-link pl-3" *ngIf="pictureTakeName"
                       for="pictureTakenFile">{{pictureTakeName}}</span>
-                    <span class="upload-link pl-3" *ngIf="!pictureTakeName" for="pictureTakenFile">Upload your file
-                      here</span>
+                    <span class="upload-link pl-3" *ngIf="!pictureTakeName"
+                      for="pictureTakenFile">{{'CORE.Upload-yr-file-here'|translate}}</span>
                   </label>
                 </div>
                 <div class="row mx-0">
-                  <p class="pl-1 pt-1 input-desc">Upload a photo holding the ID with a sheet of paper with today’s date
-                    and "Wiins" writes on it.</p>
+                  <p class="pl-1 pt-1 input-desc">{{'SETTING.verified.Upload-a-photo-holding-t-ID-D'|translate}}</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row mx-0 my-2">
             <mat-checkbox class="col-1 mb-0" [checked]="checkedCond" (change)="changeCheckBtn($event)"></mat-checkbox>
-            <p class="col">I agree that my data may be used to check my account.</p>
+            <p class="col">{{'SETTING.verified.I-agree-t-m-data-may-b-used-t-check-my-account'|translate}}</p>
           </div>
           <div class="row mx-0">
             <button class="ml-auto m-3 btn btn-primary" (click)="confirm()">
@@ -75,22 +77,21 @@
         <div class="row mx-0 pending-message-container" *ngIf="requestPending">
           <div class="col my-auto text-center">
             <div class="row d-flex justify-content-center mb-4">
-            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-stopwatch" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07A7.001 7.001 0 0 1 8 16 7 7 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3zm0 2.1a.5.5 0 0 1 .5.5V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 0 1 .5-.5z" />
-            </svg>
-        </div>
-        <div class="row">
-            <span class="msg-confirm">Your profile is currently being checked. We will contact you within 48 hours by
-                email.</span>
-        </div>
+              <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-stopwatch" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07A7.001 7.001 0 0 1 8 16 7 7 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3zm0 2.1a.5.5 0 0 1 .5.5V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 0 1 .5-.5z" />
+              </svg>
+            </div>
+            <div class="row">
+              <span class="msg-confirm">{{'SETTING.verified.Yr-profil-is-currently-being-checked-D'|translate}}</span>
+            </div>
           </div>
         </div>
       </div>
       <div class="container-fluid" *ngIf="loading">
         <div class="row mx-0 container-loading">
-          <div class="loader m-auto">Loading...</div>
+          <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
         </div>
       </div>
     </div>
