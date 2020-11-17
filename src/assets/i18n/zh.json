@@ -73,10 +73,12 @@
     "Cancel": "Annuler",
     "Cancel-the-request": "取消请求",
     "Category": "类别",
+    "Certification": "认证",
     "Change": "改变",
     "Change-the-photo": "更改照片",
     "Choice": "选择",
     "Chosse-a-date": "选择一个日期",
+    "Close": "关闭",
     "Coming-soon": "即将推出",
     "Comment": "评论",
     "Confirm": "确认",
@@ -107,13 +109,16 @@
     "Join": "加入",
     "Know-us": "了解我们",
     "Leave": "离开",
+    "Ledger": "帐",
     "Like": "喜欢",
     "Manage": "去管理",
+    "Max": "麦克斯",
     "Members": "会员",
     "My-Favorites": "我最喜欢的",
     "My-community": "我的社区",
     "Name": "名称",
     "Next": "下一个",
+    "Not-enough": "不够",
     "Now": "现在",
     "Or": "或",
     "Others": "其他",
@@ -121,13 +126,16 @@
     "Participate": "参与",
     "Password": "密码",
     "Payment": "付款",
+    "Pending": "等待",
     "Period": "时期",
     "Premium": "溢价",
+    "Previous": "以前",
     "Price": "奖",
     "Private": "私人的",
     "Profile": "Profile",
     "Public": "上市",
     "Rate": "率",
+    "Receipt": "收据",
     "Redirection": "重 定向",
     "Reset": "重启",
     "Save": "保存",
@@ -141,6 +149,7 @@
     "Sponsored": "率",
     "Stages": "阶段",
     "Start": "开始",
+    "Status": "地位",
     "Story": "故事",
     "Subscribe": "订阅",
     "Taxes": "税",
@@ -164,6 +173,7 @@
     "Wiins": "温斯",
     "Wiins.io": "Wiins.io",
     "With": "用",
+    "You-can-do-it-here": "你可以在这里做",
     "Your-Password..": "你的密码",
     "Your-Pseudo..": "您的用户名",
     "and": "和",
@@ -186,16 +196,11 @@
     "responses": "回应",
     "soon": "不久",
     "views": "意见",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -495,6 +500,7 @@
     "Email-invalid": "电邮无效",
     "Email_already_exist": "此电子邮件已存在",
     "Incorrect": "错误",
+    "Insufficient_amount": "金额不足",
     "Invalid-password": "您的密码不正确",
     "No-changes-hv-been-made": "未进行任何更改",
     "No-page-has-this-name": "尚未进行任何更改",
@@ -544,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "您必须在删除页面或组之前",
     "y-have-to-be-friend": "你一定是朋友",
     "you-hav-to-upgrad-a-manager-before-leave": "您必须先晋升经理才能离开小组",
-    "Insufficient_amount": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -577,12 +584,12 @@
     "click-on-email": "请点击电子邮件链接"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "最近的项目",
+    "Lastest-tube": "最后管",
     "My-music": "我的音乐",
     "My-wiinsers": "我的温瑟斯",
     "Tops": "上衣",
-    "Trend": "趋势",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "趋势"
   },
   "MINI-CHAT": {
     "text-a-friend": "给朋友发短信"
@@ -759,6 +766,27 @@
       "lang-of-btn-title-others": "该设备上平台的按钮，标题和其他文本的语言",
       "lang-of-plateforme": "平台语言"
     },
+    "ledger": {
+      "Account-disable-now-description": "帐户暂时禁用，您现在在平台上不可见。如果您的帐户在下次付款时处于非活动状态，则 4.99 将提取您下一笔售出的账户，以享受接下来的 30 天。",
+      "Address": "地址",
+      "Address-to-send": "要发送的地址",
+      "Amount": "量",
+      "Amount-to-transfert": "要转移的金额",
+      "Are-y-sure-t-cancel-t-transaction": "您确定要取消此交易吗？",
+      "Be-careful-make-sure-y-have-the-right-address-d": "小心，确保地址正确。确认转账后不予退款。",
+      "Card-description-payment-subscription": "订阅允许您保留在此平台的所有功能。您的所有信息都在此平台内私下保护。Wiins 绝不会将您的信息分享给第三方公司。每个内容都保留在平台内。欢迎来到温斯",
+      "Currency": "货币",
+      "Fees-3": "费用 （3%）",
+      "Next-facturation-date": "[值] 天中的下一个事实",
+      "Pending-Transfert-Request": "待处理转移请求",
+      "T-admin-ll-take-24h-d": "行政当局需要24小时传输加密。感谢您的信任",
+      "T-update-can-take-15min-after-the-confirmation": "确认后可能需要 15 分钟",
+      "Total-in-USD": "总计（美元）",
+      "Transfer": "转移",
+      "Y-are-going-t-transfert-to-this-address-d": "你要转到这个地址。是否确定？行政当局将在24小时延迟确认交易。",
+      "Yr-account-balance-is": "您的帐户余额是 ： {{value}}",
+      "price-per-month": "4.99 美元 / 月"
+    },
     "notif": {
       "enable-sound": "声音通知",
       "enable-sound-d": "收到通知时启用声音"
@@ -798,36 +826,32 @@
       "btn-friend": "使好友请求按钮可用",
       "h-can-b-yr-description": "您可以放置说明"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "此功能需要验证才能使用",
+      "Verified-zone": "已验证区域",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "接受暴力作为试图改变事物的手段",
       "my-publications-are-visible-to-every-one": "接受暴力作为试图改变事物的手段",
       "who-c-find-me": "谁能找到我 ？",
       "who-c-find-me-d": "当您的用户名在搜索栏中输入时，这些人将能够看到显示您的个人资料。"
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +901,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "您的音乐标识符"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "美",
+      "Comedy": "喜剧",
+      "Dance": "舞蹈",
+      "Gaming": "游戏",
+      "How-to": "如何",
+      "Movies": "电影",
+      "Music": "音乐",
+      "News": "新闻",
+      "Sport": "运动",
+      "Travel": "旅行",
+      "Trending": "趋势"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "添加封面图片",
@@ -952,19 +991,7 @@
       "Visualisation-of-the-video": "视频的可视化"
     }
   },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
-    }
+  "STAT": {
+    "Better-reference": ""
   }
 }
