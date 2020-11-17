@@ -4,9 +4,7 @@
   <div *ngSwitchCase="'menu'">
     <div class="container-fluid py-5">
       <!-- Container Menu -->
-      <div [ngSwitch]="(myprofile$|async)?.levelCertification">
-        <!-- Not verified and not certified -->
-        <div class="row mx-0" *ngSwitchCase="0">
+        <div class="row mx-0">
           <!-- Verifired Card -->
           <div class="col-12 col-sm-12 col-md-6">
             <div class="card card-bg-1">
@@ -41,7 +39,10 @@
               </div>
               <div class="card-footer">
                 <div class="row mx-0">
-                  <button class="btn ml-auto mr-3 btn-start" (click)="selectPlace('verification')">
+                  <button class="btn ml-auto mr-3 btn-success" *ngIf="(myprofile$|async)?.levelCertification > 0">
+                    <span>Already verified</span>
+                  </button>
+                  <button class="btn ml-auto mr-3 btn-start" *ngIf="(myprofile$|async)?.levelCertification == 0" (click)="selectPlace('verification')">
                     <span>Start</span>
                   </button>
                 </div>
@@ -88,7 +89,10 @@
               </div>
               <div class="card-footer">
                 <div class="row mx-0">
-                  <button class="btn ml-auto mr-3 btn-start" (click)="selectPlace('certification')">
+                  <button class="btn ml-auto mr-3 btn-success" *ngIf="(myprofile$|async)?.levelCertification == 2">
+                    <span>Already Certified</span>
+                  </button>
+                  <button class="btn ml-auto mr-3 btn-start" *ngIf="(myprofile$|async)?.levelCertification < 2" (click)="selectPlace('certification')">
                     <span>Start</span>
                   </button>
                 </div>
@@ -96,11 +100,6 @@
             </div>
           </div>
         </div>
-        <!-- Verified and not certified -->
-        <div *ngSwitchCase="1">output</div>
-        <!-- Verified and certified -->
-        <div *ngSwitchCase="2">output</div>
-      </div>
     </div>
 
   </div>
