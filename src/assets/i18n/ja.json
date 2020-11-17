@@ -73,10 +73,12 @@
     "Cancel": "キャンセルします",
     "Cancel-the-request": "要求をキャンセルする",
     "Category": "カテゴリ",
+    "Certification": "証明",
     "Change": "変更",
     "Change-the-photo": "写真を変更する",
     "Choice": "選択",
     "Chosse-a-date": "日付を選択してください",
+    "Close": "閉じる",
     "Coming-soon": "もうすぐです",
     "Comment": "コメントします",
     "Confirm": "確認するために",
@@ -107,13 +109,16 @@
     "Join": "参加",
     "Know-us": "私たちを知る",
     "Leave": "去る",
+    "Ledger": "元帳",
     "Like": "お気に入り",
     "Manage": "管理する",
+    "Max": "最大",
     "Members": "メンバー",
     "My-Favorites": "お気に入り",
     "My-community": "私のコミュニティ",
     "Name": "名前",
     "Next": "次に",
+    "Not-enough": "十分ではありません",
     "Now": "いま",
     "Or": "または",
     "Others": "その他",
@@ -121,13 +126,16 @@
     "Participate": "参加",
     "Password": "パスワード",
     "Payment": "支払い",
+    "Pending": "保留 中",
     "Period": "期間",
     "Premium": "プレミアム",
+    "Previous": "先の",
     "Price": "賞",
     "Private": "民間",
     "Profile": "プロフィール",
     "Public": "公衆",
     "Rate": "料金",
+    "Receipt": "領収 書",
     "Redirection": "リダイレクト",
     "Reset": "リセットする",
     "Save": "セーブ",
@@ -141,6 +149,7 @@
     "Sponsored": "料金",
     "Stages": "ステージ",
     "Start": "開始",
+    "Status": "ステータス",
     "Story": "物語",
     "Subscribe": "購読",
     "Taxes": "税金",
@@ -164,6 +173,7 @@
     "Wiins": "ウィインズ",
     "Wiins.io": "Wiins.io",
     "With": "と",
+    "You-can-do-it-here": "あなたはここでそれを行うことができます",
     "Your-Password..": "あなたのパスワード",
     "Your-Pseudo..": "ユーザー名",
     "and": "そして",
@@ -186,16 +196,11 @@
     "responses": "反応",
     "soon": "すぐに",
     "views": "景色",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -495,6 +500,7 @@
     "Email-invalid": "メールが無効です",
     "Email_already_exist": "この電子メールは既に存在します",
     "Incorrect": "誤った",
+    "Insufficient_amount": "金額が不足しています",
     "Invalid-password": "パスワードが間違っています",
     "No-changes-hv-been-made": "変更は行われていません",
     "No-page-has-this-name": "変更は行われていません",
@@ -544,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "前にページまたはグループを削除する必要があります。",
     "y-have-to-be-friend": "あなたは友達でなければなりません",
     "you-hav-to-upgrad-a-manager-before-leave": "グループを離れる前にマネージャーを昇格させる必要があります",
-    "Insufficient_amount": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -577,12 +584,12 @@
     "click-on-email": "メールのリンクをクリックしてください"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "最後のプロジェクト",
+    "Lastest-tube": "最後のチューブ",
     "My-music": "私の音楽",
     "My-wiinsers": "私のウィインサー",
     "Tops": "トップス",
-    "Trend": "傾向",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "傾向"
   },
   "MINI-CHAT": {
     "text-a-friend": "友達にメッセージを送る"
@@ -759,6 +766,27 @@
       "lang-of-btn-title-others": "このデバイスのプラットフォームのボタン、タイトル、その他のテキストの言語",
       "lang-of-plateforme": "プラットフォーム言語"
     },
+    "ledger": {
+      "Account-disable-now-description": "アカウントは一時的に無効にされ、あなたは今プラットホームで見えません。次の支払いのためにアカウントが無効になっている場合、次の30日間を楽しむために、次の販売の4.99が取り消されます。",
+      "Address": "アドレス",
+      "Address-to-send": "送信するアドレス",
+      "Amount": "量",
+      "Amount-to-transfert": "転送する金額",
+      "Are-y-sure-t-cancel-t-transaction": "このトランザクションをキャンセルしますか?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "注意してください、あなたが正しいアドレスを持っていることを確認してください。転送の確認後、返金は行いません。",
+      "Card-description-payment-subscription": "サブスクリプションを使用すると、すべての機能を持つこのプラットフォームに残ることができます。すべての情報は、このプラットフォーム内で非公開で保護されています。Wiinsは、第三者企業に情報を共有することはありません。すべてのコンテンツはプラットフォーム内にとどまります。ウィインズへようこそ。",
+      "Currency": "通貨",
+      "Fees-3": "手数料(3%)",
+      "Next-facturation-date": "{{値}日の次のファクトレーション",
+      "Pending-Transfert-Request": "保留中の転送要求",
+      "T-admin-ll-take-24h-d": "行政は暗号を転送するために24時間かかります。あなたの信頼に感謝します",
+      "T-update-can-take-15min-after-the-confirmation": "更新は、確認後15分かかることがあります",
+      "Total-in-USD": "米ドルの合計",
+      "Transfer": "転送",
+      "Y-are-going-t-transfert-to-this-address-d": "このアドレスに転送します。確かですか。政権は24時間遅れて取引を確認します。",
+      "Yr-account-balance-is": "口座残高は: {{value}}",
+      "price-per-month": "4.99$ / 月"
+    },
     "notif": {
       "enable-sound": "音声通知",
       "enable-sound-d": "通知があるときにサウンドを有効にする"
@@ -798,36 +826,32 @@
       "btn-friend": "フレンドリクエストボタンを使用可能にする",
       "h-can-b-yr-description": "説明を入力できます。"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "この機能を使用するには、検証が必要です。",
+      "Verified-zone": "確認済みゾーン",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "物事を変えようとする手段としての暴力の受け入れ",
       "my-publications-are-visible-to-every-one": "物事を変えようとする手段としての暴力の受け入れ",
       "who-c-find-me": "誰が私を見つけることができますか?",
       "who-c-find-me-d": "検索バーにユーザー名を入力すると、プロフィールが表示されます。"
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +901,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "音楽識別子"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "美しさ",
+      "Comedy": "コメディ",
+      "Dance": "ダンス",
+      "Gaming": "ゲーム",
+      "How-to": "使い方",
+      "Movies": "映画",
+      "Music": "音楽",
+      "News": "ニュース",
+      "Sport": "スポーツ",
+      "Travel": "旅行",
+      "Trending": "トレンド"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "カバー画像を追加する",
@@ -952,19 +991,7 @@
       "Visualisation-of-the-video": "ビデオの視覚化"
     }
   },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
-    }
+  "STAT": {
+    "Better-reference": ""
   }
 }

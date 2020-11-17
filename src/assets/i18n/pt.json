@@ -73,10 +73,12 @@
     "Cancel": "Cancelar",
     "Cancel-the-request": "Cancelar o pedido",
     "Category": "Categoria",
+    "Certification": "Certificação",
     "Change": "Mudar",
     "Change-the-photo": "Mude a foto",
     "Choice": "Escolha",
     "Chosse-a-date": "Selecione uma data",
+    "Close": "Perto",
     "Coming-soon": "Em breve",
     "Comment": "Comentar",
     "Confirm": "Confirmar",
@@ -107,13 +109,16 @@
     "Join": "Juntar",
     "Know-us": "Conheça-nos",
     "Leave": "Sair",
+    "Ledger": "Livro",
     "Like": "Curti",
     "Manage": "Gerenciar",
+    "Max": "Max",
     "Members": "Membros",
     "My-Favorites": "Meus favoritos",
     "My-community": "Minha comunidade",
     "Name": "Nome",
     "Next": "Próximo",
+    "Not-enough": "Não é suficiente.",
     "Now": "Agora",
     "Or": "Ou",
     "Others": "De outros",
@@ -121,13 +126,16 @@
     "Participate": "Participar",
     "Password": "Senha",
     "Payment": "Pagamento",
+    "Pending": "Pendente",
     "Period": "Período",
     "Premium": "Premium",
+    "Previous": "Anterior",
     "Price": "Prêmios",
     "Private": "Privado",
     "Profile": "Perfil",
     "Public": "Público",
     "Rate": "Taxas",
+    "Receipt": "Recibo",
     "Redirection": "Redirecionar",
     "Reset": "Redefinir",
     "Save": "Salve ",
@@ -141,6 +149,7 @@
     "Sponsored": "Taxas",
     "Stages": "Estágios",
     "Start": "Começar",
+    "Status": "Status",
     "Story": "Story",
     "Subscribe": "Assinar",
     "Taxes": "Impostos",
@@ -164,6 +173,7 @@
     "Wiins": "Wiins",
     "Wiins.io": "Wiins.io",
     "With": "Com",
+    "You-can-do-it-here": "Você pode fazer isso aqui.",
     "Your-Password..": "Sua senha",
     "Your-Pseudo..": "Seu nome de usuário",
     "and": "e",
@@ -186,16 +196,11 @@
     "responses": "respostas",
     "soon": "em breve",
     "views": "visualizações",
-    "Ledger": "",
-    "You-can-do-it-here": "",
-    "Certification": "",
-    "Previous": "",
-    "Receipt": "",
-    "Close": "",
-    "Status": "",
-    "Pending": "",
-    "Max": "",
-    "Not-enough": ""
+    "Music-publication": "",
+    "Tube-publication": "",
+    "Monetization": "",
+    "Loading": "",
+    "Upload-yr-file-here": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -495,6 +500,7 @@
     "Email-invalid": "Email inválido",
     "Email_already_exist": "Esse e-mail já existe",
     "Incorrect": "Incorreto",
+    "Insufficient_amount": "A quantidade é insuficiente",
     "Invalid-password": "sua senha está incorreta",
     "No-changes-hv-been-made": "Nenhuma alteração foi feita",
     "No-page-has-this-name": "Nenhuma alteração foi feita",
@@ -544,7 +550,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Você deve excluir suas páginas ou grupos antes",
     "y-have-to-be-friend": "você deve ser amigo",
     "you-hav-to-upgrad-a-manager-before-leave": "Você deve promover um gerente antes de sair do grupo",
-    "Insufficient_amount": ""
+    "You-hv-to-be-verified": "",
+    "You-hv-to-get-t-community": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",
@@ -577,12 +584,12 @@
     "click-on-email": "Por favor, clique no link do email"
   },
   "MAIN-MUSIC": {
+    "Lastest-Project": "Último projeto",
+    "Lastest-tube": "Último tubo",
     "My-music": "Minha música",
     "My-wiinsers": "Meus wiinsers",
     "Tops": "Os topos",
-    "Trend": "Tendência",
-    "Lastest-tube": "",
-    "Lastest-Project": ""
+    "Trend": "Tendência"
   },
   "MINI-CHAT": {
     "text-a-friend": "Texto para um amigo"
@@ -759,6 +766,27 @@
       "lang-of-btn-title-others": "Idioma dos botões, títulos e outros textos da plataforma neste dispositivo",
       "lang-of-plateforme": "Linguagem da plataforma"
     },
+    "ledger": {
+      "Account-disable-now-description": "Conta temporariamente desativada, você está invisível na plataforma agora. Se sua conta estiver inativa para o próximo pagamento, 4,99 serão retirados do seu próximo vendido para desfrutar dos próximos 30 dias.",
+      "Address": "Endereço",
+      "Address-to-send": "Endereço para enviar",
+      "Amount": "Quantidade",
+      "Amount-to-transfert": "Valor para transfert",
+      "Are-y-sure-t-cancel-t-transaction": "Tem certeza de cancelar essa transação?",
+      "Be-careful-make-sure-y-have-the-right-address-d": "Tenha cuidado, certifique-se de ter o endereço certo. Sem reembolso após a confirmação da transferência.",
+      "Card-description-payment-subscription": "A assinatura permite que você permaneça nesta plataforma com todas as funcionalidades. Todas as suas informações são privadas dentro desta plataforma. A Wiins nunca compartilhará suas informações para empresas terceirizas. Todo conteúdo permanece dentro da plataforma. Bem-vindo a Wiins.",
+      "Currency": "Moeda",
+      "Fees-3": "Taxas (3%)",
+      "Next-facturation-date": "Próxima facturação em {{value}} dias",
+      "Pending-Transfert-Request": "Solicitação de transferência pendente",
+      "T-admin-ll-take-24h-d": "A administração levará 24h para transferir a criptomoeda. Obrigado à sua confiança.",
+      "T-update-can-take-15min-after-the-confirmation": "A atualização pode levar 15min após a confirmação",
+      "Total-in-USD": "Total em USD",
+      "Transfer": "Transferência",
+      "Y-are-going-t-transfert-to-this-address-d": "Você vai transferir para este endereço. Tem certeza? A administração confirmará a transação em atraso de 24h.",
+      "Yr-account-balance-is": "O saldo da sua conta é : {{value}}",
+      "price-per-month": "4.99$ / meses"
+    },
     "notif": {
       "enable-sound": "Notificações sonoras",
       "enable-sound-d": "Ativar som quando você tiver uma notificação"
@@ -798,36 +826,32 @@
       "btn-friend": "Disponibilizar o botão de solicitação do amigo",
       "h-can-b-yr-description": "Você pode colocar uma descrição"
     },
+    "verified": {
+      "This-feature-requires-verification-to-use.": "Este recurso requer verificação para usar",
+      "Verified-zone": "Zona verificada",
+      "I-w-t-b-verified": "",
+      "I-w-t-b-certified": "",
+      "Certification-badge": "",
+      "Already-verified": "",
+      "Already-certified": "",
+      "Certification": "",
+      "Y-m-complet-t-following-cdt-t-b-certified": "",
+      "B-verified": "",
+      "H-m-t-1000-user-in-t-community": "",
+      "Have-content-t-d-not-offend-the-community": "",
+      "T-b-accepted-b-t-administration": "",
+      "Yr-profil-is-currently-being-checked-D": "",
+      "Verification": "",
+      "Pl-s-t-docs-a-complet-t-form-below": "",
+      "Upload-yr-password-id-identity-or-driver-license": "",
+      "Upload-a-photo-holding-t-ID-D": "",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+    },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "A aceitação da violência como um meio de tentar mudar as coisas",
       "my-publications-are-visible-to-every-one": "A aceitação da violência como um meio de tentar mudar as coisas",
       "who-c-find-me": "Quem pode me encontrar?",
       "who-c-find-me-d": "Quando seu nome de usuário for inserido na barra de pesquisa, essas pessoas poderão ver seu perfil exibido.  "
-    },
-    "ledger": {
-      "Yr-account-balance-is": "",
-      "Amount": "",
-      "Address": "",
-      "Pending-Transfert-Request": "",
-      "T-update-can-take-15min-after-the-confirmation": "",
-      "Currency": "",
-      "Transfer": "",
-      "Account-disable-now-description": "",
-      "price-per-month": "",
-      "Card-description-payment-subscription": "",
-      "Next-facturation-date": "",
-      "Are-y-sure-t-cancel-t-transaction": "",
-      "Address-to-send": "",
-      "Be-careful-make-sure-y-have-the-right-address-d": "",
-      "Fees-3": "",
-      "T-admin-ll-take-24h-d": "",
-      "Total-in-USD": "",
-      "Amount-to-transfert": "",
-      "Y-are-going-t-transfert-to-this-address-d": ""
-    },
-    "verified": {
-      "Verified-zone": "",
-      "This-feature-requires-verification-to-use.": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -877,6 +901,21 @@
   },
   "THIS-IS": {
     "id-of-t-music": "Seu identificador de música"
+  },
+  "TUBE": {
+    "Categorie": {
+      "Beauty": "Beleza",
+      "Comedy": "Comédia",
+      "Dance": "Dança",
+      "Gaming": "Jogos",
+      "How-to": "ਕਿਵੇਂ",
+      "Movies": "Filmes",
+      "Music": "Música",
+      "News": "Notícias",
+      "Sport": "Esporte",
+      "Travel": "Viagem",
+      "Trending": "Tendências"
+    }
   },
   "UPLOAD": {
     "add-cover-picture": "Adicione uma imagem de capa",
@@ -952,19 +991,7 @@
       "Visualisation-of-the-video": "Visualização do vídeo"
     }
   },
-  "TUBE": {
-    "Categorie": {
-      "Trending": "",
-      "Gaming": "",
-      "Dance": "",
-      "News": "",
-      "Travel": "",
-      "Beauty": "",
-      "Comedy": "",
-      "Movies": "",
-      "How-to": "",
-      "Sport": "",
-      "Music": ""
-    }
+  "STAT": {
+    "Better-reference": ""
   }
 }
