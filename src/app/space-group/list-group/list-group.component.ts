@@ -4,7 +4,8 @@ import { GroupModel } from 'src/app/core/models/group/group.model'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, GroupFeatureStoreSelectors, ProfileFeatureStoreSelectors, FeedPublicationStoreActions } from 'src/app/root-store'
 import { filter, skipWhile } from 'rxjs/operators'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 import { ProfileListComponent } from 'src/app/core/modal/profile-list/profile-list.component'
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
 

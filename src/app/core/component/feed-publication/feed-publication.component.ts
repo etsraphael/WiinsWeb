@@ -7,7 +7,6 @@ import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors,
 import { ProfileFeatureStoreSelectors } from 'src/app/root-store'
 import { filter, debounceTime, distinctUntilChanged, skipWhile } from 'rxjs/operators'
 import { Store, select } from '@ngrx/store'
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { IconAnimation } from 'src/assets/route-animation/icon-animation'
 import { ProfileModel } from '../../models/baseUser/profile.model'
 import { FeedPublication, PostPublication, PicturePublication, VideoPublication } from '../../models/publication/feed/feed-publication.model'
@@ -17,6 +16,7 @@ import { UploadService, RespondGetUploadUrl, UrlSigned } from '../../services/up
 import * as uuid from 'uuid';
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { UploadWithoutInjectorService } from '../../services/upload/upload-without-injector.service'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-feed-publication',

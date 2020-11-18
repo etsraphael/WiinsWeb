@@ -6,8 +6,8 @@ import { Store, select } from '@ngrx/store'
 import { ProfileModel } from '../core/models/baseUser/profile.model'
 import { filter, skipWhile, take } from 'rxjs/operators'
 import { slideInProfile } from 'src/assets/route-animation/profile-animation'
-import { MatDialog, MatDialogRef } from '@angular/material'
 import { CrooperImageValidationComponent } from '../core/modal/crooper-image-validation/crooper-image-validation.component'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-myprofile',

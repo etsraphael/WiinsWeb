@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { CoreService } from 'src/app/core/services/core/core.service';
 import { languageList } from 'src/app/core/data/language';
 import { take, skipWhile, filter } from 'rxjs/operators';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable, Subscription } from 'rxjs';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { Store, select } from '@ngrx/store';

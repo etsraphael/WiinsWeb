@@ -1,10 +1,11 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { take } from 'rxjs/operators';
 import { TransfertAccount } from 'src/app/home-setting/ledger/ledger.component';
 import { TransfertRequest } from '../../models/payment/TransfertRequest.model';
-import { PaymentService, StatutAndMessageResponse } from '../../services/payment/payment.service';
+import { PaymentService } from '../../services/payment/payment.service';
 
 @Component({
   selector: 'app-transfert-crypto-modal',

@@ -20,16 +20,6 @@ export const selectAllCommentFeatureItems: (
   state: object
 ) => CommentModel[] = featureAdapter.getSelectors(selectCommentFeatureState).selectAll;
 
-export const selectCommentFeatureById = (id: string) =>
-  createSelector(this.selectAllCommentFeatureItems, (allCommentFeatures: CommentModel[]) => {
-    if (allCommentFeatures) {
-      return allCommentFeatures.find(p => p._id === id);
-    } else {
-      return null;
-    }
-  });
-
-
 export const selectCommentFeatureError: MemoizedSelector<object, any> = createSelector(
   selectCommentFeatureState,
   getError

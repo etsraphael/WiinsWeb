@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy, ViewChild, ElementRef, Inject, EventEmitt
 import { Store, select } from '@ngrx/store'
 import { Observable } from 'rxjs'
 import { filter, skipWhile } from 'rxjs/operators'
-import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material'
 import { ProfileModel } from '../../models/baseUser/profile.model'
 import { PicturePublication, PostPublication, VideoPublication } from '../../models/publication/feed/feed-publication.model'
 import {
@@ -17,6 +16,7 @@ import { ValidationsComponent } from '../validations/validations.component'
 import { TranslationService } from '../../services/translation/translation.service'
 import { ProfileListComponent } from '../profile-list/profile-list.component'
 import { CommentModel } from '../../models/comment/comment.model'
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-publication-modal',

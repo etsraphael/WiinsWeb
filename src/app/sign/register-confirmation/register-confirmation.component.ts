@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import { AuthenticationService } from '../../core/services/authentication/authentication.service'
 import { ActivatedRoute, Router } from '@angular/router'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 import { skipWhile, filter } from 'rxjs/operators'
 import { Observable, Subscription } from 'rxjs'

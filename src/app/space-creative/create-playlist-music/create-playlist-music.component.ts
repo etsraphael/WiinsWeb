@@ -7,9 +7,10 @@ import { filter, debounceTime, distinctUntilChanged, skipWhile } from 'rxjs/oper
 import { Music } from 'src/app/core/models/publication/music/music.model';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Playlist } from 'src/app/core/models/music/playlist.model';
-import { MatDialogRef, MatDialog, MatSnackBar } from '@angular/material';
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-create-playlist-music',

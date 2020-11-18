@@ -15,7 +15,8 @@ import { Router } from '@angular/router'
 import { LikeCommentNotif } from 'src/app/core/models/notification/likeCommentNotif.model'
 import { ResponseNotifPlaylist } from 'src/app/core/models/notification/responseNotifPlaylist.model'
 import { PublicationModalComponent } from 'src/app/core/modal/publication-modal/publication-modal.component'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 import { FeedPublication } from 'src/app/core/models/publication/feed/feed-publication.model'
 import { TranslationService } from 'src/app/core/services/translation/translation.service'
 import { ReportMessageComponent } from 'src/app/core/modal/report-message/report-message.component'

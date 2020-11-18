@@ -7,10 +7,11 @@ import { Store, select } from '@ngrx/store'
 import { RootStoreState, ProfileFeatureStoreSelectors, SearchProfileStoreActions, SearchProfileStoreSelectors, PageFeatureStoreActions, PageFeatureStoreSelectors } from 'src/app/root-store'
 import { Observable, Subscription, combineLatest } from 'rxjs'
 import { ActivatedRoute } from '@angular/router'
-import { MatSnackBar, MatDialog, MatDialogRef } from '@angular/material'
 import { PageModel } from 'src/app/core/models/page/page.model'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-create-page',

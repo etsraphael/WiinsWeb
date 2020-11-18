@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
 import { environment } from 'src/environments/environment'
 import { DatePipe } from '@angular/common'
 import * as _ from 'lodash'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 
 @Component({

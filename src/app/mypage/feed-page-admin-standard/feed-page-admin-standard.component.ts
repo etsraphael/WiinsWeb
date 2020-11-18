@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, OnDestroy, ViewChild, ElementRef } from '@angular/core'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, PushLikeFeatureStoreActions, FeedPublicationStoreActions, ProfileFeatureStoreSelectors, SearchProfileStoreSelectors, CommentFeatureStoreActions, SearchProfileStoreActions } from 'src/app/root-store'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 import { PicturePublication, PostPublication, VideoPublication, FeedPublication } from 'src/app/core/models/publication/feed/feed-publication.model'
 import { TranslationService } from 'src/app/core/services/translation/translation.service'
 import { likeFeedPublicationModel } from 'src/app/core/models/publication-options/like.model'

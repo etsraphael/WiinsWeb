@@ -127,27 +127,8 @@ import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-mod
 import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component';
 import { CertificationStepsComponent } from './home-setting/certification-menu/certification-steps/certification-steps.component';
 import { VeritificationStepsComponent } from './home-setting/certification-menu/veritification-steps/veritification-steps.component'
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatProgressBarModule } from '@angular/material/progress-bar'
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatStepperModule } from '@angular/material/stepper';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatTableModule } from '@angular/material/table';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
+
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -181,14 +162,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
-    HttpClientJsonpModule, CoreModule, MatNativeDateModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
-    MaterialModule, ReactiveFormsModule, MatToolbarModule, SiPipeModule, MatFormFieldModule, ClickOutsideModule,
-    MatInputModule, MatSelectModule, MatIconModule, MatButtonModule, MatCardModule, MatTableModule,
-    MatDividerModule, MatSnackBarModule, MatStepperModule, MatDatepickerModule, MatButtonToggleModule, MatDialogModule,
-    MatSlideToggleModule, MatProgressBarModule, MatBadgeModule, MatAutocompleteModule, GooglePlaceModule,
+    HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
+    MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
     InfiniteScrollModule, RoundProgressModule, DragDropModule, ImageCropperModule, QRCodeModule, Ng5SliderModule,
     TranslateModule.forRoot({ loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] } }),
-    MatExpansionModule, DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot()
   ],
   providers: [DatePipe, NgxImageCompressService],
   bootstrap: [AppComponent],

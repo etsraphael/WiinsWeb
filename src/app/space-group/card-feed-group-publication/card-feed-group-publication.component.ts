@@ -10,7 +10,6 @@ import {
   SearchProfileStoreSelectors, GroupFeatureStoreSelectors, FeedPublicationStoreActions
 } from 'src/app/root-store'
 import { DomSanitizer } from '@angular/platform-browser'
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { skipWhile, filter, debounceTime, distinctUntilChanged } from 'rxjs/operators'
 import { IconAnimation } from 'src/assets/route-animation/icon-animation'
 import { GroupModel } from 'src/app/core/models/group/group.model'
@@ -20,6 +19,7 @@ import { UrlSigned, UploadService, RespondGetUploadUrl } from 'src/app/core/serv
 import * as uuid from 'uuid';
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { UploadWithoutInjectorService } from 'src/app/core/services/upload/upload-without-injector.service'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-card-feed-group-publication',

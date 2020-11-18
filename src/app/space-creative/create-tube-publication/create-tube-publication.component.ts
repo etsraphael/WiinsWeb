@@ -4,7 +4,6 @@ import { ProfileModel } from 'src/app/core/models/baseUser/profile.model';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState, ProfileFeatureStoreSelectors, TubeFeedStoreActions } from 'src/app/root-store';
 import { skipWhile, filter } from 'rxjs/operators';
-import { MatSnackBar, MatDialogRef, MatDialog, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from 'src/environments/environment'
 import { UrlSigned, UploadService, RespondGetUploadUrl } from 'src/app/core/services/upload/upload.service';
@@ -14,6 +13,8 @@ import { HttpEvent, HttpEventType } from '@angular/common/http';
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component';
 import { categorieGroup } from 'src/app/core/data/categorie-tube';
 import { TubePublicationModel } from 'src/app/core/models/tube/tube.model';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-create-tube-publication',

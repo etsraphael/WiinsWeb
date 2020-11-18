@@ -7,7 +7,7 @@ import { ActionsMusicProject } from './actions'
 import { Router } from '@angular/router'
 import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { Action } from '@ngrx/store'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 import { MusicService } from 'src/app/core/services/publications/music/music.service'
 

@@ -1,11 +1,11 @@
 import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState, ProfileListStoreActions, ProfileListStoreSelectors } from 'src/app/root-store';
 import { Observable } from 'rxjs';
 import { skipWhile, filter } from 'rxjs/operators';
 import { ProfileModel } from '../../models/baseUser/profile.model';
 import { PageModel } from '../../models/page/page.model';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-profile-list',

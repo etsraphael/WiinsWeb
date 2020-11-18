@@ -8,7 +8,6 @@ import {
 } from 'src/app/root-store'
 import { PublicationModalComponent } from '../../modal/publication-modal/publication-modal.component'
 import { IconAnimation } from 'src/assets/route-animation/icon-animation'
-import { MatDialog, MatDialogRef } from '@angular/material'
 import { Router } from '@angular/router';
 import { ProfileModel } from '../../models/baseUser/profile.model'
 import { PicturePublication, PostPublication, VideoPublication, FeedPublication } from '../../models/publication/feed/feed-publication.model'
@@ -20,6 +19,7 @@ import { TranslateService } from '@ngx-translate/core'
 import { ProfileListComponent } from '../../modal/profile-list/profile-list.component'
 import { ReportModalComponent } from '../../modal/report-modal/report-modal.component'
 import { CommentModel } from '../../models/comment/comment.model'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-feed-publication-standard',

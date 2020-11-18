@@ -6,7 +6,7 @@ import { PrivacySetting } from 'src/app/core/models/baseUser/privacySetting.mode
 import { skipWhile, filter } from 'rxjs/operators';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-visibility-main',

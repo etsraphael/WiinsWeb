@@ -8,7 +8,8 @@ import { skipWhile, filter, distinctUntilChanged } from 'rxjs/operators'
 import { Music } from 'src/app/core/models/publication/music/music.model'
 import { ContentIdComponent } from 'src/app/core/modal/content-id/content-id.component'
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-profile-music',

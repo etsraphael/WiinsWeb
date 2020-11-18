@@ -8,10 +8,11 @@ import { Observable, Subscription, combineLatest } from 'rxjs'
 import { filter, skipWhile, debounceTime, distinctUntilChanged, map, take } from 'rxjs/operators'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { MemberGroupModel } from 'src/app/core/models/group/member-group.model'
-import { MatSnackBar, MatDialog } from '@angular/material'
 import { TeamUpdate } from 'src/app/core/models/confirmation/teamUpdate'
 import { GroupValidationComponent } from 'src/app/core/modal/group-validation/group-validation.component'
 import { TranslateService } from '@ngx-translate/core'
+import { MatSnackBar } from '@angular/material/snack-bar'
+import { MatDialog } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-group-management',

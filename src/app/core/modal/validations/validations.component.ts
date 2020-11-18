@@ -1,7 +1,7 @@
-import { Component, Inject, EventEmitter, Output } from '@angular/core'
+import { Component, Inject, EventEmitter } from '@angular/core'
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
 import { Store } from '@ngrx/store'
 import { RootStoreState, CommentFeatureStoreActions, GroupFeatureStoreActions, FeedPublicationStoreActions, ProfileFeatureStoreActions, TubeFeedStoreActions } from 'src/app/root-store'
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material'
 import { PicturePublication, PostPublication, VideoPublication } from '../../models/publication/feed/feed-publication.model'
 import { TubeModel } from '../../models/tube/tube.model'
 

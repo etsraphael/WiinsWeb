@@ -6,7 +6,7 @@ import { skipWhile, filter, distinctUntilChanged } from 'rxjs/operators';
 import { Music } from '../../core/models/publication/music/music.model';
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service';
 import { TranslateService } from '@ngx-translate/core';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-mini-player-music',

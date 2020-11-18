@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject, ViewChild, Output, EventEmitter, OnDestroy } from '@angular/core'
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material'
 import { ImageCropperComponent, ImageCroppedEvent } from 'ngx-image-cropper'
 import { NgxImageCompressService } from 'ngx-image-compress'
 import { environment } from 'src/environments/environment'
@@ -10,6 +9,7 @@ import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { Store } from '@ngrx/store'
 import { RootStoreState, ProfileFeatureStoreActions } from 'src/app/root-store'
 import { UploadWithoutInjectorService } from '../../services/upload/upload-without-injector.service'
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-crooper-image-validation',
