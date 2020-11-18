@@ -4,8 +4,8 @@ import { RootStoreState,  MusicProjectStoreSelectors, MusicProjectStoreActions }
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { skipWhile, filter } from 'rxjs/operators';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { MusicProject } from '../../models/publication/music/musicProject.model';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-password-validations',

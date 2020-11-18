@@ -8,9 +8,10 @@ import { Store, select } from '@ngrx/store'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { ActivatedRoute } from '@angular/router'
 import { FormControl } from '@angular/forms'
-import { MatDialog, MatSnackBar } from '@angular/material'
 import { ManagementTeamComponent } from 'src/app/core/modal/management-team/management-team.component'
 import { TranslateService } from '@ngx-translate/core'
+import { MatDialog } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-team-page',

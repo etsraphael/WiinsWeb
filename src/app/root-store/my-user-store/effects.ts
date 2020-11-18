@@ -13,10 +13,10 @@ import { StatePlarformService } from 'src/app/core/statePlarform/state-plarform.
 import { CurrentRoomStoreActions } from '../messenger/current-room-store'
 import { MessengerService } from 'src/app/core/services/messenger/messenger.service'
 import { AllRoomsStoreActions } from '../messenger/all-rooms-store'
-import { MatSnackBar } from '@angular/material'
 import { TranslateService } from '@ngx-translate/core'
 import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { Router } from '@angular/router'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Injectable()
 export class MyUserEffects {

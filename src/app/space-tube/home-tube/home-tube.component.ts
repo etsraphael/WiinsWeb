@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState, TubeMenuStoreSelectors, TubeMenuStoreActions } from 'src/app/root-store';
 import { filter, skipWhile } from 'rxjs/operators';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

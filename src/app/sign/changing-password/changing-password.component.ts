@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingUserService } from 'src/app/core/services/setting-user/setting-user.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';

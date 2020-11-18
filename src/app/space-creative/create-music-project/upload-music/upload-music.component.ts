@@ -9,7 +9,6 @@ import { Observable, Subscription, combineLatest } from 'rxjs'
 import { Music } from 'src/app/core/models/publication/music/music.model'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { ActivatedRoute } from '@angular/router'
-import { MatSnackBarRef, SimpleSnackBar, MatSnackBar, MatDialogRef, MatDialog } from '@angular/material'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 import { UrlSigned, UploadService, RespondGetUploadUrl } from 'src/app/core/services/upload/upload.service'
@@ -17,6 +16,8 @@ import * as uuid from 'uuid'
 import { environment } from 'src/environments/environment'
 import { UploadWithoutInjectorService } from 'src/app/core/services/upload/upload-without-injector.service'
 import { HttpEvent, HttpEventType } from '@angular/common/http'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-upload-music',

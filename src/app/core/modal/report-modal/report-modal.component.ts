@@ -1,10 +1,10 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { PicturePublication, PostPublication, VideoPublication } from '../../models/publication/feed/feed-publication.model';
 import { Store } from '@ngrx/store';
 import { RootStoreState, ReportStoreActions } from 'src/app/root-store';
 import { ReportModel } from '../../models/report/report.model';
 import { reportData } from '../../data/report-data';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-report-modal',

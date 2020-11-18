@@ -5,11 +5,12 @@ import { catchError, map, switchMap, tap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
 import { ActionsGroup } from './actions'
 import { GroupService } from 'src/app/core/services/group/group.service'
-import { MatSnackBar, MatDialog } from '@angular/material'
 import { CoreService } from 'src/app/core/services/core/core.service'
 import { TeamUpdate } from 'src/app/core/models/confirmation/teamUpdate'
 import { Router } from '@angular/router'
 import { TranslateService } from '@ngx-translate/core'
+import { MatSnackBar } from '@angular/material/snack-bar'
+import { MatDialog } from '@angular/material/dialog'
 
 @Injectable()
 export class GroupEffects {

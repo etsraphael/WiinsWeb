@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CoreService } from 'src/app/core/services/core/core.service';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 

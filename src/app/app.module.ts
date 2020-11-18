@@ -3,25 +3,15 @@ import { RootStoreModule } from './root-store'
 import { BrowserModule } from '@angular/platform-browser'
 import { ReactiveFormsModule } from '@angular/forms'
 import { NgModule } from '@angular/core'
-import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientJsonpModule, HttpClientModule, HttpClient } from '@angular/common/http'
 import { DatePipe } from '@angular/common'
-import {
-  MatToolbarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatIconModule,
-  MatButtonModule, MatCardModule, MatTableModule, MatDividerModule, MatSnackBarModule, MatDatepickerModule,
-  MatButtonToggleModule, MatSlideToggleModule, MatBadgeModule, MatAutocompleteModule, MatStepperModule, MatProgressBarModule,
-  MatExpansionModule
-} from '@angular/material'
-import { DragDropModule } from '@angular/cdk/drag-drop'
 import { AppRoutingModule } from './app-routing.module'
 import { MaterialModule } from '../material'
 import { CoreModule } from './core/core.module'
-import { MatNativeDateModule } from '@angular/material'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule } from '@angular/forms'
 import { ClickOutsideModule } from 'ng-click-outside'
 import { InfiniteScrollModule } from 'ngx-infinite-scroll'
-import { AgmCoreModule } from '@agm/core'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { AppComponent } from './app.component'
 import { LoginComponent } from './sign/login/login.component'
@@ -98,7 +88,6 @@ import { PasswordValidationsComponent } from './core/modal/password-validations/
 import { UserListMessageComponent } from './space-messenger/user-list-message/user-list-message.component';
 import { CardChatComponent } from './space-messenger/card-chat/card-chat.component';
 import { TermOfUseComponent } from './term-of-use/term-of-use.component'
-import { GeocodeService } from './core/services/geo/geocode.service'
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import { SpaceDiscoverComponent } from './space-discover/space-discover.component'
 import { AutosizeModule } from 'ngx-autosize';
@@ -125,7 +114,6 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { ForgotPasswordComponent } from './sign/forgot-password/forgot-password.component';
 import { ChangingPasswordComponent } from './sign/changing-password/changing-password.component';
 import { FeedPageAdminStandardComponent } from './mypage/feed-page-admin-standard/feed-page-admin-standard.component';
-import { Ng5SliderModule } from 'ng5-slider';
 import { DeviceDetectorModule } from 'ngx-device-detector';
 import { CommunityListComponent } from './core/component/community-list/community-list.component'
 import { ReportModalComponent } from './core/modal/report-modal/report-modal.component'
@@ -138,6 +126,8 @@ import { TransfertCryptoModalComponent } from './core/modal/transfert-crypto-mod
 import { PasswordValidationComponent } from './core/modal/password-validation/password-validation.component';
 import { CertificationStepsComponent } from './home-setting/certification-menu/certification-steps/certification-steps.component';
 import { VeritificationStepsComponent } from './home-setting/certification-menu/veritification-steps/veritification-steps.component'
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -171,17 +161,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
-    HttpClientJsonpModule, CoreModule, MatNativeDateModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
-    MaterialModule, ReactiveFormsModule, MatToolbarModule, SiPipeModule, MatFormFieldModule, ClickOutsideModule,
-    MatInputModule, MatOptionModule, MatSelectModule, MatIconModule, MatButtonModule, MatCardModule, MatTableModule,
-    MatDividerModule, MatSnackBarModule, MatStepperModule, MatDatepickerModule, MatButtonToggleModule, MatDialogModule,
-    MatSlideToggleModule, MatProgressBarModule, MatBadgeModule, MatAutocompleteModule, GooglePlaceModule,
-    InfiniteScrollModule, RoundProgressModule, DragDropModule, ImageCropperModule, QRCodeModule, Ng5SliderModule,
+    HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
+    MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
+    InfiniteScrollModule, RoundProgressModule, DragDropModule, ImageCropperModule, QRCodeModule,
     TranslateModule.forRoot({ loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] } }),
-    AgmCoreModule.forRoot({ apiKey: 'AIzaSyBeGo5RVBH2HjPk0C4lXkQv2hhMKEpCz60' }),
-    MatExpansionModule, DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot()
   ],
-  providers: [DatePipe, GeocodeService, NgxImageCompressService],
+  providers: [DatePipe, NgxImageCompressService],
   bootstrap: [AppComponent],
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,

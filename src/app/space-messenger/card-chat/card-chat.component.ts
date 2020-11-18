@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject, OnDestroy, ElementRef, ViewChild, QueryList, ViewChildren } from '@angular/core'
 import { Room } from 'src/app/core/models/messenger/room.model'
-import { MatDialogRef, MatSnackBar, MAT_DIALOG_DATA } from '@angular/material'
 import { Observable, Subscription, combineLatest } from 'rxjs'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, RoomByIdStoreActions, RoomByIdStoreSelectors, CurrentRoomStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors, AllRoomsStoreActions } from 'src/app/root-store'
@@ -11,6 +10,8 @@ import { StatePlarformService } from 'src/app/core/statePlarform/state-plarform.
 import { FormControl } from '@angular/forms'
 import { TranslationService } from 'src/app/core/services/translation/translation.service'
 import { TranslateService } from '@ngx-translate/core'
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-card-chat',

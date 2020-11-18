@@ -11,9 +11,10 @@ import {
   UserStoreActions, UserStoreSelectors, RootStoreState,
   SearchPseudoStoreActions, SearchPseudoStoreSelectors
 } from 'src/app/root-store'
-import { MatSnackBar, MatDialog, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { ModalTOUComponent } from 'src/app/core/modal/modal-t-o-u/modal-t-o-u.component'
 import { DeviceDetectorService } from 'ngx-device-detector'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
+import { MatDialog } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-register',

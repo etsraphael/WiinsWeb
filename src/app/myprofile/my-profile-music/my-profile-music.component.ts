@@ -11,7 +11,8 @@ import { PasswordValidationsComponent } from 'src/app/core/modal/password-valida
 import { ValidatorFn, AbstractControl, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { DatePipe } from '@angular/common'
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-my-profile-music',

@@ -7,7 +7,6 @@ import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors,
 import { Observable, Subscription } from 'rxjs'
 import { filter, skipWhile, debounceTime, distinctUntilChanged } from 'rxjs/operators'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
-import { MatSnackBar, MatDialog, MatDialogRef } from '@angular/material'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 import * as uuid from 'uuid'
@@ -15,6 +14,8 @@ import { HttpEventType, HttpEvent } from '@angular/common/http'
 import { UrlSigned, UploadService, RespondGetUploadUrl } from 'src/app/core/services/upload/upload.service'
 import { UploadWithoutInjectorService } from 'src/app/core/services/upload/upload-without-injector.service'
 import { environment } from 'src/environments/environment'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-upload-album',

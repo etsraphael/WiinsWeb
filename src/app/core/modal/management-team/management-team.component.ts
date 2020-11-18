@@ -1,12 +1,13 @@
 import { Component, OnInit, Inject } from '@angular/core'
 import { AdminsFeatureStoreActions, RootStoreState, AdminsFeatureStoreSelectors } from 'src/app/root-store'
 import { TeamUpdate } from '../../models/confirmation/teamUpdate'
-import { MatDialogRef, MAT_DIALOG_DATA, MatSnackBar } from '@angular/material'
 import { FormGroup, FormBuilder, Validators } from '@angular/forms'
 import { Store, select } from '@ngrx/store'
 import { Observable } from 'rxjs'
 import { filter } from 'rxjs/operators'
 import { TranslateService } from '@ngx-translate/core'
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-management-team',

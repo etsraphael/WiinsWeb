@@ -6,7 +6,7 @@ import { UserModel } from '../core/models/baseUser/user.model'
 import { RootStoreState, MyUserStoreSelectors } from '../root-store'
 import { Store, select } from '@ngrx/store'
 import { skipWhile, filter } from 'rxjs/operators'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 
 @Component({
