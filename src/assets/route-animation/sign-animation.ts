@@ -1,5 +1,5 @@
-import { transition, trigger, query, style, animate, group, useAnimation, state } from '@angular/animations'
-import { jello, flash, lightSpeedIn } from 'ngx-animate'
+import { animate, group, query, style, transition, trigger, useAnimation } from '@angular/animations'
+import { jello, lightSpeedIn } from 'ngx-animate'
 
 export const SignAnimation =[
   trigger('routeAnimations', [
