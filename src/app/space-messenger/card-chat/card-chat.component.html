@@ -113,7 +113,7 @@
   </div>
 
   <!-- Card body -->
-  <div #content class="trending-chat" [ngSwitch]="mode" infiniteScroll [infiniteScrollUpDistance]="1"
+  <div #content class="trending-chat h-100" [ngSwitch]="mode" infiniteScroll [infiniteScrollUpDistance]="1"
     [infiniteScrollThrottle]="50" [scrollWindow]="false" (scrolledUp)="onScrollUp()">
     <div *ngSwitchCase="mode === 'deleteRoom' || mode === 'muteRoom' ? mode : ''" class="container w-100 h-100 pt-2">
       <div class="row mx-0 h-100" *ngIf="(room$ | async); let room">
