@@ -78,10 +78,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
       case 'deleteMusicProject':
         this.store$.dispatch(new MusicProjectStoreActions.deleteMusicProject(this.data.musicProjectId, this.f.password.value))
         break
-      case 'updateImgMusicProject':
-        const updateImgMusicProject = new MusicProject(null, null, null, this.data.pictureUrl, null, this.data.musicProjectId)
-        this.store$.dispatch(new MusicProjectStoreActions.UpdateMusicProject(updateImgMusicProject, this.f.password.value))
-        break
       case 'changeDateMusicProject':
         const updateDateMusic = new MusicProject(this.data.dateChanged, null, null, null, null, this.data.musicProjectId)
         this.store$.dispatch(new MusicProjectStoreActions.UpdateMusicProject(updateDateMusic, this.f.password.value))

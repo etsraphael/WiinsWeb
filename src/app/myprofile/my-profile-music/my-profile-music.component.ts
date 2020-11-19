@@ -12,6 +12,7 @@ import { ValidatorFn, AbstractControl, FormControl, FormBuilder, Validators } fr
 import { DatePipe } from '@angular/common'
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service'
 import { MatDialog } from '@angular/material/dialog';
+import { PasswordValidationComponent } from 'src/app/core/modal/password-validation/password-validation.component'
 
 
 @Component({
@@ -149,26 +150,12 @@ export class MyProfileMusicComponent implements OnInit {
     this.setPlaylistId = null
   }
 
-  savePicture(pictureUrl: string, musicProjectId: string) {
+  savePicture(pictureUrl: string, id: string) {
     // to open the modal
-    this.dialog.open(PasswordValidationsComponent, {
+    this.dialog.open(PasswordValidationComponent, {
       panelClass: ['col-md-4'],
-      data: { musicProjectId, pictureUrl, type: 'updateImgMusicProject' }
+      data: { id, pictureUrl, type: 'updateImgMusicProject' }
     })
-
-    // to select the respoonse
-    let musicProject = this.store$.pipe(
-      select(MusicProjectStoreSelectors.selectMusicProjectState),
-      skipWhile(val => val === null),
-    )
-
-    // to get the response after the update
-    musicProject.subscribe(val => {
-      if (val && val.categorie == 'valid-password') {
-        this.resetImg()
-      }
-    })
-
   }
 
   openModalDelete(musicID: string, musicProjectId: string, size: number) {
