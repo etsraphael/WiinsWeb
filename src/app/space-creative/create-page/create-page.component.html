@@ -72,21 +72,21 @@
         <div class="row mx-0 my-3" *ngIf="categoriePage !== 0">
           <div [ngSwitch]="categoriePage" class="col-8">
             <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="1">
-              <mat-label>Choose a sub categorie</mat-label>
+              <mat-label>{{'CATEGORY.Ch-a-category'|translate}}</mat-label>
               <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
                 <mat-option [value]="item.code" *ngFor="let item of categoriePageData[0].subGroup">{{item.name|translate}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
             <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="2">
-              <mat-label>Choose a sub categorie</mat-label>
+              <mat-label>{{'CATEGORY.Ch-a-category'|translate}}</mat-label>
               <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
                 <mat-option [value]="item.code" *ngFor="let item of categoriePageData[1].subGroup">{{item.name|translate}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
             <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="3">
-              <mat-label>Choose a sub categorie</mat-label>
+              <mat-label>{{'CATEGORY.Ch-a-category'|translate}}</mat-label>
               <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
                 <mat-optgroup *ngFor="let item of categoriePageData[2].subGroup" [label]="item.name|translate">
                   <mat-option *ngFor="let subItem of item.subGroup" [value]="subItem.code">
@@ -240,7 +240,7 @@
       </div>
     </div>
   </form>
-  
+
 </div>
 
 <!-- Loading Anination -->
