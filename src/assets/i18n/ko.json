@@ -200,7 +200,8 @@
     "Tube-publication": "",
     "Monetization": "",
     "Loading": "",
-    "Upload-yr-file-here": ""
+    "Upload-yr-file-here": "",
+    "Both": ""
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -551,7 +552,8 @@
     "y-have-to-be-friend": "당신은 친구 여야합니다",
     "you-hav-to-upgrad-a-manager-before-leave": "그룹을 떠나기 전에 관리자를 승진시켜야합니다",
     "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-get-t-community": "",
+    "Please-choose-cat-and-sub": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "사진이 접수되었습니다",
@@ -993,5 +995,45 @@
   },
   "STAT": {
     "Better-reference": ""
+  },
+  "CATEGORY": {
+    "Pro": "",
+    "NoPro": "",
+    "Compagny": "",
+    "Association": "",
+    "Institution": "",
+    "Organization": "",
+    "Food": "",
+    "Automobile": "",
+    "DIY": "",
+    "Cultur": "",
+    "Humor": "",
+    "Information": "",
+    "Health": "",
+    "Science": "",
+    "Sport": "",
+    "Technology": "",
+    "Musician": "",
+    "Composer": "",
+    "Group": "",
+    "Interpreter": "",
+    "Videographer": "",
+    "Director": "",
+    "Filmmaker": "",
+    "Editor": "",
+    "Actor": "",
+    "Image": "",
+    "Photographer": "",
+    "Painter": "",
+    "Writing": "",
+    "Writer": "",
+    "Humorist": "",
+    "Author": "",
+    "Journalist": "",
+    "Support": "",
+    "Record-company": "",
+    "Studio": "",
+    "Influencer": "",
+    "Athletic": ""
   }
 }

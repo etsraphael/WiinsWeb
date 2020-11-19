@@ -195,26 +195,15 @@
 
 
 .information {
-  .fa {
+
+  .fa, .grey-check {
     color: #e2e0e2;
     transition: 0.5s;
   }
 
   .is-valid {
-    color: #8ed433;
+    color: #2bbf45 !important;
     transition: 0.5s;
-  }
-
-  .upload {
-
-    button,
-    label {
-      border-radius: 30px;
-      box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.175);
-      border: 2px solid white;
-      color: white;
-      cursor: pointer;
-    }
   }
 
   .btn-upload {
@@ -226,10 +215,9 @@
     input {
       background-color: transparent;
       border: 1px solid #E3E3E3;
-      border-radius: 30px;
+      border-radius: 8px;
       color: grey;
       line-height: normal;
-      font-size: 0.8571em;
       transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
       box-shadow: none;
     }
@@ -389,4 +377,45 @@
 
 ::ng-deep .mat-autocomplete-panel {
   border-radius: 9px;
+}
+
+.choose-categorie-select::ng-deep {
+
+  .mat-form-field-underline {
+    display: none
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0.5rem;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mat-form-field-should-float .mat-form-field-label {
+    display: none !important
+  }
+
+}
+
+.container-upload {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  cursor: pointer;
+
+  svg {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .upload-link {
+    white-space: nowrap;
+    width: calc(100% - 25px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    direction: rtl;
+    text-align: left;
+  }
 }

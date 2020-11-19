@@ -1,6 +1,8 @@
 <!-- Var -->
 <span hidden>{{coverUrl}}</span>
 <span hidden>{{avatarUrl}}</span>
+<input hidden id="upload_cover" type="file" accept='image/*' #cover (change)=previewCover($event)>
+<input hidden id="upload_profile" type="file" accept='image/*' #profile (change)=previewProfile($event)>
 
 <div class="w-100 h-100" [hidden]="(loading$|async)">
 
@@ -28,67 +30,137 @@
 
   <!-- Information for Creation -->
   <form [formGroup]="pageForm" class="container-form container mt-5">
-
-    <!-- Title -->
-    <div class="row mx-0 my-3">
-      <div class="col title ml-2">
-        <span>{{'CORE.Stages'|translate}}</span>
-      </div>
-    </div>
-
     <!-- Information -->
     <div class="row mx-0">
-
       <!-- Manage information -->
-      <div class="col-md-6 information">
-        <!-- Form -->
-        <div class="row">
-          <div class="col-8">
-            <div class="form-group">
-              <label>{{'PAGE.Name-page'|translate}}</label>
-              <input #titlepage formControlName="name" type="text" class="form-control pl-3"
-                [placeholder]="'PAGE.Name-page'|translate">
-            </div>
+      <div class="col-12 col-md-6 information">
+        <!-- Page name -->
+        <div class="row mx-0 my-3">
+          <div class="col-8 form-group mb-0 my-auto">
+            <input #titlepage formControlName="name" type="text" class="form-control pl-3"
+              [placeholder]="'PAGE.Name-page'|translate">
           </div>
-          <div class="col-2 my-auto">
-            <i [ngClass]="{ 'is-valid': !f.name.errors }" class="pt-2 fa fa-2x fa-check-circle-o"></i>
+          <div class="col-4 my-auto">
+            <svg [ngClass]="{ 'is-valid': !f.name.errors }" width="2em" height="2em" viewBox="0 0 16 16"
+              class="bi bi-check2-circle grey-check" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+            </svg>
+          </div>
+        </div>
+        <!-- Choose categorie -->
+        <div class="row mx-0 my-3">
+          <mat-form-field class="choose-categorie-select col-8">
+            <mat-label>Choose a categorie</mat-label>
+            <mat-select [(ngModel)]="categoriePage" [ngModelOptions]="{standalone: true}" (selectionChange)="resetSubCategorie()">
+              <mat-option [value]="item.code" *ngFor="let item of categoriePageData">{{item.groupTitle|translate}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="col-4 my-auto">
+            <svg [ngClass]="{ 'is-valid': categoriePage !== 0 }" width="2em" height="2em" viewBox="0 0 16 16"
+              class="bi bi-check2-circle grey-check" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+            </svg>
+          </div>
+        </div>
+        <!-- Subchoose categorie -->
+        <div class="row mx-0 my-3" *ngIf="categoriePage !== 0">
+          <div [ngSwitch]="categoriePage" class="col-8">
+            <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="1">
+              <mat-label>Choose a sub categorie</mat-label>
+              <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
+                <mat-option [value]="item.code" *ngFor="let item of categoriePageData[0].subGroup">{{item.name|translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="2">
+              <mat-label>Choose a sub categorie</mat-label>
+              <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
+                <mat-option [value]="item.code" *ngFor="let item of categoriePageData[1].subGroup">{{item.name|translate}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field class="choose-categorie-select w-100" *ngSwitchCase="3">
+              <mat-label>Choose a sub categorie</mat-label>
+              <mat-select [(ngModel)]="subcategoriePage" [ngModelOptions]="{standalone: true}">
+                <mat-optgroup *ngFor="let item of categoriePageData[2].subGroup" [label]="item.name|translate">
+                  <mat-option *ngFor="let subItem of item.subGroup" [value]="subItem.code">
+                    {{subItem.name|translate}}
+                  </mat-option>
+                </mat-optgroup>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-4 my-auto">
+            <svg [ngClass]="{ 'is-valid': subcategoriePage !== 0 }" width="2em" height="2em" viewBox="0 0 16 16"
+              class="bi bi-check2-circle grey-check" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+            </svg>
           </div>
         </div>
         <!-- Add coverPicture -->
-        <div class="row my-4 upload">
-          <div class="col-4 col-md-4 col-sm-12 text-center">
-            <input hidden id="upload_cover" type="file" accept='image/*' #cover (change)=previewCover($event)>
-            <label for="upload_cover" class="btn btn-upload">
-              <i class="fa fa-download mr-2"></i>
-              <span>{{'CORE.Upload'|translate}}</span>
+        <div class="row mx-0 my-4 upload">
+          <div class="col-8">
+            <label for="upload_cover" class="container-upload mb-0 w-100 row mx-0 p-2">
+              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+              </svg>
+              <span class="upload-link pl-3" *ngIf="coverUrl" for="profileUpload">{{coverUrl}}</span>
+              <span class="upload-link pl-3" *ngIf="!coverUrl"
+                for="profileUpload">{{'UPLOAD.add-cover-picture'|translate}}</span>
             </label>
           </div>
-          <div class="col-8 col-md-8 col-sm-12 my-auto">
-            <div class="row mx-0 text-center my-auto">
-              <span>{{'UPLOAD.add-cover-picture'|translate}}</span>
-              <i [ngClass]="{ 'is-valid': coverUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
-            </div>
+          <div class="col-4 my-auto">
+            <svg [ngClass]="{ 'is-valid': coverUrl }" width="2em" height="2em" viewBox="0 0 16 16"
+              class="bi bi-check2-circle grey-check" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+            </svg>
           </div>
         </div>
         <!-- Add profilePicture -->
-        <div class="row my-4 upload">
-          <div class="col-4 col-md-4 col-sm-12 text-center">
-            <input hidden id="upload_profile" type="file" accept='image/*' #profile (change)=previewProfile($event)>
-            <label for="upload_profile" class="btn btn-upload">
-              <i class="fa fa-download mr-2"></i>
-              <span>{{'CORE.Upload'|translate}}</span>
+        <div class="row mx-0 my-4 upload">
+          <div class="col-8">
+            <label for="upload_profile" class="container-upload mb-0 w-100 row mx-0 p-2">
+              <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+              </svg>
+              <span class="upload-link pl-3" *ngIf="avatarUrl" for="profileUpload">{{avatarUrl}}</span>
+              <span class="upload-link pl-3" *ngIf="!avatarUrl"
+                for="profileUpload">{{'UPLOAD.add-profile-picture'|translate}}</span>
             </label>
           </div>
-          <div class="col-8 col-md-8 col-sm-12 my-auto">
-            <div class="row mx-0 text-center my-auto">
-              <span>{{'UPLOAD.add-profile-picture'|translate}}</span>
-              <i [ngClass]="{ 'is-valid': avatarUrl }" class="mx-auto fa fa-2x fa-check-circle-o"></i>
-            </div>
+          <div class="col-4 my-auto">
+            <svg [ngClass]="{ 'is-valid': avatarUrl }" width="2em" height="2em" viewBox="0 0 16 16"
+              class="bi bi-check2-circle grey-check" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+              <path fill-rule="evenodd"
+                d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+            </svg>
           </div>
-        </div>
+        </div>  
       </div>
       <!-- Manage team -->
-      <div class="col-md-6">
+      <div class="col-12 col-md-6">
         <div class="row mx-0 my-2">
           <span class="mx-auto">{{'ADMIN.Add-administrator'|translate}}
             ({{'ERROR-MESSAGE.y-have-to-be-friend'|translate}})</span>
@@ -167,9 +239,8 @@
         </button>
       </div>
     </div>
-
   </form>
-
+  
 </div>
 
 <!-- Loading Anination -->

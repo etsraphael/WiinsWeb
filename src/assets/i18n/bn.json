@@ -200,7 +200,8 @@
     "Tube-publication": "",
     "Monetization": "",
     "Loading": "",
-    "Upload-yr-file-here": ""
+    "Upload-yr-file-here": "",
+    "Both": ""
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -551,7 +552,8 @@
     "y-have-to-be-friend": "আপনি অবশ্যই বন্ধু হতে হবে",
     "you-hav-to-upgrad-a-manager-before-leave": "গ্রুপটি ছাড়ার আগে আপনাকে অবশ্যই একজন পরিচালককে প্রচার করতে হবে",
     "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-get-t-community": "",
+    "Please-choose-cat-and-sub": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",
@@ -993,5 +995,45 @@
   },
   "STAT": {
     "Better-reference": ""
+  },
+  "CATEGORY": {
+    "Pro": "",
+    "NoPro": "",
+    "Compagny": "",
+    "Association": "",
+    "Institution": "",
+    "Organization": "",
+    "Food": "",
+    "Automobile": "",
+    "DIY": "",
+    "Cultur": "",
+    "Humor": "",
+    "Information": "",
+    "Health": "",
+    "Science": "",
+    "Sport": "",
+    "Technology": "",
+    "Musician": "",
+    "Composer": "",
+    "Group": "",
+    "Interpreter": "",
+    "Videographer": "",
+    "Director": "",
+    "Filmmaker": "",
+    "Editor": "",
+    "Actor": "",
+    "Image": "",
+    "Photographer": "",
+    "Painter": "",
+    "Writing": "",
+    "Writer": "",
+    "Humorist": "",
+    "Author": "",
+    "Journalist": "",
+    "Support": "",
+    "Record-company": "",
+    "Studio": "",
+    "Influencer": "",
+    "Athletic": ""
   }
 }

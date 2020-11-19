@@ -200,7 +200,8 @@
     "Tube-publication": "",
     "Monetization": "",
     "Loading": "",
-    "Upload-yr-file-here": ""
+    "Upload-yr-file-here": "",
+    "Both": ""
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -551,7 +552,8 @@
     "y-have-to-be-friend": "vous devez être amis",
     "you-hav-to-upgrad-a-manager-before-leave": "Vous devez promouvoir un manageur avant de quitter le groupe",
     "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-get-t-community": "",
+    "Please-choose-cat-and-sub": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -771,7 +773,7 @@
       "Address": "Adresse",
       "Address-to-send": "Adresse à envoyer",
       "Amount": "Montant",
-      "Amount-to-transfert": "Montant à transfert",
+      "Amount-to-transfert": "Montant à transférer",
       "Are-y-sure-t-cancel-t-transaction": "Êtes-vous sûr d’annuler cette transaction ?",
       "Be-careful-make-sure-y-have-the-right-address-d": "Soyez prudent, assurez-vous que vous avez la bonne adresse. Aucun remboursement après confirmation du transfert.",
       "Card-description-payment-subscription": "L’abonnement vous permet de rester dans cette plate-forme avec toutes les fonctionnalités. Toutes vos informations sont sécurisées en privé dans cette plate-forme. Wiins ne partagera jamais vos informations à des sociétés tierces. Chaque contenu reste dans la plate-forme. Bienvenue à Wiins.",
@@ -993,5 +995,45 @@
   },
   "STAT": {
     "Better-reference": ""
+  },
+  "CATEGORY": {
+    "Pro": "",
+    "NoPro": "",
+    "Compagny": "",
+    "Association": "",
+    "Institution": "",
+    "Organization": "",
+    "Food": "",
+    "Automobile": "",
+    "DIY": "",
+    "Cultur": "",
+    "Humor": "",
+    "Information": "",
+    "Health": "",
+    "Science": "",
+    "Sport": "",
+    "Technology": "",
+    "Musician": "",
+    "Composer": "",
+    "Group": "",
+    "Interpreter": "",
+    "Videographer": "",
+    "Director": "",
+    "Filmmaker": "",
+    "Editor": "",
+    "Actor": "",
+    "Image": "",
+    "Photographer": "",
+    "Painter": "",
+    "Writing": "",
+    "Writer": "",
+    "Humorist": "",
+    "Author": "",
+    "Journalist": "",
+    "Support": "",
+    "Record-company": "",
+    "Studio": "",
+    "Influencer": "",
+    "Athletic": ""
   }
 }

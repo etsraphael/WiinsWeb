@@ -200,7 +200,8 @@
     "Tube-publication": "",
     "Monetization": "",
     "Loading": "",
-    "Upload-yr-file-here": ""
+    "Upload-yr-file-here": "",
+    "Both": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -551,7 +552,8 @@
     "y-have-to-be-friend": "você deve ser amigo",
     "you-hav-to-upgrad-a-manager-before-leave": "Você deve promover um gerente antes de sair do grupo",
     "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-get-t-community": "",
+    "Please-choose-cat-and-sub": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",
@@ -993,5 +995,45 @@
   },
   "STAT": {
     "Better-reference": ""
+  },
+  "CATEGORY": {
+    "Pro": "",
+    "NoPro": "",
+    "Compagny": "",
+    "Association": "",
+    "Institution": "",
+    "Organization": "",
+    "Food": "",
+    "Automobile": "",
+    "DIY": "",
+    "Cultur": "",
+    "Humor": "",
+    "Information": "",
+    "Health": "",
+    "Science": "",
+    "Sport": "",
+    "Technology": "",
+    "Musician": "",
+    "Composer": "",
+    "Group": "",
+    "Interpreter": "",
+    "Videographer": "",
+    "Director": "",
+    "Filmmaker": "",
+    "Editor": "",
+    "Actor": "",
+    "Image": "",
+    "Photographer": "",
+    "Painter": "",
+    "Writing": "",
+    "Writer": "",
+    "Humorist": "",
+    "Author": "",
+    "Journalist": "",
+    "Support": "",
+    "Record-company": "",
+    "Studio": "",
+    "Influencer": "",
+    "Athletic": ""
   }
 }

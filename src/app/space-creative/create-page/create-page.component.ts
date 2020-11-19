@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
+import { categoriePage } from 'src/app/core/data/categorie-page'
 
 @Component({
   selector: 'app-create-page',
@@ -56,6 +57,11 @@ export class CreatePageComponent implements OnInit {
 
   // page
   loading$: Observable<boolean>
+
+  // categorie
+  categoriePage: number = 0
+  subcategoriePage: number = 0
+  categoriePageData = categoriePage
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -167,9 +173,22 @@ export class CreatePageComponent implements OnInit {
       })
     }
 
+    // verify the categorie
+    if (!this.categoriePage || !this.subcategoriePage) {
+      return this._snackBar.open(
+        this.translate.instant('ERROR-MESSAGE.Please-choose-cat-and-sub'),
+        this.translate.instant('CORE.close'), {
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        duration: 5000,
+      })
+    }
+
+
     // contruct the new page
     const newPage = new PageModel(
       this.pageForm.get('name').value,
+      Number(String(this.categoriePage + '.' + this.subcategoriePage)),
       this.avatarUrl,
       this.coverUrl,
       this.createTeam()
@@ -250,6 +269,10 @@ export class CreatePageComponent implements OnInit {
     // unsubscribe after close the modal
     this.dialogRef.afterClosed().subscribe(() => this.dialogS.unsubscribe())
 
+  }
+
+  resetSubCategorie(): void {
+    this.subcategoriePage = 0
   }
 
 }

@@ -200,7 +200,8 @@
     "Tube-publication": "",
     "Monetization": "",
     "Loading": "",
-    "Upload-yr-file-here": ""
+    "Upload-yr-file-here": "",
+    "Both": ""
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -551,7 +552,8 @@
     "y-have-to-be-friend": "你一定是朋友",
     "you-hav-to-upgrad-a-manager-before-leave": "您必须先晋升经理才能离开小组",
     "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-get-t-community": "",
+    "Please-choose-cat-and-sub": ""
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -993,5 +995,45 @@
   },
   "STAT": {
     "Better-reference": ""
+  },
+  "CATEGORY": {
+    "Pro": "",
+    "NoPro": "",
+    "Compagny": "",
+    "Association": "",
+    "Institution": "",
+    "Organization": "",
+    "Food": "",
+    "Automobile": "",
+    "DIY": "",
+    "Cultur": "",
+    "Humor": "",
+    "Information": "",
+    "Health": "",
+    "Science": "",
+    "Sport": "",
+    "Technology": "",
+    "Musician": "",
+    "Composer": "",
+    "Group": "",
+    "Interpreter": "",
+    "Videographer": "",
+    "Director": "",
+    "Filmmaker": "",
+    "Editor": "",
+    "Actor": "",
+    "Image": "",
+    "Photographer": "",
+    "Painter": "",
+    "Writing": "",
+    "Writer": "",
+    "Humorist": "",
+    "Author": "",
+    "Journalist": "",
+    "Support": "",
+    "Record-company": "",
+    "Studio": "",
+    "Influencer": "",
+    "Athletic": ""
   }
 }
