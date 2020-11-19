@@ -72,6 +72,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
   videoType: any
 
   // upload
+  uploadVideo = 0
   uploadPicture = 0
   pictureUrl: string
   videoUrl: string
@@ -487,11 +488,22 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
 
   // to update the loading bar
   updateProgress(event: HttpEvent<{}>, urlSigned: UrlSigned, type: string): void {
-    switch (event.type) {
-      case HttpEventType.UploadProgress: { this.uploadPicture = Math.round((100 * event.loaded) / event.total); break }
-      case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
-      default: break
-    }
+    switch (type) {
+      case 'video':
+        switch (event.type) {
+          case  HttpEventType.UploadProgress: { this.uploadVideo = Math.round((100 * event.loaded) / event.total); break }
+          case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
+          default: break
+        }
+        return null
+      case 'image':
+        switch (event.type) {
+          case HttpEventType.UploadProgress: { this.uploadPicture = Math.round((100 * event.loaded) / event.total); break }
+          case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
+          default: break
+        }
+        return null
+      }
   }
 
   // update url

@@ -7,8 +7,7 @@
         <!-- 0 tagged -->
         <div *ngIf="friendTagged.length == 0" class="col-9 col-md-9 row mx-0">
           <div class="col-4 col-md-3 container-avatar px-md-1">
-            <img class="avatar rounded-circle" [routerLink]="['/myprofile']"
-              [src]="(myprofile | async).pictureprofile">
+            <img class="avatar rounded-circle" [routerLink]="['/myprofile']" [src]="(myprofile | async).pictureprofile">
           </div>
           <div class="col-8 col-md-9 description my-auto">
             <p class="m-0">{{mp._meta.pseudo}}</p>
@@ -58,8 +57,7 @@
                   <button (click)="deleteTag(friendTagged[0])" class="btn-delete"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="more-avatar" (click)="showListTagged()">
-                  <img class="img-fluid rounded-circle w-100 h-100" [src]="friendTagged[1].pictureprofile"
-                    alt="User">
+                  <img class="img-fluid rounded-circle w-100 h-100" [src]="friendTagged[1].pictureprofile" alt="User">
                   <span>+{{friendTagged.length - 1}}</span>
                 </div>
               </div>
@@ -96,7 +94,10 @@
         <div class="cardbox-item new-picture" [ngSwitch]="activeZone">
           <!-- Loading Bar -->
           <div class="w-100 loading-bar" *ngIf="(uploadPicture !== 0) && (uploadPicture !== 100)">
-            <div class="container-bar h-100" [style.width.%]="uploadPicture"></div>
+            <div class="container-bar-picture h-100" [style.width.%]="uploadPicture"></div>
+          </div>
+          <div class="w-100 loading-bar" *ngIf="(uploadVideo !== 0) && (uploadVideo !== 100)">
+            <div class="container-bar-video h-100" [style.width.%]="uploadVideo"></div>
           </div>
           <!-- Video mode -->
           <div *ngSwitchCase="'videozone'">
@@ -199,7 +200,19 @@
               <div class="d-inline mx-2">
                 <input hidden id="upload_picture" #picture type="file" accept='image/* | video/*'
                   (change)="preview(picture.files)" />
-                <label for="upload_picture"></label>
+                <label for="upload_picture">
+
+
+                  <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                    <path fill-rule="evenodd"
+                      d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                  </svg>
+                </label>
+
+
+
               </div>
               <div class="d-inline mx-2">
                 <button (click)="postmode()" class="btn btn-flat btn-flat-icon btn-choice" type="button">
@@ -214,14 +227,14 @@
               <em class="fa fa-undo"></em>
             </button>
             <button class="btn btn-send"
-            (click)="createFeedPublication()">{{'FEED-PUBLICATION.Post-it'|translate}}</button>
+              (click)="createFeedPublication()">{{'FEED-PUBLICATION.Post-it'|translate}}</button>
             <div ngbDropdown class="dropdown menu-visibility my-auto ml-3" #myDrop="ngbDropdown">
               <button id="openSearch" ngbDropdownToggle class="btn btn-flat btn-flat-icon" type="button"
                 aria-haspopup="true" aria-expanded="false">
                 <em class="fa fa-users"></em>
               </button>
-              <div ngbDropdownMenu class="dropdown-menu dropdown-scale dropdown-menu-right position-absolute" role="menu"
-                aria-labelledby="openSearch">
+              <div ngbDropdownMenu class="dropdown-menu dropdown-scale dropdown-menu-right position-absolute"
+                role="menu" aria-labelledby="openSearch">
                 <div class="row mx-0 w-100">
                   <div class="col-md-9">
                     <input [formControl]="searchField" type="text" class="w-100"
