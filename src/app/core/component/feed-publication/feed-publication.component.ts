@@ -286,18 +286,39 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
         }
         else return true
       case 'PicturePublication':
-        if (!this.pictureUrl) {
+        if (this.uploadPicture !== 100) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
             { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
         }
+        if (!this.pictureUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
         else return true
       case 'VideoPublication':
-        if (!this.videoUrl || !this.pictureUrl) {
+        if (!this.pictureUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.Please-upload-the-poster-before'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
+        if (this.uploadPicture !== 100 || this.uploadVideo !== 100) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
+        if (!this.videoUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
             { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
