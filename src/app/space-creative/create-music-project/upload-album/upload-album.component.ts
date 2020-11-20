@@ -141,7 +141,6 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
 
   }
 
-
   uploadOneMusic(event: EventTarget, index: number) {
 
     let eventObj: MSInputMethodContext = <MSInputMethodContext>event

@@ -96,13 +96,6 @@ export class PasswordValidationComponent implements OnInit {
 
   updateImgMusicProject(){
     const project = new MusicProject(null, null, null, this.data.pictureUrl, null, this.data.id)
-
-
-
-    console.log(project)
-
-    return null
-
     return this.musicService.UpdateMusicProject(project, this.sendForm .get('password').value)
     .pipe(take(1))
     .subscribe(

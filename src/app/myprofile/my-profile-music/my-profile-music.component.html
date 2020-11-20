@@ -27,12 +27,12 @@
               <div class="col-md-6"
                 *ngIf="imgPlaylist && setPlaylistId == p._id; let picture">
                 <span class="col-md-6 text-center"
-                  (click)="savePicture(picture.file, p._id)">{{'CORE.Save'|translate}}</span>
+                  (click)="savePicture(p._id)">{{'CORE.Save'|translate}}</span>
               </div>
             </div>
           </div>
           <input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg"
-            (change)=previewImg(pic.files) />
+            (change)=previewImg($event) />
         </div>
         <div class="col-md-9 my-auto py-2">
           <div class="row my-3 mx-0">
@@ -131,12 +131,12 @@
               <div class="col-md-6"
                 *ngIf="imgPlaylist && setPlaylistId == p._id; let picture">
                 <span class="col-md-6 text-center"
-                  (click)="savePicture(picture.file, p._id)">{{'CORE.Save'|translate}}</span>
+                  (click)="savePicture(p._id)">{{'CORE.Save'|translate}}</span>
               </div>
             </div>
           </div>
           <input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg"
-            (change)=previewImg(pic.files) />
+            (change)=previewImg($event) />
         </div>
         <div class="col-md-9 my-auto py-2">
           <div class="row my-3 mx-0">

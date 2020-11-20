@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, MusicProjectStoreActions, MusicProjectStoreSelectors, PlayerMusicStoreSelectors, MyMusicLikedStoreActions } from 'src/app/root-store'
 import { MusicProject } from 'src/app/core/models/publication/music/musicProject.model'
-import { Observable } from 'rxjs'
+import { Observable, Subscription } from 'rxjs'
 import { skipWhile, filter, distinctUntilChanged } from 'rxjs/operators'
 import { Music } from 'src/app/core/models/publication/music/music.model'
 import { ContentIdComponent } from 'src/app/core/modal/content-id/content-id.component'
@@ -11,8 +11,9 @@ import { PasswordValidationsComponent } from 'src/app/core/modal/password-valida
 import { ValidatorFn, AbstractControl, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { DatePipe } from '@angular/common'
 import { ControlMusicService } from 'src/app/core/services/control-music/control-music.service'
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { PasswordValidationComponent } from 'src/app/core/modal/password-validation/password-validation.component'
+import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 
 
 @Component({
@@ -38,6 +39,10 @@ export class MyProfileMusicComponent implements OnInit {
   titleSetting: string
   dateVisibilitySitting: string
   dateControl: FormControl
+
+  // dialog
+  dialogRef: MatDialogRef<CrooperImageValidationComponent> = null
+  dialogS: Subscription
 
   constructor(
     public activatedRoute: ActivatedRoute,
@@ -115,19 +120,25 @@ export class MyProfileMusicComponent implements OnInit {
     this.editNameMusic = id
   }
 
-  previewImg(files: any) {
+  previewImg(file: any) {
 
-    if (files.length === 0) { return null }
+    // open the crooper modal
+    this.dialogRef = this.dialog.open(CrooperImageValidationComponent, {
+      disableClose: true,
+      backdropClass: '.no-backdrop',
+      panelClass: ['col-md-4', 'ml-auto', 'mt-auto', 'mb-4'],
+      data: { file, type: 'musicImg' }
+    })
 
-    // to read the file 
-    const reader = new FileReader()
-    reader.readAsDataURL(files[0])
-    reader.onload = (files: any) => {
-      this.imgPlaylist = files.target.result
-    }
+    // to update the picture during the resizing
+    this.dialogS = this.dialogRef.componentInstance.fileUpdate.subscribe((result: any) => {
+      if (!result) { this.imgPlaylist = null; return null }
+      if (!!result.picture) { this.imgPlaylist = result.picture; return null }
+      if (!!result.url) { this.imgPlaylist = result.url; return null }
+    })
 
-    // to send the file 
-    // this.store$.dispatch(new UploadOneFileStoreActions.UploadRequestAction(files[0], 'UpdateImgMusic'))
+    // unsubscribe after to close the modal
+    this.dialogRef.afterClosed().subscribe(() => this.dialogS.unsubscribe())
 
   }
 
@@ -150,11 +161,11 @@ export class MyProfileMusicComponent implements OnInit {
     this.setPlaylistId = null
   }
 
-  savePicture(pictureUrl: string, id: string) {
+  savePicture(id: string) {
     // to open the modal
     this.dialog.open(PasswordValidationComponent, {
       panelClass: ['col-md-4'],
-      data: { id, pictureUrl, type: 'updateImgMusicProject' }
+      data: { id, pictureUrl: this.imgPlaylist, type: 'updateImgMusicProject' }
     })
   }
 
@@ -202,7 +213,7 @@ export class MyProfileMusicComponent implements OnInit {
   getAvailability(visibilityDate: Date): boolean {
     // to know if it's unavailable
     if (new Date(visibilityDate).getTime() > new Date().getTime()) return false
-    else return true 
+    else return true
   }
 
   changeName(title: string, musicProjectId: string): void {
@@ -217,7 +228,6 @@ export class MyProfileMusicComponent implements OnInit {
 
   changeDateModal(musicProjectId: string) {
 
-    
     if (!this.dateControl.errors.dateValid.valid) { return null }
     const dateChanged = this.datepipe.transform(this.dateControl.value, 'yyyy-MM-dd')
 
@@ -239,7 +249,7 @@ export class MyProfileMusicComponent implements OnInit {
         this.resetDateSetting()
       }
     })
-    
+
   }
 
   resetDateSetting() {
