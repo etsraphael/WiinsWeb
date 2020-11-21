@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
@@ -47,6 +47,7 @@ export class FooterCoreComponent implements OnInit {
     private store$: Store<FriendsFeatureStoreState.State>,
     private stateP: StatePlarformService,
     public dialog: MatDialog,
+    public router: Router,
     public activatedRoute: ActivatedRoute,
     private translate: TranslateService,
     private _snackBar: MatSnackBar,

@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(
     private store$: Store<RootStoreState.State>,
-    public router: Router,
+    private router: Router,
     private _snackBar: MatSnackBar,
     private translate: TranslateService
   ) { }
@@ -51,13 +51,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   }
 
-  ngOnDestroy(): void {
-    if (this.userSub) this.userSub.unsubscribe()
-  }
-
   // transition for the routing
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+  }
+
+
+  ngOnDestroy(): void {
+    if (this.userSub) this.userSub.unsubscribe()
   }
 
 }
