@@ -15,7 +15,9 @@
 }
 
 .bg-side {
-  background: #80808036;
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to left, #f83600, #fe8c00);
+  background: linear-gradient(to left, #f83600, #fe8c00);
 }
 
 .title-card {
@@ -38,4 +40,8 @@
   line-height: 27px;
   color: #9e9e9e;
   text-align: center;
+}
+
+.bi-patch-check-fll {
+  color: white;
 }
