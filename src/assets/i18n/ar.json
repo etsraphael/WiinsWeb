@@ -159,7 +159,6 @@
     "To-chosse": "اختيار",
     "To-signal-an-issue": "الإبلاغ عن مشكلة",
     "Total": "مجموع",
-    "Towards-an-infinit-space": "نحو مساحة لا يفّت",
     "Trend": "اتجاه",
     "Unsubscribe": "إلغاء الاشتراك",
     "Update": "تحديث",
@@ -201,7 +200,8 @@
     "Monetization": "",
     "Loading": "",
     "Upload-yr-file-here": "",
-    "Both": ""
+    "Both": "",
+    "Break-the-rules": ""
   },
   "COUNTRY": {
     "AD": "اندورا",

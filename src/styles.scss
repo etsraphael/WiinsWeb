@@ -1,9 +1,6 @@
 // Font Awesome
 @import "~font-awesome/css/font-awesome.css";
 
-// Material Design
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 // Bootstrap Wiins
 @import 'src/assets/scss/custom/functions';
 @import 'src/assets/scss/custom/variables';
@@ -24,4 +21,3 @@
 
 // Angular Differences
 @import "src/assets/scss/angular-differences/angular-differences";
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

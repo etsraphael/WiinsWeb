@@ -159,7 +159,6 @@
     "To-chosse": "Choisir",
     "To-signal-an-issue": "Signalez un problème",
     "Total": "Total",
-    "Towards-an-infinit-space": "A la poursuite d'un espace infini",
     "Trend": "Tendance",
     "Unsubscribe": "Se désabonner",
     "Update": "Mettre à jour",
@@ -201,7 +200,8 @@
     "Monetization": "",
     "Loading": "",
     "Upload-yr-file-here": "",
-    "Both": ""
+    "Both": "",
+    "Break-the-rules": ""
   },
   "COUNTRY": {
     "AD": "Andorre",
