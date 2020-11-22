@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     private store$: Store<RootStoreState.State>,
     private _snackBar: MatSnackBar,
     public dialog: MatDialog,
-    public deviceService: DeviceDetectorService
+    public deviceService: DeviceDetectorService,
   ) { }
 
   ngOnInit() {
@@ -120,8 +120,12 @@ export class RegisterComponent implements OnInit, OnDestroy {
       this.registerForm.get('password').value
     )
 
+    let lg: string
+    if(!this.translate.currentLang){ lg = 'en'}
+    else { lg = this.translate.currentLang }
+
     // send the new user
-    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend('en', new Date(date))))
+    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg, new Date(date))))
 
   }
 
