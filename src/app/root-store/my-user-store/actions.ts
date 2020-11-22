@@ -55,7 +55,7 @@ export class LoadUserWithTokenSuccess implements Action {
 
 export class LoadUserWithTokenFail implements Action {
   readonly type = ActionTypes.LOAD_USER_WITH_TOKEN_FAIL;
-  constructor(public payload: any) {}
+  constructor(public payload: string) {}
 }
 
 export class UpdateUser implements Action {

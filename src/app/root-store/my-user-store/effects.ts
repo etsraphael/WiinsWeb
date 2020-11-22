@@ -17,6 +17,7 @@ import { TranslateService } from '@ngx-translate/core'
 import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { Router } from '@angular/router'
 import { MatSnackBar } from '@angular/material/snack-bar'
+import { HttpErrorResponse } from '@angular/common/http'
 
 @Injectable()
 export class MyUserEffects {
@@ -45,7 +46,7 @@ export class MyUserEffects {
         new featureActions.LoadUserSuccess(response.user, response.token)
       ]),
       tap(() => this.router.navigate(['/SpaceDiscover/#'])),
-      catchError(err => observableOf(new featureActions.LoadUserFail(err))),
+      catchError((response: HttpErrorResponse) => observableOf(new featureActions.LoadUserFail(response.error.message)))
     ))
   )
 
