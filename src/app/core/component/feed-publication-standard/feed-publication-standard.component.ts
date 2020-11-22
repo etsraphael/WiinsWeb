@@ -157,10 +157,6 @@ export class FeedPublicationStandardComponent implements OnInit, OnDestroy {
     // play pause if it's a video
     if (this.playVideo) this.myVideo.nativeElement.pause()
 
-    // update the like btn 
-    if (this.isLiked) this.publication.like.isLike = true
-    else this.publication.like.isLike = false
-
     // open the modal
     const dialogRef = this.dialog.open(PublicationModalComponent, {
       panelClass: ['col-md-9', 'col-xl-8'],
@@ -169,6 +165,7 @@ export class FeedPublicationStandardComponent implements OnInit, OnDestroy {
           ...this.publication,
           like: {
             ...this.publication.like,
+            isLike: this.isLiked,
             likeNumber: this.numberLike
           }
         },
