@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Du har ikke ønsket musik endnu",
-    "no-friend-request": "Ingen efterspørgsel ven lige nu",
+    "no-friend-request": "Ingen venneanmodning lige nu",
     "no-notification": "Ingen underretning endnu"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Du skal acceptere vilkårene og betingelserne for brug",
     "y-h-to-delete-yr-page-or-group-before": "Du skal slette dine sider eller grupper før",
     "y-have-to-be-friend": "du skal være venner",
-    "you-hav-to-upgrad-a-manager-before-leave": "Du skal promovere en manager, inden du forlader gruppen"
+    "you-hav-to-upgrad-a-manager-before-leave": "Du skal promovere en manager, inden du forlader gruppen",
+    "T-min-is-1$": "Minimumet er 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Billedet er modtaget",

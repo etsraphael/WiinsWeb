@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Hudba sa vám ešte nepáčila",
-    "no-friend-request": "Momentálne žiadny priateľ dopytu",
+    "no-friend-request": "Momentálne nie je k dispozícii žiadna žiadosť o priateľstvo",
     "no-notification": "Zatiaľ žiadne oznámenie"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Musíte akceptovať podmienky používania",
     "y-h-to-delete-yr-page-or-group-before": "Predtým musíte odstrániť svoje stránky alebo skupiny",
     "y-have-to-be-friend": "musíte byť priatelia",
-    "you-hav-to-upgrad-a-manager-before-leave": "Pred opustením skupiny musíte povýšiť manažéra"
+    "you-hav-to-upgrad-a-manager-before-leave": "Pred opustením skupiny musíte povýšiť manažéra",
+    "T-min-is-1$": "Minimum je 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",

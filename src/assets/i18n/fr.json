@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "Vous devez être vérifié",
     "You-hv-to-get-t-community": "Vous devez obtenir la communauté",
     "Please-choose-cat-and-sub": "Veuillez choisir la catégorie et la sous-catégorie",
-    "Please-upload-the-poster-before": "Veuillez télécharger l'affiche de la vidéo avant"
+    "Please-upload-the-poster-before": "Veuillez télécharger l'affiche de la vidéo avant",
+    "T-min-is-1$": "Le minimum est de 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",

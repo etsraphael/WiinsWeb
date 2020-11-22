@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Jy hou nog nie van musiek nie",
-    "no-friend-request": "Geen vriend van aanvraag op die oomblik nie",
+    "no-friend-request": "Geen vriend versoek tans nie",
     "no-notification": "Nog geen kennisgewing nie"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "U moet die gebruiksvoorwaardes aanvaar",
     "y-h-to-delete-yr-page-or-group-before": "U moet u bladsye of groepe voorheen uitvee",
     "y-have-to-be-friend": "jy moet vriende wees",
-    "you-hav-to-upgrad-a-manager-before-leave": "U moet 'n bestuurder bevorder voordat u die groep verlaat"
+    "you-hav-to-upgrad-a-manager-before-leave": "U moet 'n bestuurder bevorder voordat u die groep verlaat",
+    "T-min-is-1$": "Die minimum is 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Die foto word ontvang",

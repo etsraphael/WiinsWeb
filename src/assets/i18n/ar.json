@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "لم تحب الموسيقى بعد",
-    "no-friend-request": "لا يوجد صديق للطلب الآن",
+    "no-friend-request": "لا يوجد طلب صداقة الآن",
     "no-notification": "لا يوجد إشعار حتى الآن"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "يجب أن يتم التحقق منك",
     "You-hv-to-get-t-community": "عليك أن تحصل على المجتمع",
     "Please-choose-cat-and-sub": "الرجاء اختيار فئة وفئة فرعية",
-    "Please-upload-the-poster-before": "يرجى تحميل ملصق الفيديو من قبل"
+    "Please-upload-the-poster-before": "يرجى تحميل ملصق الفيديو من قبل",
+    "T-min-is-1$": "الحد الأدنى هو 1 دولار"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",

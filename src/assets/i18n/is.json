@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Þú hefur ekki líkað við tónlist ennþá",
-    "no-friend-request": "Enginn vinur eftirspurnar núna",
+    "no-friend-request": "Engin vinabeiðni núna",
     "no-notification": "Engin tilkynning ennþá"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Þú verður að samþykkja notkunarskilmála",
     "y-h-to-delete-yr-page-or-group-before": "Þú verður að eyða síðunum þínum eða hópunum áður",
     "y-have-to-be-friend": "þið hljótið að vera vinir",
-    "you-hav-to-upgrad-a-manager-before-leave": "Þú verður að kynna stjórnanda áður en þú yfirgefur hópinn"
+    "you-hav-to-upgrad-a-manager-before-leave": "Þú verður að kynna stjórnanda áður en þú yfirgefur hópinn",
+    "T-min-is-1$": "Lágmarkið er 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",

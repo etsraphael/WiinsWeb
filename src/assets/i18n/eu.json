@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Oraindik ez zaizu musika gustatu",
-    "no-friend-request": "Oraintxe ez dago eskaeraren lagunik",
+    "no-friend-request": "Oraintxe ez dago lagun eskaerarik",
     "no-notification": "Jakinarazpenik ez oraindik"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Erabilera baldintzak eta baldintzak onartu behar dituzu",
     "y-h-to-delete-yr-page-or-group-before": "Zure orriak edo taldeak ezabatu behar dituzu aurretik",
     "y-have-to-be-friend": "lagunak izan behar duzu",
-    "you-hav-to-upgrad-a-manager-before-leave": "Taldea utzi aurretik kudeatzailea sustatu behar duzu"
+    "you-hav-to-upgrad-a-manager-before-leave": "Taldea utzi aurretik kudeatzailea sustatu behar duzu",
+    "T-min-is-1$": "Gutxienekoa 1 $ da"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Argazkia jaso da",

@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "നിങ്ങൾക്ക് ഇതുവരെ സംഗീതം ഇഷ്ടപ്പെട്ടില്ല",
-    "no-friend-request": "ഇപ്പോൾ ആവശ്യപ്പെടുന്ന ഒരു സുഹൃത്തും ഇല്ല",
+    "no-friend-request": "ചങ്ങാതി അഭ്യർത്ഥനകളൊന്നുമില്ല",
     "no-notification": "ഇതുവരെ അറിയിപ്പൊന്നുമില്ല"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "ഉപയോഗ നിബന്ധനകളും വ്യവസ്ഥകളും നിങ്ങൾ അംഗീകരിക്കണം",
     "y-h-to-delete-yr-page-or-group-before": "മുമ്പ് നിങ്ങളുടെ പേജുകളോ ഗ്രൂപ്പുകളോ ഇല്ലാതാക്കണം",
     "y-have-to-be-friend": "നിങ്ങൾ സുഹൃത്തുക്കളായിരിക്കണം",
-    "you-hav-to-upgrad-a-manager-before-leave": "ഗ്രൂപ്പ് വിടുന്നതിനുമുമ്പ് നിങ്ങൾ ഒരു മാനേജരെ പ്രൊമോട്ട് ചെയ്യണം"
+    "you-hav-to-upgrad-a-manager-before-leave": "ഗ്രൂപ്പ് വിടുന്നതിനുമുമ്പ് നിങ്ങൾ ഒരു മാനേജരെ പ്രൊമോട്ട് ചെയ്യണം",
+    "T-min-is-1$": "കുറഞ്ഞത് 1 is ആണ്"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ഫോട്ടോ ലഭിച്ചു",

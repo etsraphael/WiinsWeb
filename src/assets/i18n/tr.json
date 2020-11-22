@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Henüz müziği sevmedin",
-    "no-friend-request": "Şu anda talep arkadaşı yok",
+    "no-friend-request": "Şu anda arkadaşlık isteği yok",
     "no-notification": "Henüz bildirim yok"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Kullanım şartlarını ve koşullarını kabul etmelisiniz",
     "y-h-to-delete-yr-page-or-group-before": "Daha önce sayfalarınızı veya gruplarınızı silmelisiniz",
     "y-have-to-be-friend": "arkadaş olmalısın",
-    "you-hav-to-upgrad-a-manager-before-leave": "Gruptan ayrılmadan önce bir yöneticiyi yükseltmelisiniz"
+    "you-hav-to-upgrad-a-manager-before-leave": "Gruptan ayrılmadan önce bir yöneticiyi yükseltmelisiniz",
+    "T-min-is-1$": "Minimum 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",

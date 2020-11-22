@@ -147,7 +147,7 @@ export class LedgerComponent implements OnInit {
     // not enougt to transfert
     if (amount < 1) {
       return this._snackBar.open(
-        'the minimum is 1$',
+        this.translate.instant('ERROR-MESSAGE.T-min-is-1$'),
         '', {
         horizontalPosition: 'center',
         verticalPosition: 'bottom',

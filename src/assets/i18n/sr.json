@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Још нисте волели музику",
-    "no-friend-request": "Тренутно нема пријатеља који тражи",
+    "no-friend-request": "Тренутно нема захтева за пријатељство",
     "no-notification": "Још нема обавештења"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Морате прихватити услове коришћења",
     "y-h-to-delete-yr-page-or-group-before": "Морате претходно избрисати своје странице или групе",
     "y-have-to-be-friend": "морате бити пријатељи",
-    "you-hav-to-upgrad-a-manager-before-leave": "Морате унапредити менаџера пре напуштања групе"
+    "you-hav-to-upgrad-a-manager-before-leave": "Морате унапредити менаџера пре напуштања групе",
+    "T-min-is-1$": "Минимум је 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографија је примљена",

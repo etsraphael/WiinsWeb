@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "आपको अभी तक संगीत पसंद नहीं आया है",
-    "no-friend-request": "अभी मांग का कोई मित्र नहीं",
+    "no-friend-request": "अभी कोई मित्र अनुरोध नहीं",
     "no-notification": "अभी तक कोई अधिसूचना नहीं"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "आपको सत्यापित किया जाना है",
     "You-hv-to-get-t-community": "आपको समुदाय प्राप्त करना होगा",
     "Please-choose-cat-and-sub": "कृपया श्रेणी और उप श्रेणी चुनें",
-    "Please-upload-the-poster-before": "कृपया पहले वीडियो का पोस्टर अपलोड करें"
+    "Please-upload-the-poster-before": "कृपया पहले वीडियो का पोस्टर अपलोड करें",
+    "T-min-is-1$": "न्यूनतम 1 $ है"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",

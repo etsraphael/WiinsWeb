@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Вам еще не понравилась музыка",
-    "no-friend-request": "Нет друзей по спросу сейчас",
+    "no-friend-request": "Нет запросов о дружбе прямо сейчас",
     "no-notification": "Уведомления пока нет"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "Вы должны пройти верификацию",
     "You-hv-to-get-t-community": "Вы должны получить сообщество",
     "Please-choose-cat-and-sub": "Пожалуйста, выберите категорию и подкатегорию",
-    "Please-upload-the-poster-before": "Пожалуйста, загрузите постер видео перед"
+    "Please-upload-the-poster-before": "Пожалуйста, загрузите постер видео перед",
+    "T-min-is-1$": "Минимум 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фото получено",
