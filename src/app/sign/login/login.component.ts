@@ -31,9 +31,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   loading$: Observable<boolean>
   profileLoading$: Observable<boolean>
 
-  // animation
-  stateLogin = 'default'
-
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
@@ -80,7 +77,6 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     // action to show the error message
     this.errorSubscription = this.errorLog$.subscribe((error: string) => {
-      this.stateLogin = 'error'
 
       if(error == 'email_or_password_invalid') {
         this._snackBar.open(
@@ -97,7 +93,6 @@ export class LoginComponent implements OnInit, OnDestroy {
           { duration: 5000 }
         )
       }
-      setTimeout(() => { this.stateLogin = 'default' }, 3000);
     })
 
   }
