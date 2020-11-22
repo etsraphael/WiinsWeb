@@ -137,7 +137,7 @@
 </nav>
 
 <!-- List Search -->
-<div *ngIf="searching" class="row">
+<div *ngIf="searching" class="row mx-0">
   <app-search-list [getSearchStatus]="searching" (getSearchStatusChange)="closeSearchCallback()"
     (clickOutside)="onClickedOutside()">
   </app-search-list>

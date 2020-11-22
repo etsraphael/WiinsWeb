@@ -132,7 +132,7 @@ export class FeedPageAdminStandardComponent implements OnInit, OnDestroy {
     })
   }
 
-  report(publication:FeedPublication) {
+  report(publication: FeedPublication) {
     // to open the report modal
     this.dialog.open(ValidationsComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
@@ -224,8 +224,8 @@ export class FeedPageAdminStandardComponent implements OnInit, OnDestroy {
         '<strong id="profile-' + profile._id + '" class="d-inline-block" contenteditable="false" style="font-weight: 100; font-size: 1.05rem; color: #8a72ee; font-family: \'Pacifico\'">@'
         + profile._meta.pseudo + '<span hidden class="oneTag">' + profile._id + '</span> </strong>' + '&nbsp;'
       )
-      
-      // to set the cursor at the end
+
+    // to set the cursor at the end
     this.placeCaretAtEnd(this.commentWrited.nativeElement)
 
   }
@@ -269,12 +269,20 @@ export class FeedPageAdminStandardComponent implements OnInit, OnDestroy {
 
     // to open the modal for the publications
     if (this.playVideo) this.myVideo.nativeElement.pause()
-    if (this.isLiked) this.publication.like.isLike = true
-    else this.publication.like.isLike = false
 
     const dialogRef = this.dialog.open(PublicationModalComponent, {
       panelClass: ['col-md-9', 'col-xl-8'],
-      data: { publication: this.publication, ownerId: this.publication.page._id }
+      data: {
+        publication: {
+          ...this.publication,
+          like: {
+            ...this.publication.like,
+            isLike: this.isLiked,
+            likeNumber: this.numberLike
+          }
+        },
+        ownerId: this.publication.page._id
+      }
     })
 
     // add a lister to update the design for the stat
