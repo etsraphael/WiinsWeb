@@ -6,10 +6,10 @@ import { Observable, of as observableOf } from 'rxjs';
 import { PageService } from 'src/app/core/services/page/page.service';
 import { ActionsPage } from './actions';
 import { Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
 import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { Action } from '@ngrx/store';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable()
 export class PageFeatureEffects {

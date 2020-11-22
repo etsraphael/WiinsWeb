@@ -159,7 +159,6 @@
     "To-chosse": "选择",
     "To-signal-an-issue": "报告问题",
     "Total": "总",
-    "Towards-an-infinit-space": "走向一个 inifinit 空间",
     "Trend": "趋势",
     "Unsubscribe": "退订",
     "Update": "更新资料",
@@ -196,11 +195,15 @@
     "responses": "回应",
     "soon": "不久",
     "views": "意见",
-    "Music-publication": "",
-    "Tube-publication": "",
-    "Monetization": "",
-    "Loading": "",
-    "Upload-yr-file-here": ""
+    "Music-publication": "音乐出版",
+    "Tube-publication": "管出版物",
+    "Monetization": "营利",
+    "Loading": "载入中",
+    "Upload-yr-file-here": "在此处上传文件",
+    "Both": "都",
+    "Break-the-rules": "打破常规",
+    "For-You": "为了你",
+    "Discover": "发现"
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -550,8 +553,10 @@
     "y-h-to-delete-yr-page-or-group-before": "您必须在删除页面或组之前",
     "y-have-to-be-friend": "你一定是朋友",
     "you-hav-to-upgrad-a-manager-before-leave": "您必须先晋升经理才能离开小组",
-    "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-be-verified": "您必须经过验证",
+    "You-hv-to-get-t-community": "你必须得到社区",
+    "Please-choose-cat-and-sub": "请选择类别和子类别",
+    "Please-upload-the-poster-before": "请先上传视频的海报"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -743,7 +748,7 @@
           "1": "接受暴力作为试图改变事物的手段",
           "2": "接受暴力作为试图改变事物的手段"
         },
-        "We-delete": "接受暴力作为试图改变事物的手段"
+        "We-delete": "我们删除"
       },
       "Title-Level": {
         "1": "是可伤害的",
@@ -829,23 +834,23 @@
     "verified": {
       "This-feature-requires-verification-to-use.": "此功能需要验证才能使用",
       "Verified-zone": "已验证区域",
-      "I-w-t-b-verified": "",
-      "I-w-t-b-certified": "",
-      "Certification-badge": "",
-      "Already-verified": "",
-      "Already-certified": "",
-      "Certification": "",
-      "Y-m-complet-t-following-cdt-t-b-certified": "",
-      "B-verified": "",
-      "H-m-t-1000-user-in-t-community": "",
-      "Have-content-t-d-not-offend-the-community": "",
-      "T-b-accepted-b-t-administration": "",
-      "Yr-profil-is-currently-being-checked-D": "",
-      "Verification": "",
-      "Pl-s-t-docs-a-complet-t-form-below": "",
-      "Upload-yr-password-id-identity-or-driver-license": "",
-      "Upload-a-photo-holding-t-ID-D": "",
-      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+      "I-w-t-b-verified": "我想被验证",
+      "I-w-t-b-certified": "我想获得认证",
+      "Certification-badge": "认证徽章",
+      "Already-verified": "已经验证",
+      "Already-certified": "已通过认证",
+      "Certification": "资质认证",
+      "Y-m-complet-t-following-cdt-t-b-certified": "您必须满足以下条件才能获得认证。",
+      "B-verified": "被验证",
+      "H-m-t-1000-user-in-t-community": "社区中有1000多个用户",
+      "Have-content-t-d-not-offend-the-community": "含有不冒犯社区的内容",
+      "T-b-accepted-b-t-administration": "被主管部门接受",
+      "Yr-profil-is-currently-being-checked-D": "目前正在检查您的个人资料。我们将在48小时内通过电子邮件与您联系。",
+      "Verification": "验证",
+      "Pl-s-t-docs-a-complet-t-form-below": "请发送必要的文件并填写以下表格。",
+      "Upload-yr-password-id-identity-or-driver-license": "上传您的密码，ID身份或驾驶执照。",
+      "Upload-a-photo-holding-t-ID-D": "上传带有ID的照片和一张带有今天日期的纸，并在上面写上“空白”。",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "我同意我的数据可用于检查我的帐户。"
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "接受暴力作为试图改变事物的手段",
@@ -992,6 +997,47 @@
     }
   },
   "STAT": {
-    "Better-reference": ""
+    "Better-reference": "更好的参考"
+  },
+  "CATEGORY": {
+    "Pro": "专业的",
+    "NoPro": "没有专业",
+    "Compagny": "公司",
+    "Association": "协会",
+    "Institution": "机构",
+    "Organization": "组织",
+    "Food": "餐饮",
+    "Automobile": "汽车",
+    "DIY": "自己动手做",
+    "Cultur": "文化",
+    "Humor": "幽默",
+    "Information": "信息",
+    "Health": "健康",
+    "Science": "科学",
+    "Sport": "运动",
+    "Technology": "技术",
+    "Musician": "音乐家",
+    "Composer": "作曲家",
+    "Group": "组",
+    "Interpreter": "口译员",
+    "Videographer": "摄像师",
+    "Director": "导向器",
+    "Filmmaker": "电影制片人",
+    "Editor": "编辑",
+    "Actor": "演员",
+    "Image": "图片",
+    "Photographer": "摄影家",
+    "Painter": "画家",
+    "Writing": "写作",
+    "Writer": "作家",
+    "Humorist": "幽默主义者",
+    "Author": "作者",
+    "Journalist": "记者",
+    "Support": "支持",
+    "Record-company": "唱片公司",
+    "Studio": "工作室",
+    "Influencer": "影响者",
+    "Athletic": "运动型",
+    "Ch-a-category": "选择一个类别"
   }
 }

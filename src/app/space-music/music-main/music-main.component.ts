@@ -4,7 +4,7 @@ import { RootStoreState, PlaylistMusicStoreActions, PlaylistMusicStoreSelectors 
 import { Observable } from 'rxjs'
 import { skipWhile, filter } from 'rxjs/operators'
 import { MenuPlaylistModel } from 'src/app/core/models/music/menuplaylist.model'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 
 @Component({

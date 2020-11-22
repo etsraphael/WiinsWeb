@@ -6,11 +6,12 @@ import { Observable, of as observableOf } from 'rxjs'
 import { PageService } from 'src/app/core/services/page/page.service'
 import { ActionsPage } from './actions'
 import { TeamUpdate } from 'src/app/core/models/confirmation/teamUpdate'
-import { MatSnackBar, MatDialog } from '@angular/material'
 import { Action } from '@ngrx/store'
 import { Router } from '@angular/router'
 import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { TranslateService } from '@ngx-translate/core'
+import { MatSnackBar } from '@angular/material/snack-bar'
+import { MatDialog } from '@angular/material/dialog'
 
 @Injectable()
 export class AdminsFeatureEffects {

@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core'
-import { MatDialogRef, MAT_DIALOG_DATA, MatSnackBar } from '@angular/material'
 import { TeamUpdate } from '../../models/confirmation/teamUpdate'
 import { RootStoreState, OneGroupFeatureStoreActions, OneGroupFeatureStoreSelectors } from 'src/app/root-store'
 import { Store, select } from '@ngrx/store'
@@ -7,6 +6,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { Observable } from 'rxjs'
 import { filter } from 'rxjs/operators'
 import { TranslateService } from '@ngx-translate/core'
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-group-validation',

@@ -11,9 +11,11 @@ export class PageModel {
   likes: number;
   admins: AdminModel;
   followed: boolean;
+  category: number
 
-  constructor(name: string, pictureprofile: string, picturecover: string, admins: AdminModel, _id?: string) {
+  constructor(name: string, category: number, pictureprofile: string, picturecover: string, admins: AdminModel, _id?: string) {
     this.name = name;
+    this.category = category
     this.pictureprofile = pictureprofile;
     this.picturecover = picturecover;
     this.admins = admins;

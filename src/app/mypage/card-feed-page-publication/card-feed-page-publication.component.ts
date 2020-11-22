@@ -11,13 +11,13 @@ import { ActivatedRoute } from '@angular/router'
 import { FeedPublication } from 'src/app/core/models/publication/feed/feed-publication.model'
 import { PicturePublication, PostPublication, VideoPublication } from 'src/app/core/models/publication/feed/feed-publication.model';
 import { IconAnimation } from 'src/assets/route-animation/icon-animation'
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { TranslateService } from '@ngx-translate/core'
 import { NgxImageCompressService } from 'ngx-image-compress'
 import { UploadService, UrlSigned, RespondGetUploadUrl } from 'src/app/core/services/upload/upload.service'
 import * as uuid from 'uuid';
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { UploadWithoutInjectorService } from 'src/app/core/services/upload/upload-without-injector.service'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-card-feed-page-publication',

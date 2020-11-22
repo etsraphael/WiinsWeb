@@ -8,7 +8,8 @@ import { FeedPublication } from '../core/models/publication/feed/feed-publicatio
 import { ProfileModel } from '../core/models/baseUser/profile.model'
 import { ValidationsComponent } from '../core/modal/validations/validations.component'
 import { slideInProfile } from 'src/assets/route-animation/profile-animation'
-import { MatDialog } from '@angular/material'
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-profile',

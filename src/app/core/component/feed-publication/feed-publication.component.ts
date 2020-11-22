@@ -7,7 +7,6 @@ import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors,
 import { ProfileFeatureStoreSelectors } from 'src/app/root-store'
 import { filter, debounceTime, distinctUntilChanged, skipWhile } from 'rxjs/operators'
 import { Store, select } from '@ngrx/store'
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { IconAnimation } from 'src/assets/route-animation/icon-animation'
 import { ProfileModel } from '../../models/baseUser/profile.model'
 import { FeedPublication, PostPublication, PicturePublication, VideoPublication } from '../../models/publication/feed/feed-publication.model'
@@ -17,6 +16,7 @@ import { UploadService, RespondGetUploadUrl, UrlSigned } from '../../services/up
 import * as uuid from 'uuid';
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { UploadWithoutInjectorService } from '../../services/upload/upload-without-injector.service'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-feed-publication',
@@ -72,6 +72,7 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
   videoType: any
 
   // upload
+  uploadVideo = 0
   uploadPicture = 0
   pictureUrl: string
   videoUrl: string
@@ -285,18 +286,39 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
         }
         else return true
       case 'PicturePublication':
-        if (!this.pictureUrl) {
+        if (this.uploadPicture !== 100) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
             { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
         }
+        if (!this.pictureUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
         else return true
       case 'VideoPublication':
-        if (!this.videoUrl || !this.pictureUrl) {
+        if (!this.pictureUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.Please-upload-the-poster-before'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
+        if (this.uploadPicture !== 100 || this.uploadVideo !== 100) {
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.Please-wait-for-the-upload-to-complete'), null,
+            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+          )
+          return false
+        }
+        if (!this.videoUrl) {
+          this._snackBar.open(
+            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
             { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
           )
           return false
@@ -487,11 +509,22 @@ export class FeedPublicationComponent implements OnInit, OnDestroy {
 
   // to update the loading bar
   updateProgress(event: HttpEvent<{}>, urlSigned: UrlSigned, type: string): void {
-    switch (event.type) {
-      case HttpEventType.UploadProgress: { this.uploadPicture = Math.round((100 * event.loaded) / event.total); break }
-      case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
-      default: break
-    }
+    switch (type) {
+      case 'video':
+        switch (event.type) {
+          case  HttpEventType.UploadProgress: { this.uploadVideo = Math.round((100 * event.loaded) / event.total); break }
+          case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
+          default: break
+        }
+        return null
+      case 'image':
+        switch (event.type) {
+          case HttpEventType.UploadProgress: { this.uploadPicture = Math.round((100 * event.loaded) / event.total); break }
+          case HttpEventType.Response: { this.updateUrl(urlSigned.Bucket, urlSigned.Key, type); break }
+          default: break
+        }
+        return null
+      }
   }
 
   // update url

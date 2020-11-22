@@ -4,8 +4,8 @@ import { RootStoreState,  MusicProjectStoreSelectors, MusicProjectStoreActions }
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { skipWhile, filter } from 'rxjs/operators';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { MusicProject } from '../../models/publication/music/musicProject.model';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-password-validations',
@@ -77,10 +77,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
         break
       case 'deleteMusicProject':
         this.store$.dispatch(new MusicProjectStoreActions.deleteMusicProject(this.data.musicProjectId, this.f.password.value))
-        break
-      case 'updateImgMusicProject':
-        const updateImgMusicProject = new MusicProject(null, null, null, this.data.pictureUrl, null, this.data.musicProjectId)
-        this.store$.dispatch(new MusicProjectStoreActions.UpdateMusicProject(updateImgMusicProject, this.f.password.value))
         break
       case 'changeDateMusicProject':
         const updateDateMusic = new MusicProject(this.data.dateChanged, null, null, null, null, this.data.musicProjectId)

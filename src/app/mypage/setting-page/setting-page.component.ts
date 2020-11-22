@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router'
 import { Observable, Subscription } from 'rxjs'
 import { PageModel } from 'src/app/core/models/page/page.model'
 import { skipWhile, filter } from 'rxjs/operators'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 
 @Component({

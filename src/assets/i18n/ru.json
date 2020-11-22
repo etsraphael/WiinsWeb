@@ -159,7 +159,6 @@
     "To-chosse": "Выбрать",
     "To-signal-an-issue": "Сообщить о проблеме",
     "Total": "Общая",
-    "Towards-an-infinit-space": "К неимовему пространству",
     "Trend": "тенденция",
     "Unsubscribe": "Отказаться от подписки",
     "Update": "Обновить",
@@ -196,11 +195,15 @@
     "responses": "ответы",
     "soon": "скоро",
     "views": "взгляды",
-    "Music-publication": "",
-    "Tube-publication": "",
-    "Monetization": "",
-    "Loading": "",
-    "Upload-yr-file-here": ""
+    "Music-publication": "Музыкальное издание",
+    "Tube-publication": "Публикация в трубке",
+    "Monetization": "Монетизация",
+    "Loading": "Загрузка",
+    "Upload-yr-file-here": "Загрузите свой файл сюда",
+    "Both": "И то и другое",
+    "Break-the-rules": "Нарушать правила",
+    "For-You": "Для тебя",
+    "Discover": "Обнаружить"
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -550,8 +553,10 @@
     "y-h-to-delete-yr-page-or-group-before": "Вы должны удалить свои страницы или группы, прежде чем",
     "y-have-to-be-friend": "вы должны быть друзьями",
     "you-hav-to-upgrad-a-manager-before-leave": "Вы должны продвинуть менеджера, прежде чем покинуть группу",
-    "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-be-verified": "Вы должны пройти верификацию",
+    "You-hv-to-get-t-community": "Вы должны получить сообщество",
+    "Please-choose-cat-and-sub": "Пожалуйста, выберите категорию и подкатегорию",
+    "Please-upload-the-poster-before": "Пожалуйста, загрузите постер видео перед"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фото получено",
@@ -743,7 +748,7 @@
           "1": "Принятие насилия как средства, пытаясь изменить ситуацию",
           "2": "Принятие насилия как средства, пытаясь изменить ситуацию"
         },
-        "We-delete": "Принятие насилия как средства, пытаясь изменить ситуацию"
+        "We-delete": "Мы удаляем"
       },
       "Title-Level": {
         "1": "Будьте carreful",
@@ -829,23 +834,23 @@
     "verified": {
       "This-feature-requires-verification-to-use.": "Эта функция требует проверки для использования",
       "Verified-zone": "Проверенная зона",
-      "I-w-t-b-verified": "",
-      "I-w-t-b-certified": "",
-      "Certification-badge": "",
-      "Already-verified": "",
-      "Already-certified": "",
-      "Certification": "",
-      "Y-m-complet-t-following-cdt-t-b-certified": "",
-      "B-verified": "",
-      "H-m-t-1000-user-in-t-community": "",
-      "Have-content-t-d-not-offend-the-community": "",
-      "T-b-accepted-b-t-administration": "",
-      "Yr-profil-is-currently-being-checked-D": "",
-      "Verification": "",
-      "Pl-s-t-docs-a-complet-t-form-below": "",
-      "Upload-yr-password-id-identity-or-driver-license": "",
-      "Upload-a-photo-holding-t-ID-D": "",
-      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+      "I-w-t-b-verified": "Я хочу быть проверенным",
+      "I-w-t-b-certified": "Я хочу быть сертифицированным",
+      "Certification-badge": "Сертификационный значок",
+      "Already-verified": "Уже проверено",
+      "Already-certified": "Уже сертифицировано",
+      "Certification": "Сертификация",
+      "Y-m-complet-t-following-cdt-t-b-certified": "Для получения сертификата вы должны выполнить следующие условия.",
+      "B-verified": "Быть проверенным",
+      "H-m-t-1000-user-in-t-community": "Иметь более 1000 пользователей в сообществе",
+      "Have-content-t-d-not-offend-the-community": "Иметь контент, который не оскорбляет сообщество",
+      "T-b-accepted-b-t-administration": "Принимается администрацией",
+      "Yr-profil-is-currently-being-checked-D": "Ваш профиль в настоящее время проверяется. Мы свяжемся с вами в течение 48 часов по электронной почте.",
+      "Verification": "Проверка",
+      "Pl-s-t-docs-a-complet-t-form-below": "Отправьте необходимые документы и заполните форму ниже.",
+      "Upload-yr-password-id-identity-or-driver-license": "Загрузите свой пароль, удостоверение личности или водительские права.",
+      "Upload-a-photo-holding-t-ID-D": "Загрузите фотографию с удостоверением личности с листом бумаги с сегодняшней датой и надписью «Wiins».",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "Я согласен с тем, что мои данные могут быть использованы для проверки моей учетной записи."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Принятие насилия как средства, пытаясь изменить ситуацию",
@@ -992,6 +997,47 @@
     }
   },
   "STAT": {
-    "Better-reference": ""
+    "Better-reference": "Лучшая ссылка"
+  },
+  "CATEGORY": {
+    "Pro": "Профессиональный",
+    "NoPro": "Не профессионал",
+    "Compagny": "Compagny",
+    "Association": "Ассоциация",
+    "Institution": "Учреждение",
+    "Organization": "Организация",
+    "Food": "Еда",
+    "Automobile": "Автомобиль",
+    "DIY": "Сделай сам",
+    "Cultur": "Cultur",
+    "Humor": "Юмор",
+    "Information": "Информация",
+    "Health": "Здоровье",
+    "Science": "Наука",
+    "Sport": "Спорт",
+    "Technology": "Технологии",
+    "Musician": "Музыкант",
+    "Composer": "Композитор",
+    "Group": "Группа",
+    "Interpreter": "Переводчик",
+    "Videographer": "Видеооператор",
+    "Director": "Директор",
+    "Filmmaker": "Режиссер",
+    "Editor": "редактор",
+    "Actor": "Актер",
+    "Image": "Образ",
+    "Photographer": "Фотограф",
+    "Painter": "Художник",
+    "Writing": "Письмо",
+    "Writer": "Писатель",
+    "Humorist": "Юморист",
+    "Author": "Автор",
+    "Journalist": "Журналист",
+    "Support": "Поддержка",
+    "Record-company": "Звукозаписывающая компания",
+    "Studio": "Студия",
+    "Influencer": "Инфлюенсер",
+    "Athletic": "Спортивное",
+    "Ch-a-category": "Выберите категорию"
   }
 }

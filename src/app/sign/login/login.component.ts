@@ -8,7 +8,7 @@ import { RootStoreState } from '../../root-store'
 import { UserModel } from '../../core/models/baseUser/user.model'
 import { SignAnimation } from 'src/assets/route-animation/sign-animation'
 import { skipWhile, filter } from 'rxjs/operators'
-import { MatSnackBar } from '@angular/material'
+import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 import { DeviceDetectorService } from 'ngx-device-detector'
 

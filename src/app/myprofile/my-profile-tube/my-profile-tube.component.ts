@@ -6,7 +6,8 @@ import { Store, select } from '@ngrx/store';
 import { filter, skipWhile } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
 import { TranslationService } from 'src/app/core/services/translation/translation.service';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
+;
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component';
 
 @Component({

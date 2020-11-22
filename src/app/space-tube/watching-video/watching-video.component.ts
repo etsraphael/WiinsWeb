@@ -7,7 +7,7 @@ import { filter, skipWhile } from 'rxjs/operators';
 import { TubePageModel } from 'src/app/core/models/tube/tubePage.model'
 import { ActivatedRoute } from '@angular/router';
 import { TubePageStoreActions, TubePageStoreSelectors } from 'src/app/root-store/tube-page-store';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -9,8 +9,8 @@ import { FormControl } from '@angular/forms';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { ActivatedRoute } from '@angular/router';
 import { Room } from 'src/app/core/models/messenger/room.model';
-import { MatSnackBar } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-thread-message',

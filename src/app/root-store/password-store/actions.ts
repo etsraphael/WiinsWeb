@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import { UpdatePasswordPayload } from 'src/app/core/models/security/passwordUpdatePayload';
 
 export enum ActionTypes {
 

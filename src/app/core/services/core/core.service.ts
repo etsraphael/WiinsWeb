@@ -7,6 +7,7 @@ import { UserModel } from '../../models/baseUser/user.model';
 import { of, Observable } from 'rxjs';
 import { ProfileModel } from '../../models/baseUser/profile.model';
 import { MemberGroupModel } from '../../models/group/member-group.model';
+import { UpdatePasswordPayload } from '../../models/security/passwordUpdatePayload';
 
 @Injectable({
   providedIn: 'root'

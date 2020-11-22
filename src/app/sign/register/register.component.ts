@@ -11,9 +11,10 @@ import {
   UserStoreActions, UserStoreSelectors, RootStoreState,
   SearchPseudoStoreActions, SearchPseudoStoreSelectors
 } from 'src/app/root-store'
-import { MatSnackBar, MatDialog, MatSnackBarRef, SimpleSnackBar } from '@angular/material'
 import { ModalTOUComponent } from 'src/app/core/modal/modal-t-o-u/modal-t-o-u.component'
 import { DeviceDetectorService } from 'ngx-device-detector'
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
+import { MatDialog } from '@angular/material/dialog'
 
 @Component({
   selector: 'app-register',
@@ -48,7 +49,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     private store$: Store<RootStoreState.State>,
     private _snackBar: MatSnackBar,
     public dialog: MatDialog,
-    public deviceService: DeviceDetectorService
+    public deviceService: DeviceDetectorService,
   ) { }
 
   ngOnInit() {
@@ -119,8 +120,12 @@ export class RegisterComponent implements OnInit, OnDestroy {
       this.registerForm.get('password').value
     )
 
+    let lg: string
+    if(!this.translate.currentLang){ lg = 'en'}
+    else { lg = this.translate.currentLang }
+
     // send the new user
-    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend('en', new Date(date))))
+    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg, new Date(date))))
 
   }
 

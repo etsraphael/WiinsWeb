@@ -111,12 +111,6 @@
 }
 
 .btn {
-  font-size: 18px;
-  transition: 0.5s;
-  border-radius: 25px;
-  box-shadow: 0 2px 23px rgba(0, 0, 0, 0.19);
-  border: 2px solid white;
-
   span {
     color: white;
   }
@@ -132,10 +126,12 @@
 }
 
 .btn-music {
+  border: 0;
   background: linear-gradient(40deg, #17a2b8, #adb5bd);
 }
 
 .btn-album {
+  border: 0;
   background: linear-gradient(40deg, #ff4747, #31728b);
 }
 
@@ -388,6 +384,7 @@
 }
 
 .btn-send {
+  border: 0;
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
 

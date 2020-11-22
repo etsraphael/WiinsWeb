@@ -6,7 +6,7 @@ import { Observable, of as observableOf } from 'rxjs';
 import { ActionsReport } from './actions';
 import { ReportService } from 'src/app/core/services/report/report.service';
 import { TranslateService } from '@ngx-translate/core';
-import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material';
+import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar';
 
 @Injectable()
 export class ReportEffects {

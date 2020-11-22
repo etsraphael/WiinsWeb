@@ -159,7 +159,6 @@
     "To-chosse": "Elegir",
     "To-signal-an-issue": "Informar de un problema",
     "Total": "Total",
-    "Towards-an-infinit-space": "Hacia un espacio inifinit",
     "Trend": "Tendencia",
     "Unsubscribe": "Darse de baja",
     "Update": "Actualizar",
@@ -196,11 +195,15 @@
     "responses": "respuestas",
     "soon": "pronto",
     "views": "vistas",
-    "Music-publication": "",
-    "Tube-publication": "",
-    "Monetization": "",
-    "Loading": "",
-    "Upload-yr-file-here": ""
+    "Music-publication": "Publicación musical",
+    "Tube-publication": "Publicación de tubo",
+    "Monetization": "Monetización",
+    "Loading": "Cargando",
+    "Upload-yr-file-here": "Sube tu archivo aquí",
+    "Both": "Ambos",
+    "Break-the-rules": "Romper las reglas",
+    "For-You": "Para ti",
+    "Discover": "Descubrir"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -550,8 +553,10 @@
     "y-h-to-delete-yr-page-or-group-before": "Debe eliminar sus páginas o grupos antes de",
     "y-have-to-be-friend": "debes ser amigo",
     "you-hav-to-upgrad-a-manager-before-leave": "Debes promocionar a un gerente antes de abandonar el grupo",
-    "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-be-verified": "Tienes que ser verificado",
+    "You-hv-to-get-t-community": "Tienes que conseguir la comunidad",
+    "Please-choose-cat-and-sub": "Elija categoría y subcategoría",
+    "Please-upload-the-poster-before": "Sube el póster del video antes"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La foto es recibida",
@@ -743,7 +748,7 @@
           "1": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
           "2": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
         },
-        "We-delete": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
+        "We-delete": "Borramos"
       },
       "Title-Level": {
         "1": "Sé carreful",
@@ -829,23 +834,23 @@
     "verified": {
       "This-feature-requires-verification-to-use.": "Esta función requiere verificación para usar",
       "Verified-zone": "Zona verificada",
-      "I-w-t-b-verified": "",
-      "I-w-t-b-certified": "",
-      "Certification-badge": "",
-      "Already-verified": "",
-      "Already-certified": "",
-      "Certification": "",
-      "Y-m-complet-t-following-cdt-t-b-certified": "",
-      "B-verified": "",
-      "H-m-t-1000-user-in-t-community": "",
-      "Have-content-t-d-not-offend-the-community": "",
-      "T-b-accepted-b-t-administration": "",
-      "Yr-profil-is-currently-being-checked-D": "",
-      "Verification": "",
-      "Pl-s-t-docs-a-complet-t-form-below": "",
-      "Upload-yr-password-id-identity-or-driver-license": "",
-      "Upload-a-photo-holding-t-ID-D": "",
-      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+      "I-w-t-b-verified": "Quiero ser verificado",
+      "I-w-t-b-certified": "Quiero estar certificado",
+      "Certification-badge": "Insignia de certificación",
+      "Already-verified": "Ya verificado",
+      "Already-certified": "Ya certificado",
+      "Certification": "Certificación",
+      "Y-m-complet-t-following-cdt-t-b-certified": "Debe completar las siguientes condiciones para obtener la certificación.",
+      "B-verified": "Ser verificado",
+      "H-m-t-1000-user-in-t-community": "Tener más de 1000 usuarios en la comunidad",
+      "Have-content-t-d-not-offend-the-community": "Tener contenido que no ofenda a la comunidad.",
+      "T-b-accepted-b-t-administration": "Para ser aceptado por la administración",
+      "Yr-profil-is-currently-being-checked-D": "Actualmente se está comprobando tu perfil. Nos comunicaremos con usted dentro de las 48 horas por correo electrónico.",
+      "Verification": "Verificación",
+      "Pl-s-t-docs-a-complet-t-form-below": "Envíe los documentos necesarios y complete el siguiente formulario.",
+      "Upload-yr-password-id-identity-or-driver-license": "Cargue su contraseña, identidad de identificación o licencia de conducir.",
+      "Upload-a-photo-holding-t-ID-D": "Sube una foto con la identificación con una hoja de papel con la fecha de hoy y \"Wiins\" escrito en ella.",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "Acepto que mis datos puedan usarse para verificar mi cuenta."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
@@ -992,6 +997,47 @@
     }
   },
   "STAT": {
-    "Better-reference": ""
+    "Better-reference": "Mejor referencia"
+  },
+  "CATEGORY": {
+    "Pro": "Profesional",
+    "NoPro": "No profesional",
+    "Compagny": "Compagny",
+    "Association": "Asociación",
+    "Institution": "Institución",
+    "Organization": "Organización",
+    "Food": "Comida",
+    "Automobile": "Automóvil",
+    "DIY": "Bricolaje",
+    "Cultur": "Cultur",
+    "Humor": "Humor",
+    "Information": "Información",
+    "Health": "Salud",
+    "Science": "Ciencias",
+    "Sport": "Deporte",
+    "Technology": "Tecnología",
+    "Musician": "Músico",
+    "Composer": "Compositor",
+    "Group": "Grupo",
+    "Interpreter": "Interprete",
+    "Videographer": "Camarógrafo",
+    "Director": "Director",
+    "Filmmaker": "Cineasta",
+    "Editor": "Editor",
+    "Actor": "Actor",
+    "Image": "Imagen",
+    "Photographer": "Fotógrafo",
+    "Painter": "Pintor",
+    "Writing": "Escritura",
+    "Writer": "Escritor",
+    "Humorist": "Humorista",
+    "Author": "Autor",
+    "Journalist": "Periodista",
+    "Support": "Apoyo",
+    "Record-company": "Compañia discografica",
+    "Studio": "Estudio",
+    "Influencer": "Hombre de influencia",
+    "Athletic": "Atlético",
+    "Ch-a-category": "Elige una categoría"
   }
 }

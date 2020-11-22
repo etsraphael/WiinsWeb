@@ -159,7 +159,6 @@
     "To-chosse": "चुनें",
     "To-signal-an-issue": "किसी समस्या की रिपोर्ट करें",
     "Total": "कुल",
-    "Towards-an-infinit-space": "एक इनिफिनिट स्पेस की ओर",
     "Trend": "ट्रेंड",
     "Unsubscribe": "सदस्यता रद्द",
     "Update": "अपडेट करें",
@@ -196,11 +195,15 @@
     "responses": "प्रतिक्रियाओं",
     "soon": "जल्द ही",
     "views": "विचारों",
-    "Music-publication": "",
-    "Tube-publication": "",
-    "Monetization": "",
-    "Loading": "",
-    "Upload-yr-file-here": ""
+    "Music-publication": "संगीत प्रकाशन",
+    "Tube-publication": "ट्यूब प्रकाशन",
+    "Monetization": "मुद्रीकरण",
+    "Loading": "लोड हो रहा है",
+    "Upload-yr-file-here": "अपनी फ़ाइल यहाँ अपलोड करें",
+    "Both": "दोनों",
+    "Break-the-rules": "नियम तोड़ा",
+    "For-You": "तुम्हारे लिए",
+    "Discover": "डिस्कवर"
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -550,8 +553,10 @@
     "y-h-to-delete-yr-page-or-group-before": "इससे पहले आपको अपने पेज या समूह ों को हटाना होगा",
     "y-have-to-be-friend": "आप दोस्त होने चाहिए",
     "you-hav-to-upgrad-a-manager-before-leave": "समूह छोड़ने से पहले आपको एक प्रबंधक को बढ़ावा देना चाहिए",
-    "You-hv-to-be-verified": "",
-    "You-hv-to-get-t-community": ""
+    "You-hv-to-be-verified": "आपको सत्यापित किया जाना है",
+    "You-hv-to-get-t-community": "आपको समुदाय प्राप्त करना होगा",
+    "Please-choose-cat-and-sub": "कृपया श्रेणी और उप श्रेणी चुनें",
+    "Please-upload-the-poster-before": "कृपया पहले वीडियो का पोस्टर अपलोड करें"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -743,7 +748,7 @@
           "1": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
           "2": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति"
         },
-        "We-delete": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति"
+        "We-delete": "हम हटाते हैं"
       },
       "Title-Level": {
         "1": "कैरिफुल रहें",
@@ -829,23 +834,23 @@
     "verified": {
       "This-feature-requires-verification-to-use.": "इस सुविधा का उपयोग करने के लिए सत्यापन की आवश्यकता है",
       "Verified-zone": "सत्यापित क्षेत्र",
-      "I-w-t-b-verified": "",
-      "I-w-t-b-certified": "",
-      "Certification-badge": "",
-      "Already-verified": "",
-      "Already-certified": "",
-      "Certification": "",
-      "Y-m-complet-t-following-cdt-t-b-certified": "",
-      "B-verified": "",
-      "H-m-t-1000-user-in-t-community": "",
-      "Have-content-t-d-not-offend-the-community": "",
-      "T-b-accepted-b-t-administration": "",
-      "Yr-profil-is-currently-being-checked-D": "",
-      "Verification": "",
-      "Pl-s-t-docs-a-complet-t-form-below": "",
-      "Upload-yr-password-id-identity-or-driver-license": "",
-      "Upload-a-photo-holding-t-ID-D": "",
-      "I-agree-t-m-data-may-b-used-t-check-my-account": ""
+      "I-w-t-b-verified": "मैं सत्यापित होना चाहता हूं",
+      "I-w-t-b-certified": "मैं प्रमाणित होना चाहता हूं",
+      "Certification-badge": "प्रमाणन बैज",
+      "Already-verified": "पहले से ही सत्यापित है",
+      "Already-certified": "पहले से ही प्रमाणित है",
+      "Certification": "प्रमाणीकरण",
+      "Y-m-complet-t-following-cdt-t-b-certified": "प्रमाणित होने के लिए आपको निम्नलिखित शर्तों को पूरा करना होगा।",
+      "B-verified": "सत्यापित हो",
+      "H-m-t-1000-user-in-t-community": "समुदाय में 1000 से अधिक उपयोगकर्ता हैं",
+      "Have-content-t-d-not-offend-the-community": "ऐसी सामग्री रखें जो समुदाय को अपमानित न करें",
+      "T-b-accepted-b-t-administration": "प्रशासन द्वारा स्वीकार किया जाना है",
+      "Yr-profil-is-currently-being-checked-D": "आपकी प्रोफ़ाइल वर्तमान में जाँची जा रही है। हम ईमेल द्वारा 48 घंटे के भीतर आपसे संपर्क करेंगे।",
+      "Verification": "सत्यापन",
+      "Pl-s-t-docs-a-complet-t-form-below": "कृपया आवश्यक दस्तावेज भेजें और नीचे दिए गए फॉर्म को पूरा करें।",
+      "Upload-yr-password-id-identity-or-driver-license": "अपना पासवर्ड, आईडी पहचान या चालक लाइसेंस अपलोड करें।",
+      "Upload-a-photo-holding-t-ID-D": "आज की तारीख के साथ कागज की एक शीट के साथ आईडी रखने वाली एक तस्वीर अपलोड करें और उस पर \"वाईन्स\" लिखता है।",
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "मैं सहमत हूं कि मेरे खाते की जांच के लिए मेरे डेटा का उपयोग किया जा सकता है।"
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
@@ -992,6 +997,47 @@
     }
   },
   "STAT": {
-    "Better-reference": ""
+    "Better-reference": "बेहतर संदर्भ"
+  },
+  "CATEGORY": {
+    "Pro": "पेशेवर",
+    "NoPro": "कोई पेशेवर नहीं",
+    "Compagny": "Compagny",
+    "Association": "संगति",
+    "Institution": "संस्थान",
+    "Organization": "संगठन",
+    "Food": "खाना",
+    "Automobile": "ऑटोमोबाइल",
+    "DIY": "DIY",
+    "Cultur": "संस्कृतियों",
+    "Humor": "हास्य",
+    "Information": "जानकारी",
+    "Health": "स्वास्थ्य",
+    "Science": "विज्ञान",
+    "Sport": "खेल",
+    "Technology": "प्रौद्योगिकी",
+    "Musician": "संगीतकार",
+    "Composer": "संगीतकार",
+    "Group": "समूह",
+    "Interpreter": "दुभाषिया",
+    "Videographer": "वीडियोग्राफर",
+    "Director": "निदेशक",
+    "Filmmaker": "फिल्म निर्माता",
+    "Editor": "संपादक",
+    "Actor": "अभिनेता",
+    "Image": "छवि",
+    "Photographer": "फोटोग्राफर",
+    "Painter": "चित्रकार",
+    "Writing": "लिख रहे हैं",
+    "Writer": "लेखक",
+    "Humorist": "ठिठोलिया",
+    "Author": "लेखक",
+    "Journalist": "पत्रकार",
+    "Support": "सहयोग",
+    "Record-company": "अभिलेख कंपनी",
+    "Studio": "स्टूडियो",
+    "Influencer": "प्रभावशाली व्यक्ति",
+    "Athletic": "पुष्ट",
+    "Ch-a-category": "कोई श्रेणी चुनें"
   }
 }

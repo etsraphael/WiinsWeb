@@ -8,7 +8,6 @@ import { AuthenticationService } from './services/authentication/authentication.
 import { CoreService } from './services/core/core.service'
 import { SearchService } from './services/search/search.service'
 import { JwtInterceptor } from './interceptors/jwt.interceptor'
-import { ErrorInterceptor } from './interceptors/error.interceptor'
 import { ProfileResolver } from './services/core/profile.resolver'
 import { UserResolver } from './services/core/user.resolver'
 import { CommentService } from './services/publications/comment/comment.service'
@@ -35,7 +34,6 @@ import { PaymentService } from './services/payment/payment.service';
     NotificationService, SearchService, WsService, MusicService, FriendRequestService,
     FileUploadService, ProfileResolver, UserResolver, MessengerService,
     PageResolver, UploadService, UploadWithoutInjectorService, PaymentService,
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
   ]
 })

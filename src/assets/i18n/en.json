@@ -159,7 +159,6 @@
     "To-chosse": "Choose",
     "To-signal-an-issue": "Report a problem",
     "Total": "Total",
-    "Towards-an-infinit-space": "Towards an infinite space",
     "Trend": "Trend",
     "Unsubscribe": "Unsubscribe",
     "Update": "Update",
@@ -200,7 +199,11 @@
     "Tube-publication": "Tube publication",
     "Monetization": "Monetization",
     "Loading": "Loading",
-    "Upload-yr-file-here": "Upload your file here"
+    "Upload-yr-file-here": "Upload your file here",
+    "Both": "Both",
+    "Break-the-rules": "Break the rules",
+    "For-You": "For you",
+    "Discover": "Discover"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -551,7 +554,9 @@
     "y-have-to-be-friend": "you must be friends",
     "you-hav-to-upgrad-a-manager-before-leave": "You must promote a manager before leaving the group",
     "You-hv-to-be-verified": "You have to be verified",
-    "You-hv-to-get-t-community": "You have to get the community"
+    "You-hv-to-get-t-community": "You have to get the community",
+    "Please-choose-cat-and-sub": "Please choose category and sub category",
+    "Please-upload-the-poster-before": "Please upload the poster of the video before"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -993,5 +998,46 @@
   },
   "STAT": {
     "Better-reference": "Better reference"
+  },
+  "CATEGORY": {
+    "Pro": "Professional",
+    "NoPro": "No professional",
+    "Compagny": "Compagny",
+    "Association": "Association",
+    "Institution": "Institution",
+    "Organization": "Organization",
+    "Food": "Food",
+    "Automobile": "Automobile",
+    "DIY": "DIY",
+    "Cultur": "Cultur",
+    "Humor": "Humor",
+    "Information": "Information",
+    "Health": "Health",
+    "Science": "Science",
+    "Sport": "Sport",
+    "Technology": "Technology",
+    "Musician": "Musician",
+    "Composer": "Composer",
+    "Group": "Group",
+    "Interpreter": "Interpreter",
+    "Videographer": "Videographer",
+    "Director": "Director",
+    "Filmmaker": "Filmmaker",
+    "Editor": "Editor",
+    "Actor": "Actor",
+    "Image": "Image",
+    "Photographer": "Photographer",
+    "Painter": "Painter",
+    "Writing": "Writing",
+    "Writer": "Writer",
+    "Humorist": "Humorist",
+    "Author": "Author",
+    "Journalist": "Journalist",
+    "Support": "Support",
+    "Record-company": "Record company",
+    "Studio": "Studio",
+    "Influencer": "Influencer",
+    "Athletic": "Athletic",
+    "Ch-a-category": "Choose a category"
   }
 }
