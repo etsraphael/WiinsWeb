@@ -1,23 +1,17 @@
 .suggestion-search {
   position: fixed;
-  z-index: 1;
-  background-color: #fff;
   border-radius: 0 0 9px 9px;
   overflow: hidden;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.175);
-  border: 1px solid #e7e7e7;
   border-top: 0;
   top: 57px;
   z-index: 2;
 
   .content-suggestion {
     overflow: hidden;
-
-    .list-popular {
-      border-left: 1px solid #e7e7e7;
-      overflow: scroll;
-      max-height: 350px;
-    }
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.175);
+    border: 1px solid #e7e7e747;
 
     p {
       font-size: 0.8rem;
@@ -34,6 +28,7 @@
     border-radius: 0;
     display: flex;
     cursor: pointer;
+    min-height: 4.5rem;
   }
 
   .list-group-item:hover{
@@ -48,15 +43,6 @@
     height: 44px;
     position: absolute;
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.175);
-  }
-
-  .list-user {
-    overflow: scroll;
-    max-height: 350px;
-
-    .content-text {
-      display: inline;
-    }
   }
 
   .avanced-search {
