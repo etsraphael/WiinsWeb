@@ -40,7 +40,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     // check if the user is active
     this.userSub = this.user$.subscribe((action: UserModel) => {
-      if (!action.active) {
+      const time =  new Date(action.chargedUntil).getTime() - new Date().getTime()
+      const diffDays = Math.ceil(time / (1000 * 60 * 60 * 24))
+      if (diffDays < 0) {
         this.router.navigate(['/setting/ledger'])
         this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.Account-temporarily-disabled'), null,
