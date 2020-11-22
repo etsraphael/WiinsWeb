@@ -201,7 +201,9 @@
     "Loading": "Cargando",
     "Upload-yr-file-here": "Sube tu archivo aquí",
     "Both": "Ambos",
-    "Break-the-rules": "Romper las reglas"
+    "Break-the-rules": "Romper las reglas",
+    "For-You": "Para ti",
+    "Discover": "Descubrir"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -746,7 +748,7 @@
           "1": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
           "2": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
         },
-        "We-delete": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
+        "We-delete": "Borramos"
       },
       "Title-Level": {
         "1": "Sé carreful",

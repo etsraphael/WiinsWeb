@@ -201,7 +201,9 @@
     "Loading": "载入中",
     "Upload-yr-file-here": "在此处上传文件",
     "Both": "都",
-    "Break-the-rules": "打破常规"
+    "Break-the-rules": "打破常规",
+    "For-You": "为了你",
+    "Discover": "发现"
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -746,7 +748,7 @@
           "1": "接受暴力作为试图改变事物的手段",
           "2": "接受暴力作为试图改变事物的手段"
         },
-        "We-delete": "接受暴力作为试图改变事物的手段"
+        "We-delete": "我们删除"
       },
       "Title-Level": {
         "1": "是可伤害的",

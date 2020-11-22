@@ -201,7 +201,9 @@
     "Loading": "Wird geladen",
     "Upload-yr-file-here": "Laden Sie hier Ihre Datei hoch",
     "Both": "Beide",
-    "Break-the-rules": "Die Regeln brechen"
+    "Break-the-rules": "Die Regeln brechen",
+    "For-You": "Für dich",
+    "Discover": "Entdecken"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -746,7 +748,7 @@
           "1": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
           "2": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
         },
-        "We-delete": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
+        "We-delete": "Wir löschen"
       },
       "Title-Level": {
         "1": "Seien Sie carreful",
