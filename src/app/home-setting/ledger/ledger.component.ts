@@ -11,7 +11,7 @@ import { TransfertCryptoModalComponent } from 'src/app/core/modal/transfert-cryp
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { CardPayment } from 'src/app/core/models/payment/cardPayment.model';
 import { TransfertRequest } from 'src/app/core/models/payment/TransfertRequest.model';
-import { AssetCryptoResponse, CryptoServiceService, DataCurrency } from 'src/app/core/services/crypto/crypto-service.service';
+import { AssetCryptoResponse, CryptoServiceService } from 'src/app/core/services/crypto/crypto-service.service';
 import { AccountBalanceResponse, CoinBaseResponse, PaymentService, TransfertRequestSingle } from 'src/app/core/services/payment/payment.service';
 import { TranslationService } from 'src/app/core/services/translation/translation.service';
 import { MyUserStoreSelectors, RootStoreState } from 'src/app/root-store';
