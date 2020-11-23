@@ -1,3 +1,4 @@
+import { Room } from 'src/app/core/models/messenger/room.model'
 import { ActionsMessage, ActionTypes } from './actions'
 import { featureAdapter, initialState, State } from './state'
 
@@ -10,15 +11,33 @@ export function Reducer(state: State = initialState, action: ActionsMessage) {
       if(typeof state.entities[action.id] == 'undefined'){
         return state
       } else {
-        let udpateRoom = state.entities[action.id]
-        udpateRoom.roomOption.participants[0].notification = 0
-        return featureAdapter.updateOne({ id: action.id, changes: udpateRoom }, state)
+        const currentRoomFound = state.entities[action.id]
+        const update: Room = {
+          ...state.entities[action.id],
+          participants: [currentRoomFound.participants[0]],
+          roomOption: {
+            participants: [{
+              ...state.entities[action.id].roomOption.participants[0],
+              notification: state.entities[action.id].roomOption.participants[0].notification + 1
+            }]
+          }
+        }
+        return featureAdapter.updateOne({ id: action.id, changes: update }, state)
       }
     }
     case ActionTypes.UPDATE_NOTIFICATION: {
-      let udpateRoom = state.entities[action.id]
-      udpateRoom.roomOption.participants[0].notification += 1
-      return featureAdapter.updateOne({ id: action.id, changes: udpateRoom }, state)
+      const currentRoomFound = state.entities[action.id]
+      const update: Room = {
+        ...state.entities[action.id],
+        participants: [currentRoomFound.participants[0]],
+        roomOption: {
+          participants: [{
+            ...state.entities[action.id].roomOption.participants[0],
+            notification: state.entities[action.id].roomOption.participants[0].notification + 1
+          }]
+        }
+      }
+      return featureAdapter.updateOne({ id: action.id, changes: update }, state)
     }
     case ActionTypes.DELETE_ROOM: {
       return featureAdapter.removeOne(action.id, state);

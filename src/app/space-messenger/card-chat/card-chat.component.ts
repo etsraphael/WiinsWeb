@@ -62,15 +62,14 @@ export class CardChatComponent implements OnInit, OnDestroy {
   ngOnInit() {
 
     // to load the room by the room id
-    if (this.data.currentRoom !== null) {
-      this.store$.dispatch(new RoomByIdStoreActions.loadRoomById(this.data.currentRoom._id, 1, null))
-      if (this.data.currentRoom.roomOption.participants[0].notification !== 0) {
-        this.store$.dispatch(new CurrentRoomStoreActions.resetNotification(this.data.currentRoom._id))
-        this.store$.dispatch(new AllRoomsStoreActions.resetNotification(this.data.currentRoom._id))
-      }
-    } 
-    // to load the room by the profile id
-    else { this.store$.dispatch(new RoomByIdStoreActions.loadRoomByIdProfile(this.data.cardHeader[0]._id)) }
+    this.store$.dispatch(new RoomByIdStoreActions.loadRoomById(this.data.currentRoom._id, 1, null))
+
+
+    // reset the notification if we have one
+    if (this.data.currentRoom.roomOption.participants[0].notification !== 0) {
+      this.store$.dispatch(new CurrentRoomStoreActions.resetNotification(this.data.currentRoom._id))
+      this.store$.dispatch(new AllRoomsStoreActions.resetNotification(this.data.currentRoom._id))
+    }
 
     // to select the room
     this.room$ = this.store$.pipe(
