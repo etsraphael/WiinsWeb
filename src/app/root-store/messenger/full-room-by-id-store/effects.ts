@@ -7,18 +7,18 @@ import { WsService } from 'src/app/core/services/ws/ws.service'
 import { ActionsMessage } from './actions'
 import * as featureActions from './actions'
 import { AllRoomsStoreActions } from '../all-rooms-store'
-import { Action, Store } from '@ngrx/store'
+import { Action } from '@ngrx/store'
 import { CurrentRoomStoreActions } from '../current-room-store'
 
 
 
 @Injectable()
 export class FullRoomByIdStoreEffects {
+
   constructor(
     private dataService: MessengerService,
     private ws: WsService,
     private actions$: Actions) { }
-
 
   @Effect()
   loadRoomByID: Observable<Action> = this.actions$.pipe(

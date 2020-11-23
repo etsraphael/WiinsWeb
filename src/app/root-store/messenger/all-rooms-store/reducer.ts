@@ -18,7 +18,7 @@ export function Reducer(state: State = initialState, action: ActionsMessage) {
           roomOption: {
             participants: [{
               ...state.entities[action.id].roomOption.participants[0],
-              notification: state.entities[action.id].roomOption.participants[0].notification + 1
+              notification: 0
             }]
           }
         }
