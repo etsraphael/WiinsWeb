@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "あなたはまだ音楽が好きじゃない",
-    "no-friend-request": "現在、需要の友人はいません",
+    "no-friend-request": "現在、友達リクエストはありません",
     "no-notification": "通知はまだありません"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "確認する必要があります",
     "You-hv-to-get-t-community": "あなたはコミュニティを取得する必要があります",
     "Please-choose-cat-and-sub": "カテゴリとサブカテゴリを選択してください",
-    "Please-upload-the-poster-before": "前に動画のポスターをアップロードしてください"
+    "Please-upload-the-poster-before": "前に動画のポスターをアップロードしてください",
+    "T-min-is-1$": "最低額は1ドルです"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",

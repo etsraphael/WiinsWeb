@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "អ្នកមិនទាន់ចូលចិត្តតន្ត្រីនៅឡើយទេ",
-    "no-friend-request": "គ្មានមិត្តភក្តិនៃតម្រូវការនាពេលបច្ចុប្បន្ននេះទេ",
+    "no-friend-request": "មិនមានសំណើមិត្តភក្តិទេឥឡូវនេះ",
     "no-notification": "មិនទាន់មានការជូនដំណឹងនៅឡើយទេ"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "អ្នកត្រូវតែទទួលយកល័ក្ខខ័ណ្ឌនៃការប្រើប្រាស់",
     "y-h-to-delete-yr-page-or-group-before": "អ្នកត្រូវតែលុបទំព័រឬក្រុមរបស់អ្នកពីមុន",
     "y-have-to-be-friend": "អ្នកត្រូវតែជាមិត្តភក្តិ",
-    "you-hav-to-upgrad-a-manager-before-leave": "អ្នកត្រូវតែលើកកម្ពស់អ្នកគ្រប់គ្រងមុនពេលចាកចេញពីក្រុម"
+    "you-hav-to-upgrad-a-manager-before-leave": "អ្នកត្រូវតែលើកកម្ពស់អ្នកគ្រប់គ្រងមុនពេលចាកចេញពីក្រុម",
+    "T-min-is-1$": "អប្បបរមាគឺ ១ ដុល្លារ"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "រូបថតត្រូវបានទទួល",

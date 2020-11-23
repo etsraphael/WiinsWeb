@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "तपाइँले अहिलेसम्म संगीत मनपराउनु भएको छैन",
-    "no-friend-request": "अहिले कुनै साथीको माग छैन",
+    "no-friend-request": "अहिले कुनै मित्र अनुरोध छैन",
     "no-notification": "अझै सूचना छैन"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "तपाईंले नियम र सर्तहरूको उपयोग गर्नै पर्छ",
     "y-h-to-delete-yr-page-or-group-before": "तपाईंले आफ्नो पृष्ठहरू वा समूहहरू अघि मेटाउनुपर्नेछ",
     "y-have-to-be-friend": "तपाईं साथी हुनुपर्छ",
-    "you-hav-to-upgrad-a-manager-before-leave": "तपाईंले समूह छोड्नु अघि प्रबन्धकलाई प्रमोट गर्नुपर्दछ"
+    "you-hav-to-upgrad-a-manager-before-leave": "तपाईंले समूह छोड्नु अघि प्रबन्धकलाई प्रमोट गर्नुपर्दछ",
+    "T-min-is-1$": "न्यूनतम १ $ हो"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त भयो",

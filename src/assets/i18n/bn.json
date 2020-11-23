@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "আপনি এখনও গান পছন্দ করেন নি",
-    "no-friend-request": "এই মুহুর্তে কোন বন্ধু দাবি",
+    "no-friend-request": "এখনই কোনও বন্ধুর অনুরোধ নেই",
     "no-notification": "এখনও কোন বিজ্ঞপ্তি"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "আপনাকে যাচাই করতে হবে",
     "You-hv-to-get-t-community": "আপনাকে সম্প্রদায়টি পেতে হবে",
     "Please-choose-cat-and-sub": "বিভাগ এবং উপ বিভাগ নির্বাচন করুন",
-    "Please-upload-the-poster-before": "এর আগে ভিডিওর পোস্টার আপলোড করুন"
+    "Please-upload-the-poster-before": "এর আগে ভিডিওর পোস্টার আপলোড করুন",
+    "T-min-is-1$": "সর্বনিম্ন 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",

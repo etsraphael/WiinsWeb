@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Jums dar nepatiko muzika",
-    "no-friend-request": "Šiuo metu nėra paklausaus draugo",
+    "no-friend-request": "Šiuo metu nėra draugo užklausos",
     "no-notification": "Dar nėra pranešimo"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Privalote sutikti su naudojimo sąlygomis",
     "y-h-to-delete-yr-page-or-group-before": "Anksčiau turite ištrinti savo puslapius ar grupes",
     "y-have-to-be-friend": "tu privalai būti draugais",
-    "you-hav-to-upgrad-a-manager-before-leave": "Prieš palikdami grupę, turite paaukštinti vadybininką"
+    "you-hav-to-upgrad-a-manager-before-leave": "Prieš palikdami grupę, turite paaukštinti vadybininką",
+    "T-min-is-1$": "Minimalus dydis yra 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Nuotrauka gauta",

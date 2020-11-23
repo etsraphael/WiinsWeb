@@ -8,6 +8,7 @@ import { Observable, Subscription } from 'rxjs';
 import { UserModel } from 'src/app/core/models/baseUser/user.model';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState, MyUserStoreSelectors } from 'src/app/root-store';
+import { MatSelectChange } from '@angular/material/select';
 
 @Component({
   selector: 'app-language',
@@ -45,9 +46,10 @@ export class LanguageComponent implements OnInit {
 
   }
 
-  switchLanguage(codelanguage: string): void {
+  switchLanguage(codelanguage: MatSelectChange): void {
     // to swith the language
-    this.selectedLanguage = codelanguage;
+    this.selectedLanguage = codelanguage.value;
+    this.translate.use(this.selectedLanguage)
   }
 
   save(): void {

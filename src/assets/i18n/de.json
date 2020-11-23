@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Musik hat Ihnen noch nicht gefallen",
-    "no-friend-request": "Momentan kein Freund der Nachfrage",
+    "no-friend-request": "Derzeit keine Freundschaftsanfrage",
     "no-notification": "Noch keine Benachrichtigung"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "Sie müssen überprüft werden",
     "You-hv-to-get-t-community": "Du musst die Community bekommen",
     "Please-choose-cat-and-sub": "Bitte wählen Sie Kategorie und Unterkategorie",
-    "Please-upload-the-poster-before": "Bitte laden Sie das Poster des Videos vorher hoch"
+    "Please-upload-the-poster-before": "Bitte laden Sie das Poster des Videos vorher hoch",
+    "T-min-is-1$": "Das Minimum ist 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",

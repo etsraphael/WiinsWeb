@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "你还不喜欢音乐",
-    "no-friend-request": "现在没有需求的朋友",
+    "no-friend-request": "现在没有朋友的要求",
     "no-notification": "暂无通知"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "您必须经过验证",
     "You-hv-to-get-t-community": "你必须得到社区",
     "Please-choose-cat-and-sub": "请选择类别和子类别",
-    "Please-upload-the-poster-before": "请先上传视频的海报"
+    "Please-upload-the-poster-before": "请先上传视频的海报",
+    "T-min-is-1$": "最低为1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",

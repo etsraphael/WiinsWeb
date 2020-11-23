@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Nu ți-a plăcut încă muzica",
-    "no-friend-request": "Niciun prieten al cererii în acest moment",
+    "no-friend-request": "Nicio cerere de prietenie chiar acum",
     "no-notification": "Nici o notificare încă"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Trebuie să acceptați termenii și condițiile de utilizare",
     "y-h-to-delete-yr-page-or-group-before": "Trebuie să vă ștergeți paginile sau grupurile înainte",
     "y-have-to-be-friend": "trebuie să fii prieten",
-    "you-hav-to-upgrad-a-manager-before-leave": "Trebuie să promovați un manager înainte de a părăsi grupul"
+    "you-hav-to-upgrad-a-manager-before-leave": "Trebuie să promovați un manager înainte de a părăsi grupul",
+    "T-min-is-1$": "Minimul este de 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",

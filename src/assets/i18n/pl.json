@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Nie lubiłeś jeszcze muzyki",
-    "no-friend-request": "Żaden przyjaciel popytu w tej chwili",
+    "no-friend-request": "Brak zaproszenia do znajomych w tej chwili",
     "no-notification": "Nie ma jeszcze powiadomienia"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Musisz zaakceptować warunki użytkowania",
     "y-h-to-delete-yr-page-or-group-before": "Musisz wcześniej usunąć swoje strony lub grupy",
     "y-have-to-be-friend": "musicie być przyjaciółmi",
-    "you-hav-to-upgrad-a-manager-before-leave": "Musisz awansować menedżera przed opuszczeniem grupy"
+    "you-hav-to-upgrad-a-manager-before-leave": "Musisz awansować menedżera przed opuszczeniem grupy",
+    "T-min-is-1$": "Minimalna kwota to 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",

@@ -528,7 +528,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "Δεν σας άρεσε ακόμα η μουσική",
-    "no-friend-request": "Κανένας φίλος της ζήτησης τώρα",
+    "no-friend-request": "Κανένα αίτημα φίλου αυτήν τη στιγμή",
     "no-notification": "Δεν υπάρχει ακόμη ειδοποίηση"
   },
   "ERROR-MESSAGE": {
@@ -598,7 +598,8 @@
     "y-h-to-accept-the-tou": "Πρέπει να αποδεχτείτε τους όρους και τις προϋποθέσεις χρήσης",
     "y-h-to-delete-yr-page-or-group-before": "Πρέπει να διαγράψετε τις σελίδες ή τις ομάδες σας πριν",
     "y-have-to-be-friend": "πρέπει να είσαι φίλος",
-    "you-hav-to-upgrad-a-manager-before-leave": "Πρέπει να προωθήσετε έναν διαχειριστή πριν αποχωρήσετε από την ομάδα"
+    "you-hav-to-upgrad-a-manager-before-leave": "Πρέπει να προωθήσετε έναν διαχειριστή πριν αποχωρήσετε από την ομάδα",
+    "T-min-is-1$": "Το ελάχιστο είναι 1 $"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Η φωτογραφία έχει ληφθεί",

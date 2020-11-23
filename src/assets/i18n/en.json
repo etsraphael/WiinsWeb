@@ -486,7 +486,7 @@
   },
   "EMPTY-MESSAGE": {
     "You-haven-t-liked-music-yet": "You haven't liked music yet",
-    "no-friend-request": "No friend of demand right now",
+    "no-friend-request": "No friend request right now",
     "no-notification": "No notification yet"
   },
   "ERROR-MESSAGE": {
@@ -556,7 +556,8 @@
     "You-hv-to-be-verified": "You have to be verified",
     "You-hv-to-get-t-community": "You have to get the community",
     "Please-choose-cat-and-sub": "Please choose category and sub category",
-    "Please-upload-the-poster-before": "Please upload the poster of the video before"
+    "Please-upload-the-poster-before": "Please upload the poster of the video before",
+    "T-min-is-1$": "The minimum is 1$"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
