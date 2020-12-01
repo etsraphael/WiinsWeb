@@ -118,6 +118,9 @@ export class NotificationListComponent implements OnInit {
       case 'NotificationReport':
         this.showModalReport(n)
         break;
+      case 'NotificationVerification':
+      case 'NotificationCertification' : 
+        this.router.navigate([`/setting/certificate`]);
     }
 
     // if the message is not seen, we update the notification
