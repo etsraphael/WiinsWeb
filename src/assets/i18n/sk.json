@@ -669,7 +669,11 @@
     "tag-you-in-comment": "vás označil v komentári",
     "tag-you-in-playlist": "vás označil v zozname skladieb",
     "you-appear-in-project-of": "Objavujete sa v novom projekte",
-    "you-have": "máš"
+    "you-have": "máš",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Názov stránky",

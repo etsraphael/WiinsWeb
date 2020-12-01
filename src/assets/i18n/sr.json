@@ -669,7 +669,11 @@
     "tag-you-in-comment": "вас је означио у коментару",
     "tag-you-in-playlist": "вас је означио на листи за репродукцију",
     "you-appear-in-project-of": "Појављујете се у новом пројекту",
-    "you-have": "Имаш"
+    "you-have": "Имаш",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Име странице",

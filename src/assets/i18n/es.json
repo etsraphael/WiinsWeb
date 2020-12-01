@@ -627,7 +627,11 @@
     "tag-you-in-comment": "te etiquetó en un comentario",
     "tag-you-in-playlist": "te etiquetó en una lista de reproducción",
     "you-appear-in-project-of": "Aparece en el nuevo proyecto de",
-    "you-have": "tienes"
+    "you-have": "tienes",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Nombre de la página",

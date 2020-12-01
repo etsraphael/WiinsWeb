@@ -669,7 +669,11 @@
     "tag-you-in-comment": "σας πρόσθεσαν σε ένα σχόλιο",
     "tag-you-in-playlist": "σας πρόσθεσαν σε μια λίστα αναπαραγωγής",
     "you-appear-in-project-of": "Εμφανίζεστε στο νέο έργο του",
-    "you-have": "έχεις"
+    "you-have": "έχεις",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Όνομα σελίδας",

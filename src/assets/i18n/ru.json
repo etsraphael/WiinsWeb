@@ -627,7 +627,11 @@
     "tag-you-in-comment": "отметил вас в комментарии",
     "tag-you-in-playlist": "отметил вас в плейлисте",
     "you-appear-in-project-of": "Вы появляетесь в новом проекте",
-    "you-have": "у тебя есть"
+    "you-have": "у тебя есть",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Название страницы",

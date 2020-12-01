@@ -627,7 +627,11 @@
     "tag-you-in-comment": "在评论中标记了您",
     "tag-you-in-playlist": "在播放列表中标记了您",
     "you-appear-in-project-of": "您出现在的新项目中",
-    "you-have": "你有"
+    "you-have": "你有",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "页面名称",

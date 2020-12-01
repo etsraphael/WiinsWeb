@@ -669,7 +669,11 @@
     "tag-you-in-comment": "നിങ്ങളെ ഒരു അഭിപ്രായത്തിൽ ടാഗുചെയ്‌തു",
     "tag-you-in-playlist": "നിങ്ങളെ ഒരു പ്ലേലിസ്റ്റിൽ ടാഗുചെയ്‌തു",
     "you-appear-in-project-of": "ന്റെ പുതിയ പ്രോജക്റ്റിൽ നിങ്ങൾ ദൃശ്യമാകും",
-    "you-have": "നിങ്ങൾക്ക് ഉണ്ട്"
+    "you-have": "നിങ്ങൾക്ക് ഉണ്ട്",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "പേജിന്റെ പേര്",
