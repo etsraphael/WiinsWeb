@@ -71,10 +71,6 @@ export class CommentFeatureStoreEffects {
     ))
   )
 
-
-
-
-
   pageOrprofile(comment: CommentModel, space: string) {
 
     switch (space) {

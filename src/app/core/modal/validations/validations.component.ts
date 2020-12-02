@@ -50,7 +50,7 @@ export class ValidationsComponent {
         break
       }
       case 'delete-comment-playlist-music': {
-        this.store$.dispatch(new CommentFeatureStoreActions.DeleteCommentPlaylistMusic(this.data.id, this.data.publication._id))
+        this.store$.dispatch(new CommentFeatureStoreActions.DeleteCommentPlaylistMusic(this.data.commentId, this.data.playlistId))
         break
       }
       default: break
