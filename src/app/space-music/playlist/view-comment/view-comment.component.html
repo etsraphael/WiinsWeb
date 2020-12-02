@@ -54,8 +54,7 @@
               </button>
               <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <button ngbDropdownItem *ngIf="(myprofile$|async)._id !== c.idProfil._id">{{'BTN-DROPDOWN.Report'|translate}}</button>
-                <button ngbDropdownItem *ngIf="(myprofile$|async)._id == c.idProfil._id">{{'CORE.Edit'|translate}}</button>
-                <button ngbDropdownItem
+                <button ngbDropdownItem (click)="deleteComment(c._id)"
                  *ngIf="(myprofile$|async)._id == c.idProfil._id">{{'CORE.Delete'| translate}}</button>
               </div>
               <i class="fa fa-heart" [ngClass]="{'liked-comment': c.liked}" (click)="btnLikeComment(c)"></i>

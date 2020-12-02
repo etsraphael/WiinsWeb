@@ -669,7 +669,11 @@
     "tag-you-in-comment": "oznaczył Cię w komentarzu",
     "tag-you-in-playlist": "oznaczył Cię na liście odtwarzania",
     "you-appear-in-project-of": "Pojawiasz się w nowym projekcie",
-    "you-have": "ty masz"
+    "you-have": "ty masz",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "Nazwa strony",

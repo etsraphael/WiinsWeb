@@ -1,13 +1,13 @@
 <div class="container-footer w-100">
   <div class="row w-100 h-100 mx-0">
     <!-- Music Bar -->
-    <div class="d-none d-sm-none d-md-none d-xl-block col-xl-3 h-100">
+    <div class="d-none d-sm-none d-md-block col-md-4 col-xl-3 h-100">
       <div class="bar-container h-100">
         <app-mini-player-music *ngIf="(audio$|async)"></app-mini-player-music>
       </div>
     </div>
     <!-- Last Room -->
-    <div *ngIf="router.url !== '/Messenger'" class="col-md-8 col-xl-6 h-100">
+    <div *ngIf="router.url !== '/Messenger'" class="col-md-8 col-xl-9 h-100">
       <div class="bar-container h-100">
         <div class="row mx-0 h-100">
           <div class="col-1 my-auto cursor-pointer" (click)="supportMessage()">
@@ -25,20 +25,6 @@
           </div>
           <div class="col-1 my-auto cursor-pointer" (click)="supportMessage()">
             <img class="nav-icon" src="../../../../assets/icon/circle-go-right.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- New Room -->
-    <div *ngIf="router.url !== '/Messenger'" 
-    class="d-none d-sm-none d-md-block col-md-4 col-xl-3 h-100" (click)="supportMessage()">
-      <div class="container bar-container h-100 my-auto">
-        <div class="row mx-0 h-100">
-          <div class="col-8 pl-5 search-input my-auto text-center">
-            <span class="new-message-title">Send a message</span>
-          </div>
-          <div class="col-4 m-auto">
-            <i class="fa fa-paper-plane my-auto pt-1"></i>
           </div>
         </div>
       </div>

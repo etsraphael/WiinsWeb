@@ -669,7 +669,11 @@
     "tag-you-in-comment": "तपाईंलाई टिप्पणीमा ट्याग गर्नुभयो",
     "tag-you-in-playlist": "तपाईंलाई एक प्लेसूचीमा ट्याग गर्नुभयो",
     "you-appear-in-project-of": "तपाइँको नयाँ प्रोजेक्टमा देखा पर्नुहुन्छ",
-    "you-have": "तपाईँ सँग छ"
+    "you-have": "तपाईँ सँग छ",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "पृष्ठ नाम",

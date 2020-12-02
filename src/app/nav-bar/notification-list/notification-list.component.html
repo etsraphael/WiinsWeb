@@ -4,9 +4,11 @@
   <!-- Bell icon -->
   <button ngbDropdownToggle class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true"
     aria-expanded="false" [ngClass]="{'notifTrue': (numberNewActivity$|async) > 0 }" (click)="showNotifActivity()">
-    <svg width="1.5em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
-      <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+    <svg width="1.5em" height="2em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+      <path fill-rule="evenodd"
+        d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
     </svg>
   </button>
 
@@ -24,11 +26,13 @@
       <div class="list-notif row py-2 mx-0" *ngFor="let n of activity" (click)="goToNotif(n); myDrop.close()"
         [ngClass]="{'no-read': !n.read}">
         <!-- Profile Or Page -->
-        <div class="col-md-3 my-auto" *ngIf="n.type !== 'NotificationReport'">
+        <div class="col-md-3 my-auto"
+          *ngIf="n.type !== 'NotificationReport' && n.type !== 'NotificationVerification' && n.type !== 'NotificationCertification'">
           <img class="d-flex mx-auto" [src]="n.profile.pictureprofile">
         </div>
         <!-- Admin -->
-        <div class="col-md-3 my-auto d-flex justify-content-center" *ngIf="n.type == 'NotificationReport'">
+        <div class="col-md-3 my-auto d-flex justify-content-center"
+          *ngIf="n.type == 'NotificationReport' || n.type == 'NotificationVerification' || n.type == 'NotificationCertification'">
           <img src="https://eps-file-default.s3.eu-west-3.amazonaws.com/icon-wiins.png">
         </div>
         <div class="col-md-6 px-0 mt-2" [ngSwitch]="n.type">
@@ -67,7 +71,8 @@
           </div>
           <div *ngSwitchCase="'NotificationTagPublication'">
             <span class="row">
-              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.identify-you-in-a-publication'|translate}}</p>
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.identify-you-in-a-publication'|translate}}
+              </p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -78,10 +83,12 @@
           </div>
           <div *ngSwitchCase="'NotificationComment'">
             <span class="row" *ngIf="n.quantity === 1">
-              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.commented-your-publication'|translate}}</p>
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.commented-your-publication'|translate}}
+              </p>
             </span>
             <span class="row" *ngIf="n.quantity !== 1">
-              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.new-comments'|translate}}</p>
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}}
+                {{'NOTIFICATIONS.new-comments'|translate}}</p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -95,7 +102,8 @@
               <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.respond-your-comment'|translate}}</p>
             </span>
             <span class="row" *ngIf="n.quantity !== 1">
-              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.repond-on-your-comment'|translate}}</p>
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}}
+                {{'NOTIFICATIONS.repond-on-your-comment'|translate}}</p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -109,7 +117,8 @@
               <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.respond-your-comment'|translate}}</p>
             </span>
             <span class="row" *ngIf="n.quantity !== 1">
-              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}} {{'NOTIFICATIONS.responds-your-comment'|translate}}</p>
+              <p> <strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.you-have'|translate}} {{n.quantity}}
+                {{'NOTIFICATIONS.responds-your-comment'|translate}}</p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -123,7 +132,8 @@
               <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.liked-your-publication'|translate}}</p>
             </span>
             <span class="row" *ngIf="n.quantity !== 1">
-              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}} {{'NOTIFICATIONS.s-liked-your-publication'|translate}}</p>
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}}
+                {{'NOTIFICATIONS.s-liked-your-publication'|translate}}</p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -151,7 +161,8 @@
               <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.like-your-comment'|translate}}</p>
             </span>
             <span class="row" *ngIf="n.quantity !== 1">
-              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}} {{'NOTIFICATIONS.likes-your-comment'|translate}}</p>
+              <p><strong>{{n.profile._meta.pseudo}}</strong> {{'CORE.and'|translate}} {{n.quantity - 1}}
+                {{'NOTIFICATIONS.likes-your-comment'|translate}}</p>
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
@@ -182,6 +193,30 @@
               </div>
             </div>
           </div>
+          <div *ngSwitchCase="'NotificationVerification'">
+            <span class="row">
+              <p *ngIf="n.accepted">{{'NOTIFICATIONS.Yr-verification-request-was-accepted'|translate}}</p>
+              <p *ngIf="!n.accepted">{{'NOTIFICATIONS.Yr-verification-request-was-refused'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-ban mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'NotificationCertification'">
+            <span class="row">
+              <p *ngIf="n.accepted">{{'NOTIFICATIONS.Yr-certification-request-was-accepted'|translate}}</p>
+              <p *ngIf="!n.accepted">{{'NOTIFICATIONS.Yr-certification-request-was-refused'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-ban mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-3 my-auto" *ngIf="n.publication || n.musicProject">
           <app-publication-miniature [feedPublication]="n.publication || n.musicProject"></app-publication-miniature>
@@ -194,7 +229,10 @@
       <!-- Loading Listing -->
       <div *ngIf="(isLoading$|async) && (activity.length == 0)">
         <div class="container">
-          <div class="lds-ripple mx-auto my-3"><div></div><div></div></div>
+          <div class="lds-ripple mx-auto my-3">
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
       <!-- Empty List -->
@@ -214,7 +252,7 @@
         <span>{{'CORE.See-more'|translate}}</span>
       </div>
     </div>
-  
+
   </div>
 
 </div>

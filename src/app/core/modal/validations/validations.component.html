@@ -2,7 +2,7 @@
 <div class="container-validation">
   <!-- Card Header -->
   <div class="card-header">
-    <span>{{'CORE.Confirmation'|translate}}</span>
+    <h2>{{'CORE.Confirmation'|translate}}</h2>
   </div>
   <!-- Card Body -->
   <div class="card-body">
@@ -42,6 +42,9 @@
       </div>
       <div *ngSwitchCase="'delete-tube'">
         <span>{{'VALIDATION.A-y-s-to-delete-t-video'|translate}}</span>
+      </div>
+      <div *ngSwitchCase="'delete-comment-playlist-music'">
+        <span>{{'VALIDATION.A-y-s-to-delete-t-comment'|translate}}</span>
       </div>
     </div>
   </div>

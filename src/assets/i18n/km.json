@@ -669,7 +669,11 @@
     "tag-you-in-comment": "ដាក់ស្លាកអ្នកនៅក្នុងមតិយោបល់",
     "tag-you-in-playlist": "ដាក់ស្លាកអ្នកក្នុងបញ្ជីចាក់",
     "you-appear-in-project-of": "អ្នកបង្ហាញនៅក្នុងគម្រោងថ្មីនៃ",
-    "you-have": "អ្នក​មាន"
+    "you-have": "អ្នក​មាន",
+    "Yr-verification-request-was-accepted": "",
+    "Yr-verification-request-was-refused": "",
+    "Yr-certification-request-was-accepted": "",
+    "Yr-certification-request-was-refused": ""
   },
   "PAGE": {
     "Name-page": "ឈ្មោះទំព័រ",

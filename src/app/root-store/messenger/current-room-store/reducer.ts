@@ -8,6 +8,12 @@ export function Reducer(state: State = initialState, action: ActionsMessage) {
     case ActionTypes.LOAD_CURRENT_ROOM_SUCCESS: {
       return featureAdapter.addMany(action.payload, state)
     }
+    case ActionTypes.LOAD_CURRENT_ROOM_FAIL: {
+      return {
+        ...state,
+        error: action.payload
+      }
+    }
     case ActionTypes.RESET_NOTIFICATION: {
       const currentRoomFound = state.entities[action.id]
       const update: Room = {

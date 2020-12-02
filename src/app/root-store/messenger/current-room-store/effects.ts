@@ -23,8 +23,8 @@ export class CurrentRoomEffects {
   loadCurrentRooms: Observable<featureActions.ActionsMessage> = this.actions$.pipe(
     ofType<featureActions.loadCurrentRoom>(featureActions.ActionTypes.LOAD_CURRENT_ROOM),
     switchMap(() => this.dataService.GetCurrentRooms().pipe(
-      tap(data => this.plateformState.changeState({current_room: data.results.map(x => x._id)})),
-      map(data => new featureActions.loadCurrentRoomSuccess(data.results)),
+      tap(data => this.plateformState.changeState({current_room: data.result.map(x => x._id)})),
+      map(data => new featureActions.loadCurrentRoomSuccess(data.result)),
       catchError(error => observableOf(new featureActions.loadCurrentRoomFail(error)))
     ))
   )

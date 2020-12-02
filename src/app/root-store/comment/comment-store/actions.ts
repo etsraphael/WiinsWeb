@@ -19,6 +19,10 @@ export enum ActionTypes {
   DELETE_COMMENT_SUCCESS = '@comment/delete_success',
   DELETE_COMMENT_FAIL = '@comment/delete_fail',
 
+  DELETE_COMMENT_PLAYLIST_MUSIC = '@comment_playlist_music/delete',
+  DELETE_COMMENT_PLAYLIST_MUSIC_SUCCESS = '@comment_playlist_music/delete_success',
+  DELETE_COMMENT_PLAYLIST_MUSIC_FAIL = '@comment_playlist_music/delete_fail',
+
   LOAD_COMMENT = '@comment/load',
   LOAD_COMMENT_SUCCESS = '@comment/load_success',
   LOAD_COMMENT_FAIL = '@comment/load_fail',
@@ -116,6 +120,21 @@ export class PutCommentFail implements Action {
   constructor(public payload: any) { }
 }
 
+export class DeleteCommentPlaylistMusic implements Action {
+  readonly type = ActionTypes.DELETE_COMMENT_PLAYLIST_MUSIC;
+  constructor(public commentId: string, public playlistId: string) { }
+}
+
+export class DeleteCommentPlaylistMusicSuccess implements Action {
+  readonly type = ActionTypes.DELETE_COMMENT_PLAYLIST_MUSIC_SUCCESS;
+  constructor(public payload: CommentModel) { }
+}
+
+export class DeleteCommentPlaylistMusicFail implements Action {
+  readonly type = ActionTypes.DELETE_COMMENT_PLAYLIST_MUSIC_FAIL;
+  constructor(public payload: any) { }
+}
+
 export class DeleteComment implements Action {
   readonly type = ActionTypes.DELETE_COMMENT;
   constructor(public commentId: string, public publicationId: string) { }
@@ -130,6 +149,8 @@ export class DeleteCommentFail implements Action {
   readonly type = ActionTypes.DELETE_COMMENT_FAIL;
   constructor(public payload: any) { }
 }
+
+////
 
 export class UpdateLike implements Action {
   readonly type = ActionTypes.UPDATE_COMMENT_LIKE;
@@ -175,3 +196,7 @@ export type ActionsComment =
   | UpgradeRespond
   | DowngradeRespond
   | ResetComment
+  | DeleteCommentPlaylistMusic
+  | DeleteCommentPlaylistMusicSuccess
+  | DeleteCommentPlaylistMusicFail
+
