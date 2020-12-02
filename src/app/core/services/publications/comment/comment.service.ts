@@ -53,7 +53,11 @@ export class CommentService {
   }
 
   DeleteComment(commentId: string, publicationId: string): Observable<SingleCommentResponse> {
-    return this.http.post<SingleCommentResponse>(`${this.baseUrl}/comments/delete/${commentId}`, {publicationId});
+    return this.http.get<SingleCommentResponse>(`${this.baseUrl}/comments/delete/${commentId}/${publicationId}`);
+  }
+
+  deleteCommentPlaylistMusic(commentId: string, playlistMusicId: string): Observable<SingleCommentResponse> {
+    return this.http.get<SingleCommentResponse>(`${this.baseUrl}/comments/delete-comment-playlist-music/${commentId}/${playlistMusicId}`);
   }
 
   GetCommentById(page: string, idPublication: string): Observable<GroupCommentResponse> {

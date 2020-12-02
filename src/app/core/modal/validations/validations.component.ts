@@ -49,6 +49,10 @@ export class ValidationsComponent {
         this.store$.dispatch(new TubeFeedStoreActions.DeleteTubeFeed(this.data.id));
         break
       }
+      case 'delete-comment-playlist-music': {
+        this.store$.dispatch(new CommentFeatureStoreActions.DeleteCommentPlaylistMusic(this.data.id, this.data.publication._id))
+        break
+      }
       default: break
     }
 
@@ -61,7 +65,6 @@ export class ValidationsComponent {
     this.dialogRef.close()
   }
 
-
 }
 
 
@@ -69,4 +72,6 @@ interface ValidationData {
   publication: PicturePublication | PostPublication | VideoPublication | TubeModel | any,
   type: string
   id: string
+  commentId: string
+  playlistId: string
 }

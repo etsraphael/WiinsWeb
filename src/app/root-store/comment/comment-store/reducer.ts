@@ -9,7 +9,8 @@ export function featureReducer(state = initialState, action: ActionsComment): St
     case ActionTypes.PUT_COMMENT_SUCCESS: {
       return featureAdapter.updateOne({ id: action.payload._id, changes: action.payload }, state);
     }
-    case ActionTypes.DELETE_COMMENT_SUCCESS: {
+    case ActionTypes.DELETE_COMMENT_SUCCESS:
+    case ActionTypes.DELETE_COMMENT_PLAYLIST_MUSIC_SUCCESS: {
       return featureAdapter.removeOne(action.payload._id, state);
     }
     case ActionTypes.UPDATE_COMMENT_LIKE: {

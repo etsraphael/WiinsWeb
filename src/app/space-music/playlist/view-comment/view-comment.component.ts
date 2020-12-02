@@ -12,6 +12,8 @@ import { filter, skipWhile } from 'rxjs/operators'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { commentPlaylist } from 'src/app/core/models/comment/comment-playlist.model'
 import { likeCommentPlaylistModel } from 'src/app/core/models/publication-options/like.model'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
+import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
 
 @Component({
   selector: 'app-view-comment',
@@ -44,7 +46,8 @@ export class ViewCommentComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
-    private store$: Store<RootStoreState.State>
+    private store$: Store<RootStoreState.State>,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit() {
@@ -233,7 +236,15 @@ export class ViewCommentComponent implements OnInit, OnDestroy {
 
     // to reset the input
     this.indexResponse = null
-    
+
+  }
+
+  deleteComment(commentId: string): MatDialogRef<ValidationsComponent> {
+    // open the modal to delete the publications
+    return this.dialog.open(ValidationsComponent, {
+      panelClass: ['col-md-4', 'col-xl-4'],
+      data: { commentId, playlistId: this.playlistId , type: 'delete-comment-playlist-music' }
+    })
   }
 
   ngOnDestroy(): void {

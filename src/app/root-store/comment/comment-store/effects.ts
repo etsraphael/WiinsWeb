@@ -60,7 +60,20 @@ export class CommentFeatureStoreEffects {
       map(response => new featureActions.DeleteCommentSuccess(response.comment)),
       catchError(error => observableOf(new featureActions.DeleteCommentFail(error)))
     ))
-  );
+  )
+
+  @Effect()
+  deleteCommentPlaylistMusic: Observable<ActionsComment> = this.actions$.pipe(
+    ofType<featureActions.DeleteCommentPlaylistMusic>(featureActions.ActionTypes.DELETE_COMMENT_PLAYLIST_MUSIC),
+    switchMap(action => this.dataService.deleteCommentPlaylistMusic(action.commentId, action.playlistId).pipe(
+      map(response => new featureActions.DeleteCommentPlaylistMusicSuccess(response.comment)),
+      catchError(error => observableOf(new featureActions.DeleteCommentPlaylistMusicFail(error)))
+    ))
+  )
+
+
+
+
 
   pageOrprofile(comment: CommentModel, space: string) {
 
