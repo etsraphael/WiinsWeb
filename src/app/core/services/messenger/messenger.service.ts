@@ -87,7 +87,8 @@ export interface ListMessageResponse {
 
 export interface ListRoomResponse {
   status: number
-  results: Room[]
+  results: Room[] // to update soon
+  result: Room[]
 }
 
 export interface SingleRouteResponse {

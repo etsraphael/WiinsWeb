@@ -63,7 +63,7 @@ export class FooterCoreComponent implements OnInit {
 
   displayCurrentRooms() {
     // to load the current room
-    this.store$.dispatch(new CurrentRoomStoreActions.loadCurrentRoom());
+    this.store$.dispatch(new CurrentRoomStoreActions.loadCurrentRoom())
 
     // to select all the rooms
     this.room$ = this.store$.pipe(
@@ -71,6 +71,7 @@ export class FooterCoreComponent implements OnInit {
       skipWhile(val => val.length === 0),
       filter(value => value !== undefined)
     )
+
   }
 
   openChat(room: Room, event: Event): void {
