@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { TubeMenuModel } from 'src/app/core/models/tube/tubeMenu.model';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import { RootStoreState, TubeMenuStoreSelectors, TubeMenuStoreActions } from 'src/app/root-store';
+import { RootStoreState, TubeMenuStoreSelectors, TubeMenuStoreActions, ProfileFeatureStoreSelectors } from 'src/app/root-store';
 import { filter, skipWhile } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
+import { ProfileModel } from 'src/app/core/models/baseUser/profile.model';
 
 @Component({
   selector: 'app-home-tube',
@@ -19,6 +20,9 @@ export class HomeTubeComponent implements OnInit {
   tubeMenu$: Observable<TubeMenuModel>
   error$: Observable<string>
   loading$: Observable<boolean>
+
+  // my profile
+  myprofile$: Observable<ProfileModel>
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -50,6 +54,13 @@ export class HomeTubeComponent implements OnInit {
       select(TubeMenuStoreSelectors.selectError),
       filter(value => value !== undefined),
       skipWhile(val => val == null)
+    )
+
+    // to select my profile
+    this.myprofile$ = this.store$.pipe(
+      select(ProfileFeatureStoreSelectors.selectProfile),
+      skipWhile(val => val === null),
+      filter(profile => !!profile),
     )
 
   }
