@@ -21,7 +21,7 @@
             <div class="container">
               <!-- Upload idFile -->
               <div class="my-2">
-                <div class="container-upload" [ngClass]="{'valid-upload': !!fileIdLink}">
+                <div class="container-upload position-relative" [ngClass]="{'valid-upload': !!fileIdLink}">
                   <label for="idUpload" class="mb-0 w-100 row mx-0 p-2">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +34,9 @@
                     <span class="upload-link pl-3" *ngIf="!fileIdname"
                       for="profileUpload">{{'CORE.Upload-yr-file-here'|translate}}</span>
                   </label>
+                  <svg *ngIf="!!fileIdLink" width="2em" height="2em" viewBox="0 0 16 16" class="reset-upload" fill="currentColor" xmlns="http://www.w3.org/2000/svg" (click)="resetUpload('fileIdLink')">
+                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
                 </div>
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">
@@ -42,7 +45,7 @@
               </div>
               <!-- Upload picture taken -->
               <div class="my-2">
-                <div class="container-upload" [ngClass]="{'valid-upload': !!pictureTakeLink}">
+                <div class="container-upload position-relative" [ngClass]="{'valid-upload': !!pictureTakeLink}">
                   <label for="pictureTakenFile" class="mb-0 w-100 row mx-0 p-2">
                     <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
                       fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -56,6 +59,9 @@
                     <span class="upload-link pl-3" *ngIf="!pictureTakeName"
                       for="pictureTakenFile">{{'CORE.Upload-yr-file-here'|translate}}</span>
                   </label>
+                  <svg *ngIf="!!pictureTakeLink" width="2em" height="2em" viewBox="0 0 16 16" class="reset-upload" fill="currentColor" xmlns="http://www.w3.org/2000/svg" (click)="resetUpload('pictureTakeLink')">
+                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
                 </div>
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">{{'SETTING.verified.Upload-a-photo-holding-t-ID-D'|translate}}</p>
