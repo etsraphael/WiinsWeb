@@ -1,7 +1,7 @@
 import { Component, Inject, EventEmitter } from '@angular/core'
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
 import { Store } from '@ngrx/store'
-import { RootStoreState, CommentFeatureStoreActions, GroupFeatureStoreActions, FeedPublicationStoreActions, ProfileFeatureStoreActions, TubeFeedStoreActions } from 'src/app/root-store'
+import { RootStoreState, CommentFeatureStoreActions, GroupFeatureStoreActions, FeedPublicationStoreActions, ProfileFeatureStoreActions, TubeFeedStoreActions, TubePageStoreActions } from 'src/app/root-store'
 import { PicturePublication, PostPublication, VideoPublication } from '../../models/publication/feed/feed-publication.model'
 import { TubeModel } from '../../models/tube/tube.model'
 
@@ -51,6 +51,14 @@ export class ValidationsComponent {
       }
       case 'delete-comment-playlist-music': {
         this.store$.dispatch(new CommentFeatureStoreActions.DeleteCommentPlaylistMusic(this.data.commentId, this.data.playlistId))
+        break
+      }
+      case 'unfollow-from-tube': {
+        this.store$.dispatch(new TubePageStoreActions.UnFollowProfile(this.data.id))
+        break
+      }
+      case 'delete-friend-from-tube': {
+        this.store$.dispatch(new TubePageStoreActions.DeleteFriend(this.data.id))
         break
       }
       default: break

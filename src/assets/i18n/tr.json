@@ -245,7 +245,11 @@
     "soon": "yakında",
     "views": "Görüntüleme",
     "For-You": "Senin için",
-    "Discover": "Keşfedin"
+    "Discover": "Keşfedin",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andorra",

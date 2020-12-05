@@ -203,7 +203,11 @@
     "Both": "Both",
     "Break-the-rules": "Break the rules",
     "For-You": "For you",
-    "Discover": "Discover"
+    "Discover": "Discover",
+    "Community": "Community",
+    "Subscribed": "Subscribed",
+    "Go-to-profile": "Go to profile",
+    "Friend": "Friend"
   },
   "COUNTRY": {
     "AD": "Andorra",

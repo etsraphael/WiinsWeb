@@ -83,7 +83,7 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
 
   confirm(): void | MatSnackBarRef<SimpleSnackBar> {
 
-    if(!this.checkedCond){
+    if (!this.checkedCond) {
       return this._snackBar.open(
         this.translate.instant('ERROR-MESSAGE.y-h-to-accept-the-tou'), null,
         { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
@@ -193,6 +193,19 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     }
 
 
+  }
+
+  resetUpload(link: string): void {
+    switch (link) {
+      case 'pictureTakeLink':
+        this.pictureTakeLink = null;
+        this.pictureTakeName = null;
+        break;
+      case 'fileIdLink':
+        this.fileIdLink = null;
+        this.fileIdname = null;
+        break;
+    }
   }
 
   ngOnDestroy(): void {

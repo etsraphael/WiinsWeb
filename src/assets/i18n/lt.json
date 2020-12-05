@@ -245,7 +245,11 @@
     "soon": "netrukus",
     "views": "Peržiūros",
     "For-You": "Tau",
-    "Discover": "Atrasti"
+    "Discover": "Atrasti",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andora",

@@ -245,7 +245,11 @@
     "soon": "ускоро",
     "views": "погледа",
     "For-You": "За тебе",
-    "Discover": "Откријте"
+    "Discover": "Откријте",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Андора",

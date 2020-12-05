@@ -3,13 +3,12 @@ import { CoreService } from '../../core/services/core/core.service'
 import { Injectable } from '@angular/core'
 import { Actions, Effect, ofType } from '@ngrx/effects'
 import { Observable, of as observableOf } from 'rxjs'
-import { catchError, map, switchMap, mergeMap, tap } from 'rxjs/operators'
+import { catchError, map, switchMap, mergeMap } from 'rxjs/operators'
 import * as featureActions from './actions'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { FriendService } from 'src/app/core/services/friend/friend.service'
 import { SettingUserService } from 'src/app/core/services/setting-user/setting-user.service'
 import { CurrentRoomStoreActions } from '../messenger/current-room-store'
-import { Router } from '@angular/router'
 
 @Injectable()
 export class ProfileFeatureEffects {
@@ -18,8 +17,7 @@ export class ProfileFeatureEffects {
     private dataService: CoreService,
     private friendService: FriendService,
     private settingUser: SettingUserService,
-    private actions$: Actions,
-    private router: Router
+    private actions$: Actions
   ) { }
 
   @Effect()

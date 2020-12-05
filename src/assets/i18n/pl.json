@@ -245,7 +245,11 @@
     "soon": "wkrótce",
     "views": "wyświetlenia",
     "For-You": "Dla Was",
-    "Discover": "Odkryć"
+    "Discover": "Odkryć",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andora",

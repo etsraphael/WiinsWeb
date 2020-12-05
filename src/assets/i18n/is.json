@@ -245,7 +245,11 @@
     "soon": "brátt",
     "views": "skoðanir",
     "For-You": "Fyrir þig",
-    "Discover": "Uppgötvaðu"
+    "Discover": "Uppgötvaðu",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andorra",

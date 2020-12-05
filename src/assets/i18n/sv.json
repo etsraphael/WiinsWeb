@@ -245,7 +245,11 @@
     "soon": "snart",
     "views": "utsikt",
     "For-You": "Till dig",
-    "Discover": "Upptäck"
+    "Discover": "Upptäck",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "andorra",

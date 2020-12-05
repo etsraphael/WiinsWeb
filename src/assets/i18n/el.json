@@ -245,7 +245,11 @@
     "soon": "σύντομα",
     "views": "προβολές",
     "For-You": "Για σενα",
-    "Discover": "Ανακαλύπτω"
+    "Discover": "Ανακαλύπτω",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Ανδόρα",

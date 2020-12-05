@@ -245,7 +245,11 @@
     "soon": "snart",
     "views": "visninger",
     "For-You": "For dig",
-    "Discover": "Opdage"
+    "Discover": "Opdage",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andorra",

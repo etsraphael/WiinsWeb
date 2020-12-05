@@ -14,7 +14,7 @@
       <div class="col-md-4 h-100 px-0">
         <div class="container-list-comment-base w-100 h-100">
           <div class="card-header row mx-0 py-1 px-1">
-            <div class="col-2 my-auto">
+            <div class="col-2 my-auto" [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
               <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
             </div>
             <div class="col-6 pt-1 my-auto container-info-header">
@@ -23,13 +23,34 @@
                   <h4 class="mb-0">{{(tubePage$|async).tube.profile._meta.pseudo}}</h4>
                 </div>
                 <div class="row">
-                  <span class="number-follower">N.A {{'CORE.followers'|translate}}</span>
+                  <span class="number-follower">{{'CORE.Community'|translate}} :
+                    {{(tubePage$|async).tube.profile.communityTotal}}</span>
                 </div>
               </div>
             </div>
-            <div class="col-4 my-auto pt-1">
-              <button type="button" class="btn btn-warning">
-                <span>{{'CORE.Subscribe'|translate}}</span>
+            <div class="col-4 my-auto pt-1" 
+            *ngIf="!(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+              <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
+                <button type="button" class="btn btn-secondary px-2" *ngSwitchCase="'friend'" (click)="deleteFriend()">
+                  <span>{{'CORE.Friend'|translate}}</span>
+                </button>
+                <button type="button" class="btn btn-warning px-2" *ngSwitchCase="'not-friend'" (click)="follow()">
+                  <span>{{'CORE.Subscribe'|translate}}</span>
+                </button>
+                <button type="button" class="btn btn-primary px-2" *ngSwitchCase="'pendingFromHim'"
+                [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
+                  <span>{{'CORE.Profile'|translate}}</span>
+                </button>
+                <button type="button" class="btn btn-primary px-2" *ngSwitchCase="'pendingFromMe'"
+                [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
+                  <span>{{'CORE.Profile'|translate}}</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 my-auto pt-1"
+             *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+              <button type="button" class="btn btn-primary px-2" (click)="unfollow()">
+                <span>{{'CORE.Subscribed'|translate}}</span>
               </button>
             </div>
           </div>
@@ -167,26 +188,6 @@
       <div class="col-md-8 container-video h-100 px-0 bg-gradient-loading"></div>
       <div class="col-md-4 h-100 px-0">
         <div class="container-list-comment-base w-100 h-100">
-          <div class="card-header row mx-0 py-1 px-1">
-            <div class="col-2 my-auto">
-              <div class="rounded-circle bg-gradient-loading avatar-loading"></div>
-            </div>
-            <div class="col-6 pt-1 my-auto container-info-header">
-              <div class="container">
-                <div class="row">
-                  <h4 class="mb-0">{{(tubePage$|async)?.tube.profile._meta.pseudo}}</h4>
-                </div>
-                <div class="row">
-                  <span class="number-follower">N.A {{'CORE.followers'|translate}}</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 my-auto pt-1">
-              <button type="button" class="btn btn-warning">
-                <span>{{'CORE.Subscribe'|translate}}</span>
-              </button>
-            </div>
-          </div>
         </div>
         <div class="container-card-footer w-100 container-footer-comment">
           <div class="card-footer mx-4">

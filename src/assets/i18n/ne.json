@@ -245,7 +245,11 @@
     "soon": "चाँडै",
     "views": "अवलोकन",
     "For-You": "तिम्रो लागि",
-    "Discover": "खोज्नुहोस्"
+    "Discover": "खोज्नुहोस्",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "अन्डोरा",

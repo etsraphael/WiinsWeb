@@ -245,7 +245,11 @@
     "soon": "laster",
     "views": "ikuspegiak",
     "For-You": "Zuretzat",
-    "Discover": "Ezagutu"
+    "Discover": "Ezagutu",
+    "Community": "",
+    "Subscribed": "",
+    "Go-to-profile": "",
+    "Friend": ""
   },
   "COUNTRY": {
     "AD": "Andorra",
