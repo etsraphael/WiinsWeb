@@ -57,7 +57,4 @@ export class TubePageStoreEffects {
       catchError(err => observableOf(new featureActions.UnFollowProfileFail(err)))))
   )
 
-
 }
-
-
