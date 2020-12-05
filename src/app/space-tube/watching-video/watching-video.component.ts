@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState, ProfileFeatureStoreSelectors } from 'src/app/root-store';
-import { filter, skipWhile } from 'rxjs/operators';
+import { filter, skipWhile, take } from 'rxjs/operators';
 import { TubePageModel } from 'src/app/core/models/tube/tubePage.model'
 import { ActivatedRoute } from '@angular/router';
 import { TubePageStoreActions, TubePageStoreSelectors } from 'src/app/root-store/tube-page-store';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component';
+import { Action } from 'rxjs/internal/scheduler/Action';
+import { Actions } from '@ngrx/effects';
 
 @Component({
   selector: 'app-watching-video',
@@ -31,6 +35,7 @@ export class WatchingVideoComponent implements OnInit {
     private route: ActivatedRoute,
     private _snackBar: MatSnackBar,
     private translate: TranslateService,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit() {
@@ -83,6 +88,30 @@ export class WatchingVideoComponent implements OnInit {
     })
 
     errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
+  }
+
+  unfollow(): Subscription {
+    return this.tubePage$.pipe(take(1)).subscribe((data: TubePageModel) => {
+      return this.dialog.open(ValidationsComponent, {
+        panelClass: ['col-md-4', 'col-xl-4'],
+        data: { id: data.tube.profile._id, type: 'unfollow-from-tube' }
+      })
+    })
+  }
+
+  deleteFriend(): Subscription{
+    return this.tubePage$.pipe(take(1)).subscribe((data: TubePageModel) => {
+      return this.dialog.open(ValidationsComponent, {
+        panelClass: ['col-md-4', 'col-xl-4'],
+        data: { id: data.tube.profile._id, type: 'delete-friend-from-tube' }
+      })
+    })
+  }
+
+  follow(): Subscription {
+    return this.tubePage$.pipe(take(1)).subscribe((data: TubePageModel) => {
+      return this.store$.dispatch(new TubePageStoreActions.FollowProfile(data.tube.profile._id))
+    })
   }
 
 }

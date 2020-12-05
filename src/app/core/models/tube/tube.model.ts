@@ -8,6 +8,7 @@ export class TubeModel {
     boostView: Number;
     ratio: Number;
   };
+  profile: ProfileModel
   categorie: Number;
   subcategorie: Number;
   tube: {

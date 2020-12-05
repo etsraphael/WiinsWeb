@@ -205,7 +205,9 @@
     "For-You": "Pour toi",
     "Discover": "Découvrir",
     "Community": "Communauté",
-    "Subscribed": "Abonné"
+    "Subscribed": "Abonné",
+    "Go-to-profile": "",
+    "Friend": "Ami"
   },
   "COUNTRY": {
     "AD": "Andorre",

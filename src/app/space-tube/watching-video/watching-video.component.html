@@ -28,12 +28,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 my-auto pt-1" *ngIf="!(tubePage$|async).tube.profile.follow.following">
+            <div class="col-4 my-auto pt-1" 
+            *ngIf="!(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
               <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
-                <button type="button" class="btn btn-secondary px-2" *ngSwitchCase="'friend'">
-                  <span>{{'CORE.Subscribed'|translate}}</span>
+                <button type="button" class="btn btn-secondary px-2" *ngSwitchCase="'friend'" (click)="deleteFriend()">
+                  <span>{{'CORE.Friend'|translate}}</span>
                 </button>
-                <button type="button" class="btn btn-warning px-2" *ngSwitchCase="'not-friend'">
+                <button type="button" class="btn btn-warning px-2" *ngSwitchCase="'not-friend'" (click)="follow()">
                   <span>{{'CORE.Subscribe'|translate}}</span>
                 </button>
                 <button type="button" class="btn btn-primary px-2" *ngSwitchCase="'pendingFromHim'"
@@ -46,8 +47,9 @@
                 </button>
               </div>
             </div>
-            <div class="col-4 my-auto pt-1" *ngIf="(tubePage$|async).tube.profile.follow.following">
-              <button type="button" class="btn btn-primary px-2">
+            <div class="col-4 my-auto pt-1"
+             *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+              <button type="button" class="btn btn-primary px-2" (click)="unfollow()">
                 <span>{{'CORE.Subscribed'|translate}}</span>
               </button>
             </div>
