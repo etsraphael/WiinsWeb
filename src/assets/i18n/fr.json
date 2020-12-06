@@ -859,7 +859,8 @@
       "Pl-s-t-docs-a-complet-t-form-below": "Veuillez envoyer les documents nécessaires et remplir le formulaire ci-dessous.",
       "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre mot de passe, votre identifiant ou votre permis de conduire.",
       "Upload-a-photo-holding-t-ID-D": "Téléchargez une photo contenant la pièce d'identité avec une feuille de papier avec la date du jour et l'inscription \"Wiins\" dessus.",
-      "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte."
+      "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte.",
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mes publications sont visible uniquement par mes amis",

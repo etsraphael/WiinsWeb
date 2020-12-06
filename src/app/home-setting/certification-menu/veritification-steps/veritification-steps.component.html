@@ -1,7 +1,7 @@
 <!-- Var -->
 <input hidden type='file' accept='image/*' id="idUpload" #idUpload (change)=saveIdFile(idUpload.files)>
-<input hidden type='file' accept='image/*' id="pictureTakenFile" #pictureTakenFile
-  (change)=savepictureTakeFile(pictureTakenFile.files)>
+<input hidden type='file' accept='image/*' id="idUpload2" #idUpload2 (change)=saveIdFile2(idUpload.files)>
+<input hidden type='file' accept='image/*' id="pictureTakenFile" #pictureTakenFile (change)=savepictureTakeFile(pictureTakenFile.files)>
 
 <!-- Body -->
 <div class="card shadow">
@@ -19,7 +19,7 @@
           </div>
           <div class="row mx-0">
             <div class="container">
-              <!-- Upload idFile -->
+              <!-- Upload front idFile -->
               <div class="my-2">
                 <div class="container-upload position-relative" [ngClass]="{'valid-upload': !!fileIdLink}">
                   <label for="idUpload" class="mb-0 w-100 row mx-0 p-2">
@@ -41,6 +41,29 @@
                 <div class="row mx-0">
                   <p class="pl-1 pt-1 input-desc">
                     {{'SETTING.verified.Upload-yr-password-id-identity-or-driver-license'|translate}}</p>
+                </div>
+              </div>
+              <!-- Upload back idFile -->
+              <div class="my-2">
+                <div class="container-upload position-relative" [ngClass]="{'valid-upload': !!fileIdLink2}">
+                  <label for="idUpload2" class="mb-0 w-100 row mx-0 p-2">
+                    <svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-upload my-auto"
+                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path fill-rule="evenodd"
+                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                    </svg>
+                    <span class="upload-link pl-3" *ngIf="fileIdname2">{{fileIdname2}}</span>
+                    <span class="upload-link pl-3" *ngIf="!fileIdname2">{{'CORE.Upload-yr-file-here'|translate}}</span>
+                  </label>
+                  <svg *ngIf="!!fileIdLink2" width="2em" height="2em" viewBox="0 0 16 16" class="reset-upload" fill="currentColor" xmlns="http://www.w3.org/2000/svg" (click)="resetUpload('fileIdLink2')">
+                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+                <div class="row mx-0">
+                  <p class="pl-1 pt-1 input-desc">
+                    {{'SETTING.verified.M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card'|translate}}</p>
                 </div>
               </div>
               <!-- Upload picture taken -->
