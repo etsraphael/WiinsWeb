@@ -2,6 +2,13 @@
   width: 100%;
 }
 
+.available {
+  .not-avaible-header {
+    background-color: #f2f2f2;
+    height: 3rem;
+  }
+}
+
 .musicImg {
   position: relative;
 
@@ -34,9 +41,43 @@
   }
 }
 
+.container-logo-date {
+  position: absolute;
+  top: -3px;
+  left: 5px;
+}
+
+.error-date {
+  color: red;
+}
+
+.cancelDateSetting {
+  color: #7777ff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancelDateSetting:hover{
+  text-decoration: underline;
+}
+
 .musicImg:hover {
   .container-btn-modif {
     display: block;
+  }
+}
+
+.setting-title, .setting-date{
+  border-radius: 7px;
+  border: lightgrey solid 1px
+}
+
+.container-setting-title, .container-setting-date {
+  button span {
+    color: #007bff
+  }
+  button:hover span {
+    color: white;
   }
 }
 
@@ -57,8 +98,7 @@
     transition: 0.3s;
     cursor: pointer;
   }
-
-  img:hover {
+  img:hover{
     width: 55px;
     height: 55px;
     transition: 0.3s;
@@ -67,7 +107,6 @@
 
 span {
   color: grey;
-
   p {
     margin-bottom: 0;
   }
@@ -127,7 +166,7 @@ span {
   border: 0;
   background: transparent;
 
-  .fa-ellipsis-h {
+  .fa-ellipsis-h{
     color: grey;
     font-size: 16px;
     cursor: pointer;
@@ -136,8 +175,28 @@ span {
     width: 32px;
     height: 32px;
   }
+}
+
+.header-btn {
+
+  button {
+    border: 0;
+    background: none;
+  }
+
+  .fa-angle-down {
+    color: #607aaa;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+  }
 
 }
+
+
 
 .dropdown-menu {
   border-radius: 19px;
@@ -145,42 +204,46 @@ span {
   top: 4px !important;
   left: -126px !important;
   overflow: hidden;
-  opacity: 0;
+  opacity:0;
   transform: translateY(50px);
   display: block;
   visibility: hidden;
-  transition: .5s ease all;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  transition:.5s ease all;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
   border: 0;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
 }
 
 .dropdown-menu.show {
   border: 0;
   display: block;
   visibility: visible;
-  opacity: 1;
+  opacity:1;
   transform: translateY(0px);
-  transition: .3s ease all;
+  transition:.3s ease all;
 }
 
 .modal-content {
   background: red !important;
 }
 
-
+.oneMusic{
+  border-radius: 20px;
+}
 
 .oneMusic:hover {
-  background-color: #ececec;
-  border-radius: 20px;
   box-shadow: 0 0rem 4px rgba(0, 0, 0, 0.175);
+  background-color: #ececec;
 
-  .fa-play,
-  .fa-pause,
-  .fa-ellipsis-h {
+  .fa-play, .fa-pause, .fa-ellipsis-h {
     background-color: white;
   }
 
-  .option-button {
+  .option-button  {
     display: block;
   }
 }
@@ -210,4 +273,30 @@ span {
 .album-span {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+
+.container-btn-setting {
+  position: absolute;
+  z-index: 1;
+
+  button {
+    position: absolute;
+    right: 3%;
+    top: 2rem;
+    border: 0;
+    font-size: 1.3rem;
+
+    .fa {
+      color: #818181;
+    }
+  }
+
+
+  button:hover {
+
+    .fa {
+      color: #7a67c5;
+    }
+  }
 }

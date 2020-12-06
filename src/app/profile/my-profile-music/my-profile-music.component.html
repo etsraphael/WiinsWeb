@@ -1,7 +1,7 @@
 <!-- Component Body -->
 <div class="container-fluid mt-3">
   <!-- List of Music Project -->
-  <div #contentCard *ngFor="let p of musicProject$ | async">
+  <div #contentCard *ngFor="let p of myMusicProject$ | async">
     <!-- Music not unavailable -->
     <div *ngIf="getAvailability(p.visibilityDate)" class="card row mx-2 my-3">
       <div ngbDropdown class="container-btn-setting w-100">
