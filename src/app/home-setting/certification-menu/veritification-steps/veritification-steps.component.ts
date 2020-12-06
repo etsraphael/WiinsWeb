@@ -21,9 +21,14 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
 
   // file
   fileIdname: string
-  pictureTakeName: string
   fileIdLink: string
   fileId: File
+
+  fileIdname2: string
+  fileIdLink2: string
+  fileId2: File
+
+  pictureTakeName: string
   pictureTake: File
   pictureTakeLink: string
 
@@ -66,6 +71,18 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     reader.readAsDataURL(this.fileId)
   }
 
+  saveIdFile2(files: any) {
+    if (files.length === 0) return null
+    this.fileIdname2 = files[0].name
+    this.fileId2 = files[0]
+
+    // send the fileId
+    const reader = new FileReader()
+    reader.onloadend = _event => { this.uploadFile(this.fileId2, 'fileId2') }
+    reader.readAsDataURL(this.fileId2)
+  }
+
+
   savepictureTakeFile(files: any) {
     if (files.length == 0) return null
     this.pictureTakeName = files[0].name
@@ -101,6 +118,7 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     } else {
       const verificationForm: VerificationForm = {
         identityFile: this.fileIdLink,
+        identityFileBack: this.fileIdLink2,
         pictureTakeFile: this.pictureTakeLink
       }
       this.certificationService.createVerificationProfile(verificationForm).pipe(take(1)).subscribe(
@@ -175,6 +193,7 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     } else {
       const verificationForm: VerificationForm = {
         identityFile: this.fileIdLink,
+        identityFileBack: this.fileIdLink2,
         pictureTakeFile: this.pictureTakeLink
       }
       this.certificationService.createVerificationProfile(verificationForm).pipe(take(1)).subscribe(
@@ -205,6 +224,10 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
         this.fileIdLink = null;
         this.fileIdname = null;
         break;
+      case 'fileIdLink2':
+        this.fileIdLink2 = null;
+        this.fileIdname2 = null;
+        break;
     }
   }
 
@@ -216,5 +239,6 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
 
 export interface VerificationForm {
   identityFile: string
+  identityFileBack: string
   pictureTakeFile: string
 }

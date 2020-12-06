@@ -912,7 +912,8 @@
       "Verification": "Bekreftelse",
       "Verified-zone": "Bekreftet sone",
       "Y-m-complet-t-following-cdt-t-b-certified": "Du må fullføre følgende betingelser for å bli sertifisert.",
-      "Yr-profil-is-currently-being-checked-D": "Profilen din blir nå sjekket. Vi vil kontakte deg innen 48 timer via e-post."
+      "Yr-profil-is-currently-being-checked-D": "Profilen din blir nå sjekket. Vi vil kontakte deg innen 48 timer via e-post.",
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Publikasjonene mine er bare synlige av vennene mine",
