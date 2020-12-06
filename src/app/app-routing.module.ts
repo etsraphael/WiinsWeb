@@ -44,11 +44,8 @@ import { TeamPageComponent } from './mypage/team-page/team-page.component';
 import { PageResolver } from './core/services/page/page.resolver';
 import { UploadAlbumComponent } from './space-creative/create-music-project/upload-album/upload-album.component';
 import { UploadMusicComponent } from './space-creative/create-music-project/upload-music/upload-music.component';
-import { MyProfileStoryComponent } from './myprofile/my-profile-story/my-profile-story.component';
-import { MyProfileMusicComponent } from './myprofile/my-profile-music/my-profile-music.component';
 import { CreatePlaylistMusicComponent } from './space-creative/create-playlist-music/create-playlist-music.component';
 import { SettingPageComponent } from './mypage/setting-page/setting-page.component';
-import { MyProfileTubeComponent } from './myprofile/my-profile-tube/my-profile-tube.component';
 import { TermOfUseComponent } from './term-of-use/term-of-use.component';
 import { SpaceDiscoverComponent } from './space-discover/space-discover.component';
 import { WatchingVideoComponent } from './space-tube/watching-video/watching-video.component';
@@ -62,6 +59,9 @@ import { ChangingPasswordComponent } from './sign/changing-password/changing-pas
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component';
+import { MyProfileStoryComponent } from './profile/my-profile-story/my-profile-story.component';
+import { MyProfileMusicComponent } from './profile/my-profile-music/my-profile-music.component';
+import { MyProfileTubeComponent } from './profile/my-profile-tube/my-profile-tube.component';
 
 
 const routes: Routes = [
