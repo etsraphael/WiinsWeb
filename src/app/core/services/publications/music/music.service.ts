@@ -54,26 +54,26 @@ export class MusicService {
 
 }
 
-interface MusicResponse {
+export interface MusicResponse {
   status: number;
   message: string;
   music: Music;
 }
 
-interface MusicResponse {
+export interface MusicResponse {
   status: number;
   message: string;
   music: Music;
 }
 
-interface MusicProjectResponse {
+export interface MusicProjectResponse {
   status: number;
   message: string;
   publication: MusicProject;
   actifSpace: number
 }
 
-interface ListMusicProjectResponse {
+export interface ListMusicProjectResponse {
   status: number;
   message: string;
   results: MusicProject[];

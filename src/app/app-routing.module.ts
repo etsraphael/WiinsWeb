@@ -17,7 +17,6 @@ import { LoginComponent } from './sign/login/login.component';
 import { RegisterComponent } from './sign/register/register.component';
 import { AuthGuard } from './core/auth/auth.guard';
 import { HomeComponent } from './home/home.component';
-import { MyProfileComponent } from './myprofile/myprofile.component';
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component';
 import { HomeSettingComponent } from './home-setting/home-setting.component';
 import { VisibilityComponent } from './home-setting/visibility/visibility.component';
@@ -44,11 +43,8 @@ import { TeamPageComponent } from './mypage/team-page/team-page.component';
 import { PageResolver } from './core/services/page/page.resolver';
 import { UploadAlbumComponent } from './space-creative/create-music-project/upload-album/upload-album.component';
 import { UploadMusicComponent } from './space-creative/create-music-project/upload-music/upload-music.component';
-import { MyProfileStoryComponent } from './myprofile/my-profile-story/my-profile-story.component';
-import { MyProfileMusicComponent } from './myprofile/my-profile-music/my-profile-music.component';
 import { CreatePlaylistMusicComponent } from './space-creative/create-playlist-music/create-playlist-music.component';
 import { SettingPageComponent } from './mypage/setting-page/setting-page.component';
-import { MyProfileTubeComponent } from './myprofile/my-profile-tube/my-profile-tube.component';
 import { TermOfUseComponent } from './term-of-use/term-of-use.component';
 import { SpaceDiscoverComponent } from './space-discover/space-discover.component';
 import { WatchingVideoComponent } from './space-tube/watching-video/watching-video.component';
@@ -62,7 +58,6 @@ import { ChangingPasswordComponent } from './sign/changing-password/changing-pas
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component';
-
 
 const routes: Routes = [
 
@@ -118,28 +113,16 @@ const routes: Routes = [
         ]
       },
 
-      // my profile
-      {
-        path: 'myprofile', component: MyProfileComponent,
-        data: { animation: 'MyProfile' },
-        children: [
-          { path: '', redirectTo: 'Story', pathMatch: 'full' },
-          { path: 'Story', component: MyProfileStoryComponent, data: { animation: 'Story' } },
-          { path: 'Music', component: MyProfileMusicComponent, data: { animation: 'Music' } },
-          { path: 'Tube', component: MyProfileTubeComponent, data: { animation: 'Tube' } },
-          { path: 'Community', component: CommunityListComponent }
-        ]
-      },
-
       // Profil of Someone
       {
         path: 'profile/:id', component: ProfileComponent,
         data: { animation: 'Profile' },
         children: [
           { path: '', redirectTo: 'Story', pathMatch: 'full' },
-          { path: 'Story', component: ProfileStoryComponent },
-          { path: 'Music', component: ProfileMusicComponent },
-          { path: 'Tube', component: ProfileTubeComponent }
+          { path: 'Story', component: ProfileStoryComponent, data: { animation: 'Story' } },
+          { path: 'Music', component: ProfileMusicComponent, data: { animation: 'Music' } },
+          { path: 'Tube', component: ProfileTubeComponent, data: { animation: 'Tube' } },
+          { path: 'Community', component: CommunityListComponent }
         ]
       },
 

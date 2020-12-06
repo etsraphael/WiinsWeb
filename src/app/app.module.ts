@@ -76,9 +76,6 @@ import { ViewCommentComponent } from './space-music/playlist/view-comment/view-c
 import { SignComponent } from './sign/sign.component'
 import { UploadMusicComponent } from './space-creative/create-music-project/upload-music/upload-music.component'
 import { UploadAlbumComponent } from './space-creative/create-music-project/upload-album/upload-album.component'
-import { MyProfileMusicComponent } from './myprofile/my-profile-music/my-profile-music.component'
-import { MyProfileStoryComponent } from './myprofile/my-profile-story/my-profile-story.component'
-import { MyProfileTubeComponent } from './myprofile/my-profile-tube/my-profile-tube.component'
 import { CreatePlaylistMusicComponent } from './space-creative/create-playlist-music/create-playlist-music.component'
 import { SettingPageComponent } from './mypage/setting-page/setting-page.component'
 import { ValidationsComponent } from './core/modal/validations/validations.component'
@@ -127,7 +124,8 @@ import { PasswordValidationComponent } from './core/modal/password-validation/pa
 import { CertificationStepsComponent } from './home-setting/certification-menu/certification-steps/certification-steps.component';
 import { VeritificationStepsComponent } from './home-setting/certification-menu/veritification-steps/veritification-steps.component'
 import { DragDropModule } from '@angular/cdk/drag-drop';
-
+import { MyProfileBodyComponent } from './profile/my-profile-body/my-profile-body.component';
+import { ProfileBodyComponent } from './profile/profile-body/profile-body.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -140,24 +138,25 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MyProfileComponent, UpdateUsersComponent, HomeSettingComponent, UpdatePasswordComponent,
     FeedPublicationStandardComponent, SidebarSettingComponent, FeedPublicationComponent, VisibilityComponent,
     VisibilityMainComponent, IdentificationComponent, BlacklistComponent, LanguageComponent, NotificationComponent,
-    OthersComponent, MiniChatComponent, MiniPlayerMusicComponent, SpaceStoryComponent,
+    OthersComponent, MiniChatComponent, MiniPlayerMusicComponent, SpaceStoryComponent, RequestListComponent,
     ProfileComponent, SpaceMessengerComponent, ThreadMessageComponent, UserListMessageComponent, ProfileStoryComponent,
     ProfileMusicComponent, ProfileTubeComponent, SpaceMusicComponent, MusicMainComponent, MusicSaveComponent,
     SpaceTubeComponent, SpaceGroupComponent, PrivateAccountComponent, ListGroupComponent, TransfertCryptoModalComponent,
     SpaceCreativeComponent, CreateEventComponent, CreateGroupComponent, CreatePageComponent, CreateTubePublicationComponent,
     NoprofileComponent, RegisterConfirmationComponent, PublicationModalComponent, ChoiceComponent, PageComponent,
     PageStoryComponent, PlaylistComponent, MypageComponent, DefaultPageComponent, FeedPageAdminStandardComponent,
-    AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent, RequestListComponent,
+    AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent,
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
-    ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, MyProfileMusicComponent,
-    MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
-    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, PasswordValidationComponent,
+    ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, PasswordValidationComponent,
+    CreatePlaylistMusicComponent, SettingPageComponent, CertificationStepsComponent,
+    ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, 
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
     ContentIdComponent, PasswordValidationsComponent, ModalTOUComponent, ChangingPasswordComponent,
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
-    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, CertificationStepsComponent, VeritificationStepsComponent
+    CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, 
+    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,

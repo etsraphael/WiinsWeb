@@ -5,7 +5,7 @@
   </div>
 </div>
 
-<div class="container publications-space" *ngIf="(publication$|async)">
+<div class=" px-0" *ngIf="(publication$|async)">
 
   <!-- If we have publication -->
   <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
