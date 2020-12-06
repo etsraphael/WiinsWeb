@@ -40,7 +40,7 @@ export class TubeFeedStoreEffects {
   addTube: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.AddTubeFeed>(featureActions.ActionTypes.ADD_TUBE_FEED),
     switchMap(action => this.dataService.createTube(action.payload).pipe(
-      tap(() => this.router.navigate(['/myprofile/Tube'])),
+      tap((action: TubeProjectResponse) => this.router.navigate(['/profile/'+ action.tube.profile._id + '/Tube'])),
       mergeMap((item: TubeProjectResponse) => {
         if (item.actifSpace !== null) {
           return [

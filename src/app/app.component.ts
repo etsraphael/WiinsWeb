@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     private plateformState: StatePlarformService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
 
     // to select my user
     this.user$ = this.store$.pipe(

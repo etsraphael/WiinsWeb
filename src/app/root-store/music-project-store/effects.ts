@@ -9,7 +9,7 @@ import { ProfileFeatureStoreActions } from '../profile-feature-store'
 import { Action } from '@ngrx/store'
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
-import { MusicService } from 'src/app/core/services/publications/music/music.service'
+import { MusicProjectResponse, MusicService } from 'src/app/core/services/publications/music/music.service'
 
 @Injectable()
 export class MusicProjectStoreEffects {
@@ -26,7 +26,7 @@ export class MusicProjectStoreEffects {
   creatMusic: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.AddMusicProject>(featureActions.ActionTypes.ADD_MUSIC_PROJECT),
     switchMap(action => this.dataService.createFeedPublication(action.payload).pipe(
-      tap(() => this.router.navigate(['/myprofile/Music'])),
+      tap((action: MusicProjectResponse) => this.router.navigate(['/profile/'+ action.publication.profile._id + '/Music'])),
       mergeMap(item => {
         if (item.actifSpace !== null) {
           return [

@@ -127,9 +127,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MyProfileBodyComponent } from './profile/my-profile-body/my-profile-body.component';
 import { ProfileBodyComponent } from './profile/profile-body/profile-body.component';
 import { MyProfileMusicComponent } from './profile/my-profile-music/my-profile-music.component'
-import { MyProfileStoryComponent } from './profile/my-profile-story/my-profile-story.component'
 import { MyProfileTubeComponent } from './profile/my-profile-tube/my-profile-tube.component'
-
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -152,7 +150,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent, RequestListComponent,
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
     ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, MyProfileMusicComponent,
-    MyProfileStoryComponent, MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
+    MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent,
     ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, PasswordValidationComponent,
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,
