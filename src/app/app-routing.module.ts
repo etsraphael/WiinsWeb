@@ -17,7 +17,6 @@ import { LoginComponent } from './sign/login/login.component';
 import { RegisterComponent } from './sign/register/register.component';
 import { AuthGuard } from './core/auth/auth.guard';
 import { HomeComponent } from './home/home.component';
-import { MyProfileComponent } from './myprofile/myprofile.component';
 import { UpdateUsersComponent } from './home-setting/update-users/update-users.component';
 import { HomeSettingComponent } from './home-setting/home-setting.component';
 import { VisibilityComponent } from './home-setting/visibility/visibility.component';
@@ -59,10 +58,6 @@ import { ChangingPasswordComponent } from './sign/changing-password/changing-pas
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component';
-import { MyProfileStoryComponent } from './profile/my-profile-story/my-profile-story.component';
-import { MyProfileMusicComponent } from './profile/my-profile-music/my-profile-music.component';
-import { MyProfileTubeComponent } from './profile/my-profile-tube/my-profile-tube.component';
-
 
 const routes: Routes = [
 
@@ -118,28 +113,16 @@ const routes: Routes = [
         ]
       },
 
-      // my profile
-      {
-        path: 'myprofile', component: MyProfileComponent,
-        data: { animation: 'MyProfile' },
-        children: [
-          { path: '', redirectTo: 'Story', pathMatch: 'full' },
-          { path: 'Story', component: MyProfileStoryComponent, data: { animation: 'Story' } },
-          { path: 'Music', component: MyProfileMusicComponent, data: { animation: 'Music' } },
-          { path: 'Tube', component: MyProfileTubeComponent, data: { animation: 'Tube' } },
-          { path: 'Community', component: CommunityListComponent }
-        ]
-      },
-
       // Profil of Someone
       {
         path: 'profile/:id', component: ProfileComponent,
         data: { animation: 'Profile' },
         children: [
           { path: '', redirectTo: 'Story', pathMatch: 'full' },
-          { path: 'Story', component: ProfileStoryComponent },
-          { path: 'Music', component: ProfileMusicComponent },
-          { path: 'Tube', component: ProfileTubeComponent }
+          { path: 'Story', component: ProfileStoryComponent, data: { animation: 'Story' } },
+          { path: 'Music', component: ProfileMusicComponent, data: { animation: 'Music' } },
+          { path: 'Tube', component: ProfileTubeComponent, data: { animation: 'Tube' } },
+          { path: 'Community', component: CommunityListComponent }
         ]
       },
 

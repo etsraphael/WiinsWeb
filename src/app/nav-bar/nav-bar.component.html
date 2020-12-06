@@ -98,7 +98,7 @@
             <img [src]="p.pictureprofile" class="rounded-circle z-depth-0 my-avatar" alt="avatar">
           </button>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a [routerLink]="['/myprofile']" class="dropdown-item">{{'NAVBAR.MyProfile'|translate}}</a>
+            <a [routerLink]="['/profile/' + (p._id)]" class="dropdown-item">{{'NAVBAR.MyProfile'|translate}}</a>
             <a [routerLink]="['/setting']" class="dropdown-item">{{'NAVBAR.Setting'|translate}}</a>
             <a [routerLink]="['/SpaceCreative']" class="dropdown-item">{{'NAVBAR.CreationSpace'|translate}}</a>
             <a href="https://discord.gg/jMyc443" target="_blank"
