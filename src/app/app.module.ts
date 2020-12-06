@@ -126,7 +126,6 @@ import { VeritificationStepsComponent } from './home-setting/certification-menu/
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MyProfileBodyComponent } from './profile/my-profile-body/my-profile-body.component';
 import { ProfileBodyComponent } from './profile/profile-body/profile-body.component';
-import { MyProfileTubeComponent } from './profile/my-profile-tube/my-profile-tube.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -149,7 +148,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AccountHeaderComponent, TeamPageComponent, CardFeedPagePublicationComponent, PublicationMiniatureComponent,
     NotificationListComponent, SearchListComponent, ViewProfileComponent, ViewPlayerComponent, MusicListComponent,
     ViewCommentComponent, SignComponent, UploadMusicComponent, UploadAlbumComponent, PasswordValidationComponent,
-    MyProfileTubeComponent, CreatePlaylistMusicComponent, SettingPageComponent, CertificationStepsComponent,
+    CreatePlaylistMusicComponent, SettingPageComponent, CertificationStepsComponent,
     ContainerTOUComponent, ListPlaylistMusicComponent, WatchingVideoComponent, HomeTubeComponent, 
     CardChatComponent, TermOfUseComponent, ProfileListComponent, SpaceDiscoverComponent, GroupManagementComponent,
     GroupStoryComponent, CardFeedGroupPublicationComponent, CrooperImageValidationComponent, ValidationsComponent,

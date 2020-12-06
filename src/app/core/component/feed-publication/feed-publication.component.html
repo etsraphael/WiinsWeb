@@ -7,7 +7,7 @@
         <!-- 0 tagged -->
         <div *ngIf="friendTagged.length == 0" class="col-9 col-md-9 row mx-0">
           <div class="col-4 col-md-3 container-avatar px-md-1">
-            <img class="avatar rounded-circle" [src]="(myprofile | async).pictureprofile">
+            <img class="avatar rounded-circle" [routerLink]="['/profile/' + (myprofile | async)._id]" [src]="(myprofile | async).pictureprofile">
           </div>
           <div class="col-8 col-md-9 description my-auto">
             <p class="m-0">{{mp._meta.pseudo}}</p>
