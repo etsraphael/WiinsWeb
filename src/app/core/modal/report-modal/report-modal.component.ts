@@ -5,6 +5,7 @@ import { RootStoreState, ReportStoreActions } from 'src/app/root-store';
 import { ReportModel } from '../../models/report/report.model';
 import { reportData } from '../../data/report-data';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ProfileModel } from '../../models/baseUser/profile.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -40,11 +41,11 @@ export class ReportModalComponent {
 
     // send the report for each type
     switch (this.data.type) {
-      // TO DO..
-      // case 'profile-report': {
-      //   this.store$.dispatch(new ReportStoreActions.Report('profile', this.data.id))
-      //   break
-      // }
+      case 'profile-report': {
+        const report = new ReportModel(this.data.publication._id, 'profile', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        break
+      }
       case 'feed-publication-report': {
         const report = new ReportModel(this.data.publication._id, 'feed-publication', this.comment, this.categorieSelected)
         this.store$.dispatch(new ReportStoreActions.Report(report))
@@ -68,6 +69,7 @@ export class ReportModalComponent {
 }
 
 interface ReportData {
-  publication: PicturePublication | PostPublication | VideoPublication | any,
+  profile: ProfileModel
+  publication: PicturePublication | PostPublication | VideoPublication | any
   type: string
 }
