@@ -42,7 +42,7 @@ export class ReportModalComponent {
     // send the report for each type
     switch (this.data.type) {
       case 'profile-report': {
-        const report = new ReportModel(this.data.publication._id, 'profile', this.comment, this.categorieSelected)
+        const report = new ReportModel(this.data.profile._id, 'profile', this.comment, this.categorieSelected)
         this.store$.dispatch(new ReportStoreActions.Report(report))
         break
       }
