@@ -44,6 +44,7 @@ export class ReportModalComponent {
       case 'profile-report': {
         const report = new ReportModel(this.data.profile._id, 'profile', this.comment, this.categorieSelected)
         this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
         break
       }
       case 'feed-publication-report': {
@@ -52,6 +53,14 @@ export class ReportModalComponent {
         this.page = 3
         break
       }
+      case 'tube-report': return null
+      case 'comment-feed-publication-report': return null
+      case 'comment-playlist-music-report': return null
+      case 'comment-tube-report': return null
+      case 'group-report': return null
+      case 'page-report': return null
+      case 'music-report': return null
+      case 'musicProject-report': return null
       default: break
     }
 
