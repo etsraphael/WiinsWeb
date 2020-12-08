@@ -4,56 +4,68 @@
   <div class="container-fluid px-0 shadow">
     <div class="row container-video-and-comment mx-0">
       <div class="col-md-8 container-video h-100 px-0">
-        <video controls class="video-file w-100 h-100" controlsList="nodownload" autoplay
+        <video controls class="row mx-0 px-0 video-file w-100" controlsList="nodownload" autoplay
           [poster]="(tubePage$|async).tube.posterLink">
           <source [src]="(tubePage$|async).tube.videoLink" type="video/mp4">
           <source [src]="(tubePage$|async).tube.videoLink" type="video/ogg">
           Your browser does not support the video tag.
         </video>
-      </div>
-      <div class="col-md-4 h-100 px-0">
-        <div class="container-list-comment-base w-100 h-100">
-          <div class="card-header row mx-0 py-1 px-1">
-            <div class="col-2 my-auto" [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
-              <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
-            </div>
-            <div class="col-6 pt-1 my-auto container-info-header">
-              <div class="container">
-                <div class="row">
-                  <h4 class="mb-0">{{(tubePage$|async).tube.profile._meta.pseudo}}</h4>
-                </div>
-                <div class="row">
-                  <span class="number-follower">{{'CORE.Community'|translate}} :
-                    {{(tubePage$|async).tube.profile.communityTotal}}</span>
-                </div>
+        <div class="card-footer row mx-0 py-1 px-1">
+          <div class="col-2 my-auto d-flex justify-content-center" [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
+            <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
+          </div>
+          <div class="col-8 pt-1 my-auto container-info-header">
+            <div class="container">
+              <div class="row">
+                <h4 class="mb-0">{{(tubePage$|async).tube.profile._meta.pseudo}}</h4>
+              </div>
+              <div class="row">
+                <span class="number-follower">{{'CORE.Community'|translate}} :
+                  {{(tubePage$|async).tube.profile.communityTotal}}</span>
               </div>
             </div>
-            <div class="col-4 my-auto pt-1" 
+          </div>
+          <div class="col-2 my-auto pt-1"
             *ngIf="!(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
-              <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
-                <button type="button" class="btn btn-secondary px-2" *ngSwitchCase="'friend'" (click)="deleteFriend()">
-                  <span>{{'CORE.Friend'|translate}}</span>
-                </button>
-                <button type="button" class="btn btn-warning px-2" *ngSwitchCase="'not-friend'" (click)="follow()">
-                  <span>{{'CORE.Subscribe'|translate}}</span>
-                </button>
-                <button type="button" class="btn btn-primary px-2" *ngSwitchCase="'pendingFromHim'"
+            <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
+              <button type="button" class="btn btn-secondary px-2 w-100" *ngSwitchCase="'friend'" (click)="deleteFriend()">
+                <span>{{'CORE.Friend'|translate}}</span>
+              </button>
+              <button type="button" class="btn btn-warning px-2 w-100" *ngSwitchCase="'not-friend'" (click)="follow()">
+                <span>{{'CORE.Subscribe'|translate}}</span>
+              </button>
+              <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchCase="'pendingFromHim'"
                 [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
-                  <span>{{'CORE.Profile'|translate}}</span>
-                </button>
-                <button type="button" class="btn btn-primary px-2" *ngSwitchCase="'pendingFromMe'"
+                <span>{{'CORE.Profile'|translate}}</span>
+              </button>
+              <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchCase="'pendingFromMe'"
                 [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
-                  <span>{{'CORE.Profile'|translate}}</span>
-                </button>
-              </div>
-            </div>
-            <div class="col-4 my-auto pt-1"
-             *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
-              <button type="button" class="btn btn-primary px-2" (click)="unfollow()">
-                <span>{{'CORE.Subscribed'|translate}}</span>
+                <span>{{'CORE.Profile'|translate}}</span>
               </button>
             </div>
           </div>
+          <div class="col-4 my-auto pt-1"
+            *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+            <button type="button" class="btn btn-primary px-2 w-100" (click)="unfollow()">
+              <span>{{'CORE.Subscribed'|translate}}</span>
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="col-md-4 h-100 px-0">
+        <div class="container-list-comment-base w-100 h-100">
+
           <!-- Comment List -->
           <div class="container-list-comment">
             <div class="oneComment mb-2" *ngFor="let c of (tubePage$|async).comments; let first = first; let i = index">
