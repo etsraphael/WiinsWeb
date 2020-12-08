@@ -13,6 +13,8 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component';
 import { Action } from 'rxjs/internal/scheduler/Action';
 import { Actions } from '@ngrx/effects';
+import { TubeModel } from 'src/app/core/models/tube/tube.model';
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component';
 
 @Component({
   selector: 'app-watching-video',
@@ -111,6 +113,16 @@ export class WatchingVideoComponent implements OnInit {
   follow(): Subscription {
     return this.tubePage$.pipe(take(1)).subscribe((data: TubePageModel) => {
       return this.store$.dispatch(new TubePageStoreActions.FollowProfile(data.tube.profile._id))
+    })
+  }
+
+  report(): Subscription {
+    // open the modal to report the tube
+    return this.tubePage$.pipe(take(1)).subscribe((data: TubePageModel) => {
+      return this.dialog.open(ReportModalComponent, {
+        panelClass: ['col-md-10'],
+        data: { tube: data.tube, type: 'tube-report' }
+      })
     })
   }
 

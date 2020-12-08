@@ -225,13 +225,11 @@ export class FeedPublicationStandardComponent implements OnInit, OnDestroy {
   }
 
   report(publication: FeedPublication): MatDialogRef<ReportModalComponent> {
-
     // open the modal to report the publications
     return this.dialog.open(ReportModalComponent, {
       panelClass: ['col-md-10'],
       data: { publication, type: 'feed-publication-report' }
     })
-
   }
 
   verifyId(): string[] {

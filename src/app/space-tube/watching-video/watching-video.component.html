@@ -14,7 +14,7 @@
           <div class="col-2 my-auto d-flex justify-content-center" [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
             <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
           </div>
-          <div class="col-8 pt-1 my-auto container-info-header">
+          <div class="col-7 pt-1 my-auto container-info-header">
             <div class="container">
               <div class="row">
                 <h4 class="mb-0">{{(tubePage$|async).tube.profile._meta.pseudo}}</h4>
@@ -22,6 +22,16 @@
               <div class="row">
                 <span class="number-follower">{{'CORE.Community'|translate}} :
                   {{(tubePage$|async).tube.profile.communityTotal}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 my-auto d-flex justify-content-center pt-2">
+            <div ngbDropdown class="dropdown">
+              <button ngbDropdownToggle id="dropdownBasic1" class="btn btn-flat btn-flat-icon" type="button">
+                <em class="fa fa-ellipsis-h"></em>
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu dropdown-scale dropdown-menu-right" role="menu">
+                <a class="dropdown-item" (click)="report()">{{'BTN-DROPDOWN.Report'|translate}}</a>
               </div>
             </div>
           </div>
@@ -44,24 +54,13 @@
               </button>
             </div>
           </div>
-          <div class="col-4 my-auto pt-1"
+          <div class="col-2 my-auto pt-1"
             *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
             <button type="button" class="btn btn-primary px-2 w-100" (click)="unfollow()">
               <span>{{'CORE.Subscribed'|translate}}</span>
             </button>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
       </div>
       <div class="col-md-4 h-100 px-0">
         <div class="container-list-comment-base w-100 h-100">
