@@ -6,6 +6,7 @@ import { ReportModel } from '../../models/report/report.model';
 import { reportData } from '../../data/report-data';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ProfileModel } from '../../models/baseUser/profile.model';
+import { CommentFeedPublication } from '../../models/comment/comment-publication.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -53,8 +54,13 @@ export class ReportModalComponent {
         this.page = 3
         break
       }
+      case 'comment-feed-publication-report': {
+        const report = new ReportModel(this.data.comment._id, 'comment-feed-publication', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
       case 'tube-report': return null
-      case 'comment-feed-publication-report': return null
       case 'comment-playlist-music-report': return null
       case 'comment-tube-report': return null
       case 'group-report': return null
@@ -80,5 +86,6 @@ export class ReportModalComponent {
 interface ReportData {
   profile: ProfileModel
   publication: PicturePublication | PostPublication | VideoPublication | any
+  comment: CommentFeedPublication
   type: string
 }
