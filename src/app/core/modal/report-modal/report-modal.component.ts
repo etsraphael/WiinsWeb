@@ -9,6 +9,7 @@ import { ProfileModel } from '../../models/baseUser/profile.model';
 import { CommentFeedPublication } from '../../models/comment/comment-publication.model';
 import { TubeModel } from '../../models/tube/tube.model';
 import { GroupModel } from '../../models/group/group.model';
+import { PageModel } from '../../models/page/page.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -80,7 +81,12 @@ export class ReportModalComponent {
         this.page = 3
         break 
       }
-      case 'page-report': return null
+      case 'page-report': {
+        const report = new ReportModel(this.data.page._id, 'page', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
       case 'music-report': return null
       case 'musicProject-report': return null
       case 'comment-tube-report': return null // is coming
@@ -106,5 +112,6 @@ interface ReportData {
   comment: CommentFeedPublication
   tube: TubeModel
   group: GroupModel
+  page: PageModel
   type: string
 }

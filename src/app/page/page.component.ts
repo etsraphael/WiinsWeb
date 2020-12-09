@@ -5,6 +5,8 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { PageModel } from '../core/models/page/page.model';
 import { skipWhile, filter, take} from 'rxjs/operators';
+import { ReportModalComponent } from '../core/modal/report-modal/report-modal.component';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-page',
@@ -23,7 +25,8 @@ export class PageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private store$: Store<RootStoreState.State>,
-    private router: Router
+    private router: Router,
+    private dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -73,6 +76,15 @@ export class PageComponent implements OnInit {
       }
     })
     
+  }
+
+  report(page: PageModel): MatDialogRef<ReportModalComponent> {
+    console.log(page)
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { page, type: 'page-report' }
+    })
   }
 
 }
