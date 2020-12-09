@@ -4,10 +4,11 @@ import { GroupModel } from 'src/app/core/models/group/group.model'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, GroupFeatureStoreSelectors, ProfileFeatureStoreSelectors, FeedPublicationStoreActions } from 'src/app/root-store'
 import { filter, skipWhile } from 'rxjs/operators'
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 import { ProfileListComponent } from 'src/app/core/modal/profile-list/profile-list.component'
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component'
 
 @Component({
   selector: 'app-list-group',
@@ -90,6 +91,14 @@ export class ListGroupComponent implements OnInit {
     this.dialog.open(ValidationsComponent, {
       panelClass: ['col-md-4'],
       data: { id, type: 'leave-group'  }
+    })
+  }
+
+  report(group: GroupModel): MatDialogRef<ReportModalComponent> {
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { group, type: 'group-report' }
     })
   }
 

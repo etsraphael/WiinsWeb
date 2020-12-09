@@ -8,6 +8,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ProfileModel } from '../../models/baseUser/profile.model';
 import { CommentFeedPublication } from '../../models/comment/comment-publication.model';
 import { TubeModel } from '../../models/tube/tube.model';
+import { GroupModel } from '../../models/group/group.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -73,13 +74,15 @@ export class ReportModalComponent {
         this.page = 3
         break 
       }
-      case 'group-report': return null
+      case 'group-report': {
+        const report = new ReportModel(this.data.group._id, 'group', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
       case 'page-report': return null
       case 'music-report': return null
       case 'musicProject-report': return null
-
-
-
       case 'comment-tube-report': return null // is coming
       default: break
     }
@@ -102,5 +105,6 @@ interface ReportData {
   publication: PicturePublication | PostPublication | VideoPublication | any
   comment: CommentFeedPublication
   tube: TubeModel
+  group: GroupModel
   type: string
 }

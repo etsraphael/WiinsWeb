@@ -31,6 +31,7 @@
               [routerLink]="['./../setting/' + g._id]">{{'CORE.Manage'|translate}}</a>
           </div>
           <a class="dropdown-item" (click)="openListModal(g)">{{'CORE.Members'|translate}}</a>
+          <a class="dropdown-item" (click)="report(g)">{{'BTN-DROPDOWN.Report'|translate}}</a>
           <a class="dropdown-item" (click)="openModalLeaveGroup(g._id)">{{'CORE.Leave'|translate}}</a>
         </div>
       </div>
