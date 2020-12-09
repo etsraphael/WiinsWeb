@@ -30,9 +30,9 @@
             </span>
           </div>
           <div class="col-md-4">
-            <div class=" row mx-0 feat" *ngIf="m.feat">
+            <div class=" row mx-0 feat" *ngIf="m.feat !== null && m.feat?.length !== 0">
               <span class="my-auto mr-4">
-                <p>{{'CORE.With'|translate}} : </p>
+                <p>{{'CORE.With'|translate}} :</p>
               </span>
               <div class="avatar" *ngFor="let p of m.feat">
                 <a [routerLink]="'../../profile/' + p._id">
@@ -59,7 +59,7 @@
   </div>
 </div>
 
-<!-- List of Music Project -->
+<!-- List of my Music Project -->
 <div #contentCard *ngFor="let p of myMusicProject$ | async">
   <!-- Music not unavailable -->
   <div *ngIf="getAvailability(p.visibilityDate)" class="card row mx-2 my-3">
@@ -121,7 +121,7 @@
           <div class="col-md-4">
             <div class=" row mx-0 feat" *ngIf="m.feat !== null && m.feat?.length !== 0">
               <span class="my-auto mr-4">
-                <p>{{'CORE.With'|translate}} : </p>
+                <p>{{'CORE.With'|translate}} :</p>
               </span>
               <div class="avatar" *ngFor="let p of m.feat">
                 <a [routerLink]="'../../profile/' + p._id">
@@ -250,7 +250,7 @@
           <div class="col-md-4">
             <div class=" row mx-0 feat" *ngIf="m.feat !== null && m.feat?.length !== 0">
               <span class="my-auto mr-4">
-                <p>{{'CORE.With'|translate}} : </p>
+                <p>{{'CORE.With'|translate}} :</p>
               </span>
               <div class="avatar" *ngFor="let p of m.feat">
                 <a [routerLink]="'../../profile/' + p._id">
