@@ -14,6 +14,7 @@ import { commentPlaylist } from 'src/app/core/models/comment/comment-playlist.mo
 import { likeCommentPlaylistModel } from 'src/app/core/models/publication-options/like.model'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component'
 
 @Component({
   selector: 'app-view-comment',
@@ -244,6 +245,14 @@ export class ViewCommentComponent implements OnInit, OnDestroy {
     return this.dialog.open(ValidationsComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
       data: { commentId, playlistId: this.playlistId , type: 'delete-comment-playlist-music' }
+    })
+  }
+
+  report(comment: commentPlaylist): MatDialogRef<ReportModalComponent> {
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { comment, type: 'comment-playlist-music-report' }
     })
   }
 

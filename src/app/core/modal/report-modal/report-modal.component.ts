@@ -67,12 +67,20 @@ export class ReportModalComponent {
         this.page = 3
         break 
       }
-      case 'comment-playlist-music-report': return null
-      case 'comment-tube-report': return null
+      case 'comment-playlist-music-report': {
+        const report = new ReportModel(this.data.comment._id, 'comment-playlist-music', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
       case 'group-report': return null
       case 'page-report': return null
       case 'music-report': return null
       case 'musicProject-report': return null
+
+
+
+      case 'comment-tube-report': return null // is coming
       default: break
     }
 
