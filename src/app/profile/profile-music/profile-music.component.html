@@ -50,7 +50,8 @@
               <i class="fa fa-ellipsis-h"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarOption">
-              <a (click)="getId(m._id)" class="dropdown-item">{{'PUBLICATION.generate-t-id'|translate}}</a>
+              <a class="dropdown-item" (click)="getId(m._id)" >{{'PUBLICATION.generate-t-id'|translate}}</a>
+              <a class="dropdown-item" (click)="report(m)">{{'BTN-DROPDOWN.Report'|translate}}</a>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { CommentFeedPublication } from '../../models/comment/comment-publication
 import { TubeModel } from '../../models/tube/tube.model';
 import { GroupModel } from '../../models/group/group.model';
 import { PageModel } from '../../models/page/page.model';
+import { Music } from '../../models/publication/music/music.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -87,7 +88,14 @@ export class ReportModalComponent {
         this.page = 3
         break 
       }
-      case 'music-report': return null
+      case 'music-report': {
+        const report = new ReportModel(this.data.music._id, 'music', this.comment, this.categorieSelected)
+        console.log(report)
+        return null
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
       case 'musicProject-report': return null
       case 'comment-tube-report': return null // is coming
       default: break
@@ -113,5 +121,6 @@ interface ReportData {
   tube: TubeModel
   group: GroupModel
   page: PageModel
+  music: Music
   type: string
 }
