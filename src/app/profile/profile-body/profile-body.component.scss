@@ -88,8 +88,10 @@ img {
   position: relative;
   z-index: 1;
 
-  .pseudo {
+  .pseudo-name {
     color: white;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
 }

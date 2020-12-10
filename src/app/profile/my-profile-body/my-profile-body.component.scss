@@ -2,6 +2,13 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
+
+.pseudo-name {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .btn-community {
   background: #bfbfbf3b;
   border-radius: 9px;
