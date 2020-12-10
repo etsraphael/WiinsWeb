@@ -82,7 +82,6 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
     reader.readAsDataURL(this.fileId2)
   }
 
-
   savepictureTakeFile(files: any) {
     if (files.length == 0) return null
     this.pictureTakeName = files[0].name
@@ -177,41 +176,13 @@ export class VeritificationStepsComponent implements OnInit, OnDestroy {
       case 'fileId':
         this.fileIdLink = this.uploadService.getFileUrlAfterUpload(bucketName, key)
         break;
+      case 'fileId2':
+        this.fileIdLink2 = this.uploadService.getFileUrlAfterUpload(bucketName, key)
+        break;
       case 'pictureTake':
         this.pictureTakeLink = this.uploadService.getFileUrlAfterUpload(bucketName, key)
         break;
     }
-  }
-
-  sendVerification(): void | MatSnackBarRef<SimpleSnackBar> {
-
-    if (!this.pictureTakeLink || !this.fileIdLink) {
-      return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
-        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-      )
-    } else {
-      const verificationForm: VerificationForm = {
-        identityFile: this.fileIdLink,
-        identityFileBack: this.fileIdLink2,
-        pictureTakeFile: this.pictureTakeLink
-      }
-      this.certificationService.createVerificationProfile(verificationForm).pipe(take(1)).subscribe(
-        action => {
-          this.loading = false
-          this.requestPending = true
-        },
-        error => {
-          this.loading = false
-          this._snackBar.open(
-            this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
-            { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-          )
-        }
-      )
-    }
-
-
   }
 
   resetUpload(link: string): void {

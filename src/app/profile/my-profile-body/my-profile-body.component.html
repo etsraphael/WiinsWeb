@@ -2,7 +2,7 @@
 <div class="container-cover" *ngIf="(myprofile$|async)">
   <div class="row w-100 mx-0 header-cover">
     <div class="content-pseudo col-5 col-md-3 d-flex justify-content-center pt-2">
-      <span>{{(myprofile$|async)._meta.pseudo}}</span>
+      <h2 class="pseudo-name pt-3">{{(myprofile$|async)._meta.pseudo}}</h2>
     </div>
     <div class="ml-auto col-2 col-md-2 cover-edit my-auto text-right">
       <input hidden #cover type='file' name="photo" id="coverUpload" accept=".png, .jpg, .jpeg"

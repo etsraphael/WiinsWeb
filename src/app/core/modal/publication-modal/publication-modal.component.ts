@@ -17,6 +17,7 @@ import { TranslationService } from '../../services/translation/translation.servi
 import { ProfileListComponent } from '../profile-list/profile-list.component'
 import { CommentModel } from '../../models/comment/comment.model'
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
+import { ReportModalComponent } from '../report-modal/report-modal.component'
 
 @Component({
   selector: 'app-publication-modal',
@@ -358,5 +359,14 @@ export class PublicationModalComponent implements OnInit, OnDestroy {
     } else return null
 
   }
+
+  report(comment: CommentFeedPublication): MatDialogRef<ReportModalComponent> {
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { comment, type: 'comment-feed-publication-report' }
+    })
+  }
+
 
 }

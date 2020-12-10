@@ -5,6 +5,12 @@ import { RootStoreState, ReportStoreActions } from 'src/app/root-store';
 import { ReportModel } from '../../models/report/report.model';
 import { reportData } from '../../data/report-data';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ProfileModel } from '../../models/baseUser/profile.model';
+import { CommentFeedPublication } from '../../models/comment/comment-publication.model';
+import { TubeModel } from '../../models/tube/tube.model';
+import { GroupModel } from '../../models/group/group.model';
+import { PageModel } from '../../models/page/page.model';
+import { Music } from '../../models/publication/music/music.model';
 
 @Component({
   selector: 'app-report-modal',
@@ -40,17 +46,58 @@ export class ReportModalComponent {
 
     // send the report for each type
     switch (this.data.type) {
-      // TO DO..
-      // case 'profile-report': {
-      //   this.store$.dispatch(new ReportStoreActions.Report('profile', this.data.id))
-      //   break
-      // }
+      case 'profile-report': {
+        const report = new ReportModel(this.data.profile._id, 'profile', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break
+      }
       case 'feed-publication-report': {
         const report = new ReportModel(this.data.publication._id, 'feed-publication', this.comment, this.categorieSelected)
         this.store$.dispatch(new ReportStoreActions.Report(report))
         this.page = 3
         break
       }
+      case 'comment-feed-publication-report': {
+        const report = new ReportModel(this.data.comment._id, 'comment-feed-publication', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'tube-report': { 
+        const report = new ReportModel(this.data.tube._id, 'tube', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'comment-playlist-music-report': {
+        const report = new ReportModel(this.data.comment._id, 'comment-playlist-music', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'group-report': {
+        const report = new ReportModel(this.data.group._id, 'group', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'page-report': {
+        const report = new ReportModel(this.data.page._id, 'page', this.comment, this.categorieSelected)
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'music-report': {
+        const report = new ReportModel(this.data.music._id, 'music', this.comment, this.categorieSelected)
+        console.log(report)
+        return null
+        this.store$.dispatch(new ReportStoreActions.Report(report))
+        this.page = 3
+        break 
+      }
+      case 'musicProject-report': return null // is coming
+      case 'comment-tube-report': return null // is coming
       default: break
     }
 
@@ -68,6 +115,12 @@ export class ReportModalComponent {
 }
 
 interface ReportData {
-  publication: PicturePublication | PostPublication | VideoPublication | any,
+  profile: ProfileModel
+  publication: PicturePublication | PostPublication | VideoPublication | any
+  comment: CommentFeedPublication
+  tube: TubeModel
+  group: GroupModel
+  page: PageModel
+  music: Music
   type: string
 }

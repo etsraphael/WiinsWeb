@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Body Card -->
-  <div class="container-scroll container-list-comment-base">
+  <div class="container-scroll container-list-comment-base" *ngIf="(comment$ | async)">
     <div class="card-body">
       <div class="container-list-comment pb-7">
         <!-- Comment List -->
@@ -53,7 +53,8 @@
                 <i class="fa fa-ellipsis-h"></i>
               </button>
               <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <button ngbDropdownItem *ngIf="(myprofile$|async)._id !== c.idProfil._id">{{'BTN-DROPDOWN.Report'|translate}}</button>
+                <button ngbDropdownItem (click)="report(c)"
+                *ngIf="(myprofile$|async)._id !== c.idProfil._id">{{'BTN-DROPDOWN.Report'|translate}}</button>
                 <button ngbDropdownItem (click)="deleteComment(c._id)"
                  *ngIf="(myprofile$|async)._id == c.idProfil._id">{{'CORE.Delete'| translate}}</button>
               </div>

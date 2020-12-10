@@ -99,7 +99,7 @@
                     <i class="fa fa-ellipsis-h"></i>
                   </button>
                   <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button ngbDropdownItem *ngIf="profile._id !== c.idProfil._id">{{'BTN-DROPDOWN.Report'|translate}}</button>
+                    <button ngbDropdownItem *ngIf="profile._id !== c.idProfil._id" (click)="report(c)">{{'BTN-DROPDOWN.Report'|translate}}</button>
                     <button ngbDropdownItem (click)="deleteComment(c._id)"
                      *ngIf="profile._id == c.idProfil._id || idOwner == profile._id || mypageId == true">{{'CORE.Delete'| translate}}</button>
                   </div>

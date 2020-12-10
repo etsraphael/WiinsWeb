@@ -15,6 +15,7 @@ import { PasswordValidationsComponent } from 'src/app/core/modal/password-valida
 import { PasswordValidationComponent } from 'src/app/core/modal/password-validation/password-validation.component'
 import { DatePipe } from '@angular/common'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component'
 
 @Component({
   selector: 'app-profile-music',
@@ -285,6 +286,14 @@ export class ProfileMusicComponent implements OnInit {
   resetDateSetting() {
     // to reset the date
     this.dateVisibilitySitting = null
+  }
+
+  report(music: Music): MatDialogRef<ReportModalComponent> {
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { music, type: 'music-report' }
+    })
   }
 
 }

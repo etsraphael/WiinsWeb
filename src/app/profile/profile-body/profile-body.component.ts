@@ -1,9 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
-import { MatDialog } from '@angular/material/dialog'
+import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router'
 import { select, Store } from '@ngrx/store'
 import { Observable, Subscription } from 'rxjs'
 import { filter, skipWhile } from 'rxjs/operators'
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component'
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
 import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
 import { FeedPublicationStoreActions, FriendsRequestFeatureStoreActions, ProfileFeatureStoreActions, ProfileFeatureStoreSelectors, RootStoreState } from 'src/app/root-store'
@@ -100,13 +101,14 @@ export class ProfileBodyComponent implements OnInit, OnDestroy {
     this.store$.dispatch(new FriendsRequestFeatureStoreActions.ConfirmFriendRequest(profile._id))
   }
 
-  report(id: string) {
-    // open the report modal
-    this.dialog.open(ValidationsComponent, {
-      panelClass: ['col-md-4', 'col-xl-4'],
-      data: { id, type: 'profile-report' }
+  report(profile: ProfileModel): MatDialogRef<ReportModalComponent> {
+    // open the modal to report the publications
+    return this.dialog.open(ReportModalComponent, {
+      panelClass: ['col-md-10'],
+      data: { profile, type: 'profile-report' }
     })
   }
+
 
   follow(id: string) {
     // follow the profile
