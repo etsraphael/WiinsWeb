@@ -207,7 +207,10 @@
     "Community": "Community",
     "Subscribed": "Subscribed",
     "Go-to-profile": "Go to profile",
-    "Friend": "Friend"
+    "Friend": "Friend",
+    "Towards-an-infinite-space": "Towards an infinite space",
+    "Hello": "Hello",
+    "Publication": "Publication"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -561,7 +564,10 @@
     "You-hv-to-get-t-community": "You have to get the community",
     "Please-choose-cat-and-sub": "Please choose category and sub category",
     "Please-upload-the-poster-before": "Please upload the poster of the video before",
-    "T-min-is-1$": "The minimum is 1$"
+    "T-min-is-1$": "The minimum is 1$",
+    "Missing-informations": "Missing informations",
+    "Account_desactivated": "Account desactivated",
+    "Y-dont-have-a-conversation-yet": "You don't have a conversation yet."
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -591,7 +597,11 @@
     "Registration": "Registration",
     "Sign-up": "Sign up",
     "accept-tou": "I accept the terms and conditions of use",
-    "click-on-email": "Please click on the email link"
+    "click-on-email": "Please click on the email link",
+    "Create-yr-account": "Create your account",
+    "Creating-yr-account": "Creating your account",
+    "Login-first-to-continue": "Login first to continue",
+    "Checking-yr-infos": "Checking your infos"
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Lastest project",
@@ -756,8 +766,7 @@
         "9": {
           "1": "The creation of a \"fake profile\" based on the first and last name of an existing person...",
           "2": "Disseminate \"public\" information about a user without his or her permission and any other information that has been modified or transformed."
-        },
-        "We-delete": "We delete"
+        }
       },
       "Title-Level": {
         "1": "Be carreful",
@@ -766,7 +775,8 @@
         "4": "Account suspension"
       },
       "body-message-reason": "Your content has been reported by the community of Wiins. One of your publications was therefore deleted by Wiins moderation for the following reason : ",
-      "please-read-our-community-rules": "Please read our community rules"
+      "please-read-our-community-rules": "Please read our community rules",
+      "To-fight-against-inappropriate-contents-D": "To fight against inappropriate contents which deemed disdainful to the community. We can delete it due to these reasons."
     },
     "Report-Reponsed": {
       "already_exist": "You have already reported this publication",
