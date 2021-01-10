@@ -97,7 +97,7 @@ export class FeedPublicationStandardComponent implements OnInit, OnDestroy {
     this.profileSubscription = this.profile$.subscribe((profile: ProfileModel) => {
       if (
         this.publication.hasOwnProperty('page')
-        && typeof profile.adminsPage.filter(x => x !== this.publication.page._id)[0] !== 'undefined'
+        && profile.adminsPage.map(x => x._id).indexOf(this.publication.page._id) !== -1
       ) { this.mypageId = true }
     })
 
