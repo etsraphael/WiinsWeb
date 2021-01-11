@@ -15,23 +15,6 @@ Donation link :
 - [The developement link](https://piins-front-end-web.herokuapp.com/sign/in), is connected to the pre-master
 
 
-## Last rewards
-
-The only 3 dependencies are [Angular](https://angular.io), [Bootstrap 4](https://getbootstrap.com) and [Ngrx](https://ngrx.io/guide/store).
-
-| New features | Rewards (only in altcoins)
-| -  | - |
-| [Update the package](https://discord.gg/PghXaMt)  | 15$ |
-| [Visibility of the notifications](https://discord.gg/HT3fWKu)  | 35$ |
-| [Angular 10](https://discord.gg/EuhRBQc)  | 25$ |
-| [Messenger card](https://discord.gg/JWHbF7C)  | 15$ |
-| [Order of the publications](https://discord.gg/RvMgXZP)  | 65$ |
-| [Animation of the publications](https://discord.gg/vqqHSM9)  | 25$ |
-| [Others minor update](https://discord.gg/JWHbF7C)  | 0$ |
-
-
-
-
 
 ## Development server
 
