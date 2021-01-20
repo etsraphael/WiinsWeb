@@ -59,7 +59,7 @@ export const musicGenre = [
   { name: 'Contemporary folk', code: 'Contemporary-folk' },
   { name: 'Continental Jazz', code: 'Continental-Jazz' },
   { name: 'Cool jazz', code: 'Cool-jazz' },
-  { name: 'Cosmic disco', code: 'Cosmic disco' },
+  { name: 'Cosmic disco', code: 'Cosmic-disco' },
   { name: 'Cowpunk', code: 'Cowpunk' },
   { name: 'Crossover jazz', code: 'Crossover-jazz' },
   { name: 'Crossover thrash', code: 'Crossover-thrash' },
@@ -288,7 +288,7 @@ export const musicGenre = [
   { name: 'Ska punk', code: 'Ska-punk' },
   { name: 'Skate punk', code: 'Skate-punk' },
   { name: 'Slowcore', code: 'Slowcore' },
-  { name: 'Sludge metal', code: 'Sludge metal' },
+  { name: 'Sludge metal', code: 'Sludge-metal' },
   { name: 'Smooth jazz', code: 'Smooth-jazz' },
   { name: 'Soft rock', code: 'Soft-rock' },
   { name: 'Soul jazz', code: 'Soul-jazz' },
@@ -337,5 +337,5 @@ export const musicGenre = [
   { name: 'World fusion', code: 'World-fusion' },
   { name: 'Worldbeat', code: 'Worldbeat' },
   { name: 'Yacht rock', code: 'Yacht-rock' },
-  { name : 'Others', code: 'others' }
+  { name : 'Others', code: 'Others' }
 ]
