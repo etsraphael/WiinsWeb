@@ -115,10 +115,18 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   
   openCreditModal() {
     // open the modal for the id // COPY PAST TO DO..
-    this.dialog.open(CreditMusicComponent, {
+    const dialogRef = this.dialog.open(CreditMusicComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
       // data: { id }
     })
+
+    const sub = dialogRef.componentInstance.onAdd.subscribe((action: ProfileModel) => {
+
+    })
+
+    // unsubscribe the modal after to close the dialog
+    dialogRef.afterClosed().subscribe(() => sub.unsubscribe())
+
   }
 
   addArray() {

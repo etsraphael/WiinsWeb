@@ -16,13 +16,13 @@
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
                 <div *ngFor="let item of [1,2,3,4,5,6]" class="d-inline-flex">
-                    <div class="container-tag-p py-2 px-3 m-2">
-                        <p class="mb-0">User {{item}}</p>
-                    </div>
+                  <div class="container-tag-p py-2 px-3 m-2">
+                    <p class="mb-0">User {{item}}</p>
+                  </div>
                 </div>
                 <div class="container-input d-inline-flex py-1 px-2">
-                    <input type="text" placeholder="Add someone">
-                    <i class="bi bi-arrow-return-left"></i>
+                  <input [(ngModel)]="interpreter" [ngModelOptions]="{standalone: true}" type="text" placeholder="Add someone" (keydown.enter)="interpretedBy()">
+                  <i class="bi bi-arrow-return-left"></i>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@
   </div>
   <div class="card-footer">
     <div class="row d-flex justify-content-end">
-      <button class="btn btn-secondary mx-2">
+      <button class="btn btn-secondary mx-2" (click)="dialogRef.close()">
         <span>{{'CORE.Cancel'|translate}}</span>
       </button>
       <button class="btn btn-success mx-2">
