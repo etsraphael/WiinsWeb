@@ -15,3 +15,19 @@
   background-color: #ec7a7a1f;
   border-radius: 5px;
 }
+
+.container-tag-p {
+  background-color: red;
+  background-color: #ec7a7a1f;
+  border-radius: 5px;
+}
+
+.container-input {
+  border: 1px solid #80808059;
+  border-radius: 5px;
+  overflow: hidden;
+  
+  input {
+    border: 0;
+  }
+}
