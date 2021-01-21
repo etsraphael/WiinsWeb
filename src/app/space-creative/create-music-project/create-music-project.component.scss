@@ -140,10 +140,6 @@
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.275) !important;
 }
 
-.btn:hover {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.275);
-}
-
 .add-file {
   span {
     font-size: 1.3rem;
@@ -205,11 +201,10 @@
   }
 
   input {
-    height: 29px;
     font-size: 1.1rem;
     color: grey;
-    border: none;
-    border-bottom: 1px solid #efefef;
+    border-radius: 7px;
+    border: 1px solid #efefef;
   }
 
 }
@@ -393,28 +388,6 @@
     font-size: 22px;
   }
 }
-
-.album-btn-download {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-
-  .fa-folder-open {
-    position: relative;
-    left: 6px;
-    top: 6px;
-  }
-}
-
-.album-btn-download:hover {
-  background: #e4e4e4;
-}
-
-.fa-times:hover {
-  font-size: 20px;
-  transition: 0.2s;
-}
-
 
 .loader {
   font-size: 5px !important;

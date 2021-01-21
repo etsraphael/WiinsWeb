@@ -66,7 +66,7 @@
       </div>
     </div>
     <!-- Array of music -->
-    <div class="array-music mt-5">
+    <div class="array-music mt-5 mb-9">
       <div class="row mx-0" *ngFor="let music of music.controls; let i = index">
         <div class="col-md-1 my-auto h-100 px-0">
           <div class="row mx-0 enum">
@@ -83,14 +83,14 @@
                 </div>
               </div>
               <div class="col-md-4 mt-1 my-auto">
-                <input class="px-2 w-100" formControlName="name" type="text"
+                <input class="p-2 pl-4 w-100 h-100" formControlName="name" type="text"
                   [placeholder]="('CORE.music'|translate)+ ' ' +(i+1)"
                   [ngClass]="{'border-red': submited && music.controls.name.errors}"
                   [ngClass]="{'no-border': !music.controls.name.errors}">
               </div>
-              <div class="col-md-4 mt-1">
+              <div class="col-md-3">
                 <div class="row add-feat">
-                  <div ngbDropdown class="col-md-5 row my-auto">
+                  <!-- <div ngbDropdown class="col-md-5 row my-auto">
                     <button ngbDropdownToggle class="btn-plus ml-auto mr-3" role="button" aria-haspopup="true"
                       aria-expanded="false">
                       <i class="fa fa-plus pt-1"></i>
@@ -120,7 +120,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-md-7 row" *ngIf="featArray[i].length !== 0">
                     <div class="feat-avatar" *ngFor="let featP of featArray[i]">
                       <img class="rounded-circle" [(src)]="featP.pictureprofile">
@@ -129,19 +129,36 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-1 mt-1 my-auto">
+
+
+
+
+              <div class="col-md-1 my-auto">
+                <button type="button" class="btn btn-secondary">
+                  <i class="bi bi-shield-shaded"></i>
+                </button>
+              </div>
+
+              <div class="col-md-1 my-auto">
                 <div class="album-btn-download">
                   <div class="content-link">
-                    <label for="musicUpload{{i}}" class="btn-upload">
-                      <i class="fa fa-folder-open" [ngClass]="{'bg-green': !!musicUrl[i]}"></i>
+                    <label for="musicUpload{{i}}" class="btn btn-secondary mb-0" [ngClass]="{'btn-success': !!musicUrl[i]}">
+                      <i class="bi bi-download" fill="currentColor"></i>
                     </label>
                     <input hidden type='file' id="musicUpload{{i}}" accept=".mp3" (change)=addMusicUpload($event,i) />
                   </div>
                 </div>
               </div>
-              <div class="col-md-1 mt-2 row my-auto">
-                <i class="mx-auto fa fa-times" (click)="delete(i)"></i>
+
+
+              <div class="col-md-1 my-auto">
+                <button type="button" class="btn btn-danger" (click)="delete(i)">
+                  <i class="bi bi-x-square"></i>
+                </button> 
               </div>
+
+
+
             </div>
           </div>
         </div>
