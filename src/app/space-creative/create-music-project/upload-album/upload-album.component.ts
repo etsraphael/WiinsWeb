@@ -16,6 +16,7 @@ import { UploadWithoutInjectorService } from 'src/app/core/services/upload/uploa
 import { environment } from 'src/environments/environment'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
+import { CreditMusicComponent } from 'src/app/core/modal/credit-music/credit-music.component'
 
 @Component({
   selector: 'app-upload-album',
@@ -110,6 +111,14 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       else return null
     }
     return null
+  }
+  
+  openCreditModal() {
+    // open the modal for the id // COPY PAST TO DO..
+    this.dialog.open(CreditMusicComponent, {
+      panelClass: ['col-md-4', 'col-xl-4'],
+      // data: { id }
+    })
   }
 
   addArray() {

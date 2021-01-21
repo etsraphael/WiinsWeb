@@ -126,6 +126,7 @@ import { VeritificationStepsComponent } from './home-setting/certification-menu/
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MyProfileBodyComponent } from './profile/my-profile-body/my-profile-body.component';
 import { ProfileBodyComponent } from './profile/profile-body/profile-body.component';
+import { CreditMusicComponent } from './core/modal/credit-music/credit-music.component'
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -156,7 +157,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
     CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, 
-    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent
+    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent, CreditMusicComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
@@ -171,7 +172,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,
     GroupValidationComponent, CrooperImageValidationComponent, ReportModalComponent, TransfertCryptoModalComponent,
-    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent, PasswordValidationComponent
+    ManagementTeamComponent, ProfileListComponent, ModalTOUComponent, ReportMessageComponent, PasswordValidationComponent,
+    CreditMusicComponent
   ]
 })
 
