@@ -16,7 +16,7 @@ import { UploadWithoutInjectorService } from 'src/app/core/services/upload/uploa
 import { environment } from 'src/environments/environment'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
-import { CreditMusicComponent } from 'src/app/core/modal/credit-music/credit-music.component'
+import { CreditMusicComponent, CreditName, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
 
 @Component({
   selector: 'app-upload-album',
@@ -55,6 +55,9 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   // dialog
   dialogRef: MatDialogRef<CrooperImageValidationComponent> = null
   dialogS: Subscription
+
+  // credit
+  musicCredit: any[] = []
 
   constructor(
     private formBuilder: FormBuilder,
@@ -95,6 +98,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
 
     // to set 2 default music
     this.featArray.push([], [])
+    this.musicCredit.push([], [])
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
@@ -112,15 +116,26 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     }
     return null
   }
-  
-  openCreditModal() {
-    // open the modal for the id // COPY PAST TO DO..
+
+  openCreditModal(i: number) {
+
+    // open the modal for the id
     const dialogRef = this.dialog.open(CreditMusicComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
-      // data: { id }
+      data: { name: this.music.value[i].name, index: i }
     })
 
-    const sub = dialogRef.componentInstance.onAdd.subscribe((action: ProfileModel) => {
+    const sub = dialogRef.componentInstance.onAdd.subscribe((data: MusicCredit) => {
+      // added a music credit 
+
+      console.log(data)
+
+
+      // const indexMusicCredit = this.musicCredit[data.index].length
+      // this.musicCredit[data.index][indexMusicCredit] = fadata
+      // console.log(this.musicCredit)
+
+
 
     })
 
@@ -137,11 +152,15 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     // musicFeat
     this.featArray.push([])
 
+    // music credit
+    this.musicCredit.push([])
+
   }
 
   delete(item: number) {
     // delete a music at an index
     this.music.removeAt(item);
+    this.featArray.splice(item, 1)
     this.musicUrl.splice(item, 1)
     this.loadingMusic[item] = false
   }

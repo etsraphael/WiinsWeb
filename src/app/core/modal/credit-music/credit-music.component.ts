@@ -22,26 +22,50 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   writters: string[]
   producers: string[]
 
+  // confirmation
+  musicCredit: MusicCredit = null
+
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { musicCredit: MusicCredit }
+    @Inject(MAT_DIALOG_DATA) public data: { name: string, index: number }
   ) { }
 
   ngOnInit(): void {
+    this.musicCredit = {
+      index: this.data.index,
+      interpreters: [],
+      writters: [],
+      producers: []
+    }
   }
 
   addNewRole(role: string) {
 
-    // add in the role
-    const newRole: CreditName = { name: this.interpreter, role }
-    this.onAdd.emit(newRole)
-
     switch (role) {
-      case 'interpreter': this.interpreter = null
-      case 'writter': this.writter = null
-      case 'interpreter': this.producer = null
+      case 'interpreter': {
+        this.musicCredit.interpreters.push(this.interpreter)
+        this.interpreter = null
+        break;
+      }
+      case 'writter': {
+        this.musicCredit.writters.push(this.writter)
+        this.writter = null
+        break;
+      }
+      case 'producer': {
+        this.musicCredit.producers.push(this.producer)
+        this.producer = null
+        break;
+      }
     }
 
+  }
+
+
+
+  confirm() {
+    this.onAdd.emit(this.musicCredit)
+    this.dialogRef.close()
   }
 
   ngOnDestroy(): void {
@@ -51,12 +75,17 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 }
 
 
+
+
+
 export interface CreditName {
+  index: number
   name: string
   role: string
 }
 
 export interface MusicCredit {
+  index: number
   interpreters: string[]
   writters: string[]
   producers: string[]

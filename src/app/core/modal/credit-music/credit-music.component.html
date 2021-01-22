@@ -15,12 +15,12 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
-                <div *ngFor="let item of [1,2,3,4,5,6]" class="d-inline-flex">
+                <div *ngFor="let item of musicCredit.interpreters" class="d-inline-flex">
                   <div class="container-tag-p py-2 px-3 m-2">
-                    <p class="mb-0">User {{item}}</p>
+                    <p class="mb-0">{{item}}</p>
                   </div>
                 </div>
-                <div class="container-input d-inline-flex py-1 px-2">
+                <div class="container-input d-inline-flex py-1 px-2 ml-2">
                   <input [(ngModel)]="interpreter" [ngModelOptions]="{standalone: true}" type="text" placeholder="Add someone" (keydown.enter)="addNewRole('interpreter')">
                   <i class="bi bi-arrow-return-left"></i>
                 </div>
@@ -39,6 +39,15 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
+                <div *ngFor="let item of musicCredit.writters" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2">
+                    <p class="mb-0">{{item}}</p>
+                  </div>
+                </div>
+                <div class="container-input d-inline-flex py-1 px-2 ml-2">
+                  <input [(ngModel)]="writter" [ngModelOptions]="{standalone: true}" type="text" placeholder="Add someone" (keydown.enter)="addNewRole('writter')">
+                  <i class="bi bi-arrow-return-left"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -54,6 +63,15 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
+                <div *ngFor="let item of musicCredit.producers" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2">
+                    <p class="mb-0">{{item}}</p>
+                  </div>
+                </div>
+                <div class="container-input d-inline-flex py-1 px-2 ml-2">
+                  <input [(ngModel)]="producer" [ngModelOptions]="{standalone: true}" type="text" placeholder="Add someone" (keydown.enter)="addNewRole('producer')">
+                  <i class="bi bi-arrow-return-left"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +84,7 @@
       <button class="btn btn-secondary mx-2" (click)="dialogRef.close()">
         <span>{{'CORE.Cancel'|translate}}</span>
       </button>
-      <button class="btn btn-success mx-2">
+      <button class="btn btn-success mx-2" (click)="confirm()">
         <span>{{'CORE.Confirm'|translate}}</span>
       </button>
     </div>
