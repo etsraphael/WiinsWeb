@@ -14,21 +14,50 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   // input
   interpreter: string
+  writter: string
+  producer: string
+
+  // arrays
+  interpreters: string[]
+  writters: string[]
+  producers: string[]
 
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { something: any }
+    @Inject(MAT_DIALOG_DATA) public data: { musicCredit: MusicCredit }
   ) { }
 
   ngOnInit(): void {
   }
 
-  interpretedBy(){
-    this.interpreter = null
+  addNewRole(role: string) {
+
+    // add in the role
+    const newRole: CreditName = { name: this.interpreter, role }
+    this.onAdd.emit(newRole)
+
+    switch (role) {
+      case 'interpreter': this.interpreter = null
+      case 'writter': this.writter = null
+      case 'interpreter': this.producer = null
+    }
+
   }
 
   ngOnDestroy(): void {
     this.onAdd.unsubscribe()
   }
 
+}
+
+
+export interface CreditName {
+  name: string
+  role: string
+}
+
+export interface MusicCredit {
+  interpreters: string[]
+  writters: string[]
+  producers: string[]
 }
