@@ -61,6 +61,26 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   }
 
+  removeRole(type: string, i: number){
+    switch (type) {
+      case 'interpreter': {
+        this.musicCredit.interpreters.splice(i, 1)
+        this.interpreter = null
+        break;
+      }
+      case 'writter': {
+        this.musicCredit.writters.splice(i, 1)
+        this.writter = null
+        break;
+      }
+      case 'producer': {
+        this.musicCredit.producers.splice(i, 1)
+        this.producer = null
+        break;
+      }
+    }
+  }
+
 
 
   confirm() {
@@ -86,7 +106,7 @@ export interface CreditName {
 
 export interface MusicCredit {
   index: number
-  interpreters: string[]
+  interpreters: string[] | any[]
   writters: string[]
   producers: string[]
 }

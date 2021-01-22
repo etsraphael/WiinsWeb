@@ -15,8 +15,9 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
-                <div *ngFor="let item of musicCredit.interpreters" class="d-inline-flex">
-                  <div class="container-tag-p py-2 px-3 m-2">
+                <div *ngFor="let item of musicCredit.interpreters; let i = index" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
+                    <i class="bi bi-x pr-1" (click)="removeRole('interpreter', i)"></i>
                     <p class="mb-0">{{item}}</p>
                   </div>
                 </div>
@@ -39,8 +40,9 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
-                <div *ngFor="let item of musicCredit.writters" class="d-inline-flex">
-                  <div class="container-tag-p py-2 px-3 m-2">
+                <div *ngFor="let item of musicCredit.writters; let i = index" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
+                    <i class="bi bi-x pr-1" (click)="removeRole('writter', i)"></i>
                     <p class="mb-0">{{item}}</p>
                   </div>
                 </div>
@@ -63,8 +65,9 @@
                 <div class="container-checkbox d-inline-flex py-2 px-3">
                   <mat-checkbox class="example-margin p-0"> Me </mat-checkbox>
                 </div>
-                <div *ngFor="let item of musicCredit.producers" class="d-inline-flex">
-                  <div class="container-tag-p py-2 px-3 m-2">
+                <div *ngFor="let item of musicCredit.producers; let i = index" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
+                    <i class="bi bi-x pr-1" (click)="removeRole('producer', i)"></i>
                     <p class="mb-0">{{item}}</p>
                   </div>
                 </div>
