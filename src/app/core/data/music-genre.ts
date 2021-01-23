@@ -339,3 +339,8 @@ export const musicGenre = [
   { name: 'Yacht rock', code: 'Yacht-rock' },
   { name : 'Others', code: 'Others' }
 ]
+
+export interface NameAndCode {
+  name: string
+  code: string
+}

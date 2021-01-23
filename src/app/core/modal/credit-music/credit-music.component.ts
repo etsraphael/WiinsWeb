@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Inject, OnDestroy, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { debounceTime, distinctUntilChanged, filter } from 'rxjs/operators';
+import { musicGenre, NameAndCode } from '../../data/music-genre';
 
 @Component({
   selector: 'app-credit-music',
@@ -16,14 +19,19 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   interpreter: string
   writter: string
   producer: string
+  category: FormControl;
 
   // arrays
   interpreters: string[]
   writters: string[]
   producers: string[]
+  categories: NameAndCode[] = []
 
   // confirmation
   musicCredit: MusicCredit = null
+
+  // data
+  musicGenres: NameAndCode[] = []
 
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
@@ -37,10 +45,30 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       writters: [],
       producers: []
     }
+
+    this.category = new FormControl();
+    this.category.valueChanges
+    .pipe(
+      debounceTime(100),
+      distinctUntilChanged(),
+      filter(x => !!x)
+    )
+    .subscribe(q => { 
+      this.musicGenres = musicGenre.filter(item => item.name.toLowerCase().includes(q.toLowerCase()))
+    })
+
+  }
+
+  addCategory(item: NameAndCode){
+    this.categories.push(item)
+    this.category.setValue('')
+  }
+
+  removeCategory(i: number){
+    this.categories.splice(i, 1)
   }
 
   addNewRole(role: string) {
-
     switch (role) {
       case 'interpreter': {
         this.musicCredit.interpreters.push(this.interpreter)
@@ -58,7 +86,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
         break;
       }
     }
-
   }
 
   removeRole(type: string, i: number){
@@ -80,8 +107,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       }
     }
   }
-
-
 
   confirm() {
     this.onAdd.emit(this.musicCredit)
