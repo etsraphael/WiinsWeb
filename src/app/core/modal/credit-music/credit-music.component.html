@@ -1,6 +1,7 @@
 <div class="card">
   <div class="card-header">
-    <h3> Credit of Music1 </h3>
+    <h3 *ngIf="data.name"> Credit of : {{data.name}}</h3>
+    <h3 *ngIf="!data.name"> Credit of Music{{data.index + 1}} </h3>
   </div>
   <div class="card-body">
     <table class="table">
