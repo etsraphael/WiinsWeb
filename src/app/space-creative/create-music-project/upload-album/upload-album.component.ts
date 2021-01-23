@@ -50,7 +50,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   dialogS: Subscription
 
   // credit
-  musicCredit: any[] = []
+  musicCredit: MusicCredit[] = []
 
   constructor(
     private formBuilder: FormBuilder,
@@ -72,7 +72,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     })
 
     // to set 2 default music
-    this.musicCredit.push([], [])
+    this.musicCredit.push(null, null)
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
@@ -119,7 +119,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
     // music credit
-    this.musicCredit.push([])
+    this.musicCredit.push(null)
 
   }
 
@@ -222,7 +222,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       if (this.musicCredit[i].feat.length !== 0) {
         feat = this.musicCredit[i].feat.filter(val => val !== null).map(x => x._id);
       }
-      listMusic.push(new Music(m.name, this.musicUrl[i], feat))
+      listMusic.push(new Music(m.name, this.musicUrl[i], feat, [], [], [], []))
     }
 
     // create the publications music object

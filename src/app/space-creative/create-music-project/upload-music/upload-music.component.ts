@@ -192,7 +192,8 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
     music = new Music(
       this.musicForm.get('title').value,
       this.musicUrl,
-      this.featArray.map(x => x._id)
+      this.featArray.map(x => x._id),
+      null, null, null, null
     )
 
     // creating the publications music project

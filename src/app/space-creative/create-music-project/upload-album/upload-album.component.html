@@ -90,7 +90,7 @@
                   [ngClass]="{'no-border': !music.controls.name.errors}">
               </div>
               <div class="col-md-3">
-                <div class="row add-feat" *ngIf="musicCredit[i].length !== 0">
+                <div class="row add-feat" *ngIf="!!musicCredit[i]?.feat">
                   <div class="feat-avatar" *ngFor="let featP of musicCredit[i].feat">
                     <img class="rounded-circle" [(src)]="featP.pictureprofile">
                     <button class="btn-delete" (click)="deleteFeat(featP._id, i)"><i class="fa fa-times"></i></button>
