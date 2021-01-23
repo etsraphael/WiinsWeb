@@ -45,7 +45,8 @@
                   <div class="form-date">
                     <div class="form-control">
                       <div class="content-date">
-                        <mat-datepicker-toggle matSuffix [for]="picker" class="position-absolute"></mat-datepicker-toggle>
+                        <mat-datepicker-toggle matSuffix [for]="picker" class="position-absolute">
+                        </mat-datepicker-toggle>
                         <input class="no-border" matInput [matDatepicker]="picker"
                           [placeholder]="'CORE.Chosse-a-date'|translate" formControlName="dateVisibility">
                         <mat-datepicker #picker></mat-datepicker>
@@ -89,55 +90,11 @@
                   [ngClass]="{'no-border': !music.controls.name.errors}">
               </div>
               <div class="col-md-3">
-                <div class="row add-feat">
-
-
-
-                  <!-- <div ngbDropdown class="col-md-5 row my-auto">
-                    <button ngbDropdownToggle class="btn-plus ml-auto mr-3" role="button" aria-haspopup="true"
-                      aria-expanded="false">
-                      <i class="fa fa-plus pt-1"></i>
-                    </button>
-                    <div ngbDropdownMenu class="dropdown-menu pb-0">
-                      <div class="row mx-0 w-100">
-                        <div class="col-md-9">
-                          <input [formControl]="searchField" type="text" class="w-100"
-                            [placeholder]="'PLACEHOLDER.Type-t-pseudo'|translate">
-                        </div>
-                        <div class="col-md-3 row mx-0 my-auto">
-                          <i class="mx-auto fa fa-search"></i>
-                        </div>
-                      </div>
-                      <div class="dropdown-divider mb-0"></div>
-                      <div class="container-feat-avatar" *ngIf="resultsProfile$ | async; let resultsProfile">
-                        <div class="row mx-0 profile-found py-1" *ngFor="let profile of resultsProfile">
-                          <div class="col-md-4 my-auto">
-                            <div class="avatar row">
-                              <img class="mx-auto" [src]="profile.pictureprofile">
-                            </div>
-                          </div>
-                          <div class="col-md-8 my-auto">
-                            <span class="pseudo">{{profile?._meta?.pseudo}}</span>
-                            <span class="add" (click)="featAdded(i, profile)">Ajouter</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-
-
-
-
-                  <div class="col-md-7 row" *ngIf="musicCredit[i].length !== 0">
-                    <div class="feat-avatar" *ngFor="let featP of musicCredit[i].feat">
-                      <img class="rounded-circle" [(src)]="featP.pictureprofile">
-                      <button class="btn-delete" (click)="deleteFeat(featP._id, i)"><i class="fa fa-times"></i></button>
-                    </div>
+                <div class="row add-feat" *ngIf="musicCredit[i].length !== 0">
+                  <div class="feat-avatar" *ngFor="let featP of musicCredit[i].feat">
+                    <img class="rounded-circle" [(src)]="featP.pictureprofile">
+                    <button class="btn-delete" (click)="deleteFeat(featP._id, i)"><i class="fa fa-times"></i></button>
                   </div>
-
-
-
-                  
                 </div>
               </div>
               <div class="col-md-1 my-auto">
@@ -148,7 +105,8 @@
               <div class="col-md-1 my-auto">
                 <div class="album-btn-download">
                   <div class="content-link">
-                    <label for="musicUpload{{i}}" class="btn btn-secondary mb-0" [ngClass]="{'btn-success': !!musicUrl[i]}">
+                    <label for="musicUpload{{i}}" class="btn btn-secondary mb-0"
+                      [ngClass]="{'btn-success': !!musicUrl[i]}">
                       <i class="bi bi-download" fill="currentColor"></i>
                     </label>
                     <input hidden type='file' id="musicUpload{{i}}" accept=".mp3" (change)=addMusicUpload($event,i) />
@@ -158,7 +116,7 @@
               <div class="col-md-1 my-auto">
                 <button type="button" class="btn btn-danger" (click)="delete(i)">
                   <i class="bi bi-x-square"></i>
-                </button> 
+                </button>
               </div>
             </div>
           </div>

@@ -1,12 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
-import { FormGroup, FormBuilder, Validators, AbstractControl, FormArray, FormControl } from '@angular/forms'
+import { FormGroup, FormBuilder, Validators, AbstractControl, FormArray } from '@angular/forms'
 import { Music } from 'src/app/core/models/publication/music/music.model'
 import { MusicProject } from 'src/app/core/models/publication/music/musicProject.model'
-import { Store, select } from '@ngrx/store'
-import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors, MusicProjectStoreActions } from 'src/app/root-store'
-import { Observable, Subscription } from 'rxjs'
-import { filter, skipWhile, debounceTime, distinctUntilChanged } from 'rxjs/operators'
-import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
+import { Store } from '@ngrx/store'
+import { RootStoreState, MusicProjectStoreActions } from 'src/app/root-store'
+import { Subscription } from 'rxjs'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 import * as uuid from 'uuid'
@@ -16,7 +14,7 @@ import { UploadWithoutInjectorService } from 'src/app/core/services/upload/uploa
 import { environment } from 'src/environments/environment'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
-import { CreditMusicComponent, CreditName, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
+import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
 
 @Component({
   selector: 'app-upload-album',
@@ -37,16 +35,11 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   // form
   albumForm: FormGroup
   indexMusicStart = 2
-  featArray: any[] = []
   submited = false
 
   // object
   oneMusic: Music
   album: MusicProject
-
-  // search bar
-  searchField: FormControl
-  resultsProfile$: Observable<ProfileModel[]>
 
   // upload
   musicUrl: string[] = []
@@ -78,26 +71,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       musics: new FormArray([])
     })
 
-    // search bar
-    this.searchField = new FormControl()
-
-    // to listen the input
-    this.searchField.valueChanges
-      .pipe(
-        filter(value => value !== undefined || value !== ''),
-        filter(value => value.length > 3),
-        debounceTime(200),
-        distinctUntilChanged()
-      ).subscribe(val => this.store$.dispatch(new SearchProfileStoreActions.SearchProfile(val, 'album')))
-
-    // to select the profile list 
-    this.resultsProfile$ = this.store$.pipe(
-      select(SearchProfileStoreSelectors.selectSearchResults),
-      skipWhile(val => val === null),
-    )
-
     // to set 2 default music
-    this.featArray.push([], [])
     this.musicCredit.push([], [])
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
@@ -131,13 +105,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
 
     const sub = dialogRef.componentInstance.onAdd.subscribe((data: MusicCredit) => {
       // added a music credit 
-
       this.musicCredit[i] = data
-
-    console.log(this.musicCredit)
-
-
-
     })
 
     // unsubscribe the modal after to close the dialog
@@ -150,9 +118,6 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     // to add a music
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
-    // musicFeat
-    this.featArray.push([])
-
     // music credit
     this.musicCredit.push([])
 
@@ -161,7 +126,6 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   delete(item: number) {
     // delete a music at an index
     this.music.removeAt(item);
-    this.featArray.splice(item, 1)
     this.musicUrl.splice(item, 1)
     this.loadingMusic[item] = false
   }
@@ -218,13 +182,6 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     this.loadingMusic[index] = false
   }
 
-  featAdded(item: number, profile: ProfileModel) {
-    // added a profile in a music
-    const indexProfile = this.featArray[item].length
-    this.featArray[item][indexProfile] = profile
-    this.searchField.setValue('')
-  }
-
   submit() {
 
     // check the picture
@@ -262,8 +219,8 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     let listMusic: Music[] = []
     for (let [i, m] of this.music.value.entries()) {
       let feat = null
-      if (this.featArray[i].length !== 0) {
-        feat = this.featArray[i].filter(val => val !== null).map(x => x._id);
+      if (this.musicCredit[i].feat.length !== 0) {
+        feat = this.musicCredit[i].feat.filter(val => val !== null).map(x => x._id);
       }
       listMusic.push(new Music(m.name, this.musicUrl[i], feat))
     }
@@ -284,8 +241,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
 
   deleteFeat(idProfile: string, index: number) {
     // pull a user in a music
-    let update = this.featArray[index].filter(x => x._id !== idProfile)
-    this.featArray[index] = update
+    this.musicCredit[index].feat = this.musicCredit[index].feat.filter(x => x._id !== idProfile)
   }
 
   openCrooperMusicImg(file: Event) {
