@@ -27,11 +27,11 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   friendSearch: FormControl
 
   // arrays
-  interpreters: string[]
-  writters: string[]
-  producers: string[]
-  categories: NameAndCode[] = []
-  friendAdded: ProfileModel[] = []
+  // interpreters: string[]
+  // writters: string[]
+  // producers: string[]
+  // categories: NameAndCode[] = []
+  // friendAdded: ProfileModel[] = []
 
   // confirmation
   musicCredit: MusicCredit = null
@@ -42,68 +42,72 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { name: string, index: number },
+    @Inject(MAT_DIALOG_DATA) public data: MusicCredit,
     private store$: Store<RootStoreState.State>,
   ) { }
 
   ngOnInit(): void {
 
+
     // initialize
     this.musicCredit = {
+      name: this.data.name,
       index: this.data.index,
-      interpreters: [],
-      writters: [],
-      producers: []
+      interpreters: this.data.interpreters || [],
+      writters: this.data.writters || [],
+      producers: this.data.producers || [],
+      feat: this.data.feat || [],
+      categories: this.data.categories || []
     }
 
     // format the search bar for the form
     this.category = new FormControl()
     this.category.valueChanges
-    .pipe(
-      debounceTime(100),
-      distinctUntilChanged(),
-      filter(x => !!x)
-    )
-    .subscribe(q => { 
-      this.musicGenres = musicGenre.filter(item => item.name.toLowerCase().includes(q.toLowerCase()))
-    })
+      .pipe(
+        debounceTime(100),
+        distinctUntilChanged(),
+        filter(x => !!x)
+      )
+      .subscribe(q => {
+        this.musicGenres = musicGenre.filter(item => item.name.toLowerCase().includes(q.toLowerCase()))
+      })
 
     // format the search for the friends
     this.friendSearch = new FormControl()
     this.friendSearch.valueChanges
-    .pipe(
-      filter(value => value !== undefined || value !== ''),
-      filter(value => value.length > 3),
-      debounceTime(200),
-      distinctUntilChanged()
-    ).subscribe(val => this.store$.dispatch(new SearchProfileStoreActions.SearchProfile(val, 'album')))
+      .pipe(
+        filter(value => value !== undefined || value !== ''),
+        filter(value => value.length > 3),
+        debounceTime(200),
+        distinctUntilChanged()
+      ).subscribe(val => this.store$.dispatch(new SearchProfileStoreActions.SearchProfile(val, 'album')))
 
     // to select the profile list 
     this.resultsProfile$ = this.store$.pipe(
       select(SearchProfileStoreSelectors.selectSearchResults),
       skipWhile(val => val === null),
-      filter(x => x.length > 0 )
+      filter(x => x.length > 0)
     )
 
   }
 
-  addFeat(item: ProfileModel){
-    this.friendAdded.push(item)
+  addFeat(item: ProfileModel) {
+    this.musicCredit.feat.push(item)
     this.friendSearch.setValue('')
     this.store$.dispatch(new SearchProfileStoreActions.ResetSearch())
   }
 
-  removeFriend(i: number){
-    this.friendAdded.splice(i, 1)
+  removeFriend(i: number) {
+    this.musicCredit.feat.splice(i, 1)
   }
 
-  addCategory(item: NameAndCode){
-    this.categories.push(item)
+  addCategory(item: NameAndCode) {
+    this.musicCredit.categories.push(item)
     this.category.setValue('')
   }
 
-  removeCategory(i: number){
-    this.categories.splice(i, 1)
+  removeCategory(i: number) {
+    this.musicCredit.categories.splice(i, 1)
   }
 
   addNewRole(role: string) {
@@ -126,7 +130,7 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
     }
   }
 
-  removeRole(type: string, i: number){
+  removeRole(type: string, i: number) {
     switch (type) {
       case 'interpreter': {
         this.musicCredit.interpreters.splice(i, 1)
@@ -168,8 +172,11 @@ export interface CreditName {
 }
 
 export interface MusicCredit {
+  name: string
   index: number
   interpreters: string[] | any[]
   writters: string[]
   producers: string[]
+  feat: ProfileModel[]
+  categories: NameAndCode[]
 }

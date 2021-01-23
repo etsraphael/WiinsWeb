@@ -90,6 +90,9 @@
               </div>
               <div class="col-md-3">
                 <div class="row add-feat">
+
+
+
                   <!-- <div ngbDropdown class="col-md-5 row my-auto">
                     <button ngbDropdownToggle class="btn-plus ml-auto mr-3" role="button" aria-haspopup="true"
                       aria-expanded="false">
@@ -121,12 +124,20 @@
                       </div>
                     </div>
                   </div> -->
+
+
+
+
                   <div class="col-md-7 row" *ngIf="featArray[i].length !== 0">
                     <div class="feat-avatar" *ngFor="let featP of featArray[i]">
                       <img class="rounded-circle" [(src)]="featP.pictureprofile">
                       <button class="btn-delete" (click)="deleteFeat(featP._id, i)"><i class="fa fa-times"></i></button>
                     </div>
                   </div>
+
+
+
+                  
                 </div>
               </div>
               <div class="col-md-1 my-auto">

@@ -122,18 +122,19 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     // open the modal for the id
     const dialogRef = this.dialog.open(CreditMusicComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
-      data: { name: this.music.value[i].name, index: i }
+      data: { 
+        name: this.music.value[i].name,
+        index: i,
+        ...this.musicCredit[i]
+      }
     })
 
     const sub = dialogRef.componentInstance.onAdd.subscribe((data: MusicCredit) => {
       // added a music credit 
 
-      console.log(data)
+      this.musicCredit[i] = data
 
-
-      // const indexMusicCredit = this.musicCredit[data.index].length
-      // this.musicCredit[data.index][indexMusicCredit] = fadata
-      // console.log(this.musicCredit)
+    console.log(this.musicCredit)
 
 
 
