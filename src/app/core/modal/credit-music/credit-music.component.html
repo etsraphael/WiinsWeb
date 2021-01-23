@@ -95,10 +95,35 @@
                   </div>
                 </div>
                 <div class="container-input d-inline-flex py-1 px-2 ml-2 position-relative">
-                  <input [formControl]="category" type="text" placeholder="Add someone">
+                  <input [formControl]="category" type="text" placeholder="Add a style">
                   <i class="bi bi-arrow-return-left"></i>
                   <div class="container-categories-list list-group" *ngIf="musicGenres.length > 0 && !!category.value ">
                     <li class="list-group-item" *ngFor="let item of musicGenres" (click)="addCategory(item)">{{item.name}}</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tr>
+        <hr class="my-1">
+        <tr>
+          <div class="row my-2">
+            <div class="col-4">
+              <p>Feat</p>
+            </div>
+            <div class="col-8">
+              <div class="container-tag p-2">
+                <div *ngFor="let item of friendAdded; let i = index" class="d-inline-flex">
+                  <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
+                    <i class="bi bi-x pr-1" (click)="removeFriend(i)"></i>
+                    <p class="mb-0">{{item._meta.pseudo}}</p>
+                  </div>
+                </div>
+                <div class="container-input d-inline-flex py-1 px-2 ml-2 position-relative">
+                  <input [formControl]="friendSearch" type="text" placeholder="Add someone">
+                  <i class="bi bi-arrow-return-left"></i>
+                  <div class="container-categories-list list-group" *ngIf="(resultsProfile$|async)?.length > 0 && friendSearch.value.length > 0">
+                    <li class="list-group-item" *ngFor="let item of (resultsProfile$|async)" (click)="addFeat(item)">{{item._meta.pseudo}} sdfsdf</li>
                   </div>
                 </div>
               </div>

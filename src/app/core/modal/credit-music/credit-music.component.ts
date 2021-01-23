@@ -1,8 +1,12 @@
 import { Component, EventEmitter, Inject, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { debounceTime, distinctUntilChanged, filter } from 'rxjs/operators';
+import { select, Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { debounceTime, distinctUntilChanged, filter, skipWhile } from 'rxjs/operators';
+import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store';
 import { musicGenre, NameAndCode } from '../../data/music-genre';
+import { ProfileModel } from '../../models/baseUser/profile.model';
 
 @Component({
   selector: 'app-credit-music',
@@ -19,26 +23,32 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   interpreter: string
   writter: string
   producer: string
-  category: FormControl;
+  category: FormControl
+  friendSearch: FormControl
 
   // arrays
   interpreters: string[]
   writters: string[]
   producers: string[]
   categories: NameAndCode[] = []
+  friendAdded: ProfileModel[] = []
 
   // confirmation
   musicCredit: MusicCredit = null
 
   // data
   musicGenres: NameAndCode[] = []
+  resultsProfile$: Observable<ProfileModel[]>
 
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { name: string, index: number }
+    @Inject(MAT_DIALOG_DATA) public data: { name: string, index: number },
+    private store$: Store<RootStoreState.State>,
   ) { }
 
   ngOnInit(): void {
+
+    // initialize
     this.musicCredit = {
       index: this.data.index,
       interpreters: [],
@@ -46,7 +56,8 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       producers: []
     }
 
-    this.category = new FormControl();
+    // format the search bar for the form
+    this.category = new FormControl()
     this.category.valueChanges
     .pipe(
       debounceTime(100),
@@ -57,6 +68,33 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       this.musicGenres = musicGenre.filter(item => item.name.toLowerCase().includes(q.toLowerCase()))
     })
 
+    // format the search for the friends
+    this.friendSearch = new FormControl()
+    this.friendSearch.valueChanges
+    .pipe(
+      filter(value => value !== undefined || value !== ''),
+      filter(value => value.length > 3),
+      debounceTime(200),
+      distinctUntilChanged()
+    ).subscribe(val => this.store$.dispatch(new SearchProfileStoreActions.SearchProfile(val, 'album')))
+
+    // to select the profile list 
+    this.resultsProfile$ = this.store$.pipe(
+      select(SearchProfileStoreSelectors.selectSearchResults),
+      skipWhile(val => val === null),
+      filter(x => x.length > 0 )
+    )
+
+  }
+
+  addFeat(item: ProfileModel){
+    this.friendAdded.push(item)
+    this.friendSearch.setValue('')
+    this.store$.dispatch(new SearchProfileStoreActions.ResetSearch())
+  }
+
+  removeFriend(i: number){
+    this.friendAdded.splice(i, 1)
   }
 
   addCategory(item: NameAndCode){
