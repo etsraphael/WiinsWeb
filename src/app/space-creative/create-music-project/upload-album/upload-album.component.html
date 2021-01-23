@@ -128,8 +128,8 @@
 
 
 
-                  <div class="col-md-7 row" *ngIf="featArray[i].length !== 0">
-                    <div class="feat-avatar" *ngFor="let featP of featArray[i]">
+                  <div class="col-md-7 row" *ngIf="musicCredit[i].length !== 0">
+                    <div class="feat-avatar" *ngFor="let featP of musicCredit[i].feat">
                       <img class="rounded-circle" [(src)]="featP.pictureprofile">
                       <button class="btn-delete" (click)="deleteFeat(featP._id, i)"><i class="fa fa-times"></i></button>
                     </div>

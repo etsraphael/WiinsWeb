@@ -48,7 +48,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
 
-
     // initialize
     this.musicCredit = {
       name: this.data.name,
