@@ -62,8 +62,8 @@ export class CreatePlaylistMusicComponent implements OnInit {
 
     // default music playlist
     this.musicList = [
-      new Music(null, null, null),
-      new Music(null, null, null),
+      new Music(null, null, null, null, null, null, null),
+      new Music(null, null, null, null, null, null, null),
     ]
 
     this.musicId = new FormControl()

@@ -196,7 +196,7 @@ export class ProfileMusicComponent implements OnInit {
   sendNewName(text: string, idMusic: string, idPlaylist: string) {
     // to update the name
     this.editNameMusic = null
-    const music = new Music(text, null, null, idMusic, idPlaylist)
+    const music = new Music(text, null, null, null, null, null, null, idMusic, idPlaylist)
     this.store$.dispatch(new MusicProjectStoreActions.UpdateMusic(music, 'musicName'))
   }
 
