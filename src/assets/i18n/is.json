@@ -1400,7 +1400,11 @@
       "World-fusion": "Heimssamruni",
       "Worldbeat": "Heimssláttur",
       "Yacht-rock": "Snekkjuberg",
-      "Others": "Aðrir"
+      "Others": "Aðrir",
+      "Flamenco": "Flamenco",
+      "Rock": "Berg",
+      "Reggae": "Reggae",
+      "Country": "Land"
     }
   },
   "WIINS-TUBE": {

@@ -26,13 +26,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   category: FormControl
   friendSearch: FormControl
 
-  // arrays
-  // interpreters: string[]
-  // writters: string[]
-  // producers: string[]
-  // categories: NameAndCode[] = []
-  // friendAdded: ProfileModel[] = []
-
   // confirmation
   musicCredit: MusicCredit = null
 
