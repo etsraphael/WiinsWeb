@@ -118,28 +118,18 @@
                   <i class="ml-auto fa fa-2x fa-check-circle-o" [ngClass]="{'is-valid': !!musicUrl}"></i>
                 </div>
               </div>
-              <div class="container">
-                <div class="row">
-                  <label>{{'CORE.With'|translate}}: ({{'CORE.optional'|translate}})</label>
-                </div>
-                <div class="row">
-                  <div class="input-group col-8 h-100 px-0">
-                    <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3 mt-0"
-                      [placeholder]="'PLACEHOLDER.Pseudo'|translate" [formControl]="searchField">
-                    <mat-autocomplete #auto="matAutocomplete">
-                      <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addFeat(profile)">
-                        <div class="oneSuggest row mx-0 py-3">
-                          <div class="col-3 profile-img my-auto">
-                            <img class="rounded-circle" [src]="profile.pictureprofile">
-                          </div>
-                          <div class="col-9 mt-2 my-auto">
-                            <span>{{profile._meta.pseudo}}</span>
-                          </div>
-                        </div>
-                      </mat-option>
-                    </mat-autocomplete>
+              <div class="container-fluid">
+
+
+                <div class="row mx-0">
+                  <div class="col-4 my-auto">
+                    <button type="button" class="btn btn-secondary w-100" (click)="openCreditModal()">
+                      <i class="bi bi-shield-shaded mx-2"></i>
+                      <span class="text-dark">Credit</span>
+                    </button>
                   </div>
                 </div>
+              
               </div>
             </form>
           </div>

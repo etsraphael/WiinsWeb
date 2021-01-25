@@ -18,6 +18,8 @@ import { UploadWithoutInjectorService } from 'src/app/core/services/upload/uploa
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
+import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
+import { NameAndCode } from 'src/app/core/data/music-genre'
 
 @Component({
   selector: 'app-upload-music',
@@ -60,6 +62,9 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   dialogRef: MatDialogRef<CrooperImageValidationComponent> = null
   dialogS: Subscription
 
+  // credit
+  musicCredit: MusicCredit
+
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
@@ -100,6 +105,28 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.store$.pipe(select(SearchProfileStoreSelectors.selectSearchResults)),
       this.store$.pipe(select(SearchProfileStoreSelectors.selectSpot))
     ).pipe(skipWhile(val => val[1] !== 'SingleMusic'), map(val => val[0]))
+
+  }
+
+  openCreditModal() {
+
+    // open the modal for the id
+    const dialogRef = this.dialog.open(CreditMusicComponent, {
+      panelClass: ['col-md-4', 'col-xl-4'],
+      data: { 
+        name: this.musicForm.get('title').value,
+        index: null,
+        ...this.musicCredit
+      }
+    })
+
+    const sub = dialogRef.componentInstance.onAdd.subscribe((data: MusicCredit) => {
+      // added a music credit 
+      this.musicCredit = data
+    })
+
+    // unsubscribe the modal after to close the dialog
+    dialogRef.afterClosed().subscribe(() => sub.unsubscribe())
 
   }
 
@@ -193,7 +220,10 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.musicForm.get('title').value,
       this.musicUrl,
       this.featArray.map(x => x._id),
-      null, null, null, null
+      this.musicCredit.interpreters,
+      this.musicCredit.writters,
+      this.musicCredit.producers,
+      this.musicCredit.categories.map((value: NameAndCode) => value.name)
     )
 
     // creating the publications music project
