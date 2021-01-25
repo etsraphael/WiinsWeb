@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Inject, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { select, Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-import { debounceTime, distinctUntilChanged, filter, skipWhile } from 'rxjs/operators';
-import { RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store';
+import { Observable, Subscription } from 'rxjs';
+import { debounceTime, distinctUntilChanged, filter, skipWhile, take } from 'rxjs/operators';
+import { ProfileFeatureStoreSelectors, RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store';
 import { musicGenre, NameAndCode } from '../../data/music-genre';
 import { ProfileModel } from '../../models/baseUser/profile.model';
 
@@ -33,6 +34,9 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   musicGenres: NameAndCode[] = []
   resultsProfile$: Observable<ProfileModel[]>
 
+  // my profile
+  myprofile$: Observable<ProfileModel>
+
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
     @Inject(MAT_DIALOG_DATA) public data: MusicCredit,
@@ -40,6 +44,12 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
+
+    // to select my profile
+    this.myprofile$ = this.store$.pipe(
+      select(ProfileFeatureStoreSelectors.selectProfile),
+      filter(profile => !!profile)
+    )
 
     // initialize
     this.musicCredit = {
@@ -145,6 +155,52 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   confirm() {
     this.onAdd.emit(this.musicCredit)
     this.dialogRef.close()
+  }
+
+  setMyRole(event: MatCheckboxChange, type: string): Subscription {
+
+    if (event.checked) {
+      switch (type) {
+        case 'interpreter': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            this.musicCredit.interpreters.push(profile._meta.pseudo)
+          })
+        }
+        case 'writter': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            this.musicCredit.writters.push(profile._meta.pseudo)
+          })
+        }
+        case 'producer': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            this.musicCredit.producers.push(profile._meta.pseudo)
+          })
+        }
+      }
+    } else {
+      switch (type) {
+        case 'interpreter': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            const index = this.musicCredit.interpreters.indexOf(profile._meta.pseudo)
+            this.musicCredit.interpreters.splice(index, 1)
+          })
+        }
+        case 'writter': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            const index = this.musicCredit.writters.indexOf(profile._meta.pseudo)
+            this.musicCredit.writters.splice(index, 1)
+          })
+        }
+        case 'producer': {
+          return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+            const index = this.musicCredit.producers.indexOf(profile._meta.pseudo)
+            this.musicCredit.producers.splice(index, 1)
+          })
+        }
+      }
+    }
+
+
   }
 
   ngOnDestroy(): void {
