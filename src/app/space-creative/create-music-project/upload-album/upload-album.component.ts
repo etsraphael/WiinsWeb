@@ -234,11 +234,6 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
       this.albumForm.get('title').value,
     )
 
-
-    console.log(JSON.stringify(musicProject))
-
-    return null
-
     // send the project 
     this.store$.dispatch(new MusicProjectStoreActions.AddMusicProject(musicProject))
 
