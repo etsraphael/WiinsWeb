@@ -3,7 +3,7 @@
 <span hidden>{{pictureUrl}}</span>
 
 <!-- Component Body -->
-<div class="container mb-5">
+<div class="container mb-5" [hidden]="(loading$|async)">
   <form class="mt-4" [formGroup]="albumForm">
     <!-- Title -->
     <div class="title">
@@ -144,4 +144,13 @@
       </div>
     </div>
   </form>
+</div>
+
+<!-- Loading Anination -->
+<div class="container" *ngIf="(loading$|async)">
+  <div class="row">
+    <div class="mx-auto mt-7">
+      <div class="loader m-auto big-loader">{{'CORE.Loading'|translate}}</div>
+    </div>
+  </div>
 </div>

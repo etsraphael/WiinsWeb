@@ -4,7 +4,7 @@
 <input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg" (change)=openCrooperMusicImg($event) />
 
 <!-- Space Music -->
-<div class="container">
+<div class="container" [hidden]="(loading$|async)">
   <div class="mt-4">
     <!-- Title -->
     <div class="title row mx-0 mb-4">
@@ -140,12 +140,21 @@
 </div>
 
 <!-- Confirmation -->
-<div class="row mt-3 mb-5">
+<div class="row mt-3 mb-5" [hidden]="(loading$|async)">
   <div class="d-flex mx-auto">
     <button class="btn btn-success my-2" (click)="submit()">
       <div class="d-flex py-auto">
         <span>{{'CORE.Confirm'|translate}}</span>
       </div>
     </button>
+  </div>
+</div>
+
+<!-- Loading Anination -->
+<div class="container" *ngIf="(loading$|async)">
+  <div class="row">
+    <div class="mx-auto mt-7">
+      <div class="loader m-auto big-loader">{{'CORE.Loading'|translate}}</div>
+    </div>
   </div>
 </div>

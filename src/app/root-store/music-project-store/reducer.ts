@@ -12,7 +12,10 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
       }
     }
     case ActionTypes.ADD_MUSIC_PROJECT_SUCCESS: {
-      return featureAdapter.addOne(action.payload, state)
+      return featureAdapter.addOne(action.payload, {
+        ...state,
+        isLoading: false,
+      })
     }
     case ActionTypes.LOAD_MUSIC_PROJECT_BY_PROFILE_SUCCESS: {
       return featureAdapter.addMany(action.payload, {

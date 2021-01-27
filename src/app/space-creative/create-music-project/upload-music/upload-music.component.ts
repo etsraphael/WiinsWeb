@@ -1,7 +1,7 @@
 import { MusicProject } from 'src/app/core/models/publication/music/musicProject.model'
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import { Store, select } from '@ngrx/store'
-import { RootStoreState, MusicProjectStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store'
+import { RootStoreState, MusicProjectStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors, MusicProjectStoreSelectors } from 'src/app/root-store'
 import { FormGroup, FormBuilder, Validators, AbstractControl, FormControl } from '@angular/forms'
 import { DatePipe } from '@angular/common'
 import { filter, debounceTime, distinctUntilChanged, skipWhile, map } from 'rxjs/operators'
@@ -65,6 +65,9 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   // credit
   musicCredit: MusicCredit
 
+  // store
+  loading$: Observable<boolean>
+
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
@@ -106,6 +109,13 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.store$.pipe(select(SearchProfileStoreSelectors.selectSpot))
     ).pipe(skipWhile(val => val[1] !== 'SingleMusic'), map(val => val[0]))
 
+    // to select loading
+    this.loading$ = this.store$.pipe(
+      select(MusicProjectStoreSelectors.selectMusicProjectIsLoading),
+      filter(value => value !== undefined),
+      skipWhile(val => val == null)
+    )
+
   }
 
   openCreditModal() {
@@ -113,7 +123,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
     // open the modal for the id
     const dialogRef = this.dialog.open(CreditMusicComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
-      data: { 
+      data: {
         name: this.musicForm.get('title').value,
         index: null,
         ...this.musicCredit
@@ -152,7 +162,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
 
     // to show the music
     this.musicUploaded = result
-    this.musicType = file.type    
+    this.musicType = file.type
     this.fileName = file.name
 
     // create the object to get the signed url from the backend
