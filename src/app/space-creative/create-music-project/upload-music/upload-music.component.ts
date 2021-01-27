@@ -1,7 +1,7 @@
 import { MusicProject } from 'src/app/core/models/publication/music/musicProject.model'
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import { Store, select } from '@ngrx/store'
-import { RootStoreState, MusicProjectStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store'
+import { RootStoreState, MusicProjectStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors, MusicProjectStoreSelectors } from 'src/app/root-store'
 import { FormGroup, FormBuilder, Validators, AbstractControl, FormControl } from '@angular/forms'
 import { DatePipe } from '@angular/common'
 import { filter, debounceTime, distinctUntilChanged, skipWhile, map } from 'rxjs/operators'
@@ -18,6 +18,8 @@ import { UploadWithoutInjectorService } from 'src/app/core/services/upload/uploa
 import { HttpEvent, HttpEventType } from '@angular/common/http'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
+import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
+import { NameAndCode } from 'src/app/core/data/music-genre'
 
 @Component({
   selector: 'app-upload-music',
@@ -60,6 +62,12 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   dialogRef: MatDialogRef<CrooperImageValidationComponent> = null
   dialogS: Subscription
 
+  // credit
+  musicCredit: MusicCredit
+
+  // store
+  loading$: Observable<boolean>
+
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
@@ -101,6 +109,35 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.store$.pipe(select(SearchProfileStoreSelectors.selectSpot))
     ).pipe(skipWhile(val => val[1] !== 'SingleMusic'), map(val => val[0]))
 
+    // to select loading
+    this.loading$ = this.store$.pipe(
+      select(MusicProjectStoreSelectors.selectMusicProjectIsLoading),
+      filter(value => value !== undefined),
+      skipWhile(val => val == null)
+    )
+
+  }
+
+  openCreditModal() {
+
+    // open the modal for the id
+    const dialogRef = this.dialog.open(CreditMusicComponent, {
+      panelClass: ['col-md-4', 'col-xl-4'],
+      data: {
+        name: this.musicForm.get('title').value,
+        index: null,
+        ...this.musicCredit
+      }
+    })
+
+    const sub = dialogRef.componentInstance.onAdd.subscribe((data: MusicCredit) => {
+      // added a music credit 
+      this.musicCredit = data
+    })
+
+    // unsubscribe the modal after to close the dialog
+    dialogRef.afterClosed().subscribe(() => sub.unsubscribe())
+
   }
 
   get f() { return this.musicForm.controls }
@@ -125,7 +162,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
 
     // to show the music
     this.musicUploaded = result
-    this.musicType = file.type    
+    this.musicType = file.type
     this.fileName = file.name
 
     // create the object to get the signed url from the backend
@@ -193,7 +230,10 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.musicForm.get('title').value,
       this.musicUrl,
       this.featArray.map(x => x._id),
-      null, null, null, null
+      this.musicCredit.interpreters,
+      this.musicCredit.writters,
+      this.musicCredit.producers,
+      this.musicCredit.categories.map((value: NameAndCode) => value.name)
     )
 
     // creating the publications music project

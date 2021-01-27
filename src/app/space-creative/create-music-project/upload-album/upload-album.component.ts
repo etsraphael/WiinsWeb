@@ -2,9 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core'
 import { FormGroup, FormBuilder, Validators, AbstractControl, FormArray } from '@angular/forms'
 import { Music } from 'src/app/core/models/publication/music/music.model'
 import { MusicProject } from 'src/app/core/models/publication/music/musicProject.model'
-import { Store } from '@ngrx/store'
-import { RootStoreState, MusicProjectStoreActions } from 'src/app/root-store'
-import { Subscription } from 'rxjs'
+import { select, Store } from '@ngrx/store'
+import { RootStoreState, MusicProjectStoreActions, MusicProjectStoreSelectors } from 'src/app/root-store'
+import { Observable, Subscription } from 'rxjs'
 import { TranslateService } from '@ngx-translate/core'
 import { CrooperImageValidationComponent } from 'src/app/core/modal/crooper-image-validation/crooper-image-validation.component'
 import * as uuid from 'uuid'
@@ -15,6 +15,7 @@ import { environment } from 'src/environments/environment'
 import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
+import { filter, skipWhile } from 'rxjs/operators'
 
 @Component({
   selector: 'app-upload-album',
@@ -52,6 +53,9 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   // credit
   musicCredit: MusicCredit[] = []
 
+  // store
+  loading$: Observable<boolean>
+
   constructor(
     private formBuilder: FormBuilder,
     private store$: Store<RootStoreState.State>,
@@ -75,6 +79,13 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     this.musicCredit.push(null, null)
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
+
+    // to select loading
+    this.loading$ = this.store$.pipe(
+      select(MusicProjectStoreSelectors.selectMusicProjectIsLoading),
+      filter(value => value !== undefined),
+      skipWhile(val => val == null)
+    )
 
   }
 

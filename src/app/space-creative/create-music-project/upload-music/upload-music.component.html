@@ -4,7 +4,7 @@
 <input hidden #pic type='file' name="photo" id="pic" accept=".png, .jpg, .jpeg" (change)=openCrooperMusicImg($event) />
 
 <!-- Space Music -->
-<div class="container">
+<div class="container" [hidden]="(loading$|async)">
   <div class="mt-4">
     <!-- Title -->
     <div class="title row mx-0 mb-4">
@@ -118,28 +118,18 @@
                   <i class="ml-auto fa fa-2x fa-check-circle-o" [ngClass]="{'is-valid': !!musicUrl}"></i>
                 </div>
               </div>
-              <div class="container">
-                <div class="row">
-                  <label>{{'CORE.With'|translate}}: ({{'CORE.optional'|translate}})</label>
-                </div>
-                <div class="row">
-                  <div class="input-group col-8 h-100 px-0">
-                    <input [matAutocomplete]="auto" matInput type="text" class="form-control pl-3 mt-0"
-                      [placeholder]="'PLACEHOLDER.Pseudo'|translate" [formControl]="searchField">
-                    <mat-autocomplete #auto="matAutocomplete">
-                      <mat-option *ngFor="let profile of (resultsProfile$|async)" (click)="addFeat(profile)">
-                        <div class="oneSuggest row mx-0 py-3">
-                          <div class="col-3 profile-img my-auto">
-                            <img class="rounded-circle" [src]="profile.pictureprofile">
-                          </div>
-                          <div class="col-9 mt-2 my-auto">
-                            <span>{{profile._meta.pseudo}}</span>
-                          </div>
-                        </div>
-                      </mat-option>
-                    </mat-autocomplete>
+              <div class="container-fluid">
+
+
+                <div class="row mx-0">
+                  <div class="col-4 my-auto">
+                    <button type="button" class="btn btn-secondary w-100" (click)="openCreditModal()">
+                      <i class="bi bi-shield-shaded mx-2"></i>
+                      <span class="text-dark">Credit</span>
+                    </button>
                   </div>
                 </div>
+              
               </div>
             </form>
           </div>
@@ -150,12 +140,21 @@
 </div>
 
 <!-- Confirmation -->
-<div class="row mt-3 mb-5">
+<div class="row mt-3 mb-5" [hidden]="(loading$|async)">
   <div class="d-flex mx-auto">
     <button class="btn btn-success my-2" (click)="submit()">
       <div class="d-flex py-auto">
         <span>{{'CORE.Confirm'|translate}}</span>
       </div>
     </button>
+  </div>
+</div>
+
+<!-- Loading Anination -->
+<div class="container" *ngIf="(loading$|async)">
+  <div class="row">
+    <div class="mx-auto mt-7">
+      <div class="loader m-auto big-loader">{{'CORE.Loading'|translate}}</div>
+    </div>
   </div>
 </div>
