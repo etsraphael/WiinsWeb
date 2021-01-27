@@ -23,7 +23,7 @@
   </div>
 
   <!-- Loading Animation -->
-  <div class="row mx-0 py-2 d-flex justify-content-center" *ngIf="showCropper && (loadingProgress !== 0)">
+  <div class="row mx-0 py-2 d-flex justify-content-center" *ngIf="(showCropper && (loadingProgress !== 0)) || !showCropper">
     <div class="w-100 pt-5">
       <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
     </div>
