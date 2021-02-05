@@ -1,4 +1,4 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/etsraphael/WiinsWeb/-/tree/development)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/etsraphael/WiinsWeb/tree/development)
 
 # Wiins.io
 [![Sauce Test Status](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)](https://eps-git.s3.eu-west-3.amazonaws.com/welcome-to.png)
