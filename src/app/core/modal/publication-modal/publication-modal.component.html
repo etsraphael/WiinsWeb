@@ -13,7 +13,7 @@
           </div>
         </div>
         <div *ngSwitchCase="'VideoPublication'" class="h-100 row mx-0 my-auto">
-          <video class="w-100 my-auto" controls controlsList="nodownload noremoteplayback" autoplay>
+          <video class="w-100 h-100 my-auto" controls controlsList="nodownload noremoteplayback" autoplay>
            <source [src]="data.publication.file" type="video/mp4">
            <source [src]="data.publication.file" type="video/ogg">
          </video>
