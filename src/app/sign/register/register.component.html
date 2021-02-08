@@ -79,7 +79,7 @@
           <div class="row">
             <mat-datepicker-toggle class="logo-calendar" matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
-            <input [max]="maxDate" [matDatepicker]="picker" placeholder="Click on calender" class="w-100 p-3 input-calendar" type="text"
+            <input [max]="maxDate" [matDatepicker]="picker" placeholder="{{'BTN-INDICATION.click-on-calender' | translate}}" class="w-100 p-3 input-calendar" type="text"
               formControlName="birthDate">
           </div>
           <div class="birthDate-response row mx-auto">
