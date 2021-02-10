@@ -573,7 +573,8 @@
     "Missing-informations": "गुम होने का संकेत",
     "Account_desactivated": "खाता निरस्त",
     "Y-dont-have-a-conversation-yet": "आपके पास अभी तक कोई वार्तालाप नहीं है।",
-    "Date-cannot-be-in-the-past": "रिलीज की तारीख अतीत में नहीं हो सकती"
+    "Date-cannot-be-in-the-past": "रिलीज की तारीख अतीत में नहीं हो सकती",
+    "You-cannot-add-yourself": "आप खुद को नहीं जोड़ सकते"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",

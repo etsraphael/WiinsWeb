@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Anda harus menghapus halaman atau grup Anda sebelumnya",
     "y-have-to-be-friend": "kamu harus berteman",
     "you-hav-to-upgrad-a-manager-before-leave": "Anda harus mempromosikan seorang manajer sebelum keluar dari grup",
-    "Date-cannot-be-in-the-past": "Tanggal rilis tidak boleh di masa lalu"
+    "Date-cannot-be-in-the-past": "Tanggal rilis tidak boleh di masa lalu",
+    "You-cannot-add-yourself": "Anda tidak dapat menambahkan diri Anda sendiri"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto sudah diterima",

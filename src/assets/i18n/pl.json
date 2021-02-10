@@ -615,7 +615,8 @@
     "Missing-informations": "Brak informacji",
     "Account_desactivated": "Konto zostało dezaktywowane",
     "Y-dont-have-a-conversation-yet": "Nie masz jeszcze rozmowy.",
-    "Date-cannot-be-in-the-past": "Data premiery nie może przypadać w przeszłości"
+    "Date-cannot-be-in-the-past": "Data premiery nie może przypadać w przeszłości",
+    "You-cannot-add-yourself": "Nie możesz dodać siebie"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",

@@ -615,7 +615,8 @@
     "Missing-informations": "Eksik bilgiler",
     "Account_desactivated": "Hesap devre dışı bırakıldı",
     "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız.",
-    "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz"
+    "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz",
+    "You-cannot-add-yourself": "Kendini ekleyemezsin"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",

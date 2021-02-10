@@ -2,7 +2,9 @@ import { Component, EventEmitter, Inject, OnDestroy, OnInit } from '@angular/cor
 import { FormControl } from '@angular/forms';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { select, Store } from '@ngrx/store';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, skipWhile, take } from 'rxjs/operators';
 import { ProfileFeatureStoreSelectors, RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store';
@@ -46,6 +48,8 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
     public dialogRef: MatDialogRef<CreditMusicComponent>,
     @Inject(MAT_DIALOG_DATA) public data: MusicCredit,
     private store$: Store<RootStoreState.State>,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService,
   ) { }
 
   ngOnInit(): void {
@@ -98,8 +102,18 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   }
 
-  addFeat(item: ProfileModel) {
-    this.musicCredit.feat.push(item)
+  addFeat(item: ProfileModel): void {
+    this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+      if (profile._meta.pseudo == item._meta.pseudo) {
+        this._snackBar.open(
+          this.translate.instant('ERROR-MESSAGE.You-cannot-add-yourself'), null,
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+        )
+      } else {
+        this.musicCredit.feat.push(item)
+      }
+    })
+
     this.friendSearch.setValue('')
     this.store$.dispatch(new SearchProfileStoreActions.ResetSearch())
   }

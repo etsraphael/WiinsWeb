@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Sivut tai ryhmät on poistettava ennen",
     "y-have-to-be-friend": "sinun täytyy olla ystäviä",
     "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista",
-    "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä"
+    "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä",
+    "You-cannot-add-yourself": "Et voi lisätä itseäsi"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",

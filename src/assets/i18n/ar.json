@@ -573,7 +573,8 @@
     "Missing-informations": "المعلومات المفقودة",
     "Account_desactivated": "تم إلغاء تنشيط الحساب",
     "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن.",
-    "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي"
+    "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي",
+    "You-cannot-add-yourself": "لا يمكنك إضافة نفسك"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",

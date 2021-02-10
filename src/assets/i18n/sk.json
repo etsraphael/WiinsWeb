@@ -615,7 +615,8 @@
     "Missing-informations": "Chýbajúce informácie",
     "Account_desactivated": "Účet bol deaktivovaný",
     "Y-dont-have-a-conversation-yet": "Zatiaľ nemáte konverzáciu.",
-    "Date-cannot-be-in-the-past": "Dátum vydania nemôže byť v minulosti"
+    "Date-cannot-be-in-the-past": "Dátum vydania nemôže byť v minulosti",
+    "You-cannot-add-yourself": "Nemôžete pridať seba"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",

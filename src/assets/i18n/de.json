@@ -573,7 +573,8 @@
     "Missing-informations": "Fehlende Informationen",
     "Account_desactivated": "Konto deaktiviert",
     "Y-dont-have-a-conversation-yet": "Du hast noch kein Gespräch.",
-    "Date-cannot-be-in-the-past": "Das Veröffentlichungsdatum kann nicht in der Vergangenheit liegen"
+    "Date-cannot-be-in-the-past": "Das Veröffentlichungsdatum kann nicht in der Vergangenheit liegen",
+    "You-cannot-add-yourself": "Sie können sich nicht hinzufügen"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",

@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Előtte törölnie kell oldalait vagy csoportjait",
     "y-have-to-be-friend": "biztosan barátok vagytok",
     "you-hav-to-upgrad-a-manager-before-leave": "A csoportból való kilépés előtt előléptetnie kell egy vezetőt",
-    "Date-cannot-be-in-the-past": "A megjelenés dátuma nem lehet múltbeli"
+    "Date-cannot-be-in-the-past": "A megjelenés dátuma nem lehet múltbeli",
+    "You-cannot-add-yourself": "Nem adhatja hozzá magát"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A fénykép beérkezett",

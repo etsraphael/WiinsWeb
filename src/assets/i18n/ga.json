@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Caithfidh tú do leathanaigh nó grúpaí a scriosadh roimhe seo",
     "y-have-to-be-friend": "caithfidh gur cairde tú",
     "you-hav-to-upgrad-a-manager-before-leave": "Caithfidh tú bainisteoir a chur chun cinn sula bhfágfaidh tú an grúpa",
-    "Date-cannot-be-in-the-past": "Ní féidir an dáta scaoilte a bheith ann roimhe seo"
+    "Date-cannot-be-in-the-past": "Ní féidir an dáta scaoilte a bheith ann roimhe seo",
+    "You-cannot-add-yourself": "Ní féidir leat tú féin a chur leis"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Faightear an grianghraf",

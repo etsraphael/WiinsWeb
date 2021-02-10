@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Ви повинні видалити свої сторінки або групи раніше",
     "y-have-to-be-friend": "ви повинні бути друзями",
     "you-hav-to-upgrad-a-manager-before-leave": "Ви повинні просувати менеджера перед тим, як вийти з групи",
-    "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою"
+    "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою",
+    "You-cannot-add-yourself": "Ви не можете додати себе"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографія отримана",

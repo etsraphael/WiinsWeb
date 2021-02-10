@@ -615,7 +615,8 @@
     "y-h-to-delete-yr-page-or-group-before": "Morate prethodno izbrisati svoje stranice ili grupe",
     "y-have-to-be-friend": "sigurno ste prijatelji",
     "you-hav-to-upgrad-a-manager-before-leave": "Prije napuštanja grupe morate unaprijediti menadžera",
-    "Date-cannot-be-in-the-past": "Datum izdavanja ne može biti u prošlosti"
+    "Date-cannot-be-in-the-past": "Datum izdavanja ne može biti u prošlosti",
+    "You-cannot-add-yourself": "Ne možete se dodati"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografija je primljena",
