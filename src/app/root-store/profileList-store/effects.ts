@@ -27,7 +27,6 @@ export class ProfileListStoreEffects {
   getLikedList: Observable<ActionsProfileList> = this.actions$.pipe(
     ofType<featureActions.GetLikedList>(featureActions.ActionTypes.GET_LIKED_LIST),
     switchMap(action => this.dataService.getLikedList(action.id, action.page).pipe(
-      tap(console.log),
       map(item => new featureActions.GetProfileListSuccess(item.results.idsProfil)),
       catchError(error => observableOf(new featureActions.GetProfileListFail(error)))
     ))

@@ -26,16 +26,18 @@ export class MusicProjectStoreEffects {
   creatMusic: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.AddMusicProject>(featureActions.ActionTypes.ADD_MUSIC_PROJECT),
     switchMap(action => this.dataService.createFeedPublication(action.payload).pipe(
-      tap((action: MusicProjectResponse) => this.router.navigate(['/profile/'+ action.publication.profile._id + '/Music'])),
+      tap((action: MusicProjectResponse) => this.router.navigate(['/profile/'+ action.musicProject.profile._id + '/Music'])),
       mergeMap(item => {
         if (item.actifSpace !== null) {
           return [
-            new featureActions.AddMusicProjectSuccess(item.publication),
+            new featureActions.AddMusicProjectSuccess(item.musicProject),
             new ProfileFeatureStoreActions.udapteActifSpace(item.actifSpace)
           ]
-        } else return [new featureActions.AddMusicProjectSuccess(item.publication)]
+        } else return [new featureActions.AddMusicProjectSuccess(item.musicProject)]
       }),
-      catchError(error => observableOf(new featureActions.AddMusicProjectFail(error)))
+      catchError((error) => {
+        return observableOf(new featureActions.AddMusicProjectFail(error))
+        })
     ))
   )
 
@@ -66,7 +68,7 @@ export class MusicProjectStoreEffects {
         this.translate.instant('VALID-MESSAGE.update-is-done'),
         null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
       )),
-      map(items => new featureActions.UpdateMusicSuccess(items.publication)),
+      map(items => new featureActions.UpdateMusicSuccess(items.musicProject)),
       catchError(error => observableOf(new featureActions.UpdateMusicFail(error)))
     ))
   )
@@ -84,7 +86,7 @@ export class MusicProjectStoreEffects {
   deletePlaylist: Observable<ActionsMusicProject> = this.actions$.pipe(
     ofType<featureActions.DeletePlaylist>(featureActions.ActionTypes.DELETE_PLAYLIST),
     switchMap(action => this.dataService.DeletePlaylist(action.id, action.password).pipe(
-      map(items => new featureActions.DeletePlaylistSuccess(items.publication)),
+      map(items => new featureActions.DeletePlaylistSuccess(items.musicProject)),
       catchError(error => observableOf(new featureActions.DeletePlaylistFail(error)))
     ))
   )

@@ -69,7 +69,7 @@ export interface MusicResponse {
 export interface MusicProjectResponse {
   status: number;
   message: string;
-  publication: MusicProject;
+  musicProject: MusicProject;
   actifSpace: number
 }
 
