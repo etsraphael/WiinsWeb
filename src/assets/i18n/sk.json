@@ -252,7 +252,12 @@
     "Friend": "Kamarát",
     "Towards-an-infinite-space": "Smerom do nekonečného priestoru",
     "Hello": "Ahoj",
-    "Publication": "Publikácia"
+    "Publication": "Publikácia",
+    "Share": "zdieľam",
+    "Url-Copied": "Adresa URL bola skopírovaná",
+    "Download": "Stiahnuť ▼",
+    "Downloaded": "Stiahnuté",
+    "Save-in-phone": "Uložiť do telefónu"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,8 @@
     "T-min-is-1$": "Minimum je 1 $",
     "Missing-informations": "Chýbajúce informácie",
     "Account_desactivated": "Účet bol deaktivovaný",
-    "Y-dont-have-a-conversation-yet": "Zatiaľ nemáte konverzáciu."
+    "Y-dont-have-a-conversation-yet": "Zatiaľ nemáte konverzáciu.",
+    "Date-cannot-be-in-the-past": "Dátum vydania nemôže byť v minulosti"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",

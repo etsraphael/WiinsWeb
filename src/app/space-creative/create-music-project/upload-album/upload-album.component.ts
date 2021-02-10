@@ -95,9 +95,11 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   get music() { return this.f.musics as FormArray }
 
   majorValidator(control: AbstractControl) {
-    // to get a date superior than today
+    // to get a date superior than yesterday
     if (control.value !== null) {
-      const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
+      let d = new Date();
+      d.setDate(d.getDate()-1);
+      const diff = (d.valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
       if (diff > 0) return { 'date': { valid: false } }
       else return null
     }

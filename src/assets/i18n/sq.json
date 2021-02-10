@@ -252,7 +252,12 @@
     "reply..": "pergjigju ..",
     "responses": "përgjigjet",
     "soon": "së shpejti",
-    "views": "pikëpamjet"
+    "views": "pikëpamjet",
+    "Share": "Ndani",
+    "Url-Copied": "Url u kopjua",
+    "Download": "Shkarko",
+    "Downloaded": "Shkarkuar",
+    "Save-in-phone": "Kurseni në telefon"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,8 @@
     "y-h-to-accept-the-tou": "Ju duhet të pranoni termat dhe kushtet e përdorimit",
     "y-h-to-delete-yr-page-or-group-before": "Ju duhet të fshini faqet ose grupet tuaja më parë",
     "y-have-to-be-friend": "ju duhet të jeni miq",
-    "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi"
+    "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi",
+    "Date-cannot-be-in-the-past": "Data e lëshimit nuk mund të jetë në të kaluarën"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",

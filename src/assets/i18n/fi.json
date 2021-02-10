@@ -252,7 +252,12 @@
     "reply..": "Vastaa..",
     "responses": "vastauksia",
     "soon": "pian",
-    "views": "näkymät"
+    "views": "näkymät",
+    "Share": "Jaa",
+    "Url-Copied": "URL kopioitu",
+    "Download": "ladata",
+    "Downloaded": "Ladattu",
+    "Save-in-phone": "Tallenna puhelimeen"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,8 @@
     "y-h-to-accept-the-tou": "Sinun on hyväksyttävä käyttöehdot",
     "y-h-to-delete-yr-page-or-group-before": "Sivut tai ryhmät on poistettava ennen",
     "y-have-to-be-friend": "sinun täytyy olla ystäviä",
-    "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista"
+    "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista",
+    "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",

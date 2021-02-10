@@ -252,7 +252,12 @@
     "reply..": "balas ..",
     "responses": "tindak balas",
     "soon": "tidak lama lagi",
-    "views": "pandangan"
+    "views": "pandangan",
+    "Share": "Berkongsi",
+    "Url-Copied": "Url disalin",
+    "Download": "Muat turun",
+    "Downloaded": "Dimuat turun",
+    "Save-in-phone": "Simpan dalam telefon"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,8 @@
     "y-h-to-accept-the-tou": "Anda mesti menerima terma dan syarat penggunaan",
     "y-h-to-delete-yr-page-or-group-before": "Anda mesti memadam halaman atau kumpulan anda sebelum ini",
     "y-have-to-be-friend": "anda mesti berkawan",
-    "you-hav-to-upgrad-a-manager-before-leave": "Anda mesti mempromosikan pengurus sebelum keluar dari kumpulan"
+    "you-hav-to-upgrad-a-manager-before-leave": "Anda mesti mempromosikan pengurus sebelum keluar dari kumpulan",
+    "Date-cannot-be-in-the-past": "Tarikh pelepasan tidak boleh berlalu"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto itu diterima",

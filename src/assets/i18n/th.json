@@ -252,7 +252,12 @@
     "reply..": "ตอบ..",
     "responses": "การตอบสนอง",
     "soon": "เร็ว ๆ นี้",
-    "views": "มุมมอง"
+    "views": "มุมมอง",
+    "Share": "แบ่งปัน",
+    "Url-Copied": "คัดลอก URL แล้ว",
+    "Download": "ดาวน์โหลด",
+    "Downloaded": "ดาวน์โหลดแล้ว",
+    "Save-in-phone": "บันทึกในโทรศัพท์"
   },
   "COUNTRY": {
     "AD": "อันดอร์รา",
@@ -609,7 +614,8 @@
     "y-h-to-accept-the-tou": "คุณต้องยอมรับข้อกำหนดและเงื่อนไขการใช้งาน",
     "y-h-to-delete-yr-page-or-group-before": "คุณต้องลบเพจหรือกลุ่มของคุณก่อน",
     "y-have-to-be-friend": "คุณต้องเป็นเพื่อนกัน",
-    "you-hav-to-upgrad-a-manager-before-leave": "คุณต้องเลื่อนระดับผู้จัดการก่อนออกจากกลุ่ม"
+    "you-hav-to-upgrad-a-manager-before-leave": "คุณต้องเลื่อนระดับผู้จัดการก่อนออกจากกลุ่ม",
+    "Date-cannot-be-in-the-past": "วันที่วางจำหน่ายต้องไม่เป็นวันที่ผ่านมา"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ได้รับภาพถ่ายแล้ว",

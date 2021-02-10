@@ -210,7 +210,12 @@
     "Friend": "صديق",
     "Towards-an-infinite-space": "نحو فضاء لانهائي",
     "Hello": "مرحبا",
-    "Publication": "النشر"
+    "Publication": "النشر",
+    "Share": "شارك",
+    "Url-Copied": "تم نسخ عنوان URL",
+    "Download": "تحميل",
+    "Downloaded": "تم التنزيل",
+    "Save-in-phone": "حفظ في الهاتف"
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -567,7 +572,8 @@
     "T-min-is-1$": "الحد الأدنى هو 1 دولار",
     "Missing-informations": "المعلومات المفقودة",
     "Account_desactivated": "تم إلغاء تنشيط الحساب",
-    "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن."
+    "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن.",
+    "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",

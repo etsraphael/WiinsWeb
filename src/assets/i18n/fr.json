@@ -210,7 +210,12 @@
     "Friend": "Ami",
     "Towards-an-infinite-space": "Vers un espace infini",
     "Hello": "Bonjour",
-    "Publication": "Publication"
+    "Publication": "Publication",
+    "Download": "Télécharger",
+    "Downloaded": "Téléchargé",
+    "Save-in-phone": "Enregistrer dans le téléphone",
+    "Share": "Partager",
+    "Url-Copied": "URL copiée"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -567,7 +572,8 @@
     "T-min-is-1$": "Le minimum est de 1 $",
     "Missing-informations": "Informations manquantes",
     "Account_desactivated": "Compte désactivé",
-    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation."
+    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation.",
+    "Date-cannot-be-in-the-past": "La date de sortie ne peut pas être dans le passé"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",

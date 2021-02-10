@@ -226,10 +226,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
 }
 
-
-
-
-
 export interface CreditName {
   index: number
   name: string

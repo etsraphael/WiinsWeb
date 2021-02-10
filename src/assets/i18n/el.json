@@ -252,7 +252,12 @@
     "Friend": "Φίλε",
     "Towards-an-infinite-space": "Προς έναν άπειρο χώρο",
     "Hello": "Χαίρετε",
-    "Publication": "Δημοσίευση"
+    "Publication": "Δημοσίευση",
+    "Download": "Κατεβάστε",
+    "Downloaded": "Έγινε λήψη",
+    "Save-in-phone": "Αποθήκευση στο τηλέφωνο",
+    "Share": "Μερίδιο",
+    "Url-Copied": "Η διεύθυνση URL αντιγράφηκε"
   },
   "COUNTRY": {
     "AD": "Ανδόρα",
@@ -609,7 +614,8 @@
     "T-min-is-1$": "Το ελάχιστο είναι 1 $",
     "Missing-informations": "Λείπουν πληροφορίες",
     "Account_desactivated": "Ο λογαριασμός απενεργοποιήθηκε",
-    "Y-dont-have-a-conversation-yet": "Δεν έχετε συνομιλία ακόμη."
+    "Y-dont-have-a-conversation-yet": "Δεν έχετε συνομιλία ακόμη.",
+    "Date-cannot-be-in-the-past": "Η ημερομηνία κυκλοφορίας δεν μπορεί να είναι στο παρελθόν"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Η φωτογραφία έχει ληφθεί",

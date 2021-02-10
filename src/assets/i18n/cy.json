@@ -252,7 +252,12 @@
     "reply..": "ateb ..",
     "responses": "ymatebion",
     "soon": "yn fuan",
-    "views": "golygfeydd"
+    "views": "golygfeydd",
+    "Share": "Rhannu",
+    "Url-Copied": "Copïodd Url",
+    "Download": "Dadlwythwch",
+    "Downloaded": "Dadlwythwyd",
+    "Save-in-phone": "Cadw mewn ffôn"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,8 @@
     "y-h-to-accept-the-tou": "Rhaid i chi dderbyn y telerau ac amodau defnyddio",
     "y-h-to-delete-yr-page-or-group-before": "Rhaid i chi ddileu eich tudalennau neu grwpiau o'r blaen",
     "y-have-to-be-friend": "rhaid i chi fod yn ffrindiau",
-    "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp"
+    "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp",
+    "Date-cannot-be-in-the-past": "Ni all y dyddiad rhyddhau fod yn y gorffennol"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",
