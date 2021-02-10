@@ -60,7 +60,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       filter(profile => !!profile)
     )
 
-    // initialize
     this.musicCredit = {
       name: this.data.name,
       index: this.data.index,
@@ -70,6 +69,23 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       feat: this.data.feat || [],
       categories: this.data.categories || []
     }
+
+    // initialize
+    this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+
+      if(this.musicCredit.interpreters.indexOf(profile._meta.pseudo) !== -1) {
+        this.interpreterIsMe = true
+      }
+
+      if(this.musicCredit.writters.indexOf(profile._meta.pseudo) !== -1){
+        this.writterIsMe = true
+      }
+
+      if(this.musicCredit.producers.indexOf(profile._meta.pseudo) !== -1){
+        this.producerIsMe = true
+      }
+      
+    })
 
     // format the search bar for the form
     this.category = new FormControl()
@@ -100,6 +116,14 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       filter(x => x.length > 0)
     )
 
+  }
+
+
+  ifItChecked(type: string, myProfileId: string): boolean {
+    if( typeof this.musicCredit[type] !== 'undefined' && this.musicCredit[type].indexOf(myProfileId) !== -1) { 
+      return true 
+    }
+    else {  return false }
   }
 
   addFeat(item: ProfileModel): void {

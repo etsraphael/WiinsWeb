@@ -64,7 +64,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   dialogS: Subscription
 
   // credit
-  musicCredit: MusicCreditModel
+  musicCredit: MusicCreditModel = new MusicCreditModel(null)
 
   // store
   loading$: Observable<boolean>
@@ -204,26 +204,26 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   submit(): void | MatSnackBarRef<SimpleSnackBar> {
 
     // check if we have the files
-    if (this.musicUrl == null || this.pictureUrl == null) {
-      return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
-        null, {
-        horizontalPosition: 'center',
-        verticalPosition: 'bottom',
-        duration: 5000
-      })
-    }
+    // if (this.musicUrl == null || this.pictureUrl == null) {
+    //   return this._snackBar.open(
+    //     this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
+    //     null, {
+    //     horizontalPosition: 'center',
+    //     verticalPosition: 'bottom',
+    //     duration: 5000
+    //   })
+    // }
 
     // check the correct info
-    if (this.musicForm.invalid) {
-      return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
-        null, {
-        horizontalPosition: 'center',
-        verticalPosition: 'bottom',
-        duration: 5000
-      })
-    }
+    // if (this.musicForm.invalid) {
+    //   return this._snackBar.open(
+    //     this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
+    //     null, {
+    //     horizontalPosition: 'center',
+    //     verticalPosition: 'bottom',
+    //     duration: 5000
+    //   })
+    // }
 
     // add the categories 
     let categories = null
@@ -251,15 +251,19 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.pictureUrl
     )
 
+    console.log(musicProject)
+
     // send the publications music
-    this.store$.dispatch(new MusicProjectStoreActions.AddMusicProject(musicProject))
+    // this.store$.dispatch(new MusicProjectStoreActions.AddMusicProject(musicProject))
 
   }
 
   majorValidator(control: AbstractControl) {
     // to check if the date it's after today
     if (control.value !== null) {
-      const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
+      let d = new Date();
+      d.setDate(d.getDate()-1);
+      const diff = (d.valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
       if (diff > 0) return { 'date': { valid: false } }
       else return null
     }
