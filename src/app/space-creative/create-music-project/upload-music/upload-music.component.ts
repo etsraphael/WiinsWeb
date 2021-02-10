@@ -178,9 +178,9 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
         // upload to s3
         this.uploadSub = this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }

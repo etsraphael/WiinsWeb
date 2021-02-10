@@ -326,9 +326,9 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
                 // upload to s3
                 this.uploadPictureSub = this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
                   (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned, 'image'),
-                  (error: any) => console.log(error))
+                  (error: any) => null)
               },
-              (error: RespondGetUploadUrl) => console.log(error)
+              (error: RespondGetUploadUrl) => null
             )
           )
       }
@@ -352,9 +352,9 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
         // upload to s3
         this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned, 'video'),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }
