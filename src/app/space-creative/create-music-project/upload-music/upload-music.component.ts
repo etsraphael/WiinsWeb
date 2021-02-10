@@ -20,6 +20,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
 import { NameAndCode } from 'src/app/core/data/music-genre'
+import { MusicCreditModel } from 'src/app/core/models/music/music-credit.model'
 
 @Component({
   selector: 'app-upload-music',
@@ -63,7 +64,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   dialogS: Subscription
 
   // credit
-  musicCredit: MusicCredit
+  musicCredit: MusicCreditModel
 
   // store
   loading$: Observable<boolean>
@@ -224,6 +225,12 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       })
     }
 
+    // add the categories 
+    let categories = null
+    if (!!this.musicCredit.categories && this.musicCredit.categories.length !== 0) {
+      categories = this.musicCredit.categories.map(x => x.code)
+    }
+
     // creating the music object
     let music: Music = null;
     music = new Music(
@@ -233,7 +240,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.musicCredit.interpreters,
       this.musicCredit.writters,
       this.musicCredit.producers,
-      this.musicCredit.categories.map((value: NameAndCode) => value.name)
+      categories
     )
 
     // creating the publications music project

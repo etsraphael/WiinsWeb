@@ -37,6 +37,11 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   // my profile
   myprofile$: Observable<ProfileModel>
 
+  // selects
+  interpreterIsMe = false
+  writterIsMe = false
+  producerIsMe = false
+
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
     @Inject(MAT_DIALOG_DATA) public data: MusicCredit,
@@ -135,16 +140,25 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   removeRole(type: string, i: number) {
     switch (type) {
       case 'interpreter': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.interpreters[i]) this.interpreterIsMe = false
+        })
         this.musicCredit.interpreters.splice(i, 1)
         this.interpreter = null
         break;
       }
       case 'writter': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.writters[i]) this.writterIsMe = false
+        })
         this.musicCredit.writters.splice(i, 1)
         this.writter = null
         break;
       }
       case 'producer': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.producers[i]) this.producerIsMe = false
+        })
         this.musicCredit.producers.splice(i, 1)
         this.producer = null
         break;
@@ -164,16 +178,19 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
         case 'interpreter': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.interpreters.push(profile._meta.pseudo)
+            this.interpreterIsMe = true
           })
         }
         case 'writter': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.writters.push(profile._meta.pseudo)
+            this.writterIsMe = true
           })
         }
         case 'producer': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.producers.push(profile._meta.pseudo)
+            this.producerIsMe = true
           })
         }
       }
@@ -223,8 +240,8 @@ export interface MusicCredit {
   name: string
   index: number
   interpreters: string[] | any[]
-  writters: string[]
-  producers: string[]
-  feat: ProfileModel[]
+  writters: string[] | any[]
+  producers: string[] | any[]
+  feat: ProfileModel[] | any[]
   categories: NameAndCode[]
 }
