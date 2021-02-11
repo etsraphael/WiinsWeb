@@ -252,7 +252,12 @@
     "Friend": "Vinur",
     "Towards-an-infinite-space": "Í átt að óendanlegu rými",
     "Hello": "Halló",
-    "Publication": "Útgáfa"
+    "Publication": "Útgáfa",
+    "Share": "Deildu",
+    "Url-Copied": "Slóð afrituð",
+    "Download": "Sækja",
+    "Downloaded": "Sótt",
+    "Save-in-phone": "Vista í símanum"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "Lágmarkið er 1 $",
     "Missing-informations": "Upplýsingar vantar",
     "Account_desactivated": "Reikningur óvirkur",
-    "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá."
+    "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá.",
+    "Date-cannot-be-in-the-past": "Útgáfudagur getur ekki verið í fortíðinni",
+    "You-cannot-add-yourself": "Þú getur ekki bætt þér við"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",

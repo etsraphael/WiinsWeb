@@ -252,7 +252,12 @@
     "Friend": "Prieten",
     "Towards-an-infinite-space": "Spre un spațiu infinit",
     "Hello": "Salut",
-    "Publication": "Publicare"
+    "Publication": "Publicare",
+    "Share": "Acțiune",
+    "Url-Copied": "Adresa URL a fost copiată",
+    "Download": "Descarca",
+    "Downloaded": "Descărcat",
+    "Save-in-phone": "Salvați în telefon"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "Minimul este de 1 $",
     "Missing-informations": "Informații lipsă",
     "Account_desactivated": "Contul este dezactivat",
-    "Y-dont-have-a-conversation-yet": "Nu aveți încă o conversație."
+    "Y-dont-have-a-conversation-yet": "Nu aveți încă o conversație.",
+    "Date-cannot-be-in-the-past": "Data lansării nu poate fi trecută",
+    "You-cannot-add-yourself": "Nu te poți adăuga singur"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",

@@ -90,8 +90,6 @@ export class ReportModalComponent {
       }
       case 'music-report': {
         const report = new ReportModel(this.data.music._id, 'music', this.comment, this.categorieSelected)
-        console.log(report)
-        return null
         this.store$.dispatch(new ReportStoreActions.Report(report))
         this.page = 3
         break 

@@ -132,9 +132,9 @@ export class CreateTubePublicationComponent implements OnInit {
         // upload to s3
         this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgressVideo(response, urlSigned.Key),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }

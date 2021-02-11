@@ -27,7 +27,6 @@ export class PlaylistStoreEffects {
   createplaylist: Observable<featureActions.ActionsPlaylistById> = this.actions$.pipe(
     ofType<featureActions.CreatePlaylist>(featureActions.ActionTypes.CREATE_PLAYLIST),
     switchMap(action => this.dataService.createPlaylist(action.payload).pipe(
-      tap(console.log),
       tap(data => this.router.navigate(['./SpaceMusic/playlist/' + data.playlist._id])),
       map(data => new featureActions.CreatePlaylistSuccess(data.playlist)),
       catchError(error => observableOf(new featureActions.CreatePlaylistFail(error)))

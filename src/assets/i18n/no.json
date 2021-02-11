@@ -252,7 +252,12 @@
     "Friend": "Venn",
     "Towards-an-infinite-space": "Mot et uendelig rom",
     "Hello": "Hallo",
-    "Publication": "Utgivelse"
+    "Publication": "Utgivelse",
+    "Share": "Dele",
+    "Url-Copied": "URL ble kopiert",
+    "Download": "nedlasting",
+    "Downloaded": "Lastet ned",
+    "Save-in-phone": "Lagre i telefonen"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "Minimum er 1 $",
     "Missing-informations": "Manglende informasjon",
     "Account_desactivated": "Konto deaktivert",
-    "Y-dont-have-a-conversation-yet": "Du har ikke en samtale ennå."
+    "Y-dont-have-a-conversation-yet": "Du har ikke en samtale ennå.",
+    "Date-cannot-be-in-the-past": "Utgivelsesdatoen kan ikke være tidligere",
+    "You-cannot-add-yourself": "Du kan ikke legge deg til"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Bildet er mottatt",

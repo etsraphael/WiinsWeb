@@ -210,7 +210,12 @@
     "Friend": "Freund",
     "Towards-an-infinite-space": "In Richtung eines unendlichen Raumes",
     "Hello": "Hallo",
-    "Publication": "Veröffentlichung"
+    "Publication": "Veröffentlichung",
+    "Share": "Teilen",
+    "Url-Copied": "URL kopiert",
+    "Download": "Herunterladen",
+    "Downloaded": "Heruntergeladen",
+    "Save-in-phone": "Im Telefon speichern"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -567,7 +572,9 @@
     "T-min-is-1$": "Das Minimum ist 1 $",
     "Missing-informations": "Fehlende Informationen",
     "Account_desactivated": "Konto deaktiviert",
-    "Y-dont-have-a-conversation-yet": "Du hast noch kein Gespräch."
+    "Y-dont-have-a-conversation-yet": "Du hast noch kein Gespräch.",
+    "Date-cannot-be-in-the-past": "Das Veröffentlichungsdatum kann nicht in der Vergangenheit liegen",
+    "You-cannot-add-yourself": "Sie können sich nicht hinzufügen"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",

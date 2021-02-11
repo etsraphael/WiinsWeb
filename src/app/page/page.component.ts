@@ -79,7 +79,6 @@ export class PageComponent implements OnInit {
   }
 
   report(page: PageModel): MatDialogRef<ReportModalComponent> {
-    console.log(page)
     // open the modal to report the publications
     return this.dialog.open(ReportModalComponent, {
       panelClass: ['col-md-10'],

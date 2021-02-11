@@ -4,6 +4,7 @@ import { featureAdapter, initialState, State } from './state'
 export function featureReducer(state = initialState, action: ActionsMusicProject): State {
   switch (action.type) {
     case ActionTypes.ADD_MUSIC_PROJECT:
+    case ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE:
     case ActionTypes.LOAD_MUSIC_PROJECT_BY_PROFILE: {
       return {
         ...state,
@@ -17,6 +18,7 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
         isLoading: false,
       })
     }
+    case ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE_SUCCESS:
     case ActionTypes.LOAD_MUSIC_PROJECT_BY_PROFILE_SUCCESS: {
       return featureAdapter.addMany(action.payload, {
         ...state,
@@ -95,6 +97,7 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
         changes: musicProject
       }, state)
     }
+    case ActionTypes.RESET_MUSIC_PROJECTS:
     case '@user/log_out' as any: return initialState
     default: return state
   }

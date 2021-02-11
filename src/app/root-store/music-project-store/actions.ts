@@ -3,15 +3,18 @@ import { Action } from '@ngrx/store';
 import { Music } from 'src/app/core/models/publication/music/music.model';
 
 export enum ActionTypes {
-  
+
   ADD_MUSIC_PROJECT = '@music_project/add',
   ADD_MUSIC_PROJECT_SUCCESS = '@music_project/add_success',
   ADD_MUSIC_PROJECT_FAIL = '@music_project/add_fail',
 
   LOAD_MUSIC_PROJECT_BY_PROFILE = '@music_project_profile/load',
-  LOAD_MUSIC_PROJECT_BY_MY_PROFILE = '@music_project_my_profile/load',
   LOAD_MUSIC_PROJECT_BY_PROFILE_SUCCESS = '@music_project_profile/load_success',
   LOAD_MUSIC_PROJECT_BY_PROFILE_FAIL = '@music_project_profile/load_fail',
+
+  LOAD_MUSIC_PROJECT_BY_MY_PROFILE = '@music_project_my_profile/load',
+  LOAD_MUSIC_PROJECT_BY_MY_PROFILE_SUCCESS = '@music_project_my_profile/load_success',
+  LOAD_MUSIC_PROJECT_BY_MY_PROFILE_FAIL = '@music_project_my_profile/load_fail',
 
   UPDATE_MUSIC = '@music_project/update',
   UPDATE_MUSIC_SUCCESS = '@music_project/update_success',
@@ -37,6 +40,13 @@ export enum ActionTypes {
   UPDATE_MUSIC_DISLIKE = '@updateDisLikeInProfile/music',
 
   WRONG_PASSWORD = '@music_not_delete/wrong_password',
+  RESET_MUSIC_PROJECTS = '@music_project/reset',
+
+}
+
+export class resetMusicProjects implements Action {
+  readonly type = ActionTypes.RESET_MUSIC_PROJECTS
+  constructor() { }
 }
 
 export class deleteMusicProject implements Action {
@@ -75,13 +85,23 @@ export class AddMusicProjectFail implements Action {
   constructor(public payload: any) { }
 }
 
+export class LoadMusicProjectByMyProfile implements Action {
+  readonly type = ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE;
+}
+
+export class LoadMusicProjectByMyProfileSuccess implements Action {
+  readonly type = ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE_SUCCESS;
+  constructor(public payload: MusicProject[]) { }
+}
+
+export class LoadMusicProjectByMyProfileFail implements Action {
+  readonly type = ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE_FAIL;
+  constructor(public payload: any) { }
+}
+
 export class LoadMusicProjectByProfile implements Action {
   readonly type = ActionTypes.LOAD_MUSIC_PROJECT_BY_PROFILE;
   constructor(public id: string) { }
-}
-
-export class LoadMusicProjectByMyProfile implements Action {
-  readonly type = ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE;
 }
 
 export class LoadMusicProjectByProfileSuccess implements Action {
@@ -164,15 +184,16 @@ export class UpdateMusicDisLike implements Action {
   constructor(public payload: Music, public musicProjectId: string) { }
 }
 
-
 export type ActionsMusicProject =
   | AddMusicProject
   | AddMusicProjectSuccess
   | AddMusicProjectFail
   | LoadMusicProjectByProfile
-  | LoadMusicProjectByMyProfile
   | LoadMusicProjectByProfileSuccess
   | LoadMusicProjectByProfileFail
+  | LoadMusicProjectByMyProfile
+  | LoadMusicProjectByMyProfileSuccess
+  | LoadMusicProjectByMyProfileFail
   | UpdateMusic
   | UpdateMusicSuccess
   | UpdateMusicFail
@@ -191,4 +212,5 @@ export type ActionsMusicProject =
   | deleteMusicProject
   | deleteMusicProjectSuccess
   | deleteMusicProjectFail
+  | resetMusicProjects
 

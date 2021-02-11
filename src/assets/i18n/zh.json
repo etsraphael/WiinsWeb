@@ -210,7 +210,12 @@
     "Friend": "友人",
     "Towards-an-infinite-space": "走向无限的空间",
     "Hello": "你好",
-    "Publication": "出版物"
+    "Publication": "出版物",
+    "Share": "分享",
+    "Url-Copied": "网址已复制",
+    "Download": "下载",
+    "Downloaded": "已下载",
+    "Save-in-phone": "储存在手机中"
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -567,7 +572,9 @@
     "T-min-is-1$": "最低为1 $",
     "Missing-informations": "缺少信息",
     "Account_desactivated": "帐户已停用",
-    "Y-dont-have-a-conversation-yet": "您还没有对话。"
+    "Y-dont-have-a-conversation-yet": "您还没有对话。",
+    "Date-cannot-be-in-the-past": "发布日期不能是过去的日期",
+    "You-cannot-add-yourself": "您无法添加自己"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",

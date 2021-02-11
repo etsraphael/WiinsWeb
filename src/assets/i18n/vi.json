@@ -252,7 +252,12 @@
     "reply..": "Đáp lại..",
     "responses": "phản hồi",
     "soon": "Sớm",
-    "views": "lượt xem"
+    "views": "lượt xem",
+    "Share": "Chia sẻ",
+    "Url-Copied": "Đã sao chép url",
+    "Download": "Tải xuống",
+    "Downloaded": "Đã tải xuống",
+    "Save-in-phone": "Lưu trong điện thoại"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "y-h-to-accept-the-tou": "Bạn phải chấp nhận các điều khoản và điều kiện sử dụng",
     "y-h-to-delete-yr-page-or-group-before": "Bạn phải xóa các trang hoặc nhóm của mình trước khi",
     "y-have-to-be-friend": "bạn phải là bạn",
-    "you-hav-to-upgrad-a-manager-before-leave": "Bạn phải thăng chức một người quản lý trước khi rời nhóm"
+    "you-hav-to-upgrad-a-manager-before-leave": "Bạn phải thăng chức một người quản lý trước khi rời nhóm",
+    "Date-cannot-be-in-the-past": "Ngày phát hành không được trong quá khứ",
+    "You-cannot-add-yourself": "Bạn không thể thêm chính mình"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ảnh được nhận",
