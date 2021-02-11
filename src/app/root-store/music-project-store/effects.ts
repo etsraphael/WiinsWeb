@@ -54,8 +54,8 @@ export class MusicProjectStoreEffects {
   loadMusicByMyProfile: Observable<ActionsMusicProject> = this.actions$.pipe(
     ofType<featureActions.LoadMusicProjectByMyProfile>(featureActions.ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE),
     switchMap(() => this.dataService.LoadMusicByMyProfile().pipe(
-      map(items => new featureActions.LoadMusicProjectByProfileSuccess(items.results)),
-      catchError(error => observableOf(new featureActions.LoadMusicProjectByProfileFail(error)))
+      map(items => new featureActions.LoadMusicProjectByMyProfileSuccess(items.results)),
+      catchError(error => observableOf(new featureActions.LoadMusicProjectByMyProfileFail(error)))
     ))
   )
 
@@ -108,7 +108,6 @@ export class MusicProjectStoreEffects {
       catchError(error => observableOf(new featureActions.deleteMusicProjectFail(error)))
     ))
   )
-
 
   checkThePasswordMusicProjectUdpate(items: any): ActionsMusicProject[] {
     switch (items.message) {
