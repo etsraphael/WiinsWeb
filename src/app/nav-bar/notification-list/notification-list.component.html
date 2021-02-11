@@ -200,7 +200,8 @@
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
-                <i class="fa fa-ban mr-2"></i>
+                <i *ngIf="n.accepted" class="fa fa-check mr-2"></i>
+                <i *ngIf="!n.accepted" class="fa fa-ban mr-2"></i>
                 <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
               </div>
             </div>
@@ -212,7 +213,8 @@
             </span>
             <div class="row date">
               <div class="mr-auto ml-3">
-                <i class="fa fa-ban mr-2"></i>
+                <i *ngIf="n.accepted" class="fa fa-check mr-2"></i>
+                <i *ngIf="!n.accepted" class="fa fa-ban mr-2"></i>
                 <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
               </div>
             </div>
