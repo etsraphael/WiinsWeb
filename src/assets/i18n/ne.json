@@ -252,7 +252,12 @@
     "Friend": "मित्र",
     "Towards-an-infinite-space": "एक असीम स्थान तर्फ",
     "Hello": "नमस्कार",
-    "Publication": "प्रकाशन"
+    "Publication": "प्रकाशन",
+    "Share": "सेयर गर्नुहोस्",
+    "Url-Copied": "युआरएल प्रतिलिपि गरियो",
+    "Download": "डाउनलोड गर्नुहोस्",
+    "Downloaded": "डाउनलोड गरियो",
+    "Save-in-phone": "फोनमा बचत गर्नुहोस्"
   },
   "COUNTRY": {
     "AD": "अन्डोरा",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "न्यूनतम १ $ हो",
     "Missing-informations": "हराइरहेका सूचनाहरू",
     "Account_desactivated": "खाता निष्क्रिय गरियो",
-    "Y-dont-have-a-conversation-yet": "तपाईंसँग अहिलेसम्म कुराकानी छैन।"
+    "Y-dont-have-a-conversation-yet": "तपाईंसँग अहिलेसम्म कुराकानी छैन।",
+    "Date-cannot-be-in-the-past": "विमोचन मिति विगतमा हुन सक्दैन",
+    "You-cannot-add-yourself": "तपाईं आफैलाई थप्न सक्नुहुन्न"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त भयो",

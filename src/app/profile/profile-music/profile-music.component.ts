@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnDestroy, OnInit } from '@angular/core'
 import { ActivatedRoute, Router } from '@angular/router'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, MusicProjectStoreActions, MusicProjectStoreSelectors, PlayerMusicStoreSelectors, MyMusicLikedStoreActions, ProfileFeatureStoreSelectors } from 'src/app/root-store'
@@ -23,7 +23,7 @@ import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-mod
   styleUrls: ['./profile-music.component.scss']
 })
 
-export class ProfileMusicComponent implements OnInit {
+export class ProfileMusicComponent implements OnInit, OnDestroy {
 
   // project music
   musicProject$: Observable<MusicProject[]>
@@ -48,6 +48,7 @@ export class ProfileMusicComponent implements OnInit {
 
   // profile
   myprofile$: Observable<ProfileModel>
+  myProfileView = false
 
   constructor(
     private route: ActivatedRoute,
@@ -98,6 +99,8 @@ export class ProfileMusicComponent implements OnInit {
   }
 
   loadMyProjectProfile(): void {
+
+    this.myProfileView = true
     this.store$.dispatch(new MusicProjectStoreActions.LoadMusicProjectByMyProfile)
 
     // to select the publications music
@@ -240,7 +243,6 @@ export class ProfileMusicComponent implements OnInit {
     })
   }
 
-
   getAvailability(visibilityDate: Date): boolean {
     // to know if it's unavailable
     if (new Date(visibilityDate).getTime() > new Date().getTime()) return false
@@ -294,6 +296,10 @@ export class ProfileMusicComponent implements OnInit {
       panelClass: ['col-md-10'],
       data: { music, type: 'music-report' }
     })
+  }
+
+  ngOnDestroy(): void {
+    // this.store$.dispatch(new MusicProjectStoreActions.resetMusicProjects)
   }
 
 }

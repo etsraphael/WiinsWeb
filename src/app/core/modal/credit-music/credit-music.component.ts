@@ -2,7 +2,9 @@ import { Component, EventEmitter, Inject, OnDestroy, OnInit } from '@angular/cor
 import { FormControl } from '@angular/forms';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { select, Store } from '@ngrx/store';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, filter, skipWhile, take } from 'rxjs/operators';
 import { ProfileFeatureStoreSelectors, RootStoreState, SearchProfileStoreActions, SearchProfileStoreSelectors } from 'src/app/root-store';
@@ -37,10 +39,17 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   // my profile
   myprofile$: Observable<ProfileModel>
 
+  // selects
+  interpreterIsMe = false
+  writterIsMe = false
+  producerIsMe = false
+
   constructor(
     public dialogRef: MatDialogRef<CreditMusicComponent>,
     @Inject(MAT_DIALOG_DATA) public data: MusicCredit,
     private store$: Store<RootStoreState.State>,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService,
   ) { }
 
   ngOnInit(): void {
@@ -51,7 +60,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       filter(profile => !!profile)
     )
 
-    // initialize
     this.musicCredit = {
       name: this.data.name,
       index: this.data.index,
@@ -61,6 +69,23 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
       feat: this.data.feat || [],
       categories: this.data.categories || []
     }
+
+    // initialize
+    this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+
+      if(this.musicCredit.interpreters.indexOf(profile._meta.pseudo) !== -1) {
+        this.interpreterIsMe = true
+      }
+
+      if(this.musicCredit.writters.indexOf(profile._meta.pseudo) !== -1){
+        this.writterIsMe = true
+      }
+
+      if(this.musicCredit.producers.indexOf(profile._meta.pseudo) !== -1){
+        this.producerIsMe = true
+      }
+      
+    })
 
     // format the search bar for the form
     this.category = new FormControl()
@@ -93,8 +118,26 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
   }
 
-  addFeat(item: ProfileModel) {
-    this.musicCredit.feat.push(item)
+
+  ifItChecked(type: string, myProfileId: string): boolean {
+    if( typeof this.musicCredit[type] !== 'undefined' && this.musicCredit[type].indexOf(myProfileId) !== -1) { 
+      return true 
+    }
+    else {  return false }
+  }
+
+  addFeat(item: ProfileModel): void {
+    this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+      if (profile._meta.pseudo == item._meta.pseudo) {
+        this._snackBar.open(
+          this.translate.instant('ERROR-MESSAGE.You-cannot-add-yourself'), null,
+          { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+        )
+      } else {
+        this.musicCredit.feat.push(item)
+      }
+    })
+
     this.friendSearch.setValue('')
     this.store$.dispatch(new SearchProfileStoreActions.ResetSearch())
   }
@@ -135,16 +178,25 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
   removeRole(type: string, i: number) {
     switch (type) {
       case 'interpreter': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.interpreters[i]) this.interpreterIsMe = false
+        })
         this.musicCredit.interpreters.splice(i, 1)
         this.interpreter = null
         break;
       }
       case 'writter': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.writters[i]) this.writterIsMe = false
+        })
         this.musicCredit.writters.splice(i, 1)
         this.writter = null
         break;
       }
       case 'producer': {
+        this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
+          if (profile._meta.pseudo == this.musicCredit.producers[i]) this.producerIsMe = false
+        })
         this.musicCredit.producers.splice(i, 1)
         this.producer = null
         break;
@@ -164,16 +216,19 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
         case 'interpreter': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.interpreters.push(profile._meta.pseudo)
+            this.interpreterIsMe = true
           })
         }
         case 'writter': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.writters.push(profile._meta.pseudo)
+            this.writterIsMe = true
           })
         }
         case 'producer': {
           return this.myprofile$.pipe(take(1)).subscribe((profile: ProfileModel) => {
             this.musicCredit.producers.push(profile._meta.pseudo)
+            this.producerIsMe = true
           })
         }
       }
@@ -209,10 +264,6 @@ export class CreditMusicComponent implements OnInit, OnDestroy {
 
 }
 
-
-
-
-
 export interface CreditName {
   index: number
   name: string
@@ -223,8 +274,8 @@ export interface MusicCredit {
   name: string
   index: number
   interpreters: string[] | any[]
-  writters: string[]
-  producers: string[]
-  feat: ProfileModel[]
+  writters: string[] | any[]
+  producers: string[] | any[]
+  feat: ProfileModel[] | any[]
   categories: NameAndCode[]
 }

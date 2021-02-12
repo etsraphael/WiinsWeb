@@ -14,7 +14,7 @@
             <div class="col-8">
               <div class="container-tag p-2">
                 <div class="container-checkbox d-inline-flex py-2 px-3">
-                  <mat-checkbox (change)="setMyRole($event, 'interpreter')" class="example-margin p-0"> Me </mat-checkbox>
+                  <mat-checkbox (change)="setMyRole($event, 'interpreter')" [(checked)]="interpreterIsMe"  class="example-margin p-0"> Me </mat-checkbox>
                 </div>
                 <div *ngFor="let item of musicCredit.interpreters; let i = index" class="d-inline-flex">
                   <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
@@ -39,7 +39,7 @@
             <div class="col-8">
               <div class="container-tag p-2">
                 <div class="container-checkbox d-inline-flex py-2 px-3">
-                  <mat-checkbox (change)="setMyRole($event, 'writter')" class="example-margin p-0"> Me </mat-checkbox>
+                  <mat-checkbox (change)="setMyRole($event, 'writter')" [(checked)]="writterIsMe" class="example-margin p-0"> Me </mat-checkbox>
                 </div>
                 <div *ngFor="let item of musicCredit.writters; let i = index" class="d-inline-flex">
                   <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">
@@ -64,7 +64,7 @@
             <div class="col-8">
               <div class="container-tag p-2">
                 <div class="container-checkbox d-inline-flex py-2 px-3">
-                  <mat-checkbox (change)="setMyRole($event, 'producer')" class="example-margin p-0"> Me </mat-checkbox>
+                  <mat-checkbox (change)="setMyRole($event, 'producer')" [(checked)]="producerIsMe" class="example-margin p-0"> Me </mat-checkbox>
                 </div>
                 <div *ngFor="let item of musicCredit.producers; let i = index" class="d-inline-flex">
                   <div class="container-tag-p py-2 px-3 m-2 d-inline-flex">

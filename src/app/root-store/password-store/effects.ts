@@ -19,7 +19,6 @@ export class PasswordEffects {
     switchMap(action =>
       this.register.PasswordUpdate(action.payload)
         .pipe(
-          tap(console.log),
           map(response => new featureActions.ChangePasswordSuccess(response.message)),
           catchError(err => observableOf(new featureActions.ChangePasswordFail(err))),
         )

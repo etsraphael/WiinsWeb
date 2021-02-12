@@ -16,6 +16,8 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
 import { filter, skipWhile } from 'rxjs/operators'
+import * as _ from 'lodash'
+import { MusicCreditModel } from 'src/app/core/models/music/music-credit.model'
 
 @Component({
   selector: 'app-upload-album',
@@ -51,7 +53,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   dialogS: Subscription
 
   // credit
-  musicCredit: MusicCredit[] = []
+  musicCredit: MusicCreditModel[] = []
 
   // store
   loading$: Observable<boolean>
@@ -76,7 +78,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     })
 
     // to set 2 default music
-    this.musicCredit.push(null, null)
+    this.musicCredit.push(new MusicCreditModel(null),new MusicCreditModel(null))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
@@ -93,9 +95,11 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
   get music() { return this.f.musics as FormArray }
 
   majorValidator(control: AbstractControl) {
-    // to get a date superior than today
+    // to get a date superior than yesterday
     if (control.value !== null) {
-      const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
+      let d = new Date();
+      d.setDate(d.getDate()-1);
+      const diff = (d.valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
       if (diff > 0) return { 'date': { valid: false } }
       else return null
     }
@@ -130,7 +134,7 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     this.music.push(this.formBuilder.group({ name: ['', Validators.required] }))
 
     // music credit
-    this.musicCredit.push(null)
+    this.musicCredit.push(new MusicCreditModel(null))
 
   }
 
@@ -172,9 +176,9 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
         // upload to s3
         this.uploadMusicSub = this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned, index),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }
@@ -229,12 +233,32 @@ export class UploadAlbumComponent implements OnInit, OnDestroy {
     // create each music
     let listMusic: Music[] = []
     for (let [i, m] of this.music.value.entries()) {
+
+      // add the feat 
       let feat = null
-      if (this.musicCredit[i].feat.length !== 0) {
+      if (!!this.musicCredit[i].feat && this.musicCredit[i].feat.length !== 0) {
         feat = this.musicCredit[i].feat.filter(val => val !== null).map(x => x._id);
       }
-      listMusic.push(new Music(m.name, this.musicUrl[i], feat, this.musicCredit[i].interpreters, this.musicCredit[i].writters, this.musicCredit[i].producers, this.musicCredit[i].categories.map(x => x.code)))
+
+      // add the categories 
+      let categories = null
+      if (!!this.musicCredit[i].categories && this.musicCredit[i].categories.length !== 0) {
+        categories = this.musicCredit[i].categories.map(x => x.code)
+      }
+
+      listMusic.push(
+        new Music(
+          m.name,
+          this.musicUrl[i],
+          feat,
+          this.musicCredit[i].interpreters,
+          this.musicCredit[i].writters,
+          this.musicCredit[i].producers,
+          categories
+        )
+      )
     }
+
 
     // create the publications music object
     const musicProject = new MusicProject(

@@ -74,12 +74,12 @@
       <div class="col-md-6 col-12 my-2">
         <div class="container">
           <div class="row">
-            <p class="h5">{{'BTN-INDICATION.click-on-calender' | translate}}</p>
+            <p class="h5">{{'PROFILE.BirthDate' | translate}}</p>
           </div>
           <div class="row">
             <mat-datepicker-toggle class="logo-calendar" matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
-            <input [max]="maxDate" [matDatepicker]="picker" class="w-100 p-3 input-calendar" type="text"
+            <input [max]="maxDate" [matDatepicker]="picker" placeholder="{{'BTN-INDICATION.click-on-calender' | translate}}" class="w-100 p-3 input-calendar" type="text"
               formControlName="birthDate">
           </div>
           <div class="birthDate-response row mx-auto">

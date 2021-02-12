@@ -252,7 +252,12 @@
     "reply..": "javob berish ..",
     "responses": "javoblar",
     "soon": "tez orada",
-    "views": "qarashlar"
+    "views": "qarashlar",
+    "Share": "Baham ko'ring",
+    "Url-Copied": "URL ko'chirildi",
+    "Download": "Yuklash",
+    "Downloaded": "Yuklandi",
+    "Save-in-phone": "Telefonda saqlang"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "y-h-to-accept-the-tou": "Siz foydalanish shartlarini qabul qilishingiz kerak",
     "y-h-to-delete-yr-page-or-group-before": "Oldin siz sahifalaringizni yoki guruhlaringizni o'chirishingiz kerak",
     "y-have-to-be-friend": "siz do'st bo'lishingiz kerak",
-    "you-hav-to-upgrad-a-manager-before-leave": "Guruhdan chiqishdan oldin menejerni lavozimga ko'tarishingiz kerak"
+    "you-hav-to-upgrad-a-manager-before-leave": "Guruhdan chiqishdan oldin menejerni lavozimga ko'tarishingiz kerak",
+    "Date-cannot-be-in-the-past": "Chiqarish sanasi o'tmishda bo'lishi mumkin emas",
+    "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Surat qabul qilindi",

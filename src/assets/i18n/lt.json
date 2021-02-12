@@ -252,7 +252,12 @@
     "Friend": "Draugas",
     "Towards-an-infinite-space": "Begalinės erdvės link",
     "Hello": "Sveiki",
-    "Publication": "Publikacija"
+    "Publication": "Publikacija",
+    "Share": "Dalintis",
+    "Url-Copied": "URL nukopijuotas",
+    "Download": "parsisiųsti",
+    "Downloaded": "Atsisiųsta",
+    "Save-in-phone": "Išsaugokite telefone"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "Minimalus dydis yra 1 $",
     "Missing-informations": "Trūksta informacijos",
     "Account_desactivated": "Paskyra atjungta",
-    "Y-dont-have-a-conversation-yet": "Jūs dar neturite pokalbio."
+    "Y-dont-have-a-conversation-yet": "Jūs dar neturite pokalbio.",
+    "Date-cannot-be-in-the-past": "Išleidimo data negali būti praeityje",
+    "You-cannot-add-yourself": "Jūs negalite pridėti savęs"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Nuotrauka gauta",

@@ -210,7 +210,12 @@
     "Friend": "বন্ধু",
     "Towards-an-infinite-space": "অসীম স্থানের দিকে",
     "Hello": "হ্যালো",
-    "Publication": "প্রকাশনা"
+    "Publication": "প্রকাশনা",
+    "Share": "ভাগ করুন",
+    "Url-Copied": "ইউআরএল অনুলিপি করা হয়েছে",
+    "Download": "ডাউনলোড করুন",
+    "Downloaded": "ডাউনলোড হয়েছে",
+    "Save-in-phone": "ফোনে সংরক্ষণ করুন"
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -567,7 +572,9 @@
     "T-min-is-1$": "সর্বনিম্ন 1 $",
     "Missing-informations": "হারিয়ে যাওয়া তথ্য",
     "Account_desactivated": "অ্যাকাউন্ট নিষ্ক্রিয়",
-    "Y-dont-have-a-conversation-yet": "আপনার এখনও কোনও কথোপকথন নেই।"
+    "Y-dont-have-a-conversation-yet": "আপনার এখনও কোনও কথোপকথন নেই।",
+    "Date-cannot-be-in-the-past": "মুক্তির তারিখ অতীতে হতে পারে না",
+    "You-cannot-add-yourself": "আপনি নিজেকে যুক্ত করতে পারবেন না"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",

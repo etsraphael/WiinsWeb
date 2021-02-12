@@ -210,7 +210,12 @@
     "Friend": "친구",
     "Towards-an-infinite-space": "무한한 공간을 향해",
     "Hello": "여보세요",
-    "Publication": "출판"
+    "Publication": "출판",
+    "Share": "공유",
+    "Url-Copied": "URL이 복사되었습니다.",
+    "Download": "다운로드",
+    "Downloaded": "다운로드 됨",
+    "Save-in-phone": "전화에 저장"
   },
   "COUNTRY": {
     "AD": "안도라",
@@ -567,7 +572,9 @@
     "T-min-is-1$": "최소 금액은 1 $입니다.",
     "Missing-informations": "누락 된 정보",
     "Account_desactivated": "계정 비활성화",
-    "Y-dont-have-a-conversation-yet": "아직 대화가 없습니다."
+    "Y-dont-have-a-conversation-yet": "아직 대화가 없습니다.",
+    "Date-cannot-be-in-the-past": "출시일은 과거 일 수 없습니다.",
+    "You-cannot-add-yourself": "자신을 추가 할 수 없습니다."
   },
   "FEED-PUBLICATION": {
     "Picture-received": "사진이 접수되었습니다",

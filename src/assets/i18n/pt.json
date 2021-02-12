@@ -210,7 +210,12 @@
     "Friend": "Amigo",
     "Towards-an-infinite-space": "Em direção a um espaço infinito",
     "Hello": "Olá",
-    "Publication": "Publicação"
+    "Publication": "Publicação",
+    "Share": "Compartilhar",
+    "Url-Copied": "Url copiado",
+    "Download": "Baixar",
+    "Downloaded": "Baixado",
+    "Save-in-phone": "Salvar no telefone"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -567,7 +572,9 @@
     "T-min-is-1$": "O mínimo é 1 $",
     "Missing-informations": "Informações ausentes",
     "Account_desactivated": "Conta desativada",
-    "Y-dont-have-a-conversation-yet": "Você ainda não tem uma conversa."
+    "Y-dont-have-a-conversation-yet": "Você ainda não tem uma conversa.",
+    "Date-cannot-be-in-the-past": "A data de lançamento não pode estar no passado",
+    "You-cannot-add-yourself": "Você não pode se adicionar"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",

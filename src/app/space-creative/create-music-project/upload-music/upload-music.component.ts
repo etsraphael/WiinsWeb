@@ -20,6 +20,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 import { CreditMusicComponent, MusicCredit } from 'src/app/core/modal/credit-music/credit-music.component'
 import { NameAndCode } from 'src/app/core/data/music-genre'
+import { MusicCreditModel } from 'src/app/core/models/music/music-credit.model'
 
 @Component({
   selector: 'app-upload-music',
@@ -63,7 +64,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   dialogS: Subscription
 
   // credit
-  musicCredit: MusicCredit
+  musicCredit: MusicCreditModel = new MusicCreditModel(null)
 
   // store
   loading$: Observable<boolean>
@@ -178,9 +179,9 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
         // upload to s3
         this.uploadSub = this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }
@@ -203,25 +204,31 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
   submit(): void | MatSnackBarRef<SimpleSnackBar> {
 
     // check if we have the files
-    if (this.musicUrl == null || this.pictureUrl == null) {
-      return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
-        null, {
-        horizontalPosition: 'center',
-        verticalPosition: 'bottom',
-        duration: 5000
-      })
-    }
+    // if (this.musicUrl == null || this.pictureUrl == null) {
+    //   return this._snackBar.open(
+    //     this.translate.instant('ERROR-MESSAGE.music-&-file-required'),
+    //     null, {
+    //     horizontalPosition: 'center',
+    //     verticalPosition: 'bottom',
+    //     duration: 5000
+    //   })
+    // }
 
     // check the correct info
-    if (this.musicForm.invalid) {
-      return this._snackBar.open(
-        this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
-        null, {
-        horizontalPosition: 'center',
-        verticalPosition: 'bottom',
-        duration: 5000
-      })
+    // if (this.musicForm.invalid) {
+    //   return this._snackBar.open(
+    //     this.translate.instant('ERROR-MESSAGE.Els-are-incorrects'),
+    //     null, {
+    //     horizontalPosition: 'center',
+    //     verticalPosition: 'bottom',
+    //     duration: 5000
+    //   })
+    // }
+
+    // add the categories 
+    let categories = null
+    if (!!this.musicCredit.categories && this.musicCredit.categories.length !== 0) {
+      categories = this.musicCredit.categories.map(x => x.code)
     }
 
     // creating the music object
@@ -233,7 +240,7 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.musicCredit.interpreters,
       this.musicCredit.writters,
       this.musicCredit.producers,
-      this.musicCredit.categories.map((value: NameAndCode) => value.name)
+      categories
     )
 
     // creating the publications music project
@@ -244,15 +251,19 @@ export class UploadMusicComponent implements OnInit, OnDestroy {
       this.pictureUrl
     )
 
+    console.log(musicProject)
+
     // send the publications music
-    this.store$.dispatch(new MusicProjectStoreActions.AddMusicProject(musicProject))
+    // this.store$.dispatch(new MusicProjectStoreActions.AddMusicProject(musicProject))
 
   }
 
   majorValidator(control: AbstractControl) {
     // to check if the date it's after today
     if (control.value !== null) {
-      const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
+      let d = new Date();
+      d.setDate(d.getDate()-1);
+      const diff = (d.valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
       if (diff > 0) return { 'date': { valid: false } }
       else return null
     }

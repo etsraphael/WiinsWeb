@@ -252,7 +252,12 @@
     "Friend": "Arkadaş",
     "Towards-an-infinite-space": "Sonsuz bir uzaya doğru",
     "Hello": "Merhaba",
-    "Publication": "Yayın"
+    "Publication": "Yayın",
+    "Share": "Paylaş",
+    "Url-Copied": "URL kopyalandı",
+    "Download": "İndir",
+    "Downloaded": "İndirildi",
+    "Save-in-phone": "Telefona kaydet"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -609,7 +614,9 @@
     "T-min-is-1$": "Minimum 1 $",
     "Missing-informations": "Eksik bilgiler",
     "Account_desactivated": "Hesap devre dışı bırakıldı",
-    "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız."
+    "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız.",
+    "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz",
+    "You-cannot-add-yourself": "Kendini ekleyemezsin"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",

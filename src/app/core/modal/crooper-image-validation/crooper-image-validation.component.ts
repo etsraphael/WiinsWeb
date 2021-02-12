@@ -107,7 +107,7 @@ export class CrooperImageValidationComponent implements OnInit, OnDestroy {
 
   loadImageFailed() {
     // show a message // TO DO..
-    console.log('Load failed');
+
   }
 
   closeDialog() {
@@ -166,9 +166,9 @@ export class CrooperImageValidationComponent implements OnInit, OnDestroy {
                 // upload to s3
                 this.uploadSubCompress = this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
                   (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned),
-                  (error: any) => console.log(error))
+                  (error: any) => null)
               },
-              (error: RespondGetUploadUrl) => console.log(error)
+              (error: RespondGetUploadUrl) => null
             )
 
           )
@@ -193,9 +193,9 @@ export class CrooperImageValidationComponent implements OnInit, OnDestroy {
         // upload to s3
         return this.uploadService.uploadfileAWSS3(response.url, file).subscribe(
           (response: HttpEvent<{}>) => this.updateProgress(response, urlSigned),
-          (error: any) => console.log(error))
+          (error: any) => null)
       },
-      (error: RespondGetUploadUrl) => console.log(error)
+      (error: RespondGetUploadUrl) => null
     )
 
   }
