@@ -21,15 +21,24 @@ nav {
     color: #858585;
   }
 
-  input:hover,
-  input:focus {
+  .container-search-bar-input:hover,
+  .container-search-bar-input:focus {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     border-color: rgba(223, 225, 229, 0);
     background-color: white;
   }
 
   .container-search-bar-input {
-    position: relative;
+    border: 0;
+    background-color: #d8d8d852;
+    border-radius: 23px;
+
+    input {
+      color: #7D7A71;
+      border: 0;
+      background-color: transparent;
+      text-align: left;
+    }
   }
 
   .avatar-nav-bar {
@@ -37,11 +46,8 @@ nav {
     background: none;
     color: rgba(0, 0, 0, .5);
     border-radius: 50%;
-    width: 45px;
     height: 45px;
     padding-left: 7.5px;
-    padding-bottom: 4px;
-    padding-top: 3px;
   }
 
   button:hover {
@@ -50,6 +56,10 @@ nav {
 
   .dropdown-menu {
     border-radius: 8px;
+  }
+
+  .my-avatar {
+    width: 35px
   }
 
 }
