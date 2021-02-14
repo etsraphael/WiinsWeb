@@ -4,3 +4,7 @@
   background: #e0e0e038;
   cursor: pointer;
 }
+a:not([href]):not([class]) {
+  cursor: pointer;
+  text-decoration: underline;
+}
