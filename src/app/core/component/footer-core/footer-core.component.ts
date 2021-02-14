@@ -84,8 +84,7 @@ export class FooterCoreComponent implements OnInit {
       backdropClass: '.no-backdrop',
       height: '27.5rem',
       width: '21rem',
-      // position: { left: position.x + 30 + 'px', top: position.y - 50 + 'px' },
-      position: { left: offsetLeft + 'px', bottom: '4.5rem' },
+      position: { left: offsetLeft + 'px', bottom: '4%' },
       data: { cardHeader: room.participants, currentRoom: room, myProfileID: this.user.profile, searching: false }
     });
 
