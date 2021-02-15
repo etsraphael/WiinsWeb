@@ -981,7 +981,8 @@
     "T-administration-w-verify-t-content-asap": "ستقوم الإدارة بالتحقق من احتوائها في أقرب وقت ممكن",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "سيؤدي هذا إلى حذف المشروع بأكمله، هل أنت متأكد ؟",
     "T-operation-is-irreversible": "هذه العملية لا رجعة فيها",
-    "this-user-will-be-": "سيكون هذا المستخدم الآن"
+    "this-user-will-be-": "سيكون هذا المستخدم الآن",
+    "A-y-s-to-unfollow-t-profile": "هل أنت متأكد من إلغاء متابعة هذا المحترف؟"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "تحذير. تأكد من أن لديك العنوان الصحيح"

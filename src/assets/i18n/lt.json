@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Administracija patikrins turinį kuo greičiau",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dėl to visas projektas bus ištrintas, ar tikrai?",
     "T-operation-is-irreversible": "Ši operacija yra negrįžtama",
-    "this-user-will-be-": "Šis vartotojas dabar bus"
+    "this-user-will-be-": "Šis vartotojas dabar bus",
+    "A-y-s-to-unfollow-t-profile": "Ar tikrai nebenorite sekti šio profi?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Įspėjimas. Įsitikinkite, kad turite teisingą adresą"

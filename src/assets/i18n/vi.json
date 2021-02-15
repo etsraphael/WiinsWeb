@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Ban quản trị sẽ xác minh nội dung trong thời gian sớm nhất",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Điều này sẽ khiến toàn bộ dự án bị xóa, bạn có chắc chắn không?",
     "T-operation-is-irreversible": "Thao tác này không thể đảo ngược",
-    "this-user-will-be-": "Người dùng này bây giờ sẽ là"
+    "this-user-will-be-": "Người dùng này bây giờ sẽ là",
+    "A-y-s-to-unfollow-t-profile": "Bạn có chắc chắn bỏ theo dõi hồ sơ này không?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Cảnh báo. Đảm bảo rằng bạn có đúng địa chỉ"

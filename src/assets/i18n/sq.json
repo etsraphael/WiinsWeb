@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Administrata do të verifikojë përmbajtjen sa më shpejt të jetë e mundur",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Kjo do të bëjë që i gjithë projekti të fshihet, jeni i sigurt?",
     "T-operation-is-irreversible": "Ky operacion është i pakthyeshëm",
-    "this-user-will-be-": "Ky përdorues tani do të jetë"
+    "this-user-will-be-": "Ky përdorues tani do të jetë",
+    "A-y-s-to-unfollow-t-profile": "A jeni i sigurt që do ta hiqni pas këtë profie?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Paralajmërim. Sigurohuni që të keni adresën e duhur"

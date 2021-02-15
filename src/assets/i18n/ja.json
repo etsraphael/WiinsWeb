@@ -981,7 +981,8 @@
     "T-administration-w-verify-t-content-asap": "管理は、できるだけ早く含まれていることを確認します",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "これにより、プロジェクト全体が削除されます。",
     "T-operation-is-irreversible": "この操作は元に戻せません",
-    "this-user-will-be-": "このユーザーは現在"
+    "this-user-will-be-": "このユーザーは現在",
+    "A-y-s-to-unfollow-t-profile": "このprofieのフォローを解除してもよろしいですか？"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "警告。正しいアドレスを持っていることを確認する"

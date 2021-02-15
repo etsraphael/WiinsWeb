@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Administration vil kontrollere indhold så hurtigt som muligt",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dette vil medføre, at hele projektet slettes, er du sikker?",
     "T-operation-is-irreversible": "Denne handling er irreversibel",
-    "this-user-will-be-": "Denne bruger vil nu være"
+    "this-user-will-be-": "Denne bruger vil nu være",
+    "A-y-s-to-unfollow-t-profile": "Er du sikker på at følge denne profie op?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Advarsel. Sørg for, at du har den rigtige adresse"

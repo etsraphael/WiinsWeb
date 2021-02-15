@@ -981,7 +981,8 @@
     "T-administration-w-verify-t-content-asap": "Администрация проверит, чтобы они содержались как можно скорее",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Это приведет к тому, что весь проект будет удален, вы уверены?",
     "T-operation-is-irreversible": "Эта операция необратима",
-    "this-user-will-be-": "Этот пользователь теперь будет"
+    "this-user-will-be-": "Этот пользователь теперь будет",
+    "A-y-s-to-unfollow-t-profile": "Вы уверены, что откажетесь от этого профиля?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Предупреждение. Убедитесь, что у вас есть правильный адрес"

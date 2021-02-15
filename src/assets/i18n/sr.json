@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Администрација ће верификовати садржај што је пре могуће",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ово ће довести до брисања целог пројекта, да ли сте сигурни?",
     "T-operation-is-irreversible": "Ова операција је неповратна",
-    "this-user-will-be-": "Овај корисник ће сада бити"
+    "this-user-will-be-": "Овај корисник ће сада бити",
+    "A-y-s-to-unfollow-t-profile": "Да ли сте сигурни да желите престати пратити овај профил?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Упозорење. Уверите се да имате праву адресу"

@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="col-2 my-auto pt-1"
-            *ngIf="!(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+            *ngIf="(tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
             <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
               <button type="button" class="btn btn-secondary px-2 w-100" *ngSwitchCase="'friend'" (click)="deleteFriend()">
                 <span>{{'CORE.Friend'|translate}}</span>
@@ -52,13 +52,10 @@
                 [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
                 <span>{{'CORE.Profile'|translate}}</span>
               </button>
+              <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchDefault (click)="unfollow()">
+                <span>{{'CORE.Subscribed'|translate}}</span>
+              </button>
             </div>
-          </div>
-          <div class="col-2 my-auto pt-1"
-            *ngIf="(tubePage$|async).tube.profile.follow.following && (tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
-            <button type="button" class="btn btn-primary px-2 w-100" (click)="unfollow()">
-              <span>{{'CORE.Subscribed'|translate}}</span>
-            </button>
           </div>
         </div>
       </div>

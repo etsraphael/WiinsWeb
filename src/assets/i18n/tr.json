@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Yönetim içeriği mümkün olan en kısa sürede doğrulayacaktır",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bu, tüm projenin silinmesine neden olacak, emin misiniz?",
     "T-operation-is-irreversible": "Bu işlem geri alınamaz",
-    "this-user-will-be-": "Bu kullanıcı şimdi olacak"
+    "this-user-will-be-": "Bu kullanıcı şimdi olacak",
+    "A-y-s-to-unfollow-t-profile": "Bu profie'yi takip etmekten vazgeçeceğinizden emin misiniz?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Uyarı. Doğru adrese sahip olduğunuzdan emin olun"

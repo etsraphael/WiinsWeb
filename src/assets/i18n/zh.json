@@ -981,7 +981,8 @@
     "T-administration-w-verify-t-content-asap": "管理将尽快验证是否包含",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "这将导致整个项目被删除，你确定吗？",
     "T-operation-is-irreversible": "此操作是不可逆的",
-    "this-user-will-be-": "此用户现在将成为"
+    "this-user-will-be-": "此用户现在将成为",
+    "A-y-s-to-unfollow-t-profile": "您确定要取消关注此教授吗？"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "警告。确保您拥有正确的地址"

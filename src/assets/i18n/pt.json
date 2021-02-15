@@ -981,7 +981,8 @@
     "T-administration-w-verify-t-content-asap": "Administração verificará que estão contidos o mais rápido possível",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Isso fará com que todo o projeto seja excluído, tem certeza?",
     "T-operation-is-irreversible": "Esta operação é irreversível",
-    "this-user-will-be-": "Este usuário agora será"
+    "this-user-will-be-": "Este usuário agora será",
+    "A-y-s-to-unfollow-t-profile": "Tem certeza de que deseja parar de seguir este perfil?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Aviso. Certifique-se de que você tem o endereço certo"

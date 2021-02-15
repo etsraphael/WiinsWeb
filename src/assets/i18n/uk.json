@@ -1038,7 +1038,8 @@
     "T-administration-w-verify-t-content-asap": "Адміністрація перевірить вміст якомога швидше",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Це призведе до видалення всього проекту, ви впевнені?",
     "T-operation-is-irreversible": "Ця операція незворотна",
-    "this-user-will-be-": "Цей користувач тепер буде"
+    "this-user-will-be-": "Цей користувач тепер буде",
+    "A-y-s-to-unfollow-t-profile": "Ви обов’язково скасуєте підписку на цей профіль?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Увага. Переконайтесь, що у вас є правильна адреса"
