@@ -35,13 +35,13 @@
               </div>
             </div>
           </div>
-          <div class="col-2 my-auto pt-1"
-            *ngIf="(tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
+          <div class="col-2 my-auto pt-1" *ngIf="(tubePage$|async).tube.profile._id !== (myprofile|async)?._id">
             <div [ngSwitch]="(tubePage$|async).tube.profile.relation">
-              <button type="button" class="btn btn-secondary px-2 w-100" *ngSwitchCase="'friend'" (click)="deleteFriend()">
+              <button type="button" class="btn btn-secondary px-2 w-100" *ngSwitchCase="'friend'"
+              [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
                 <span>{{'CORE.Friend'|translate}}</span>
               </button>
-              <button type="button" class="btn btn-warning px-2 w-100" *ngSwitchCase="'not-friend'" (click)="follow()">
+              <button type="button" class="btn btn-warning px-2 w-100" *ngSwitchCase="'nothing'" (click)="follow()">
                 <span>{{'CORE.Subscribe'|translate}}</span>
               </button>
               <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchCase="'pendingFromHim'"
@@ -52,7 +52,7 @@
                 [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
                 <span>{{'CORE.Profile'|translate}}</span>
               </button>
-              <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchDefault (click)="unfollow()">
+              <button type="button" class="btn btn-primary px-2 w-100" *ngSwitchCase="'following'" (click)="unfollow()">
                 <span>{{'CORE.Subscribed'|translate}}</span>
               </button>
             </div>
