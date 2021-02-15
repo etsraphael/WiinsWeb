@@ -7,14 +7,14 @@
           <h2 class="pseudo-name ml-5">{{p._meta.pseudo}}</h2>
         </div>
         <div class="col-8 col-md-7 my-auto d-flex justify-content-end">
-          <div class="col-5 col-md-4 text-right" *ngIf="p.follow.following && p.relation !== 'friend'">
-            <div *ngIf="!p.userRelation">
+          <div class="col-5 col-md-4 text-right" *ngIf="p.relation !== 'friend'">
+            <div *ngIf="p.relation !== 'following'">
               <button class="btn btn-outline-light w-100" (click)="follow(p._id)">
                 <i class="px-2 py-auto fa fa-user-plus"></i>
                 <span class="px-2 py-1">{{'CORE.Follow'|translate}}</span>
               </button>
             </div>
-            <div *ngIf="p.userRelation">
+            <div *ngIf="p.relation == 'following'">
               <button class="btn btn-outline-light w-100" (click)="unfollow(p._id)">
                 <i class="px-2 py-auto fa fa-user-plus"></i>
                 <span class="px-2 py-1">{{'CORE.Unsubscribe'|translate}}</span>
@@ -27,10 +27,6 @@
                 <i class="px-2 py-auto fa fa-user"></i>
                 <span class="px-2 py-1">{{'CORE.Already-a-friend'|translate}}</span>
               </button>
-              <button *ngSwitchCase="'not-friend'" (click)="askfriendbtn(p)" class="btn btn-outline-light w-100">
-                <i class="px-2 py-auto fa fa-user-plus"></i>
-                <span class="px-2 py-1">{{'CORE.Add'|translate}}</span>
-              </button>
               <button *ngSwitchCase="'pendingFromMe'" (click)="cancelfriendbtn(p)" class="btn btn-outline-light w-100">
                 <i class="px-2 py-auto fa fa-user-plus"></i>
                 <span class="px-2 py-1 askWaiting">{{'CORE.Cancel-the-request'|translate}}</span>
@@ -38,6 +34,10 @@
               <button *ngSwitchCase="'pendingFromHim'" (click)="ComfirmBtn(p)" class="btn btn-outline-light w-100">
                 <i class="px-2 py-auto fa fa-user-plus"></i>
                 <span class="px-2 py-1 askWaiting">{{'CORE.Confirm'|translate}}</span>
+              </button>
+              <button *ngSwitchDefault (click)="askfriendbtn(p)" class="btn btn-outline-light w-100">
+                <i class="px-2 py-auto fa fa-user-plus"></i>
+                <span class="px-2 py-1">{{'CORE.Add'|translate}}</span>
               </button>
             </div>
           </div>
