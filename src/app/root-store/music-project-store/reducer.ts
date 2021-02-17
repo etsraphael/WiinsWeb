@@ -97,8 +97,14 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
         changes: musicProject
       }, state)
     }
+    case ActionTypes.DELETE_MUSIC_PROJECT_FAIL: {
+      return {
+        ...state,
+        error: action.payload
+      }
+    }
     case ActionTypes.RESET_MUSIC_PROJECTS:
     case '@user/log_out' as any: return initialState
-    default: return state
+    default: return {...state}
   }
 }

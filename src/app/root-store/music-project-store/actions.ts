@@ -61,9 +61,8 @@ export class deleteMusicProjectSuccess implements Action {
 
 export class deleteMusicProjectFail implements Action {
   readonly type = ActionTypes.DELETE_MUSIC_PROJECT_FAIL
-  constructor(public payload: any) { }
+  constructor(public payload: string) { }
 }
-
 
 export class WrongPassword implements Action {
   readonly type = ActionTypes.WRONG_PASSWORD
