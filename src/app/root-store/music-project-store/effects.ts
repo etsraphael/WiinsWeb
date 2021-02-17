@@ -105,7 +105,7 @@ export class MusicProjectStoreEffects {
   deleteMusicProject: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.deleteMusicProject>(featureActions.ActionTypes.DELETE_MUSIC_PROJECT),
     switchMap(action => this.dataService.DeleteMusicProject(action.id, action.password).pipe(
-      map(item => new featureActions.deleteMusicProjectSuccess(item.musicProject._id)),
+      map((item: MusicProjectResponse) => new featureActions.deleteMusicProjectSuccess(item.musicProject._id)),
       catchError((response: HttpErrorResponse) => observableOf(new featureActions.deleteMusicProjectFail(response.error.message)))
     ))
   )
@@ -116,19 +116,6 @@ export class MusicProjectStoreEffects {
         return [new featureActions.UpdateMusicProjectSuccess(items.publication)]
       case 'email_or_password_invalid':
         return [new featureActions.WrongPassword(items.message)]
-    }
-  }
-
-  checkThePasswordMusicProject(items: any): Action[] {
-    switch (items.message) {
-      case 'success':
-        return [
-          new featureActions.deleteMusicProjectSuccess(items.publication._id),
-        ]
-      case 'email_or_password_invalid':
-        return [
-          new featureActions.WrongPassword(items.message)
-        ]
     }
   }
 

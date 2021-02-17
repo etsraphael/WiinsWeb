@@ -1,8 +1,8 @@
-import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { RootStoreState,  MusicProjectStoreSelectors, MusicProjectStoreActions, ModalStateStoreSelectors, ModalStateStoreActions } from 'src/app/root-store';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { skipWhile, filter } from 'rxjs/operators';
 import { MusicProject } from '../../models/publication/music/musicProject.model';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -13,7 +13,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./password-validations.component.scss'],
 })
 
-export class PasswordValidationsComponent implements OnInit, OnDestroy {
+export class PasswordValidationsComponent implements OnInit {
 
   // form
   sendForm: FormGroup
@@ -21,10 +21,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
   // error
   error$: Observable<string>
   errorCampaign$: Observable<string>
-
-  // music
-  musicProject: Observable<any>
-  musicProjectSub: Subscription
 
   // store
   isLoading$: Observable<Boolean>
@@ -42,7 +38,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
     // reset the state
     this.store$.dispatch(new ModalStateStoreActions.resetModalState)
 
-
     // password form
     this.sendForm = this.formBuilder.group({
       password: ['', [Validators.required]],
@@ -54,18 +49,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
       filter(val => !!val),
       skipWhile(val => val === null)
     )
-
-    // to select the publications music
-    this.musicProject = this.store$.pipe(
-      select(MusicProjectStoreSelectors.selectMusicProjectState),
-      filter(val => !!val),
-      skipWhile(val => val === null)
-    )
-
-    // close the modal after get the response
-    this.musicProjectSub = this.musicProject.subscribe(data => {
-      if (data.categorie == 'valid-password') this.closeModal()
-    })
 
     // to select the loading request
     this.isLoading$ = this.store$.pipe(
@@ -115,10 +98,6 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
     this.dialogRef.close()
   }
 
-  ngOnDestroy(): void {
-    // unsubscribe all the var
-    if (this.musicProjectSub) this.musicProjectSub.unsubscribe()
-  }
 
 }
 
