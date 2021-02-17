@@ -36,6 +36,7 @@ import { TubeMenuStoreState } from './tube-menu-store'
 import { TubePageStoreState } from './tube-page-store'
 import { TubeFeedStoreState } from './tube-feed-store'
 import { FeedPublicationStoreState } from './feed-publication-store'
+import { ModalStateStoreState } from './modal-state-store'
 
 export interface State {
   feedPublication: FeedPublicationStoreState.State
@@ -78,4 +79,5 @@ export interface State {
   notification: NotificationsStoreState.State
   notificationNumberRequest: NotificationNumberStoreState.StateNumberRequest
   notificationNumberActivity: NotificationNumberStoreState.StateNumberActivity
+  modalState: ModalStateStoreState.State
 }
