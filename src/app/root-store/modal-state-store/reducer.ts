@@ -3,11 +3,12 @@ import { State, initialState } from './state';
 
 export function featureReducer(state: State = initialState, action: ActionsModalState) {
   switch (action.type) {
+    case '@music_project/delete' as any:
     case ActionTypes.START_LOADING: {
       return {
         ...state,
         isLoading: true,
-        error: null
+        error: false
       }
     }
     case ActionTypes.END_LOADING: {
@@ -17,20 +18,22 @@ export function featureReducer(state: State = initialState, action: ActionsModal
         error: null
       }
     }
+    case '@music_project/delete_success' as any:
     case ActionTypes.SHOW_SUCCESS: {
       return {
         ...state,
         isLoading: false,
         success: true,
-        error: null
+        error: false
       }
     }
+    case '@music_project/delete_fail' as any:
     case ActionTypes.SHOW_ERROR: {
       return {
         ...state,
         isLoading: false,
         success: false,
-        error: action.error
+        error: true
       }
     }
     case ActionTypes.RESET_MODAL_STATE:

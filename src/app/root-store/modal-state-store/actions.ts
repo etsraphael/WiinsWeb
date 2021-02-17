@@ -12,6 +12,7 @@ export enum ActionTypes {
 
 export class startLoading implements Action {
   readonly type = ActionTypes.START_LOADING
+  constructor() {}
 }
 
 export class endLoading implements Action {
@@ -30,7 +31,6 @@ export class showError implements Action {
 export class resetModalState implements Action {
   readonly type = ActionTypes.RESET_MODAL_STATE;
 }
-
 
 export type ActionsModalState =
   | startLoading

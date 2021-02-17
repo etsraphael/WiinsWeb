@@ -1,13 +1,11 @@
 export interface State {
-  message?: string;
   isLoading?: boolean;
   success?: boolean;
-  error?: any;
+  error?: boolean;
 }
 
 export const initialState: State = {
-  message: null,
   isLoading: false,
   success: false,
-  error: null
+  error: false
 };
