@@ -28,6 +28,7 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
 
   // store
   isLoading$: Observable<Boolean>
+  isSuccess$: Observable<Boolean>
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -66,6 +67,14 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
       skipWhile(val => val == null),
       filter(value => value !== undefined)
     )
+
+
+    this.isSuccess$ = this.store$.pipe(
+      select(ModalStateStoreSelectors.selectSuccess),
+      skipWhile(val => val == null),
+      filter(value => value !== undefined)
+    )
+
 
   }
 
