@@ -222,14 +222,14 @@ export class ProfileMusicComponent implements OnInit, OnDestroy {
     // to open the modal to delete the project 
     if (size == 1) {
       this.dialog.open(PasswordValidationsComponent, {
-        panelClass: ['col-md-4'],
+        panelClass: ['col-12', 'col-sm-10', 'col-md-8', 'col-xl-6'],
         data: { musicProjectId, type: 'deleteMusicProject' }
       })
     }
     // to open the modal to delete the music
     else {
       this.dialog.open(PasswordValidationsComponent, {
-        panelClass: ['col-md-4'],
+        panelClass: ['col-12', 'col-sm-10', 'col-md-8', 'col-xl-6'],
         data: { musicID, musicProjectId, type: 'deleteMusic' }
       })
     }
@@ -238,7 +238,7 @@ export class ProfileMusicComponent implements OnInit, OnDestroy {
   deleteMusicProject(musicProjectId: string) {
     // to open the modal to delete the project 
     this.dialog.open(PasswordValidationsComponent, {
-      panelClass: ['col-md-4'],
+      panelClass: ['col-12', 'col-sm-10', 'col-md-8', 'col-xl-6'],
       data: { musicProjectId, type: 'deleteMusicProject' }
     })
   }
