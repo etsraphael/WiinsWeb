@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Store, select } from '@ngrx/store';
-import { RootStoreState,  MusicProjectStoreSelectors, MusicProjectStoreActions } from 'src/app/root-store';
+import { RootStoreState,  MusicProjectStoreSelectors, MusicProjectStoreActions, ModalStateStoreSelectors } from 'src/app/root-store';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { skipWhile, filter } from 'rxjs/operators';
@@ -25,6 +25,9 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
   // music
   musicProject: Observable<any>
   musicProjectSub: Subscription
+
+  // store
+  isLoading$: Observable<Boolean>
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -56,6 +59,13 @@ export class PasswordValidationsComponent implements OnInit, OnDestroy {
     this.musicProjectSub = this.musicProject.subscribe(data => {
       if (data.categorie == 'valid-password') this.closeModal()
     })
+
+    // to select the loading request
+    this.isLoading$ = this.store$.pipe(
+      select(ModalStateStoreSelectors.selectIsLoading),
+      skipWhile(val => val == null),
+      filter(value => value !== undefined)
+    )
 
   }
 

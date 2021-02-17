@@ -4,6 +4,7 @@ export enum ActionTypes {
 
   START_LOADING = '@modal/start-loading',
   END_LOADING = '@modal/end-loading',
+  SHOW_SUCCESS = '@modal/show-success',
   SHOW_ERROR = '@modal/show-error',
   RESET_MODAL_STATE = '@modal/reset'
 
@@ -15,6 +16,10 @@ export class startLoading implements Action {
 
 export class endLoading implements Action {
   readonly type = ActionTypes.END_LOADING
+}
+
+export class showSuccess implements Action {
+  readonly type = ActionTypes.SHOW_SUCCESS
 }
 
 export class showError implements Action {
@@ -30,6 +35,7 @@ export class resetModalState implements Action {
 export type ActionsModalState =
   | startLoading
   | endLoading
+  | showSuccess
   | showError
   | resetModalState
 

@@ -17,6 +17,23 @@ export function featureReducer(state: State = initialState, action: ActionsModal
         error: null
       }
     }
+    case ActionTypes.SHOW_SUCCESS: {
+      return {
+        ...state,
+        isLoading: false,
+        success: true,
+        error: null
+      }
+    }
+    case ActionTypes.SHOW_ERROR: {
+      return {
+        ...state,
+        isLoading: false,
+        success: false,
+        error: action.error
+      }
+    }
+    case ActionTypes.RESET_MODAL_STATE:
     case '@user/log_out' as any: return initialState
     default: return { ...state }
   }
