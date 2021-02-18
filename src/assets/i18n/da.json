@@ -616,7 +616,8 @@
     "Account_desactivated": "Konto deaktiveret",
     "Y-dont-have-a-conversation-yet": "Du har ikke en samtale endnu.",
     "Date-cannot-be-in-the-past": "Udgivelsesdatoen kan ikke være tidligere",
-    "You-cannot-add-yourself": "Du kan ikke tilføje dig selv"
+    "You-cannot-add-yourself": "Du kan ikke tilføje dig selv",
+    "T-content-does-not-exist-anymore": "Dette indhold findes ikke længere"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Billedet er modtaget",

@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "caithfidh gur cairde tú",
     "you-hav-to-upgrad-a-manager-before-leave": "Caithfidh tú bainisteoir a chur chun cinn sula bhfágfaidh tú an grúpa",
     "Date-cannot-be-in-the-past": "Ní féidir an dáta scaoilte a bheith ann roimhe seo",
-    "You-cannot-add-yourself": "Ní féidir leat tú féin a chur leis"
+    "You-cannot-add-yourself": "Ní féidir leat tú féin a chur leis",
+    "T-content-does-not-exist-anymore": "Níl an t-ábhar seo ann níos mó"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Faightear an grianghraf",

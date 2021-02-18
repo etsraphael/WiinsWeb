@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "ви повинні бути друзями",
     "you-hav-to-upgrad-a-manager-before-leave": "Ви повинні просувати менеджера перед тим, як вийти з групи",
     "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою",
-    "You-cannot-add-yourself": "Ви не можете додати себе"
+    "You-cannot-add-yourself": "Ви не можете додати себе",
+    "T-content-does-not-exist-anymore": "Цей вміст уже не існує"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографія отримана",

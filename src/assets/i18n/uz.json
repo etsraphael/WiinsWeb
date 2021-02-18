@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "siz do'st bo'lishingiz kerak",
     "you-hav-to-upgrad-a-manager-before-leave": "Guruhdan chiqishdan oldin menejerni lavozimga ko'tarishingiz kerak",
     "Date-cannot-be-in-the-past": "Chiqarish sanasi o'tmishda bo'lishi mumkin emas",
-    "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz"
+    "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz",
+    "T-content-does-not-exist-anymore": "Ushbu tarkib endi mavjud emas"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Surat qabul qilindi",

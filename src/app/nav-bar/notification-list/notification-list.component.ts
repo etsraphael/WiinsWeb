@@ -20,6 +20,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { FeedPublication } from 'src/app/core/models/publication/feed/feed-publication.model'
 import { TranslationService } from 'src/app/core/services/translation/translation.service'
 import { ReportMessageComponent } from 'src/app/core/modal/report-message/report-message.component'
+import { MatSnackBar } from '@angular/material/snack-bar'
+import { TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-notification-list',
@@ -42,7 +44,9 @@ export class NotificationListComponent implements OnInit {
     private store$: Store<RootStoreState.State>,
     private router: Router,
     public dialog: MatDialog,
-    public translateService: TranslationService
+    public translateService: TranslationService,
+    private _snackBar: MatSnackBar,
+    private translate: TranslateService
   ) { }
 
   ngOnInit() {
@@ -95,33 +99,43 @@ export class NotificationListComponent implements OnInit {
   goToNotif(n: CommentNotif | LikeNotif | RequestNotif | ResponseNotifPlaylist | any) {
 
     // actions for each type of publication
-    switch (n.type) {
-      case 'NotificationRequest':
-        this.router.navigate([`/profile/${n.profile._id}`]);
-        break;
-      case 'NotificationLike':
-      case 'NotificationResponse':
-      case 'NotificationCommentLike':
-      case 'NotificationComment':
-      case 'NotificationTagCommentFeedPublication':
-      case 'NotificationTagPublication':
-        this.showModal(n.publication._id);
-        break;
-      case 'NotificationTagCommentPlaylist':
-      case 'NotificationCommentResponsePlaylist':
-      case 'NotificationCommentLikePlaylist':
-        this.router.navigate([`/SpaceMusic/playlist/${n.playlist}`]);
-        break;
-      case 'NotificationFeatPublication':
-        this.router.navigate([`/profile/${n.profile._id}/Music`]);
-        break
-      case 'NotificationReport':
-        this.showModalReport(n)
-        break;
-      case 'NotificationVerification':
-      case 'NotificationCertification' : 
-        this.router.navigate([`/setting/certificate`]);
+
+    try{
+      switch (n.type) {
+        case 'NotificationRequest':
+          this.router.navigate([`/profile/${n.profile._id}`]);
+          break;
+        case 'NotificationLike':
+        case 'NotificationResponse':
+        case 'NotificationCommentLike':
+        case 'NotificationComment':
+        case 'NotificationTagCommentFeedPublication':
+        case 'NotificationTagPublication':
+          this.showModal(n.publication._id);
+          break;
+        case 'NotificationTagCommentPlaylist':
+        case 'NotificationCommentResponsePlaylist':
+        case 'NotificationCommentLikePlaylist':
+          this.router.navigate([`/SpaceMusic/playlist/${n.playlist}`]);
+          break;
+        case 'NotificationFeatPublication':
+          this.router.navigate([`/profile/${n.profile._id}/Music`]);
+          break
+        case 'NotificationReport':
+          this.showModalReport(n)
+          break;
+        case 'NotificationVerification':
+        case 'NotificationCertification' : 
+          this.router.navigate([`/setting/certificate`]);
+      }
+    } catch(error) {
+      return this._snackBar.open(
+        this.translate.instant('ERROR-MESSAGE.T-content-does-not-exist-anymore'),
+        this.translate.instant('CORE.close'),
+        { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
+      )
     }
+
 
     // if the message is not seen, we update the notification
     if (!n.read) this.seenNotif(n._id)

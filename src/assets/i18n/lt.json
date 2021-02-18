@@ -616,7 +616,8 @@
     "Account_desactivated": "Paskyra atjungta",
     "Y-dont-have-a-conversation-yet": "Jūs dar neturite pokalbio.",
     "Date-cannot-be-in-the-past": "Išleidimo data negali būti praeityje",
-    "You-cannot-add-yourself": "Jūs negalite pridėti savęs"
+    "You-cannot-add-yourself": "Jūs negalite pridėti savęs",
+    "T-content-does-not-exist-anymore": "Šio turinio nebėra"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Nuotrauka gauta",

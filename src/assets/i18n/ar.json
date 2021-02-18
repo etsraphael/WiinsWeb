@@ -574,7 +574,8 @@
     "Account_desactivated": "تم إلغاء تنشيط الحساب",
     "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن.",
     "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي",
-    "You-cannot-add-yourself": "لا يمكنك إضافة نفسك"
+    "You-cannot-add-yourself": "لا يمكنك إضافة نفسك",
+    "T-content-does-not-exist-anymore": "هذا المحتوى غير موجود بعد الآن"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",

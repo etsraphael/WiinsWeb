@@ -574,7 +574,8 @@
     "Account_desactivated": "ਖਾਤਾ ਬੰਦ ਕਰ ਦਿੱਤਾ",
     "Y-dont-have-a-conversation-yet": "ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ ਗੱਲਬਾਤ ਨਹੀਂ ਹੈ.",
     "Date-cannot-be-in-the-past": "ਰੀਲੀਜ਼ ਦੀ ਤਾਰੀਖ ਅਤੀਤ ਵਿੱਚ ਨਹੀਂ ਹੋ ਸਕਦੀ",
-    "You-cannot-add-yourself": "ਤੁਸੀਂ ਆਪਣੇ ਆਪ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰ ਸਕਦੇ"
+    "You-cannot-add-yourself": "ਤੁਸੀਂ ਆਪਣੇ ਆਪ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰ ਸਕਦੇ",
+    "T-content-does-not-exist-anymore": "ਇਹ ਸਮਗਰੀ ਹੁਣ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ਫੋਟੋ ਮਿਲੀ ਹੈ",

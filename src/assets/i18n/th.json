@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "คุณต้องเป็นเพื่อนกัน",
     "you-hav-to-upgrad-a-manager-before-leave": "คุณต้องเลื่อนระดับผู้จัดการก่อนออกจากกลุ่ม",
     "Date-cannot-be-in-the-past": "วันที่วางจำหน่ายต้องไม่เป็นวันที่ผ่านมา",
-    "You-cannot-add-yourself": "คุณไม่สามารถเพิ่มตัวเองได้"
+    "You-cannot-add-yourself": "คุณไม่สามารถเพิ่มตัวเองได้",
+    "T-content-does-not-exist-anymore": "ไม่มีเนื้อหานี้อีกต่อไป"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ได้รับภาพถ่ายแล้ว",
