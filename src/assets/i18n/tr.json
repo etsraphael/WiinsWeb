@@ -616,7 +616,8 @@
     "Account_desactivated": "Hesap devre dışı bırakıldı",
     "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız.",
     "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz",
-    "You-cannot-add-yourself": "Kendini ekleyemezsin"
+    "You-cannot-add-yourself": "Kendini ekleyemezsin",
+    "T-content-does-not-exist-anymore": "Bu içerik artık mevcut değil"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",

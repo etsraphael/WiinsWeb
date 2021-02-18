@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "ju duhet të jeni miq",
     "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi",
     "Date-cannot-be-in-the-past": "Data e lëshimit nuk mund të jetë në të kaluarën",
-    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten"
+    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten",
+    "T-content-does-not-exist-anymore": "Kjo përmbajtje nuk ekziston më"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",

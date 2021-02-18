@@ -574,7 +574,8 @@
     "Account_desactivated": "Conta desativada",
     "Y-dont-have-a-conversation-yet": "Você ainda não tem uma conversa.",
     "Date-cannot-be-in-the-past": "A data de lançamento não pode estar no passado",
-    "You-cannot-add-yourself": "Você não pode se adicionar"
+    "You-cannot-add-yourself": "Você não pode se adicionar",
+    "T-content-does-not-exist-anymore": "Este conteúdo não existe mais"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",

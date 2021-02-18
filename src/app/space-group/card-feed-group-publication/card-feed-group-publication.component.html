@@ -191,7 +191,9 @@
               <div class="d-inline mx-2">
                 <input hidden id="upload_picture" #picture type="file" accept='image/* | video/*'
                   (change)="preview(picture.files)" />
-                <label for="upload_picture"></label>
+                <label for="upload_picture">
+                  <i class="bi bi-camera-fill"></i>
+                </label>
               </div>
               <div class="d-inline mx-2">
                 <button (click)="postmode()" class="btn btn-flat btn-flat-icon btn-choice" type="button">

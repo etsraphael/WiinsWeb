@@ -57,24 +57,11 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
         }
       )
     }
-    case ActionTypes.DELETE_PLAYLIST_FAIL:
-    case ActionTypes.DELETE_MUSIC_FAIL: {
-      return {
-        ...state,
-        error: action.message
-      }
-    }
     case ActionTypes.DELETE_MUSIC_PROJECT_SUCCESS: {
       return featureAdapter.removeOne(action.id, {
         ...state,
         categorie: 'valid-password'
       })
-    }
-    case ActionTypes.WRONG_PASSWORD: {
-      return {
-        ...state,
-        error: action.message
-      }
     }
     case ActionTypes.DELETE_PLAYLIST_SUCCESS: {
       return featureAdapter.removeOne(action.payload._id, {
@@ -97,6 +84,8 @@ export function featureReducer(state = initialState, action: ActionsMusicProject
         changes: musicProject
       }, state)
     }
+    case ActionTypes.DELETE_MUSIC_FAIL:
+    case ActionTypes.DELETE_PLAYLIST_FAIL: 
     case ActionTypes.DELETE_MUSIC_PROJECT_FAIL: {
       return {
         ...state,

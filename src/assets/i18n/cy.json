@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "rhaid i chi fod yn ffrindiau",
     "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp",
     "Date-cannot-be-in-the-past": "Ni all y dyddiad rhyddhau fod yn y gorffennol",
-    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun"
+    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun",
+    "T-content-does-not-exist-anymore": "Nid yw'r cynnwys hwn yn bodoli mwyach"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",

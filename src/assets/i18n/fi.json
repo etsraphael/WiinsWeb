@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "sinun täytyy olla ystäviä",
     "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista",
     "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä",
-    "You-cannot-add-yourself": "Et voi lisätä itseäsi"
+    "You-cannot-add-yourself": "Et voi lisätä itseäsi",
+    "T-content-does-not-exist-anymore": "Tätä sisältöä ei ole enää olemassa"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",

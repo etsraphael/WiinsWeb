@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "bạn phải là bạn",
     "you-hav-to-upgrad-a-manager-before-leave": "Bạn phải thăng chức một người quản lý trước khi rời nhóm",
     "Date-cannot-be-in-the-past": "Ngày phát hành không được trong quá khứ",
-    "You-cannot-add-yourself": "Bạn không thể thêm chính mình"
+    "You-cannot-add-yourself": "Bạn không thể thêm chính mình",
+    "T-content-does-not-exist-anymore": "Nội dung này không tồn tại nữa"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ảnh được nhận",
