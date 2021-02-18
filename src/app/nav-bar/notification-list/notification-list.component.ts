@@ -97,7 +97,6 @@ export class NotificationListComponent implements OnInit {
   }
 
   goToNotif(n: CommentNotif | LikeNotif | RequestNotif | ResponseNotifPlaylist | any) {
-
     // actions for each type of publication
 
     try{
@@ -111,6 +110,7 @@ export class NotificationListComponent implements OnInit {
         case 'NotificationComment':
         case 'NotificationTagCommentFeedPublication':
         case 'NotificationTagPublication':
+        case 'NotificationTagCommentPublication':
           this.showModal(n.publication._id);
           break;
         case 'NotificationTagCommentPlaylist':
@@ -162,12 +162,21 @@ export class NotificationListComponent implements OnInit {
 
       const dialogRef = this.dialog.open(PublicationModalComponent, {
         panelClass: ['col-md-9', 'col-xl-8'],
-        data: { publication, ownerId: publication.profile._id }
+        data: { publication, ownerId: this.getOwnerId(publication)}
       })
 
       dialogRef.afterClosed().subscribe(() => this.modalSub.unsubscribe())
 
     })
+  }
+
+  getOwnerId(publication: FeedPublication): string {
+    if(!!publication.profile){
+      return publication.profile._id
+    }
+    if(!!publication.page){
+      return publication.page._id
+    }
   }
 
   seenNotif(id: string) {
