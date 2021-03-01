@@ -32,7 +32,8 @@
       <div class="col-md-7 bg-sign background-right">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Setting -->
-          <div class="row my-3 setting-top-signin mx-0 header-bar-setting">
+          <div container>
+          <div class="row my-3 col-sm-10 mx-auto setting-top-signin mx-0 header-bar-setting">
             <div class="ml-auto">
               <mat-form-field class="btn p-0">
                 <mat-select [(value)]="selectedLang">
@@ -46,10 +47,11 @@
               </a>
             </div>
           </div>
+        </div>
           <!-- Router Container -->
           <div class="container">
             <div class="row h-100">
-              <div class="col col-sm-10 mx-auto mt-md-8 login-register-box">
+              <div class="col col-sm-10 py-3 mx-auto mt-md-8 login-register-box">
                 <router-outlet></router-outlet>
               </div>
             </div>
