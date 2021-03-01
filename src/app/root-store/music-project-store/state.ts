@@ -9,7 +9,7 @@ export const featureAdapter: EntityAdapter<MusicProject> = createEntityAdapter<M
 
 export interface State extends EntityState<MusicProject> {
   isLoading?: boolean
-  error?: any
+  error?: string
   categorie?: string
 }
 

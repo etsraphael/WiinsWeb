@@ -46,7 +46,7 @@ export function featureReducerProfile(state: StateProfile = initialStateProfile,
       return state
     }
     case '@user/log_out' as any: return initialStateProfile
-    default: return state
+    default: return {...state}
   }
 }
 
@@ -64,39 +64,58 @@ export function featureReducerProfilePage(state: StateProfilePage = initialState
     }
     case ActionTypes.DELETE_FRIEND_SUCCESS:
     case ActionTypes.ASK_REJECTED: {
-      state.profile.relation = 'not-friend'
       return {
         ...state,
+        profile: {
+          ...state.profile,
+          relation: 'not-friend'
+        },
         isLoading: false,
         error: null
       };
     }
     case ActionTypes.ASK_ACCEPTED: {
-      state.profile.relation = 'friend'
       return {
         ...state,
+        profile: {
+          ...state.profile,
+          relation: 'friend'
+        },
         isLoading: false,
         error: null
       };
     }
     case ActionTypes.CREATED_ASK: {
-      state.profile.relation = 'pendingFromMe'
       return {
         ...state,
+        profile: {
+          ...state.profile,
+          relation: 'pendingFromMe'
+        },
         isLoading: false,
         error: null
       };
     }
     case ActionTypes.FOLLOW_PROFILE_SUCCESS: {
-      state.profile.userRelation = true
-      return state
+      return {
+        ...state,
+        profile: {
+          ...state.profile,
+          relation: 'following'
+        }
+      }
     }
     case ActionTypes.UNFOLLOW_PROFILE_SUCCESS: {
-      state.profile.userRelation = false
-      return state
+      return {
+        ...state,
+        profile: {
+          ...state.profile,
+          relation: 'nothing'
+        }
+      }
     }
-    case ActionTypes.RESET_PROFILE: 
+    case ActionTypes.RESET_PROFILE:
     case '@user/log_out' as any: return initialStateProfilePage
-    default: return state
+    default: return { ...state }
   }
 }

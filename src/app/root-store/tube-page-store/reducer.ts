@@ -48,18 +48,14 @@ export function featureReducer(state = initialState, action: PageTubeActions): S
         error: null
       };
     }
-    case ActionTypes.UNFOLLOW_PROFILE_SUCCESS: {
+    case ActionTypes.UNFOLLOW_PROFILE: {
       const tubePage: TubePageModel = {
         ...state.page,
         tube: {
           ...state.page.tube,
           profile: {
             ...state.page.tube.profile,
-            relation: 'not-friend',
-            follow: {
-              following: false,
-              friend: false,
-            }
+            relation: 'nothing'
           }
         }
       }
@@ -70,18 +66,14 @@ export function featureReducer(state = initialState, action: PageTubeActions): S
         error: null
       };
     }
-    case ActionTypes.FOLLOW_PROFILE_SUCCESS: {
+    case ActionTypes.UNFOLLOW_PROFILE_FAIL: {
       const tubePage: TubePageModel = {
         ...state.page,
         tube: {
           ...state.page.tube,
           profile: {
             ...state.page.tube.profile,
-            relation: 'not-friend',
-            follow: {
-              following: true,
-              friend: false,
-            }
+            relation: 'following'
           }
         }
       }
@@ -92,7 +84,42 @@ export function featureReducer(state = initialState, action: PageTubeActions): S
         error: null
       };
     }
-
+    case ActionTypes.FOLLOW_PROFILE_FAIL: {
+      const tubePage: TubePageModel = {
+        ...state.page,
+        tube: {
+          ...state.page.tube,
+          profile: {
+            ...state.page.tube.profile,
+            relation: 'nothing'
+          }
+        }
+      }
+      return {
+        ...state,
+        page: tubePage,
+        isLoading: false,
+        error: null
+      };
+    }
+    case ActionTypes.FOLLOW_PROFILE: {
+      const tubePage: TubePageModel = {
+        ...state.page,
+        tube: {
+          ...state.page.tube,
+          profile: {
+            ...state.page.tube.profile,
+            relation: 'following'
+          }
+        }
+      }
+      return {
+        ...state,
+        page: tubePage,
+        isLoading: false,
+        error: null
+      };
+    }
     case ActionTypes.RESET_TUBE_PAGE:
     case '@user/log_out' as any: return initialState
     default: return state

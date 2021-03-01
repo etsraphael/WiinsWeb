@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "ви повинні бути друзями",
     "you-hav-to-upgrad-a-manager-before-leave": "Ви повинні просувати менеджера перед тим, як вийти з групи",
     "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою",
-    "You-cannot-add-yourself": "Ви не можете додати себе"
+    "You-cannot-add-yourself": "Ви не можете додати себе",
+    "T-content-does-not-exist-anymore": "Цей вміст уже не існує"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографія отримана",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Адміністрація перевірить вміст якомога швидше",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Це призведе до видалення всього проекту, ви впевнені?",
     "T-operation-is-irreversible": "Ця операція незворотна",
-    "this-user-will-be-": "Цей користувач тепер буде"
+    "this-user-will-be-": "Цей користувач тепер буде",
+    "A-y-s-to-unfollow-t-profile": "Ви обов’язково скасуєте підписку на цей профіль?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Увага. Переконайтесь, що у вас є правильна адреса"

@@ -616,7 +616,8 @@
     "Account_desactivated": "Hesap devre dışı bırakıldı",
     "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız.",
     "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz",
-    "You-cannot-add-yourself": "Kendini ekleyemezsin"
+    "You-cannot-add-yourself": "Kendini ekleyemezsin",
+    "T-content-does-not-exist-anymore": "Bu içerik artık mevcut değil"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Yönetim içeriği mümkün olan en kısa sürede doğrulayacaktır",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bu, tüm projenin silinmesine neden olacak, emin misiniz?",
     "T-operation-is-irreversible": "Bu işlem geri alınamaz",
-    "this-user-will-be-": "Bu kullanıcı şimdi olacak"
+    "this-user-will-be-": "Bu kullanıcı şimdi olacak",
+    "A-y-s-to-unfollow-t-profile": "Bu profie'yi takip etmekten vazgeçeceğinizden emin misiniz?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Uyarı. Doğru adrese sahip olduğunuzdan emin olun"

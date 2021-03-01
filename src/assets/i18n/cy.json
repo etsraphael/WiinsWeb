@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "rhaid i chi fod yn ffrindiau",
     "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp",
     "Date-cannot-be-in-the-past": "Ni all y dyddiad rhyddhau fod yn y gorffennol",
-    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun"
+    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun",
+    "T-content-does-not-exist-anymore": "Nid yw'r cynnwys hwn yn bodoli mwyach"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Bydd gweinyddiaeth yn gwirio cynnwys cyn gynted â phosibl",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bydd hyn yn achosi i'r prosiect cyfan gael ei ddileu, a ydych chi'n siŵr?",
     "T-operation-is-irreversible": "Mae'r gweithrediad hwn yn anghildroadwy",
-    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr"
+    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr",
+    "A-y-s-to-unfollow-t-profile": "A ydych yn sicr o ddadorchuddio'r profie hwn?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Rhybudd. Sicrhewch fod gennych y cyfeiriad cywir"

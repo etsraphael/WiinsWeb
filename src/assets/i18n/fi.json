@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "sinun täytyy olla ystäviä",
     "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista",
     "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä",
-    "You-cannot-add-yourself": "Et voi lisätä itseäsi"
+    "You-cannot-add-yourself": "Et voi lisätä itseäsi",
+    "T-content-does-not-exist-anymore": "Tätä sisältöä ei ole enää olemassa"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Hallinto tarkistaa sisällön mahdollisimman pian",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Tämä aiheuttaa koko projektin poistamisen, oletko varma?",
     "T-operation-is-irreversible": "Tämä toiminto on peruuttamaton",
-    "this-user-will-be-": "Tämä käyttäjä on nyt"
+    "this-user-will-be-": "Tämä käyttäjä on nyt",
+    "A-y-s-to-unfollow-t-profile": "Oletko varma, että lopetat tämän profiilin seuraamisen?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Varoitus. Varmista, että sinulla on oikea osoite"

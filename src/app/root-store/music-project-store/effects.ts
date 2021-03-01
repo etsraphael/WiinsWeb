@@ -10,6 +10,7 @@ import { Action } from '@ngrx/store'
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { TranslateService } from '@ngx-translate/core'
 import { MusicProjectResponse, MusicService } from 'src/app/core/services/publications/music/music.service'
+import { HttpErrorResponse } from '@angular/common/http'
 
 @Injectable()
 export class MusicProjectStoreEffects {
@@ -77,7 +78,7 @@ export class MusicProjectStoreEffects {
   updateMusicProject: Observable<ActionsMusicProject> = this.actions$.pipe(
     ofType<featureActions.UpdateMusicProject>(featureActions.ActionTypes.UPDATE_MUSIC_PROJECT),
     switchMap(action => this.dataService.UpdateMusicProject(action.payload, action.password).pipe(
-      mergeMap(items => this.checkThePasswordMusicProjectUdpate(items)),
+      map(items => new featureActions.UpdateMusicProjectSuccess(items.musicProject)),
       catchError(error => observableOf(new featureActions.UpdateMusicProjectFail(error)))
     ))
   )
@@ -87,7 +88,7 @@ export class MusicProjectStoreEffects {
     ofType<featureActions.DeletePlaylist>(featureActions.ActionTypes.DELETE_PLAYLIST),
     switchMap(action => this.dataService.DeletePlaylist(action.id, action.password).pipe(
       map(items => new featureActions.DeletePlaylistSuccess(items.musicProject)),
-      catchError(error => observableOf(new featureActions.DeletePlaylistFail(error)))
+      catchError((response: HttpErrorResponse) => observableOf(new featureActions.DeletePlaylistFail(response.error.message)))
     ))
   )
 
@@ -95,47 +96,19 @@ export class MusicProjectStoreEffects {
   deleteMusic: Observable<ActionsMusicProject> = this.actions$.pipe(
     ofType<featureActions.DeleteMusic>(featureActions.ActionTypes.DELETE_MUSIC),
     switchMap(action => this.dataService.DeleteMusic(action.publicationID, action.musicID, action.password).pipe(
-      mergeMap(items => this.checkThePasswordMusic(items)),
-      catchError(error => observableOf(new featureActions.DeleteMusicFail(error)))
+      map(items => new featureActions.DeleteMusicSuccess(items.musicProject)),
+      catchError((response: HttpErrorResponse) => observableOf(new featureActions.DeleteMusicFail(response.error.message)))
     ))
   )
 
   @Effect()
-  deleteMusicProject: Observable<ActionsMusicProject> = this.actions$.pipe(
+  deleteMusicProject: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.deleteMusicProject>(featureActions.ActionTypes.DELETE_MUSIC_PROJECT),
     switchMap(action => this.dataService.DeleteMusicProject(action.id, action.password).pipe(
-      mergeMap(item => this.checkThePasswordMusicProject(item)),
-      catchError(error => observableOf(new featureActions.deleteMusicProjectFail(error)))
+      map((item: MusicProjectResponse) => new featureActions.deleteMusicProjectSuccess(item.musicProject._id)),
+      catchError((response: HttpErrorResponse) => observableOf(new featureActions.deleteMusicProjectFail(response.error.message)))
     ))
   )
-
-  checkThePasswordMusicProjectUdpate(items: any): ActionsMusicProject[] {
-    switch (items.message) {
-      case 'success':
-        return [new featureActions.UpdateMusicProjectSuccess(items.publication)]
-      case 'email_or_password_invalid':
-        return [new featureActions.WrongPassword(items.message)]
-    }
-  }
-
-  checkThePasswordMusicProject(items: any): ActionsMusicProject[] {
-    switch (items.message) {
-      case 'success':
-        return [new featureActions.deleteMusicProjectSuccess(items.publication._id)]
-      case 'email_or_password_invalid':
-        return [new featureActions.WrongPassword(items.message)]
-    }
-  }
-
-  checkThePasswordMusic(items: any): ActionsMusicProject[] {
-    switch (items.message) {
-      case 'success':
-        return [new featureActions.DeleteMusicSuccess(items.publication)]
-      case 'email_or_password_invalid':
-        return [new featureActions.WrongPassword(items.message)]
-    }
-  }
-
 
 }
 

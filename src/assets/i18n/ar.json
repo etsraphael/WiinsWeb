@@ -574,7 +574,8 @@
     "Account_desactivated": "تم إلغاء تنشيط الحساب",
     "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن.",
     "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي",
-    "You-cannot-add-yourself": "لا يمكنك إضافة نفسك"
+    "You-cannot-add-yourself": "لا يمكنك إضافة نفسك",
+    "T-content-does-not-exist-anymore": "هذا المحتوى غير موجود بعد الآن"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "ستقوم الإدارة بالتحقق من احتوائها في أقرب وقت ممكن",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "سيؤدي هذا إلى حذف المشروع بأكمله، هل أنت متأكد ؟",
     "T-operation-is-irreversible": "هذه العملية لا رجعة فيها",
-    "this-user-will-be-": "سيكون هذا المستخدم الآن"
+    "this-user-will-be-": "سيكون هذا المستخدم الآن",
+    "A-y-s-to-unfollow-t-profile": "هل أنت متأكد من إلغاء متابعة هذا المحترف؟"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "تحذير. تأكد من أن لديك العنوان الصحيح"

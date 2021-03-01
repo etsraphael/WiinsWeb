@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "ju duhet të jeni miq",
     "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi",
     "Date-cannot-be-in-the-past": "Data e lëshimit nuk mund të jetë në të kaluarën",
-    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten"
+    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten",
+    "T-content-does-not-exist-anymore": "Kjo përmbajtje nuk ekziston më"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Administrata do të verifikojë përmbajtjen sa më shpejt të jetë e mundur",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Kjo do të bëjë që i gjithë projekti të fshihet, jeni i sigurt?",
     "T-operation-is-irreversible": "Ky operacion është i pakthyeshëm",
-    "this-user-will-be-": "Ky përdorues tani do të jetë"
+    "this-user-will-be-": "Ky përdorues tani do të jetë",
+    "A-y-s-to-unfollow-t-profile": "A jeni i sigurt që do ta hiqni pas këtë profie?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Paralajmërim. Sigurohuni që të keni adresën e duhur"

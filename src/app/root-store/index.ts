@@ -38,5 +38,6 @@ export * from './messenger/all-rooms-store'
 export * from './view-stat-store'
 export * from './tube-menu-store'
 export * from './tube-page-store'
+export * from './modal-state-store'
 
 export { RootStoreState, RootStoreModule }

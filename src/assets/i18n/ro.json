@@ -616,7 +616,8 @@
     "Account_desactivated": "Contul este dezactivat",
     "Y-dont-have-a-conversation-yet": "Nu aveți încă o conversație.",
     "Date-cannot-be-in-the-past": "Data lansării nu poate fi trecută",
-    "You-cannot-add-yourself": "Nu te poți adăuga singur"
+    "You-cannot-add-yourself": "Nu te poți adăuga singur",
+    "T-content-does-not-exist-anymore": "Acest conținut nu mai există"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Administrația va verifica conținutul cât mai curând posibil",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Acest lucru va face ca întregul proiect să fie șters, sunteți sigur?",
     "T-operation-is-irreversible": "Această operațiune este ireversibilă",
-    "this-user-will-be-": "Acest utilizator va fi acum"
+    "this-user-will-be-": "Acest utilizator va fi acum",
+    "A-y-s-to-unfollow-t-profile": "Sunteți sigur că anulați urmărirea acestui profil?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Avertizare. Asigurați-vă că aveți adresa corectă"
