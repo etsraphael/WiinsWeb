@@ -574,7 +574,8 @@
     "Account_desactivated": "Account desactivated",
     "Y-dont-have-a-conversation-yet": "You don't have a conversation yet.",
     "Date-cannot-be-in-the-past": "The release date cannot be in the past",
-    "You-cannot-add-yourself": "You cannot add yourself"
+    "You-cannot-add-yourself": "You cannot add yourself",
+    "T-content-does-not-exist-anymore": "This content does not exist anymore"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "Administration will verify content as soon as possible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "This will cause the entire project to be deleted, are you sure ?",
     "T-operation-is-irreversible": "This operation is irreversible",
-    "this-user-will-be-": "This user will now be"
+    "this-user-will-be-": "This user will now be",
+    "A-y-s-to-unfollow-t-profile": "Are you sure to unfollow this profie ? "
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Warning. Make sure you have the right address"

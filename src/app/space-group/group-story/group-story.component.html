@@ -9,7 +9,7 @@
           <div id="loader"></div>
         </div>
       </div>
-      <div class="container mt-3 publications-space">
+      <div class="container mt-3 publications-space" *ngIf="!(loading$ | async) && (groups$|async)">
         <!-- If we have publication -->
         <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
           [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"
@@ -24,6 +24,13 @@
         <div *ngIf="(publication$ | async)?.length == 0" class="row mx-0 w-100">
           <app-card-feed-group-publication [space]="'group-story'" class="col col-sm-12 col-md-6 col-lg-6 my-1">
           </app-card-feed-group-publication>
+        </div>
+      </div>
+      <div class="container h-100" *ngIf="!(loading$ | async) && !(groups$|async)">
+        <div class="row h-100">
+          <div class="col my-auto">
+            <h2 class="text-center"><i class="bi bi-emoji-frown no-group-icon mr-3"></i>You have no groups now</h2>
+          </div>
         </div>
       </div>
     </div>

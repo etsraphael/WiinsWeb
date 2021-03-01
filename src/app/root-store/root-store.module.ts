@@ -42,6 +42,7 @@ import { TubePageStoreModule } from './tube-page-store'
 import { TubeFeedStoreModule } from './tube-feed-store'
 import { FeedPublicationStoreModule } from './feed-publication-store'
 import { FeedPublicationByIdStoreModule } from './feed-publication-by-id-store'
+import { ModalStateStoreModule } from './modal-state-store'
 
 @NgModule({
   declarations: [],
@@ -55,7 +56,7 @@ import { FeedPublicationByIdStoreModule } from './feed-publication-by-id-store'
     PageFeatureStoreModule, SettingStoreModule, NotificationsStoreModule, NotificationNumberStoreModule, 
      MyMusicLikedStoreModule, SearchProfileStoreModule, ListPlaylistMusicStoreModule, TubePageStoreModule, 
     SearchPseudoStoreModule, SearchPageStoreModule, AdminsFeatureStoreModule, GroupStoreModule, OneGroupStoreModule,
-    StoreModule.forRoot({}), EffectsModule.forRoot([]), ProfileListStoreModule,
+    StoreModule.forRoot({}), EffectsModule.forRoot([]), ProfileListStoreModule, ModalStateStoreModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }), ViewStatStoreModule,
     TubeFeedStoreModule
   ]

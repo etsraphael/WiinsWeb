@@ -616,7 +616,8 @@
     "Account_desactivated": "Reikningur óvirkur",
     "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá.",
     "Date-cannot-be-in-the-past": "Útgáfudagur getur ekki verið í fortíðinni",
-    "You-cannot-add-yourself": "Þú getur ekki bætt þér við"
+    "You-cannot-add-yourself": "Þú getur ekki bætt þér við",
+    "T-content-does-not-exist-anymore": "Þetta innihald er ekki til lengur"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Stjórnun staðfestir efni eins fljótt og auðið er",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Þetta veldur því að verkefninu öllu er eytt, ertu viss?",
     "T-operation-is-irreversible": "Þessi aðgerð er óafturkræf",
-    "this-user-will-be-": "Þessi notandi verður núna"
+    "this-user-will-be-": "Þessi notandi verður núna",
+    "A-y-s-to-unfollow-t-profile": "Ertu viss um að fylgja þessu profi eftir?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Viðvörun. Gakktu úr skugga um að þú hafir rétt heimilisfang"

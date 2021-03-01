@@ -47,6 +47,17 @@
               </div>
             </div>
           </div>
+          <div *ngSwitchCase="'NotificationTagCommentPublication'">
+            <span class="row" *ngIf="n.quantity === 1">
+              <p><strong>{{n.profile._meta.pseudo}} </strong>{{'NOTIFICATIONS.tag-you-in-comment'|translate}}</p>
+            </span>
+            <div class="row date">
+              <div class="mr-auto ml-3">
+                <i class="fa fa-heart mr-2"></i>
+                <span>{{translateService.getDateTranslated(n.createdAt)}}</span>
+              </div>
+            </div>
+          </div>
           <div *ngSwitchCase="'NotificationTagCommentPlaylist'">
             <span class="row" *ngIf="n.quantity === 1">
               <p><strong>{{n.profile._meta.pseudo}}</strong> {{'NOTIFICATIONS.tag-you-in-playlist'|translate}}</p>

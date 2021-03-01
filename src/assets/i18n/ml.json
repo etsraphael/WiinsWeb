@@ -616,7 +616,8 @@
     "Account_desactivated": "അക്കൗണ്ട് നിർജ്ജീവമാക്കി",
     "Y-dont-have-a-conversation-yet": "നിങ്ങൾക്ക് ഇതുവരെ ഒരു സംഭാഷണവുമില്ല.",
     "Date-cannot-be-in-the-past": "റിലീസ് തീയതി പഴയതായിരിക്കരുത്",
-    "You-cannot-add-yourself": "നിങ്ങൾക്ക് സ്വയം ചേർക്കാൻ കഴിയില്ല"
+    "You-cannot-add-yourself": "നിങ്ങൾക്ക് സ്വയം ചേർക്കാൻ കഴിയില്ല",
+    "T-content-does-not-exist-anymore": "ഈ ഉള്ളടക്കം ഇപ്പോൾ നിലവിലില്ല"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ഫോട്ടോ ലഭിച്ചു",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "അഡ്മിനിസ്ട്രേഷൻ എത്രയും വേഗം ഉള്ളടക്കം പരിശോധിക്കും",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "ഇത് മുഴുവൻ പ്രോജക്റ്റും ഇല്ലാതാക്കാൻ ഇടയാക്കും, നിങ്ങൾക്ക് ഉറപ്പാണോ?",
     "T-operation-is-irreversible": "ഈ പ്രവർത്തനം മാറ്റാനാവില്ല",
-    "this-user-will-be-": "ഈ ഉപയോക്താവ് ഇപ്പോൾ ആയിരിക്കും"
+    "this-user-will-be-": "ഈ ഉപയോക്താവ് ഇപ്പോൾ ആയിരിക്കും",
+    "A-y-s-to-unfollow-t-profile": "ഈ പ്രൊഫൈൽ പിന്തുടരുമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "മുന്നറിയിപ്പ്. നിങ്ങൾക്ക് ശരിയായ വിലാസമുണ്ടെന്ന് ഉറപ്പാക്കുക"

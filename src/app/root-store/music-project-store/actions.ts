@@ -39,7 +39,6 @@ export enum ActionTypes {
   UPDATE_MUSIC_LIKE = '@updateLikeInProfile/music',
   UPDATE_MUSIC_DISLIKE = '@updateDisLikeInProfile/music',
 
-  WRONG_PASSWORD = '@music_not_delete/wrong_password',
   RESET_MUSIC_PROJECTS = '@music_project/reset',
 
 }
@@ -61,13 +60,7 @@ export class deleteMusicProjectSuccess implements Action {
 
 export class deleteMusicProjectFail implements Action {
   readonly type = ActionTypes.DELETE_MUSIC_PROJECT_FAIL
-  constructor(public payload: any) { }
-}
-
-
-export class WrongPassword implements Action {
-  readonly type = ActionTypes.WRONG_PASSWORD
-  constructor(public message: string) { }
+  constructor(public payload: string) { }
 }
 
 export class AddMusicProject implements Action {
@@ -156,7 +149,7 @@ export class DeleteMusicSuccess implements Action {
 
 export class DeleteMusicFail implements Action {
   readonly type = ActionTypes.DELETE_MUSIC_FAIL
-  constructor(public message: string) { }
+  constructor(public payload: string) { }
 }
 
 export class DeletePlaylist implements Action {
@@ -171,7 +164,7 @@ export class DeletePlaylistSuccess implements Action {
 
 export class DeletePlaylistFail implements Action {
   readonly type = ActionTypes.DELETE_PLAYLIST_FAIL
-  constructor(public message: string) { }
+  constructor(public payload: string) { }
 }
 
 export class UpdateMusicLike implements Action {
@@ -208,7 +201,6 @@ export type ActionsMusicProject =
   | DeletePlaylistFail
   | UpdateMusicLike
   | UpdateMusicDisLike
-  | WrongPassword
   | deleteMusicProject
   | deleteMusicProjectSuccess
   | deleteMusicProjectFail

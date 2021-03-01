@@ -574,7 +574,8 @@
     "Account_desactivated": "অ্যাকাউন্ট নিষ্ক্রিয়",
     "Y-dont-have-a-conversation-yet": "আপনার এখনও কোনও কথোপকথন নেই।",
     "Date-cannot-be-in-the-past": "মুক্তির তারিখ অতীতে হতে পারে না",
-    "You-cannot-add-yourself": "আপনি নিজেকে যুক্ত করতে পারবেন না"
+    "You-cannot-add-yourself": "আপনি নিজেকে যুক্ত করতে পারবেন না",
+    "T-content-does-not-exist-anymore": "এই বিষয়বস্তুর আর অস্তিত্ব নেই"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "প্রশাসন যত তাড়াতাড়ি সম্ভব যাচাই করা হবে",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "এর ফলে পুরো প্রকল্পটি মুছে ফেলা হবে, আপনি কি নিশ্চিত?",
     "T-operation-is-irreversible": "এই অপারেশনটি অপরিবর্তনীয়",
-    "this-user-will-be-": "এই ব্যবহারকারী এখন হবে"
+    "this-user-will-be-": "এই ব্যবহারকারী এখন হবে",
+    "A-y-s-to-unfollow-t-profile": "আপনি কি এই প্রচারটি অনুসরণ করার বিষয়ে নিশ্চিত?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "সতর্কবাণী। আপনার সঠিক ঠিকানা আছে তা নিশ্চিত করুন"

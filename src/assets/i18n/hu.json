@@ -616,7 +616,8 @@
     "y-have-to-be-friend": "biztosan barátok vagytok",
     "you-hav-to-upgrad-a-manager-before-leave": "A csoportból való kilépés előtt előléptetnie kell egy vezetőt",
     "Date-cannot-be-in-the-past": "A megjelenés dátuma nem lehet múltbeli",
-    "You-cannot-add-yourself": "Nem adhatja hozzá magát"
+    "You-cannot-add-yourself": "Nem adhatja hozzá magát",
+    "T-content-does-not-exist-anymore": "Ez a tartalom már nem létezik"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A fénykép beérkezett",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "Az adminisztráció a lehető leghamarabb ellenőrzi a tartalmat",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ez a teljes projekt törlését okozza, biztos benne?",
     "T-operation-is-irreversible": "Ez a művelet visszafordíthatatlan",
-    "this-user-will-be-": "Ez a felhasználó mostantól az lesz"
+    "this-user-will-be-": "Ez a felhasználó mostantól az lesz",
+    "A-y-s-to-unfollow-t-profile": "Biztos, hogy nem követi ezt a profit?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Figyelem. Győződjön meg arról, hogy a megfelelő címet adta meg"

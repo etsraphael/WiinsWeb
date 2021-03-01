@@ -574,7 +574,8 @@
     "Account_desactivated": "Konto deaktiviert",
     "Y-dont-have-a-conversation-yet": "Du hast noch kein Gespräch.",
     "Date-cannot-be-in-the-past": "Das Veröffentlichungsdatum kann nicht in der Vergangenheit liegen",
-    "You-cannot-add-yourself": "Sie können sich nicht hinzufügen"
+    "You-cannot-add-yourself": "Sie können sich nicht hinzufügen",
+    "T-content-does-not-exist-anymore": "Dieser Inhalt existiert nicht mehr"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "Verwaltung wird überprüfen, sind so schnell wie möglich enthalten",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dadurch wird das gesamte Projekt gelöscht, sind Sie sicher?",
     "T-operation-is-irreversible": "Dieser Vorgang ist irreversibel",
-    "this-user-will-be-": "Dieser Benutzer wird nun"
+    "this-user-will-be-": "Dieser Benutzer wird nun",
+    "A-y-s-to-unfollow-t-profile": "Sind Sie sicher, diesem Profie zu folgen?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Warnung. Stellen Sie sicher, dass Sie die richtige Adresse haben"

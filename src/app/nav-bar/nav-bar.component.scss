@@ -105,6 +105,18 @@ nav {
 
 /* list */
 
+.pageName {
+  p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+}
+
+.onePage {
+  cursor: pointer;
+}
+
 .avatar {
 
   .my-avatar {
@@ -114,17 +126,7 @@ nav {
     object-fit: cover;
     box-shadow: none;
   }
-
-  .pageName {
-    p {
-      flex: 0 1 auto;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  }
-
+  
   .page-avatar {
     width: 35px;
     height: 35px;
@@ -241,4 +243,8 @@ nav {
 
 .bi {
   color: #5e5e5e
+}
+
+.dropdown {
+  cursor: pointer;
 }

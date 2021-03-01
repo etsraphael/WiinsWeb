@@ -574,7 +574,8 @@
     "Account_desactivated": "खाता निरस्त",
     "Y-dont-have-a-conversation-yet": "आपके पास अभी तक कोई वार्तालाप नहीं है।",
     "Date-cannot-be-in-the-past": "रिलीज की तारीख अतीत में नहीं हो सकती",
-    "You-cannot-add-yourself": "आप खुद को नहीं जोड़ सकते"
+    "You-cannot-add-yourself": "आप खुद को नहीं जोड़ सकते",
+    "T-content-does-not-exist-anymore": "यह सामग्री अब मौजूद नहीं है"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "प्रशासन सत्यापित करेगा जितनी जल्दी हो सके समाहित कर रहे है",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "यह पूरी परियोजना को हटा दिया जा करने के लिए कारण होगा, क्या आपको यकीन है?",
     "T-operation-is-irreversible": "यह ऑपरेशन अपरिवर्तनीय है",
-    "this-user-will-be-": "यह उपयोगकर्ता अब होगा"
+    "this-user-will-be-": "यह उपयोगकर्ता अब होगा",
+    "A-y-s-to-unfollow-t-profile": "क्या आप इस मुनाफाखोरी को कम करना चाहते हैं?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "चेतावनी. सुनिश्चित करें कि आपके पास सही पता है"

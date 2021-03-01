@@ -574,7 +574,8 @@
     "Account_desactivated": "アカウントが非アクティブ化されました",
     "Y-dont-have-a-conversation-yet": "まだ会話はありません。",
     "Date-cannot-be-in-the-past": "リリース日は過去にすることはできません",
-    "You-cannot-add-yourself": "自分を追加することはできません"
+    "You-cannot-add-yourself": "自分を追加することはできません",
+    "T-content-does-not-exist-anymore": "このコンテンツはもう存在しません"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -981,7 +982,8 @@
     "T-administration-w-verify-t-content-asap": "管理は、できるだけ早く含まれていることを確認します",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "これにより、プロジェクト全体が削除されます。",
     "T-operation-is-irreversible": "この操作は元に戻せません",
-    "this-user-will-be-": "このユーザーは現在"
+    "this-user-will-be-": "このユーザーは現在",
+    "A-y-s-to-unfollow-t-profile": "このprofieのフォローを解除してもよろしいですか？"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "警告。正しいアドレスを持っていることを確認する"

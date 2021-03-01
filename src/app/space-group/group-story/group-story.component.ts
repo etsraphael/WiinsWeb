@@ -1,10 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import { Store, select } from '@ngrx/store'
-import { RootStoreState, FeedPublicationStoreActions, FeedPublicationStoreSelectors } from 'src/app/root-store'
+import { RootStoreState, FeedPublicationStoreActions, FeedPublicationStoreSelectors, GroupFeatureStoreSelectors } from 'src/app/root-store'
 import { Observable } from 'rxjs'
 import { FeedPublication } from 'src/app/core/models/publication/feed/feed-publication.model'
 import { filter, skipWhile, take } from 'rxjs/operators'
 import { NgxMasonryOptions } from 'ngx-masonry'
+import { GroupModel } from 'src/app/core/models/group/group.model'
 
 @Component({
   selector: 'app-group-story',
@@ -28,6 +29,9 @@ export class GroupStoryComponent implements OnInit, OnDestroy {
   // showPage
   counterPage = 1
 
+  // groups
+  groups$: Observable<GroupModel[]>
+
   constructor(private store$: Store<RootStoreState.State>) { }
 
   ngOnInit() {
@@ -47,6 +51,14 @@ export class GroupStoryComponent implements OnInit, OnDestroy {
       filter(value => value !== undefined),
       skipWhile(val => val == null)
     )
+
+    // to select all the groups list
+    this.groups$ = this.store$.pipe(
+      select(GroupFeatureStoreSelectors.selectAllGroupStoryItems),
+      skipWhile(val => val.length == 0),
+      filter(value => value !== undefined),
+    )
+
 
   }
 

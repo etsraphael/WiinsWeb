@@ -616,7 +616,8 @@
     "Account_desactivated": "គណនីអសកម្ម",
     "Y-dont-have-a-conversation-yet": "អ្នកមិនទាន់មានការសន្ទនានៅឡើយទេ។",
     "Date-cannot-be-in-the-past": "កាលបរិច្ឆេទនៃការចេញផ្សាយមិនអាចជាអតីតកាលទេ",
-    "You-cannot-add-yourself": "អ្នកមិនអាចបន្ថែមខ្លួនឯងបានទេ"
+    "You-cannot-add-yourself": "អ្នកមិនអាចបន្ថែមខ្លួនឯងបានទេ",
+    "T-content-does-not-exist-anymore": "មាតិកានេះមិនមានទៀតទេ"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "រូបថតត្រូវបានទទួល",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "រដ្ឋបាលនឹងផ្ទៀងផ្ទាត់មាតិកាឱ្យបានឆាប់តាមដែលអាចធ្វើទៅបាន",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "វានឹងធ្វើឱ្យគម្រោងទាំងមូលត្រូវបានលុបតើអ្នកប្រាកដទេ?",
     "T-operation-is-irreversible": "ប្រតិបត្តិការនេះគឺមិនអាចត្រឡប់វិញបានទេ",
-    "this-user-will-be-": "អ្នកប្រើនេះនឹងនៅពេលនេះ"
+    "this-user-will-be-": "អ្នកប្រើនេះនឹងនៅពេលនេះ",
+    "A-y-s-to-unfollow-t-profile": "តើអ្នកប្រាកដជាមិនយកគំរូតាមនេះទេ?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "ការព្រមាន។ ត្រូវប្រាកដថាអ្នកមានអាសយដ្ឋានត្រឹមត្រូវ"

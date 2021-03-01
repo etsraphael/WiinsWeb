@@ -616,7 +616,8 @@
     "Account_desactivated": "खाता निष्क्रिय गरियो",
     "Y-dont-have-a-conversation-yet": "तपाईंसँग अहिलेसम्म कुराकानी छैन।",
     "Date-cannot-be-in-the-past": "विमोचन मिति विगतमा हुन सक्दैन",
-    "You-cannot-add-yourself": "तपाईं आफैलाई थप्न सक्नुहुन्न"
+    "You-cannot-add-yourself": "तपाईं आफैलाई थप्न सक्नुहुन्न",
+    "T-content-does-not-exist-anymore": "यो सामग्री अब अवस्थित छैन"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त भयो",
@@ -1038,7 +1039,8 @@
     "T-administration-w-verify-t-content-asap": "प्रशासनले सकेसम्म चाँडो सामग्री प्रमाणित गर्नेछ",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "यसले सम्पूर्ण परियोजना मेटिने बनाउँदछ, के तपाइँ निश्चित हुनुहुन्छ?",
     "T-operation-is-irreversible": "यो अपरेसन अपरिवर्तनीय छ",
-    "this-user-will-be-": "यो प्रयोगकर्ता अब हुनेछ"
+    "this-user-will-be-": "यो प्रयोगकर्ता अब हुनेछ",
+    "A-y-s-to-unfollow-t-profile": "के तपाई पक्का यो प्रोफाइ अनपलो गर्न निश्चित हुनुहुन्छ?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "चेतावनी। निश्चित गर्नुहोस् कि तपाईंसँग सही ठेगाना छ"
