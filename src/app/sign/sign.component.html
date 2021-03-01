@@ -1,10 +1,10 @@
 <!-- Body Component -->
-<div class="w-100 h-100 body">
+<div class="w-100 h-100">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
       <!-- Left Side -->
-      <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block animation-background-signin">
+      <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block">
         <div class="container">
           <div class="col-9 mx-auto">
             <img class="w-100" src="./../../assets/img/wiinslogo.png" alt="">
@@ -29,10 +29,10 @@
         </div>
       </div>
       <!-- Right Side -->
-      <div class="col-md-7 bg-sign background-right">
+      <div class="col-md-7 bg-sign">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Setting -->
-          <div class="row my-3 setting-top-signin mx-0 header-bar-setting">
+          <div class="row my-3 mx-0 header-bar-setting">
             <div class="ml-auto">
               <mat-form-field class="btn p-0">
                 <mat-select [(value)]="selectedLang">
@@ -41,7 +41,7 @@
                   </mat-option>
                 </mat-select>
               </mat-form-field>
-              <a [routerLink]="['/term-of-use']" class="mx-2 term-of-use-top-signin">
+              <a [routerLink]="['/term-of-use']" class="mx-2">
                 <span>{{'CORE.Term-of-use'|translate}}</span>
               </a>
             </div>
@@ -49,7 +49,7 @@
           <!-- Router Container -->
           <div class="container">
             <div class="row h-100">
-              <div class="col col-sm-10 mx-auto mt-md-8 login-register-box">
+              <div class="col col-sm-10 mx-auto mt-md-8">
                 <router-outlet></router-outlet>
               </div>
             </div>
