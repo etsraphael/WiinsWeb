@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "Vers un espace infini",
     "Hello": "Bonjour",
     "Publication": "Publication",
-    "Download": "Télécharger",
-    "Downloaded": "Téléchargé",
-    "Save-in-phone": "Enregistrer dans le téléphone",
-    "Share": "Partager",
-    "Url-Copied": "URL copiée"
+    "Chat": "Conversation"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -572,10 +568,7 @@
     "T-min-is-1$": "Le minimum est de 1 $",
     "Missing-informations": "Informations manquantes",
     "Account_desactivated": "Compte désactivé",
-    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation.",
-    "Date-cannot-be-in-the-past": "La date de sortie ne peut pas être dans le passé",
-    "You-cannot-add-yourself": "Vous ne pouvez pas vous ajouter",
-    "T-content-does-not-exist-anymore": "Ce contenu n'existe plus"
+    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation."
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -875,7 +868,7 @@
       "Yr-profil-is-currently-being-checked-D": "Votre profil est en cours de vérification. Nous vous contacterons sous 48h par email.",
       "Verification": "Vérification",
       "Pl-s-t-docs-a-complet-t-form-below": "Veuillez envoyer les documents nécessaires et remplir le formulaire ci-dessous.",
-      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre mot de passe, votre identifiant ou votre permis de conduire.",
+      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre passeport, votre identifiant ou votre permis de conduire.",
       "Upload-a-photo-holding-t-ID-D": "Téléchargez une photo contenant la pièce d'identité avec une feuille de papier avec la date du jour et l'inscription \"Wiins\" dessus.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Assurez-vous de télécharger le verso de la carte s'il s'agit d'une carte d'identité nationale (uniquement pour la carte nationale)"
@@ -982,8 +975,7 @@
     "T-administration-w-verify-t-content-asap": "L'administration vérifira sont contenue dès que possible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Cela entrainera la suppression entier du projet, êtes vous sûre ?",
     "T-operation-is-irreversible": "Cette opération est irréversible",
-    "this-user-will-be-": "Cette utilisateur sera désormais ",
-    "A-y-s-to-unfollow-t-profile": "Êtes-vous sûr de ne plus suivre ce profil?"
+    "this-user-will-be-": "Cette utilisateur sera désormais "
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Attention. Assurez vous d'avoir la bonne adresse"
@@ -1352,11 +1344,7 @@
       "World-fusion": "Fusion mondiale",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht rock",
-      "Others": "Autres",
-      "Flamenco": "Flamenco",
-      "Rock": "Roche",
-      "Reggae": "Reggae",
-      "Country": "Pays"
+      "Others": "Autres"
     }
   },
   "WIINS-TUBE": {
