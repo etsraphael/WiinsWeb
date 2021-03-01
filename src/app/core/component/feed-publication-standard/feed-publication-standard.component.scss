@@ -1,5 +1,7 @@
 .clickModal, .cursor-pointer {
   cursor: pointer;
+  max-height: 25rem;
+  object-fit: cover;
 }
 
 .btn-like,

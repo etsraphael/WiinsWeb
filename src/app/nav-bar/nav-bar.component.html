@@ -134,7 +134,6 @@
               <div id="collapseExample" [ngbCollapse]="!isCollapsed">
                 <div ngbDropdownToggle class="onePage py-2 dropdown-item px-0" *ngFor="let page of p.adminsPage"
                   (click)="goToPage(page._id); isCollapsed = !isCollapsed">
-
                   <div class="row mx-0">
                     <div class="col-4">
                       <img class="rounded-circle page-avatar w-100" [src]="page.pictureprofile" alt="avatar">
@@ -144,8 +143,7 @@
                         <p class="mb-0 text-primary">{{page.name}}</p>
                       </span>
                     </div>
-                  </div>
-                  
+                  </div>     
                 </div>
               </div>
               <div class="dropdown-divider m-0"></div>
@@ -239,9 +237,8 @@
         </div>
       </div>
     </div>
+    
   </div>
-
-
 
 </nav>
 

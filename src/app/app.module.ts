@@ -127,6 +127,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MyProfileBodyComponent } from './profile/my-profile-body/my-profile-body.component';
 import { ProfileBodyComponent } from './profile/profile-body/profile-body.component';
 import { CreditMusicComponent } from './core/modal/credit-music/credit-music.component'
+import * as Sentry from '@sentry/angular'
+import { Router } from '@angular/router'
+import { APP_INITIALIZER, ErrorHandler } from "@angular/core";
+import { GlobalErrorHandler } from './core/interceptors/globalErrorHandler.interceptor'
+
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -167,7 +172,24 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TranslateModule.forRoot({ loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] } }),
     DeviceDetectorModule.forRoot()
   ],
-  providers: [DatePipe, NgxImageCompressService],
+  providers: [
+    DatePipe,
+    NgxImageCompressService,
+    {
+      provide: ErrorHandler, 
+      useClass: GlobalErrorHandler
+    },
+    {
+      provide: Sentry.TraceService,
+      deps: [Router],
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {},
+      deps: [Sentry.TraceService],
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     PublicationModalComponent, ContentIdComponent, ValidationsComponent, PasswordValidationsComponent, CardChatComponent,

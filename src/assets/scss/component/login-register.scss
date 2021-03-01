@@ -73,7 +73,7 @@
   .mat-select-value {
     text-align: end;
     padding-right: 1rem;
-    color: #5e71e4;
+    color: rgb(0, 0, 0);
   }
 
   .mat-form-field {
@@ -136,8 +136,8 @@
 
 .card-footer {
   position: absolute;
-  bottom: 2rem;
-  left: 9%;
+  bottom: 1rem;
+  left: 3%;
   background-color: white;
   will-change: transform;
   -webkit-animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;

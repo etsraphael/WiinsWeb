@@ -29,6 +29,8 @@
     "@ngrx/store-devtools": "^8.6.1",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
+    "@sentry/angular": "^6.2.0",
+    "@sentry/tracing": "^6.2.0",
     "angular-svg-round-progressbar": "^5.0.2",
     "angularx-qrcode": "^2.3.5",
     "axios": "^0.21.1",
