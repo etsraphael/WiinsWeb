@@ -61,6 +61,8 @@ export class AppComponent implements OnInit {
 
   setLangage() {
 
+    console.log(navigator.language)
+
     // to select the language config if the user is connected
     this.user$.pipe(take(1)).subscribe(action => this.translate.setDefaultLang(action.config.language))
 

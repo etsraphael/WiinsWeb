@@ -135,7 +135,7 @@ import { GlobalErrorHandler } from './core/interceptors/globalErrorHandler.inter
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient)
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json')
 }
 
 @NgModule({
@@ -169,8 +169,15 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
     MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
     InfiniteScrollModule, RoundProgressModule, DragDropModule, ImageCropperModule, QRCodeModule,
-    TranslateModule.forRoot({ loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] } }),
-    DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot(),
+    TranslateModule.forRoot({ 
+      loader: { 
+        provide: TranslateLoader,
+         useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+         } 
+    }),
+
   ],
   providers: [
     DatePipe,
