@@ -1,7 +1,7 @@
 {
   "name": "wiins-web",
   "version": "0.0.0",
-  "main": "main.js", 
+  "main": "main.ts", 
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
