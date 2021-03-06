@@ -3,19 +3,6 @@
   font-size: 4rem;
 }
 
-.card-footer {
-  position: absolute;
-  bottom: 2rem;
-  left: 9%;
-  background-color: white;
-  will-change: transform;
-  -webkit-animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
-  animation: loop__float--fixed 3.5s cubic-bezier(.445, .05, .55, .95) infinite;
-  -webkit-filter: drop-shadow(0 5px 30px rgba(8, 17, 37, .15));
-  border-radius: 15px;
-  overflow: hidden;
-}
-
 @keyframes loop__float--fixed {
   0% {
     transform: translateZ(0);

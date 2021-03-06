@@ -7,12 +7,22 @@
 }
 .body {
   overflow: hidden;
+  zoom: 90%;
+}
+
+.container-donation {
+  display: inline-block;
 }
 
 .sub-title {
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.wiins-logo {
+  position: absolute;
+  top: -15px;
 }
 
 .animation-background-signin {
@@ -90,6 +100,11 @@
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   top: -50px;
+  transition: 0.5s;
+}
+
+.login-register-box:hover {
+  transform: translateY(-10px);
 }
 
 .background-right {
