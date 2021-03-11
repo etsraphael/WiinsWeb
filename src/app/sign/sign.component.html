@@ -1,5 +1,5 @@
 <!-- Body Component -->
-<div class="w-100 h-100 body">
+<div class="w-100 h-100">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <!-- Right Side -->
-      <div class="col-md-7 bg-sign background-right">
+      <div class="col-md-7 bg-sign">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Setting -->
           <div container>
@@ -43,7 +43,7 @@
                   </mat-option>
                 </mat-select>
               </mat-form-field>
-              <a [routerLink]="['/term-of-use']" class="mx-2 term-of-use-top-signin">
+              <a [routerLink]="['/term-of-use']" class="mx-2">
                 <span>{{'CORE.Term-of-use'|translate}}</span>
               </a>
             </div>

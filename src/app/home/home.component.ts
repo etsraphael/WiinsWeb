@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     // to get the user
     this.user$ = this.store$.pipe(
       select(MyUserStoreSelectors.select),
-      skipWhile((val: UserModel) => val === null),
-      filter((value: UserModel) => value !== undefined),
+      skipWhile((val: UserModel) => val == null),
+      filter((value: UserModel) => !!value),
     )
 
     // check if the user is active

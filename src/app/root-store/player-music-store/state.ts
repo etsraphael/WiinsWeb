@@ -1,6 +1,6 @@
 import { Music } from 'src/app/core/models/publication/music/music.model';
 export interface State {
-  musicIsPlaying: Music;
+  musicIsPlaying?: Music;
   musicList: Music[];
   musicPlaying: boolean;
   isLoading?: boolean;
