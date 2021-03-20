@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Ku nieskończonej przestrzeni",
     "Hello": "dzień dobry",
     "Publication": "Publikacja",
-    "Share": "Dzielić",
-    "Url-Copied": "Adres URL został skopiowany",
-    "Download": "Ściągnij",
-    "Downloaded": "Pobrano",
-    "Save-in-phone": "Zapisz w telefonie"
+    "Chat": "Czat"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -615,9 +611,7 @@
     "Missing-informations": "Brak informacji",
     "Account_desactivated": "Konto zostało dezaktywowane",
     "Y-dont-have-a-conversation-yet": "Nie masz jeszcze rozmowy.",
-    "Date-cannot-be-in-the-past": "Data premiery nie może przypadać w przeszłości",
-    "You-cannot-add-yourself": "Nie możesz dodać siebie",
-    "T-content-does-not-exist-anymore": "Ta treść już nie istnieje"
+    "Password-not-identical": "Hasła nie są identyczne"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",
@@ -646,7 +640,7 @@
     "Register": "Zarejestrować",
     "Registration": "Rejestracja",
     "Sign-up": "Zapisz się",
-    "accept-tou": "Akceptuję regulamin",
+    "accept-tou": "zaświadczam, że mam 16 lat lub więcej i zgadzam się na umowę o ochronie danych i politykę prywatności",
     "click-on-email": "Kliknij łącze e-mail",
     "Create-yr-account": "Utwórz swoje konto",
     "Creating-yr-account": "Tworzenie Twojego konta",
@@ -730,14 +724,14 @@
     "Your-Email": "Twój email",
     "Your-Password": "Twoje hasło",
     "Your-Pseudo": "Twoja nazwa użytkownika",
-    "Your-message": "Twoja wiadomość"
+    "Your-message": "Twoja wiadomość",
+    "Confirm-your-password": "Potwierdź swoje hasło"
   },
   "PLEASE": {
     "Password": "Wprowadź hasło"
   },
   "PROFILE": {
     "About-me": "O mnie",
-    "BirthDate": "Data urodzenia",
     "Email": "E-mail",
     "Followers-And-Friends": "Obserwatorzy i przyjaciele",
     "Musics": "Muzyka",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Użytkownicy na tej liście nie będą mogli zobaczyć Twojego profilu.",
       "btn-followers": "Udostępnij przycisk „obserwuj”",
       "btn-friend": "Udostępnij przycisk zaproszenia do znajomych",
-      "h-can-b-yr-description": "Możesz umieścić opis"
+      "h-can-b-yr-description": "Możesz umieścić opis",
+      "theme": "Tematu",
+      "theme-description": "Wybierz motyw",
+      "theme-select": "Wybieranie motywu"
     },
     "verified": {
       "Already-certified": "Już certyfikowany",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administracja jak najszybciej zweryfikuje zawartość",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Spowoduje to usunięcie całego projektu, czy na pewno?",
     "T-operation-is-irreversible": "Ta operacja jest nieodwracalna",
-    "this-user-will-be-": "Ten użytkownik będzie teraz",
-    "A-y-s-to-unfollow-t-profile": "Czy na pewno chcesz przestać obserwować ten profil?"
+    "this-user-will-be-": "Ten użytkownik będzie teraz"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Ostrzeżenie. Upewnij się, że masz właściwy adres"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Światowa fuzja",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Rock na jachcie",
-      "Others": "Inni",
-      "Flamenco": "Flamenco",
-      "Rock": "Skała",
-      "Reggae": "Reggae",
-      "Country": "Kraj"
+      "Others": "Inni"
     }
   },
   "WIINS-TUBE": {

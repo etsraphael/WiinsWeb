@@ -253,11 +253,7 @@
     "responses": "відповіді",
     "soon": "найближчим часом",
     "views": "погляди",
-    "Share": "Поділитися",
-    "Url-Copied": "URL-адресу скопійовано",
-    "Download": "Завантажити",
-    "Downloaded": "Завантажено",
-    "Save-in-phone": "Зберегти в телефоні"
+    "Chat": "Чат"
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Ви повинні видалити свої сторінки або групи раніше",
     "y-have-to-be-friend": "ви повинні бути друзями",
     "you-hav-to-upgrad-a-manager-before-leave": "Ви повинні просувати менеджера перед тим, як вийти з групи",
-    "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою",
-    "You-cannot-add-yourself": "Ви не можете додати себе",
-    "T-content-does-not-exist-anymore": "Цей вміст уже не існує"
+    "Password-not-identical": "Паролі не ідентичні"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографія отримана",
@@ -650,7 +644,7 @@
     "Register": "Зареєструйтесь",
     "Registration": "Реєстрація",
     "Sign-up": "Зареєструйтесь",
-    "accept-tou": "Я приймаю умови використання",
+    "accept-tou": "Я підтверджую, що я 16 років і старше, і я згоден з угодою користувача та політикою конфіденційності",
     "click-on-email": "Клацніть на посилання електронної пошти"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Твій емейл",
     "Your-Password": "Ваш пароль",
     "Your-Pseudo": "Ваше ім'я користувача",
-    "Your-message": "Твоє повідомлення"
+    "Your-message": "Твоє повідомлення",
+    "Confirm-your-password": "Підтвердження пароля"
   },
   "PLEASE": {
     "Password": "Введіть свій пароль"
   },
   "PROFILE": {
     "About-me": "Про мене",
-    "BirthDate": "Дата народження",
     "Email": "Електронна пошта",
     "Followers-And-Friends": "Послідовники та друзі",
     "Musics": "Музика",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Користувачі цього списку не зможуть побачити ваш профіль.",
       "btn-followers": "Зробіть доступною кнопку \"стежити\"",
       "btn-friend": "Зробіть доступною кнопку запиту друзів",
-      "h-can-b-yr-description": "Можна помістити опис"
+      "h-can-b-yr-description": "Можна помістити опис",
+      "theme": "Тема",
+      "theme-description": "Будь ласка, оберіть тему",
+      "theme-select": "Виберіть тему"
     },
     "verified": {
       "Already-certified": "Вже сертифіковано",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Адміністрація перевірить вміст якомога швидше",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Це призведе до видалення всього проекту, ви впевнені?",
     "T-operation-is-irreversible": "Ця операція незворотна",
-    "this-user-will-be-": "Цей користувач тепер буде",
-    "A-y-s-to-unfollow-t-profile": "Ви обов’язково скасуєте підписку на цей профіль?"
+    "this-user-will-be-": "Цей користувач тепер буде"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Увага. Переконайтесь, що у вас є правильна адреса"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Світовий синтез",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Яхтна скеля",
-      "Others": "Інші",
-      "Flamenco": "Фламенко",
-      "Rock": "Рок",
-      "Reggae": "Реггі",
-      "Country": "Країна"
+      "Others": "Інші"
     }
   },
   "WIINS-TUBE": {

@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Spre un spațiu infinit",
     "Hello": "Salut",
     "Publication": "Publicare",
-    "Share": "Acțiune",
-    "Url-Copied": "Adresa URL a fost copiată",
-    "Download": "Descarca",
-    "Downloaded": "Descărcat",
-    "Save-in-phone": "Salvați în telefon"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "Missing-informations": "Informații lipsă",
     "Account_desactivated": "Contul este dezactivat",
     "Y-dont-have-a-conversation-yet": "Nu aveți încă o conversație.",
-    "Date-cannot-be-in-the-past": "Data lansării nu poate fi trecută",
-    "You-cannot-add-yourself": "Nu te poți adăuga singur",
-    "T-content-does-not-exist-anymore": "Acest conținut nu mai există"
+    "Password-not-identical": "Parolele nu sunt identice"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",
@@ -646,7 +640,7 @@
     "Register": "Inregistreaza-te",
     "Registration": "Înregistrare",
     "Sign-up": "Inscrie-te",
-    "accept-tou": "Accept termenii și condițiile de utilizare",
+    "accept-tou": "Certific că am 16 ani sau mai mult și sunt de acord cu acordul utilizatorului și politica de confidențialitate",
     "click-on-email": "Vă rugăm să faceți clic pe linkul de e-mail",
     "Create-yr-account": "Creeaza-ti contul",
     "Creating-yr-account": "Crearea contului dvs.",
@@ -730,14 +724,14 @@
     "Your-Email": "Email-ul tau",
     "Your-Password": "Parola Dvs",
     "Your-Pseudo": "Nume de utilizator",
-    "Your-message": "Mesajul tau"
+    "Your-message": "Mesajul tau",
+    "Confirm-your-password": "Confirmarea parolei"
   },
   "PLEASE": {
     "Password": "Va rugam sa introduceti parola"
   },
   "PROFILE": {
     "About-me": "Despre mine",
-    "BirthDate": "Data de nastere",
     "Email": "E-mail",
     "Followers-And-Friends": "Urmăritori și prieteni",
     "Musics": "Muzică",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Utilizatorii din această listă nu vă vor putea vedea profilul.",
       "btn-followers": "Faceți disponibil butonul „urmați”",
       "btn-friend": "Faceți disponibil butonul de solicitare a prietenilor",
-      "h-can-b-yr-description": "Puteți pune o descriere"
+      "h-can-b-yr-description": "Puteți pune o descriere",
+      "theme": "Tema",
+      "theme-description": "Alegeți o temă",
+      "theme-select": "Selectarea unei teme"
     },
     "verified": {
       "Already-certified": "Deja certificat",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administrația va verifica conținutul cât mai curând posibil",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Acest lucru va face ca întregul proiect să fie șters, sunteți sigur?",
     "T-operation-is-irreversible": "Această operațiune este ireversibilă",
-    "this-user-will-be-": "Acest utilizator va fi acum",
-    "A-y-s-to-unfollow-t-profile": "Sunteți sigur că anulați urmărirea acestui profil?"
+    "this-user-will-be-": "Acest utilizator va fi acum"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Avertizare. Asigurați-vă că aveți adresa corectă"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Fuziune mondială",
       "Worldbeat": "Bătăile lumii",
       "Yacht-rock": "Yacht rock",
-      "Others": "Alții",
-      "Flamenco": "Flamenco",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Țară"
+      "Others": "Alții"
     }
   },
   "WIINS-TUBE": {

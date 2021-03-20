@@ -253,11 +253,7 @@
     "responses": "válaszokat",
     "soon": "hamar",
     "views": "nézetek",
-    "Share": "Ossza meg",
-    "Url-Copied": "URL másolva",
-    "Download": "Letöltés",
-    "Downloaded": "Letöltött",
-    "Save-in-phone": "Mentse a telefonba"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Előtte törölnie kell oldalait vagy csoportjait",
     "y-have-to-be-friend": "biztosan barátok vagytok",
     "you-hav-to-upgrad-a-manager-before-leave": "A csoportból való kilépés előtt előléptetnie kell egy vezetőt",
-    "Date-cannot-be-in-the-past": "A megjelenés dátuma nem lehet múltbeli",
-    "You-cannot-add-yourself": "Nem adhatja hozzá magát",
-    "T-content-does-not-exist-anymore": "Ez a tartalom már nem létezik"
+    "Password-not-identical": "A jelszavak nem azonosak"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A fénykép beérkezett",
@@ -650,7 +644,7 @@
     "Register": "Regisztráció",
     "Registration": "Bejegyzés",
     "Sign-up": "Regisztrálj",
-    "accept-tou": "Elfogadom a használati feltételeket",
+    "accept-tou": "igazolom, hogy 16 éves vagy idősebb vagyok, és elfogadom a felhasználói megállapodást és az adatvédelmi szabályzatot",
     "click-on-email": "Kattintson az e-mail linkre"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Az email címed",
     "Your-Password": "A jelszavad",
     "Your-Pseudo": "Felhasználóneved",
-    "Your-message": "Az üzeneted"
+    "Your-message": "Az üzeneted",
+    "Confirm-your-password": "A jelszó megerősítése"
   },
   "PLEASE": {
     "Password": "Kérem írja be a jelszavát"
   },
   "PROFILE": {
     "About-me": "Rólam",
-    "BirthDate": "Születési dátum",
     "Email": "Email",
     "Followers-And-Friends": "Követők és barátok",
     "Musics": "Zene",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Az ebben a listában szereplő felhasználók nem láthatják az Ön profilját.",
       "btn-followers": "Tegye elérhetővé a \"követés\" gombot",
       "btn-friend": "Tegye elérhetővé a barátkérés gombot",
-      "h-can-b-yr-description": "Írhat leírást"
+      "h-can-b-yr-description": "Írhat leírást",
+      "theme": "Téma",
+      "theme-description": "Kérjük, válasszon témát",
+      "theme-select": "Téma kiválasztása"
     },
     "verified": {
       "Already-certified": "Már tanúsított",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Az adminisztráció a lehető leghamarabb ellenőrzi a tartalmat",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ez a teljes projekt törlését okozza, biztos benne?",
     "T-operation-is-irreversible": "Ez a művelet visszafordíthatatlan",
-    "this-user-will-be-": "Ez a felhasználó mostantól az lesz",
-    "A-y-s-to-unfollow-t-profile": "Biztos, hogy nem követi ezt a profit?"
+    "this-user-will-be-": "Ez a felhasználó mostantól az lesz"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Figyelem. Győződjön meg arról, hogy a megfelelő címet adta meg"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Világfúzió",
       "Worldbeat": "Világverés",
       "Yacht-rock": "Yacht rock",
-      "Others": "Mások",
-      "Flamenco": "Flamenco",
-      "Rock": "Szikla",
-      "Reggae": "Reggae",
-      "Country": "Ország"
+      "Others": "Mások"
     }
   },
   "WIINS-TUBE": {

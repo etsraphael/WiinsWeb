@@ -18,7 +18,6 @@ export class ProfileModel extends BaseModel {
   privacySettings: string
   relation: string
   userRelation: boolean
-  birthDate: DatePipe
   active: boolean
   deactivatedAt: DatePipe
   deletedAt: DatePipe

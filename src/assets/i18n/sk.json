@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Smerom do nekonečného priestoru",
     "Hello": "Ahoj",
     "Publication": "Publikácia",
-    "Share": "zdieľam",
-    "Url-Copied": "Adresa URL bola skopírovaná",
-    "Download": "Stiahnuť ▼",
-    "Downloaded": "Stiahnuté",
-    "Save-in-phone": "Uložiť do telefónu"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "Missing-informations": "Chýbajúce informácie",
     "Account_desactivated": "Účet bol deaktivovaný",
     "Y-dont-have-a-conversation-yet": "Zatiaľ nemáte konverzáciu.",
-    "Date-cannot-be-in-the-past": "Dátum vydania nemôže byť v minulosti",
-    "You-cannot-add-yourself": "Nemôžete pridať seba",
-    "T-content-does-not-exist-anymore": "Tento obsah už neexistuje"
+    "Password-not-identical": "Heslá nie sú identické"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",
@@ -646,7 +640,7 @@
     "Register": "Registrovať",
     "Registration": "Registrácia",
     "Sign-up": "Prihlásiť Se",
-    "accept-tou": "Prijímam podmienky používania",
+    "accept-tou": "potvrdzujem, že mám 16 alebo viac rokov a súhlasím so súhlasom so súhlasom používateľa a zásadami ochrany osobných údajov",
     "click-on-email": "Kliknite na e-mailový odkaz",
     "Create-yr-account": "Vytvor si účet",
     "Creating-yr-account": "Vytvára sa váš účet",
@@ -730,14 +724,14 @@
     "Your-Email": "Tvoj email",
     "Your-Password": "Tvoje heslo",
     "Your-Pseudo": "Vaše užívateľské meno",
-    "Your-message": "Tvoja správa"
+    "Your-message": "Tvoja správa",
+    "Confirm-your-password": "Potvrdenie hesla"
   },
   "PLEASE": {
     "Password": "Prosím vložte heslo"
   },
   "PROFILE": {
     "About-me": "O mne",
-    "BirthDate": "Dátum narodenia",
     "Email": "E-mail",
     "Followers-And-Friends": "Sledovatelia a priatelia",
     "Musics": "Hudba",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Používatelia v tomto zozname neuvidia váš profil.",
       "btn-followers": "Sprístupnite tlačidlo „sledovať“",
       "btn-friend": "Sprístupniť tlačidlo žiadosti o priateľstvo",
-      "h-can-b-yr-description": "Môžete uviesť popis"
+      "h-can-b-yr-description": "Môžete uviesť popis",
+      "theme": "Tému",
+      "theme-description": "Vyberte tému",
+      "theme-select": "Výber motívu"
     },
     "verified": {
       "Already-certified": "Už certifikované",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Správa overí obsah čo najskôr",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "To spôsobí odstránenie celého projektu, ste si istí?",
     "T-operation-is-irreversible": "Táto operácia je nezvratná",
-    "this-user-will-be-": "Týmto používateľom teraz bude",
-    "A-y-s-to-unfollow-t-profile": "Naozaj chcete prestať sledovať túto profi?"
+    "this-user-will-be-": "Týmto používateľom teraz bude"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Výstraha. Uistite sa, že máte správnu adresu"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Svetová fúzia",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Jachtová skala",
-      "Others": "Ostatné",
-      "Flamenco": "Flamenco",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Krajina"
+      "Others": "Ostatné"
     }
   },
   "WIINS-TUBE": {

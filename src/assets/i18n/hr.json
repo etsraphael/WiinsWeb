@@ -253,11 +253,7 @@
     "responses": "odgovori",
     "soon": "uskoro",
     "views": "pogleda",
-    "Share": "Udio",
-    "Url-Copied": "URL kopiran",
-    "Download": "preuzimanje datoteka",
-    "Downloaded": "Preuzeto",
-    "Save-in-phone": "Spremi u telefon"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Morate prethodno izbrisati svoje stranice ili grupe",
     "y-have-to-be-friend": "sigurno ste prijatelji",
     "you-hav-to-upgrad-a-manager-before-leave": "Prije napuštanja grupe morate unaprijediti menadžera",
-    "Date-cannot-be-in-the-past": "Datum izdavanja ne može biti u prošlosti",
-    "You-cannot-add-yourself": "Ne možete se dodati",
-    "T-content-does-not-exist-anymore": "Ovaj sadržaj više ne postoji"
+    "Password-not-identical": "Lozinke nisu identične"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografija je primljena",
@@ -650,7 +644,7 @@
     "Register": "Registar",
     "Registration": "Registracija",
     "Sign-up": "Prijavite se",
-    "accept-tou": "Prihvaćam uvjete i odredbe korištenja",
+    "accept-tou": "i certificirati da imam 16 godina ili više i slažem se s korisničkim ugovorom i politikom privatnosti",
     "click-on-email": "Molimo kliknite vezu e-pošte"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Tvoj email",
     "Your-Password": "Tvoja lozinka",
     "Your-Pseudo": "Vaše korisničko ime",
-    "Your-message": "Tvoja poruka"
+    "Your-message": "Tvoja poruka",
+    "Confirm-your-password": "Potvrdi lozinku"
   },
   "PLEASE": {
     "Password": "Unesite lozinku"
   },
   "PROFILE": {
     "About-me": "O meni",
-    "BirthDate": "Datum rođenja",
     "Email": "E-mail",
     "Followers-And-Friends": "Sljedbenici i prijatelji",
     "Musics": "Glazba",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Korisnici s ovog popisa neće moći vidjeti vaš profil.",
       "btn-followers": "Učinite dostupnim gumb \"slijedi\"",
       "btn-friend": "Omogućite gumb zahtjeva za prijateljstvo",
-      "h-can-b-yr-description": "Možete staviti opis"
+      "h-can-b-yr-description": "Možete staviti opis",
+      "theme": "Tema",
+      "theme-description": "Odaberite temu",
+      "theme-select": "Odaberite temu"
     },
     "verified": {
       "Already-certified": "Već certificirano",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administracija će provjeriti sadržaj što je prije moguće",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "To će uzrokovati brisanje cijelog projekta, jeste li sigurni?",
     "T-operation-is-irreversible": "Ova operacija je nepovratna",
-    "this-user-will-be-": "Ovaj će korisnik sada biti",
-    "A-y-s-to-unfollow-t-profile": "Jeste li sigurni da želite prekinuti praćenje ovog profila?"
+    "this-user-will-be-": "Ovaj će korisnik sada biti"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Upozorenje. Provjerite imate li pravu adresu"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Svjetska fuzija",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Jahta stijena",
-      "Others": "Drugi",
-      "Flamenco": "Flamenko",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Zemlja"
+      "Others": "Drugi"
     }
   },
   "WIINS-TUBE": {

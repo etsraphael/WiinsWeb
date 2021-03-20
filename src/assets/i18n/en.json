@@ -568,7 +568,8 @@
     "T-min-is-1$": "The minimum is 1$",
     "Missing-informations": "Missing informations",
     "Account_desactivated": "Account desactivated",
-    "Y-dont-have-a-conversation-yet": "You don't have a conversation yet."
+    "Y-dont-have-a-conversation-yet": "You don't have a conversation yet.",
+    "Password-not-identical": "The passwords are not identical"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -597,7 +598,7 @@
     "Register": "Register",
     "Registration": "Registration",
     "Sign-up": "Sign up",
-    "accept-tou": "I accept the terms and conditions of use",
+    "accept-tou": "i certify that i am 16 years of age or older and i agree to the user agreement and privacy policy",
     "click-on-email": "Please click on the email link",
     "Create-yr-account": "Create your account",
     "Creating-yr-account": "Creating your account",
@@ -681,14 +682,14 @@
     "Your-Email": "Your email",
     "Your-Password": "Your password",
     "Your-Pseudo": "Your username",
-    "Your-message": "Your message"
+    "Your-message": "Your message",
+    "Confirm-your-password": "Confirm your password"
   },
   "PLEASE": {
     "Password": "Please enter your password"
   },
   "PROFILE": {
     "About-me": "About me",
-    "BirthDate": "Date of Birth",
     "Email": "E-mail",
     "Followers-And-Friends": "Followers and friends",
     "Musics": "Musics",
@@ -849,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Users in this list will not be able to see your profile.",
       "btn-followers": "Make the \"follow\" button available",
       "btn-friend": "Make the friend request button available",
-      "h-can-b-yr-description": "You can put a description"
+      "h-can-b-yr-description": "You can put a description",
+      "theme": "Theme",
+      "theme-description": "Please choose a theme",
+      "theme-select": "Select a theme"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "This feature requires verification to use",

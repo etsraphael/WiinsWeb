@@ -28,7 +28,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
   registerForm: FormGroup
   maxDate = new Date(Date.now())
   dateFormValid: string
-  birthDate: any
   picker: string
 
   // store
@@ -57,17 +56,10 @@ export class RegisterComponent implements OnInit, OnDestroy {
     // register form
     this.registerForm = this.formBuilder.group({
       pseudo: ['', [Validators.required, Validators.minLength(4), Validators.pattern(/^\S*$/)]],
-      birthDate: ['', [Validators.required, this.majorValidator()]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
       tou: [false]
     })
-
-    // check the valid date
-    this.dateFormValid = this.datepipe.transform(
-      this.birthDate,
-      'yyyy-MM-dd'
-    )
 
     // listener for each action
     this.listenerPseudo()
@@ -94,9 +86,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
     // verify the term of use
     if (!this.registerForm.get('tou').value) return this.showErrorMessage('ERROR-MESSAGE.y-h-to-accept-the-tou')
 
-    // verify the age
-    if (!this.registerForm.get('birthDate').invalid) return this.showErrorMessage('ERROR-MESSAGE.16-years-minimum')
-
     // verify the pseudo
     this.pseudoValid$.pipe(take(1)).subscribe(val => {
       if (val == false) return this.showErrorMessage('ERROR-MESSAGE.Pseudo-already-exist')
@@ -106,12 +95,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
     if (this.registerForm.get('email').invalid || this.registerForm.get('pseudo').invalid) {
       return this.showErrorMessage('ERROR-MESSAGE.Els-are-incorrects')
     }
-
-    // we ajust the format for the date
-    const date = this.datepipe.transform(
-      this.registerForm.get('birthDate').value,
-      'yyyy-MM-dd'
-    )
 
     let newUser = new UserModel(
       null,

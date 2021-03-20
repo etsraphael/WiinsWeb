@@ -28,7 +28,6 @@ export class UpdateUsersComponent implements OnInit {
   // send the form
   registerForm: FormGroup;
   maxDate = new Date(Date.now());
-  birthDate: any;
   dateFormValid: string;
 
   constructor(
@@ -40,17 +39,11 @@ export class UpdateUsersComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
-    // initialize form for the date
-    this.dateFormValid = this.datepipe.transform(
-      this.birthDate,
-      'yyyy-MM-dd'
-    );
+    
 
     // we initialise the form
     this.registerForm = this.formBuilder.group({
       pseudo: ['', [Validators.minLength(4), Validators.pattern(/^\S*$/)]],
-      birthDate: [null, this.majorValidator],
       email: ['', [Validators.email]],
       introduction: ['']
     })
