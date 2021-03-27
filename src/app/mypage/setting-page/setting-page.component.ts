@@ -1,12 +1,12 @@
-import { Component, OnInit, OnDestroy } from '@angular/core'
-import { Store, select } from '@ngrx/store'
-import { RootStoreState, PageFeatureStoreActions, PageFeatureStoreSelectors } from 'src/app/root-store'
-import { ActivatedRoute } from '@angular/router'
-import { Observable, Subscription } from 'rxjs'
-import { PageModel } from 'src/app/core/models/page/page.model'
-import { skipWhile, filter } from 'rxjs/operators'
-import { MatSnackBar } from '@angular/material/snack-bar'
-import { TranslateService } from '@ngx-translate/core'
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { RootStoreState, PageFeatureStoreActions, PageFeatureStoreSelectors } from 'src/app/root-store';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, Subscription } from 'rxjs';
+import { PageModel } from 'src/app/core/models/page/page.model';
+import { skipWhile, filter } from 'rxjs/operators';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-setting-page',
@@ -61,17 +61,17 @@ export class SettingPageComponent implements OnInit, OnDestroy {
       select(PageFeatureStoreSelectors.selectMessage),
       skipWhile(val => val === null),
       filter(value => !!value)
-    )
+    );
 
     // to select an error about the page
     this.error$ = this.store$.pipe(
       select(PageFeatureStoreSelectors.selectError),
       skipWhile(val => val === null),
       filter(value => !!value)
-    )
+    );
 
-    // to alert after the response 
-    this.errorSub = this.error$.subscribe(response => this.showError(response))
+    // to alert after the response
+    this.errorSub = this.error$.subscribe(response => this.showError(response));
 
   }
 
@@ -87,13 +87,13 @@ export class SettingPageComponent implements OnInit, OnDestroy {
             this._snackBar.open(
               this.translate.instant('ERROR-MESSAGE.Invalid-password'),
               null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-            )
+            );
             break;
           case 'success':
             this._snackBar.open(
               this.translate.instant('VALID-MESSAGE.update-is-done'),
               null, { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-            )
+            );
             this.blockoption = false;
             break;
           default: break;
@@ -107,7 +107,7 @@ export class SettingPageComponent implements OnInit, OnDestroy {
         this.translate.instant('ERROR-MESSAGE.Please-type-yr-password'),
         this.translate.instant('CORE.close'),
         { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-      )
+      );
     }
 
     // reset the password form
@@ -117,8 +117,8 @@ export class SettingPageComponent implements OnInit, OnDestroy {
 
   deletePage() {
     // to delete the page
-    if (!this.passwordDelete) return this.showError('email_or_password_invalid')
-    this.store$.dispatch(new PageFeatureStoreActions.DeletePage(this.passwordDelete, this.pageId))
+    if (!this.passwordDelete) return this.showError('email_or_password_invalid');
+    this.store$.dispatch(new PageFeatureStoreActions.DeletePage(this.passwordDelete, this.pageId));
   }
 
 
@@ -129,7 +129,7 @@ export class SettingPageComponent implements OnInit, OnDestroy {
         this.translate.instant('ERROR-MESSAGE.Invalid-password'),
         this.translate.instant('CORE.close'),
         { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-      )
+      );
       default:
         break;
     }
@@ -137,7 +137,7 @@ export class SettingPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     // unsubscribe all var
-    if (this.errorSub) this.errorSub.unsubscribe()
+    if (this.errorSub) this.errorSub.unsubscribe();
   }
 
 }

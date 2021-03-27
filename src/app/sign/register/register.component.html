@@ -71,35 +71,17 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-12 my-2">
-        <div class="container">
-          <div class="row">
-            <p class="h5">{{'PROFILE.BirthDate' | translate}}</p>
-          </div>
-          <div class="row">
-            <mat-datepicker-toggle class="logo-calendar" matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-            <input [max]="maxDate" [matDatepicker]="picker" placeholder="{{'BTN-INDICATION.click-on-calender' | translate}}" class="w-100 p-3 input-calendar" type="text"
-              formControlName="birthDate">
-          </div>
-          <div class="birthDate-response row mx-auto">
-            <span class="text-danger" *ngIf="!f.birthDate.errors?.ageValid && f.birthDate.touched">
-              {{'ERROR-MESSAGE.16-years-minimum' | translate}}
-            </span>
-          </div>
+      <div class="container">
+        <div class="row mx-0 my-3 term-of-use">
+          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou">
+          </mat-checkbox>
+          <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row mx-0 my-3 term-of-use">
-        <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou">
-        </mat-checkbox>
-        <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
-      </div>
-      <div class="row mx-0 mt-4">
-        <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
-          <span class="text-white">{{'LOGIN-REGISTRER.Register'|translate}}</span>
-        </button>
+        <div class="row mx-0 mt-4">
+          <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
+            <span class="text-white">{{'LOGIN-REGISTRER.Register'|translate}}</span>
+          </button>
+        </div>
       </div>
     </div>
   </form>

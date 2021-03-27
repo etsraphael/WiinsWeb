@@ -15,7 +15,7 @@
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
-    "curly": true,
+    "curly": false,
     "directive-class-suffix": true,
     "directive-selector": [
       true,
@@ -29,7 +29,7 @@
       "app",
       "kebab-case"
     ],
-    "eofline": true,
+    "eofline": false,
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -96,7 +96,9 @@
     "no-output-rename": true,
     "semicolon": {
       "options": [
-        "always"
+        "never",
+        "ignore-interfaces",
+        "ignore-bound-class-methods"
       ]
     },
     "space-before-function-paren": {
@@ -135,7 +137,8 @@
       "options": [
         "ban-keywords",
         "check-format",
-        "allow-pascal-case"
+        "allow-pascal-case",
+        "allow-leading-underscore"
       ]
     },
     "whitespace": {
@@ -151,5 +154,14 @@
   },
   "rulesDirectory": [
     "codelyzer"
+  ],
+  "no-shadowed-variable": false,
+  "triple-equals": false,
+  "no-trailing-whitespace": [
+    true, 
+    "ignore-comments", 
+    "ignore-blank-lines", 
+    "ignore-template-strings", 
+    "ignore-jsdoc"
   ]
 }
