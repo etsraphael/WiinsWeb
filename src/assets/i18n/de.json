@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "In Richtung eines unendlichen Raumes",
     "Hello": "Hallo",
     "Publication": "Veröffentlichung",
-    "Share": "Teilen",
-    "Url-Copied": "URL kopiert",
-    "Download": "Herunterladen",
-    "Downloaded": "Heruntergeladen",
-    "Save-in-phone": "Im Telefon speichern"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -573,9 +569,7 @@
     "Missing-informations": "Fehlende Informationen",
     "Account_desactivated": "Konto deaktiviert",
     "Y-dont-have-a-conversation-yet": "Du hast noch kein Gespräch.",
-    "Date-cannot-be-in-the-past": "Das Veröffentlichungsdatum kann nicht in der Vergangenheit liegen",
-    "You-cannot-add-yourself": "Sie können sich nicht hinzufügen",
-    "T-content-does-not-exist-anymore": "Dieser Inhalt existiert nicht mehr"
+    "Password-not-identical": "Die Kennwörter sind nicht identisch"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",
@@ -604,7 +598,7 @@
     "Register": "Registrieren",
     "Registration": "Anmeldung",
     "Sign-up": "Anmelden",
-    "accept-tou": "Ich akzeptiere die Nutzungsbedingungen",
+    "accept-tou": "Ich bestätige, dass ich 16 Jahre oder älter bin und stimme der Nutzungsvereinbarung und der Datenschutzrichtlinie zu",
     "click-on-email": "Bitte klicken Sie auf den E-Mail-Link",
     "Create-yr-account": "Erstelle deinen Account",
     "Creating-yr-account": "Erstellen von Ihrem Konto",
@@ -688,14 +682,14 @@
     "Your-Email": "Deine E-Mail",
     "Your-Password": "Ihr Passwort",
     "Your-Pseudo": "Dein Benutzername",
-    "Your-message": "Deine Nachricht"
+    "Your-message": "Deine Nachricht",
+    "Confirm-your-password": "Bestätigen Sie Ihr Passwort"
   },
   "PLEASE": {
     "Password": "Bitte geben Sie Ihr Passwort ein"
   },
   "PROFILE": {
     "About-me": "Über mich",
-    "BirthDate": "Geburtsdatum",
     "Email": "Email",
     "Followers-And-Friends": "Anhänger und Freunde",
     "Musics": "Musik",
@@ -856,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Benutzer in dieser Liste können Ihr Profil nicht sehen.",
       "btn-followers": "Machen Sie die Schaltfläche \"folgen\" verfügbar",
       "btn-friend": "Die Schaltfläche \"Freund-Anfrage\" verfügbar machen",
-      "h-can-b-yr-description": "Sie können eine Beschreibung"
+      "h-can-b-yr-description": "Sie können eine Beschreibung",
+      "theme": "Thema",
+      "theme-description": "Bitte wählen Sie ein Thema",
+      "theme-select": "Wählen Sie ein Thema"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Diese Funktion erfordert eine Überprüfung, um",
@@ -982,8 +979,7 @@
     "T-administration-w-verify-t-content-asap": "Verwaltung wird überprüfen, sind so schnell wie möglich enthalten",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dadurch wird das gesamte Projekt gelöscht, sind Sie sicher?",
     "T-operation-is-irreversible": "Dieser Vorgang ist irreversibel",
-    "this-user-will-be-": "Dieser Benutzer wird nun",
-    "A-y-s-to-unfollow-t-profile": "Sind Sie sicher, diesem Profie zu folgen?"
+    "this-user-will-be-": "Dieser Benutzer wird nun"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Warnung. Stellen Sie sicher, dass Sie die richtige Adresse haben"
@@ -1352,11 +1348,7 @@
       "World-fusion": "Weltfusion",
       "Worldbeat": "Weltschlag",
       "Yacht-rock": "Yacht Rock",
-      "Others": "Andere",
-      "Flamenco": "Flamenco",
-      "Rock": "Felsen",
-      "Reggae": "Reggae",
-      "Country": "Land"
+      "Others": "Andere"
     }
   },
   "WIINS-TUBE": {

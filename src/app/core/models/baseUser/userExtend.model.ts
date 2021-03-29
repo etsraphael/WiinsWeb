@@ -1,9 +1,7 @@
 export class UserExtend {
   language: string;
-  birthDate: Date;
 
-  constructor(language: string, birthDate: Date) {
+  constructor(language: string) {
     this.language = language;
-    this.birthDate = birthDate;
   }
 }

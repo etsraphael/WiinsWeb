@@ -568,7 +568,8 @@
     "T-min-is-1$": "Le minimum est de 1 $",
     "Missing-informations": "Informations manquantes",
     "Account_desactivated": "Compte désactivé",
-    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation."
+    "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation.",
+    "Password-not-identical": "Les mots de passe ne sont pas identiques"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -597,7 +598,7 @@
     "Register": "S'inscrire",
     "Registration": "Inscription",
     "Sign-up": "S'inscrire",
-    "accept-tou": "J'accepte les conditions d'utilisations",
+    "accept-tou": "je certifie être âgé(e) de 16 ans ou plus et j'accepte l'accord d'utilisation et la politique de confidentialité.",
     "click-on-email": "Veuillez cliquer sur le lien du courriel",
     "Create-yr-account": "Créez votre compte",
     "Creating-yr-account": "Création de votre compte",
@@ -681,14 +682,14 @@
     "Your-Email": "Votre email",
     "Your-Password": "Votre mot de passe",
     "Your-Pseudo": "Votre pseudo",
-    "Your-message": "Votre message"
+    "Your-message": "Votre message",
+    "Confirm-your-password": "Confirmer votre mot de passe"
   },
   "PLEASE": {
     "Password": "Veuillez taper votre mot de passe"
   },
   "PROFILE": {
     "About-me": "A propos de moi",
-    "BirthDate": "Date de naissance",
     "Email": "Email",
     "Followers-And-Friends": "Followers et amis",
     "Musics": "Musiques",
@@ -849,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Les utilisateurs présents dans cette liste ne pourront pas voir votre profil",
       "btn-followers": "Rendre disponible le bouton \"suivre\"",
       "btn-friend": "Rendre disponible le bouton de demande en ami",
-      "h-can-b-yr-description": "Vous pouvez vous mettre une description"
+      "h-can-b-yr-description": "Vous pouvez vous mettre une description",
+      "theme": "Theme",
+      "theme-description": "Veuillez choisir un thème",
+      "theme-select": "Sélectionnez un thème"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée",

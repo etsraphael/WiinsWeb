@@ -253,11 +253,7 @@
     "responses": "การตอบสนอง",
     "soon": "เร็ว ๆ นี้",
     "views": "มุมมอง",
-    "Share": "แบ่งปัน",
-    "Url-Copied": "คัดลอก URL แล้ว",
-    "Download": "ดาวน์โหลด",
-    "Downloaded": "ดาวน์โหลดแล้ว",
-    "Save-in-phone": "บันทึกในโทรศัพท์"
+    "Chat": "สนทนา"
   },
   "COUNTRY": {
     "AD": "อันดอร์รา",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "คุณต้องลบเพจหรือกลุ่มของคุณก่อน",
     "y-have-to-be-friend": "คุณต้องเป็นเพื่อนกัน",
     "you-hav-to-upgrad-a-manager-before-leave": "คุณต้องเลื่อนระดับผู้จัดการก่อนออกจากกลุ่ม",
-    "Date-cannot-be-in-the-past": "วันที่วางจำหน่ายต้องไม่เป็นวันที่ผ่านมา",
-    "You-cannot-add-yourself": "คุณไม่สามารถเพิ่มตัวเองได้",
-    "T-content-does-not-exist-anymore": "ไม่มีเนื้อหานี้อีกต่อไป"
+    "Password-not-identical": "รหัสผ่านไม่เหมือนกัน"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ได้รับภาพถ่ายแล้ว",
@@ -650,7 +644,7 @@
     "Register": "ลงทะเบียน",
     "Registration": "การลงทะเบียน",
     "Sign-up": "ลงชื่อ",
-    "accept-tou": "ฉันยอมรับข้อกำหนดและเงื่อนไขการใช้งาน",
+    "accept-tou": "ฉันรับรองว่าฉันอายุ 16 ปีขึ้นไปและฉันยอมรับข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัว",
     "click-on-email": "กรุณาคลิกที่ลิงค์อีเมล"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "อีเมลของคุณ",
     "Your-Password": "รหัสผ่านของคุณ",
     "Your-Pseudo": "ชื่อผู้ใช้ของคุณ",
-    "Your-message": "ข้อความของคุณ"
+    "Your-message": "ข้อความของคุณ",
+    "Confirm-your-password": "ยืนยันรหัสผ่านของคุณ"
   },
   "PLEASE": {
     "Password": "กรุณาใส่รหัสผ่านของคุณ"
   },
   "PROFILE": {
     "About-me": "เกี่ยวกับฉัน",
-    "BirthDate": "วันเกิด",
     "Email": "อีเมล์",
     "Followers-And-Friends": "ผู้ติดตามและเพื่อน ๆ",
     "Musics": "เพลง",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "ผู้ใช้ในรายการนี้จะไม่สามารถเห็นโปรไฟล์ของคุณ",
       "btn-followers": "ทำให้ปุ่ม \"ติดตาม\" พร้อมใช้งาน",
       "btn-friend": "ทำให้ปุ่มขอเป็นเพื่อนพร้อมใช้งาน",
-      "h-can-b-yr-description": "คุณสามารถใส่คำอธิบาย"
+      "h-can-b-yr-description": "คุณสามารถใส่คำอธิบาย",
+      "theme": "ธีม",
+      "theme-description": "โปรดเลือกชุดรูปแบบ",
+      "theme-select": "เลือกชุดรูปแบบ"
     },
     "verified": {
       "Already-certified": "รับรองแล้ว",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "ผู้ดูแลระบบจะตรวจสอบเนื้อหาโดยเร็วที่สุด",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "การดำเนินการนี้จะทำให้โครงการทั้งหมดถูกลบคุณแน่ใจหรือไม่?",
     "T-operation-is-irreversible": "การดำเนินการนี้ไม่สามารถย้อนกลับได้",
-    "this-user-will-be-": "ผู้ใช้รายนี้จะเป็น",
-    "A-y-s-to-unfollow-t-profile": "แน่ใจหรือไม่ว่าจะเลิกติดตามโปรไฟล์นี้"
+    "this-user-will-be-": "ผู้ใช้รายนี้จะเป็น"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "คำเตือน. ตรวจสอบให้แน่ใจว่าคุณมีที่อยู่ที่ถูกต้อง"
@@ -1409,11 +1405,7 @@
       "World-fusion": "ฟิวชั่นโลก",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "เรือยอทช์ร็อค",
-      "Others": "อื่น ๆ",
-      "Flamenco": "ฟลาเมงโก",
-      "Rock": "ร็อค",
-      "Reggae": "เร้กเก้",
-      "Country": "ประเทศ"
+      "Others": "อื่น ๆ"
     }
   },
   "WIINS-TUBE": {

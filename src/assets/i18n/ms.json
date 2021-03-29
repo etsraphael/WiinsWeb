@@ -253,11 +253,7 @@
     "responses": "tindak balas",
     "soon": "tidak lama lagi",
     "views": "pandangan",
-    "Share": "Berkongsi",
-    "Url-Copied": "Url disalin",
-    "Download": "Muat turun",
-    "Downloaded": "Dimuat turun",
-    "Save-in-phone": "Simpan dalam telefon"
+    "Chat": "Sembang"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Anda mesti memadam halaman atau kumpulan anda sebelum ini",
     "y-have-to-be-friend": "anda mesti berkawan",
     "you-hav-to-upgrad-a-manager-before-leave": "Anda mesti mempromosikan pengurus sebelum keluar dari kumpulan",
-    "Date-cannot-be-in-the-past": "Tarikh pelepasan tidak boleh berlalu",
-    "You-cannot-add-yourself": "Anda tidak boleh menambah diri anda",
-    "T-content-does-not-exist-anymore": "Kandungan ini sudah tidak ada lagi"
+    "Password-not-identical": "Kata laluan tidak sama"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto itu diterima",
@@ -650,7 +644,7 @@
     "Register": "Daftar",
     "Registration": "Pendaftaran",
     "Sign-up": "Mendaftar",
-    "accept-tou": "Saya menerima terma dan syarat penggunaan",
+    "accept-tou": "i mengesahkan bahawa saya berumur 16 tahun ke atas dan saya bersetuju dengan perjanjian pengguna dan dasar privasi",
     "click-on-email": "Sila klik pada pautan e-mel"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Emel anda",
     "Your-Password": "Kata laluan Awak",
     "Your-Pseudo": "Nama pengguna anda",
-    "Your-message": "Mesej anda"
+    "Your-message": "Mesej anda",
+    "Confirm-your-password": "Sahkan kata laluan anda"
   },
   "PLEASE": {
     "Password": "Sila masukkan kata laluan anda"
   },
   "PROFILE": {
     "About-me": "Tentang saya",
-    "BirthDate": "Tarikh lahir",
     "Email": "E-mel",
     "Followers-And-Friends": "Pengikut dan rakan",
     "Musics": "Muzik",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Pengguna dalam senarai ini tidak akan dapat melihat profil anda.",
       "btn-followers": "Sediakan butang \"ikuti\"",
       "btn-friend": "Buat butang permintaan rakan tersedia",
-      "h-can-b-yr-description": "Anda boleh meletakkan keterangan"
+      "h-can-b-yr-description": "Anda boleh meletakkan keterangan",
+      "theme": "Tema",
+      "theme-description": "Sila pilih tema",
+      "theme-select": "Pilih tema"
     },
     "verified": {
       "Already-certified": "Sudah diperakui",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Pentadbiran akan mengesahkan kandungan secepat mungkin",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ini akan menyebabkan keseluruhan projek dihapuskan, adakah anda pasti?",
     "T-operation-is-irreversible": "Operasi ini tidak dapat dipulihkan",
-    "this-user-will-be-": "Pengguna ini sekarang akan menjadi",
-    "A-y-s-to-unfollow-t-profile": "Adakah anda pasti berhenti mengikuti profil ini?"
+    "this-user-will-be-": "Pengguna ini sekarang akan menjadi"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Amaran. Pastikan anda mempunyai alamat yang betul"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Perpaduan dunia",
       "Worldbeat": "Denyutan dunia",
       "Yacht-rock": "Batu kapal layar",
-      "Others": "Yang lain",
-      "Flamenco": "Flamenco",
-      "Rock": "Batu",
-      "Reggae": "Reggae",
-      "Country": "Negara"
+      "Others": "Yang lain"
     }
   },
   "WIINS-TUBE": {
