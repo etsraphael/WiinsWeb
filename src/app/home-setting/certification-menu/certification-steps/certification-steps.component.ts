@@ -17,14 +17,14 @@ import { ProfileFeatureStoreSelectors, RootStoreState } from 'src/app/root-store
 export class CertificationStepsComponent implements OnInit {
 
   // form
-  checkedCond = false
+  checkedCond = false;
 
-  // service 
-  requestPending: boolean = false
-  loading: boolean = false
+  // service
+  requestPending = false;
+  loading = false;
 
-  // profile 
-  myprofile$: Observable<ProfileModel>
+  // profile
+  myprofile$: Observable<ProfileModel>;
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -40,13 +40,13 @@ export class CertificationStepsComponent implements OnInit {
       select(ProfileFeatureStoreSelectors.selectProfile),
       skipWhile(val => val === null),
       filter(profile => !!profile),
-    )
+    );
 
-    // to check is the request is already send 
+    // to check is the request is already send
     this.certificationService.getCertificationProfile().pipe(take(1)).subscribe(
-      () => { this.requestPending = true },
-      () => { this.requestPending = false }
-    )
+      () => { this.requestPending = true; },
+      () => { this.requestPending = false; }
+    );
 
   }
 
@@ -59,7 +59,7 @@ export class CertificationStepsComponent implements OnInit {
         return this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.You-hv-to-be-verified'), null,
           { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-        )
+        );
       }
 
       // check if the user have the community
@@ -67,27 +67,27 @@ export class CertificationStepsComponent implements OnInit {
         return this._snackBar.open(
           this.translate.instant('ERROR-MESSAGE.You-hv-to-get-t-community'), null,
           { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-        )
+        );
       }
 
       // send the request
       else {
-      this.loading = true
+      this.loading = true;
       this.certificationService.createCertificationProfile().pipe(take(1)).subscribe(
         action => {
-          this.loading = false
-          this.requestPending = true
+          this.loading = false;
+          this.requestPending = true;
         },
         error => {
-          this.loading = false
+          this.loading = false;
           this._snackBar.open(
             this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
             { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
-          )
+          );
         }
-      )
+      );
       }
-    })
+    });
 
   }
 

@@ -34,23 +34,6 @@
                 </div>
               </div>
             </div>
-            <div class="row w-100 mx-0">
-              <div class="col-sm-12 col-md-12 col-lg-6">
-                <div class="form-group">
-                  <label>{{'PROFILE.BirthDate'|translate}}</label>
-                  <div class="form-date">
-                    <div class="form-control date-form">
-                      <div class="content-date">
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <input class="pl-5" formControlName="birthDate" matInput [max]="maxDate" [matDatepicker]="picker" [placeholder]="p.birthDate | date">
-                        <mat-datepicker #picker></mat-datepicker>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-danger text-right error-message" *ngIf="f.birthDate.errors?.ageValid && f.birthDate.touched">{{'ERROR-MESSAGE.16-years-minimum'|translate}}</div>
-              </div>
-            </div>
           </div>
         </form>
       </div>
