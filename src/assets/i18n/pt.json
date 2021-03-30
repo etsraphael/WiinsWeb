@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "Em direção a um espaço infinito",
     "Hello": "Olá",
     "Publication": "Publicação",
-    "Share": "Compartilhar",
-    "Url-Copied": "Url copiado",
-    "Download": "Baixar",
-    "Downloaded": "Baixado",
-    "Save-in-phone": "Salvar no telefone"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -573,9 +569,7 @@
     "Missing-informations": "Informações ausentes",
     "Account_desactivated": "Conta desativada",
     "Y-dont-have-a-conversation-yet": "Você ainda não tem uma conversa.",
-    "Date-cannot-be-in-the-past": "A data de lançamento não pode estar no passado",
-    "You-cannot-add-yourself": "Você não pode se adicionar",
-    "T-content-does-not-exist-anymore": "Este conteúdo não existe mais"
+    "Password-not-identical": "As senhas não são idênticas"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",
@@ -604,7 +598,7 @@
     "Register": "Registro",
     "Registration": "Cadastro",
     "Sign-up": "Inscrição",
-    "accept-tou": "Eu aceito os termos e condições de uso",
+    "accept-tou": "Eu certifico que eu tenho 16 anos ou mais e eu concordo com o acordo de usuário e política de privacidade",
     "click-on-email": "Por favor, clique no link do email",
     "Create-yr-account": "crie sua conta",
     "Creating-yr-account": "Criando sua conta",
@@ -688,14 +682,14 @@
     "Your-Email": "Seu email",
     "Your-Password": "Sua senha",
     "Your-Pseudo": "Seu nome de usuário",
-    "Your-message": "Sua mensagem"
+    "Your-message": "Sua mensagem",
+    "Confirm-your-password": "Confirme sua senha"
   },
   "PLEASE": {
     "Password": "Por favor, insira sua senha"
   },
   "PROFILE": {
     "About-me": "Sobre mim",
-    "BirthDate": "Data de nascimento",
     "Email": "O email",
     "Followers-And-Friends": "Seguidores e amigos",
     "Musics": "Músicas",
@@ -856,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Os usuários desta lista não poderão ver seu perfil.",
       "btn-followers": "Disponibilizar o botão \"seguir\"",
       "btn-friend": "Disponibilizar o botão de solicitação do amigo",
-      "h-can-b-yr-description": "Você pode colocar uma descrição"
+      "h-can-b-yr-description": "Você pode colocar uma descrição",
+      "theme": "Tema",
+      "theme-description": "Por favor, escolha um tema",
+      "theme-select": "Selecione um tema"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Este recurso requer verificação para usar",
@@ -982,8 +979,7 @@
     "T-administration-w-verify-t-content-asap": "Administração verificará que estão contidos o mais rápido possível",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Isso fará com que todo o projeto seja excluído, tem certeza?",
     "T-operation-is-irreversible": "Esta operação é irreversível",
-    "this-user-will-be-": "Este usuário agora será",
-    "A-y-s-to-unfollow-t-profile": "Tem certeza de que deseja parar de seguir este perfil?"
+    "this-user-will-be-": "Este usuário agora será"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Aviso. Certifique-se de que você tem o endereço certo"
@@ -1352,11 +1348,7 @@
       "World-fusion": "Fusão mundial",
       "Worldbeat": "Batida mundial",
       "Yacht-rock": "Pedra de iate",
-      "Others": "Outras",
-      "Flamenco": "Flamenco",
-      "Rock": "Rocha",
-      "Reggae": "Reggae",
-      "Country": "País"
+      "Others": "Outras"
     }
   },
   "WIINS-TUBE": {

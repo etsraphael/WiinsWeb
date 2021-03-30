@@ -28,4 +28,4 @@ export class AddUserFail implements Action {
 export type ActionsUser =
 | AddUser
 | AddUserSuccess
-| AddUserFail
+| AddUserFail;

@@ -253,11 +253,7 @@
     "responses": "phản hồi",
     "soon": "Sớm",
     "views": "lượt xem",
-    "Share": "Chia sẻ",
-    "Url-Copied": "Đã sao chép url",
-    "Download": "Tải xuống",
-    "Downloaded": "Đã tải xuống",
-    "Save-in-phone": "Lưu trong điện thoại"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Bạn phải xóa các trang hoặc nhóm của mình trước khi",
     "y-have-to-be-friend": "bạn phải là bạn",
     "you-hav-to-upgrad-a-manager-before-leave": "Bạn phải thăng chức một người quản lý trước khi rời nhóm",
-    "Date-cannot-be-in-the-past": "Ngày phát hành không được trong quá khứ",
-    "You-cannot-add-yourself": "Bạn không thể thêm chính mình",
-    "T-content-does-not-exist-anymore": "Nội dung này không tồn tại nữa"
+    "Password-not-identical": "Mật khẩu không giống nhau"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ảnh được nhận",
@@ -650,7 +644,7 @@
     "Register": "Đăng ký",
     "Registration": "Đăng ký",
     "Sign-up": "Đăng ký",
-    "accept-tou": "Tôi chấp nhận các điều khoản và điều kiện sử dụng",
+    "accept-tou": "tôi xác nhận rằng tôi từ 16 tuổi trở lên và tôi đồng ý với thỏa thuận người dùng và chính sách bảo mật",
     "click-on-email": "Vui lòng nhấp vào liên kết email"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Email của bạn",
     "Your-Password": "Mật khẩu của bạn",
     "Your-Pseudo": "Tên người dùng của bạn",
-    "Your-message": "Tin nhắn của bạn"
+    "Your-message": "Tin nhắn của bạn",
+    "Confirm-your-password": "Xác nhận mật khẩu của bạn"
   },
   "PLEASE": {
     "Password": "Xin hãy điền mật khẩu"
   },
   "PROFILE": {
     "About-me": "Về tôi",
-    "BirthDate": "Ngày sinh",
     "Email": "E-mail",
     "Followers-And-Friends": "Người theo dõi và bạn bè",
     "Musics": "Âm nhạc",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Người dùng trong danh sách này sẽ không thể xem hồ sơ của bạn.",
       "btn-followers": "Cung cấp nút \"theo dõi\"",
       "btn-friend": "Đặt nút yêu cầu kết bạn có sẵn",
-      "h-can-b-yr-description": "Bạn có thể đặt một mô tả"
+      "h-can-b-yr-description": "Bạn có thể đặt một mô tả",
+      "theme": "Chủ đề",
+      "theme-description": "Vui lòng chọn chủ đề",
+      "theme-select": "Chọn chủ đề"
     },
     "verified": {
       "Already-certified": "Đã được chứng nhận",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Ban quản trị sẽ xác minh nội dung trong thời gian sớm nhất",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Điều này sẽ khiến toàn bộ dự án bị xóa, bạn có chắc chắn không?",
     "T-operation-is-irreversible": "Thao tác này không thể đảo ngược",
-    "this-user-will-be-": "Người dùng này bây giờ sẽ là",
-    "A-y-s-to-unfollow-t-profile": "Bạn có chắc chắn bỏ theo dõi hồ sơ này không?"
+    "this-user-will-be-": "Người dùng này bây giờ sẽ là"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Cảnh báo. Đảm bảo rằng bạn có đúng địa chỉ"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Hợp nhất thế giới",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Du thuyền đá",
-      "Others": "Khác",
-      "Flamenco": "Flamenco",
-      "Rock": "Đá",
-      "Reggae": "Reggae",
-      "Country": "Quốc gia"
+      "Others": "Khác"
     }
   },
   "WIINS-TUBE": {

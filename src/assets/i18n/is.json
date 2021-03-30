@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Í átt að óendanlegu rými",
     "Hello": "Halló",
     "Publication": "Útgáfa",
-    "Share": "Deildu",
-    "Url-Copied": "Slóð afrituð",
-    "Download": "Sækja",
-    "Downloaded": "Sótt",
-    "Save-in-phone": "Vista í símanum"
+    "Chat": "Spjall"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "Missing-informations": "Upplýsingar vantar",
     "Account_desactivated": "Reikningur óvirkur",
     "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá.",
-    "Date-cannot-be-in-the-past": "Útgáfudagur getur ekki verið í fortíðinni",
-    "You-cannot-add-yourself": "Þú getur ekki bætt þér við",
-    "T-content-does-not-exist-anymore": "Þetta innihald er ekki til lengur"
+    "Password-not-identical": "Aðgangsorðin eru ekki eins"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",
@@ -646,7 +640,7 @@
     "Register": "Skráðu þig",
     "Registration": "Skráning",
     "Sign-up": "Skráðu þig",
-    "accept-tou": "Ég samþykki notkunarskilmála",
+    "accept-tou": "ég votta að ég er 16 ára eða eldri og ég samþykki notendasamninginn og persónuverndarstefnuna",
     "click-on-email": "Vinsamlegast smelltu á tengilinn í tölvupósti",
     "Create-yr-account": "Búðu til reikninginn þinn",
     "Creating-yr-account": "Að búa til reikninginn þinn",
@@ -730,14 +724,14 @@
     "Your-Email": "Netfangið þitt",
     "Your-Password": "Lykilorð þitt",
     "Your-Pseudo": "Notendanafnið þitt",
-    "Your-message": "Skilaboð þín"
+    "Your-message": "Skilaboð þín",
+    "Confirm-your-password": "Staðfesta aðgangsorðið"
   },
   "PLEASE": {
     "Password": "Vinsamlegast sláðu inn lykilorðið þitt"
   },
   "PROFILE": {
     "About-me": "Um mig",
-    "BirthDate": "Fæðingardagur",
     "Email": "Tölvupóstur",
     "Followers-And-Friends": "Fylgjendur og vinir",
     "Musics": "Tónlist",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Notendur á þessum lista geta ekki séð prófílinn þinn.",
       "btn-followers": "Gerðu „fylgja“ hnappinn tiltækan",
       "btn-friend": "Gerðu vinabeiðni hnappinn tiltækan",
-      "h-can-b-yr-description": "Þú getur sett lýsingu"
+      "h-can-b-yr-description": "Þú getur sett lýsingu",
+      "theme": "Þema",
+      "theme-description": "Vinsamlega veldu þema",
+      "theme-select": "Velja þema"
     },
     "verified": {
       "Already-certified": "Nú þegar vottað",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Stjórnun staðfestir efni eins fljótt og auðið er",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Þetta veldur því að verkefninu öllu er eytt, ertu viss?",
     "T-operation-is-irreversible": "Þessi aðgerð er óafturkræf",
-    "this-user-will-be-": "Þessi notandi verður núna",
-    "A-y-s-to-unfollow-t-profile": "Ertu viss um að fylgja þessu profi eftir?"
+    "this-user-will-be-": "Þessi notandi verður núna"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Viðvörun. Gakktu úr skugga um að þú hafir rétt heimilisfang"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Heimssamruni",
       "Worldbeat": "Heimssláttur",
       "Yacht-rock": "Snekkjuberg",
-      "Others": "Aðrir",
-      "Flamenco": "Flamenco",
-      "Rock": "Berg",
-      "Reggae": "Reggae",
-      "Country": "Land"
+      "Others": "Aðrir"
     }
   },
   "WIINS-TUBE": {

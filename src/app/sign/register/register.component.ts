@@ -1,8 +1,7 @@
 import { UserExtend } from '../../core/models/baseUser/userExtend.model'
 import { Component, OnInit, OnDestroy } from '@angular/core'
-import { FormBuilder, FormGroup, Validators, ValidatorFn, AbstractControl } from '@angular/forms'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { filter, debounceTime, distinctUntilChanged, skipWhile, take } from 'rxjs/operators'
-import { DatePipe } from '@angular/common'
 import { TranslateService } from '@ngx-translate/core'
 import { Observable, Subscription } from 'rxjs'
 import { UserModel } from '../../core/models/baseUser/user.model'
@@ -15,6 +14,7 @@ import { ModalTOUComponent } from 'src/app/core/modal/modal-t-o-u/modal-t-o-u.co
 import { DeviceDetectorService } from 'ngx-device-detector'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 import { MatDialog } from '@angular/material/dialog'
+import { PasswordConfirmValidations } from 'src/app/home-setting/update-password/password-confirm.validations'
 
 @Component({
   selector: 'app-register',
@@ -26,10 +26,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   // form
   registerForm: FormGroup
-  maxDate = new Date(Date.now())
-  dateFormValid: string
-  birthDate: any
-  picker: string
 
   // store
   message$: Observable<string>
@@ -44,12 +40,11 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   constructor(
     private formBuilder: FormBuilder,
-    public datepipe: DatePipe,
     public translate: TranslateService,
     private store$: Store<RootStoreState.State>,
     private _snackBar: MatSnackBar,
     public dialog: MatDialog,
-    public deviceService: DeviceDetectorService,
+    public deviceService: DeviceDetectorService
   ) { }
 
   ngOnInit() {
@@ -57,34 +52,17 @@ export class RegisterComponent implements OnInit, OnDestroy {
     // register form
     this.registerForm = this.formBuilder.group({
       pseudo: ['', [Validators.required, Validators.minLength(4), Validators.pattern(/^\S*$/)]],
-      birthDate: ['', [Validators.required, this.majorValidator()]],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+      password1: ['', [Validators.required, Validators.minLength(8)]],
+      password2: ['', [Validators.required]],
       tou: [false]
-    })
-
-    // check the valid date
-    this.dateFormValid = this.datepipe.transform(
-      this.birthDate,
-      'yyyy-MM-dd'
+    }, { validators: PasswordConfirmValidations.passwordNotMatchSignUp }
     )
 
     // listener for each action
     this.listenerPseudo()
     this.listenerStore()
 
-  }
-
-  majorValidator(): ValidatorFn {
-    // valid if the user is a more than 18 years
-    return (control: AbstractControl): { [key: string]: any } | null => {
-      if (control.value !== '') {
-        const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
-        if (diff > 16) return { 'ageValid': { valid: true } }
-        else return null
-      }
-      return null
-    }
   }
 
   get f() { return this.registerForm.controls; }
@@ -94,8 +72,9 @@ export class RegisterComponent implements OnInit, OnDestroy {
     // verify the term of use
     if (!this.registerForm.get('tou').value) return this.showErrorMessage('ERROR-MESSAGE.y-h-to-accept-the-tou')
 
-    // verify the age
-    if (!this.registerForm.get('birthDate').invalid) return this.showErrorMessage('ERROR-MESSAGE.16-years-minimum')
+    if (this.registerForm.get('password1').value !== this.registerForm.get('password2').value) {
+      return this.showErrorMessage('ERROR-MESSAGE.Password-not-identical')
+    }
 
     // verify the pseudo
     this.pseudoValid$.pipe(take(1)).subscribe(val => {
@@ -107,25 +86,19 @@ export class RegisterComponent implements OnInit, OnDestroy {
       return this.showErrorMessage('ERROR-MESSAGE.Els-are-incorrects')
     }
 
-    // we ajust the format for the date
-    const date = this.datepipe.transform(
-      this.registerForm.get('birthDate').value,
-      'yyyy-MM-dd'
-    )
-
     let newUser = new UserModel(
       null,
       this.registerForm.get('pseudo').value,
       this.registerForm.get('email').value,
-      this.registerForm.get('password').value
+      this.registerForm.get('password1').value
     )
 
     let lg: string
-    if(!this.translate.currentLang){ lg = 'en'}
+    if (!this.translate.currentLang) { lg = 'en' }
     else { lg = this.translate.currentLang }
 
     // send the new user
-    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg, new Date(date))))
+    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg)))
 
   }
 

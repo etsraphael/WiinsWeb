@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "অসীম স্থানের দিকে",
     "Hello": "হ্যালো",
     "Publication": "প্রকাশনা",
-    "Share": "ভাগ করুন",
-    "Url-Copied": "ইউআরএল অনুলিপি করা হয়েছে",
-    "Download": "ডাউনলোড করুন",
-    "Downloaded": "ডাউনলোড হয়েছে",
-    "Save-in-phone": "ফোনে সংরক্ষণ করুন"
+    "Chat": "চ্যাট"
   },
   "COUNTRY": {
     "AD": " এ্যান্ডোরা",
@@ -573,9 +569,7 @@
     "Missing-informations": "হারিয়ে যাওয়া তথ্য",
     "Account_desactivated": "অ্যাকাউন্ট নিষ্ক্রিয়",
     "Y-dont-have-a-conversation-yet": "আপনার এখনও কোনও কথোপকথন নেই।",
-    "Date-cannot-be-in-the-past": "মুক্তির তারিখ অতীতে হতে পারে না",
-    "You-cannot-add-yourself": "আপনি নিজেকে যুক্ত করতে পারবেন না",
-    "T-content-does-not-exist-anymore": "এই বিষয়বস্তুর আর অস্তিত্ব নেই"
+    "Password-not-identical": "পাসওয়ার্ডগুলি অভিন্ন নয়"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ছবিটি প্রাপ্ত হয়েছে",
@@ -604,7 +598,7 @@
     "Register": "নিবন্ধন",
     "Registration": "নিবন্ধন",
     "Sign-up": "নিবন্ধন করুন",
-    "accept-tou": " আমি ব্যবহারের শর্তাদি গ্রহণ করি",
+    "accept-tou": "আমি শংসাপত্র দিয়েছি যে আমি 16 বছর বা তার বেশি বয়সী এবং আমি ব্যবহারকারীর চুক্তি এবং গোপনীয়তা নীতিতে সম্মত",
     "click-on-email": "ইমেল লিঙ্ক ক্লিক করুন",
     "Create-yr-account": "আপনার একাউন্ট তৈরী করুন",
     "Creating-yr-account": "আপনার অ্যাকাউন্ট তৈরি করা হচ্ছে",
@@ -688,14 +682,14 @@
     "Your-Email": "তোমার ইমেইল",
     "Your-Password": "আপনার পাসওয়ার্ড",
     "Your-Pseudo": "আপনার ব্যবহারকৃত নাম",
-    "Your-message": "তোমার বার্তা"
+    "Your-message": "তোমার বার্তা",
+    "Confirm-your-password": "আপনার পাসওয়ার্ড নিশ্চিত"
   },
   "PLEASE": {
     "Password": "আপনার পাসওয়ার্ড দিন"
   },
   "PROFILE": {
     "About-me": "আমার সম্পর্কে",
-    "BirthDate": "জন্ম তারিখ",
     "Email": "ই-মেইল",
     "Followers-And-Friends": "অনুসরণকারী এবং বন্ধুরা",
     "Musics": "সঙ্গীত",
@@ -856,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "এই তালিকার ব্যবহারকারীরা আপনার প্রোফাইল দেখতে পাবে না।",
       "btn-followers": "\"অনুসরণ\" বোতামটি উপলব্ধ করুন",
       "btn-friend": "বন্ধুর অনুরোধ বোতামটি উপলব্ধ করুন",
-      "h-can-b-yr-description": "আপনি একটি বিবরণ রাখতে পারেন"
+      "h-can-b-yr-description": "আপনি একটি বিবরণ রাখতে পারেন",
+      "theme": "থিম",
+      "theme-description": "একটি থিম চয়ন করুন",
+      "theme-select": "একটি থিম নির্বাচন করুন"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "এই বৈশিষ্ট্যটির ব্যবহারের জন্য যাচাইকরণ প্রয়োজন",
@@ -982,8 +979,7 @@
     "T-administration-w-verify-t-content-asap": "প্রশাসন যত তাড়াতাড়ি সম্ভব যাচাই করা হবে",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "এর ফলে পুরো প্রকল্পটি মুছে ফেলা হবে, আপনি কি নিশ্চিত?",
     "T-operation-is-irreversible": "এই অপারেশনটি অপরিবর্তনীয়",
-    "this-user-will-be-": "এই ব্যবহারকারী এখন হবে",
-    "A-y-s-to-unfollow-t-profile": "আপনি কি এই প্রচারটি অনুসরণ করার বিষয়ে নিশ্চিত?"
+    "this-user-will-be-": "এই ব্যবহারকারী এখন হবে"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "সতর্কবাণী। আপনার সঠিক ঠিকানা আছে তা নিশ্চিত করুন"
@@ -1352,11 +1348,7 @@
       "World-fusion": "ওয়ার্ল্ড ফিউশন",
       "Worldbeat": "ওয়ার্ল্ডবিট",
       "Yacht-rock": "ইয়ট শিলা",
-      "Others": "অন্যান্য",
-      "Flamenco": "ফ্ল্যামেনকো",
-      "Rock": "রক",
-      "Reggae": "রেগ",
-      "Country": "দেশ"
+      "Others": "অন্যান্য"
     }
   },
   "WIINS-TUBE": {

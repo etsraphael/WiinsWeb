@@ -253,11 +253,7 @@
     "responses": "përgjigjet",
     "soon": "së shpejti",
     "views": "pikëpamjet",
-    "Share": "Ndani",
-    "Url-Copied": "Url u kopjua",
-    "Download": "Shkarko",
-    "Downloaded": "Shkarkuar",
-    "Save-in-phone": "Kurseni në telefon"
+    "Chat": "Bisedo"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Ju duhet të fshini faqet ose grupet tuaja më parë",
     "y-have-to-be-friend": "ju duhet të jeni miq",
     "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi",
-    "Date-cannot-be-in-the-past": "Data e lëshimit nuk mund të jetë në të kaluarën",
-    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten",
-    "T-content-does-not-exist-anymore": "Kjo përmbajtje nuk ekziston më"
+    "Password-not-identical": "Fjalëkalimet nuk janë identike"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",
@@ -650,7 +644,7 @@
     "Register": "Regjistrohuni",
     "Registration": "Regjistrimi",
     "Sign-up": "Regjistrohu",
-    "accept-tou": "Unë i pranoj termat dhe kushtet e përdorimit",
+    "accept-tou": "vërtetoj se jam 16 vjeç ose më i vjetër dhe pajtohem me marrëveshjen e përdoruesit dhe politikën e privatësisë",
     "click-on-email": "Ju lutemi klikoni në lidhjen e postës elektronike"
   },
   "MAIN-MUSIC": {
@@ -730,14 +724,14 @@
     "Your-Email": "Emaili juaj",
     "Your-Password": "Fjalëkalimi juaj",
     "Your-Pseudo": "Emri juaj i përdoruesit",
-    "Your-message": "Mesazhi juaj"
+    "Your-message": "Mesazhi juaj",
+    "Confirm-your-password": "Konfirmoni fjalëkalimin tuaj"
   },
   "PLEASE": {
     "Password": "Ju lutem vendosni fjalëkalimin tuaj"
   },
   "PROFILE": {
     "About-me": "Rreth meje",
-    "BirthDate": "Data e lindjes",
     "Email": "Posta elektronike",
     "Followers-And-Friends": "Ndjekës dhe miq",
     "Musics": "Muzika",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Përdoruesit në këtë listë nuk do të mund të shohin profilin tuaj.",
       "btn-followers": "Bëni të disponueshëm butonin \"ndiq\"",
       "btn-friend": "Bëni të disponueshëm butonin e kërkesës për mik",
-      "h-can-b-yr-description": "Mund të vendosni një përshkrim"
+      "h-can-b-yr-description": "Mund të vendosni një përshkrim",
+      "theme": "tema",
+      "theme-description": "Ju lutemi zgjidhni një temë",
+      "theme-select": "Zgjidhni një temë"
     },
     "verified": {
       "Already-certified": "Tashmë e çertifikuar",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administrata do të verifikojë përmbajtjen sa më shpejt të jetë e mundur",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Kjo do të bëjë që i gjithë projekti të fshihet, jeni i sigurt?",
     "T-operation-is-irreversible": "Ky operacion është i pakthyeshëm",
-    "this-user-will-be-": "Ky përdorues tani do të jetë",
-    "A-y-s-to-unfollow-t-profile": "A jeni i sigurt që do ta hiqni pas këtë profie?"
+    "this-user-will-be-": "Ky përdorues tani do të jetë"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Paralajmërim. Sigurohuni që të keni adresën e duhur"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Bashkimi botëror",
       "Worldbeat": "Rrahja e botës",
       "Yacht-rock": "Shkëmb jahtesh",
-      "Others": "Të tjerët",
-      "Flamenco": "Flamenco",
-      "Rock": "Shkëmb",
-      "Reggae": "Reggae",
-      "Country": "Vendi"
+      "Others": "Të tjerët"
     }
   },
   "WIINS-TUBE": {

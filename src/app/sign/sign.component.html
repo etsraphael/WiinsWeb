@@ -4,10 +4,11 @@
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
       <!-- Left Side -->
-      <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block">
+      <div class="preload-images"></div>
+      <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block animation-background-signin">
         <div class="container">
           <div class="col-9 mx-auto">
-            <img class="w-100" src="./../../assets/img/wiinslogo.png" alt="">
+            <img class="w-100 wiins-logo" src="./../../assets/img/wiinslogo.png" alt="">
           </div>
           <div class="card-footer w-50 p-0 container-donation">
             <div class="row mx-0">
@@ -29,10 +30,11 @@
         </div>
       </div>
       <!-- Right Side -->
-      <div class="col-md-7 bg-sign">
+      <div class="col-md-7 bg-sign background-right">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Setting -->
-          <div class="row my-3 mx-0 header-bar-setting">
+          <div container>
+          <div class="row my-3 col-sm-10 mx-auto setting-top-signin mx-0 header-bar-setting">
             <div class="ml-auto">
               <mat-form-field class="btn p-0">
                 <mat-select [(value)]="selectedLang">
@@ -46,10 +48,11 @@
               </a>
             </div>
           </div>
+        </div>
           <!-- Router Container -->
-          <div class="container">
+          <div class="pt-6 pt-md-0 container">
             <div class="row h-100">
-              <div class="col col-sm-10 mx-auto mt-md-8">
+              <div class="col col-sm-10 py-3 mx-auto mt-md-8 login-register-box">
                 <router-outlet></router-outlet>
               </div>
             </div>

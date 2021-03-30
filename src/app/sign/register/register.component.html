@@ -15,7 +15,7 @@
       </button>
     </div>
   </div>
-  <form [formGroup]="registerForm" class="row mx-0 container-form my-4">
+  <form [formGroup]="registerForm" class="row mx-0 container-form my-2">
     <div class="row mx-0">
       <div class="col-md-6 col-12 my-2">
         <div class="container">
@@ -62,10 +62,10 @@
             <p class="h5">{{'PLACEHOLDER.Your-Password' | translate}}</p>
           </div>
           <div class="row">
-            <input class="w-100 p-3" type="password" formControlName="password">
+            <input class="w-100 p-3" type="password" formControlName="password1">
           </div>
           <div class="password-response row">
-            <span class="text-danger" *ngIf="f.password.errors && f.password.touched">
+            <span class="text-danger" *ngIf="f.password1.errors && f.password1.touched">
               {{'ERROR-MESSAGE.8-char-minimum' | translate}}
             </span>
           </div>
@@ -74,27 +74,30 @@
       <div class="col-md-6 col-12 my-2">
         <div class="container">
           <div class="row">
-            <p class="h5">{{'PROFILE.BirthDate' | translate}}</p>
+            <p class="h5">{{'PLACEHOLDER.Confirm-your-password' | translate}}</p>
           </div>
           <div class="row">
-            <mat-datepicker-toggle class="logo-calendar" matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-            <input [max]="maxDate" [matDatepicker]="picker" placeholder="{{'BTN-INDICATION.click-on-calender' | translate}}" class="w-100 p-3 input-calendar" type="text"
-              formControlName="birthDate">
+            <input class="w-100 p-3" type="password" formControlName="password2">
           </div>
-          <div class="birthDate-response row mx-auto">
-            <span class="text-danger" *ngIf="!f.birthDate.errors?.ageValid && f.birthDate.touched">
-              {{'ERROR-MESSAGE.16-years-minimum' | translate}}
+          <div class="password-response row">
+            <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
+              {{'ERROR-MESSAGE.Password-not-identical' | translate}}
             </span>
+            <!-- <div class="alert py-0" [hidden]="!f.password1.errors?.passwordNotMatch">
+              <span>{{'SETTING.password.Erorr-password-different'|translate}}</span>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row mx-0 my-3 term-of-use">
-        <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou">
-        </mat-checkbox>
-        <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
+        <div class="col-1 my-auto">
+          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou"></mat-checkbox>
+        </div>
+        <div class="col-11">
+          <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
+        </div>
       </div>
       <div class="row mx-0 mt-4">
         <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">

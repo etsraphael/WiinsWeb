@@ -13,7 +13,7 @@ export class UserModel extends BaseModel {
   deletedAt: DatePipe;
   updatedAt: DatePipe;
   config: ConfigurationModel;
-  chargedUntil: Date
+  chargedUntil: Date;
 
   constructor( _id: string, pseudo: string, email: string, password: string ) {
     super(_id);
