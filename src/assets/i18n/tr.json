@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "Sonsuz bir uzaya doğru",
     "Hello": "Merhaba",
     "Publication": "Yayın",
-    "Chat": "Sohbet"
+    "Share": "Paylaş",
+    "Url-Copied": "URL kopyalandı",
+    "Download": "İndir",
+    "Downloaded": "İndirildi",
+    "Save-in-phone": "Telefona kaydet",
+    "No": "Hayır",
+    "Yes": "Evet",
+    "Block-t-user": "Bu kullanıcıyı engelle"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -611,7 +618,9 @@
     "Missing-informations": "Eksik bilgiler",
     "Account_desactivated": "Hesap devre dışı bırakıldı",
     "Y-dont-have-a-conversation-yet": "Henüz konuşmadınız.",
-    "Password-not-identical": "Parolalar aynı değil"
+    "Date-cannot-be-in-the-past": "Çıkış tarihi geçmiş bir tarih olamaz",
+    "You-cannot-add-yourself": "Kendini ekleyemezsin",
+    "T-content-does-not-exist-anymore": "Bu içerik artık mevcut değil"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoğraf alındı",
@@ -724,14 +733,14 @@
     "Your-Email": "E-posta adresiniz",
     "Your-Password": "Şifreniz",
     "Your-Pseudo": "Kullanıcı adınızı",
-    "Your-message": "Mesajın",
-    "Confirm-your-password": "Parolanızı onaylama"
+    "Your-message": "Mesajın"
   },
   "PLEASE": {
     "Password": "Şifrenizi giriniz Lütfen"
   },
   "PROFILE": {
     "About-me": "Benim hakkımda",
+    "BirthDate": "Doğum tarihi",
     "Email": "E-posta",
     "Followers-And-Friends": "Takipçiler ve arkadaşlar",
     "Musics": "Müzikler",
@@ -904,10 +913,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Bu listedeki kullanıcılar profilinizi göremeyecek.",
       "btn-followers": "\"Takip et\" düğmesini kullanılabilir hale getirin",
       "btn-friend": "Arkadaşlık isteği düğmesini kullanılabilir hale getirin",
-      "h-can-b-yr-description": "Bir açıklama koyabilirsiniz",
-      "theme": "Tema",
-      "theme-description": "Lütfen bir tema seçin",
-      "theme-select": "Tema seçme"
+      "h-can-b-yr-description": "Bir açıklama koyabilirsiniz"
     },
     "verified": {
       "Already-certified": "Zaten sertifikalı",
@@ -1036,7 +1042,14 @@
     "T-administration-w-verify-t-content-asap": "Yönetim içeriği mümkün olan en kısa sürede doğrulayacaktır",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bu, tüm projenin silinmesine neden olacak, emin misiniz?",
     "T-operation-is-irreversible": "Bu işlem geri alınamaz",
-    "this-user-will-be-": "Bu kullanıcı şimdi olacak"
+    "this-user-will-be-": "Bu kullanıcı şimdi olacak",
+    "A-y-s-to-unfollow-t-profile": "Bu profie'yi takip etmekten vazgeçeceğinizden emin misiniz?",
+    "A-y-s-to-block-t-user": "Bu kullanıcıyı engelleyeceğinizden emin misiniz?",
+    "Y-a-abt-t-block-t-user-D": "Bu kullanıcıyı engellemek üzeresiniz. Artık onun içeriğini ve bu kullanıcıyı da izleyemezsiniz. Bu kısıtlamayı yalnızca siz kaldırabilirsiniz.",
+    "T-content-has-been-reported": "Bu içerik bildirildi. Moderatörlerimiz incelemek için 24 saat sonra göz atacak. Topluluğun kurallarına uymaması halinde bir yaptırım uygulanacaktır.",
+    "T-user-has-been-blocked-D": "Bu kullanıcı hesabınızdan engellendi. Bu profilin hiçbir içeriği hesabınızda görünmeyecek.",
+    "W-is-t-reason-to-report-t-post": "Bu gönderiyi bildirmenin nedeni nedir?",
+    "W-is-t-reason-to-report-t-post-D": "Raporunuz anonimdir. Lütfen moratorlara yardımcı olacak bir kategori seçin"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Uyarı. Doğru adrese sahip olduğunuzdan emin olun"
@@ -1405,7 +1418,11 @@
       "World-fusion": "Dünya füzyonu",
       "Worldbeat": "Dünya atışı",
       "Yacht-rock": "Yat rock",
-      "Others": "Diğerleri"
+      "Others": "Diğerleri",
+      "Flamenco": "Flamenko",
+      "Rock": "Kaya",
+      "Reggae": "Reggae",
+      "Country": "Ülke"
     }
   },
   "WIINS-TUBE": {
