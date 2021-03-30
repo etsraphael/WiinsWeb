@@ -733,7 +733,9 @@
     "Your-Email": "Tavo elektroninis paštas",
     "Your-Password": "Jūsų slaptažodis",
     "Your-Pseudo": "Jūsų slapyvardis",
-    "Your-message": "Tavo žinutė"
+    "Your-message": "Tavo žinutė",
+    "Confirm-your-password": "Patvirtinkite savo slaptažodį",
+    "Password-not-matching": "Slaptažodžiai nesutampa"
   },
   "PLEASE": {
     "Password": "Prašome įvesti savo slaptažodį"

@@ -733,7 +733,9 @@
     "Your-Email": "तिम्रो इमेल",
     "Your-Password": "तपाईको पासवर्ड",
     "Your-Pseudo": "तपाईको प्रयोगकर्ता नाम",
-    "Your-message": "तिम्रो सन्देश"
+    "Your-message": "तिम्रो सन्देश",
+    "Confirm-your-password": "तपाईको पासवर्ड पक्का गर्नुहोस्",
+    "Password-not-matching": "पासवर्ड मिल्दैन"
   },
   "PLEASE": {
     "Password": "कृपया तपाईको पासवर्ड प्रविष्ट गर्नुहोस्"

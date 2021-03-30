@@ -733,7 +733,9 @@
     "Your-Email": "Do r-phost",
     "Your-Password": "Do phasfhocal",
     "Your-Pseudo": "D'ainm úsáideora",
-    "Your-message": "Do theachtaireacht"
+    "Your-message": "Do theachtaireacht",
+    "Confirm-your-password": "Deimhnigh do phasfhocal",
+    "Password-not-matching": "Níl na pasfhocail comhoiriúnach"
   },
   "PLEASE": {
     "Password": "Iontráil do phasfhocal le do thoil"

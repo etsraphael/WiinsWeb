@@ -733,7 +733,9 @@
     "Your-Email": "Ваш емаил",
     "Your-Password": "Твоја лозинка",
     "Your-Pseudo": "Твоје корисничко име",
-    "Your-message": "Ваша порука"
+    "Your-message": "Ваша порука",
+    "Confirm-your-password": "Потврдите лозинку",
+    "Password-not-matching": "Лозинке се не подударају"
   },
   "PLEASE": {
     "Password": "Молим вас унесите вашу шифру"

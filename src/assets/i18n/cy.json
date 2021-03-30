@@ -733,7 +733,9 @@
     "Your-Email": "Dy ebost",
     "Your-Password": "Eich cyfrinair",
     "Your-Pseudo": "Eich enw defnyddiwr",
-    "Your-message": "Dy neges"
+    "Your-message": "Dy neges",
+    "Confirm-your-password": "Cadarnhewch eich cyfrinair",
+    "Password-not-matching": "Nid yw'r cyfrineiriau'n cyfateb"
   },
   "PLEASE": {
     "Password": "Rhowch eich cyfrinair"

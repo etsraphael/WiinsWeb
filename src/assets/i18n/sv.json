@@ -733,7 +733,9 @@
     "Your-Email": "Din email",
     "Your-Password": "Ditt lösenord",
     "Your-Pseudo": "Ditt användarnamn",
-    "Your-message": "Ditt meddelande"
+    "Your-message": "Ditt meddelande",
+    "Confirm-your-password": "Bekräfta ditt lösenord",
+    "Password-not-matching": "Lösenorden matchar inte"
   },
   "PLEASE": {
     "Password": "Vänligen ange ditt lösenord"

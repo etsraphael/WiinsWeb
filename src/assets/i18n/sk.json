@@ -733,7 +733,9 @@
     "Your-Email": "Tvoj email",
     "Your-Password": "Tvoje heslo",
     "Your-Pseudo": "Vaše užívateľské meno",
-    "Your-message": "Tvoja správa"
+    "Your-message": "Tvoja správa",
+    "Confirm-your-password": "Potvrď svoje heslo",
+    "Password-not-matching": "Heslá sa nezhodujú"
   },
   "PLEASE": {
     "Password": "Prosím vložte heslo"

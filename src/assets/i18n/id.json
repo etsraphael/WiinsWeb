@@ -733,7 +733,9 @@
     "Your-Email": "Email mu",
     "Your-Password": "Kata sandi Anda",
     "Your-Pseudo": "Nama pengguna Anda",
-    "Your-message": "Pesan Anda"
+    "Your-message": "Pesan Anda",
+    "Confirm-your-password": "Konfirmasi password Anda",
+    "Password-not-matching": "Kata sandi tidak cocok"
   },
   "PLEASE": {
     "Password": "Silakan masukkan kata sandi Anda"

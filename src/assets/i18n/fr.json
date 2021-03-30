@@ -691,7 +691,9 @@
     "Your-Email": "Votre email",
     "Your-Password": "Votre mot de passe",
     "Your-Pseudo": "Votre pseudo",
-    "Your-message": "Votre message"
+    "Your-message": "Votre message",
+    "Confirm-your-password": "Confirmer votre mot de passe",
+    "Password-not-matching": "Les mots de passe ne correspondent pas"
   },
   "PLEASE": {
     "Password": "Veuillez taper votre mot de passe"

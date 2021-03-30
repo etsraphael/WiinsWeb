@@ -691,7 +691,9 @@
     "Your-Email": "Ваш электронный адрес",
     "Your-Password": "Ваш пароль",
     "Your-Pseudo": "Ваш логин",
-    "Your-message": "Ваше сообщение"
+    "Your-message": "Ваше сообщение",
+    "Confirm-your-password": "Подтвердите ваш пароль",
+    "Password-not-matching": "Пароли не совпадают"
   },
   "PLEASE": {
     "Password": "Пожалуйста, введите пароль"

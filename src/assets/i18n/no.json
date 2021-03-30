@@ -733,7 +733,9 @@
     "Your-Email": "Din epost",
     "Your-Password": "Ditt passord",
     "Your-Pseudo": "Ditt brukernavn",
-    "Your-message": "Din beskjed"
+    "Your-message": "Din beskjed",
+    "Confirm-your-password": "Bekreft passordet ditt",
+    "Password-not-matching": "Passordene samsvarer ikke"
   },
   "PLEASE": {
     "Password": "Vennligst skriv inn passordet ditt"

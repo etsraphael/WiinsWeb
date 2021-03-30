@@ -733,7 +733,9 @@
     "Your-Email": "Sähköpostisi",
     "Your-Password": "Salasanasi",
     "Your-Pseudo": "Sinun käyttäjä nimesi",
-    "Your-message": "Viestisi"
+    "Your-message": "Viestisi",
+    "Confirm-your-password": "Vahvista salasana",
+    "Password-not-matching": "Salasanat eivät täsmää"
   },
   "PLEASE": {
     "Password": "Anna salasanasi"

@@ -691,7 +691,9 @@
     "Your-Email": "你的邮件",
     "Your-Password": "你的密码",
     "Your-Pseudo": "您的用户名",
-    "Your-message": "你的信息"
+    "Your-message": "你的信息",
+    "Confirm-your-password": "确认你的密码",
+    "Password-not-matching": "密码不匹配"
   },
   "PLEASE": {
     "Password": "请输入您的密码"

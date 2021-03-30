@@ -733,7 +733,9 @@
     "Your-Email": "Tvoj email",
     "Your-Password": "Tvoja lozinka",
     "Your-Pseudo": "Vaše korisničko ime",
-    "Your-message": "Tvoja poruka"
+    "Your-message": "Tvoja poruka",
+    "Confirm-your-password": "Potvrdi svoju lozinku",
+    "Password-not-matching": "Lozinke se ne podudaraju"
   },
   "PLEASE": {
     "Password": "Unesite lozinku"

@@ -691,7 +691,9 @@
     "Your-Email": "तुम्हारा ईमेल",
     "Your-Password": "आपका पासवर्ड",
     "Your-Pseudo": "तुम्हारा प्रयोगकर्ती नाम",
-    "Your-message": "आपका सन्देश"
+    "Your-message": "आपका सन्देश",
+    "Confirm-your-password": "अपने पासवर्ड की पुष्टि करें",
+    "Password-not-matching": "पासवर्ड मेल नहीं खा रहे हैं"
   },
   "PLEASE": {
     "Password": "अपना पासवर्ड दर्ज करें"

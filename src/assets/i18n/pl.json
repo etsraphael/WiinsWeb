@@ -733,7 +733,9 @@
     "Your-Email": "Twój email",
     "Your-Password": "Twoje hasło",
     "Your-Pseudo": "Twoja nazwa użytkownika",
-    "Your-message": "Twoja wiadomość"
+    "Your-message": "Twoja wiadomość",
+    "Confirm-your-password": "Potwierdź swoje hasło",
+    "Password-not-matching": "Hasła nie pasują"
   },
   "PLEASE": {
     "Password": "Wprowadź hasło"

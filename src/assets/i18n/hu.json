@@ -733,7 +733,9 @@
     "Your-Email": "Az email címed",
     "Your-Password": "A jelszavad",
     "Your-Pseudo": "Felhasználóneved",
-    "Your-message": "Az üzeneted"
+    "Your-message": "Az üzeneted",
+    "Confirm-your-password": "Erősítse meg a jelszót",
+    "Password-not-matching": "A jelszavak nem egyeznek"
   },
   "PLEASE": {
     "Password": "Kérem írja be a jelszavát"

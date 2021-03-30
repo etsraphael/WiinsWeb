@@ -691,7 +691,9 @@
     "Your-Email": "Seu email",
     "Your-Password": "Sua senha",
     "Your-Pseudo": "Seu nome de usuário",
-    "Your-message": "Sua mensagem"
+    "Your-message": "Sua mensagem",
+    "Confirm-your-password": "Confirme sua senha",
+    "Password-not-matching": "As senhas não são iguais"
   },
   "PLEASE": {
     "Password": "Por favor, insira sua senha"

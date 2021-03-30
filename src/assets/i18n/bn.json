@@ -691,7 +691,9 @@
     "Your-Email": "তোমার ইমেইল",
     "Your-Password": "আপনার পাসওয়ার্ড",
     "Your-Pseudo": "আপনার ব্যবহারকৃত নাম",
-    "Your-message": "তোমার বার্তা"
+    "Your-message": "তোমার বার্তা",
+    "Confirm-your-password": "আপনার পাসওয়ার্ড নিশ্চিত",
+    "Password-not-matching": "পাসওয়ার্ড মেলে না"
   },
   "PLEASE": {
     "Password": "আপনার পাসওয়ার্ড দিন"

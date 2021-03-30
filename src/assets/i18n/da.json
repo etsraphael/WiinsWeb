@@ -733,7 +733,9 @@
     "Your-Email": "Din email",
     "Your-Password": "Dit kodeord",
     "Your-Pseudo": "Dit brugernavn",
-    "Your-message": "Din besked"
+    "Your-message": "Din besked",
+    "Confirm-your-password": "Bekræft dit kodeord",
+    "Password-not-matching": "Adgangskoderne stemmer ikke overens"
   },
   "PLEASE": {
     "Password": "Indtast venligst dit kodeord"

@@ -733,7 +733,9 @@
     "Your-Email": "Email-ul tau",
     "Your-Password": "Parola Dvs",
     "Your-Pseudo": "Nume de utilizator",
-    "Your-message": "Mesajul tau"
+    "Your-message": "Mesajul tau",
+    "Confirm-your-password": "Confirmă parola",
+    "Password-not-matching": "Parolele nu se potrivesc"
   },
   "PLEASE": {
     "Password": "Va rugam sa introduceti parola"

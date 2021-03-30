@@ -691,7 +691,9 @@
     "Your-Email": "あなたのメール",
     "Your-Password": "あなたのパスワード",
     "Your-Pseudo": "ユーザー名",
-    "Your-message": "あなたのメッセージ"
+    "Your-message": "あなたのメッセージ",
+    "Confirm-your-password": "あなたのパスワードを確認",
+    "Password-not-matching": "パスワードが一致していません"
   },
   "PLEASE": {
     "Password": "パスワードを入力してください"

@@ -733,7 +733,9 @@
     "Your-Email": "Твій емейл",
     "Your-Password": "Ваш пароль",
     "Your-Pseudo": "Ваше ім'я користувача",
-    "Your-message": "Твоє повідомлення"
+    "Your-message": "Твоє повідомлення",
+    "Confirm-your-password": "Підтвердити пароль",
+    "Password-not-matching": "Паролі не збігаються"
   },
   "PLEASE": {
     "Password": "Введіть свій пароль"

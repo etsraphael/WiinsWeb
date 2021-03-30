@@ -733,7 +733,9 @@
     "Your-Email": "Emaili juaj",
     "Your-Password": "Fjalëkalimi juaj",
     "Your-Pseudo": "Emri juaj i përdoruesit",
-    "Your-message": "Mesazhi juaj"
+    "Your-message": "Mesazhi juaj",
+    "Confirm-your-password": "Konfirmoni fjalëkalimin tuaj",
+    "Password-not-matching": "Fjalëkalimet nuk përputhen"
   },
   "PLEASE": {
     "Password": "Ju lutem vendosni fjalëkalimin tuaj"

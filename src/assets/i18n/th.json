@@ -733,7 +733,9 @@
     "Your-Email": "อีเมลของคุณ",
     "Your-Password": "รหัสผ่านของคุณ",
     "Your-Pseudo": "ชื่อผู้ใช้ของคุณ",
-    "Your-message": "ข้อความของคุณ"
+    "Your-message": "ข้อความของคุณ",
+    "Confirm-your-password": "ยืนยันรหัสผ่านของคุณ",
+    "Password-not-matching": "รหัสผ่านไม่ตรงกัน"
   },
   "PLEASE": {
     "Password": "กรุณาใส่รหัสผ่านของคุณ"

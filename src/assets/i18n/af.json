@@ -733,7 +733,9 @@
     "Your-Email": "Jou epos",
     "Your-Password": "Jou wagwoord",
     "Your-Pseudo": "Jou verbruikersnaam",
-    "Your-message": "Jou boodskap"
+    "Your-message": "Jou boodskap",
+    "Confirm-your-password": "Bevestig jou wagwoord",
+    "Password-not-matching": "Die wagwoorde stem nie ooreen nie"
   },
   "PLEASE": {
     "Password": "Tik asseblief jou wagwoord"

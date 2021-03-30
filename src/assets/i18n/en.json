@@ -691,7 +691,9 @@
     "Your-Email": "Your email",
     "Your-Password": "Your password",
     "Your-Pseudo": "Your username",
-    "Your-message": "Your message"
+    "Your-message": "Your message",
+    "Confirm-your-password": "Confirm your password",
+    "Password-not-matching": "The passwords are not matching"
   },
   "PLEASE": {
     "Password": "Please enter your password"

@@ -691,7 +691,9 @@
     "Your-Email": "ਤੁਹਾਡਾ ਈਮੇਲ",
     "Your-Password": "ਤੁਹਾਡਾ ਪਾਸਵਰਡ",
     "Your-Pseudo": "ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ",
-    "Your-message": "ਤੁਹਾਡਾ ਸੁਨੇਹਾ"
+    "Your-message": "ਤੁਹਾਡਾ ਸੁਨੇਹਾ",
+    "Confirm-your-password": "ਆਪਣੇ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "Password-not-matching": "ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾ ਰਹੇ ਹਨ"
   },
   "PLEASE": {
     "Password": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪਾਸਵਰਡ ਦਿਓ"
