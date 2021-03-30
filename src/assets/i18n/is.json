@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "Í átt að óendanlegu rými",
     "Hello": "Halló",
     "Publication": "Útgáfa",
-    "Chat": "Spjall"
+    "Share": "Deildu",
+    "Url-Copied": "Slóð afrituð",
+    "Download": "Sækja",
+    "Downloaded": "Sótt",
+    "Save-in-phone": "Vista í símanum",
+    "No": "Nei",
+    "Yes": "Já",
+    "Block-t-user": "Loka á þennan notanda"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -611,7 +618,9 @@
     "Missing-informations": "Upplýsingar vantar",
     "Account_desactivated": "Reikningur óvirkur",
     "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá.",
-    "Password-not-identical": "Aðgangsorðin eru ekki eins"
+    "Date-cannot-be-in-the-past": "Útgáfudagur getur ekki verið í fortíðinni",
+    "You-cannot-add-yourself": "Þú getur ekki bætt þér við",
+    "T-content-does-not-exist-anymore": "Þetta innihald er ekki til lengur"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",
@@ -640,7 +649,7 @@
     "Register": "Skráðu þig",
     "Registration": "Skráning",
     "Sign-up": "Skráðu þig",
-    "accept-tou": "ég votta að ég er 16 ára eða eldri og ég samþykki notendasamninginn og persónuverndarstefnuna",
+    "accept-tou": "Ég staðfesti að ég er 16 ára eða eldri og ég samþykki notendasamninginn og persónuverndarstefnu",
     "click-on-email": "Vinsamlegast smelltu á tengilinn í tölvupósti",
     "Create-yr-account": "Búðu til reikninginn þinn",
     "Creating-yr-account": "Að búa til reikninginn þinn",
@@ -725,13 +734,15 @@
     "Your-Password": "Lykilorð þitt",
     "Your-Pseudo": "Notendanafnið þitt",
     "Your-message": "Skilaboð þín",
-    "Confirm-your-password": "Staðfesta aðgangsorðið"
+    "Confirm-your-password": "Staðfestu lykilorðið þitt",
+    "Password-not-matching": "Lykilorðin passa ekki saman"
   },
   "PLEASE": {
     "Password": "Vinsamlegast sláðu inn lykilorðið þitt"
   },
   "PROFILE": {
     "About-me": "Um mig",
+    "BirthDate": "Fæðingardagur",
     "Email": "Tölvupóstur",
     "Followers-And-Friends": "Fylgjendur og vinir",
     "Musics": "Tónlist",
@@ -904,10 +915,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Notendur á þessum lista geta ekki séð prófílinn þinn.",
       "btn-followers": "Gerðu „fylgja“ hnappinn tiltækan",
       "btn-friend": "Gerðu vinabeiðni hnappinn tiltækan",
-      "h-can-b-yr-description": "Þú getur sett lýsingu",
-      "theme": "Þema",
-      "theme-description": "Vinsamlega veldu þema",
-      "theme-select": "Velja þema"
+      "h-can-b-yr-description": "Þú getur sett lýsingu"
     },
     "verified": {
       "Already-certified": "Nú þegar vottað",
@@ -1036,7 +1044,14 @@
     "T-administration-w-verify-t-content-asap": "Stjórnun staðfestir efni eins fljótt og auðið er",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Þetta veldur því að verkefninu öllu er eytt, ertu viss?",
     "T-operation-is-irreversible": "Þessi aðgerð er óafturkræf",
-    "this-user-will-be-": "Þessi notandi verður núna"
+    "this-user-will-be-": "Þessi notandi verður núna",
+    "A-y-s-to-unfollow-t-profile": "Ertu viss um að fylgja þessu profi eftir?",
+    "A-y-s-to-block-t-user": "Ertu viss um að loka á þennan notanda?",
+    "Y-a-abt-t-block-t-user-D": "Þú ert að fara að loka á þennan notanda. Þú myndir ekki lengur geta horft á efni hans og þennan notanda líka. Aðeins þú gætir fjarlægt þessa takmörkun.",
+    "T-content-has-been-reported": "Greint hefur verið frá þessu efni. Stjórnendur okkar munu líta við í 24 tíma fresti til að fara yfir það. Viðurlögum verður beitt ef þetta virðir ekki reglur samfélagsins.",
+    "T-user-has-been-blocked-D": "Þessum notanda hefur verið lokað á reikninginn þinn. Ekkert innihald þessa prófíls verður sýnilegt á reikningnum þínum.",
+    "W-is-t-reason-to-report-t-post": "Hver er ástæða þess að tilkynna þessa færslu?",
+    "W-is-t-reason-to-report-t-post-D": "Skýrsla þín er nafnlaus. Vinsamlegast veldu bara flokk til að hjálpa skaðræðismönnunum"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Viðvörun. Gakktu úr skugga um að þú hafir rétt heimilisfang"
@@ -1405,7 +1420,11 @@
       "World-fusion": "Heimssamruni",
       "Worldbeat": "Heimssláttur",
       "Yacht-rock": "Snekkjuberg",
-      "Others": "Aðrir"
+      "Others": "Aðrir",
+      "Flamenco": "Flamenco",
+      "Rock": "Berg",
+      "Reggae": "Reggae",
+      "Country": "Land"
     }
   },
   "WIINS-TUBE": {

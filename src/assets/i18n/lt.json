@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "Begalinės erdvės link",
     "Hello": "Sveiki",
     "Publication": "Publikacija",
-    "Chat": "Pokalbių"
+    "Share": "Dalintis",
+    "Url-Copied": "URL nukopijuotas",
+    "Download": "parsisiųsti",
+    "Downloaded": "Atsisiųsta",
+    "Save-in-phone": "Išsaugokite telefone",
+    "No": "Ne",
+    "Yes": "Taip",
+    "Block-t-user": "Blokuoti šį vartotoją"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -611,7 +618,9 @@
     "Missing-informations": "Trūksta informacijos",
     "Account_desactivated": "Paskyra atjungta",
     "Y-dont-have-a-conversation-yet": "Jūs dar neturite pokalbio.",
-    "Password-not-identical": "Slaptažodžiai nėra identiški"
+    "Date-cannot-be-in-the-past": "Išleidimo data negali būti praeityje",
+    "You-cannot-add-yourself": "Jūs negalite pridėti savęs",
+    "T-content-does-not-exist-anymore": "Šio turinio nebėra"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Nuotrauka gauta",
@@ -640,7 +649,7 @@
     "Register": "Registruotis",
     "Registration": "Registracija",
     "Sign-up": "Registruotis",
-    "accept-tou": "sertifikuojau, kad esu 16 metų ar vyresnis, ir sutinku su naudotojo sutartimi ir privatumo politika",
+    "accept-tou": "Patvirtinu, kad esu 16 metų ar vyresnis, ir sutinku su vartotojo sutartimi bei privatumo politika",
     "click-on-email": "Spustelėkite el. Pašto nuorodą",
     "Create-yr-account": "Susikurkite savo paskyrą",
     "Creating-yr-account": "Jūsų paskyros kūrimas",
@@ -725,13 +734,15 @@
     "Your-Password": "Jūsų slaptažodis",
     "Your-Pseudo": "Jūsų slapyvardis",
     "Your-message": "Tavo žinutė",
-    "Confirm-your-password": "Patvirtinkite slaptažodį"
+    "Confirm-your-password": "Patvirtinkite savo slaptažodį",
+    "Password-not-matching": "Slaptažodžiai nesutampa"
   },
   "PLEASE": {
     "Password": "Prašome įvesti savo slaptažodį"
   },
   "PROFILE": {
     "About-me": "Apie mane",
+    "BirthDate": "Gimimo data",
     "Email": "Elektroniniu paštu",
     "Followers-And-Friends": "Stebėtojai ir draugai",
     "Musics": "Muzika",
@@ -904,10 +915,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Šiame sąraše esantys vartotojai negalės matyti jūsų profilio.",
       "btn-followers": "Padarykite prieinamą mygtuką „sekti“",
       "btn-friend": "Padarykite draugo užklausos mygtuką prieinamą",
-      "h-can-b-yr-description": "Galite įdėti aprašą",
-      "theme": "Tema",
-      "theme-description": "Pasirinkite temą",
-      "theme-select": "Pasirinkite temą"
+      "h-can-b-yr-description": "Galite įdėti aprašą"
     },
     "verified": {
       "Already-certified": "Jau sertifikuota",
@@ -1036,7 +1044,14 @@
     "T-administration-w-verify-t-content-asap": "Administracija patikrins turinį kuo greičiau",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dėl to visas projektas bus ištrintas, ar tikrai?",
     "T-operation-is-irreversible": "Ši operacija yra negrįžtama",
-    "this-user-will-be-": "Šis vartotojas dabar bus"
+    "this-user-will-be-": "Šis vartotojas dabar bus",
+    "A-y-s-to-unfollow-t-profile": "Ar tikrai nebenorite sekti šio profi?",
+    "A-y-s-to-block-t-user": "Ar tikrai užblokavote šį naudotoją?",
+    "Y-a-abt-t-block-t-user-D": "Ketinate blokuoti šį vartotoją. Nebegalėsite žiūrėti jo turinio ir šio vartotojo. Šį apribojimą galėsite pašalinti tik jūs.",
+    "T-content-has-been-reported": "Pranešta apie šį turinį. Mūsų moderatoriai peržiūrės per 24 valandas. Jei nebus paisoma bendruomenės taisyklių, bus taikoma sankcija.",
+    "T-user-has-been-blocked-D": "Šis vartotojas buvo užblokuotas jūsų paskyroje. Joks šio profilio turinys nebus matomas jūsų paskyroje.",
+    "W-is-t-reason-to-report-t-post": "Kokia priežastis pranešti apie šį įrašą?",
+    "W-is-t-reason-to-report-t-post-D": "Jūsų pranešimas yra anonimas. Pasirinkite tik kategoriją, kad padėtų moratoriams"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Įspėjimas. Įsitikinkite, kad turite teisingą adresą"
@@ -1405,7 +1420,11 @@
       "World-fusion": "Pasaulio sintezė",
       "Worldbeat": "Pasaulio ritmas",
       "Yacht-rock": "Jachtos uola",
-      "Others": "Kiti"
+      "Others": "Kiti",
+      "Flamenco": "Flamenko",
+      "Rock": "Rokas",
+      "Reggae": "Regis",
+      "Country": "Šalis"
     }
   },
   "WIINS-TUBE": {

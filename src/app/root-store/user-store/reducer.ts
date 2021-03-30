@@ -1,7 +1,7 @@
 import { ActionsUser, ActionTypes } from './actions';
 import { State, initialState } from './state';
 
-export function featureReducer (state: State = initialState, action: ActionsUser) {
+export function featureReducer(state: State = initialState, action: ActionsUser) {
   switch (action.type) {
     case ActionTypes.ADD_USER: {
       return {
@@ -26,7 +26,7 @@ export function featureReducer (state: State = initialState, action: ActionsUser
         error: action.payload
       };
     }
-    case '@user/log_out' as any: return initialState
-    default: return state
+    case '@user/log_out' as any: return initialState;
+    default: return state;
   }
 }

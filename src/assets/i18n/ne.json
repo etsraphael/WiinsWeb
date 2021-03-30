@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "एक असीम स्थान तर्फ",
     "Hello": "नमस्कार",
     "Publication": "प्रकाशन",
-    "Chat": "कुराकानी"
+    "Share": "सेयर गर्नुहोस्",
+    "Url-Copied": "युआरएल प्रतिलिपि गरियो",
+    "Download": "डाउनलोड गर्नुहोस्",
+    "Downloaded": "डाउनलोड गरियो",
+    "Save-in-phone": "फोनमा बचत गर्नुहोस्",
+    "No": "होईन",
+    "Yes": "हो",
+    "Block-t-user": "यस प्रयोगकर्तालाई रोक्नुहोस्"
   },
   "COUNTRY": {
     "AD": "अन्डोरा",
@@ -611,7 +618,9 @@
     "Missing-informations": "हराइरहेका सूचनाहरू",
     "Account_desactivated": "खाता निष्क्रिय गरियो",
     "Y-dont-have-a-conversation-yet": "तपाईंसँग अहिलेसम्म कुराकानी छैन।",
-    "Password-not-identical": "पासवर्ड समान छैन"
+    "Date-cannot-be-in-the-past": "विमोचन मिति विगतमा हुन सक्दैन",
+    "You-cannot-add-yourself": "तपाईं आफैलाई थप्न सक्नुहुन्न",
+    "T-content-does-not-exist-anymore": "यो सामग्री अब अवस्थित छैन"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त भयो",
@@ -725,13 +734,15 @@
     "Your-Password": "तपाईको पासवर्ड",
     "Your-Pseudo": "तपाईको प्रयोगकर्ता नाम",
     "Your-message": "तिम्रो सन्देश",
-    "Confirm-your-password": "तपाईको पासवर्ड पक्का गर्नुहोस्"
+    "Confirm-your-password": "तपाईको पासवर्ड पक्का गर्नुहोस्",
+    "Password-not-matching": "पासवर्ड मिल्दैन"
   },
   "PLEASE": {
     "Password": "कृपया तपाईको पासवर्ड प्रविष्ट गर्नुहोस्"
   },
   "PROFILE": {
     "About-me": "मेरो बारेमा",
+    "BirthDate": "जन्म मिति",
     "Email": "इ-मेल",
     "Followers-And-Friends": "अनुयायीहरू र साथीहरू",
     "Musics": "संगीत",
@@ -904,10 +915,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "यस सूचीमा प्रयोगकर्ताहरूले तपाईंको प्रोफाइल हेर्न सक्नेछैनन्।",
       "btn-followers": "\"अनुसरण गर्नुहोस्\" बटन उपलब्ध गर्नुहोस्",
       "btn-friend": "मित्र अनुरोध बटन उपलब्ध गराउनुहोस्",
-      "h-can-b-yr-description": "तपाईं एक वर्णन राख्न सक्नुहुन्छ",
-      "theme": "विषयवस्तु",
-      "theme-description": "कृपया एउटा विषयवस्तु छनौट गर्नुहोस्",
-      "theme-select": "एक विषयवस्तु चयन गर्नुहोस्"
+      "h-can-b-yr-description": "तपाईं एक वर्णन राख्न सक्नुहुन्छ"
     },
     "verified": {
       "Already-certified": "पहिले नै प्रमाणित",
@@ -1036,7 +1044,14 @@
     "T-administration-w-verify-t-content-asap": "प्रशासनले सकेसम्म चाँडो सामग्री प्रमाणित गर्नेछ",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "यसले सम्पूर्ण परियोजना मेटिने बनाउँदछ, के तपाइँ निश्चित हुनुहुन्छ?",
     "T-operation-is-irreversible": "यो अपरेसन अपरिवर्तनीय छ",
-    "this-user-will-be-": "यो प्रयोगकर्ता अब हुनेछ"
+    "this-user-will-be-": "यो प्रयोगकर्ता अब हुनेछ",
+    "A-y-s-to-unfollow-t-profile": "के तपाई पक्का यो प्रोफाइ अनपलो गर्न निश्चित हुनुहुन्छ?",
+    "A-y-s-to-block-t-user": "के तपाइँ निश्चित रूपले यस प्रयोगकर्तालाई रोक्न निश्चित हुनुहुन्छ?",
+    "Y-a-abt-t-block-t-user-D": "तपाईं यस प्रयोगकर्तालाई ब्लक गर्न लाग्नुभएको छ। तपाईं अब आफ्नो सामग्री र यो प्रयोगकर्ता पनि हेर्न सक्षम हुनुहुने थियो। केवल तपाईं यो प्रतिबन्ध हटाउन सक्नुहुनेछ।",
+    "T-content-has-been-reported": "यो सामग्री रिपोर्ट गरिएको छ। हाम्रो मध्यस्थकर्ताले यसलाई समीक्षा गर्न २ 24 घण्टा ढिलाइमा हेर्नेछ। स्वीकृति लागू हुनेछ यदि यसले समुदायको नियमलाई सम्मान गर्दैन।",
+    "T-user-has-been-blocked-D": "यस प्रयोगकर्तालाई तपाईंको खाताबाट ब्लक गरिएको छ। यस प्रोफाइलको कुनै पनि सामग्री तपाइँको खातासँग दृश्यात्मक हुनेछ।",
+    "W-is-t-reason-to-report-t-post": "यो पोष्ट रिपोर्ट गर्न कारण के हो?",
+    "W-is-t-reason-to-report-t-post-D": "तपाईंको रिपोर्ट अज्ञात छ। कृपया मोरेटरहरूलाई मद्दत गर्न केवल एक कोटी छान्नुहोस्"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "चेतावनी। निश्चित गर्नुहोस् कि तपाईंसँग सही ठेगाना छ"
@@ -1405,7 +1420,11 @@
       "World-fusion": "विश्व संलयन",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "याट रक",
-      "Others": "अन्य"
+      "Others": "अन्य",
+      "Flamenco": "फ्लेमेन्को",
+      "Rock": "Rock",
+      "Reggae": "रेगे",
+      "Country": "देश"
     }
   },
   "WIINS-TUBE": {

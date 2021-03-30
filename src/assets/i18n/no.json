@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "Mot et uendelig rom",
     "Hello": "Hallo",
     "Publication": "Utgivelse",
-    "Chat": "Chat"
+    "Share": "Dele",
+    "Url-Copied": "URL ble kopiert",
+    "Download": "nedlasting",
+    "Downloaded": "Lastet ned",
+    "Save-in-phone": "Lagre i telefonen",
+    "No": "Nei",
+    "Yes": "Ja",
+    "Block-t-user": "Blokker denne brukeren"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -611,7 +618,9 @@
     "Missing-informations": "Manglende informasjon",
     "Account_desactivated": "Konto deaktivert",
     "Y-dont-have-a-conversation-yet": "Du har ikke en samtale ennå.",
-    "Password-not-identical": "Passordene er ikke identiske"
+    "Date-cannot-be-in-the-past": "Utgivelsesdatoen kan ikke være tidligere",
+    "You-cannot-add-yourself": "Du kan ikke legge deg til",
+    "T-content-does-not-exist-anymore": "Dette innholdet eksisterer ikke lenger"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Bildet er mottatt",
@@ -640,7 +649,7 @@
     "Register": "Registrere",
     "Registration": "Registrering",
     "Sign-up": "Melde deg på",
-    "accept-tou": "Jeg sertifiserer at jeg er 16 år eller eldre, og jeg godtar brukeravtalen og personvernreglene",
+    "accept-tou": "Jeg bekrefter at jeg er 16 år eller eldre, og jeg godtar brukeravtalen og personvernreglene",
     "click-on-email": "Klikk på e-postkoblingen",
     "Create-yr-account": "lag din konto",
     "Creating-yr-account": "Opprette kontoen din",
@@ -725,13 +734,15 @@
     "Your-Password": "Ditt passord",
     "Your-Pseudo": "Ditt brukernavn",
     "Your-message": "Din beskjed",
-    "Confirm-your-password": "Bekreft passordet ditt"
+    "Confirm-your-password": "Bekreft passordet ditt",
+    "Password-not-matching": "Passordene samsvarer ikke"
   },
   "PLEASE": {
     "Password": "Vennligst skriv inn passordet ditt"
   },
   "PROFILE": {
     "About-me": "Om meg",
+    "BirthDate": "Fødselsdato",
     "Email": "E-post",
     "Followers-And-Friends": "Følgere og venner",
     "Musics": "Musikk",
@@ -904,10 +915,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Brukere i denne listen vil ikke kunne se profilen din.",
       "btn-followers": "Gjør \"følg\" -knappen tilgjengelig",
       "btn-friend": "Gjør venneforespørselsknappen tilgjengelig",
-      "h-can-b-yr-description": "Du kan legge inn en beskrivelse",
-      "theme": "Tema",
-      "theme-description": "Vennligst velg et tema",
-      "theme-select": "Velg et tema"
+      "h-can-b-yr-description": "Du kan legge inn en beskrivelse"
     },
     "verified": {
       "Already-certified": "Allerede sertifisert",
@@ -1036,7 +1044,14 @@
     "T-administration-w-verify-t-content-asap": "Administrasjonen vil bekrefte innholdet så snart som mulig",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dette vil føre til at hele prosjektet blir slettet, er du sikker?",
     "T-operation-is-irreversible": "Denne operasjonen er irreversibel",
-    "this-user-will-be-": "Denne brukeren vil nå være"
+    "this-user-will-be-": "Denne brukeren vil nå være",
+    "A-y-s-to-unfollow-t-profile": "Er du sikker på å følge med på denne profien?",
+    "A-y-s-to-block-t-user": "Er du sikker på å blokkere denne brukeren?",
+    "Y-a-abt-t-block-t-user-D": "Du er i ferd med å blokkere denne brukeren. Du vil ikke lenger kunne se innholdet hans og denne brukeren også. Bare du vil være i stand til å fjerne denne begrensningen.",
+    "T-content-has-been-reported": "Dette innholdet er rapportert. Moderatorene våre tar en titt i løpet av 24 timer for å gjennomgå det. En sanksjon vil bli brukt hvis dette ikke respekterer samfunnets regler.",
+    "T-user-has-been-blocked-D": "Denne brukeren er blokkert fra kontoen din. Intet innhold i denne profilen vil være synlig på kontoen din.",
+    "W-is-t-reason-to-report-t-post": "Hva er grunnen til å rapportere dette innlegget?",
+    "W-is-t-reason-to-report-t-post-D": "Rapporten din er anonym. Velg bare en kategori for å hjelpe moratorene"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Advarsel. Forsikre deg om at du har riktig adresse"
@@ -1405,7 +1420,11 @@
       "World-fusion": "Verdensfusjon",
       "Worldbeat": "Verdensslag",
       "Yacht-rock": "Yachtrock",
-      "Others": "Andre"
+      "Others": "Andre",
+      "Flamenco": "Flamenco",
+      "Rock": "Stein",
+      "Reggae": "Reggae",
+      "Country": "Land"
     }
   },
   "WIINS-TUBE": {

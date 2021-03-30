@@ -1,14 +1,14 @@
-import { Component, OnInit, OnDestroy } from '@angular/core'
-import { MatDialog, MatDialogRef } from '@angular/material/dialog'
-import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router'
-import { select, Store } from '@ngrx/store'
-import { Observable, Subscription } from 'rxjs'
-import { filter, skipWhile } from 'rxjs/operators'
-import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component'
-import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component'
-import { ProfileModel } from 'src/app/core/models/baseUser/profile.model'
-import { FeedPublicationStoreActions, FriendsRequestFeatureStoreActions, ProfileFeatureStoreActions, ProfileFeatureStoreSelectors, RootStoreState } from 'src/app/root-store'
-import { slideInProfile } from 'src/assets/route-animation/profile-animation'
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { select, Store } from '@ngrx/store';
+import { Observable, Subscription } from 'rxjs';
+import { filter, skipWhile } from 'rxjs/operators';
+import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component';
+import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component';
+import { ProfileModel } from 'src/app/core/models/baseUser/profile.model';
+import { FeedPublicationStoreActions, FriendsRequestFeatureStoreActions, ProfileFeatureStoreActions, ProfileFeatureStoreSelectors, RootStoreState } from 'src/app/root-store';
+import { slideInProfile } from 'src/assets/route-animation/profile-animation';
 
 @Component({
   selector: 'app-profile-body',
@@ -20,12 +20,12 @@ import { slideInProfile } from 'src/assets/route-animation/profile-animation'
 export class ProfileBodyComponent implements OnInit, OnDestroy {
 
     // get the user page
-    profile: ProfileModel
-    profile$: Observable<ProfileModel>
+    profile: ProfileModel;
+    profile$: Observable<ProfileModel>;
   
     // router
-    routerSub: Subscription
-    saveUrl: string
+    routerSub: Subscription;
+    saveUrl: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -41,35 +41,35 @@ export class ProfileBodyComponent implements OnInit, OnDestroy {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
 
-        const baseUrl = event.url.split('/')[1]
-        const idUrl = event.url.split('/')[2]
+        const baseUrl = event.url.split('/')[1];
+        const idUrl = event.url.split('/')[2];
 
         if ((baseUrl == 'profile') && (this.saveUrl !== idUrl)) {
-          this.loadPageProfile()
-          this.store$.dispatch(new FeedPublicationStoreActions.ResetFeed)
-          this.store$.dispatch(new FeedPublicationStoreActions.LoadFeedPublication('1', 'profile/' + idUrl))
-          this.saveUrl = this.route.snapshot.paramMap.get('id')
+          this.loadPageProfile();
+          this.store$.dispatch(new FeedPublicationStoreActions.ResetFeed);
+          this.store$.dispatch(new FeedPublicationStoreActions.LoadFeedPublication('1', 'profile/' + idUrl));
+          this.saveUrl = this.route.snapshot.paramMap.get('id');
         }
-      })
+      });
 
-    this.loadPageProfile()
+    this.loadPageProfile();
 
   }
 
   loadPageProfile() {
 
     // get the id profile
-    this.store$.dispatch(new ProfileFeatureStoreActions.GetProfileById(this.route.snapshot.paramMap.get('id')))
+    this.store$.dispatch(new ProfileFeatureStoreActions.GetProfileById(this.route.snapshot.paramMap.get('id')));
 
     // update the url
-    this.saveUrl = this.route.snapshot.paramMap.get('id')
+    this.saveUrl = this.route.snapshot.paramMap.get('id');
 
     // to select the profile
     this.profile$ = this.store$.pipe(
       select(ProfileFeatureStoreSelectors.selectProfilePage),
       skipWhile(val => val === null),
       filter(value => value !== undefined)
-    )
+    );
 
   }
 
@@ -83,22 +83,22 @@ export class ProfileBodyComponent implements OnInit, OnDestroy {
     this.dialog.open(ValidationsComponent, {
       panelClass: ['col-md-4', 'col-xl-4'],
       data: { id, type: 'delete-friend' }
-    })
+    });
   }
 
   askfriendbtn(profile: ProfileModel) {
     // create a friend request
-    this.store$.dispatch(new FriendsRequestFeatureStoreActions.CreateFriendRequest(profile._id))
+    this.store$.dispatch(new FriendsRequestFeatureStoreActions.CreateFriendRequest(profile._id));
   }
 
   cancelfriendbtn(profile: ProfileModel) {
     // cancel the request
-    this.store$.dispatch(new FriendsRequestFeatureStoreActions.DeleteFriendRequest(profile._id))
+    this.store$.dispatch(new FriendsRequestFeatureStoreActions.DeleteFriendRequest(profile._id));
   }
 
   ComfirmBtn(profile: ProfileModel) {
     // confirm the request
-    this.store$.dispatch(new FriendsRequestFeatureStoreActions.ConfirmFriendRequest(profile._id))
+    this.store$.dispatch(new FriendsRequestFeatureStoreActions.ConfirmFriendRequest(profile._id));
   }
 
   report(profile: ProfileModel): MatDialogRef<ReportModalComponent> {
@@ -106,24 +106,24 @@ export class ProfileBodyComponent implements OnInit, OnDestroy {
     return this.dialog.open(ReportModalComponent, {
       panelClass: ['col-md-10'],
       data: { profile, type: 'profile-report' }
-    })
+    });
   }
 
 
   follow(id: string) {
     // follow the profile
-    this.store$.dispatch(new ProfileFeatureStoreActions.FollowProfile(id))
+    this.store$.dispatch(new ProfileFeatureStoreActions.FollowProfile(id));
   }
 
   unfollow(id: string) {
     // unfollow the profile
-    this.store$.dispatch(new ProfileFeatureStoreActions.UnFollowProfile(id))
+    this.store$.dispatch(new ProfileFeatureStoreActions.UnFollowProfile(id));
   }
 
 
   ngOnDestroy(): void {
     // unsubscribe all var
-    this.routerSub.unsubscribe()
+    this.routerSub.unsubscribe();
   }
 
 }

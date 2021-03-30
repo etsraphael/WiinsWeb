@@ -211,7 +211,14 @@
     "Towards-an-infinite-space": "Vers un espace infini",
     "Hello": "Bonjour",
     "Publication": "Publication",
-    "Chat": "Conversation"
+    "Download": "Télécharger",
+    "Downloaded": "Téléchargé",
+    "Save-in-phone": "Enregistrer dans le téléphone",
+    "Share": "Partager",
+    "Url-Copied": "URL copiée",
+    "No": "Non",
+    "Yes": "Oui",
+    "Block-t-user": "Bloquer cet utilisateur"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -569,7 +576,9 @@
     "Missing-informations": "Informations manquantes",
     "Account_desactivated": "Compte désactivé",
     "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation.",
-    "Password-not-identical": "Les mots de passe ne sont pas identiques"
+    "Date-cannot-be-in-the-past": "La date de sortie ne peut pas être dans le passé",
+    "You-cannot-add-yourself": "Vous ne pouvez pas vous ajouter",
+    "T-content-does-not-exist-anymore": "Ce contenu n'existe plus"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -598,7 +607,7 @@
     "Register": "S'inscrire",
     "Registration": "Inscription",
     "Sign-up": "S'inscrire",
-    "accept-tou": "je certifie être âgé(e) de 16 ans ou plus et j'accepte l'accord d'utilisation et la politique de confidentialité.",
+    "accept-tou": "Je certifie que j'ai 16 ans ou plus et j'accepte le contrat d'utilisation et la politique de confidentialité",
     "click-on-email": "Veuillez cliquer sur le lien du courriel",
     "Create-yr-account": "Créez votre compte",
     "Creating-yr-account": "Création de votre compte",
@@ -683,13 +692,15 @@
     "Your-Password": "Votre mot de passe",
     "Your-Pseudo": "Votre pseudo",
     "Your-message": "Votre message",
-    "Confirm-your-password": "Confirmer votre mot de passe"
+    "Confirm-your-password": "Confirmer votre mot de passe",
+    "Password-not-matching": "Les mots de passe ne correspondent pas"
   },
   "PLEASE": {
     "Password": "Veuillez taper votre mot de passe"
   },
   "PROFILE": {
     "About-me": "A propos de moi",
+    "BirthDate": "Date de naissance",
     "Email": "Email",
     "Followers-And-Friends": "Followers et amis",
     "Musics": "Musiques",
@@ -850,10 +861,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Les utilisateurs présents dans cette liste ne pourront pas voir votre profil",
       "btn-followers": "Rendre disponible le bouton \"suivre\"",
       "btn-friend": "Rendre disponible le bouton de demande en ami",
-      "h-can-b-yr-description": "Vous pouvez vous mettre une description",
-      "theme": "Theme",
-      "theme-description": "Veuillez choisir un thème",
-      "theme-select": "Sélectionnez un thème"
+      "h-can-b-yr-description": "Vous pouvez vous mettre une description"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée",
@@ -872,7 +880,7 @@
       "Yr-profil-is-currently-being-checked-D": "Votre profil est en cours de vérification. Nous vous contacterons sous 48h par email.",
       "Verification": "Vérification",
       "Pl-s-t-docs-a-complet-t-form-below": "Veuillez envoyer les documents nécessaires et remplir le formulaire ci-dessous.",
-      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre passeport, votre identifiant ou votre permis de conduire.",
+      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre mot de passe, votre identifiant ou votre permis de conduire.",
       "Upload-a-photo-holding-t-ID-D": "Téléchargez une photo contenant la pièce d'identité avec une feuille de papier avec la date du jour et l'inscription \"Wiins\" dessus.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Assurez-vous de télécharger le verso de la carte s'il s'agit d'une carte d'identité nationale (uniquement pour la carte nationale)"
@@ -979,7 +987,14 @@
     "T-administration-w-verify-t-content-asap": "L'administration vérifira sont contenue dès que possible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Cela entrainera la suppression entier du projet, êtes vous sûre ?",
     "T-operation-is-irreversible": "Cette opération est irréversible",
-    "this-user-will-be-": "Cette utilisateur sera désormais "
+    "this-user-will-be-": "Cette utilisateur sera désormais ",
+    "A-y-s-to-unfollow-t-profile": "Êtes-vous sûr de ne plus suivre ce profil?",
+    "A-y-s-to-block-t-user": "Êtes-vous sûr de bloquer cet utilisateur?",
+    "Y-a-abt-t-block-t-user-D": "Vous êtes sur le point de bloquer cet utilisateur. Vous ne pourrez plus regarder son contenu et cet utilisateur aussi. Vous seul pourrez supprimer cette restriction.",
+    "T-content-has-been-reported": "Ce contenu a été signalé. Nos modérateurs jetteront un œil dans un délai de 24 heures pour l'examiner. Une sanction sera appliquée si cela ne respecte pas les règles de la communauté.",
+    "T-user-has-been-blocked-D": "Cet utilisateur a été bloqué de votre compte. Aucun contenu de ce profil ne sera visible avec votre compte.",
+    "W-is-t-reason-to-report-t-post": "Quelle est la raison de signaler ce message?",
+    "W-is-t-reason-to-report-t-post-D": "Votre rapport est anonyme. Veuillez choisir juste une catégorie pour aider les morateurs"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Attention. Assurez vous d'avoir la bonne adresse"
@@ -1348,7 +1363,11 @@
       "World-fusion": "Fusion mondiale",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht rock",
-      "Others": "Autres"
+      "Others": "Autres",
+      "Flamenco": "Flamenco",
+      "Rock": "Roche",
+      "Reggae": "Reggae",
+      "Country": "Pays"
     }
   },
   "WIINS-TUBE": {

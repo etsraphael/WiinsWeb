@@ -27,19 +27,15 @@ export class UpdateUsersComponent implements OnInit {
 
   // send the form
   registerForm: FormGroup;
-  maxDate = new Date(Date.now());
-  dateFormValid: string;
 
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
-    public datepipe: DatePipe,
     private _snackBar: MatSnackBar,
     private translate: TranslateService
   ) { }
 
   ngOnInit() {
-    
 
     // we initialise the form
     this.registerForm = this.formBuilder.group({
@@ -54,18 +50,6 @@ export class UpdateUsersComponent implements OnInit {
       filter(profile => !!profile),
       skipWhile(profile => profile == null)
     )
-
-  }
-
-  majorValidator(control: AbstractControl) {
-
-    // to check if the date is under 18 old
-    if (control.value !== null) {
-      const diff = (Date.now().valueOf() - control.value) / (1000 * 60 * 60 * 24) / 365
-      if (diff < 18) return { 'ageValid': { valid: false } }
-      else return null
-    }
-    return null
 
   }
 

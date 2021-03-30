@@ -19,22 +19,22 @@ import { slideInProfile } from 'src/assets/route-animation/profile-animation';
 export class MyProfileBodyComponent implements OnInit, OnDestroy {
 
   // get myprofile
-  myprofile$: Observable<ProfileModel>
-  myprofileSubscription: Subscription
+  myprofile$: Observable<ProfileModel>;
+  myprofileSubscription: Subscription;
 
   // profile upload
-  pictureProfile: any
-  pictureCover: any
-  uploadSpace: string
+  pictureProfile: any;
+  pictureCover: any;
+  uploadSpace: string;
   @ViewChild('cover', { static: false }) coverPicture: ElementRef;
   @ViewChild('profile', { static: false }) profilePicture: ElementRef;
 
   // ngrx store
-  updatepicture: string
+  updatepicture: string;
 
   // dialog
-  dialogRef: MatDialogRef<CrooperImageValidationComponent> = null
-  dialogS: Subscription
+  dialogRef: MatDialogRef<CrooperImageValidationComponent> = null;
+  dialogS: Subscription;
 
   constructor(
     private store$: Store<RootStoreState.State>,
@@ -48,47 +48,47 @@ export class MyProfileBodyComponent implements OnInit, OnDestroy {
       select(ProfileFeatureStoreSelectors.selectProfile),
       skipWhile(val => val == null),
       filter(value => value !== undefined),
-    )
+    );
 
     // to get the picture url
     this.myprofileSubscription = this.myprofile$.subscribe(profile => {
-      this.pictureProfile = profile.pictureprofile
-      this.pictureCover = profile.picturecover
-    })
+      this.pictureProfile = profile.pictureprofile;
+      this.pictureCover = profile.picturecover;
+    });
 
   }
 
   previewProfile(event: any) {
     // to change the profile picture
-    this.updatepicture = 'profile'
-    this.openCrooperProfile(event)
+    this.updatepicture = 'profile';
+    this.openCrooperProfile(event);
   }
 
   previewCover(event: Event) {
     // to change the cover picture
-    this.updatepicture = 'cover'
-    this.openCrooperProfile(event)
+    this.updatepicture = 'cover';
+    this.openCrooperProfile(event);
   }
 
   avatarInitialize() {
     // to reset the profile picture
-    this.profilePicture.nativeElement.value = null
+    this.profilePicture.nativeElement.value = null;
     this.myprofile$.pipe(take(1)).subscribe(profile => {
-      this.pictureProfile = profile.pictureprofile
-    })
+      this.pictureProfile = profile.pictureprofile;
+    });
   }
 
   coverInitialize() {
     // to reset the cover picture
-    this.coverPicture.nativeElement.value = null
+    this.coverPicture.nativeElement.value = null;
     this.myprofile$.pipe(take(1)).subscribe(profile => {
-      this.pictureCover = profile.picturecover
-    })
+      this.pictureCover = profile.picturecover;
+    });
   }
 
   prepareRoute(outlet: RouterOutlet) {
     // to animate the router
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 
   openCrooperProfile(file: Event | any) {
@@ -99,26 +99,26 @@ export class MyProfileBodyComponent implements OnInit, OnDestroy {
       backdropClass: '.no-backdrop',
       panelClass: ['col-md-4', 'ml-auto', 'mt-auto', 'mb-4'],
       data: { file, type: this.updatepicture }
-    })
+    });
 
     // to see update during the resizing
     this.dialogS = this.dialogRef.componentInstance.fileUpdate.subscribe((result: any) => {
-      if (!result) { this.avatarInitialize(); this.coverInitialize(); return null }
+      if (!result) { this.avatarInitialize(); this.coverInitialize(); return null; }
       if (!!result.picture) {
-        if (this.updatepicture == 'profile') this.pictureProfile = result.picture
-        if (this.updatepicture == 'cover') this.pictureCover = result.picture
-        return null
+        if (this.updatepicture == 'profile') this.pictureProfile = result.picture;
+        if (this.updatepicture == 'cover') this.pictureCover = result.picture;
+        return null;
       }
-    })
+    });
 
     // unsubscribe after close the modal
-    this.dialogRef.afterClosed().subscribe(() => this.dialogS.unsubscribe())
+    this.dialogRef.afterClosed().subscribe(() => this.dialogS.unsubscribe());
 
   }
 
   ngOnDestroy() {
     // unsubscribe all the var
-    this.myprofileSubscription.unsubscribe()
+    this.myprofileSubscription.unsubscribe();
   }
 
 

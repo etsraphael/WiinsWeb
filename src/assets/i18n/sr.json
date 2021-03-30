@@ -253,7 +253,14 @@
     "Towards-an-infinite-space": "Према бескрајном простору",
     "Hello": "Здраво",
     "Publication": "Публикација",
-    "Chat": "Razgovor"
+    "Share": "Објави",
+    "Url-Copied": "УРЛ копиран",
+    "Download": "Преузимање",
+    "Downloaded": "Преузето",
+    "Save-in-phone": "Сачувајте у телефону",
+    "No": "Не",
+    "Yes": "да",
+    "Block-t-user": "Блокирај овог корисника"
   },
   "COUNTRY": {
     "AD": "Андора",
@@ -611,7 +618,9 @@
     "Missing-informations": "Недостају информације",
     "Account_desactivated": "Налог је деактивиран",
     "Y-dont-have-a-conversation-yet": "Још немате разговор.",
-    "Password-not-identical": "Lozinke nisu identične"
+    "Date-cannot-be-in-the-past": "Датум издавања не може бити из прошлости",
+    "You-cannot-add-yourself": "Не можете да додате себе",
+    "T-content-does-not-exist-anymore": "Овај садржај више не постоји"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографија је примљена",
@@ -640,7 +649,7 @@
     "Register": "Регистровати",
     "Registration": "Регистрација",
     "Sign-up": "Пријави се",
-    "accept-tou": "i sertifikujem da imam 16 godina ili više godina i slažem se sa korisničkim ugovorom i politikom privatnosti",
+    "accept-tou": "Потврђујем да имам 16 година или више и да се слажем са корисничким споразумом и политиком приватности",
     "click-on-email": "Молимо кликните на везу е-поште",
     "Create-yr-account": "направи свој налог",
     "Creating-yr-account": "Отварање налога",
@@ -725,13 +734,15 @@
     "Your-Password": "Твоја лозинка",
     "Your-Pseudo": "Твоје корисничко име",
     "Your-message": "Ваша порука",
-    "Confirm-your-password": "Potvrda lozinke"
+    "Confirm-your-password": "Потврдите лозинку",
+    "Password-not-matching": "Лозинке се не подударају"
   },
   "PLEASE": {
     "Password": "Молим вас унесите вашу шифру"
   },
   "PROFILE": {
     "About-me": "О мени",
+    "BirthDate": "Датум рођења",
     "Email": "Е-маил",
     "Followers-And-Friends": "Следбеници и пријатељи",
     "Musics": "Музика",
@@ -904,10 +915,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Корисници са ове листе неће моћи да виде ваш профил.",
       "btn-followers": "Омогућите дугме „праћење“",
       "btn-friend": "Омогућите дугме за захтев за пријатељство",
-      "h-can-b-yr-description": "Можете ставити опис",
-      "theme": "Temu",
-      "theme-description": "Odaberite temu",
-      "theme-select": "Izbor teme"
+      "h-can-b-yr-description": "Можете ставити опис"
     },
     "verified": {
       "Already-certified": "Већ сертификовано",
@@ -1036,7 +1044,14 @@
     "T-administration-w-verify-t-content-asap": "Администрација ће верификовати садржај што је пре могуће",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ово ће довести до брисања целог пројекта, да ли сте сигурни?",
     "T-operation-is-irreversible": "Ова операција је неповратна",
-    "this-user-will-be-": "Овај корисник ће сада бити"
+    "this-user-will-be-": "Овај корисник ће сада бити",
+    "A-y-s-to-unfollow-t-profile": "Да ли сте сигурни да желите престати пратити овај профил?",
+    "A-y-s-to-block-t-user": "Да ли сте сигурни да сте блокирали овог корисника?",
+    "Y-a-abt-t-block-t-user-D": "Спремате се да блокирате овог корисника. Више не бисте могли да гледате његов садржај, као ни овог корисника. Само ви бисте могли да уклоните ово ограничење.",
+    "T-content-has-been-reported": "Овај садржај је пријављен. Наши модератори ће погледати у року од 24 сата да га прегледају. Санкција ће се применити ако ово не поштује правила заједнице.",
+    "T-user-has-been-blocked-D": "Овај корисник је блокиран са вашег налога. Ниједан садржај овог профила неће бити видљив на вашем налогу.",
+    "W-is-t-reason-to-report-t-post": "Који је разлог да пријавим овај пост?",
+    "W-is-t-reason-to-report-t-post-D": "Ваша пријава је анонимна. Изаберите само категорију која ће помоћи мораторима"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Упозорење. Уверите се да имате праву адресу"
@@ -1405,7 +1420,11 @@
       "World-fusion": "Светска фузија",
       "Worldbeat": "Ворлдбеат",
       "Yacht-rock": "Иацхт роцк",
-      "Others": "Други"
+      "Others": "Други",
+      "Flamenco": "Фламенко",
+      "Rock": "Роцк",
+      "Reggae": "Реггае",
+      "Country": "Цоунтри"
     }
   },
   "WIINS-TUBE": {
