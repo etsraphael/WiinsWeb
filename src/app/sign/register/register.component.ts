@@ -108,7 +108,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     else { lg = this.translate.currentLang }
 
     // send the new user
-    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg, new Date(date))))
+    this.store$.dispatch(new UserStoreActions.AddUser(newUser, new UserExtend(lg)))
 
   }
 

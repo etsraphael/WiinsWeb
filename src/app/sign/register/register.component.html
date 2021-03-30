@@ -89,9 +89,12 @@
     </div>
     <div class="container">
       <div class="row mx-0 my-3 term-of-use">
-        <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou">
-        </mat-checkbox>
-        <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
+        <div class="col-1 my-auto">
+          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou"></mat-checkbox>
+        </div>
+        <div class="col-11">
+          <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
+        </div>
       </div>
       <div class="row mx-0 mt-4">
         <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
