@@ -62,10 +62,10 @@
             <p class="h5">{{'PLACEHOLDER.Your-Password' | translate}}</p>
           </div>
           <div class="row">
-            <input class="w-100 p-3" type="password" formControlName="password">
+            <input class="w-100 p-3" type="password" formControlName="password1">
           </div>
           <div class="password-response row">
-            <span class="text-danger" *ngIf="f.password.errors && f.password.touched">
+            <span class="text-danger" *ngIf="f.password1.errors && f.password1.touched">
               {{'ERROR-MESSAGE.8-char-minimum' | translate}}
             </span>
           </div>
@@ -77,12 +77,15 @@
             <p class="h5">{{'PLACEHOLDER.Confirm-your-password' | translate}}</p>
           </div>
           <div class="row">
-            <input class="w-100 p-3" type="password" formControlName="password">
+            <input class="w-100 p-3" type="password" formControlName="password2">
           </div>
           <div class="password-response row">
-            <span class="text-danger" *ngIf="f.password.errors && f.password.touched">
+            <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
               {{'ERROR-MESSAGE.Password-not-identical' | translate}}
             </span>
+            <!-- <div class="alert py-0" [hidden]="!f.password1.errors?.passwordNotMatch">
+              <span>{{'SETTING.password.Erorr-password-different'|translate}}</span>
+            </div> -->
           </div>
         </div>
       </div>

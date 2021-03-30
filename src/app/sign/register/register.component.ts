@@ -14,6 +14,7 @@ import { ModalTOUComponent } from 'src/app/core/modal/modal-t-o-u/modal-t-o-u.co
 import { DeviceDetectorService } from 'ngx-device-detector'
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar'
 import { MatDialog } from '@angular/material/dialog'
+import { PasswordConfirmValidations } from 'src/app/home-setting/update-password/password-confirm.validations'
 
 @Component({
   selector: 'app-register',
@@ -43,7 +44,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     private store$: Store<RootStoreState.State>,
     private _snackBar: MatSnackBar,
     public dialog: MatDialog,
-    public deviceService: DeviceDetectorService,
+    public deviceService: DeviceDetectorService
   ) { }
 
   ngOnInit() {
@@ -52,9 +53,11 @@ export class RegisterComponent implements OnInit, OnDestroy {
     this.registerForm = this.formBuilder.group({
       pseudo: ['', [Validators.required, Validators.minLength(4), Validators.pattern(/^\S*$/)]],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+      password1: ['', [Validators.required, Validators.minLength(8)]],
+      password2: ['', [Validators.required]],
       tou: [false]
-    })
+    }, { validators: PasswordConfirmValidations.passwordNotMatchSignUp }
+    )
 
     // listener for each action
     this.listenerPseudo()
@@ -68,6 +71,10 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
     // verify the term of use
     if (!this.registerForm.get('tou').value) return this.showErrorMessage('ERROR-MESSAGE.y-h-to-accept-the-tou')
+
+    if (this.registerForm.get('password1').value !== this.registerForm.get('password2').value) {
+      return this.showErrorMessage('ERROR-MESSAGE.Password-not-identical')
+    }
 
     // verify the pseudo
     this.pseudoValid$.pipe(take(1)).subscribe(val => {
@@ -83,7 +90,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
       null,
       this.registerForm.get('pseudo').value,
       this.registerForm.get('email').value,
-      this.registerForm.get('password').value
+      this.registerForm.get('password1').value
     )
 
     let lg: string
