@@ -211,7 +211,14 @@
     "Towards-an-infinite-space": "Em direção a um espaço infinito",
     "Hello": "Olá",
     "Publication": "Publicação",
-    "Chat": "Chat"
+    "Share": "Compartilhar",
+    "Url-Copied": "Url copiado",
+    "Download": "Baixar",
+    "Downloaded": "Baixado",
+    "Save-in-phone": "Salvar no telefone",
+    "No": "Não",
+    "Yes": "sim",
+    "Block-t-user": "Bloqueie esse usuário"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -569,7 +576,9 @@
     "Missing-informations": "Informações ausentes",
     "Account_desactivated": "Conta desativada",
     "Y-dont-have-a-conversation-yet": "Você ainda não tem uma conversa.",
-    "Password-not-identical": "As senhas não são idênticas"
+    "Date-cannot-be-in-the-past": "A data de lançamento não pode estar no passado",
+    "You-cannot-add-yourself": "Você não pode se adicionar",
+    "T-content-does-not-exist-anymore": "Este conteúdo não existe mais"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A foto é recebida",
@@ -598,7 +607,7 @@
     "Register": "Registro",
     "Registration": "Cadastro",
     "Sign-up": "Inscrição",
-    "accept-tou": "Eu certifico que eu tenho 16 anos ou mais e eu concordo com o acordo de usuário e política de privacidade",
+    "accept-tou": "Certifico que tenho 16 anos de idade ou mais e concordo com o contrato do usuário e a política de privacidade",
     "click-on-email": "Por favor, clique no link do email",
     "Create-yr-account": "crie sua conta",
     "Creating-yr-account": "Criando sua conta",
@@ -682,14 +691,14 @@
     "Your-Email": "Seu email",
     "Your-Password": "Sua senha",
     "Your-Pseudo": "Seu nome de usuário",
-    "Your-message": "Sua mensagem",
-    "Confirm-your-password": "Confirme sua senha"
+    "Your-message": "Sua mensagem"
   },
   "PLEASE": {
     "Password": "Por favor, insira sua senha"
   },
   "PROFILE": {
     "About-me": "Sobre mim",
+    "BirthDate": "Data de nascimento",
     "Email": "O email",
     "Followers-And-Friends": "Seguidores e amigos",
     "Musics": "Músicas",
@@ -850,10 +859,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Os usuários desta lista não poderão ver seu perfil.",
       "btn-followers": "Disponibilizar o botão \"seguir\"",
       "btn-friend": "Disponibilizar o botão de solicitação do amigo",
-      "h-can-b-yr-description": "Você pode colocar uma descrição",
-      "theme": "Tema",
-      "theme-description": "Por favor, escolha um tema",
-      "theme-select": "Selecione um tema"
+      "h-can-b-yr-description": "Você pode colocar uma descrição"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Este recurso requer verificação para usar",
@@ -979,7 +985,14 @@
     "T-administration-w-verify-t-content-asap": "Administração verificará que estão contidos o mais rápido possível",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Isso fará com que todo o projeto seja excluído, tem certeza?",
     "T-operation-is-irreversible": "Esta operação é irreversível",
-    "this-user-will-be-": "Este usuário agora será"
+    "this-user-will-be-": "Este usuário agora será",
+    "A-y-s-to-unfollow-t-profile": "Tem certeza de que deseja parar de seguir este perfil?",
+    "A-y-s-to-block-t-user": "Tem certeza que deseja bloquear este usuário?",
+    "Y-a-abt-t-block-t-user-D": "Você está prestes a bloquear este usuário. Você não seria mais capaz de assistir ao conteúdo dele e a este usuário também. Só você seria capaz de remover essa restrição.",
+    "T-content-has-been-reported": "Este conteúdo foi denunciado. Nossos moderadores darão uma olhada em 24 horas para revisá-lo. Uma sanção será aplicada se isso não respeitar as regras da comunidade.",
+    "T-user-has-been-blocked-D": "Este usuário foi bloqueado em sua conta. Nenhum conteúdo deste perfil será visível em sua conta.",
+    "W-is-t-reason-to-report-t-post": "Qual é a razão para denunciar esta postagem?",
+    "W-is-t-reason-to-report-t-post-D": "Seu relatório é anônimo. Por favor, escolha apenas uma categoria para ajudar os moradores"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Aviso. Certifique-se de que você tem o endereço certo"
@@ -1348,7 +1361,11 @@
       "World-fusion": "Fusão mundial",
       "Worldbeat": "Batida mundial",
       "Yacht-rock": "Pedra de iate",
-      "Others": "Outras"
+      "Others": "Outras",
+      "Flamenco": "Flamenco",
+      "Rock": "Rocha",
+      "Reggae": "Reggae",
+      "Country": "País"
     }
   },
   "WIINS-TUBE": {

@@ -253,7 +253,14 @@
     "responses": "ymatebion",
     "soon": "yn fuan",
     "views": "golygfeydd",
-    "Chat": "Sgwrsio"
+    "Share": "Rhannu",
+    "Url-Copied": "Copïodd Url",
+    "Download": "Dadlwythwch",
+    "Downloaded": "Dadlwythwyd",
+    "Save-in-phone": "Cadw mewn ffôn",
+    "No": "Na",
+    "Yes": "Ydw",
+    "Block-t-user": "Blociwch y defnyddiwr hwn"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -611,7 +618,9 @@
     "y-h-to-delete-yr-page-or-group-before": "Rhaid i chi ddileu eich tudalennau neu grwpiau o'r blaen",
     "y-have-to-be-friend": "rhaid i chi fod yn ffrindiau",
     "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp",
-    "Password-not-identical": "Nid yw'r cyfrineiriau'n union yr un fath"
+    "Date-cannot-be-in-the-past": "Ni all y dyddiad rhyddhau fod yn y gorffennol",
+    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun",
+    "T-content-does-not-exist-anymore": "Nid yw'r cynnwys hwn yn bodoli mwyach"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",
@@ -644,7 +653,7 @@
     "Register": "Cofrestrwch",
     "Registration": "Cofrestru",
     "Sign-up": "Cofrestru",
-    "accept-tou": "i ardystio fy mod yn 16 oed neu'n hŷn ac rwy'n cytuno â'r cytundeb defnyddiwr a'r polisi preifatrwydd",
+    "accept-tou": "Rwy'n tystio fy mod i'n 16 oed neu'n hŷn ac rwy'n cytuno i'r cytundeb defnyddiwr a'r polisi preifatrwydd",
     "click-on-email": "Cliciwch ar y ddolen e-bost"
   },
   "MAIN-MUSIC": {
@@ -724,14 +733,14 @@
     "Your-Email": "Dy ebost",
     "Your-Password": "Eich cyfrinair",
     "Your-Pseudo": "Eich enw defnyddiwr",
-    "Your-message": "Dy neges",
-    "Confirm-your-password": "Cadarnhau eich cyfrinair"
+    "Your-message": "Dy neges"
   },
   "PLEASE": {
     "Password": "Rhowch eich cyfrinair"
   },
   "PROFILE": {
     "About-me": "Amdanaf i",
+    "BirthDate": "Dyddiad Geni",
     "Email": "E-bost",
     "Followers-And-Friends": "Dilynwyr a ffrindiau",
     "Musics": "Cerddoriaeth",
@@ -904,10 +913,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Ni fydd defnyddwyr ar y rhestr hon yn gallu gweld eich proffil.",
       "btn-followers": "Sicrhewch fod y botwm \"dilyn\" ar gael",
       "btn-friend": "Sicrhewch fod y botwm cais ffrind ar gael",
-      "h-can-b-yr-description": "Gallwch chi roi disgrifiad",
-      "theme": "Thema",
-      "theme-description": "Dewiswch thema",
-      "theme-select": "Dewiswch thema"
+      "h-can-b-yr-description": "Gallwch chi roi disgrifiad"
     },
     "verified": {
       "Already-certified": "Eisoes wedi'i ardystio",
@@ -1036,7 +1042,14 @@
     "T-administration-w-verify-t-content-asap": "Bydd gweinyddiaeth yn gwirio cynnwys cyn gynted â phosibl",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bydd hyn yn achosi i'r prosiect cyfan gael ei ddileu, a ydych chi'n siŵr?",
     "T-operation-is-irreversible": "Mae'r gweithrediad hwn yn anghildroadwy",
-    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr"
+    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr",
+    "A-y-s-to-unfollow-t-profile": "A ydych yn sicr o ddadorchuddio'r profie hwn?",
+    "A-y-s-to-block-t-user": "Ydych chi'n sicr o rwystro'r defnyddiwr hwn?",
+    "Y-a-abt-t-block-t-user-D": "Rydych chi ar fin blocio'r defnyddiwr hwn. Ni fyddech bellach yn gallu gwylio ei gynnwys a'r defnyddiwr hwn hefyd. Dim ond chi fyddai'n gallu dileu'r cyfyngiad hwn.",
+    "T-content-has-been-reported": "Adroddwyd ar y cynnwys hwn. Bydd ein cymedrolwyr yn edrych mewn oedi o 24 awr i'w adolygu. Rhoddir cosb os nad yw hyn yn parchu rheolau'r gymuned.",
+    "T-user-has-been-blocked-D": "Mae'r defnyddiwr hwn wedi'i rwystro o'ch cyfrif. Ni fydd unrhyw gynnwys o'r proffil hwn yn weladwy gyda'ch cyfrif.",
+    "W-is-t-reason-to-report-t-post": "Beth yw'r rheswm i riportio'r swydd hon?",
+    "W-is-t-reason-to-report-t-post-D": "Mae eich adroddiad yn anhysbys. Dewiswch gategori yn unig i helpu'r morators"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Rhybudd. Sicrhewch fod gennych y cyfeiriad cywir"
@@ -1405,7 +1418,11 @@
       "World-fusion": "Ymasiad y byd",
       "Worldbeat": "Curiad y Byd",
       "Yacht-rock": "Craig hwylio",
-      "Others": "Eraill"
+      "Others": "Eraill",
+      "Flamenco": "Flamenco",
+      "Rock": "Roc",
+      "Reggae": "Reggae",
+      "Country": "Gwlad"
     }
   },
   "WIINS-TUBE": {

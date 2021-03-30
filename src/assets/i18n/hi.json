@@ -211,7 +211,14 @@
     "Towards-an-infinite-space": "एक अनंत जगह की ओर",
     "Hello": "नमस्ते",
     "Publication": "प्रकाशन",
-    "Chat": "गपशप"
+    "Share": "साझा करें",
+    "Url-Copied": "Url की प्रतिलिपि बनाई गई",
+    "Download": "डाउनलोड",
+    "Downloaded": "डाउनलोड किया गया",
+    "Save-in-phone": "फोन में सेव करें",
+    "No": "नहीं न",
+    "Yes": "हाँ",
+    "Block-t-user": "इस उपयोगकर्ता को ब्लॉक करें"
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -569,7 +576,9 @@
     "Missing-informations": "गुम होने का संकेत",
     "Account_desactivated": "खाता निरस्त",
     "Y-dont-have-a-conversation-yet": "आपके पास अभी तक कोई वार्तालाप नहीं है।",
-    "Password-not-identical": "पासवर्ड समान नहीं हैं"
+    "Date-cannot-be-in-the-past": "रिलीज की तारीख अतीत में नहीं हो सकती",
+    "You-cannot-add-yourself": "आप खुद को नहीं जोड़ सकते",
+    "T-content-does-not-exist-anymore": "यह सामग्री अब मौजूद नहीं है"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -598,7 +607,7 @@
     "Register": "रजिस्टर करें",
     "Registration": "पंजीकरण",
     "Sign-up": "नाम लिखो",
-    "accept-tou": "मैं प्रमाणित करता हूं कि मेरी उम्र 16 वर्ष या उससे अधिक है और मैं उपयोगकर्ता समझौते और गोपनीयता नीति से सहमत हूं",
+    "accept-tou": "मैं प्रमाणित करता हूं कि मेरी आयु 16 वर्ष या उससे अधिक है और मैं उपयोगकर्ता समझौते और गोपनीयता नीति से सहमत हूं",
     "click-on-email": "कृपया ईमेल लिंक पर क्लिक करें",
     "Create-yr-account": "अपने खाते बनाएँ",
     "Creating-yr-account": "अपना खाता बनाना",
@@ -682,14 +691,14 @@
     "Your-Email": "तुम्हारा ईमेल",
     "Your-Password": "आपका पासवर्ड",
     "Your-Pseudo": "तुम्हारा प्रयोगकर्ती नाम",
-    "Your-message": "आपका सन्देश",
-    "Confirm-your-password": "अपने पासवर्ड की पुष्टि करें"
+    "Your-message": "आपका सन्देश"
   },
   "PLEASE": {
     "Password": "अपना पासवर्ड दर्ज करें"
   },
   "PROFILE": {
     "About-me": "मेरे बारे में",
+    "BirthDate": "जन्म की तारीख",
     "Email": "ईमेल",
     "Followers-And-Friends": "अनुयायी और मित्र",
     "Musics": "संगीत",
@@ -850,10 +859,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "इस लिस्ट में यूजर्स आपकी प्रोफाइल नहीं देख पाएंगे।",
       "btn-followers": "\"फॉलो\" बटन उपलब्ध कराएं",
       "btn-friend": "फ्रेंड रिक्वेस्ट बटन उपलब्ध कराएं",
-      "h-can-b-yr-description": "आप विवरण डाल सकते हैं",
-      "theme": "थीम",
-      "theme-description": "कृपया एक विषय चुनें",
-      "theme-select": "एक विषय का चयन करें"
+      "h-can-b-yr-description": "आप विवरण डाल सकते हैं"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "इस सुविधा का उपयोग करने के लिए सत्यापन की आवश्यकता है",
@@ -979,7 +985,14 @@
     "T-administration-w-verify-t-content-asap": "प्रशासन सत्यापित करेगा जितनी जल्दी हो सके समाहित कर रहे है",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "यह पूरी परियोजना को हटा दिया जा करने के लिए कारण होगा, क्या आपको यकीन है?",
     "T-operation-is-irreversible": "यह ऑपरेशन अपरिवर्तनीय है",
-    "this-user-will-be-": "यह उपयोगकर्ता अब होगा"
+    "this-user-will-be-": "यह उपयोगकर्ता अब होगा",
+    "A-y-s-to-unfollow-t-profile": "क्या आप इस मुनाफाखोरी को कम करना चाहते हैं?",
+    "A-y-s-to-block-t-user": "क्या आप इस उपयोगकर्ता को रोकना चाहते हैं?",
+    "Y-a-abt-t-block-t-user-D": "आप इस उपयोगकर्ता को ब्लॉक करने वाले हैं। अब आप उसकी सामग्री और इस उपयोगकर्ता को भी नहीं देख पाएंगे। केवल आप इस प्रतिबंध को हटा पाएंगे।",
+    "T-content-has-been-reported": "यह सामग्री बताई गई है। हमारे मॉडरेटर इसकी समीक्षा के लिए 24 घंटे की देरी में एक नज़र डालेंगे। यदि यह समुदाय के नियमों का सम्मान नहीं करता है तो एक अनुमोदन लागू किया जाएगा।",
+    "T-user-has-been-blocked-D": "यह उपयोगकर्ता आपके खाते से अवरोधित कर दिया गया है। इस प्रोफ़ाइल की कोई भी सामग्री आपके खाते से दिखाई नहीं देगी।",
+    "W-is-t-reason-to-report-t-post": "इस पोस्ट की रिपोर्ट करने का क्या कारण है?",
+    "W-is-t-reason-to-report-t-post-D": "आपकी रिपोर्ट गुमनाम है। कृपया नैतिकतावादियों की मदद के लिए एक श्रेणी चुनें"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "चेतावनी. सुनिश्चित करें कि आपके पास सही पता है"
@@ -1348,7 +1361,11 @@
       "World-fusion": "संसार संलयन",
       "Worldbeat": "वर्ल्डबीट",
       "Yacht-rock": "यॉट रॉक",
-      "Others": "अन्य"
+      "Others": "अन्य",
+      "Flamenco": "जिप्सी का रोमांस",
+      "Rock": "चट्टान",
+      "Reggae": "रेग",
+      "Country": "देश"
     }
   },
   "WIINS-TUBE": {
