@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "ឆ្ពោះទៅរកចន្លោះគ្មានកំណត់",
     "Hello": "សួស្តី",
     "Publication": "ការបោះពុម្ពផ្សាយ",
-    "Share": "ចែករំលែក",
-    "Url-Copied": "Url បានចម្លង",
-    "Download": "ទាញយក",
-    "Downloaded": "បានទាញយក",
-    "Save-in-phone": "រក្សាទុកក្នុងទូរស័ព្ទ"
+    "Chat": "ជជែក"
   },
   "COUNTRY": {
     "AD": "អង់ដូរ៉ា",
@@ -615,9 +611,7 @@
     "Missing-informations": "បាត់ព័ត៌មាន",
     "Account_desactivated": "គណនីអសកម្ម",
     "Y-dont-have-a-conversation-yet": "អ្នកមិនទាន់មានការសន្ទនានៅឡើយទេ។",
-    "Date-cannot-be-in-the-past": "កាលបរិច្ឆេទនៃការចេញផ្សាយមិនអាចជាអតីតកាលទេ",
-    "You-cannot-add-yourself": "អ្នកមិនអាចបន្ថែមខ្លួនឯងបានទេ",
-    "T-content-does-not-exist-anymore": "មាតិកានេះមិនមានទៀតទេ"
+    "Password-not-identical": "លេខសម្ងាត់មិនដូចគ្នាទេ"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "រូបថតត្រូវបានទទួល",
@@ -646,7 +640,7 @@
     "Register": "ចុះឈ្មោះ",
     "Registration": "ការចុះឈ្មោះ",
     "Sign-up": "ចុះ​ឈ្មោះ",
-    "accept-tou": "ខ្ញុំទទួលយកល័ក្ខខ័ណ្ឌនៃការប្រើប្រាស់",
+    "accept-tou": "ខ្ញុំបញ្ជាក់ថាខ្ញុំមានអាយុ ១៦ ឆ្នាំឬចាស់ជាងនេះហើយខ្ញុំយល់ព្រមតាមកិច្ចព្រមព្រៀងអ្នកប្រើប្រាស់និងគោលការណ៍ឯកជនភាព",
     "click-on-email": "សូមចុចលើអ៊ីម៉ែលតំណភ្ជាប់",
     "Create-yr-account": "បង្កើតគណនីរបស់អ្នក",
     "Creating-yr-account": "បង្កើតគណនីរបស់អ្នក",
@@ -730,14 +724,14 @@
     "Your-Email": "អ៊ីមែល​របស់​អ្នក",
     "Your-Password": "លេខសំងាត់​របស់​អ្នក",
     "Your-Pseudo": "ឈ្មោះអ្នកប្រើរបស់អ្នក",
-    "Your-message": "សារ​របស់​អ្នក"
+    "Your-message": "សារ​របស់​អ្នក",
+    "Confirm-your-password": "បញ្ជាក់ពាក្យសម្ងាត់របស់អ្នក"
   },
   "PLEASE": {
     "Password": "សូម​បញ្ចូល​ពាក្យ​សម្ងាត់​របស់​អ្នក"
   },
   "PROFILE": {
     "About-me": "អំពី​ខ្ញុំ",
-    "BirthDate": "ថ្ងៃខែ​ឆ្នាំ​កំណើត",
     "Email": "អ៊ីមែល",
     "Followers-And-Friends": "អ្នកតាមនិងមិត្តភក្តិ",
     "Musics": "តន្ត្រី",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "អ្នកប្រើប្រាស់នៅក្នុងបញ្ជីនេះនឹងមិនអាចមើលឃើញទម្រង់របស់អ្នកទេ។",
       "btn-followers": "ធ្វើឱ្យប៊ូតុង \"តាមដាន\" អាចប្រើបាន",
       "btn-friend": "ធ្វើឱ្យប៊ូតុងសំណើមិត្តភក្តិអាចប្រើបាន",
-      "h-can-b-yr-description": "អ្នកអាចដាក់ការពិពណ៌នា"
+      "h-can-b-yr-description": "អ្នកអាចដាក់ការពិពណ៌នា",
+      "theme": "ប្រធានបទ",
+      "theme-description": "សូមជ្រើសរើសប្រធានបទមួយ",
+      "theme-select": "ជ្រើសរើសស្បែក"
     },
     "verified": {
       "Already-certified": "បញ្ជាក់រួចហើយ",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "រដ្ឋបាលនឹងផ្ទៀងផ្ទាត់មាតិកាឱ្យបានឆាប់តាមដែលអាចធ្វើទៅបាន",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "វានឹងធ្វើឱ្យគម្រោងទាំងមូលត្រូវបានលុបតើអ្នកប្រាកដទេ?",
     "T-operation-is-irreversible": "ប្រតិបត្តិការនេះគឺមិនអាចត្រឡប់វិញបានទេ",
-    "this-user-will-be-": "អ្នកប្រើនេះនឹងនៅពេលនេះ",
-    "A-y-s-to-unfollow-t-profile": "តើអ្នកប្រាកដជាមិនយកគំរូតាមនេះទេ?"
+    "this-user-will-be-": "អ្នកប្រើនេះនឹងនៅពេលនេះ"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "ការព្រមាន។ ត្រូវប្រាកដថាអ្នកមានអាសយដ្ឋានត្រឹមត្រូវ"
@@ -1409,11 +1405,7 @@
       "World-fusion": "ការលាយបញ្ចូលគ្នានៃពិភពលោក",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht ថ្ម",
-      "Others": "ផ្សេងៗ",
-      "Flamenco": "ហ្វ្លាំមេនកូ",
-      "Rock": "រ៉ុក",
-      "Reggae": "រីហ្គែ",
-      "Country": "ប្រទេស"
+      "Others": "ផ្សេងៗ"
     }
   },
   "WIINS-TUBE": {

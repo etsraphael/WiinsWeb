@@ -31,7 +31,6 @@ export class ProfileModel extends BaseModel {
   communityTotal: number;
 }
 
-
 export class BtnFollow {
   friend: boolean;
   following: boolean;
@@ -41,5 +40,3 @@ export class BtnFollow {
     this.following = following;
   }
 }
-
-

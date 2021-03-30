@@ -15,7 +15,7 @@
       </button>
     </div>
   </div>
-  <form [formGroup]="registerForm" class="row mx-0 container-form my-4">
+  <form [formGroup]="registerForm" class="row mx-0 container-form my-2">
     <div class="row mx-0">
       <div class="col-md-6 col-12 my-2">
         <div class="container">
@@ -71,17 +71,35 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row mx-0 my-3 term-of-use">
-          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou">
-          </mat-checkbox>
+      <div class="col-md-6 col-12 my-2">
+        <div class="container">
+          <div class="row">
+            <p class="h5">{{'PLACEHOLDER.Confirm-your-password' | translate}}</p>
+          </div>
+          <div class="row">
+            <input class="w-100 p-3" type="password" formControlName="password">
+          </div>
+          <div class="password-response row">
+            <span class="text-danger" *ngIf="f.password.errors && f.password.touched">
+              {{'ERROR-MESSAGE.Password-not-identical' | translate}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mx-0 my-3 term-of-use">
+        <div class="col-1 my-auto">
+          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou"></mat-checkbox>
+        </div>
+        <div class="col-11">
           <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
         </div>
-        <div class="row mx-0 mt-4">
-          <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
-            <span class="text-white">{{'LOGIN-REGISTRER.Register'|translate}}</span>
-          </button>
-        </div>
+      </div>
+      <div class="row mx-0 mt-4">
+        <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
+          <span class="text-white">{{'LOGIN-REGISTRER.Register'|translate}}</span>
+        </button>
       </div>
     </div>
   </form>

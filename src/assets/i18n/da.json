@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Mod et uendeligt rum",
     "Hello": "Hej",
     "Publication": "Offentliggørelse",
-    "Share": "Del",
-    "Url-Copied": "URL kopieret",
-    "Download": "Hent",
-    "Downloaded": "Downloadet",
-    "Save-in-phone": "Gem i telefonen"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "Missing-informations": "Manglende information",
     "Account_desactivated": "Konto deaktiveret",
     "Y-dont-have-a-conversation-yet": "Du har ikke en samtale endnu.",
-    "Date-cannot-be-in-the-past": "Udgivelsesdatoen kan ikke være tidligere",
-    "You-cannot-add-yourself": "Du kan ikke tilføje dig selv",
-    "T-content-does-not-exist-anymore": "Dette indhold findes ikke længere"
+    "Password-not-identical": "Adgangskoderne er ikke identiske"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Billedet er modtaget",
@@ -646,7 +640,7 @@
     "Register": "Tilmeld",
     "Registration": "Registrering",
     "Sign-up": "Tilmelde",
-    "accept-tou": "Jeg accepterer vilkårene og betingelserne for brug",
+    "accept-tou": "Jeg bekræfter, at jeg er 16 år eller ældre, og jeg accepterer brugeraftalen og privatlivspolitik",
     "click-on-email": "Klik på e-mail-linket",
     "Create-yr-account": "Opret din konto",
     "Creating-yr-account": "Oprettelse af din konto",
@@ -730,14 +724,14 @@
     "Your-Email": "Din email",
     "Your-Password": "Dit kodeord",
     "Your-Pseudo": "Dit brugernavn",
-    "Your-message": "Din besked"
+    "Your-message": "Din besked",
+    "Confirm-your-password": "Bekræft din adgangskode"
   },
   "PLEASE": {
     "Password": "Indtast venligst dit kodeord"
   },
   "PROFILE": {
     "About-me": "Om mig",
-    "BirthDate": "Fødselsdato",
     "Email": "E-mail",
     "Followers-And-Friends": "Følgere og venner",
     "Musics": "Musik",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Brugere på denne liste kan ikke se din profil.",
       "btn-followers": "Gør knappen \"følg\" tilgængelig",
       "btn-friend": "Gør venneanmodningsknappen tilgængelig",
-      "h-can-b-yr-description": "Du kan sætte en beskrivelse"
+      "h-can-b-yr-description": "Du kan sætte en beskrivelse",
+      "theme": "Tema",
+      "theme-description": "Vælg et tema",
+      "theme-select": "Vælge et tema"
     },
     "verified": {
       "Already-certified": "Allerede certificeret",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administration vil kontrollere indhold så hurtigt som muligt",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dette vil medføre, at hele projektet slettes, er du sikker?",
     "T-operation-is-irreversible": "Denne handling er irreversibel",
-    "this-user-will-be-": "Denne bruger vil nu være",
-    "A-y-s-to-unfollow-t-profile": "Er du sikker på at følge denne profie op?"
+    "this-user-will-be-": "Denne bruger vil nu være"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Advarsel. Sørg for, at du har den rigtige adresse"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Verdensfusion",
       "Worldbeat": "Verdensslag",
       "Yacht-rock": "Yacht rock",
-      "Others": "Andre",
-      "Flamenco": "Flamenco",
-      "Rock": "Klippe",
-      "Reggae": "Reggae",
-      "Country": "Land"
+      "Others": "Andre"
     }
   },
   "WIINS-TUBE": {

@@ -7,8 +7,105 @@
   background-size: cover;
 }
 
+.container-donation {
+  display: inline-block;
+}
+
 .sub-title {
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.wiins-logo {
+  position: absolute;
+  top: -15px;
+}
+
+.animation-background-signin {
+  max-width: 100%;
+  max-height: 200%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animate 60s ease-in-out infinite;
+}
+
+.preload-images {
+    background: url('./../../assets/img/img1.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img2.png') no-repeat -9999px -9999px,
+    url('./../../assets/img/img3.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img4.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img5.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img6.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img7.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img8.jpg') no-repeat -9999px -9999px,
+    url('./../../assets/img/img9.png') no-repeat -9999px -9999px,
+    url('./../../assets/img/img10.png') no-repeat -9999px -9999px;
+}
+
+@keyframes animate{
+0%,100%{
+  background-image: url('./../../assets/img/img1.jpg');
+}
+10%{
+  background-image: url('./../../assets/img/img2.png');
+}
+20%{
+  background-image: url('./../../assets/img/img3.jpg');
+}
+30%{
+  background-image: url('./../../assets/img/img4.jpg');
+}
+40%{
+  background-image: url('./../../assets/img/img5.jpg');
+}
+50%{
+  background-image: url('./../../assets/img/img6.jpg');
+}
+60%{
+  background-image: url('./../../assets/img/img7.jpg');
+}
+70%{
+  background-image: url('./../../assets/img/img8.jpg');
+}
+80%{
+  background-image: url('./../../assets/img/img9.png');
+}
+90%{
+  background-image: url('./../../assets/img/img10.png');
+}
+}
+
+.setting-top-signin {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.63);
+  overflow: hidden;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.term-of-use-top-signin {
+  color: rgb(0, 0, 0);
+  margin-right: 1rem !important;
+}
+
+.login-register-box {
+  background-color: rgba(255, 255, 255, 0.63);
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  top: -50px;
+  transition: 0.5s;
+}
+
+.login-register-box:hover {
+  transform: translateY(-10px);
+}
+
+.background-right {
+  background-image: url('./../../assets/img/bckgrnd0.png');
+  background-size: cover;
+  width: 100%;
 }

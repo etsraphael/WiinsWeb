@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "അനന്തമായ സ്ഥലത്തേക്ക്",
     "Hello": "ഹലോ",
     "Publication": "പ്രസിദ്ധീകരണം",
-    "Share": "പങ്കിടുക",
-    "Url-Copied": "Url പകർത്തി",
-    "Download": "ഡൗൺലോഡ്",
-    "Downloaded": "ഡൗൺലോഡുചെയ്‌തു",
-    "Save-in-phone": "ഫോണിൽ സംരക്ഷിക്കുക"
+    "Chat": "ചാറ്റ്"
   },
   "COUNTRY": {
     "AD": "അൻഡോറ",
@@ -615,9 +611,7 @@
     "Missing-informations": "വിവരങ്ങൾ‌ നഷ്‌ടമായി",
     "Account_desactivated": "അക്കൗണ്ട് നിർജ്ജീവമാക്കി",
     "Y-dont-have-a-conversation-yet": "നിങ്ങൾക്ക് ഇതുവരെ ഒരു സംഭാഷണവുമില്ല.",
-    "Date-cannot-be-in-the-past": "റിലീസ് തീയതി പഴയതായിരിക്കരുത്",
-    "You-cannot-add-yourself": "നിങ്ങൾക്ക് സ്വയം ചേർക്കാൻ കഴിയില്ല",
-    "T-content-does-not-exist-anymore": "ഈ ഉള്ളടക്കം ഇപ്പോൾ നിലവിലില്ല"
+    "Password-not-identical": "പാസ്‌വേഡുകൾ സമാനമല്ല"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "ഫോട്ടോ ലഭിച്ചു",
@@ -730,14 +724,14 @@
     "Your-Email": "നിങ്ങളുടെ ഇമെയിൽ",
     "Your-Password": "നിങ്ങളുടെ പാസ്സ്വേര്ഡ്",
     "Your-Pseudo": "നിങ്ങളുടെ ഉപയോക്തൃനാമം",
-    "Your-message": "നിങ്ങളുടെ സന്ദേശം"
+    "Your-message": "നിങ്ങളുടെ സന്ദേശം",
+    "Confirm-your-password": "നിങ്ങളുടെ പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക"
   },
   "PLEASE": {
     "Password": "നിങ്ങളുടെ പാസ്‌വേഡ് നൽകുക"
   },
   "PROFILE": {
     "About-me": "എന്നെ പറ്റി",
-    "BirthDate": "ജനിച്ച ദിവസം",
     "Email": "ഇ-മെയിൽ",
     "Followers-And-Friends": "അനുയായികളും സുഹൃത്തുക്കളും",
     "Musics": "മ്യൂസിക്സ്",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "ഈ ലിസ്റ്റിലെ ഉപയോക്താക്കൾക്ക് നിങ്ങളുടെ പ്രൊഫൈൽ കാണാൻ കഴിയില്ല.",
       "btn-followers": "\"പിന്തുടരുക\" ബട്ടൺ ലഭ്യമാക്കുക",
       "btn-friend": "ചങ്ങാതി അഭ്യർത്ഥന ബട്ടൺ ലഭ്യമാക്കുക",
-      "h-can-b-yr-description": "നിങ്ങൾക്ക് ഒരു വിവരണം നൽകാം"
+      "h-can-b-yr-description": "നിങ്ങൾക്ക് ഒരു വിവരണം നൽകാം",
+      "theme": "തീം",
+      "theme-description": "ഒരു തീം തിരഞ്ഞെടുക്കുക",
+      "theme-select": "ഒരു തീം തിരഞ്ഞെടുക്കുക"
     },
     "verified": {
       "Already-certified": "ഇതിനകം സാക്ഷ്യപ്പെടുത്തി",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "അഡ്മിനിസ്ട്രേഷൻ എത്രയും വേഗം ഉള്ളടക്കം പരിശോധിക്കും",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "ഇത് മുഴുവൻ പ്രോജക്റ്റും ഇല്ലാതാക്കാൻ ഇടയാക്കും, നിങ്ങൾക്ക് ഉറപ്പാണോ?",
     "T-operation-is-irreversible": "ഈ പ്രവർത്തനം മാറ്റാനാവില്ല",
-    "this-user-will-be-": "ഈ ഉപയോക്താവ് ഇപ്പോൾ ആയിരിക്കും",
-    "A-y-s-to-unfollow-t-profile": "ഈ പ്രൊഫൈൽ പിന്തുടരുമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?"
+    "this-user-will-be-": "ഈ ഉപയോക്താവ് ഇപ്പോൾ ആയിരിക്കും"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "മുന്നറിയിപ്പ്. നിങ്ങൾക്ക് ശരിയായ വിലാസമുണ്ടെന്ന് ഉറപ്പാക്കുക"
@@ -1409,11 +1405,7 @@
       "World-fusion": "ലോക സംയോജനം",
       "Worldbeat": "ലോകബീറ്റ്",
       "Yacht-rock": "യാച് റോക്ക്",
-      "Others": "മറ്റുള്ളവർ",
-      "Flamenco": "ഫ്ലമെൻകോ",
-      "Rock": "പാറ",
-      "Reggae": "റെഗ്ഗെ",
-      "Country": "രാജ്യം"
+      "Others": "മറ്റുള്ളവർ"
     }
   },
   "WIINS-TUBE": {

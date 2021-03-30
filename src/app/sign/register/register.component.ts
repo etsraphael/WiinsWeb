@@ -1,8 +1,7 @@
 import { UserExtend } from '../../core/models/baseUser/userExtend.model'
 import { Component, OnInit, OnDestroy } from '@angular/core'
-import { FormBuilder, FormGroup, Validators, ValidatorFn, AbstractControl } from '@angular/forms'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { filter, debounceTime, distinctUntilChanged, skipWhile, take } from 'rxjs/operators'
-import { DatePipe } from '@angular/common'
 import { TranslateService } from '@ngx-translate/core'
 import { Observable, Subscription } from 'rxjs'
 import { UserModel } from '../../core/models/baseUser/user.model'
@@ -88,7 +87,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
     )
 
     let lg: string
-    if(!this.translate.currentLang){ lg = 'en'}
+    if (!this.translate.currentLang) { lg = 'en' }
     else { lg = this.translate.currentLang }
 
     // send the new user

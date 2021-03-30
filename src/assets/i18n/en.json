@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "Towards an infinite space",
     "Hello": "Hello",
     "Publication": "Publication",
-    "Share": "Share",
-    "Url-Copied": "Url copied",
-    "Download": "Download",
-    "Downloaded": "Downloaded",
-    "Save-in-phone": "Save in phone"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -573,9 +569,7 @@
     "Missing-informations": "Missing informations",
     "Account_desactivated": "Account desactivated",
     "Y-dont-have-a-conversation-yet": "You don't have a conversation yet.",
-    "Date-cannot-be-in-the-past": "The release date cannot be in the past",
-    "You-cannot-add-yourself": "You cannot add yourself",
-    "T-content-does-not-exist-anymore": "This content does not exist anymore"
+    "Password-not-identical": "The passwords are not identical"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "The photo is received",
@@ -604,7 +598,7 @@
     "Register": "Register",
     "Registration": "Registration",
     "Sign-up": "Sign up",
-    "accept-tou": "I accept the terms and conditions of use",
+    "accept-tou": "I certify that i am 16 years of age or older and i agree to the user agreement and privacy policy",
     "click-on-email": "Please click on the email link",
     "Create-yr-account": "Create your account",
     "Creating-yr-account": "Creating your account",
@@ -688,14 +682,14 @@
     "Your-Email": "Your email",
     "Your-Password": "Your password",
     "Your-Pseudo": "Your username",
-    "Your-message": "Your message"
+    "Your-message": "Your message",
+    "Confirm-your-password": "Confirm your password"
   },
   "PLEASE": {
     "Password": "Please enter your password"
   },
   "PROFILE": {
     "About-me": "About me",
-    "BirthDate": "Date of Birth",
     "Email": "E-mail",
     "Followers-And-Friends": "Followers and friends",
     "Musics": "Musics",
@@ -856,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Users in this list will not be able to see your profile.",
       "btn-followers": "Make the \"follow\" button available",
       "btn-friend": "Make the friend request button available",
-      "h-can-b-yr-description": "You can put a description"
+      "h-can-b-yr-description": "You can put a description",
+      "theme": "Theme",
+      "theme-description": "Please choose a theme",
+      "theme-select": "Select a theme"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "This feature requires verification to use",
@@ -875,7 +872,7 @@
       "Yr-profil-is-currently-being-checked-D": "Your profile is currently being checked. We will contact you within 48 hours by email.",
       "Verification": "Verification",
       "Pl-s-t-docs-a-complet-t-form-below": "Please send the necessary documents and complete the form below.",
-      "Upload-yr-password-id-identity-or-driver-license": "Upload your password, id identity or driver license.",
+      "Upload-yr-password-id-identity-or-driver-license": "Upload your passport, id identity or driver license.",
       "Upload-a-photo-holding-t-ID-D": "Upload a photo holding the ID with a sheet of paper with today’s date and \"Wiins\" writes on it.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "I agree that my data may be used to check my account.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Make sure to upload the back side of the card if it's the a national id card (only for the national card)"
@@ -982,8 +979,7 @@
     "T-administration-w-verify-t-content-asap": "Administration will verify content as soon as possible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "This will cause the entire project to be deleted, are you sure ?",
     "T-operation-is-irreversible": "This operation is irreversible",
-    "this-user-will-be-": "This user will now be",
-    "A-y-s-to-unfollow-t-profile": "Are you sure to unfollow this profie ? "
+    "this-user-will-be-": "This user will now be"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Warning. Make sure you have the right address"
@@ -1352,11 +1348,7 @@
       "World-fusion": "World fusion",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht rock",
-      "Others": "Others",
-      "Flamenco": "Flamenco",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Country"
+      "Others": "Others"
     }
   },
   "WIINS-TUBE": {

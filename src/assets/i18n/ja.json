@@ -211,11 +211,7 @@
     "Towards-an-infinite-space": "無限の空間に向けて",
     "Hello": "こんにちは",
     "Publication": "出版物",
-    "Share": "シェア",
-    "Url-Copied": "URLをコピーしました",
-    "Download": "ダウンロード",
-    "Downloaded": "ダウンロード済み",
-    "Save-in-phone": "電話で保存"
+    "Chat": "チャット"
   },
   "COUNTRY": {
     "AD": "アンドラ",
@@ -573,9 +569,7 @@
     "Missing-informations": "不足している情報",
     "Account_desactivated": "アカウントが非アクティブ化されました",
     "Y-dont-have-a-conversation-yet": "まだ会話はありません。",
-    "Date-cannot-be-in-the-past": "リリース日は過去にすることはできません",
-    "You-cannot-add-yourself": "自分を追加することはできません",
-    "T-content-does-not-exist-anymore": "このコンテンツはもう存在しません"
+    "Password-not-identical": "パスワードが同一ではありません"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "写真を受け取りました",
@@ -604,7 +598,7 @@
     "Register": "登録",
     "Registration": "登録",
     "Sign-up": "サインアップ",
-    "accept-tou": "利用規約に同意します",
+    "accept-tou": "私は16歳以上であることを証明し、ユーザー契約とプライバシーポリシーに同意します",
     "click-on-email": "メールのリンクをクリックしてください",
     "Create-yr-account": "アカウントを作成",
     "Creating-yr-account": "アカウントの作成",
@@ -688,14 +682,14 @@
     "Your-Email": "あなたのメール",
     "Your-Password": "あなたのパスワード",
     "Your-Pseudo": "ユーザー名",
-    "Your-message": "あなたのメッセージ"
+    "Your-message": "あなたのメッセージ",
+    "Confirm-your-password": "パスワードの確認"
   },
   "PLEASE": {
     "Password": "パスワードを入力してください"
   },
   "PROFILE": {
     "About-me": "私について",
-    "BirthDate": "生年月日",
     "Email": "Eメール",
     "Followers-And-Friends": "フォロワーと友達",
     "Musics": "音楽",
@@ -856,7 +850,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "このリストのユーザーはプロフィールを見ることができなくなります。",
       "btn-followers": "「フォロー」ボタンを使用可能にする",
       "btn-friend": "フレンドリクエストボタンを使用可能にする",
-      "h-can-b-yr-description": "説明を入力できます。"
+      "h-can-b-yr-description": "説明を入力できます。",
+      "theme": "テーマ",
+      "theme-description": "テーマを選択してください",
+      "theme-select": "テーマを選択する"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "この機能を使用するには、検証が必要です。",
@@ -982,8 +979,7 @@
     "T-administration-w-verify-t-content-asap": "管理は、できるだけ早く含まれていることを確認します",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "これにより、プロジェクト全体が削除されます。",
     "T-operation-is-irreversible": "この操作は元に戻せません",
-    "this-user-will-be-": "このユーザーは現在",
-    "A-y-s-to-unfollow-t-profile": "このprofieのフォローを解除してもよろしいですか？"
+    "this-user-will-be-": "このユーザーは現在"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "警告。正しいアドレスを持っていることを確認する"
@@ -1352,11 +1348,7 @@
       "World-fusion": "世界の融合",
       "Worldbeat": "ワールドビート",
       "Yacht-rock": "ヨットロック",
-      "Others": "その他",
-      "Flamenco": "フラメンコ",
-      "Rock": "岩",
-      "Reggae": "レゲエ",
-      "Country": "国"
+      "Others": "その他"
     }
   },
   "WIINS-TUBE": {

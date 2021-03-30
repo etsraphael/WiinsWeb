@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Προς έναν άπειρο χώρο",
     "Hello": "Χαίρετε",
     "Publication": "Δημοσίευση",
-    "Download": "Κατεβάστε",
-    "Downloaded": "Έγινε λήψη",
-    "Save-in-phone": "Αποθήκευση στο τηλέφωνο",
-    "Share": "Μερίδιο",
-    "Url-Copied": "Η διεύθυνση URL αντιγράφηκε"
+    "Chat": "Συνομιλίας"
   },
   "COUNTRY": {
     "AD": "Ανδόρα",
@@ -615,9 +611,7 @@
     "Missing-informations": "Λείπουν πληροφορίες",
     "Account_desactivated": "Ο λογαριασμός απενεργοποιήθηκε",
     "Y-dont-have-a-conversation-yet": "Δεν έχετε συνομιλία ακόμη.",
-    "Date-cannot-be-in-the-past": "Η ημερομηνία κυκλοφορίας δεν μπορεί να είναι στο παρελθόν",
-    "You-cannot-add-yourself": "Δεν μπορείτε να προσθέσετε τον εαυτό σας",
-    "T-content-does-not-exist-anymore": "Αυτό το περιεχόμενο δεν υπάρχει πια"
+    "Password-not-identical": "Οι κωδικοί πρόσβασης δεν είναι πανομοιότυποι"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Η φωτογραφία έχει ληφθεί",
@@ -646,7 +640,7 @@
     "Register": "Κανω ΕΓΓΡΑΦΗ",
     "Registration": "Εγγραφή",
     "Sign-up": "Εγγραφείτε",
-    "accept-tou": "Αποδέχομαι τους όρους και τις προϋποθέσεις χρήσης",
+    "accept-tou": "Πιστοποιώ ότι είμαι 16 ετών και άνω και συμφωνώ με τη συμφωνία χρήστη και την πολιτική απορρήτου",
     "click-on-email": "Κάντε κλικ στον σύνδεσμο email",
     "Create-yr-account": "Δημιουργήστε το λογαριασμό σας",
     "Creating-yr-account": "Δημιουργία του λογαριασμού σας",
@@ -730,14 +724,14 @@
     "Your-Email": "Το ηλεκτρονικό σου ταχυδρομείο",
     "Your-Password": "Ο κωδικός σας",
     "Your-Pseudo": "Το όνομα χρήστη σας",
-    "Your-message": "Το μήνυμά σου"
+    "Your-message": "Το μήνυμά σου",
+    "Confirm-your-password": "Επιβεβαίωση του κωδικού πρόσβασής σας"
   },
   "PLEASE": {
     "Password": "Παρακαλώ εισάγετε τον κωδικό σας"
   },
   "PROFILE": {
     "About-me": "Σχετικά με μένα",
-    "BirthDate": "Ημερομηνια γεννησης",
     "Email": "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ",
     "Followers-And-Friends": "Ακόλουθοι και φίλοι",
     "Musics": "Μουσικά",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Οι χρήστες σε αυτήν τη λίστα δεν θα μπορούν να δουν το προφίλ σας.",
       "btn-followers": "Κάντε το κουμπί \"follow\" διαθέσιμο",
       "btn-friend": "Κάντε το κουμπί αιτήματος φιλίας διαθέσιμο",
-      "h-can-b-yr-description": "Μπορείτε να βάλετε μια περιγραφή"
+      "h-can-b-yr-description": "Μπορείτε να βάλετε μια περιγραφή",
+      "theme": "Θέμα",
+      "theme-description": "Επιλέξτε ένα θέμα",
+      "theme-select": "Επιλογή θέματος"
     },
     "verified": {
       "Already-certified": "Ήδη πιστοποιημένο",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Η διαχείριση θα επαληθεύσει το περιεχόμενο το συντομότερο δυνατό",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Αυτό θα προκαλέσει τη διαγραφή ολόκληρου του έργου, είστε σίγουροι;",
     "T-operation-is-irreversible": "Αυτή η λειτουργία είναι μη αναστρέψιμη",
-    "this-user-will-be-": "Αυτός ο χρήστης θα είναι τώρα",
-    "A-y-s-to-unfollow-t-profile": "Είστε βέβαιοι ότι θα καταργήσετε την παρακολούθηση αυτού του προφίλ;"
+    "this-user-will-be-": "Αυτός ο χρήστης θα είναι τώρα"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Προειδοποίηση. Βεβαιωθείτε ότι έχετε τη σωστή διεύθυνση"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Παγκόσμια σύντηξη",
       "Worldbeat": "Παγκόσμιο κτύπο",
       "Yacht-rock": "Γιοτ ροκ",
-      "Others": "Οι υπολοιποι",
-      "Flamenco": "Φλαμένκο",
-      "Rock": "Βράχος",
-      "Reggae": "Ρέγκε",
-      "Country": "Χώρα"
+      "Others": "Οι υπολοιποι"
     }
   },
   "WIINS-TUBE": {

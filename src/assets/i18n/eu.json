@@ -253,11 +253,7 @@
     "Towards-an-infinite-space": "Espazio infinitu baterantz",
     "Hello": "Kaixo",
     "Publication": "Argitalpena",
-    "Share": "Partekatu",
-    "Url-Copied": "Url kopiatu da",
-    "Download": "Deskargatu",
-    "Downloaded": "Deskargatuta",
-    "Save-in-phone": "Gorde telefonoan"
+    "Chat": "Txateatu"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -615,9 +611,7 @@
     "Missing-informations": "Informazioa falta da",
     "Account_desactivated": "Kontua desaktibatuta",
     "Y-dont-have-a-conversation-yet": "Oraindik ez duzu elkarrizketarik.",
-    "Date-cannot-be-in-the-past": "Argitaratze data ezin da iraganean egon",
-    "You-cannot-add-yourself": "Ezin duzu zeure burua gehitu",
-    "T-content-does-not-exist-anymore": "Eduki hau ez da existitzen"
+    "Password-not-identical": "Pasahitzak ez dira berdinak"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Argazkia jaso da",
@@ -646,7 +640,7 @@
     "Register": "Izena eman",
     "Registration": "Izena ematea",
     "Sign-up": "Izena eman",
-    "accept-tou": "Erabilera baldintzak eta baldintzak onartzen ditut",
+    "accept-tou": "16 urte edo gehiago ditudala ziurtatzen dut eta erabiltzailearen akordioa eta pribatutasun politika onartzen ditut",
     "click-on-email": "Egin klik posta elektronikoaren estekan",
     "Create-yr-account": "Sortu zure kontua",
     "Creating-yr-account": "Zure kontua sortzen",
@@ -730,14 +724,14 @@
     "Your-Email": "Zure emaila",
     "Your-Password": "Zure pasahitza",
     "Your-Pseudo": "Zure erabiltzaile izena",
-    "Your-message": "Zure mezua"
+    "Your-message": "Zure mezua",
+    "Confirm-your-password": "Berretsi zure pasahitza"
   },
   "PLEASE": {
     "Password": "Mesedez, sartu zure pasahitza"
   },
   "PROFILE": {
     "About-me": "Niri buruz",
-    "BirthDate": "Jaioteguna",
     "Email": "Posta elektronikoa",
     "Followers-And-Friends": "Jarraitzaileak eta lagunak",
     "Musics": "Musikak",
@@ -910,7 +904,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Zerrenda honetako erabiltzaileek ezin izango dute zure profila ikusi.",
       "btn-followers": "Jarri \"jarraitu\" botoia erabilgarri",
       "btn-friend": "Jarri lagun eskaera botoia erabilgarri",
-      "h-can-b-yr-description": "Deskribapena jar dezakezu"
+      "h-can-b-yr-description": "Deskribapena jar dezakezu",
+      "theme": "Gaia",
+      "theme-description": "Aukeratu gaia",
+      "theme-select": "Aukeratu gai bat"
     },
     "verified": {
       "Already-certified": "Ziurtatua dagoeneko",
@@ -1039,8 +1036,7 @@
     "T-administration-w-verify-t-content-asap": "Administrazioak edukia ahalik eta lasterren egiaztatuko du",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Horrek proiektu osoa ezabatuko du, ziur?",
     "T-operation-is-irreversible": "Eragiketa hau itzulezina da",
-    "this-user-will-be-": "Erabiltzaile hau izango da orain",
-    "A-y-s-to-unfollow-t-profile": "Ziur zaude profie honi jarraipena egingo diozula?"
+    "this-user-will-be-": "Erabiltzaile hau izango da orain"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Abisua. Ziurtatu helbide egokia duzula"
@@ -1409,11 +1405,7 @@
       "World-fusion": "Mundu fusioa",
       "Worldbeat": "Munduko taupada",
       "Yacht-rock": "Yacht rocka",
-      "Others": "Beste batzuk",
-      "Flamenco": "Flamenkoa",
-      "Rock": "Arroka",
-      "Reggae": "Reggaea",
-      "Country": "Herrialdea"
+      "Others": "Beste batzuk"
     }
   },
   "WIINS-TUBE": {
