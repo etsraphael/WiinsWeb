@@ -9,6 +9,7 @@ import { UserModel } from '../core/models/baseUser/user.model'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, MyUserStoreSelectors, ProfileFeatureStoreSelectors } from '../root-store'
 import { skipWhile, filter } from 'rxjs/operators'
+import { getLocaleTimeFormat } from '@angular/common'
 
 @Component({
   selector: 'app-sign',

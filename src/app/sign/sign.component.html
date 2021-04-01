@@ -1,5 +1,5 @@
 <!-- Body Component -->
-<div class="w-100 h-100">
+<div class="w-100 h-100" *ngIf="false">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
@@ -13,7 +13,7 @@
           <div class="card-footer w-50 p-0 container-donation">
             <div class="row mx-0">
               <div class="col-6 px-0">
-                <img class="btc-image w-100" src="./../../assets/img/btc.png">
+                <img class="btc-image w-100" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
               </div>
               <div class="col-6 my-auto">
                 <div class="container px-0">
@@ -67,4 +67,171 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- Body Component Early Access -->
+<div class="w-100 h-100" style="overflow: hidden;" *ngIf="true">
+  <!-- Container no change -->
+  <div class="container-fluid px-0 h-100">
+    <div class="row mx-0 h-100">
+      <!-- Left Side no change -->
+      <div class="preload-images"></div>
+        <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block animation-background-signin">
+          <div class="col-9 mx-auto">
+            <img class="w-100 wiins-logo" src="./../../assets/img/wiinslogo.png" alt="">
+          </div>
+           <!-- Function caroussel for early access / Don't disorganize the text in the <pre> tag -->
+          <div class="message-ancitipate">
+            <input type="radio" class="radio-caroussel" name="position" checked />
+            <input type="radio" class="radio-caroussel" name="position" />
+            <input type="radio" class="radio-caroussel" name="position" />
+            <input type="radio" class="radio-caroussel" name="position" />
+            <input type="radio" class="radio-caroussel" name="position" />
+            <input type="radio" class="radio-caroussel position-radio-6" name="position" />
+            <input type="radio" class="radio-caroussel position-radio-7" name="position" />
+            <main id="carousel">
+              <div class="item"><pre><strong>Wiin's</strong> t’annonce qu’à compter du 01 mai, tu
+bénéficieras d’un accès anticipé à nos services.
+En attendant cette grande révolution, il va
+falloir que tu patientes !
+      
+
+Tu seras contacté en priorité pour 
+bénéficier de cet accès.
+Attention, cet accès sera disponible aux
+<span class="mille-premiers">1000 premières inscriptions.</span></pre></div>
+
+              <div class="item"><pre><strong>Pourquoi cet accès anticipé ?</strong>
+
+Et pourquoi pas…? 😉
+Wiin’s souhaite révolutionner la relation
+que tu as avec ton téléphone 🤣
+
+Aussi, nous avons besoin de ton aide afin
+d’améliorer nos services et t’offrir une
+expérience exclusive qui sera totalement
+GRATUITE pendant cette période.
+
+Et en plus, en tant que premier Winser, 
+tu profiteras .… 🤫  d'une réduction sur
+ton futur abonnement.</pre></div>
+
+              <div class="item"><pre><strong>Que propose l'accès anticipé ?</strong>
+
+
+
+
+L'accès anticipé te permet d'utiliser toutes
+les fonctionnalités actuellement disponibles
+de Wiin's. Nous te laissons le soin d’en
+découvrir plus grâce à la vidéo, si tu ne
+l'as pas déjà fait . </pre></div>
+
+              <div class="item"><pre><strong>Pendant combien de temps la plateforme 
+sera-t-elle en accès anticipé ?</strong>
+
+
+
+
+Pendant 9 mois, ou peut-être 6, ou 3... 
+Tu as ton rôle à jouer !! Ce qui est sûr,
+jusqu’au 1er janvier 2022, au plus tard.</pre></div>
+
+              <div class="item"><pre><strong>En quoi la version complète sera-t-elle 
+différente de la version en accès anticipé ?</strong>
+
+
+La plateforme sera améliorée selon tes demandes,
+que tu pourras formuler grâce au menu "proposer
+une amélioration”. 
+Les artistes pourront également toucher
+une rémunération digne de leur talent 🙂
+Aussi.... ça sera la fin de la gratuité de
+Wiin's.  
+
+De plus, tu as la possibilité de nous suivre
+sur les réseaux sociaux pour rester informé.</pre></div>
+
+              <div class="item"><pre><strong>Quel sera le prix sur la 
+version complète, après l'accès anticipé ?</strong>
+
+
+
+Le prix n’est pas encore fixé. L’accès anticipé 
+va nous permettre de t’offrir le service 
+au meilleur prix. Tu en sera informé avant de
+payer, bien sûr 😉</pre></div>
+
+              <div class="item"><pre><strong>Comment comptez-vous impliquer la communauté
+dans le processus de développement ?</strong>
+
+
+Tout simplement en l’utilisant 😉. Nous serons 
+ravis d’apprendre que tu désir apporter ton 
+soutien ! 
+
+Sens-toi libre de tout nous dire car, après tout
+c’est aussi TA plateforme. Avoir des idées et
+tes retours, c’est génial. Mais tu peux en
+plus participer au développement de Wiin’s
+en faisant une donation.😉</pre></div>
+          </main>
+        </div>
+        <div class="container">
+        </div>
+      </div>
+      <!-- Right Side (background-right-anticipate) -->
+      <div class="col-md-7 px-0 bg-sign background-right-anticipate">
+        <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
+          <!-- Setting (setting-top-countdown) -->
+          <div container>
+          <div class="row p-0 m-0 my-3 col-sm-12 mx-auto setting-top-countdown mx-0 header-bar-setting">
+            <div class="ml-auto">
+              <mat-form-field class="btn p-0">
+                <mat-select  [(value)]="selectedLang">
+                  <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+                    {{l.language}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <a [routerLink]="['/term-of-use']" class="mx-2 term-of-use">
+                <span>{{'CORE.Term-of-use'|translate}}</span>
+              </a>
+            </div>
+            <!-- Setting (container-countdown) -->
+            <div class="container-countdown">
+              <div class="countdown">
+                <div id="day">NA</div>
+                <div id="hour">NA</div>
+                <div id="minute">NA</div>
+                <div id="second">NA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="countdown"></div>
+          <div class="pt-2">
+            <!-- Function video for early access (video-anticipate) -->
+            <div class="row h-100">
+              <div class="col col-sm-10 mx-auto p-0 video-anticipate">
+                <div plyr style="width: 770px;" plyrTitle="Video 1" [plyrPlaysInline]="true"[plyrSources]="'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'">
+              </div>
+            </div>
+          </div>
+          <!-- Logo gift for early access (container-logo-don) -->
+          <div class="container-logo-don">
+            <img class="logo-crypto" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
+            <img class="logo-paypal" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
+          </div>
+        </div>
+      </div>
+      <!-- Login no change -->
+      <div class="container h-100" *ngIf="(loading$ | async) || (profileLoading$ | async)">
+        <div class="row h-100 mx-0">
+          <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
