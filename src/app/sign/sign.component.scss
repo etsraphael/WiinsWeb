@@ -412,14 +412,8 @@ input:nth-of-type(7):checked ~ main#carousel {
 
 /* Logo gift for the early access */
 .container-logo-don {
-  width: 93%;
-  height: 100px;
-  top: 20px;
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  margin: 0;
-  padding: 0;
 }
 
 img.logo-crypto {
@@ -432,7 +426,6 @@ img.logo-paypal {
   width: 100px;
   height: 100px;
   position: relative;
-  left: -30px;
 }
 
 

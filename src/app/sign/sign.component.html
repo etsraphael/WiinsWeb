@@ -219,17 +219,13 @@ en faisant une donation.😉</pre>
           <div class="row">
             <div class="container-countdown mx-auto">
               <div class="countdown">
-                <div id="day">NA</div>
-                <div id="hour">NA</div>
-                <div id="minute">NA</div>
-                <div id="second">NA</div>
+                <div id="day">{{days}}</div>
+                <div id="hour">{{hours}}</div>
+                <div id="minute">{{minutes}}</div>
+                <div id="second">{{seconds}}</div>
               </div>
             </div>
           </div>
-
-
-
-
         <div class="pt-2">
           <!-- Function video for early access (video-anticipate) -->
           <div class="row h-100">
@@ -240,10 +236,12 @@ en faisant une donation.😉</pre>
             </div>
           </div>
           <!-- Logo gift for early access (container-logo-don) -->
-          <div class="container-logo-don">
-            <img class="logo-crypto" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
-            <img class="logo-paypal" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
+
+          <div class="row d-flex justify-content-center container-logo-don my-4">
+            <img class="logo-crypto mx-2" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
+            <img class="logo-paypal mx-2" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
           </div>
+
         </div>
         <!-- Login no change -->
         <div class="container h-100" *ngIf="(loading$ | async) || (profileLoading$ | async)">
