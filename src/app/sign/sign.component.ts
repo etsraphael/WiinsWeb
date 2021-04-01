@@ -9,7 +9,6 @@ import { UserModel } from '../core/models/baseUser/user.model'
 import { Store, select } from '@ngrx/store'
 import { RootStoreState, MyUserStoreSelectors, ProfileFeatureStoreSelectors } from '../root-store'
 import { skipWhile, filter } from 'rxjs/operators'
-import { getLocaleTimeFormat } from '@angular/common'
 
 @Component({
   selector: 'app-sign',
@@ -30,6 +29,9 @@ export class SignComponent implements OnInit {
   errorSubscription: Subscription
   loading$: Observable<boolean>
   profileLoading$: Observable<boolean>
+
+  // early access fonctions
+  showEarlyAccess = false
 
   constructor(
     public router: Router,
@@ -101,6 +103,10 @@ export class SignComponent implements OnInit {
   prepareRoute(outlet: RouterOutlet) {
     // animation for the routing
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+  }
+
+  showAccess() {
+    this.showEarlyAccess = true
   }
 
 }
