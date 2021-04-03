@@ -1,7 +1,7 @@
   @import 'src/assets/scss/component/login-register.scss';
 
 .container-img {
-  background-image: url('./../../assets/img/bckgrnd0.png');
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,15 +11,28 @@
   display: inline-block;
 }
 
+.container-access-btn {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  top: 11%;
+  left: 21%;
+  cursor: pointer;
+}
+
+.container-video-plyr {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.radio-caroussel {
+  cursor: pointer;
+}
+
 .sub-title {
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
-}
-
-.wiins-logo {
-  position: absolute;
-  top: -15px;
 }
 
 .animation-background-signin {
@@ -28,51 +41,50 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: animate 60s ease-in-out infinite;
+  z-index: 1;
 }
 
+/* Url update on the server ✓ */
 .preload-images {
-    background: url('./../../assets/img/img1.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img2.png') no-repeat -9999px -9999px,
-    url('./../../assets/img/img3.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img4.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img5.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img6.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img7.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img8.jpg') no-repeat -9999px -9999px,
-    url('./../../assets/img/img9.png') no-repeat -9999px -9999px,
-    url('./../../assets/img/img10.png') no-repeat -9999px -9999px;
+    background: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png') no-repeat -9999px -9999px,
+    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png') no-repeat -9999px -9999px;
 }
 
+/* Url update on the server ✓ */
 @keyframes animate{
 0%,100%{
-  background-image: url('./../../assets/img/img1.jpg');
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg');
 }
-10%{
-  background-image: url('./../../assets/img/img2.png');
+11%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png');
 }
-20%{
-  background-image: url('./../../assets/img/img3.jpg');
+22%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg');
 }
-30%{
-  background-image: url('./../../assets/img/img4.jpg');
+33%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg');
 }
-40%{
-  background-image: url('./../../assets/img/img5.jpg');
+44%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg');
 }
-50%{
-  background-image: url('./../../assets/img/img6.jpg');
+55%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg');
 }
-60%{
-  background-image: url('./../../assets/img/img7.jpg');
+66%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg');
 }
-70%{
-  background-image: url('./../../assets/img/img8.jpg');
+77%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png');
 }
-80%{
-  background-image: url('./../../assets/img/img9.png');
-}
-90%{
-  background-image: url('./../../assets/img/img10.png');
+88%{
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png');
 }
 }
 
@@ -85,9 +97,81 @@
   backdrop-filter: blur(5px);
 }
 
-.term-of-use-top-signin {
-  color: rgb(0, 0, 0);
-  margin-right: 1rem !important;
+/* Setting (body) for the early access */
+.setting-top-countdown {
+  background-color: rgba(255, 255, 255, 0.63);
+  overflow: hidden;
+}
+
+.term-of-use {
+  color: black;
+  padding-right: 10px;
+}
+
+/* Setting (box countdown) for the early access */
+.container-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 135px;
+}
+
+/* Setting (countdown) for the early access */
+.countdown {
+  display: flex;
+  position: relative;
+  top: -15px;
+}
+
+.countdown div {
+  position: relative;
+  bottom: -20px;
+  width: 80px;
+  height: 80px;
+  line-height: 55px;
+  text-align: center;
+  background:#08080885;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 3em;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.countdown div:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: #08080885;
+  color: #fff;
+  font-size: 0.45em;
+  line-height: 25px;
+  font-weight: 300;
+  border-top: 1px solid #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Section you need for the script */
+.countdown #day:before {
+  content: 'Days';
+}
+
+.countdown #hour:before {
+  content: 'Hours';
+}
+
+.countdown #minute:before {
+  content: 'Minutes';
+}
+
+.countdown #second:before {
+  content: 'Seconds';
 }
 
 .login-register-box {
@@ -105,7 +189,67 @@
 }
 
 .background-right {
-  background-image: url('./../../assets/img/bckgrnd0.png');
+  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png');
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+}
+
+/* Background right for the early access */
+.background-right-anticipate {
+  background-repeat: no-repeat;
+  width: 100%;
+  background: url(https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png);
+  background-size: 100%;
+}
+
+.container-message-anticipate {
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 20px;
+}
+
+.container-message-anticipate span {
+  font-size: 20px;
+  color: white;
+  line-height: 2rem;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span.mille-premiers {
+  text-decoration: underline;
+}
+
+.read-more {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ff4b5b;
+}
+
+.read-more:hover {
+  color: blue;
+}
+
+.read-more:visited {
+  color: black;
+}
+
+/* Video for the early access */
+.video-anticipate {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo gift for the early access */
+.container-logo-don {
+  position: relative;
+  display: flex;
+}
+
+img.logo-crypto, img.logo-paypal {
+  width: 10rem;
+  height: 10rem;
 }

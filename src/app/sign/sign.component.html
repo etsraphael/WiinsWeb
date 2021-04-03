@@ -1,5 +1,5 @@
 <!-- Body Component -->
-<div class="w-100 h-100">
+<div class="w-100 h-100" *ngIf="showEarlyAccess">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
@@ -13,7 +13,7 @@
           <div class="card-footer w-50 p-0 container-donation">
             <div class="row mx-0">
               <div class="col-6 px-0">
-                <img class="btc-image w-100" src="./../../assets/img/btc.png">
+                <img class="btc-image w-100" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc.png">
               </div>
               <div class="col-6 my-auto">
                 <div class="container px-0">
@@ -33,22 +33,22 @@
       <div class="col-md-7 bg-sign background-right">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Setting -->
-          <div container>
-          <div class="row my-3 col-sm-10 mx-auto setting-top-signin mx-0 header-bar-setting">
-            <div class="ml-auto">
-              <mat-form-field class="btn p-0">
-                <mat-select [(value)]="selectedLang">
-                  <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
-                    {{l.language}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
-              <a [routerLink]="['/term-of-use']" class="mx-2">
-                <span>{{'CORE.Term-of-use'|translate}}</span>
-              </a>
+          <div>
+            <div class="row my-3 col-sm-10 mx-auto setting-top-signin mx-0 header-bar-setting">
+              <div class="ml-auto">
+                <mat-form-field class="btn p-0">
+                  <mat-select [(value)]="selectedLang">
+                    <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+                      {{l.language}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <a [routerLink]="['/term-of-use']" class="mx-2">
+                  <span>{{'CORE.Term-of-use'|translate}}</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
           <!-- Router Container -->
           <div class="pt-6 pt-md-0 container">
             <div class="row h-100">
@@ -59,6 +59,117 @@
           </div>
         </div>
         <!-- Login -->
+        <div class="container h-100" *ngIf="(loading$ | async) || (profileLoading$ | async)">
+          <div class="row h-100 mx-0">
+            <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Body Component Early Access -->
+<div class="w-100 h-100 container-early-access" *ngIf="!showEarlyAccess">
+  <!-- Container no change -->
+  <div class="container-fluid px-0 h-100">
+    <div class="row mx-0 h-100">
+      <!-- Left Side no change -->
+      <div class="preload-images"></div>
+      <div class="col-md-5 bg-lighter px-0 container-img d-none d-md-block animation-background-signin">
+        <div class="col-9 mx-auto">
+          <img class="w-100 wiins-logo" src="./../../assets/img/wiinslogo.png" alt="">
+        </div>
+        <div class="container-access-btn" (click)="showAccess()"></div>
+
+        <!-- Function caroussel for early access / Don't disorganize the text in the <pre> tag -->
+          <div class="container py-4">
+            <div class="row">
+              <div class="col-10 mx-auto container-message-anticipate text-center py-4">
+                <div class="message-ancitipate">
+                  <div class="container">
+                    <div [ngSwitch]="displayingText">
+                      <div *ngSwitchCase="0"><span>{{'TEMPORARY.On-first-may-d'|translate}}</span></div>
+                      <div *ngSwitchCase="1"><span>{{'TEMPORARY.Why-this-early-access'|translate}}</span></div>
+                      <div *ngSwitchCase="2"><span>{{'TEMPORARY.W-does-early-access-offer'|translate}}</span></div>
+                      <div *ngSwitchCase="3"><span>{{'TEMPORARY.H-lg-ll-t-platform-be-in-early-access'|translate}}</span></div>
+                      <div *ngSwitchCase="4"><span>{{'TEMPORARY.H-ll-t-full-version-b-diff-frm-t-early-access-version'|translate}}</span></div>
+                      <div *ngSwitchCase="5"><span>{{'TEMPORARY.H-much-ll-t-full-version-cost-after-Early-Access'|translate}}</span></div>
+                      <div *ngSwitchCase="6"><span>{{'TEMPORARY.H-d-y-plan-to-involve-t-community-in-t-dev-process'|translate}}</span></div>
+                    </div>
+                  </div>
+                  <div class="container my-3">
+                    <div class="row d-flex justify-content-center">
+                      <input 
+                      type="radio"
+                      class="radio-caroussel mx-2"
+                      *ngFor="let item of [0,1,2,3,4,5,6]" (click)="changeSection(item)"
+                      [checked]="item == displayingText"/>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+      </div>
+      <!-- Right Side (background-right-anticipate) -->
+      <div class="col-md-7 px-0 bg-sign background-right-anticipate">
+        <!-- Setting (setting-top-countdown) -->
+        <div class="row p-0 m-0 py-2 col-sm-12 mx-auto setting-top-countdown mx-0 header-bar-setting">
+          <div class="ml-auto">
+            <mat-form-field class="btn p-0">
+              <mat-select [(value)]="selectedLang">
+                <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+                  {{l.language}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <a [routerLink]="['/term-of-use']" class="mx-2 term-of-use">
+              <span>{{'CORE.Term-of-use'|translate}}</span>
+            </a>
+          </div>
+
+
+
+        </div>
+          <!-- Setting (container-countdown) -->
+          <div class="row">
+            <div class="container-countdown mx-auto">
+              <div class="countdown">
+                <div id="day">{{days}}</div>
+                <div id="hour">{{hours}}</div>
+                <div id="minute">{{minutes}}</div>
+                <div id="second">{{seconds}}</div>
+              </div>
+            </div>
+          </div>
+        <div class="pt-2">
+          <!-- Function video for early access (video-anticipate) -->
+          <div class="row h-100">
+            <div class="col col-sm-10 mx-auto p-0 video-anticipate">
+              <div class="container-video-plyr" plyr style="width: 770px;" plyrTitle="Video 1" [plyrPlaysInline]="true"
+                plyrSources="https://eps-file-default.s3.eu-west-3.amazonaws.com/Final1.2.mp4">
+              </div>
+            </div>
+          </div>
+          <!-- Logo gift for early access (container-logo-don) -->
+
+          <div class="row d-flex justify-content-center container-logo-don my-4">
+            <img class="logo-crypto mx-2" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/btc-address-donation.png">
+            <img class="logo-paypal mx-2" src="https://eps-file-default.s3.eu-west-3.amazonaws.com/paypal-address-donation.png">
+          </div>
+
+        </div>
+        <!-- Login no change -->
         <div class="container h-100" *ngIf="(loading$ | async) || (profileLoading$ | async)">
           <div class="row h-100 mx-0">
             <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>

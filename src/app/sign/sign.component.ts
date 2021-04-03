@@ -30,6 +30,14 @@ export class SignComponent implements OnInit {
   loading$: Observable<boolean>
   profileLoading$: Observable<boolean>
 
+  // early access fonctions
+  displayingText = 0
+  showEarlyAccess = false
+  days: number
+  hours: number
+  minutes: number
+  seconds: number
+
   constructor(
     public router: Router,
     private store$: Store<RootStoreState.State>,
@@ -73,6 +81,34 @@ export class SignComponent implements OnInit {
       filter(value => value !== undefined)
     )
 
+    this.startTimer()
+
+  }
+
+  startTimer() {
+    let countDownDate = new Date('May 1, 2021 00:00:00').getTime()
+
+    let x = setInterval(() => {
+
+      // Get today's date and time
+      let now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      let distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // If the count down is finished, write some text
+      if (distance <= 0) {
+        this.showEarlyAccess = true
+        clearInterval(x)
+      }
+    }, 1000)
+
   }
 
   setLanguage() {
@@ -100,6 +136,14 @@ export class SignComponent implements OnInit {
   prepareRoute(outlet: RouterOutlet) {
     // animation for the routing
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+  }
+
+  showAccess() {
+    this.showEarlyAccess = true
+  }
+
+  changeSection(section: number): number {
+    return this.displayingText = section
   }
 
 }

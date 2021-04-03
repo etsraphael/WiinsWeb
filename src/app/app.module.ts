@@ -131,6 +131,7 @@ import * as Sentry from '@sentry/angular'
 import { Router } from '@angular/router'
 import { APP_INITIALIZER, ErrorHandler } from "@angular/core";
 import { GlobalErrorHandler } from './core/interceptors/globalErrorHandler.interceptor'
+import { PlyrModule } from 'ngx-plyr';
 
 
 // AoT requires an exported function for factories
@@ -168,7 +169,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
     HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
     MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
-    InfiniteScrollModule, RoundProgressModule, DragDropModule, ImageCropperModule, QRCodeModule,
+    InfiniteScrollModule, RoundProgressModule, DragDropModule, PlyrModule, ImageCropperModule, QRCodeModule,
     DeviceDetectorModule.forRoot(),
     TranslateModule.forRoot({ 
       loader: { 
