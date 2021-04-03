@@ -83,23 +83,21 @@
         <div class="container-access-btn" (click)="showAccess()"></div>
 
         <!-- Function caroussel for early access / Don't disorganize the text in the <pre> tag -->
-
           <div class="container py-4">
             <div class="row">
               <div class="col-10 mx-auto container-message-anticipate text-center py-4">
                 <div class="message-ancitipate">
                   <div class="container">
                     <div [ngSwitch]="displayingText">
-                      <div *ngSwitchCase="0"><span><strong>Wiin's</strong> t’annonce qu’à compter du 01 mai, tu bénéficieras d’un accès anticipé à nos services. En attendant cette grande révolution, il va falloir que tu patientes ! Tu seras contacté en priorité pour  bénéficier de cet accès. Attention, cet accès sera disponible aux <span class="mille-premiers">1000 premières inscriptions.</span></span></div>
-                      <div *ngSwitchCase="1"><span><strong>Pourquoi cet accès anticipé ?</strong> Et pourquoi pas…? 😉 Wiin’s souhaite révolutionner la relation que tu as avec ton téléphone 🤣 Aussi, nous avons besoin de ton aide afind’améliorer nos services et t’offrir uneexpérience exclusive qui sera totalementGRATUITE pendant cette période. Et en plus, en tant que premier Winser,  tu profiteras .… 🤫  d'une réduction sur ton futur abonnement.</span></div>
-                      <div *ngSwitchCase="2"><span><strong>Que propose l'accès anticipé ?</strong> L'accès anticipé te permet d'utiliser toutes les fonctionnalités actuellement disponibles de Wiin's. Nous te laissons le soin d’en découvrir plus grâce à la vidéo, si tu ne l'as pas déjà fait . </span></div>
-                      <div *ngSwitchCase="3"><span><strong>Pendant combien de temps la plateforme sera-t-elle en accès anticipé ?</strong> Pendant 9 mois, ou peut-être 6, ou 3...  Tu as ton rôle à jouer !! Ce qui est sûr, jusqu’au 1er janvier 2022, au plus tard.</span></div>
-                      <div *ngSwitchCase="4"><span><strong>En quoi la version complète sera-t-elle  différente de la version en accès anticipé ?</strong> La plateforme sera améliorée selon tes demandes,que tu pourras formuler grâce au menu "proposerune amélioration”. Les artistes pourront également toucherune rémunération digne de leur talent 🙂Aussi.... ça sera la fin de la gratuité deWiin's.   De plus, tu as la possibilité de nous suivre sur les réseaux sociaux pour rester informé.</span></div>
-                      <div *ngSwitchCase="5"><span><strong>Quel sera le prix sur la  version complète, après l'accès anticipé ?</strong> Le prix n’est pas encore fixé. L’accès anticipé  va nous permettre de t’offrir le service  au meilleur prix. Tu en sera informé avant de payer, bien sûr 😉</span></div>
-                      <div *ngSwitchCase="6"><span><strong>Comment comptez-vous impliquer la communauté dans le processus de développement ?</strong> Tout simplement en l’utilisant 😉. Nous serons ravis d’apprendre que tu désir apporter ton soutien !     Sens-toi libre de tout nous dire car, après tout c’est aussi TA plateforme. Avoir des idées et tes retours, c’est génial. Mais tu peux en plus participer au développement de Wiin’s en faisant une donation.😉</span></div>
+                      <div *ngSwitchCase="0"><span>{{'TEMPORARY.On-first-may-d'|translate}}</span></div>
+                      <div *ngSwitchCase="1"><span>{{'TEMPORARY.Why-this-early-access'|translate}}</span></div>
+                      <div *ngSwitchCase="2"><span>{{'TEMPORARY.W-does-early-access-offer'|translate}}</span></div>
+                      <div *ngSwitchCase="3"><span>{{'TEMPORARY.H-lg-ll-t-platform-be-in-early-access'|translate}}</span></div>
+                      <div *ngSwitchCase="4"><span>{{'TEMPORARY.H-ll-t-full-version-b-diff-frm-t-early-access-version'|translate}}</span></div>
+                      <div *ngSwitchCase="5"><span>{{'TEMPORARY.H-much-ll-t-full-version-cost-after-Early-Access'|translate}}</span></div>
+                      <div *ngSwitchCase="6"><span>{{'TEMPORARY.H-d-y-plan-to-involve-t-community-in-t-dev-process'|translate}}</span></div>
                     </div>
                   </div>
-
                   <div class="container my-3">
                     <div class="row d-flex justify-content-center">
                       <input 
