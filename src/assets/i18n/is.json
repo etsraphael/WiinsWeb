@@ -93,7 +93,8 @@
     "Enable-notification": "Virkja tilkynningar",
     "Group-creation": "Sköpun hópsins",
     "Mute": "Þagga niður",
-    "Send": "Senda"
+    "Send": "Senda",
+    "14days-message-delete": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Ertu viss um að eyða þessari umræðu?"
@@ -253,14 +254,7 @@
     "Towards-an-infinite-space": "Í átt að óendanlegu rými",
     "Hello": "Halló",
     "Publication": "Útgáfa",
-    "Share": "Deildu",
-    "Url-Copied": "Slóð afrituð",
-    "Download": "Sækja",
-    "Downloaded": "Sótt",
-    "Save-in-phone": "Vista í símanum",
-    "No": "Nei",
-    "Yes": "Já",
-    "Block-t-user": "Loka á þennan notanda"
+    "Chat": "Spjall"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "Missing-informations": "Upplýsingar vantar",
     "Account_desactivated": "Reikningur óvirkur",
     "Y-dont-have-a-conversation-yet": "Þú átt ekki samtal ennþá.",
-    "Date-cannot-be-in-the-past": "Útgáfudagur getur ekki verið í fortíðinni",
-    "You-cannot-add-yourself": "Þú getur ekki bætt þér við",
-    "T-content-does-not-exist-anymore": "Þetta innihald er ekki til lengur"
+    "Password-not-identical": "Aðgangsorðin eru ekki eins"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",
@@ -649,7 +641,7 @@
     "Register": "Skráðu þig",
     "Registration": "Skráning",
     "Sign-up": "Skráðu þig",
-    "accept-tou": "Ég staðfesti að ég er 16 ára eða eldri og ég samþykki notendasamninginn og persónuverndarstefnu",
+    "accept-tou": "ég votta að ég er 16 ára eða eldri og ég samþykki notendasamninginn og persónuverndarstefnuna",
     "click-on-email": "Vinsamlegast smelltu á tengilinn í tölvupósti",
     "Create-yr-account": "Búðu til reikninginn þinn",
     "Creating-yr-account": "Að búa til reikninginn þinn",
@@ -734,8 +726,7 @@
     "Your-Password": "Lykilorð þitt",
     "Your-Pseudo": "Notendanafnið þitt",
     "Your-message": "Skilaboð þín",
-    "Confirm-your-password": "Staðfestu lykilorðið þitt",
-    "Password-not-matching": "Lykilorðin passa ekki saman"
+    "Confirm-your-password": "Staðfesta aðgangsorðið"
   },
   "PLEASE": {
     "Password": "Vinsamlegast sláðu inn lykilorðið þitt"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Notendur á þessum lista geta ekki séð prófílinn þinn.",
       "btn-followers": "Gerðu „fylgja“ hnappinn tiltækan",
       "btn-friend": "Gerðu vinabeiðni hnappinn tiltækan",
-      "h-can-b-yr-description": "Þú getur sett lýsingu"
+      "h-can-b-yr-description": "Þú getur sett lýsingu",
+      "theme": "Þema",
+      "theme-description": "Vinsamlega veldu þema",
+      "theme-select": "Velja þema"
     },
     "verified": {
       "Already-certified": "Nú þegar vottað",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Stjórnun staðfestir efni eins fljótt og auðið er",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Þetta veldur því að verkefninu öllu er eytt, ertu viss?",
     "T-operation-is-irreversible": "Þessi aðgerð er óafturkræf",
-    "this-user-will-be-": "Þessi notandi verður núna",
-    "A-y-s-to-unfollow-t-profile": "Ertu viss um að fylgja þessu profi eftir?",
-    "A-y-s-to-block-t-user": "Ertu viss um að loka á þennan notanda?",
-    "Y-a-abt-t-block-t-user-D": "Þú ert að fara að loka á þennan notanda. Þú myndir ekki lengur geta horft á efni hans og þennan notanda líka. Aðeins þú gætir fjarlægt þessa takmörkun.",
-    "T-content-has-been-reported": "Greint hefur verið frá þessu efni. Stjórnendur okkar munu líta við í 24 tíma fresti til að fara yfir það. Viðurlögum verður beitt ef þetta virðir ekki reglur samfélagsins.",
-    "T-user-has-been-blocked-D": "Þessum notanda hefur verið lokað á reikninginn þinn. Ekkert innihald þessa prófíls verður sýnilegt á reikningnum þínum.",
-    "W-is-t-reason-to-report-t-post": "Hver er ástæða þess að tilkynna þessa færslu?",
-    "W-is-t-reason-to-report-t-post-D": "Skýrsla þín er nafnlaus. Vinsamlegast veldu bara flokk til að hjálpa skaðræðismönnunum"
+    "this-user-will-be-": "Þessi notandi verður núna"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Viðvörun. Gakktu úr skugga um að þú hafir rétt heimilisfang"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Heimssamruni",
       "Worldbeat": "Heimssláttur",
       "Yacht-rock": "Snekkjuberg",
-      "Others": "Aðrir",
-      "Flamenco": "Flamenco",
-      "Rock": "Berg",
-      "Reggae": "Reggae",
-      "Country": "Land"
+      "Others": "Aðrir"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Heiti myndbands",
       "Visualisation-of-the-video": "Sjónrænt myndband"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Vertu með í samfélaginu ágreining",
-    "Ty": "Þakka þér fyrir",
-    "Why-this-early-access": "Hvers vegna þessi snemma aðgangur? Wiin vill gjörbylta sambandi sem þú hefur við símann þinn. Einnig þurfum við hjálp þína til að bæta þjónustu okkar og bjóða þér einkaréttarupplifun sem verður algjörlega ókeypis á þessu tímabili. Að auki, sem fyrsti Wiinser, muntu njóta góðs af lækkun á framtíðaráskrift þinni.",
-    "W-does-early-access-offer": "Hvað býður snemma aðgangur upp á? Snemma aðgangur gerir þér kleift að nota alla þá eiginleika Wiin sem nú eru í boði. Við látum það eftir þér að uppgötva meira í gegnum myndbandið, ef þú hefur ekki þegar gert það.",
-    "H-lg-ll-t-platform-be-in-early-access": "Hversu lengi verður pallurinn snemma aðgangur? Í 9 mánuði, eða kannski 6, eða 3. Þú hefur þitt að spila !! En það er víst til 1. janúar 2022 í síðasta lagi.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Hvernig verður heildarútgáfan frábrugðin útgáfu snemma aðgangs? Vettvangurinn verður endurbættur í samræmi við beiðnir þínar, sem þú getur mótað í valmyndinni „legg til úrbætur“. Listamennirnir munu einnig geta fengið þóknun sem verður hæfileikum sínum. Að því sögðu munu ókeypis forréttindi á Wiin renna út. Fylgdu okkur á samfélagsnetum til að vera upplýst.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Hvað kostar full útgáfa eftir snemmbúinn aðgang? Verðið á að tilkynna. Snemma aðgangur gerir okkur kleift að bjóða þér þjónustu okkar á besta verði. Þú verður upplýstur um þetta áður en þú greiðir, auðvitað.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Hvernig hyggst þú taka þátt í samfélaginu í þróunarferlinu? Einfaldlega með því að nota það. Við verðum glöð að heyra að þú viljir styðja! Vinsamlegast ekki hika við að deila reynslu þinni því þegar allt kemur til alls er það einnig vettvangur þinn. Eins mikið og við metum virkilega hugmyndir þínar og endurgjöf geturðu einnig tekið þátt í þróun Wiin með því að leggja fram fé.",
-    "Tell-m-more": "Segðu mér meira!",
-    "On-first-may-d": "Fyrsta maí færðu snemma aðgang að þjónustu okkar. Þú verður að vera þolinmóður meðan þú bíður eftir þessari miklu byltingu. Athugið að þessi aðgangur verður í boði fyrir fyrstu 1000 skráningarnar."
   }
 }

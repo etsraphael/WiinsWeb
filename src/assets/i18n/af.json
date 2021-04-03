@@ -93,7 +93,8 @@
     "Enable-notification": "Aktiveer kennisgewings",
     "Group-creation": "Skepping van die groep",
     "Mute": "Demp",
-    "Send": "Stuur"
+    "Send": "Stuur",
+    "14days-message-delete": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Is u seker dat u hierdie bespreking sal uitvee?"
@@ -253,14 +254,7 @@
     "Towards-an-infinite-space": "Op pad na 'n oneindige ruimte",
     "Hello": "Hallo",
     "Publication": "Publikasie",
-    "Share": "Deel",
-    "Url-Copied": "URL gekopieer",
-    "Download": "Aflaai",
-    "Downloaded": "Aflaai",
-    "Save-in-phone": "Stoor in telefoon",
-    "No": "Geen",
-    "Yes": "Ja",
-    "Block-t-user": "Blokkeer hierdie gebruiker"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "Missing-informations": "Ontbrekende inligting",
     "Account_desactivated": "Rekening gedeaktiveer",
     "Y-dont-have-a-conversation-yet": "U het nog nie 'n gesprek nie.",
-    "Date-cannot-be-in-the-past": "Die vrystellingsdatum kan nie in die verlede wees nie",
-    "You-cannot-add-yourself": "U kan nie uself byvoeg nie",
-    "T-content-does-not-exist-anymore": "Hierdie inhoud bestaan nie meer nie"
+    "Password-not-identical": "Die wagwoorde is nie identies nie"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Die foto word ontvang",
@@ -649,7 +641,7 @@
     "Register": "Registreer",
     "Registration": "Registrasie",
     "Sign-up": "Teken aan",
-    "accept-tou": "Ek verklaar dat ek 16 jaar of ouer is en stem in tot die gebruikersooreenkoms en privaatheidsbeleid",
+    "accept-tou": "ek sertifiseer dat ek 16 jaar of ouer is en ek stem in tot die gebruikersooreenkoms en privaatheidsbeleid",
     "click-on-email": "Klik op die e-pos skakel",
     "Create-yr-account": "Skep jou rekening",
     "Creating-yr-account": "Maak u rekening",
@@ -734,8 +726,7 @@
     "Your-Password": "Jou wagwoord",
     "Your-Pseudo": "Jou verbruikersnaam",
     "Your-message": "Jou boodskap",
-    "Confirm-your-password": "Bevestig jou wagwoord",
-    "Password-not-matching": "Die wagwoorde stem nie ooreen nie"
+    "Confirm-your-password": "Bevestig jou wagwoord"
   },
   "PLEASE": {
     "Password": "Tik asseblief jou wagwoord"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Gebruikers in hierdie lys sal nie u profiel kan sien nie.",
       "btn-followers": "Stel die \"volg\" -knoppie beskikbaar",
       "btn-friend": "Stel die vriendsknoppie-knoppie beskikbaar",
-      "h-can-b-yr-description": "U kan 'n beskrywing daarstel"
+      "h-can-b-yr-description": "U kan 'n beskrywing daarstel",
+      "theme": "Tema",
+      "theme-description": "Kies asseblief 'n tema",
+      "theme-select": "Kies 'n tema"
     },
     "verified": {
       "Already-certified": "Reeds gesertifiseer",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Administrasie sal die inhoud so gou as moontlik verifieer",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dit sal daartoe lei dat die hele projek verwyder word, is u seker?",
     "T-operation-is-irreversible": "Hierdie bewerking is onomkeerbaar",
-    "this-user-will-be-": "Hierdie gebruiker sal nou wees",
-    "A-y-s-to-unfollow-t-profile": "Is u seker dat u hierdie profie sal volg?",
-    "A-y-s-to-block-t-user": "Is u seker dat u hierdie gebruiker sal blokkeer?",
-    "Y-a-abt-t-block-t-user-D": "U is op die punt om hierdie gebruiker te blokkeer. U sou nie meer na sy inhoud en na hierdie gebruiker kon kyk nie. Net u sou hierdie beperking kon verwyder.",
-    "T-content-has-been-reported": "Hierdie inhoud is gerapporteer. Ons moderators sal binne 24 uur vertraging kyk om dit te hersien. 'N Sanksie sal toegepas word as dit nie die reëls van die gemeenskap respekteer nie.",
-    "T-user-has-been-blocked-D": "Hierdie gebruiker is van u rekening geblokkeer. Geen inhoud van hierdie profiel sal met u rekening sigbaar wees nie.",
-    "W-is-t-reason-to-report-t-post": "Wat is die rede om hierdie berig te rapporteer?",
-    "W-is-t-reason-to-report-t-post-D": "U verslag is anoniem. Kies slegs 'n kategorie om die morators te help"
+    "this-user-will-be-": "Hierdie gebruiker sal nou wees"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Waarskuwing. Maak seker dat u die regte adres het"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Wêreldfusie",
       "Worldbeat": "Wêreldklop",
       "Yacht-rock": "Yacht rock",
-      "Others": "Ander",
-      "Flamenco": "Flamenco",
-      "Rock": "Rots",
-      "Reggae": "Reggae",
-      "Country": "Land"
+      "Others": "Ander"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Video naam",
       "Visualisation-of-the-video": "Visualisering van die video"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Sluit aan by die gemeenskap",
-    "Ty": "Dankie",
-    "Why-this-early-access": "Waarom hierdie vroeë toegang? Wiin's wil 'n rewolusie maak in die verhouding wat u met u foon het. Ons het ook u hulp nodig om ons dienste te verbeter en u 'n eksklusiewe ervaring te bied wat gedurende hierdie tydperk heeltemal gratis sal wees. Daarbenewens sal u as eerste Wiinser voordeel trek uit die vermindering van u toekomstige intekening.",
-    "W-does-early-access-offer": "Wat bied vroeë toegang? Met Early Access kan u al die beskikbare funksies van Wiin gebruik. Ons laat dit aan u om meer deur die video te ontdek, as u dit nog nie gedoen het nie.",
-    "H-lg-ll-t-platform-be-in-early-access": "Hoe lank sal die platform vroeë toegang hê? Vir 9 maande, of miskien 6, of 3. U het u rol om te speel !! Maar dit is seker tot 1 Januarie 2022.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Hoe sal die volledige weergawe van die vroeë toegang weergawe verskil? Die platform sal volgens u versoeke verbeter word, wat u kan formuleer op die menu \"stel 'n verbetering voor\". Die kunstenaars sal ook 'n vergoeding kan ontvang wat hul talent waardig is. Dit gesê, die gratis voorreg op Wiin's sal verval. Volg ons op sosiale netwerke om op hoogte te bly.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Hoeveel kos die volledige weergawe na vroeë toegang? Die prys word aangekondig. Die vroeë toegang stel ons in staat om u dienste teen die beste prys aan te bied. U sal natuurlik hiervan in kennis gestel word voordat u betaal.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Hoe beplan u om die gemeenskap by die ontwikkelingsproses te betrek? Eenvoudig deur dit te gebruik. Ons sal bly wees om te hoor dat u wil ondersteun! Deel gerus u ervaring, want dit is immers ook u platform. Soveel as wat u u idees en terugvoer baie waardeer, kan u ook deelneem aan die ontwikkeling van Wiin's deur 'n donasie te maak.",
-    "Tell-m-more": "Vertel my meer!",
-    "On-first-may-d": "Op die eerste Mei het u vroeë toegang tot ons dienste. Terwyl u op hierdie groot rewolusie wag, sal u geduldig moet wees! Let wel, hierdie toegang is beskikbaar vir die eerste 1000 registrasies."
   }
 }

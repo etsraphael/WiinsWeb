@@ -93,7 +93,8 @@
     "Enable-notification": "Salli ilmoitukset",
     "Group-creation": "Ryhmän luominen",
     "Mute": "Mykistää",
-    "Send": "Lähettää"
+    "Send": "Lähettää",
+    "14days-message-delete": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Haluatko varmasti poistaa tämän keskustelun?"
@@ -253,14 +254,7 @@
     "responses": "vastauksia",
     "soon": "pian",
     "views": "näkymät",
-    "Share": "Jaa",
-    "Url-Copied": "URL kopioitu",
-    "Download": "ladata",
-    "Downloaded": "Ladattu",
-    "Save-in-phone": "Tallenna puhelimeen",
-    "No": "Ei",
-    "Yes": "Joo",
-    "Block-t-user": "Estä tämä käyttäjä"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Sivut tai ryhmät on poistettava ennen",
     "y-have-to-be-friend": "sinun täytyy olla ystäviä",
     "you-hav-to-upgrad-a-manager-before-leave": "Sinun on ylennettävä johtaja ennen ryhmästä poistumista",
-    "Date-cannot-be-in-the-past": "Julkaisupäivä ei voi olla menneisyydessä",
-    "You-cannot-add-yourself": "Et voi lisätä itseäsi",
-    "T-content-does-not-exist-anymore": "Tätä sisältöä ei ole enää olemassa"
+    "Password-not-identical": "Salasanat eivät ole identtisiä"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",
@@ -653,7 +645,7 @@
     "Register": "Rekisteröidy",
     "Registration": "Rekisteröinti",
     "Sign-up": "Kirjaudu",
-    "accept-tou": "Vakuutan olevani 16-vuotias tai vanhempi ja hyväksyn käyttäjän sopimuksen ja tietosuojakäytännön",
+    "accept-tou": "todistan, että olen 16-vuotias tai vanhempi ja hyväksyn käyttäjäsopimuksen ja tietosuojakäytännön",
     "click-on-email": "Napsauta sähköpostilinkkiä"
   },
   "MAIN-MUSIC": {
@@ -734,8 +726,7 @@
     "Your-Password": "Salasanasi",
     "Your-Pseudo": "Sinun käyttäjä nimesi",
     "Your-message": "Viestisi",
-    "Confirm-your-password": "Vahvista salasana",
-    "Password-not-matching": "Salasanat eivät täsmää"
+    "Confirm-your-password": "Salasanan vahvistaminen"
   },
   "PLEASE": {
     "Password": "Anna salasanasi"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Tämän luettelon käyttäjät eivät näe profiiliasi.",
       "btn-followers": "Aseta \"seuraa\" -painike saataville",
       "btn-friend": "Ota kaveripyyntöpainike saataville",
-      "h-can-b-yr-description": "Voit laittaa kuvauksen"
+      "h-can-b-yr-description": "Voit laittaa kuvauksen",
+      "theme": "Teema",
+      "theme-description": "Valitse teema",
+      "theme-select": "Teeman valitseminen"
     },
     "verified": {
       "Already-certified": "Jo sertifioitu",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Hallinto tarkistaa sisällön mahdollisimman pian",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Tämä aiheuttaa koko projektin poistamisen, oletko varma?",
     "T-operation-is-irreversible": "Tämä toiminto on peruuttamaton",
-    "this-user-will-be-": "Tämä käyttäjä on nyt",
-    "A-y-s-to-unfollow-t-profile": "Oletko varma, että lopetat tämän profiilin seuraamisen?",
-    "A-y-s-to-block-t-user": "Oletko varmasti estänyt tämän käyttäjän?",
-    "Y-a-abt-t-block-t-user-D": "Olet estämässä tätä käyttäjää. Et voi enää katsoa hänen sisältöään ja tätä käyttäjää. Vain sinä pystyt poistamaan tämän rajoituksen.",
-    "T-content-has-been-reported": "Tästä sisällöstä on raportoitu. Moderaattorimme tarkistavat sen 24 tunnin viiveellä. Seuraamusta sovelletaan, jos se ei noudata yhteisön sääntöjä.",
-    "T-user-has-been-blocked-D": "Tämä käyttäjä on estetty tililtäsi. Mikään tämän profiilin sisältö ei ole näkyvissä tililläsi.",
-    "W-is-t-reason-to-report-t-post": "Mikä on syy ilmoittaa tästä viestistä?",
-    "W-is-t-reason-to-report-t-post-D": "Raporttisi on tuntematon. Valitse vain luokka, joka auttaa moratoreja"
+    "this-user-will-be-": "Tämä käyttäjä on nyt"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Varoitus. Varmista, että sinulla on oikea osoite"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Maailman fuusio",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht rock",
-      "Others": "Muut",
-      "Flamenco": "Flamenco",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Maa"
+      "Others": "Muut"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Videon nimi",
       "Visualisation-of-the-video": "Videon visualisointi"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Liity yhteisöön ristiriidassa",
-    "Ty": "Kiitos",
-    "Why-this-early-access": "Miksi tämä varhainen pääsy? Wiin's haluaa mullistaa suhde puhelimeesi. Tarvitsemme myös apuasi palvelujemme parantamiseksi ja tarjoamme sinulle ainutlaatuisen kokemuksen, joka on täysin ilmainen tänä aikana. Lisäksi ensimmäisenä Wiinserina voit hyötyä tulevan tilauksesi alennuksesta.",
-    "W-does-early-access-offer": "Mitä varhainen pääsy tarjoaa? Early Accessin avulla voit käyttää kaikkia Wiinin tällä hetkellä saatavilla olevia ominaisuuksia. Jätämme sinun löytää enemmän videon kautta, jos et ole jo tehnyt niin.",
-    "H-lg-ll-t-platform-be-in-early-access": "Kuinka kauan alusta on varhaisessa vaiheessa? 9 kuukauden ajan, ehkä 6 tai 3. Sinulla on oma osasi pelata !! Mutta se on varmaa viimeistään 1. tammikuuta 2022.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Kuinka täysi versio eroaa aikaisemman version versiosta? Alustaa parannetaan pyyntösi mukaan, jonka voit muotoilla valikossa \"ehdottaa parannusta\". Taiteilijat voivat myös saada lahjakkuudensa arvoisen palkkion. Tästä huolimatta Wiinin ilmainen etuoikeus vanhenee. Seuraa meitä sosiaalisissa verkostoissa pysyäksesi ajan tasalla.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Kuinka paljon täysversio maksaa Early Accessin jälkeen? Hinta ilmoitetaan. Varhainen pääsy antaa meille mahdollisuuden tarjota palveluitamme parhaaseen hintaan. Sinulle ilmoitetaan tästä tietysti ennen maksamista.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Kuinka aiot ottaa yhteisön mukaan kehitysprosessiin? Yksinkertaisesti käyttämällä sitä. Olemme iloisia kuullessamme, että haluat tukea! Voit vapaasti jakaa kokemuksesi, koska loppujen lopuksi se on myös sinun alustasi. Niin paljon kuin me todella arvostamme ideoitasi ja palautettasi, voit myös osallistua Wiinin kehittämiseen tekemällä lahjoituksen.",
-    "Tell-m-more": "Kerro minulle lisää!",
-    "On-first-may-d": "Ensimmäisenä toukokuuta sinulla on pääsy palveluihimme aikaisin. Odottaessasi tätä suurta vallankumousta sinun on oltava kärsivällinen! Huomaa, että tämä pääsy on käytettävissä ensimmäisten 1000 rekisteröinnin yhteydessä."
   }
 }

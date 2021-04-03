@@ -93,7 +93,8 @@
     "Enable-notification": "Dayakan pemberitahuan",
     "Group-creation": "Penciptaan kumpulan",
     "Mute": "Bisu",
-    "Send": "Hantar"
+    "Send": "Hantar",
+    "14days-message-delete": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Adakah anda pasti memadamkan perbincangan ini?"
@@ -253,14 +254,7 @@
     "responses": "tindak balas",
     "soon": "tidak lama lagi",
     "views": "pandangan",
-    "Share": "Berkongsi",
-    "Url-Copied": "Url disalin",
-    "Download": "Muat turun",
-    "Downloaded": "Dimuat turun",
-    "Save-in-phone": "Simpan dalam telefon",
-    "No": "Tidak",
-    "Yes": "Ya",
-    "Block-t-user": "Sekat pengguna ini"
+    "Chat": "Sembang"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Anda mesti memadam halaman atau kumpulan anda sebelum ini",
     "y-have-to-be-friend": "anda mesti berkawan",
     "you-hav-to-upgrad-a-manager-before-leave": "Anda mesti mempromosikan pengurus sebelum keluar dari kumpulan",
-    "Date-cannot-be-in-the-past": "Tarikh pelepasan tidak boleh berlalu",
-    "You-cannot-add-yourself": "Anda tidak boleh menambah diri anda",
-    "T-content-does-not-exist-anymore": "Kandungan ini sudah tidak ada lagi"
+    "Password-not-identical": "Kata laluan tidak sama"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto itu diterima",
@@ -653,7 +645,7 @@
     "Register": "Daftar",
     "Registration": "Pendaftaran",
     "Sign-up": "Mendaftar",
-    "accept-tou": "Saya mengesahkan bahawa saya berumur 16 tahun ke atas dan saya bersetuju dengan perjanjian pengguna dan dasar privasi",
+    "accept-tou": "i mengesahkan bahawa saya berumur 16 tahun ke atas dan saya bersetuju dengan perjanjian pengguna dan dasar privasi",
     "click-on-email": "Sila klik pada pautan e-mel"
   },
   "MAIN-MUSIC": {
@@ -734,8 +726,7 @@
     "Your-Password": "Kata laluan Awak",
     "Your-Pseudo": "Nama pengguna anda",
     "Your-message": "Mesej anda",
-    "Confirm-your-password": "Mengesahkan kata laluan anda",
-    "Password-not-matching": "Kata laluan tidak sepadan"
+    "Confirm-your-password": "Sahkan kata laluan anda"
   },
   "PLEASE": {
     "Password": "Sila masukkan kata laluan anda"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Pengguna dalam senarai ini tidak akan dapat melihat profil anda.",
       "btn-followers": "Sediakan butang \"ikuti\"",
       "btn-friend": "Buat butang permintaan rakan tersedia",
-      "h-can-b-yr-description": "Anda boleh meletakkan keterangan"
+      "h-can-b-yr-description": "Anda boleh meletakkan keterangan",
+      "theme": "Tema",
+      "theme-description": "Sila pilih tema",
+      "theme-select": "Pilih tema"
     },
     "verified": {
       "Already-certified": "Sudah diperakui",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Pentadbiran akan mengesahkan kandungan secepat mungkin",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Ini akan menyebabkan keseluruhan projek dihapuskan, adakah anda pasti?",
     "T-operation-is-irreversible": "Operasi ini tidak dapat dipulihkan",
-    "this-user-will-be-": "Pengguna ini sekarang akan menjadi",
-    "A-y-s-to-unfollow-t-profile": "Adakah anda pasti berhenti mengikuti profil ini?",
-    "A-y-s-to-block-t-user": "Adakah anda pasti menyekat pengguna ini?",
-    "Y-a-abt-t-block-t-user-D": "Anda akan menyekat pengguna ini. Anda tidak lagi dapat menonton kandungannya dan pengguna ini juga. Hanya anda yang dapat membuang sekatan ini.",
-    "T-content-has-been-reported": "Kandungan ini telah dilaporkan. Penyederhana kami akan melihat kelewatan 24 jam untuk meninjaunya. Sekatan akan dikenakan sekiranya ini tidak mematuhi peraturan masyarakat.",
-    "T-user-has-been-blocked-D": "Pengguna ini telah disekat dari akaun anda. Tiada kandungan profil ini yang dapat dilihat dengan akaun anda.",
-    "W-is-t-reason-to-report-t-post": "Apakah sebab untuk melaporkan catatan ini?",
-    "W-is-t-reason-to-report-t-post-D": "Laporan anda tidak dikenali. Tolong pilih kategori untuk menolong para pengganas"
+    "this-user-will-be-": "Pengguna ini sekarang akan menjadi"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Amaran. Pastikan anda mempunyai alamat yang betul"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Perpaduan dunia",
       "Worldbeat": "Denyutan dunia",
       "Yacht-rock": "Batu kapal layar",
-      "Others": "Yang lain",
-      "Flamenco": "Flamenco",
-      "Rock": "Batu",
-      "Reggae": "Reggae",
-      "Country": "Negara"
+      "Others": "Yang lain"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Nama video",
       "Visualisation-of-the-video": "Visualisasi video"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Sertailah komuniti dalam perselisihan",
-    "Ty": "Terima kasih",
-    "Why-this-early-access": "Mengapa akses awal ini? Wiin ingin merevolusikan hubungan yang anda ada dengan telefon anda. Kami juga memerlukan pertolongan anda untuk meningkatkan perkhidmatan kami dan memberikan anda pengalaman eksklusif yang akan percuma sepanjang tempoh ini. Sebagai Wiinser pertama, anda akan mendapat keuntungan daripada pengurangan langganan masa depan anda.",
-    "W-does-early-access-offer": "Apa yang ditawarkan akses awal? Akses Awal membolehkan anda menggunakan semua ciri Wiin yang ada sekarang. Kami akan menyerahkan kepada anda untuk mengetahui lebih lanjut melalui video, jika anda belum melakukannya.",
-    "H-lg-ll-t-platform-be-in-early-access": "Berapa lama platform ini dapat diakses awal? Selama 9 bulan, atau mungkin 6, atau 3. Anda mempunyai peranan anda !! Tetapi sudah pasti sehingga 1 Januari 2022, selambat-lambatnya.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Bagaimana versi penuh akan berbeza dengan versi akses awal? Platform akan diperbaiki mengikut permintaan anda, yang dapat anda rumuskan pada menu \"mencadangkan penambahbaikan\". Para seniman juga akan dapat imbuhan yang setimpal dengan bakat mereka. Oleh itu, hak istimewa percuma di Wiin akan tamat. Ikuti kami di rangkaian sosial untuk terus mendapat maklumat.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Berapakah kos versi penuh selepas Akses Awal? Harga akan diumumkan. Akses awal akan membolehkan kami menawarkan perkhidmatan kami dengan harga terbaik. Anda pasti akan memaklumkan perkara ini sebelum membayar, tentu saja.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Bagaimana anda merancang untuk melibatkan masyarakat dalam proses pembangunan? Cukup dengan menggunakannya. Kami akan gembira mendengar bahawa anda mahu menyokong! Jangan ragu untuk berkongsi pengalaman anda kerana ia juga merupakan platform anda. Sejauh kami sangat menghargai idea dan maklum balas anda, anda juga dapat turut serta dalam pengembangan Wiin dengan membuat sumbangan.",
-    "Tell-m-more": "Beritahu saya lagi!",
-    "On-first-may-d": "Pada 1 Mei, anda akan mendapat akses awal ke perkhidmatan kami. Sementara menunggu revolusi hebat ini, anda harus bersabar! Harap maklum, akses ini akan tersedia untuk 1000 pendaftaran pertama."
   }
 }
