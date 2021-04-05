@@ -93,7 +93,8 @@
     "Enable-notification": "Galluogi hysbysiadau",
     "Group-creation": "Creu’r grŵp",
     "Mute": "Munud",
-    "Send": "Anfon"
+    "Send": "Anfon",
+    "days-message-delete-two-weeks": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Ydych chi'n sicr o ddileu'r drafodaeth hon?"
@@ -253,14 +254,7 @@
     "responses": "ymatebion",
     "soon": "yn fuan",
     "views": "golygfeydd",
-    "Share": "Rhannu",
-    "Url-Copied": "Copïodd Url",
-    "Download": "Dadlwythwch",
-    "Downloaded": "Dadlwythwyd",
-    "Save-in-phone": "Cadw mewn ffôn",
-    "No": "Na",
-    "Yes": "Ydw",
-    "Block-t-user": "Blociwch y defnyddiwr hwn"
+    "Chat": "Sgwrsio"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Rhaid i chi ddileu eich tudalennau neu grwpiau o'r blaen",
     "y-have-to-be-friend": "rhaid i chi fod yn ffrindiau",
     "you-hav-to-upgrad-a-manager-before-leave": "Rhaid i chi hyrwyddo rheolwr cyn gadael y grŵp",
-    "Date-cannot-be-in-the-past": "Ni all y dyddiad rhyddhau fod yn y gorffennol",
-    "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun",
-    "T-content-does-not-exist-anymore": "Nid yw'r cynnwys hwn yn bodoli mwyach"
+    "Password-not-identical": "Nid yw'r cyfrineiriau'n union yr un fath"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",
@@ -653,7 +645,7 @@
     "Register": "Cofrestrwch",
     "Registration": "Cofrestru",
     "Sign-up": "Cofrestru",
-    "accept-tou": "Rwy'n tystio fy mod i'n 16 oed neu'n hŷn ac rwy'n cytuno i'r cytundeb defnyddiwr a'r polisi preifatrwydd",
+    "accept-tou": "i ardystio fy mod yn 16 oed neu'n hŷn ac rwy'n cytuno â'r cytundeb defnyddiwr a'r polisi preifatrwydd",
     "click-on-email": "Cliciwch ar y ddolen e-bost"
   },
   "MAIN-MUSIC": {
@@ -734,8 +726,7 @@
     "Your-Password": "Eich cyfrinair",
     "Your-Pseudo": "Eich enw defnyddiwr",
     "Your-message": "Dy neges",
-    "Confirm-your-password": "Cadarnhewch eich cyfrinair",
-    "Password-not-matching": "Nid yw'r cyfrineiriau'n cyfateb"
+    "Confirm-your-password": "Cadarnhau eich cyfrinair"
   },
   "PLEASE": {
     "Password": "Rhowch eich cyfrinair"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Ni fydd defnyddwyr ar y rhestr hon yn gallu gweld eich proffil.",
       "btn-followers": "Sicrhewch fod y botwm \"dilyn\" ar gael",
       "btn-friend": "Sicrhewch fod y botwm cais ffrind ar gael",
-      "h-can-b-yr-description": "Gallwch chi roi disgrifiad"
+      "h-can-b-yr-description": "Gallwch chi roi disgrifiad",
+      "theme": "Thema",
+      "theme-description": "Dewiswch thema",
+      "theme-select": "Dewiswch thema"
     },
     "verified": {
       "Already-certified": "Eisoes wedi'i ardystio",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Bydd gweinyddiaeth yn gwirio cynnwys cyn gynted â phosibl",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bydd hyn yn achosi i'r prosiect cyfan gael ei ddileu, a ydych chi'n siŵr?",
     "T-operation-is-irreversible": "Mae'r gweithrediad hwn yn anghildroadwy",
-    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr",
-    "A-y-s-to-unfollow-t-profile": "A ydych yn sicr o ddadorchuddio'r profie hwn?",
-    "A-y-s-to-block-t-user": "Ydych chi'n sicr o rwystro'r defnyddiwr hwn?",
-    "Y-a-abt-t-block-t-user-D": "Rydych chi ar fin blocio'r defnyddiwr hwn. Ni fyddech bellach yn gallu gwylio ei gynnwys a'r defnyddiwr hwn hefyd. Dim ond chi fyddai'n gallu dileu'r cyfyngiad hwn.",
-    "T-content-has-been-reported": "Adroddwyd ar y cynnwys hwn. Bydd ein cymedrolwyr yn edrych mewn oedi o 24 awr i'w adolygu. Rhoddir cosb os nad yw hyn yn parchu rheolau'r gymuned.",
-    "T-user-has-been-blocked-D": "Mae'r defnyddiwr hwn wedi'i rwystro o'ch cyfrif. Ni fydd unrhyw gynnwys o'r proffil hwn yn weladwy gyda'ch cyfrif.",
-    "W-is-t-reason-to-report-t-post": "Beth yw'r rheswm i riportio'r swydd hon?",
-    "W-is-t-reason-to-report-t-post-D": "Mae eich adroddiad yn anhysbys. Dewiswch gategori yn unig i helpu'r morators"
+    "this-user-will-be-": "Bydd y defnyddiwr hwn nawr"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Rhybudd. Sicrhewch fod gennych y cyfeiriad cywir"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Ymasiad y byd",
       "Worldbeat": "Curiad y Byd",
       "Yacht-rock": "Craig hwylio",
-      "Others": "Eraill",
-      "Flamenco": "Flamenco",
-      "Rock": "Roc",
-      "Reggae": "Reggae",
-      "Country": "Gwlad"
+      "Others": "Eraill"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Enw fideo",
       "Visualisation-of-the-video": "Delweddu'r fideo"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Ymunwch â'r gymuned ar anghytgord",
-    "Ty": "Diolch",
-    "Why-this-early-access": "Pam y mynediad cynnar hwn? Mae Wiin’s eisiau chwyldroi’r berthynas sydd gennych â’ch ffôn. Hefyd, mae angen eich help arnom er mwyn gwella ein gwasanaethau a chynnig profiad unigryw i chi a fydd yn hollol rhad ac am ddim yn ystod y cyfnod hwn. Yn ogystal, fel y Wiinser cyntaf, byddwch yn elwa o ostyngiad ar eich tanysgrifiad yn y dyfodol.",
-    "W-does-early-access-offer": "Beth mae mynediad cynnar yn ei gynnig? Mae Mynediad Cynnar yn caniatáu ichi ddefnyddio holl nodweddion Wiin sydd ar gael ar hyn o bryd. Byddwn yn gadael i chi ddarganfod mwy trwy'r fideo, os nad ydych chi eisoes wedi gwneud hynny.",
-    "H-lg-ll-t-platform-be-in-early-access": "Pa mor hir fydd y platfform mewn mynediad cynnar? Am 9 mis, neu efallai 6, neu 3. Mae gennych chi'ch rhan i'w chwarae !! Ond mae’n sicr tan 1 Ionawr, 2022, fan bellaf.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Sut fydd y fersiwn lawn yn wahanol i'r fersiwn mynediad cynnar? Bydd y platfform yn cael ei wella yn ôl eich ceisiadau, y gallwch ei lunio ar y ddewislen \"cynnig gwelliant\". Bydd yr artistiaid hefyd yn gallu derbyn tâl sy'n deilwng o'u talent. Wedi dweud hynny, bydd y fraint rydd ar Wiin’s yn dod i ben. Dilynwch ni ar rwydweithiau cymdeithasol i gael y wybodaeth ddiweddaraf.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Faint fydd y fersiwn lawn yn ei gostio ar ôl Mynediad Cynnar? Mae'r pris i'w gyhoeddi. Bydd y mynediad cynnar yn caniatáu inni gynnig ein gwasanaethau i chi am y pris gorau. Fe'ch hysbysir o hyn cyn talu, wrth gwrs.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Sut ydych chi'n bwriadu cynnwys y gymuned yn y broses ddatblygu? Yn syml trwy ei ddefnyddio. Byddwn yn hapus i glywed eich bod am gefnogi! Mae croeso i chi rannu eich profiad oherwydd wedi'r cyfan, dyma'ch platfform hefyd. Yn gymaint â'n bod ni'n gwerthfawrogi'ch syniadau a'ch adborth yn fawr, gallwch chi hefyd gymryd rhan yn natblygiad Wi -'s trwy roi rhodd.",
-    "Tell-m-more": "Dywedwch fwy wrthyf!",
-    "On-first-may-d": "Ar y cyntaf o Fai, bydd gennych fynediad cynnar i'n gwasanaethau. Wrth aros am y chwyldro mawr hwn, bydd yn rhaid i chi fod yn amyneddgar! Sylwch, bydd y mynediad hwn ar gael ar gyfer y 1000 o gofrestriadau cyntaf."
   }
 }

@@ -93,7 +93,8 @@
     "Enable-notification": "Włącz powiadomienia",
     "Group-creation": "Utworzenie grupy",
     "Mute": "Niemy",
-    "Send": "Wysłać"
+    "Send": "Wysłać",
+    "days-message-delete-two-weeks": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Czy na pewno chcesz usunąć tę dyskusję?"
@@ -253,14 +254,7 @@
     "Towards-an-infinite-space": "Ku nieskończonej przestrzeni",
     "Hello": "dzień dobry",
     "Publication": "Publikacja",
-    "Share": "Dzielić",
-    "Url-Copied": "Adres URL został skopiowany",
-    "Download": "Ściągnij",
-    "Downloaded": "Pobrano",
-    "Save-in-phone": "Zapisz w telefonie",
-    "No": "Nie",
-    "Yes": "tak",
-    "Block-t-user": "Zablokuj tego użytkownika"
+    "Chat": "Czat"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -618,9 +612,7 @@
     "Missing-informations": "Brak informacji",
     "Account_desactivated": "Konto zostało dezaktywowane",
     "Y-dont-have-a-conversation-yet": "Nie masz jeszcze rozmowy.",
-    "Date-cannot-be-in-the-past": "Data premiery nie może przypadać w przeszłości",
-    "You-cannot-add-yourself": "Nie możesz dodać siebie",
-    "T-content-does-not-exist-anymore": "Ta treść już nie istnieje"
+    "Password-not-identical": "Hasła nie są identyczne"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",
@@ -649,7 +641,7 @@
     "Register": "Zarejestrować",
     "Registration": "Rejestracja",
     "Sign-up": "Zapisz się",
-    "accept-tou": "Oświadczam, że mam ukończone 16 lat i akceptuję umowę z użytkownikiem oraz politykę prywatności",
+    "accept-tou": "zaświadczam, że mam 16 lat lub więcej i zgadzam się na umowę o ochronie danych i politykę prywatności",
     "click-on-email": "Kliknij łącze e-mail",
     "Create-yr-account": "Utwórz swoje konto",
     "Creating-yr-account": "Tworzenie Twojego konta",
@@ -734,8 +726,7 @@
     "Your-Password": "Twoje hasło",
     "Your-Pseudo": "Twoja nazwa użytkownika",
     "Your-message": "Twoja wiadomość",
-    "Confirm-your-password": "Potwierdź swoje hasło",
-    "Password-not-matching": "Hasła nie pasują"
+    "Confirm-your-password": "Potwierdź swoje hasło"
   },
   "PLEASE": {
     "Password": "Wprowadź hasło"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Użytkownicy na tej liście nie będą mogli zobaczyć Twojego profilu.",
       "btn-followers": "Udostępnij przycisk „obserwuj”",
       "btn-friend": "Udostępnij przycisk zaproszenia do znajomych",
-      "h-can-b-yr-description": "Możesz umieścić opis"
+      "h-can-b-yr-description": "Możesz umieścić opis",
+      "theme": "Tematu",
+      "theme-description": "Wybierz motyw",
+      "theme-select": "Wybieranie motywu"
     },
     "verified": {
       "Already-certified": "Już certyfikowany",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Administracja jak najszybciej zweryfikuje zawartość",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Spowoduje to usunięcie całego projektu, czy na pewno?",
     "T-operation-is-irreversible": "Ta operacja jest nieodwracalna",
-    "this-user-will-be-": "Ten użytkownik będzie teraz",
-    "A-y-s-to-unfollow-t-profile": "Czy na pewno chcesz przestać obserwować ten profil?",
-    "A-y-s-to-block-t-user": "Czy na pewno chcesz zablokować tego użytkownika?",
-    "Y-a-abt-t-block-t-user-D": "Zamierzasz zablokować tego użytkownika. Nie będziesz już w stanie oglądać jego treści ani tego użytkownika. Tylko Ty byłbyś w stanie usunąć to ograniczenie.",
-    "T-content-has-been-reported": "Ta treść została zgłoszona. Nasi moderatorzy z 24-godzinnym opóźnieniem sprawdzą to. Sankcja zostanie nałożona, jeśli nie jest to zgodne z zasadami społeczności.",
-    "T-user-has-been-blocked-D": "Ten użytkownik został zablokowany na Twoim koncie. Żadna zawartość tego profilu nie będzie widoczna na Twoim koncie.",
-    "W-is-t-reason-to-report-t-post": "Jaki jest powód zgłoszenia tego posta?",
-    "W-is-t-reason-to-report-t-post-D": "Twoje zgłoszenie jest anonimowe. Wybierz tylko kategorię, aby pomóc moratorom"
+    "this-user-will-be-": "Ten użytkownik będzie teraz"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Ostrzeżenie. Upewnij się, że masz właściwy adres"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Światowa fuzja",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Rock na jachcie",
-      "Others": "Inni",
-      "Flamenco": "Flamenco",
-      "Rock": "Skała",
-      "Reggae": "Reggae",
-      "Country": "Kraj"
+      "Others": "Inni"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Nazwa filmu",
       "Visualisation-of-the-video": "Wizualizacja wideo"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Dołącz do społeczności na niezgodach",
-    "Ty": "Dziękuję Ci",
-    "Why-this-early-access": "Dlaczego ten wczesny dostęp? Wiin chce zrewolucjonizować relacje, jakie masz z telefonem. Potrzebujemy również Twojej pomocy, aby ulepszyć nasze usługi i zaoferować ekskluzywne doświadczenie, które będzie całkowicie bezpłatne w tym okresie. Ponadto jako pierwszy Wiinser skorzystasz ze zniżki na przyszłą subskrypcję.",
-    "W-does-early-access-offer": "Co oferuje wczesny dostęp? Wczesny dostęp umożliwia korzystanie ze wszystkich obecnie dostępnych funkcji Wiin. Pozostawimy Tobie, aby odkryć więcej poprzez wideo, jeśli jeszcze tego nie zrobiłeś.",
-    "H-lg-ll-t-platform-be-in-early-access": "Jak długo platforma będzie we wczesnym dostępie? Przez 9 miesięcy, może 6 lub 3. Masz swoją rolę do odegrania !! Ale jest to pewne najpóźniej do 1 stycznia 2022 roku.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Czym różni się pełna wersja od wersji z wczesnego dostępu? Platforma zostanie ulepszona zgodnie z Twoimi żądaniami, które możesz sformułować w menu „Zaproponuj ulepszenie”. Artyści będą również mogli otrzymać wynagrodzenie godne ich talentu. Biorąc to pod uwagę, bezpłatny przywilej Wiin wygaśnie. Śledź nas w sieciach społecznościowych, aby być na bieżąco.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Ile będzie kosztować pełna wersja po wczesnym dostępie? Cena ma zostać ogłoszona. Wczesny dostęp pozwoli nam zaoferować Ci nasze usługi w najlepszej cenie. Oczywiście zostaniesz o tym poinformowany przed dokonaniem płatności.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Jak planujesz zaangażować społeczność w proces tworzenia? Po prostu używając go. Z przyjemnością usłyszymy, że chcesz wesprzeć! Podziel się swoimi doświadczeniami, ponieważ w końcu jest to również Twoja platforma. Choć naprawdę doceniamy Twoje pomysły i opinie, możesz również uczestniczyć w rozwoju Wiin, dokonując darowizny.",
-    "Tell-m-more": "Powiedz mi więcej!",
-    "On-first-may-d": "Pierwszego maja uzyskasz wczesny dostęp do naszych usług. Czekając na tę wielką rewolucję, będziesz musiał uzbroić się w cierpliwość! Należy pamiętać, że ten dostęp będzie dostępny dla pierwszych 1000 rejestracji."
   }
 }

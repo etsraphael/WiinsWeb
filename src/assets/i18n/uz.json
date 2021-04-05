@@ -93,7 +93,8 @@
     "Enable-notification": "Bildirishnomalarni yoqish",
     "Group-creation": "Guruhni yaratish",
     "Mute": "Ovozni o'chirish",
-    "Send": "Yuborish"
+    "Send": "Yuborish",
+    "days-message-delete-two-weeks": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Ushbu munozarani o'chirishga ishonchingiz komilmi?"
@@ -253,14 +254,7 @@
     "responses": "javoblar",
     "soon": "tez orada",
     "views": "qarashlar",
-    "Share": "Baham ko'ring",
-    "Url-Copied": "URL ko'chirildi",
-    "Download": "Yuklash",
-    "Downloaded": "Yuklandi",
-    "Save-in-phone": "Telefonda saqlang",
-    "No": "Yo'q",
-    "Yes": "Ha",
-    "Block-t-user": "Ushbu foydalanuvchini bloklash"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -618,9 +612,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Oldin siz sahifalaringizni yoki guruhlaringizni o'chirishingiz kerak",
     "y-have-to-be-friend": "siz do'st bo'lishingiz kerak",
     "you-hav-to-upgrad-a-manager-before-leave": "Guruhdan chiqishdan oldin menejerni lavozimga ko'tarishingiz kerak",
-    "Date-cannot-be-in-the-past": "Chiqarish sanasi o'tmishda bo'lishi mumkin emas",
-    "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz",
-    "T-content-does-not-exist-anymore": "Ushbu tarkib endi mavjud emas"
+    "Password-not-identical": "Parollar bir xil emas"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Surat qabul qilindi",
@@ -653,7 +645,7 @@
     "Register": "Ro'yxatdan o'tish",
     "Registration": "Ro'yxatdan o'tish",
     "Sign-up": "Ro'yxatdan o'tish",
-    "accept-tou": "Men 16 yoshga to'lganligimni tasdiqlayman va foydalanuvchi shartnomasi va maxfiylik siyosatiga roziman",
+    "accept-tou": "men 16 yoshga to'lganligimni tasdiqlayman va foydalanuvchi shartnomasi va maxfiylik siyosatiga roziman",
     "click-on-email": "Iltimos, elektron pochta havolasini bosing"
   },
   "MAIN-MUSIC": {
@@ -734,8 +726,7 @@
     "Your-Password": "Parolingiz",
     "Your-Pseudo": "Sizning foydalanuvchi ismingiz",
     "Your-message": "Sizning xatingiz",
-    "Confirm-your-password": "Parolingizni tasdiqlang",
-    "Password-not-matching": "Parollar mos kelmayapti"
+    "Confirm-your-password": "Parolingizni tasdiqlang"
   },
   "PLEASE": {
     "Password": "Parolingizni kiriting"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Ushbu ro'yxatdagi foydalanuvchilar sizning profilingizni ko'ra olmaydilar.",
       "btn-followers": "\"Kuzatuv\" tugmachasini mavjud qiling",
       "btn-friend": "Do'stlik so'rovi tugmachasini oching",
-      "h-can-b-yr-description": "Siz tavsifni qo'yishingiz mumkin"
+      "h-can-b-yr-description": "Siz tavsifni qo'yishingiz mumkin",
+      "theme": "mavzu",
+      "theme-description": "Iltimos, mavzuni tanlang",
+      "theme-select": "Mavzuni tanlang"
     },
     "verified": {
       "Already-certified": "Allaqachon sertifikatlangan",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Ma'muriyat qisqa vaqt ichida tarkibni tekshiradi",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Bu butun loyihani o'chirilishiga olib keladi, aminmisiz?",
     "T-operation-is-irreversible": "Ushbu operatsiyani qaytarib bo'lmaydi",
-    "this-user-will-be-": "Ushbu foydalanuvchi endi bo'ladi",
-    "A-y-s-to-unfollow-t-profile": "Ushbu profilni bekor qilishingizga ishonchingiz komilmi?",
-    "A-y-s-to-block-t-user": "Ushbu foydalanuvchini bloklaganingizga ishonchingiz komilmi?",
-    "Y-a-abt-t-block-t-user-D": "Siz ushbu foydalanuvchini bloklamoqchisiz. Siz endi uning tarkibini va ushbu foydalanuvchini ham tomosha qila olmaysiz. Ushbu cheklovni faqat siz olib tashlay olasiz.",
-    "T-content-has-been-reported": "Ushbu tarkib haqida xabar berilgan. Moderatorlarimiz uni ko'rib chiqish uchun 24 soat kechiktirishni ko'rib chiqadilar. Agar bu jamiyat qoidalariga rioya qilmasa, sanktsiya qo'llaniladi.",
-    "T-user-has-been-blocked-D": "Ushbu foydalanuvchi sizning hisobingizdan bloklangan. Hisobingizda ushbu profilning hech qanday mazmuni ko'rinmaydi.",
-    "W-is-t-reason-to-report-t-post": "Ushbu xabar haqida xabar berishning sababi nima?",
-    "W-is-t-reason-to-report-t-post-D": "Sizning hisobotingiz noma'lum. Iltimos, moratatorlarga yordam berish uchun faqat bitta toifani tanlang"
+    "this-user-will-be-": "Ushbu foydalanuvchi endi bo'ladi"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Ogohlantirish. To'g'ri manzilga ega ekanligingizga ishonch hosil qiling"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Jahon birlashishi",
       "Worldbeat": "Jahon urishi",
       "Yacht-rock": "Yat toshi",
-      "Others": "Boshqalar",
-      "Flamenco": "Flamenko",
-      "Rock": "Tosh",
-      "Reggae": "Reggae",
-      "Country": "Mamlakat"
+      "Others": "Boshqalar"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Video nomi",
       "Visualisation-of-the-video": "Videoning vizualizatsiyasi"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Nifoq bo'yicha jamoaga qo'shiling",
-    "Ty": "rahmat",
-    "Why-this-early-access": "Nega bu erta kirish? Wiinning telefoningiz bilan bo'lgan munosabatlarida inqilob qilishni xohlaydi. Shuningdek, xizmatlarimizni takomillashtirish va sizga ushbu davrda mutlaqo bepul bo'lgan eksklyuziv tajribani taqdim etish uchun sizga yordam kerak. Bundan tashqari, birinchi Wiinser sifatida sizga kelajakdagi obunangiz kamayishi foyda keltiradi.",
-    "W-does-early-access-offer": "Erta kirish nimani taklif qiladi? Erta kirish sizga Wiinning hozirda mavjud bo'lgan barcha xususiyatlaridan foydalanish imkonini beradi. Agar siz hali ham bo'lmagan bo'lsa, video orqali ko'proq narsalarni bilib olish uchun sizga topshiramiz.",
-    "H-lg-ll-t-platform-be-in-early-access": "Platforma qancha vaqtgacha erta kirishda bo'ladi? 9 oy davomida, yoki ehtimol 6 yoki 3. Sizda o'zingizning rolingiz bor !! Ammo bu eng kechi 2022 yil 1 yanvargacha aniq.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "To'liq versiya dastlabki kirish versiyasidan qanday farq qiladi? Platforma \"yaxshilanishni taklif qilish\" menyusida shakllantirishingiz mumkin bo'lgan so'rovlaringiz bo'yicha yaxshilanadi. Shuningdek, san'atkorlar o'zlarining iste'dodlariga munosib mukofot olishlari mumkin. Aytishicha, Wiin-dagi bepul imtiyoz tugaydi. Bizni xabardor bo'lish uchun ijtimoiy tarmoqlarda kuzatib boring.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Early Accessdan so'ng to'liq versiyasi qancha turadi? Narx e'lon qilinishi kerak. Erta kirish sizga o'z xizmatlarimizni eng yaxshi narxlarda taklif qilishimizga imkon beradi. To'lashdan oldin bu haqda sizga xabar beriladi, albatta.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Jamiyatni rivojlanish jarayoniga qanday jalb qilishni rejalashtiryapsiz? Shunchaki uni ishlatish bilan. Sizni qo'llab-quvvatlamoqchi ekaningizni eshitib xursand bo'lamiz! Iltimos, tajribangizni baham ko'ring, chunki bu sizning platformangizdir. Sizning g'oyalaringiz va mulohazalaringizni juda qadrlaganimizdek, siz ham xayriya qilish orqali Wiin-ning rivojlanishida ishtirok etishingiz mumkin.",
-    "Tell-m-more": "Menga ko'proq aytib ber!",
-    "On-first-may-d": "Birinchi may kuni siz bizning xizmatlarimizdan erta foydalanish huquqiga ega bo'lasiz. Ushbu buyuk inqilobni kutish paytida siz sabr-toqatli bo'lishingizga to'g'ri keladi! Iltimos, e'tibor bering, ushbu kirish birinchi 1000 ta ro'yxatdan o'tish uchun mavjud bo'ladi."
   }
 }

@@ -93,7 +93,8 @@
     "Enable-notification": "Omogući obavijesti",
     "Group-creation": "Stvaranje grupe",
     "Mute": "Nijemo",
-    "Send": "Poslati"
+    "Send": "Poslati",
+    "days-message-delete-two-weeks": ""
   },
   "CONFIRMATION": {
     "Delete-Room": "Jeste li sigurni da ste izbrisali ovu raspravu?"
@@ -253,14 +254,7 @@
     "responses": "odgovori",
     "soon": "uskoro",
     "views": "pogleda",
-    "Share": "Udio",
-    "Url-Copied": "URL kopiran",
-    "Download": "preuzimanje datoteka",
-    "Downloaded": "Preuzeto",
-    "Save-in-phone": "Spremi u telefon",
-    "No": "Ne",
-    "Yes": "Da",
-    "Block-t-user": "Blokiraj ovog korisnika"
+    "Chat": "Chat"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -618,9 +612,7 @@
     "y-h-to-delete-yr-page-or-group-before": "Morate prethodno izbrisati svoje stranice ili grupe",
     "y-have-to-be-friend": "sigurno ste prijatelji",
     "you-hav-to-upgrad-a-manager-before-leave": "Prije napuštanja grupe morate unaprijediti menadžera",
-    "Date-cannot-be-in-the-past": "Datum izdavanja ne može biti u prošlosti",
-    "You-cannot-add-yourself": "Ne možete se dodati",
-    "T-content-does-not-exist-anymore": "Ovaj sadržaj više ne postoji"
+    "Password-not-identical": "Lozinke nisu identične"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografija je primljena",
@@ -653,7 +645,7 @@
     "Register": "Registar",
     "Registration": "Registracija",
     "Sign-up": "Prijavite se",
-    "accept-tou": "Potvrđujem da imam 16 ili više godina i da se slažem s korisničkim ugovorom i pravilima o privatnosti",
+    "accept-tou": "i certificirati da imam 16 godina ili više i slažem se s korisničkim ugovorom i politikom privatnosti",
     "click-on-email": "Molimo kliknite vezu e-pošte"
   },
   "MAIN-MUSIC": {
@@ -734,8 +726,7 @@
     "Your-Password": "Tvoja lozinka",
     "Your-Pseudo": "Vaše korisničko ime",
     "Your-message": "Tvoja poruka",
-    "Confirm-your-password": "Potvrdi svoju lozinku",
-    "Password-not-matching": "Lozinke se ne podudaraju"
+    "Confirm-your-password": "Potvrdi lozinku"
   },
   "PLEASE": {
     "Password": "Unesite lozinku"
@@ -915,7 +906,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Korisnici s ovog popisa neće moći vidjeti vaš profil.",
       "btn-followers": "Učinite dostupnim gumb \"slijedi\"",
       "btn-friend": "Omogućite gumb zahtjeva za prijateljstvo",
-      "h-can-b-yr-description": "Možete staviti opis"
+      "h-can-b-yr-description": "Možete staviti opis",
+      "theme": "Tema",
+      "theme-description": "Odaberite temu",
+      "theme-select": "Odaberite temu"
     },
     "verified": {
       "Already-certified": "Već certificirano",
@@ -1044,14 +1038,7 @@
     "T-administration-w-verify-t-content-asap": "Administracija će provjeriti sadržaj što je prije moguće",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "To će uzrokovati brisanje cijelog projekta, jeste li sigurni?",
     "T-operation-is-irreversible": "Ova operacija je nepovratna",
-    "this-user-will-be-": "Ovaj će korisnik sada biti",
-    "A-y-s-to-unfollow-t-profile": "Jeste li sigurni da želite prekinuti praćenje ovog profila?",
-    "A-y-s-to-block-t-user": "Jeste li sigurni da ste blokirali ovog korisnika?",
-    "Y-a-abt-t-block-t-user-D": "Spremate se blokirati ovog korisnika. Više ne biste mogli gledati njegov sadržaj i ovog korisnika. Samo biste vi mogli ukloniti ovo ograničenje.",
-    "T-content-has-been-reported": "Ovaj je sadržaj prijavljen. Naši će ih moderatori pogledati u odgodi od 24 sata kako bi ga pregledali. Primijenit će se sankcija ako se time ne poštuju pravila zajednice.",
-    "T-user-has-been-blocked-D": "Ovaj je korisnik blokiran s vašeg računa. Na vašem računu neće biti vidljiv sadržaj ovog profila.",
-    "W-is-t-reason-to-report-t-post": "Koji je razlog da prijavim ovaj post?",
-    "W-is-t-reason-to-report-t-post-D": "Vaša prijava je anonimna. Odaberite samo kategoriju koja će pomoći moratorima"
+    "this-user-will-be-": "Ovaj će korisnik sada biti"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Upozorenje. Provjerite imate li pravu adresu"
@@ -1420,11 +1407,7 @@
       "World-fusion": "Svjetska fuzija",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Jahta stijena",
-      "Others": "Drugi",
-      "Flamenco": "Flamenko",
-      "Rock": "Rock",
-      "Reggae": "Reggae",
-      "Country": "Zemlja"
+      "Others": "Drugi"
     }
   },
   "WIINS-TUBE": {
@@ -1435,17 +1418,5 @@
       "Video-name": "Naziv videozapisa",
       "Visualisation-of-the-video": "Vizualizacija videa"
     }
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Pridružite se zajednici na razdoru",
-    "Ty": "Hvala vam",
-    "Why-this-early-access": "Zašto ovaj rani pristup? Wiin's želi revolucionirati vaš odnos s telefonom. Također, potrebna nam je vaša pomoć kako bismo poboljšali naše usluge i ponudili vam ekskluzivno iskustvo koje će u tom razdoblju biti potpuno besplatno. Uz to, kao prvi Wiinser, dobit ćete smanjenje od svoje buduće pretplate.",
-    "W-does-early-access-offer": "Što nudi rani pristup? Rani pristup omogućuje vam upotrebu svih Wiinovih trenutno dostupnih značajki. Ostavit ćemo vam da otkrijete više kroz video, ako već niste.",
-    "H-lg-ll-t-platform-be-in-early-access": "Koliko dugo će platforma biti u ranom pristupu? Za 9 mjeseci, ili možda 6, ili 3. Imate svoju ulogu !! Ali sigurno je najkasnije do 1. siječnja 2022. godine.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Po čemu će se puna verzija razlikovati od verzije s ranim pristupom? Platforma će se poboljšati prema vašim zahtjevima, što možete formulirati u izborniku \"predloži poboljšanje\". Umjetnici će također moći dobiti nagradu vrijednu njihovog talenta. To će reći, besplatna privilegija na Wiinu istječe. Pratite nas na društvenim mrežama kako biste bili informirani.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Koliko će puna verzija koštati nakon ranog pristupa? Cijena se objavljuje. Rani pristup omogućit će nam da vam ponudimo svoje usluge po najboljoj cijeni. O tome ćete biti obaviješteni prije plaćanja, naravno.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Kako planirate uključiti zajednicu u proces razvoja? Jednostavno uporabom. Bit će nam drago čuti da želite podržati! Slobodno podijelite svoje iskustvo jer je to uostalom i vaša platforma. Koliko god zaista cijenili vaše ideje i povratne informacije, također možete sudjelovati u razvoju Wiina putem donacije.",
-    "Tell-m-more": "Reci mi više!",
-    "On-first-may-d": "Prvog svibnja imat ćete rani pristup našim uslugama. Dok čekate ovu veliku revoluciju, morat ćete biti strpljivi! Napominjemo, ovaj pristup bit će dostupan za prvih 1000 registracija."
   }
 }

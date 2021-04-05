@@ -51,7 +51,8 @@
     "Enable-notification": "Activer les notifications",
     "Group-creation": "Création du groupe",
     "Mute": "Muet",
-    "Send": "Envoyer"
+    "Send": "Envoyer",
+    "days-message-delete-two-weeks": "Vos messages sont automatiquement supprimés après 14 jours"
   },
   "CONFIRMATION": {
     "Delete-Room": "Êtes vous sûre de supprimer cette discution ?"
@@ -211,14 +212,7 @@
     "Towards-an-infinite-space": "Vers un espace infini",
     "Hello": "Bonjour",
     "Publication": "Publication",
-    "Download": "Télécharger",
-    "Downloaded": "Téléchargé",
-    "Save-in-phone": "Enregistrer dans le téléphone",
-    "Share": "Partager",
-    "Url-Copied": "URL copiée",
-    "No": "Non",
-    "Yes": "Oui",
-    "Block-t-user": "Bloquer cet utilisateur"
+    "Chat": "Conversation"
   },
   "COUNTRY": {
     "AD": "Andorre",
@@ -576,9 +570,7 @@
     "Missing-informations": "Informations manquantes",
     "Account_desactivated": "Compte désactivé",
     "Y-dont-have-a-conversation-yet": "Vous n'avez pas encore de conversation.",
-    "Date-cannot-be-in-the-past": "La date de sortie ne peut pas être dans le passé",
-    "You-cannot-add-yourself": "Vous ne pouvez pas vous ajouter",
-    "T-content-does-not-exist-anymore": "Ce contenu n'existe plus"
+    "Password-not-identical": "Les mots de passe ne sont pas identiques"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La photo est reçu",
@@ -607,7 +599,7 @@
     "Register": "S'inscrire",
     "Registration": "Inscription",
     "Sign-up": "S'inscrire",
-    "accept-tou": "Je certifie que j'ai 16 ans ou plus et j'accepte le contrat d'utilisation et la politique de confidentialité",
+    "accept-tou": "je certifie être âgé(e) de 16 ans ou plus et j'accepte l'accord d'utilisation et la politique de confidentialité.",
     "click-on-email": "Veuillez cliquer sur le lien du courriel",
     "Create-yr-account": "Créez votre compte",
     "Creating-yr-account": "Création de votre compte",
@@ -692,8 +684,7 @@
     "Your-Password": "Votre mot de passe",
     "Your-Pseudo": "Votre pseudo",
     "Your-message": "Votre message",
-    "Confirm-your-password": "Confirmer votre mot de passe",
-    "Password-not-matching": "Les mots de passe ne correspondent pas"
+    "Confirm-your-password": "Confirmer votre mot de passe"
   },
   "PLEASE": {
     "Password": "Veuillez taper votre mot de passe"
@@ -861,7 +852,10 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Les utilisateurs présents dans cette liste ne pourront pas voir votre profil",
       "btn-followers": "Rendre disponible le bouton \"suivre\"",
       "btn-friend": "Rendre disponible le bouton de demande en ami",
-      "h-can-b-yr-description": "Vous pouvez vous mettre une description"
+      "h-can-b-yr-description": "Vous pouvez vous mettre une description",
+      "theme": "Theme",
+      "theme-description": "Veuillez choisir un thème",
+      "theme-select": "Sélectionnez un thème"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée",
@@ -880,7 +874,7 @@
       "Yr-profil-is-currently-being-checked-D": "Votre profil est en cours de vérification. Nous vous contacterons sous 48h par email.",
       "Verification": "Vérification",
       "Pl-s-t-docs-a-complet-t-form-below": "Veuillez envoyer les documents nécessaires et remplir le formulaire ci-dessous.",
-      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre mot de passe, votre identifiant ou votre permis de conduire.",
+      "Upload-yr-password-id-identity-or-driver-license": "Téléchargez votre passeport, votre identifiant ou votre permis de conduire.",
       "Upload-a-photo-holding-t-ID-D": "Téléchargez une photo contenant la pièce d'identité avec une feuille de papier avec la date du jour et l'inscription \"Wiins\" dessus.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Assurez-vous de télécharger le verso de la carte s'il s'agit d'une carte d'identité nationale (uniquement pour la carte nationale)"
@@ -987,14 +981,7 @@
     "T-administration-w-verify-t-content-asap": "L'administration vérifira sont contenue dès que possible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Cela entrainera la suppression entier du projet, êtes vous sûre ?",
     "T-operation-is-irreversible": "Cette opération est irréversible",
-    "this-user-will-be-": "Cette utilisateur sera désormais ",
-    "A-y-s-to-unfollow-t-profile": "Êtes-vous sûr de ne plus suivre ce profil?",
-    "A-y-s-to-block-t-user": "Êtes-vous sûr de bloquer cet utilisateur?",
-    "Y-a-abt-t-block-t-user-D": "Vous êtes sur le point de bloquer cet utilisateur. Vous ne pourrez plus regarder son contenu et cet utilisateur aussi. Vous seul pourrez supprimer cette restriction.",
-    "T-content-has-been-reported": "Ce contenu a été signalé. Nos modérateurs jetteront un œil dans un délai de 24 heures pour l'examiner. Une sanction sera appliquée si cela ne respecte pas les règles de la communauté.",
-    "T-user-has-been-blocked-D": "Cet utilisateur a été bloqué de votre compte. Aucun contenu de ce profil ne sera visible avec votre compte.",
-    "W-is-t-reason-to-report-t-post": "Quelle est la raison de signaler ce message?",
-    "W-is-t-reason-to-report-t-post-D": "Votre rapport est anonyme. Veuillez choisir juste une catégorie pour aider les morateurs"
+    "this-user-will-be-": "Cette utilisateur sera désormais "
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Attention. Assurez vous d'avoir la bonne adresse"
@@ -1363,11 +1350,7 @@
       "World-fusion": "Fusion mondiale",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Yacht rock",
-      "Others": "Autres",
-      "Flamenco": "Flamenco",
-      "Rock": "Roche",
-      "Reggae": "Reggae",
-      "Country": "Pays"
+      "Others": "Autres"
     }
   },
   "WIINS-TUBE": {
@@ -1422,17 +1405,5 @@
     "Influencer": "Influenceur",
     "Athletic": "Sportif",
     "Ch-a-category": "Choisissez une catégorie"
-  },
-  "TEMPORARY": {
-    "Join-us-on-discord": "Rejoignez la communauté sur Discord",
-    "Ty": "Merci",
-    "Why-this-early-access": "Pourquoi cet accès anticipé? Wiin's veut révolutionner la relation que vous entretenez avec votre téléphone. Aussi, nous avons besoin de votre aide pour améliorer nos services et vous offrir une expérience exclusive qui sera entièrement gratuite pendant cette période. De plus, en tant que premier Wiinser, vous bénéficierez d'une réduction sur votre futur abonnement.",
-    "W-does-early-access-offer": "Que propose l'accès anticipé? L'accès anticipé vous permet d'utiliser toutes les fonctionnalités actuellement disponibles de Wiin. Nous vous laisserons le soin d'en découvrir plus à travers la vidéo, si vous ne l'avez pas déjà fait.",
-    "H-lg-ll-t-platform-be-in-early-access": "Combien de temps la plate-forme sera-t-elle en accès anticipé? Pendant 9 mois, ou peut-être 6, ou 3. Vous avez votre rôle à jouer !! Mais c’est certain jusqu’au 1er janvier 2022 au plus tard.",
-    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "En quoi la version complète sera-t-elle différente de la version à accès anticipé? La plateforme sera améliorée en fonction de vos demandes, que vous pourrez formuler dans le menu «proposer une amélioration». Les artistes pourront également recevoir une rémunération à la hauteur de leur talent. Cela étant dit, le privilège gratuit sur Wiin expirera. Suivez-nous sur les réseaux sociaux pour rester informé.",
-    "H-much-ll-t-full-version-cost-after-Early-Access": "Combien coûtera la version complète après l'accès anticipé? Le prix doit être annoncé. L'accès anticipé nous permettra de vous proposer nos services au meilleur prix. Vous en serez bien entendu informé avant de payer.",
-    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Comment comptez-vous impliquer la communauté dans le processus de développement? Simplement en l'utilisant. Nous serons heureux d'apprendre que vous souhaitez soutenir! N'hésitez pas à partager votre expérience car après tout, c'est aussi votre plateforme. Autant que nous apprécions vraiment vos idées et vos commentaires, vous pouvez également participer au développement de Wiin en faisant un don.",
-    "Tell-m-more": "Dis m'en plus!",
-    "On-first-may-d": "Le premier mai, vous aurez un accès anticipé à nos services. En attendant cette grande révolution, il faudra être patient! Veuillez noter que cet accès sera disponible pour les 1000 premières inscriptions."
   }
 }

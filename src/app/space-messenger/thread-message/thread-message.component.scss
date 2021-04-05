@@ -223,6 +223,11 @@
   position: relative;
 }
 
+.container-message-deletion span {
+  border-radius: 20px;
+  background: #eee;
+}
+
 .container-participated {
   position: absolute;
 
@@ -302,5 +307,9 @@
   .fa-times {
     display: block !important;
   }
+}
+
+.bi-clock-history {
+  font-size: 1.5rem;
 }
 
