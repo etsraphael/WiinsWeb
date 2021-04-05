@@ -94,7 +94,7 @@
     "Group-creation": "Skapande av gruppen",
     "Mute": "Stum",
     "Send": "Skicka",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Dina meddelanden raderas automatiskt efter 14 dagar"
   },
   "CONFIRMATION": {
     "Delete-Room": "Är du säker på att du tar bort den här diskussionen?"
@@ -254,7 +254,14 @@
     "Towards-an-infinite-space": "Mot ett oändligt utrymme",
     "Hello": "Hallå",
     "Publication": "Offentliggörande",
-    "Chat": "Chatt"
+    "Share": "Dela med sig",
+    "Url-Copied": "URL kopierades",
+    "Download": "Ladda ner",
+    "Downloaded": "Nedladdat",
+    "Save-in-phone": "Spara i telefonen",
+    "No": "Nej",
+    "Yes": "Ja",
+    "Block-t-user": "Blockera den här användaren"
   },
   "COUNTRY": {
     "AD": "andorra",
@@ -612,7 +619,9 @@
     "Missing-informations": "Information saknas",
     "Account_desactivated": "Konto avaktiverat",
     "Y-dont-have-a-conversation-yet": "Du har inte en konversation än.",
-    "Password-not-identical": "Lösenorden är inte identiska"
+    "Date-cannot-be-in-the-past": "Släppdatumet kan inte vara tidigare",
+    "You-cannot-add-yourself": "Du kan inte lägga till dig själv",
+    "T-content-does-not-exist-anymore": "Detta innehåll finns inte längre"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoet tas emot",
@@ -641,7 +650,7 @@
     "Register": "Registrera",
     "Registration": "Registrering",
     "Sign-up": "Bli Medlem",
-    "accept-tou": "Jag intygar att jag är 16 år eller äldre och jag godkänner användaravtalet och integritetspolicyn",
+    "accept-tou": "Jag intygar att jag är 16 år eller äldre och godkänner användaravtalet och sekretesspolicyn",
     "click-on-email": "Klicka på e-postlänken",
     "Create-yr-account": "Skapa ditt konto",
     "Creating-yr-account": "Skapa ditt konto",
@@ -726,7 +735,8 @@
     "Your-Password": "Ditt lösenord",
     "Your-Pseudo": "Ditt användarnamn",
     "Your-message": "Ditt meddelande",
-    "Confirm-your-password": "Bekräfta ditt lösenord"
+    "Confirm-your-password": "Bekräfta ditt lösenord",
+    "Password-not-matching": "Lösenorden matchar inte"
   },
   "PLEASE": {
     "Password": "Vänligen ange ditt lösenord"
@@ -906,10 +916,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Användare i den här listan kommer inte att kunna se din profil.",
       "btn-followers": "Gör \"följ\" -knappen tillgänglig",
       "btn-friend": "Gör vänförfrågan-knappen tillgänglig",
-      "h-can-b-yr-description": "Du kan lägga till en beskrivning",
-      "theme": "Tema",
-      "theme-description": "Välj ett tema",
-      "theme-select": "Välj ett tema"
+      "h-can-b-yr-description": "Du kan lägga till en beskrivning"
     },
     "verified": {
       "Already-certified": "Redan certifierad",
@@ -1038,7 +1045,14 @@
     "T-administration-w-verify-t-content-asap": "Administration kommer att verifiera innehåll så snart som möjligt",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Detta kommer att leda till att hela projektet raderas, är du säker?",
     "T-operation-is-irreversible": "Denna åtgärd är irreversibel",
-    "this-user-will-be-": "Den här användaren kommer nu att vara"
+    "this-user-will-be-": "Den här användaren kommer nu att vara",
+    "A-y-s-to-unfollow-t-profile": "Är du säker på att följa upp den här profien?",
+    "A-y-s-to-block-t-user": "Är du säker på att blockera den här användaren?",
+    "Y-a-abt-t-block-t-user-D": "Du håller på att blockera den här användaren. Du skulle inte längre kunna titta på hans innehåll och den här användaren också. Endast du skulle kunna ta bort denna begränsning.",
+    "T-content-has-been-reported": "Detta innehåll har rapporterats. Våra moderatorer kommer att ta en titt inom 24 timmar för att granska den. En sanktion kommer att tillämpas om detta inte respekterar gemenskapens regler.",
+    "T-user-has-been-blocked-D": "Den här användaren har blockerats från ditt konto. Inget innehåll i den här profilen syns på ditt konto.",
+    "W-is-t-reason-to-report-t-post": "Vad är anledningen att rapportera detta inlägg?",
+    "W-is-t-reason-to-report-t-post-D": "Din rapport är anonym. Välj bara en kategori för att hjälpa moratorerna"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Varning. Se till att du har rätt adress"
@@ -1407,7 +1421,11 @@
       "World-fusion": "Världsfusion",
       "Worldbeat": "Världsslag",
       "Yacht-rock": "Yachtrock",
-      "Others": "Andra"
+      "Others": "Andra",
+      "Flamenco": "Flamenco",
+      "Rock": "Sten",
+      "Reggae": "Reggae",
+      "Country": "Land"
     }
   },
   "WIINS-TUBE": {
@@ -1418,5 +1436,17 @@
       "Video-name": "Videonamn",
       "Visualisation-of-the-video": "Visualisering av videon"
     }
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Gå med i samhället på oenighet",
+    "Ty": "Tack",
+    "Why-this-early-access": "Varför denna tidiga tillgång? Wiin vill revolutionera förhållandet du har till din telefon. Vi behöver också din hjälp för att förbättra våra tjänster och erbjuda dig en exklusiv upplevelse som kommer att vara helt gratis under denna period. Som första Wiinser kommer du dessutom att dra nytta av en minskning av ditt framtida abonnemang.",
+    "W-does-early-access-offer": "Vad erbjuder tidig åtkomst? Med Early Access kan du använda alla Wiins för närvarande tillgängliga funktioner. Vi lämnar det åt dig att upptäcka mer genom videon, om du inte redan har gjort det.",
+    "H-lg-ll-t-platform-be-in-early-access": "Hur länge kommer plattformen att vara i tidig åtkomst? I 9 månader, eller kanske 6 eller 3. Du har din roll att spela !! Men det är säkert fram till den 1 januari 2022.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Hur kommer hela versionen att skilja sig från versionen för tidig åtkomst? Plattformen kommer att förbättras enligt dina önskemål, som du kan formulera i menyn \"föreslå en förbättring\". Konstnärerna kommer också att kunna få en ersättning som är värd sin talang. Med det sagt kommer det fria privilegiet på Wiin att upphöra att gälla. Följ oss på sociala nätverk för att hålla dig informerad.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "Hur mycket kostar den fullständiga versionen efter Early Access? Priset ska meddelas. Tidig åtkomst gör att vi kan erbjuda våra tjänster till bästa pris. Du kommer naturligtvis att informeras om detta innan du betalar.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Hur planerar du att engagera samhället i utvecklingsprocessen? Helt enkelt genom att använda den. Vi kommer gärna höra att du vill stödja! Dela gärna din upplevelse eftersom det trots allt också är din plattform. Så mycket som vi verkligen uppskattar dina idéer och feedback kan du också delta i utvecklingen av Wiins genom att göra en donation.",
+    "Tell-m-more": "Berätta mer!",
+    "On-first-may-d": "Den första maj får du tidig tillgång till våra tjänster. Medan du väntar på den här stora revolutionen måste du ha tålamod! Observera att denna tillgång kommer att finnas tillgänglig för de första 1000 registreringarna."
   }
 }

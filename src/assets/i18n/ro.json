@@ -94,7 +94,7 @@
     "Group-creation": "Crearea grupului",
     "Mute": "Mut",
     "Send": "Trimite",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Mesajele dvs. sunt șterse automat după 14 zile"
   },
   "CONFIRMATION": {
     "Delete-Room": "Sigur ștergeți această discuție?"
@@ -254,7 +254,14 @@
     "Towards-an-infinite-space": "Spre un spațiu infinit",
     "Hello": "Salut",
     "Publication": "Publicare",
-    "Chat": "Chat"
+    "Share": "Acțiune",
+    "Url-Copied": "Adresa URL a fost copiată",
+    "Download": "Descarca",
+    "Downloaded": "Descărcat",
+    "Save-in-phone": "Salvați în telefon",
+    "No": "Nu",
+    "Yes": "da",
+    "Block-t-user": "Blochează acest utilizator"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -612,7 +619,9 @@
     "Missing-informations": "Informații lipsă",
     "Account_desactivated": "Contul este dezactivat",
     "Y-dont-have-a-conversation-yet": "Nu aveți încă o conversație.",
-    "Password-not-identical": "Parolele nu sunt identice"
+    "Date-cannot-be-in-the-past": "Data lansării nu poate fi trecută",
+    "You-cannot-add-yourself": "Nu te poți adăuga singur",
+    "T-content-does-not-exist-anymore": "Acest conținut nu mai există"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",
@@ -641,7 +650,7 @@
     "Register": "Inregistreaza-te",
     "Registration": "Înregistrare",
     "Sign-up": "Inscrie-te",
-    "accept-tou": "Certific că am 16 ani sau mai mult și sunt de acord cu acordul utilizatorului și politica de confidențialitate",
+    "accept-tou": "Certific că am 16 ani sau mai mult și sunt de acord cu acordul de utilizare și politica de confidențialitate",
     "click-on-email": "Vă rugăm să faceți clic pe linkul de e-mail",
     "Create-yr-account": "Creeaza-ti contul",
     "Creating-yr-account": "Crearea contului dvs.",
@@ -726,7 +735,8 @@
     "Your-Password": "Parola Dvs",
     "Your-Pseudo": "Nume de utilizator",
     "Your-message": "Mesajul tau",
-    "Confirm-your-password": "Confirmarea parolei"
+    "Confirm-your-password": "Confirmă parola",
+    "Password-not-matching": "Parolele nu se potrivesc"
   },
   "PLEASE": {
     "Password": "Va rugam sa introduceti parola"
@@ -906,10 +916,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Utilizatorii din această listă nu vă vor putea vedea profilul.",
       "btn-followers": "Faceți disponibil butonul „urmați”",
       "btn-friend": "Faceți disponibil butonul de solicitare a prietenilor",
-      "h-can-b-yr-description": "Puteți pune o descriere",
-      "theme": "Tema",
-      "theme-description": "Alegeți o temă",
-      "theme-select": "Selectarea unei teme"
+      "h-can-b-yr-description": "Puteți pune o descriere"
     },
     "verified": {
       "Already-certified": "Deja certificat",
@@ -1038,7 +1045,14 @@
     "T-administration-w-verify-t-content-asap": "Administrația va verifica conținutul cât mai curând posibil",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Acest lucru va face ca întregul proiect să fie șters, sunteți sigur?",
     "T-operation-is-irreversible": "Această operațiune este ireversibilă",
-    "this-user-will-be-": "Acest utilizator va fi acum"
+    "this-user-will-be-": "Acest utilizator va fi acum",
+    "A-y-s-to-unfollow-t-profile": "Sunteți sigur că anulați urmărirea acestui profil?",
+    "A-y-s-to-block-t-user": "Sigur blocați acest utilizator?",
+    "Y-a-abt-t-block-t-user-D": "Ești pe cale să blochezi acest utilizator. Nu veți mai putea urmări conținutul său și acest utilizator. Doar dvs. veți putea elimina această restricție.",
+    "T-content-has-been-reported": "Acest conținut a fost raportat. Moderatorii noștri vor arunca o privire într-o întârziere de 24 de ore pentru a o examina. Se va aplica o sancțiune dacă aceasta nu respectă regulile comunității.",
+    "T-user-has-been-blocked-D": "Acest utilizator a fost blocat din contul dvs. Niciun conținut al acestui profil nu va fi vizibil în contul dvs.",
+    "W-is-t-reason-to-report-t-post": "Care este motivul pentru a raporta această postare?",
+    "W-is-t-reason-to-report-t-post-D": "Raportul dvs. este anonim. Vă rugăm să alegeți doar o categorie pentru a ajuta moratorii"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Avertizare. Asigurați-vă că aveți adresa corectă"
@@ -1407,7 +1421,11 @@
       "World-fusion": "Fuziune mondială",
       "Worldbeat": "Bătăile lumii",
       "Yacht-rock": "Yacht rock",
-      "Others": "Alții"
+      "Others": "Alții",
+      "Flamenco": "Flamenco",
+      "Rock": "Rock",
+      "Reggae": "Reggae",
+      "Country": "Țară"
     }
   },
   "WIINS-TUBE": {
@@ -1418,5 +1436,17 @@
       "Video-name": "Numele videoclipului",
       "Visualisation-of-the-video": "Vizualizarea videoclipului"
     }
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Alăturați-vă comunității pe discordie",
+    "Ty": "Mulțumesc",
+    "Why-this-early-access": "De ce acest acces timpuriu? Wiin’s vrea să revoluționeze relația pe care o aveți cu telefonul. De asemenea, avem nevoie de ajutorul dvs. pentru a ne îmbunătăți serviciile și a vă oferi o experiență exclusivă care va fi complet gratuită în această perioadă. În plus, ca primul Wiinser, veți beneficia de o reducere la viitorul abonament.",
+    "W-does-early-access-offer": "Ce oferă accesul timpuriu? Accesul timpuriu vă permite să utilizați toate caracteristicile disponibile în prezent ale Wiin. Vă vom lăsa să aflați mai multe prin intermediul videoclipului, dacă nu ați făcut-o deja.",
+    "H-lg-ll-t-platform-be-in-early-access": "Cât timp va avea platforma accesul timpuriu? Timp de 9 luni, sau poate 6, sau 3. Ai rolul tău de jucat !! Dar este sigur până cel târziu la 1 ianuarie 2022.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Cum va fi versiunea completă diferită de versiunea cu acces anticipat? Platforma va fi îmbunătățită în funcție de solicitările dvs., pe care le puteți formula în meniul „propuneți o îmbunătățire”. De asemenea, artiștii vor putea primi o remunerație demnă de talentul lor. Acestea fiind spuse, privilegiul gratuit pe Wiin’s va expira. Urmăriți-ne pe rețelele de socializare pentru a fi informați.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "Cât va costa versiunea completă după Early Access? Prețul urmează să fie anunțat. Accesul timpuriu ne va permite să vă oferim serviciile noastre la cel mai bun preț. Desigur, veți fi informat despre acest lucru înainte de plată.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Cum intenționați să implicați comunitatea în procesul de dezvoltare? Pur și simplu folosindu-l. Vom fi bucuroși să auzim că doriți să sprijiniți! Vă rugăm să nu ezitați să împărtășiți experiența dvs., deoarece la urma urmei este și platforma dvs. Oricât de mult apreciem ideile și feedback-ul dvs., puteți participa și la dezvoltarea Wiin-urilor făcând o donație.",
+    "Tell-m-more": "Spune-mi mai multe!",
+    "On-first-may-d": "Pe primul mai, veți avea acces timpuriu la serviciile noastre. În așteptarea acestei mari revoluții, va trebui să aveți răbdare! Vă rugăm să rețineți, acest acces va fi disponibil pentru primele 1000 de înregistrări."
   }
 }

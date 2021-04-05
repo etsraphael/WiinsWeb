@@ -94,7 +94,7 @@
     "Group-creation": "Cruthú an ghrúpa",
     "Mute": "Mute",
     "Send": "Seol",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Scriostar do theachtaireachtaí go huathoibríoch tar éis 14 lá"
   },
   "CONFIRMATION": {
     "Delete-Room": "An bhfuil tú cinnte an plé seo a scriosadh?"
@@ -254,7 +254,14 @@
     "responses": "freagraí",
     "soon": "go luath",
     "views": "tuairimí",
-    "Chat": "Comhrá"
+    "Share": "Comhroinn",
+    "Url-Copied": "Cóipeáladh Url",
+    "Download": "Íoslódáil",
+    "Downloaded": "Íoslódáilte",
+    "Save-in-phone": "Sábháil ar an bhfón",
+    "No": "Níl",
+    "Yes": "Sea",
+    "Block-t-user": "Cuir bac ar an úsáideoir seo"
   },
   "COUNTRY": {
     "AD": "Andóra",
@@ -612,7 +619,9 @@
     "y-h-to-delete-yr-page-or-group-before": "Caithfidh tú do leathanaigh nó grúpaí a scriosadh roimhe seo",
     "y-have-to-be-friend": "caithfidh gur cairde tú",
     "you-hav-to-upgrad-a-manager-before-leave": "Caithfidh tú bainisteoir a chur chun cinn sula bhfágfaidh tú an grúpa",
-    "Password-not-identical": "Níl na pasfhocail comhionann"
+    "Date-cannot-be-in-the-past": "Ní féidir an dáta scaoilte a bheith ann roimhe seo",
+    "You-cannot-add-yourself": "Ní féidir leat tú féin a chur leis",
+    "T-content-does-not-exist-anymore": "Níl an t-ábhar seo ann níos mó"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Faightear an grianghraf",
@@ -726,7 +735,8 @@
     "Your-Password": "Do phasfhocal",
     "Your-Pseudo": "D'ainm úsáideora",
     "Your-message": "Do theachtaireacht",
-    "Confirm-your-password": "Deimhnigh do phasfhocal"
+    "Confirm-your-password": "Deimhnigh do phasfhocal",
+    "Password-not-matching": "Níl na pasfhocail comhoiriúnach"
   },
   "PLEASE": {
     "Password": "Iontráil do phasfhocal le do thoil"
@@ -906,10 +916,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Ní bheidh úsáideoirí ar an liosta seo in ann do phróifíl a fheiceáil.",
       "btn-followers": "Cuir an cnaipe \"lean\" ar fáil",
       "btn-friend": "Cuir an cnaipe iarratais ar chara ar fáil",
-      "h-can-b-yr-description": "Is féidir leat tuairisc a chur",
-      "theme": "téama",
-      "theme-description": "Roghnaigh téama le do thoil",
-      "theme-select": "Roghnaigh téama"
+      "h-can-b-yr-description": "Is féidir leat tuairisc a chur"
     },
     "verified": {
       "Already-certified": "Deimhnithe cheana féin",
@@ -1038,7 +1045,14 @@
     "T-administration-w-verify-t-content-asap": "Fíoróidh an riarachán ábhar a luaithe is féidir",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Cuirfidh sé seo faoi deara an tionscadal iomlán a scriosadh, an bhfuil tú cinnte?",
     "T-operation-is-irreversible": "Tá an oibríocht seo dochúlaithe",
-    "this-user-will-be-": "Beidh an t-úsáideoir seo anois"
+    "this-user-will-be-": "Beidh an t-úsáideoir seo anois",
+    "A-y-s-to-unfollow-t-profile": "An bhfuil tú cinnte an profie seo a nochtadh?",
+    "A-y-s-to-block-t-user": "An bhfuil tú cinnte an t-úsáideoir seo a bhac?",
+    "Y-a-abt-t-block-t-user-D": "Tá tú ar tí an t-úsáideoir seo a bhac. Ní bheifeá in ann féachaint ar a ábhar agus ar an úsáideoir seo a thuilleadh freisin. Ní bheifeá in ann an srian seo a bhaint.",
+    "T-content-has-been-reported": "Tuairiscíodh an t-ábhar seo. Féachfaidh ár modhnóirí le moill 24 uair an chloig chun é a athbhreithniú. Cuirfear smachtbhanna i bhfeidhm mura n-urramaíonn sé seo rialacha an phobail.",
+    "T-user-has-been-blocked-D": "Cuireadh bac ar an úsáideoir seo ó do chuntas. Ní bheidh aon ábhar den phróifíl seo le feiceáil le do chuntas.",
+    "W-is-t-reason-to-report-t-post": "Cad é an chúis atá leis an bpost seo a thuairisciú?",
+    "W-is-t-reason-to-report-t-post-D": "Tá do thuairisc gan ainm. Roghnaigh catagóir le do thoil chun cabhrú leis na morators"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Rabhadh. Déan cinnte go bhfuil an seoladh ceart agat"
@@ -1407,7 +1421,11 @@
       "World-fusion": "Comhleá domhanda",
       "Worldbeat": "Buille Domhanda",
       "Yacht-rock": "Carraig luamh",
-      "Others": "Daoine eile"
+      "Others": "Daoine eile",
+      "Flamenco": "Flamenco",
+      "Rock": "Carraig",
+      "Reggae": "Reggae",
+      "Country": "Tír"
     }
   },
   "WIINS-TUBE": {
@@ -1418,5 +1436,17 @@
       "Video-name": "Ainm físe",
       "Visualisation-of-the-video": "Amharcléiriú ar an bhfíseán"
     }
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Bí ar an bpobal ar neamhord",
+    "Ty": "Go raibh maith agat",
+    "Why-this-early-access": "Cén fáth an rochtain luath seo? Ba mhaith le Wiin an caidreamh atá agat le do ghuthán a réabhlóidiú. Chomh maith leis sin, teastaíonn do chabhair uainn chun ár seirbhísí a fheabhsú agus eispéireas eisiach a thairiscint duit a bheidh go hiomlán saor in aisce le linn na tréimhse seo. Ina theannta sin, mar an chéad Wiinser, bainfidh tú leas as laghdú ar do shíntiús amach anseo.",
+    "W-does-early-access-offer": "Cad a thairgeann rochtain luath? Ligeann Rochtain Luath duit gach ceann de na gnéithe Wiin atá ar fáil faoi láthair a úsáid. Fágfaimid duit é chun tuilleadh a fháil amach tríd an bhfíseán, mura bhfuil tú cheana féin.",
+    "H-lg-ll-t-platform-be-in-early-access": "Cá fhad a bheidh rochtain luath ar an ardán? Ar feadh 9 mí, nó b’fhéidir 6, nó 3. Tá do pháirt agat le himirt !! Ach tá sé cinnte go dtí 1 Eanáir, 2022, ar a dhéanaí.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Conas a bheidh an leagan iomlán difriúil ón leagan luathrochtana? Feabhsófar an t-ardán de réir d’iarrataí, ar féidir leat a fhoirmiú ar an roghchlár “feabhsú a mholadh”. Beidh na healaíontóirí in ann luach saothair a fháil ar fiú a gcuid tallann é. É sin ráite, rachaidh an phribhléid saor in aisce ar Wiin’s in éag. Lean muid ar líonraí sóisialta chun fanacht ar an eolas.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "Cé mhéid a chosnóidh an leagan iomlán tar éis Rochtain Luath? Tá an praghas le fógairt. Ligfidh an rochtain luath dúinn ár seirbhísí a thairiscint duit ar an bpraghas is fearr. Cuirfear ar an eolas tú faoi seo sula n-íocfaidh tú, ar ndóigh.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Conas a bheartaíonn tú an pobal a bheith páirteach sa phróiseas forbartha? Níl ort ach é a úsáid. Beidh áthas orainn a chloisteáil go dteastaíonn uait tacaíocht a thabhairt! Ná bíodh drogall ort do thaithí a roinnt mar tar éis an tsaoil, is é d’ardán é freisin. A mhéid is mór againn do chuid smaointe agus aiseolais, is féidir leat páirt a ghlacadh i bhforbairt Wi-Wi trí shíntiús a thabhairt.",
+    "Tell-m-more": "Inis dom níos mó!",
+    "On-first-may-d": "Ar an gcéad lá de Bhealtaine, beidh rochtain luath agat ar ár seirbhísí. Agus tú ag fanacht leis an réabhlóid mhór seo, beidh ort a bheith foighneach! Tabhair faoi deara le do thoil, beidh an rochtain seo ar fáil don chéad 1000 clárúchán."
   }
 }

@@ -94,7 +94,7 @@
     "Group-creation": "Oprettelse af gruppen",
     "Mute": "Stum",
     "Send": "Sende",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Dine meddelelser slettes automatisk efter 14 dage"
   },
   "CONFIRMATION": {
     "Delete-Room": "Er du sikker på at slette denne diskussion?"
@@ -254,7 +254,14 @@
     "Towards-an-infinite-space": "Mod et uendeligt rum",
     "Hello": "Hej",
     "Publication": "Offentliggørelse",
-    "Chat": "Chat"
+    "Share": "Del",
+    "Url-Copied": "URL kopieret",
+    "Download": "Hent",
+    "Downloaded": "Downloadet",
+    "Save-in-phone": "Gem i telefonen",
+    "No": "Ingen",
+    "Yes": "Ja",
+    "Block-t-user": "Bloker denne bruger"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -612,7 +619,9 @@
     "Missing-informations": "Manglende information",
     "Account_desactivated": "Konto deaktiveret",
     "Y-dont-have-a-conversation-yet": "Du har ikke en samtale endnu.",
-    "Password-not-identical": "Adgangskoderne er ikke identiske"
+    "Date-cannot-be-in-the-past": "Udgivelsesdatoen kan ikke være tidligere",
+    "You-cannot-add-yourself": "Du kan ikke tilføje dig selv",
+    "T-content-does-not-exist-anymore": "Dette indhold findes ikke længere"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Billedet er modtaget",
@@ -641,7 +650,7 @@
     "Register": "Tilmeld",
     "Registration": "Registrering",
     "Sign-up": "Tilmelde",
-    "accept-tou": "Jeg bekræfter, at jeg er 16 år eller ældre, og jeg accepterer brugeraftalen og privatlivspolitik",
+    "accept-tou": "Jeg bekræfter, at jeg er 16 år eller ældre, og jeg accepterer brugeraftalen og fortrolighedspolitikken",
     "click-on-email": "Klik på e-mail-linket",
     "Create-yr-account": "Opret din konto",
     "Creating-yr-account": "Oprettelse af din konto",
@@ -726,7 +735,8 @@
     "Your-Password": "Dit kodeord",
     "Your-Pseudo": "Dit brugernavn",
     "Your-message": "Din besked",
-    "Confirm-your-password": "Bekræft din adgangskode"
+    "Confirm-your-password": "Bekræft dit kodeord",
+    "Password-not-matching": "Adgangskoderne stemmer ikke overens"
   },
   "PLEASE": {
     "Password": "Indtast venligst dit kodeord"
@@ -906,10 +916,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Brugere på denne liste kan ikke se din profil.",
       "btn-followers": "Gør knappen \"følg\" tilgængelig",
       "btn-friend": "Gør venneanmodningsknappen tilgængelig",
-      "h-can-b-yr-description": "Du kan sætte en beskrivelse",
-      "theme": "Tema",
-      "theme-description": "Vælg et tema",
-      "theme-select": "Vælge et tema"
+      "h-can-b-yr-description": "Du kan sætte en beskrivelse"
     },
     "verified": {
       "Already-certified": "Allerede certificeret",
@@ -1038,7 +1045,14 @@
     "T-administration-w-verify-t-content-asap": "Administration vil kontrollere indhold så hurtigt som muligt",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Dette vil medføre, at hele projektet slettes, er du sikker?",
     "T-operation-is-irreversible": "Denne handling er irreversibel",
-    "this-user-will-be-": "Denne bruger vil nu være"
+    "this-user-will-be-": "Denne bruger vil nu være",
+    "A-y-s-to-unfollow-t-profile": "Er du sikker på at følge denne profie op?",
+    "A-y-s-to-block-t-user": "Er du sikker på at blokere denne bruger?",
+    "Y-a-abt-t-block-t-user-D": "Du er ved at blokere denne bruger. Du vil ikke længere kunne se hans indhold og denne bruger også. Kun du er i stand til at fjerne denne begrænsning.",
+    "T-content-has-been-reported": "Dette indhold er blevet rapporteret. Vores moderatorer tager et kig inden for 24 timer for at gennemgå det. En sanktion anvendes, hvis dette ikke respekterer samfundets regler.",
+    "T-user-has-been-blocked-D": "Denne bruger er blevet blokeret fra din konto. Intet indhold af denne profil vil være synligt på din konto.",
+    "W-is-t-reason-to-report-t-post": "Hvad er grunden til at rapportere dette indlæg?",
+    "W-is-t-reason-to-report-t-post-D": "Din rapport er anonym. Vælg bare en kategori for at hjælpe moratorerne"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Advarsel. Sørg for, at du har den rigtige adresse"
@@ -1407,7 +1421,11 @@
       "World-fusion": "Verdensfusion",
       "Worldbeat": "Verdensslag",
       "Yacht-rock": "Yacht rock",
-      "Others": "Andre"
+      "Others": "Andre",
+      "Flamenco": "Flamenco",
+      "Rock": "Klippe",
+      "Reggae": "Reggae",
+      "Country": "Land"
     }
   },
   "WIINS-TUBE": {
@@ -1418,5 +1436,17 @@
       "Video-name": "Video navn",
       "Visualisation-of-the-video": "Visualisering af videoen"
     }
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Deltag i samfundet efter uoverensstemmelse",
+    "Ty": "tak skal du have",
+    "Why-this-early-access": "Hvorfor denne tidlige adgang? Wiins ønsker at revolutionere det forhold, du har til din telefon. Vi har også brug for din hjælp til at forbedre vores tjenester og tilbyde dig en eksklusiv oplevelse, der vil være helt gratis i denne periode. Derudover vil du som den første Wiinser drage fordel af en reduktion af dit fremtidige abonnement.",
+    "W-does-early-access-offer": "Hvad tilbyder tidlig adgang? Tidlig adgang giver dig mulighed for at bruge alle Wiins aktuelt tilgængelige funktioner. Vi overlader det til dig at finde ud af mere gennem videoen, hvis du ikke allerede har gjort det.",
+    "H-lg-ll-t-platform-be-in-early-access": "Hvor lang tid vil platformen være i tidlig adgang? I 9 måneder eller måske 6 eller 3. Du har din rolle at spille !! Men det er sikkert indtil den 1. januar 2022.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Hvordan vil den fulde version være forskellig fra den tidlige adgangsversion? Platformen forbedres i henhold til dine anmodninger, som du kan formulere i menuen \"foreslå en forbedring\". Kunstnerne vil også være i stand til at modtage en godtgørelse, der er værd for deres talent. Når det er sagt, udløber det gratis privilegium på Wiins. Følg os på sociale netværk for at holde dig informeret.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "Hvor meget koster den fulde version efter tidlig adgang? Prisen skal meddeles. Den tidlige adgang giver os mulighed for at tilbyde dig vores tjenester til den bedste pris. Du vil naturligvis blive informeret om dette, før du betaler.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Hvordan planlægger du at involvere samfundet i udviklingsprocessen? Simpelthen ved at bruge det. Vi vil være glade for at høre, at du vil støtte! Du er velkommen til at dele din oplevelse, for det er trods alt også din platform. Så meget som vi virkelig sætter pris på dine ideer og feedback, kan du også deltage i udviklingen af Wiins ved at give en donation.",
+    "Tell-m-more": "Fortæl mig mere!",
+    "On-first-may-d": "Den første maj får du tidlig adgang til vores tjenester. Mens du venter på denne store revolution, bliver du nødt til at være tålmodig! Bemærk, at denne adgang vil være tilgængelig for de første 1000 tilmeldinger."
   }
 }

@@ -52,7 +52,7 @@
     "Group-creation": "组的创建",
     "Mute": "静音",
     "Send": "发送",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "您的邮件会在14天后自动删除"
   },
   "CONFIRMATION": {
     "Delete-Room": "您确定要删除此讨论吗？"
@@ -212,7 +212,14 @@
     "Towards-an-infinite-space": "走向无限的空间",
     "Hello": "你好",
     "Publication": "出版物",
-    "Chat": "聊天"
+    "Share": "分享",
+    "Url-Copied": "网址已复制",
+    "Download": "下载",
+    "Downloaded": "已下载",
+    "Save-in-phone": "储存在手机中",
+    "No": "不",
+    "Yes": "是的",
+    "Block-t-user": "阻止此用户"
   },
   "COUNTRY": {
     "AD": "安道尔",
@@ -570,7 +577,9 @@
     "Missing-informations": "缺少信息",
     "Account_desactivated": "帐户已停用",
     "Y-dont-have-a-conversation-yet": "您还没有对话。",
-    "Password-not-identical": "密码不一样"
+    "Date-cannot-be-in-the-past": "发布日期不能是过去的日期",
+    "You-cannot-add-yourself": "您无法添加自己",
+    "T-content-does-not-exist-anymore": "该内容已不存在"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -599,7 +608,7 @@
     "Register": "寄存器",
     "Registration": "注册",
     "Sign-up": "登记",
-    "accept-tou": "我证明我16岁或以上，我同意用户协议和隐私政策",
+    "accept-tou": "我证明我16岁或以上，并同意接受用户协议和隐私权政策",
     "click-on-email": "请点击电子邮件链接",
     "Create-yr-account": "创建您的帐户",
     "Creating-yr-account": "建立您的帐户",
@@ -684,7 +693,8 @@
     "Your-Password": "你的密码",
     "Your-Pseudo": "您的用户名",
     "Your-message": "你的信息",
-    "Confirm-your-password": "确认您的密码"
+    "Confirm-your-password": "确认你的密码",
+    "Password-not-matching": "密码不匹配"
   },
   "PLEASE": {
     "Password": "请输入您的密码"
@@ -852,10 +862,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "此列表中的用户将看不到您的个人资料。",
       "btn-followers": "使\"关注\"按钮可用",
       "btn-friend": "使好友请求按钮可用",
-      "h-can-b-yr-description": "您可以放置说明",
-      "theme": "主题",
-      "theme-description": "请选择主题",
-      "theme-select": "选择主题"
+      "h-can-b-yr-description": "您可以放置说明"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "此功能需要验证才能使用",
@@ -981,7 +988,14 @@
     "T-administration-w-verify-t-content-asap": "管理将尽快验证是否包含",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "这将导致整个项目被删除，你确定吗？",
     "T-operation-is-irreversible": "此操作是不可逆的",
-    "this-user-will-be-": "此用户现在将成为"
+    "this-user-will-be-": "此用户现在将成为",
+    "A-y-s-to-unfollow-t-profile": "您确定要取消关注此教授吗？",
+    "A-y-s-to-block-t-user": "您确定要阻止此用户吗？",
+    "Y-a-abt-t-block-t-user-D": "您将要阻止此用户。您将无法再查看他的内容和该用户。只有您才能删除此限制。",
+    "T-content-has-been-reported": "此内容已被举报。我们的主持人将在24小时内进行审核。如果不遵守社区规则，将采取制裁措施。",
+    "T-user-has-been-blocked-D": "该用户已被阻止使用您的帐户。您的帐户看不到此配置文件的内容。",
+    "W-is-t-reason-to-report-t-post": "举报此帖子的原因是什么？",
+    "W-is-t-reason-to-report-t-post-D": "您的报告是匿名的。请选择一个类别以帮助the旋者"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "警告。确保您拥有正确的地址"
@@ -1350,7 +1364,11 @@
       "World-fusion": "世界融合",
       "Worldbeat": "世界跳动",
       "Yacht-rock": "游艇岩",
-      "Others": "其他"
+      "Others": "其他",
+      "Flamenco": "佛朗明哥舞",
+      "Rock": "岩石",
+      "Reggae": "雷鬼",
+      "Country": "国家"
     }
   },
   "WIINS-TUBE": {
@@ -1405,5 +1423,17 @@
     "Influencer": "影响者",
     "Athletic": "运动型",
     "Ch-a-category": "选择一个类别"
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "不和谐地加入社区",
+    "Ty": "谢谢",
+    "Why-this-early-access": "为什么这么早进入？ Wiin希望彻底改变您与手机的关系。此外，我们需要您的帮助才能改善我们的服务，并在此期间为您提供完全免费的独家体验。此外，作为第一个Wiinser，您将受益于未来订阅量的减少。",
+    "W-does-early-access-offer": "抢先体验能提供什么？抢先体验允许您使用Wiin当前可用的所有功能。如果您还没有的话，我们会把它留给您，以通过视频发现更多信息。",
+    "H-lg-ll-t-platform-be-in-early-access": "该平台可以提前使用多长时间？持续9个月，或者6个月或3个月。但可以确定的是，最迟要到2022年1月1日。",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "完整版与抢先体验版有何不同？该平台将根据您的要求进行改进，您可以在菜单上提出“提出改进”。这些艺术家也将能够获得与其才华横溢的报酬。话虽这么说，维恩的免费特权将到期。在社交网络上关注我们，以随时了解情况。",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "抢先体验后完整版价格为多少？价格待公布。抢先体验将使我们能够以最优惠的价格为您提供服务。当然，付款之前您会收到通知。",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "您如何计划让社区参与开发过程？只需使用它。我们很高兴听到您要支持！请随时分享您的经验，因为毕竟它也是您的平台。尽管我们非常感谢您的想法和反馈，但是您也可以通过捐赠参与Wiin's的开发。",
+    "Tell-m-more": "告诉我更多！",
+    "On-first-may-d": "5月1日，您将可以尽早使用我们的服务。在等待这场伟大的革命时，您将必须耐心等待！请注意，此访问权限可用于前1000个注册。"
   }
 }

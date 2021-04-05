@@ -52,7 +52,7 @@
     "Group-creation": "Creación del grupo",
     "Mute": "Mudo",
     "Send": "Enviar",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Tus mensajes se eliminan automáticamente después de 14 días."
   },
   "CONFIRMATION": {
     "Delete-Room": "¿ Estás seguro de eliminar esta discusión ?"
@@ -212,7 +212,14 @@
     "Towards-an-infinite-space": "Hacia un espacio infinito",
     "Hello": "Hola",
     "Publication": "Publicación",
-    "Chat": "Chat"
+    "Share": "Compartir",
+    "Url-Copied": "URL copiada",
+    "Download": "Descargar",
+    "Downloaded": "Descargado",
+    "Save-in-phone": "Guardar en el teléfono",
+    "No": "No",
+    "Yes": "sí",
+    "Block-t-user": "Bloquee este usuario"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -570,7 +577,9 @@
     "Missing-informations": "Falta información",
     "Account_desactivated": "Cuenta desactivada",
     "Y-dont-have-a-conversation-yet": "Aún no tienes una conversación.",
-    "Password-not-identical": "Las contraseñas no son idénticas"
+    "Date-cannot-be-in-the-past": "La fecha de lanzamiento no puede ser pasada",
+    "You-cannot-add-yourself": "No puedes agregarte a ti mismo",
+    "T-content-does-not-exist-anymore": "Este contenido ya no existe"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La foto es recibida",
@@ -599,7 +608,7 @@
     "Register": "Registrarse",
     "Registration": "Registro",
     "Sign-up": "Únete",
-    "accept-tou": "Certifico que tengo 16 años o más y acepto el acuerdo de usuario y la política de privacidad",
+    "accept-tou": "Certifico que tengo 16 años o más y estoy de acuerdo con el acuerdo de usuario y la política de privacidad.",
     "click-on-email": "Por favor haga clic en el enlace del correo electrónico",
     "Create-yr-account": "Crea tu cuenta",
     "Creating-yr-account": "creando tu cuenta",
@@ -684,7 +693,8 @@
     "Your-Password": "Tu contraseña",
     "Your-Pseudo": "Su nombre de usuario",
     "Your-message": "Tu mensaje",
-    "Confirm-your-password": "Confirme su contraseña"
+    "Confirm-your-password": "Confirmar la contraseña",
+    "Password-not-matching": "Las contraseñas no coinciden"
   },
   "PLEASE": {
     "Password": "Por favor, introduzca su contraseña"
@@ -852,10 +862,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Los usuarios de esta lista no podrán ver tu perfil.",
       "btn-followers": "Haga que el botón \"seguir\" esté disponible",
       "btn-friend": "Haga que el botón de solicitud de amistad esté disponible",
-      "h-can-b-yr-description": "Puede poner una descripción",
-      "theme": "Tema",
-      "theme-description": "Por favor, elija un tema",
-      "theme-select": "Seleccione un tema"
+      "h-can-b-yr-description": "Puede poner una descripción"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Esta función requiere verificación para usar",
@@ -981,7 +988,14 @@
     "T-administration-w-verify-t-content-asap": "La administración verificará que estén contenidas tan pronto como sea posible",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Esto hará que todo el proyecto sea eliminado, ¿está seguro?",
     "T-operation-is-irreversible": "Esta operación es irreversible",
-    "this-user-will-be-": "Este usuario ahora será"
+    "this-user-will-be-": "Este usuario ahora será",
+    "A-y-s-to-unfollow-t-profile": "¿Estás seguro de dejar de seguir este perfil?",
+    "A-y-s-to-block-t-user": "¿Estás seguro de bloquear a este usuario?",
+    "Y-a-abt-t-block-t-user-D": "Estás a punto de bloquear a este usuario. Ya no podrá ver su contenido y este usuario también. Solo usted podrá eliminar esta restricción.",
+    "T-content-has-been-reported": "Este contenido ha sido informado. Nuestros moderadores lo revisarán con un retraso de 24 horas para revisarlo. Se aplicará una sanción si esto no respeta las reglas de la comunidad.",
+    "T-user-has-been-blocked-D": "Este usuario ha sido bloqueado de su cuenta. Ningún contenido de este perfil será visible con su cuenta.",
+    "W-is-t-reason-to-report-t-post": "¿Cuál es el motivo para denunciar esta publicación?",
+    "W-is-t-reason-to-report-t-post-D": "Tu denuncia es anónima. Elija solo una categoría para ayudar a los moradores"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Advertencia. Asegúrese de tener la dirección correcta"
@@ -1350,7 +1364,11 @@
       "World-fusion": "Fusión mundial",
       "Worldbeat": "Worldbeat",
       "Yacht-rock": "Roca de yate",
-      "Others": "Otros"
+      "Others": "Otros",
+      "Flamenco": "Flamenco",
+      "Rock": "Rock",
+      "Reggae": "Reggae",
+      "Country": "País"
     }
   },
   "WIINS-TUBE": {
@@ -1405,5 +1423,17 @@
     "Influencer": "Hombre de influencia",
     "Athletic": "Atlético",
     "Ch-a-category": "Elige una categoría"
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Únete a la comunidad en discordia",
+    "Ty": "Gracias",
+    "Why-this-early-access": "¿Por qué este acceso anticipado? Wiin's quiere revolucionar la relación que tiene con su teléfono. Además, necesitamos tu ayuda para mejorar nuestros servicios y ofrecerte una experiencia exclusiva que será completamente gratuita durante este período. Además, como primer Wiinser, se beneficiará de una reducción en su futura suscripción.",
+    "W-does-early-access-offer": "¿Qué ofrece el acceso temprano? El acceso anticipado te permite utilizar todas las funciones de Wiin disponibles actualmente. Te lo dejamos para que descubras más a través del video, si aún no lo has hecho.",
+    "H-lg-ll-t-platform-be-in-early-access": "¿Cuánto tiempo estará la plataforma en acceso anticipado? Durante 9 meses, o tal vez 6, o 3. ¡¡Tú tienes tu parte que desempeñar !! Pero es seguro hasta el 1 de enero de 2022, a más tardar.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "¿En qué se diferenciará la versión completa de la versión de acceso anticipado? La plataforma se mejorará de acuerdo con sus solicitudes, que puede formular en el menú \"proponer una mejora\". Los artistas también podrán recibir una retribución a la altura de su talento. Dicho esto, el privilegio gratuito en Wiin expirará. Síguenos en las redes sociales para mantenerte informado.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "¿Cuánto costará la versión completa después del acceso anticipado? El precio se anunciará. El acceso temprano nos permitirá ofrecerle nuestros servicios al mejor precio. Se le informará de esto antes de pagar, por supuesto.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "¿Cómo planea involucrar a la comunidad en el proceso de desarrollo? Simplemente usándolo. ¡Estaremos encantados de saber que quieres apoyar! No dude en compartir su experiencia porque, después de todo, también es su plataforma. Por mucho que apreciamos sus ideas y comentarios, también puede participar en el desarrollo de Wiin haciendo una donación.",
+    "Tell-m-more": "¡Dime más!",
+    "On-first-may-d": "El primero de mayo tendrá acceso anticipado a nuestros servicios. ¡Mientras espera esta gran revolución, tendrá que ser paciente! Tenga en cuenta que este acceso estará disponible para los primeros 1000 registros."
   }
 }

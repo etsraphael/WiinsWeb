@@ -94,7 +94,7 @@
     "Group-creation": "Krijimi i grupit",
     "Mute": "Hesht",
     "Send": "Dërgoni",
-    "days-message-delete-two-weeks": ""
+    "days-message-delete-two-weeks": "Mesazhet tuaja fshihen automatikisht pas 14 ditësh"
   },
   "CONFIRMATION": {
     "Delete-Room": "A jeni i sigurt për të fshirë këtë diskutim?"
@@ -254,7 +254,14 @@
     "responses": "përgjigjet",
     "soon": "së shpejti",
     "views": "pikëpamjet",
-    "Chat": "Bisedo"
+    "Share": "Ndani",
+    "Url-Copied": "Url u kopjua",
+    "Download": "Shkarko",
+    "Downloaded": "Shkarkuar",
+    "Save-in-phone": "Kurseni në telefon",
+    "No": "Jo",
+    "Yes": "po",
+    "Block-t-user": "Blloko këtë përdorues"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -612,7 +619,9 @@
     "y-h-to-delete-yr-page-or-group-before": "Ju duhet të fshini faqet ose grupet tuaja më parë",
     "y-have-to-be-friend": "ju duhet të jeni miq",
     "you-hav-to-upgrad-a-manager-before-leave": "Ju duhet të promovoni një menaxher përpara se të dilni nga grupi",
-    "Password-not-identical": "Fjalëkalimet nuk janë identike"
+    "Date-cannot-be-in-the-past": "Data e lëshimit nuk mund të jetë në të kaluarën",
+    "You-cannot-add-yourself": "Ju nuk mund të shtoni veten",
+    "T-content-does-not-exist-anymore": "Kjo përmbajtje nuk ekziston më"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",
@@ -645,7 +654,7 @@
     "Register": "Regjistrohuni",
     "Registration": "Regjistrimi",
     "Sign-up": "Regjistrohu",
-    "accept-tou": "vërtetoj se jam 16 vjeç ose më i vjetër dhe pajtohem me marrëveshjen e përdoruesit dhe politikën e privatësisë",
+    "accept-tou": "Unë vërtetoj se jam 16 vjeç ose më i vjetër dhe pajtohem me marrëveshjen e përdoruesit dhe politikën e privatësisë",
     "click-on-email": "Ju lutemi klikoni në lidhjen e postës elektronike"
   },
   "MAIN-MUSIC": {
@@ -726,7 +735,8 @@
     "Your-Password": "Fjalëkalimi juaj",
     "Your-Pseudo": "Emri juaj i përdoruesit",
     "Your-message": "Mesazhi juaj",
-    "Confirm-your-password": "Konfirmoni fjalëkalimin tuaj"
+    "Confirm-your-password": "Konfirmoni fjalëkalimin tuaj",
+    "Password-not-matching": "Fjalëkalimet nuk përputhen"
   },
   "PLEASE": {
     "Password": "Ju lutem vendosni fjalëkalimin tuaj"
@@ -906,10 +916,7 @@
       "T-people-w-not-be-able-to-access-your-profile-D": "Përdoruesit në këtë listë nuk do të mund të shohin profilin tuaj.",
       "btn-followers": "Bëni të disponueshëm butonin \"ndiq\"",
       "btn-friend": "Bëni të disponueshëm butonin e kërkesës për mik",
-      "h-can-b-yr-description": "Mund të vendosni një përshkrim",
-      "theme": "tema",
-      "theme-description": "Ju lutemi zgjidhni një temë",
-      "theme-select": "Zgjidhni një temë"
+      "h-can-b-yr-description": "Mund të vendosni një përshkrim"
     },
     "verified": {
       "Already-certified": "Tashmë e çertifikuar",
@@ -1038,7 +1045,14 @@
     "T-administration-w-verify-t-content-asap": "Administrata do të verifikojë përmbajtjen sa më shpejt të jetë e mundur",
     "T-ll-cause-t-entire-project-to-be-deleted-a-y-s": "Kjo do të bëjë që i gjithë projekti të fshihet, jeni i sigurt?",
     "T-operation-is-irreversible": "Ky operacion është i pakthyeshëm",
-    "this-user-will-be-": "Ky përdorues tani do të jetë"
+    "this-user-will-be-": "Ky përdorues tani do të jetë",
+    "A-y-s-to-unfollow-t-profile": "A jeni i sigurt që do ta hiqni pas këtë profie?",
+    "A-y-s-to-block-t-user": "A jeni i sigurt për të bllokuar këtë përdorues?",
+    "Y-a-abt-t-block-t-user-D": "Ju jeni gati për të bllokuar këtë përdorues. Ju nuk do të jeni më në gjendje të shikoni përmbajtjen e tij dhe gjithashtu këtë përdorues. Vetëm ju do të jeni në gjendje ta hiqni këtë kufizim.",
+    "T-content-has-been-reported": "Kjo përmbajtje është raportuar. Moderatorët tanë do të hedhin një vështrim në një vonesë prej 24 orësh për ta shqyrtuar atë. Një sanksion do të zbatohet nëse kjo nuk respekton rregullat e komunitetit.",
+    "T-user-has-been-blocked-D": "Ky përdorues është bllokuar nga llogaria juaj. Asnjë përmbajtje e këtij profili nuk do të jetë e dukshme me llogarinë tuaj.",
+    "W-is-t-reason-to-report-t-post": "Cila është arsyeja për të raportuar këtë post?",
+    "W-is-t-reason-to-report-t-post-D": "Raporti juaj është anonim. Ju lutemi zgjidhni vetëm një kategori për të ndihmuar moratorët"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Paralajmërim. Sigurohuni që të keni adresën e duhur"
@@ -1407,7 +1421,11 @@
       "World-fusion": "Bashkimi botëror",
       "Worldbeat": "Rrahja e botës",
       "Yacht-rock": "Shkëmb jahtesh",
-      "Others": "Të tjerët"
+      "Others": "Të tjerët",
+      "Flamenco": "Flamenco",
+      "Rock": "Shkëmb",
+      "Reggae": "Reggae",
+      "Country": "Vendi"
     }
   },
   "WIINS-TUBE": {
@@ -1418,5 +1436,17 @@
       "Video-name": "Emri i videos",
       "Visualisation-of-the-video": "Vizualizimi i videos"
     }
+  },
+  "TEMPORARY": {
+    "Join-us-on-discord": "Bashkohuni me komunitetin në mosmarrëveshje",
+    "Ty": "Faleminderit",
+    "Why-this-early-access": "Pse kjo qasje e hershme? Wiin kërkon të revolucionarizojë marrëdhënien që keni me telefonin tuaj. Gjithashtu, ne kemi nevojë për ndihmën tuaj në mënyrë që të përmirësojmë shërbimet tona dhe t'ju ofrojmë një përvojë ekskluzive që do të jetë plotësisht falas gjatë kësaj periudhe. Përveç kësaj, si Wiinser i parë, ju do të përfitoni nga një ulje e abonimit tuaj të ardhshëm.",
+    "W-does-early-access-offer": "Çfarë ofron hyrja e hershme? Hyrja e Hershme ju lejon të përdorni të gjitha tiparet e disponueshme aktualisht të Wiin. Ne do t'ua lëmë juve të zbuloni më shumë përmes videos, nëse nuk e keni bërë tashmë.",
+    "H-lg-ll-t-platform-be-in-early-access": "Sa kohë do të jetë platforma në hyrje të hershme? Për 9 muaj, ose ndoshta 6, ose 3. Ju keni pjesën tuaj për të luajtur !! Por është e sigurt më së voni deri më 1 janar 2022.",
+    "H-ll-t-full-version-b-diff-frm-t-early-access-version": "Si do të jetë versioni i plotë i ndryshëm nga versioni i qasjes së hershme? Platforma do të përmirësohet në përputhje me kërkesat tuaja, të cilat mund t'i formuloni në menunë \"propozoni një përmirësim\". Artistët gjithashtu do të jenë në gjendje të marrin një shpërblim të denjë për talentin e tyre. Duke thënë, privilegji falas në Wiin do të skadojë. Na ndiqni në rrjetet sociale për të qenë të informuar.",
+    "H-much-ll-t-full-version-cost-after-Early-Access": "Sa do të kushtojë versioni i plotë pas Hyrjes së Hershme? Çmimi do të shpallet. Hyrja e hershme do të na lejojë t'ju ofrojmë shërbimet tona me çmimin më të mirë. Ju do të informoheni për këtë para se të paguani, natyrisht.",
+    "H-d-y-plan-to-involve-t-community-in-t-dev-process": "Si planifikoni të përfshini komunitetin në procesin e zhvillimit? Thjesht duke e përdorur atë. Ne do të jemi të lumtur të dëgjojmë se ju doni të mbështesni! Ju lutem mos ngurroni të ndani përvojën tuaj sepse në fund të fundit, ajo është gjithashtu platforma juaj. Sado që ne vërtet i vlerësojmë idetë dhe reagimet tuaja, ju gjithashtu mund të merrni pjesë në zhvillimin e Wiin-it duke bërë një donacion.",
+    "Tell-m-more": "Me trego me shume!",
+    "On-first-may-d": "Më 1 maj, ju do të keni qasje të hershme në shërbimet tona. Ndërsa jeni duke pritur për këtë revolucion të madh, do të duhet të jeni të duruar! Ju lutemi vini re, kjo qasje do të jetë në dispozicion për 1000 regjistrimet e para."
   }
 }

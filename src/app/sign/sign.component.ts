@@ -31,7 +31,7 @@ export class SignComponent implements OnInit {
   profileLoading$: Observable<boolean>
 
   // early access fonctions
-  displayingText = 0
+  displayingText = 2
   showEarlyAccess = false
   days: number
   hours: number
