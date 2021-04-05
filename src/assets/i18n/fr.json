@@ -52,7 +52,7 @@
     "Group-creation": "Création du groupe",
     "Mute": "Muet",
     "Send": "Envoyer",
-    "14days-message-delete": "Vos messages sont automatiquement supprimés après 14 jours"
+    "days-message-delete-two-weeks": "Vos messages sont automatiquement supprimés après 14 jours"
   },
   "CONFIRMATION": {
     "Delete-Room": "Êtes vous sûre de supprimer cette discution ?"

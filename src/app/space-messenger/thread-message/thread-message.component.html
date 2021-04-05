@@ -104,9 +104,9 @@
       </div>
     </div>
     <div class="w-100 h-100 container-bubble-message" *ngSwitchDefault>
-      <div class="w-100 mx-auto px-auto col-6 container message-14j-delete">
-        <div class="row">
-          <span>{{'CHAT.14days-message-delete'|translate}} <i class="bi bi-clock-history"></i></span>
+      <div class="w-100 mx-auto px-auto col-6 container my-3">
+        <div class="row d-flex justify-content-center container-message-deletion">
+          <span class="p-4">{{'CHAT.days-message-delete-two-weeks'|translate}} <i class="bi bi-clock-history mx-3"></i></span>
         </div>
       </div>
       <div *ngIf="participantAdded.length !== 0" class="container-participated w-100">

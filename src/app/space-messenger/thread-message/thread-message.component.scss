@@ -223,12 +223,9 @@
   position: relative;
 }
 
-.message-14j-delete {
-  position: relative;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.container-message-deletion span {
+  border-radius: 20px;
+  background: #eee;
 }
 
 .container-participated {
@@ -310,5 +307,9 @@
   .fa-times {
     display: block !important;
   }
+}
+
+.bi-clock-history {
+  font-size: 1.5rem;
 }
 
