@@ -4,12 +4,9 @@
   <div class="container-fluid px-0 shadow">
     <div class="row container-video-and-comment mx-0">
       <div class="col-md-8 container-video h-100 px-0">
-        <video controls class="row mx-0 px-0 video-file w-100" controlsList="nodownload" autoplay
-          [poster]="(tubePage$|async).tube.posterLink">
-          <source [src]="(tubePage$|async).tube.videoLink" type="video/mp4">
-          <source [src]="(tubePage$|async).tube.videoLink" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
+        <div class="plyr-video-container" plyr [plyrPlaysInline]="true"
+                [plyrSources]="(tubePage$|async).tube.videoLink">
+              </div>
         <div class="card-footer row mx-0 py-1 px-1">
           <div class="col-2 my-auto d-flex justify-content-center" [routerLink]="['./../../../profile/' + (tubePage$|async).tube.profile._id]">
             <img class="rounded-circle" [src]="(tubePage$|async).tube.profile.pictureprofile">
