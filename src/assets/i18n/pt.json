@@ -51,7 +51,8 @@
     "Enable-notification": "Ativar notificações",
     "Group-creation": "Criação do grupo",
     "Mute": "Mudo",
-    "Send": "Mandar"
+    "Send": "Mandar",
+    "days-message-delete-two-weeks": "Suas mensagens são excluídas automaticamente após 14 dias"
   },
   "CONFIRMATION": {
     "Delete-Room": "Tem certeza de que deseja excluir esta discussão ?"

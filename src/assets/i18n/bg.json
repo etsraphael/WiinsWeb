@@ -93,7 +93,8 @@
     "Enable-notification": "Активиране на известията",
     "Group-creation": "Създаване на групата",
     "Mute": "Без звук",
-    "Send": "Изпрати"
+    "Send": "Изпрати",
+    "days-message-delete-two-weeks": "Вашите съобщения се изтриват автоматично след 14 дни"
   },
   "CONFIRMATION": {
     "Delete-Room": "Наистина ли ще изтриете тази дискусия?"

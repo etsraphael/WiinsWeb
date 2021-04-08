@@ -93,7 +93,8 @@
     "Enable-notification": "Dayakan pemberitahuan",
     "Group-creation": "Penciptaan kumpulan",
     "Mute": "Bisu",
-    "Send": "Hantar"
+    "Send": "Hantar",
+    "days-message-delete-two-weeks": "Mesej anda akan dihapus secara automatik selepas 14 hari"
   },
   "CONFIRMATION": {
     "Delete-Room": "Adakah anda pasti memadamkan perbincangan ini?"

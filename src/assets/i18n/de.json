@@ -51,7 +51,8 @@
     "Enable-notification": "Benachrichtigungen einschalten",
     "Group-creation": "Schaffung der Gruppe",
     "Mute": "Stumm",
-    "Send": "Senden"
+    "Send": "Senden",
+    "days-message-delete-two-weeks": "Ihre Nachrichten werden nach 14 Tagen automatisch gelöscht"
   },
   "CONFIRMATION": {
     "Delete-Room": "Möchten Sie diese Diskussion wirklich löschen ?"

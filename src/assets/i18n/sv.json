@@ -93,7 +93,8 @@
     "Enable-notification": "Aktivera aviseringar",
     "Group-creation": "Skapande av gruppen",
     "Mute": "Stum",
-    "Send": "Skicka"
+    "Send": "Skicka",
+    "days-message-delete-two-weeks": "Dina meddelanden raderas automatiskt efter 14 dagar"
   },
   "CONFIRMATION": {
     "Delete-Room": "Är du säker på att du tar bort den här diskussionen?"

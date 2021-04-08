@@ -93,7 +93,8 @@
     "Enable-notification": "Activați notificările",
     "Group-creation": "Crearea grupului",
     "Mute": "Mut",
-    "Send": "Trimite"
+    "Send": "Trimite",
+    "days-message-delete-two-weeks": "Mesajele dvs. sunt șterse automat după 14 zile"
   },
   "CONFIRMATION": {
     "Delete-Room": "Sigur ștergeți această discuție?"

@@ -93,7 +93,8 @@
     "Enable-notification": "Увімкнути сповіщення",
     "Group-creation": "Створення групи",
     "Mute": "Без звуку",
-    "Send": "Надіслати"
+    "Send": "Надіслати",
+    "days-message-delete-two-weeks": "Ваші повідомлення автоматично видаляються через 14 днів"
   },
   "CONFIRMATION": {
     "Delete-Room": "Справді видалити це обговорення?"

@@ -51,7 +51,8 @@
     "Enable-notification": "বিজ্ঞপ্তিগুলি সক্ষম করুন",
     "Group-creation": "গ্রুপ তৈরি",
     "Mute": "মূক",
-    "Send": "পাঠান"
+    "Send": "পাঠান",
+    "days-message-delete-two-weeks": "আপনার বার্তা 14 দিন পরে স্বয়ংক্রিয়ভাবে মুছে ফেলা হয়"
   },
   "CONFIRMATION": {
     "Delete-Room": "আপনি কি এই আলোচনাটি মুছে ফেলার বিষয়ে নিশ্চিত ?"

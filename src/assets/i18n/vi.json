@@ -93,7 +93,8 @@
     "Enable-notification": "Bật thông báo",
     "Group-creation": "Thành lập nhóm",
     "Mute": "Tắt tiếng",
-    "Send": "Gửi"
+    "Send": "Gửi",
+    "days-message-delete-two-weeks": "Tin nhắn của bạn sẽ tự động bị xóa sau 14 ngày"
   },
   "CONFIRMATION": {
     "Delete-Room": "Bạn có chắc chắn xóa cuộc thảo luận này không?"

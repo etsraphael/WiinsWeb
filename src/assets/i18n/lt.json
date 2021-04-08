@@ -93,7 +93,8 @@
     "Enable-notification": "Įgalinti pranešimus",
     "Group-creation": "Grupės sukūrimas",
     "Mute": "Nutildyti",
-    "Send": "Siųsti"
+    "Send": "Siųsti",
+    "days-message-delete-two-weeks": "Jūsų pranešimai automatiškai ištrinami po 14 dienų"
   },
   "CONFIRMATION": {
     "Delete-Room": "Ar tikrai ištrinsite šią diskusiją?"

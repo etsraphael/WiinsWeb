@@ -93,7 +93,8 @@
     "Enable-notification": "Povoliť upozornenia",
     "Group-creation": "Vytvorenie skupiny",
     "Mute": "Stíšiť",
-    "Send": "Pošli"
+    "Send": "Pošli",
+    "days-message-delete-two-weeks": "Vaše správy sa automaticky odstránia po 14 dňoch"
   },
   "CONFIRMATION": {
     "Delete-Room": "Naozaj chcete odstrániť túto diskusiu?"

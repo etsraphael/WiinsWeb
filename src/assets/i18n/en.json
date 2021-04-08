@@ -51,7 +51,8 @@
     "Enable-notification": "Enable notifications",
     "Group-creation": "Creation of the group",
     "Mute": "Mute",
-    "Send": "Send"
+    "Send": "Send",
+    "days-message-delete-two-weeks": "Your messages are automatically deleted after 14 days"
   },
   "CONFIRMATION": {
     "Delete-Room": "Are you sure to delete this discussion ?"

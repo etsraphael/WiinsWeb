@@ -93,7 +93,8 @@
     "Enable-notification": "Fógraí a chumasú",
     "Group-creation": "Cruthú an ghrúpa",
     "Mute": "Mute",
-    "Send": "Seol"
+    "Send": "Seol",
+    "days-message-delete-two-weeks": "Scriostar do theachtaireachtaí go huathoibríoch tar éis 14 lá"
   },
   "CONFIRMATION": {
     "Delete-Room": "An bhfuil tú cinnte an plé seo a scriosadh?"

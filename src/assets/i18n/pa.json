@@ -51,7 +51,8 @@
     "Enable-notification": "ਸੂਚਨਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰੋ",
     "Group-creation": "ਸਮੂਹ ਦੀ ਸਿਰਜਣਾ",
     "Mute": "ਚੁੱਪ",
-    "Send": "ਭੇਜੋ"
+    "Send": "ਭੇਜੋ",
+    "days-message-delete-two-weeks": "ਤੁਹਾਡੇ ਸੁਨੇਹੇ 14 ਦਿਨਾਂ ਬਾਅਦ ਆਪਣੇ ਆਪ ਹਟਾਏ ਜਾਣਗੇ"
   },
   "CONFIRMATION": {
     "Delete-Room": "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਇਸ ਵਿਚਾਰ ਵਟਾਂਦਰੇ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ?"

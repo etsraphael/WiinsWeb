@@ -93,7 +93,8 @@
     "Enable-notification": "Értesítések engedélyezése",
     "Group-creation": "A csoport létrehozása",
     "Mute": "Néma",
-    "Send": "Küld"
+    "Send": "Küld",
+    "days-message-delete-two-weeks": "Üzeneteit 14 nap múlva automatikusan törli"
   },
   "CONFIRMATION": {
     "Delete-Room": "Biztosan törli ezt a beszélgetést?"

@@ -51,7 +51,8 @@
     "Enable-notification": "सूचनाएं सक्षम करें",
     "Group-creation": "समूह का निर्माण",
     "Mute": "मूक",
-    "Send": "संदेश"
+    "Send": "संदेश",
+    "days-message-delete-two-weeks": "आपके संदेश 14 दिनों के बाद स्वचालित रूप से हटा दिए जाते हैं"
   },
   "CONFIRMATION": {
     "Delete-Room": "क्या आप इस चर्चा को हटाना सुनिश्चित करते हैं ?"

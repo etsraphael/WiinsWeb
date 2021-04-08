@@ -93,7 +93,8 @@
     "Enable-notification": "เปิดใช้งานการแจ้งเตือน",
     "Group-creation": "การสร้างกลุ่ม",
     "Mute": "ปิดเสียง",
-    "Send": "ส่ง"
+    "Send": "ส่ง",
+    "days-message-delete-two-weeks": "ข้อความของคุณจะถูกลบโดยอัตโนมัติหลังจาก 14 วัน"
   },
   "CONFIRMATION": {
     "Delete-Room": "แน่ใจหรือว่าจะลบการสนทนานี้?"

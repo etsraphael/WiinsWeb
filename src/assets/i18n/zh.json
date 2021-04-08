@@ -51,7 +51,8 @@
     "Enable-notification": "启用通知",
     "Group-creation": "组的创建",
     "Mute": "静音",
-    "Send": "发送"
+    "Send": "发送",
+    "days-message-delete-two-weeks": "您的邮件会在14天后自动删除"
   },
   "CONFIRMATION": {
     "Delete-Room": "您确定要删除此讨论吗？"

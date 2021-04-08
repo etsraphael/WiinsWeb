@@ -51,7 +51,8 @@
     "Enable-notification": "تمكين الإشعارات",
     "Group-creation": "إنشاء المجموعة",
     "Mute": "كتم الصوت",
-    "Send": "إرسال"
+    "Send": "إرسال",
+    "days-message-delete-two-weeks": "يتم حذف رسائلك تلقائيًا بعد 14 يومًا"
   },
   "CONFIRMATION": {
     "Delete-Room": "هل أنت متأكد من حذف هذه المناقشة ؟"

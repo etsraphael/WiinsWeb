@@ -93,7 +93,8 @@
     "Enable-notification": "Omogući obavijesti",
     "Group-creation": "Stvaranje grupe",
     "Mute": "Nijemo",
-    "Send": "Poslati"
+    "Send": "Poslati",
+    "days-message-delete-two-weeks": "Vaše se poruke automatski brišu nakon 14 dana"
   },
   "CONFIRMATION": {
     "Delete-Room": "Jeste li sigurni da ste izbrisali ovu raspravu?"

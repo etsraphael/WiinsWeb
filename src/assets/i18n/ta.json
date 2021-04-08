@@ -93,7 +93,8 @@
     "Enable-notification": "அறிவிப்புகளை இயக்கு",
     "Group-creation": "குழுவின் உருவாக்கம்",
     "Mute": "முடக்கு",
-    "Send": "அனுப்பு"
+    "Send": "அனுப்பு",
+    "days-message-delete-two-weeks": "உங்கள் செய்திகள் 14 நாட்களுக்குப் பிறகு தானாகவே நீக்கப்படும்"
   },
   "CONFIRMATION": {
     "Delete-Room": "இந்த விவாதத்தை நீக்குவது உறுதி?"

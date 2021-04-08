@@ -93,7 +93,8 @@
     "Enable-notification": "Virkja tilkynningar",
     "Group-creation": "Sköpun hópsins",
     "Mute": "Þagga niður",
-    "Send": "Senda"
+    "Send": "Senda",
+    "days-message-delete-two-weeks": "Skilaboðunum þínum er sjálfkrafa eytt eftir 14 daga"
   },
   "CONFIRMATION": {
     "Delete-Room": "Ertu viss um að eyða þessari umræðu?"

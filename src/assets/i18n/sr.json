@@ -93,7 +93,8 @@
     "Enable-notification": "Омогућили обавештења",
     "Group-creation": "Стварање групе",
     "Mute": "Муте",
-    "Send": "Пошаљите"
+    "Send": "Пошаљите",
+    "days-message-delete-two-weeks": "Ваше поруке се аутоматски бришу након 14 дана"
   },
   "CONFIRMATION": {
     "Delete-Room": "Да ли сте сигурни да сте избрисали ову дискусију?"

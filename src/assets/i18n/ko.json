@@ -51,7 +51,8 @@
     "Enable-notification": "알림 사용",
     "Group-creation": "그룹의 창조",
     "Mute": "음소거",
-    "Send": "보내다"
+    "Send": "보내다",
+    "days-message-delete-two-weeks": "메시지는 14 일 후에 자동으로 삭제됩니다."
   },
   "CONFIRMATION": {
     "Delete-Room": "이 토론을 삭제 하시겠습니까 ?"

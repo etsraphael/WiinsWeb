@@ -93,7 +93,8 @@
     "Enable-notification": "Aktivér underretninger",
     "Group-creation": "Oprettelse af gruppen",
     "Mute": "Stum",
-    "Send": "Sende"
+    "Send": "Sende",
+    "days-message-delete-two-weeks": "Dine meddelelser slettes automatisk efter 14 dage"
   },
   "CONFIRMATION": {
     "Delete-Room": "Er du sikker på at slette denne diskussion?"

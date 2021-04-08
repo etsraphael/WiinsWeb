@@ -93,7 +93,8 @@
     "Enable-notification": "Salli ilmoitukset",
     "Group-creation": "Ryhmän luominen",
     "Mute": "Mykistää",
-    "Send": "Lähettää"
+    "Send": "Lähettää",
+    "days-message-delete-two-weeks": "Viestisi poistetaan automaattisesti 14 päivän kuluttua"
   },
   "CONFIRMATION": {
     "Delete-Room": "Haluatko varmasti poistaa tämän keskustelun?"

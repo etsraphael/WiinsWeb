@@ -93,7 +93,8 @@
     "Enable-notification": "Gaitu jakinarazpenak",
     "Group-creation": "Taldearen sorrera",
     "Mute": "Mutua",
-    "Send": "Bidali"
+    "Send": "Bidali",
+    "days-message-delete-two-weeks": "Zure mezuak automatikoki ezabatzen dira 14 egunen buruan"
   },
   "CONFIRMATION": {
     "Delete-Room": "Ziur zaude eztabaida ezabatuko duzula?"

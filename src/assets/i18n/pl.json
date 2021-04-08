@@ -93,7 +93,8 @@
     "Enable-notification": "Włącz powiadomienia",
     "Group-creation": "Utworzenie grupy",
     "Mute": "Niemy",
-    "Send": "Wysłać"
+    "Send": "Wysłać",
+    "days-message-delete-two-weeks": "Twoje wiadomości są automatycznie usuwane po 14 dniach"
   },
   "CONFIRMATION": {
     "Delete-Room": "Czy na pewno chcesz usunąć tę dyskusję?"

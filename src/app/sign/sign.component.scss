@@ -17,7 +17,6 @@
   height: 8rem;
   top: 11%;
   left: 21%;
-  cursor: pointer;
 }
 
 .container-video-plyr {
@@ -33,6 +32,16 @@
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.message-ancitipate {
+  min-height: 22rem;
+  align-items: center;
+}
+
+.container-dots { 
+  position: absolute;
+  bottom: 1rem;
 }
 
 .animation-background-signin {
@@ -206,6 +215,8 @@
 .container-message-anticipate {
   background-color: rgba(0, 0, 0, .6);
   border-radius: 20px;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 .container-message-anticipate span {

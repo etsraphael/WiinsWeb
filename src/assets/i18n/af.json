@@ -93,7 +93,8 @@
     "Enable-notification": "Aktiveer kennisgewings",
     "Group-creation": "Skepping van die groep",
     "Mute": "Demp",
-    "Send": "Stuur"
+    "Send": "Stuur",
+    "days-message-delete-two-weeks": "U boodskappe word outomaties na 14 dae uitgevee"
   },
   "CONFIRMATION": {
     "Delete-Room": "Is u seker dat u hierdie bespreking sal uitvee?"

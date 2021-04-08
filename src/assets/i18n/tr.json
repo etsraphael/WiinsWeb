@@ -93,7 +93,8 @@
     "Enable-notification": "Bildirimleri etkinleştirin",
     "Group-creation": "Grubun oluşturulması",
     "Mute": "Sessiz",
-    "Send": "Gönder"
+    "Send": "Gönder",
+    "days-message-delete-two-weeks": "Mesajlarınız 14 gün sonra otomatik olarak silinir"
   },
   "CONFIRMATION": {
     "Delete-Room": "Bu tartışmayı silmek istediğinizden emin misiniz?"

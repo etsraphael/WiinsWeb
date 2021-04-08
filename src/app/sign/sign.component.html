@@ -85,20 +85,24 @@
         <!-- Function caroussel for early access / Don't disorganize the text in the <pre> tag -->
           <div class="container py-4">
             <div class="row">
-              <div class="col-10 mx-auto container-message-anticipate text-center py-4">
-                <div class="message-ancitipate">
+              <div class="col-10 mx-auto container-message-anticipate text-center">
+                <div class="message-ancitipate d-flex justify-content-center">
                   <div class="container">
-                    <div [ngSwitch]="displayingText">
-                      <div *ngSwitchCase="0"><span>{{'TEMPORARY.On-first-may-d'|translate}}</span></div>
-                      <div *ngSwitchCase="1"><span>{{'TEMPORARY.Why-this-early-access'|translate}}</span></div>
-                      <div *ngSwitchCase="2"><span>{{'TEMPORARY.W-does-early-access-offer'|translate}}</span></div>
-                      <div *ngSwitchCase="3"><span>{{'TEMPORARY.H-lg-ll-t-platform-be-in-early-access'|translate}}</span></div>
-                      <div *ngSwitchCase="4"><span>{{'TEMPORARY.H-ll-t-full-version-b-diff-frm-t-early-access-version'|translate}}</span></div>
-                      <div *ngSwitchCase="5"><span>{{'TEMPORARY.H-much-ll-t-full-version-cost-after-Early-Access'|translate}}</span></div>
-                      <div *ngSwitchCase="6"><span>{{'TEMPORARY.H-d-y-plan-to-involve-t-community-in-t-dev-process'|translate}}</span></div>
+                    <div class="row">
+                      <div class="col my-auto">
+                        <div [ngSwitch]="displayingText">
+                          <div *ngSwitchCase="0"><span>{{'TEMPORARY.On-first-may-d'|translate}}</span></div>
+                          <div *ngSwitchCase="1"><span>{{'TEMPORARY.Why-this-early-access'|translate}}</span></div>
+                          <div *ngSwitchCase="2"><span>{{'TEMPORARY.W-does-early-access-offer'|translate}}</span></div>
+                          <div *ngSwitchCase="3"><span>{{'TEMPORARY.H-lg-ll-t-platform-be-in-early-access'|translate}}</span></div>
+                          <div *ngSwitchCase="4"><span>{{'TEMPORARY.H-ll-t-full-version-b-diff-frm-t-early-access-version'|translate}}</span></div>
+                          <div *ngSwitchCase="5"><span>{{'TEMPORARY.H-much-ll-t-full-version-cost-after-Early-Access'|translate}}</span></div>
+                          <div *ngSwitchCase="6"><span>{{'TEMPORARY.H-d-y-plan-to-involve-t-community-in-t-dev-process'|translate}}</span></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="container my-3">
+                  <div class="container my-3 container-dots">
                     <div class="row d-flex justify-content-center">
                       <input 
                       type="radio"
@@ -110,6 +114,11 @@
 
 
                 </div>
+
+
+
+
+
               </div>
             </div>
           </div>

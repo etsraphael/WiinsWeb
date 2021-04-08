@@ -93,7 +93,8 @@
     "Enable-notification": "Aktivizo njoftimet",
     "Group-creation": "Krijimi i grupit",
     "Mute": "Hesht",
-    "Send": "Dërgoni"
+    "Send": "Dërgoni",
+    "days-message-delete-two-weeks": "Mesazhet tuaja fshihen automatikisht pas 14 ditësh"
   },
   "CONFIRMATION": {
     "Delete-Room": "A jeni i sigurt për të fshirë këtë diskutim?"

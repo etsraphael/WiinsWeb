@@ -51,7 +51,8 @@
     "Enable-notification": "通知を有効にします",
     "Group-creation": "グループの作成",
     "Mute": "ミュート",
-    "Send": "送る"
+    "Send": "送る",
+    "days-message-delete-two-weeks": "メッセージは14日後に自動的に削除されます"
   },
   "CONFIRMATION": {
     "Delete-Room": "このディスカッションを削除してもよろしいですか ？"
