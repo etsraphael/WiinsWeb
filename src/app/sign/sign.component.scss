@@ -35,7 +35,8 @@
 }
 
 .message-ancitipate {
-  min-height: 20rem;
+  min-height: 22rem;
+  align-items: center;
 }
 
 .container-dots { 
@@ -214,6 +215,8 @@
 .container-message-anticipate {
   background-color: rgba(0, 0, 0, .6);
   border-radius: 20px;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 .container-message-anticipate span {
