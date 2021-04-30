@@ -219,7 +219,17 @@
     "Save-in-phone": "फोन में सेव करें",
     "No": "नहीं न",
     "Yes": "हाँ",
-    "Block-t-user": "इस उपयोगकर्ता को ब्लॉक करें"
+    "Block-t-user": "इस उपयोगकर्ता को ब्लॉक करें",
+    "Message": "संदेश",
+    "Friend-request": "मित्र अनुरोध",
+    "feed": "फ्लक्स",
+    "tube": "ट्यूब",
+    "Music": "संगीत",
+    "Page": "पृष्ठ",
+    "Music-Project": "संगीत परियोजना",
+    "Group": "समूह",
+    "Earlier": "पूर्व",
+    "Notifications": "सूचनाएं"
   },
   "COUNTRY": {
     "AD": "एंडोरा",
@@ -579,7 +589,9 @@
     "Y-dont-have-a-conversation-yet": "आपके पास अभी तक कोई वार्तालाप नहीं है।",
     "Date-cannot-be-in-the-past": "रिलीज की तारीख अतीत में नहीं हो सकती",
     "You-cannot-add-yourself": "आप खुद को नहीं जोड़ सकते",
-    "T-content-does-not-exist-anymore": "यह सामग्री अब मौजूद नहीं है"
+    "T-content-does-not-exist-anymore": "यह सामग्री अब मौजूद नहीं है",
+    "T-publication-no-longer-exists": "यह प्रकाशन अब मौजूद नहीं है",
+    "Could-not-play-video": "वीडियो नहीं चला सका"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "फोटो प्राप्त हुआ",
@@ -881,10 +893,10 @@
       "Yr-profil-is-currently-being-checked-D": "आपकी प्रोफ़ाइल वर्तमान में जाँची जा रही है। हम ईमेल द्वारा 48 घंटे के भीतर आपसे संपर्क करेंगे।",
       "Verification": "सत्यापन",
       "Pl-s-t-docs-a-complet-t-form-below": "कृपया आवश्यक दस्तावेज भेजें और नीचे दिए गए फॉर्म को पूरा करें।",
-      "Upload-yr-password-id-identity-or-driver-license": "अपना पासवर्ड, आईडी पहचान या चालक लाइसेंस अपलोड करें।",
       "Upload-a-photo-holding-t-ID-D": "आज की तारीख के साथ कागज की एक शीट के साथ आईडी रखने वाली एक तस्वीर अपलोड करें और उस पर \"वाईन्स\" लिखता है।",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "मैं सहमत हूं कि मेरे खाते की जांच के लिए मेरे डेटा का उपयोग किया जा सकता है।",
-      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "यदि यह राष्ट्रीय आईडी कार्ड है (तो केवल राष्ट्रीय कार्ड के लिए) कार्ड के पीछे की ओर अपलोड करना सुनिश्चित करें"
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "यदि यह राष्ट्रीय आईडी कार्ड है (तो केवल राष्ट्रीय कार्ड के लिए) कार्ड के पीछे की ओर अपलोड करना सुनिश्चित करें",
+      "Upload-yr-passport-id-identity-or-driver-license": "अपना पासपोर्ट, आईडी पहचान या चालक लाइसेंस अपलोड करें।"
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
@@ -995,7 +1007,9 @@
     "T-content-has-been-reported": "यह सामग्री बताई गई है। हमारे मॉडरेटर इसकी समीक्षा के लिए 24 घंटे की देरी में एक नज़र डालेंगे। यदि यह समुदाय के नियमों का सम्मान नहीं करता है तो एक अनुमोदन लागू किया जाएगा।",
     "T-user-has-been-blocked-D": "यह उपयोगकर्ता आपके खाते से अवरोधित कर दिया गया है। इस प्रोफ़ाइल की कोई भी सामग्री आपके खाते से दिखाई नहीं देगी।",
     "W-is-t-reason-to-report-t-post": "इस पोस्ट की रिपोर्ट करने का क्या कारण है?",
-    "W-is-t-reason-to-report-t-post-D": "आपकी रिपोर्ट गुमनाम है। कृपया नैतिकतावादियों की मदद के लिए एक श्रेणी चुनें"
+    "W-is-t-reason-to-report-t-post-D": "आपकी रिपोर्ट गुमनाम है। कृपया नैतिकतावादियों की मदद के लिए एक श्रेणी चुनें",
+    "A-y-s-to-unfollow-this-profile": "क्या आप इस प्रोफ़ाइल को अनफ़ॉलो करना सुनिश्चित कर रहे हैं?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "क्या आप अपनी मित्र सूची में इस मित्र को हटाना सुनिश्चित कर रहे हैं?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "चेतावनी. सुनिश्चित करें कि आपके पास सही पता है"
