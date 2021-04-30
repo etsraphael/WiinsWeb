@@ -1,100 +1,8 @@
   @import 'src/assets/scss/component/login-register.scss';
 
-.container-img {
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .container-donation {
   display: inline-block;
-}
-
-.container-access-btn {
-  position: absolute;
-  width: 8rem;
-  height: 8rem;
-  top: 11%;
-  left: 21%;
-}
-
-.container-video-plyr {
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.radio-caroussel {
-  cursor: pointer;
-}
-
-.sub-title {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.message-ancitipate {
-  min-height: 22rem;
-  align-items: center;
-}
-
-.container-dots { 
-  position: absolute;
-  bottom: 1rem;
-}
-
-.animation-background-signin {
-  max-width: 100%;
-  max-height: 200%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: animate 60s ease-in-out infinite;
-  z-index: 1;
-}
-
-/* Url update on the server ✓ */
-.preload-images {
-    background: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png') no-repeat -9999px -9999px;
-}
-
-/* Url update on the server ✓ */
-@keyframes animate{
-0%,100%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg');
-}
-11%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png');
-}
-22%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg');
-}
-33%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg');
-}
-44%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg');
-}
-55%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg');
-}
-66%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg');
-}
-77%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png');
-}
-88%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png');
-}
 }
 
 .setting-top-signin {
@@ -106,81 +14,9 @@
   backdrop-filter: blur(5px);
 }
 
-/* Setting (body) for the early access */
-.setting-top-countdown {
-  background-color: rgba(255, 255, 255, 0.63);
-  overflow: hidden;
-}
-
 .term-of-use {
   color: black;
   padding-right: 10px;
-}
-
-/* Setting (box countdown) for the early access */
-.container-countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 135px;
-}
-
-/* Setting (countdown) for the early access */
-.countdown {
-  display: flex;
-  position: relative;
-  top: -15px;
-}
-
-.countdown div {
-  position: relative;
-  bottom: -20px;
-  width: 80px;
-  height: 80px;
-  line-height: 55px;
-  text-align: center;
-  background:#08080885;
-  color: #fff;
-  margin: 0 15px;
-  font-size: 3em;
-  font-weight: 500;
-  border-radius: 10px;
-}
-
-.countdown div:before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  background: #08080885;
-  color: #fff;
-  font-size: 0.45em;
-  line-height: 25px;
-  font-weight: 300;
-  border-top: 1px solid #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-/* Section you need for the script */
-.countdown #day:before {
-  content: 'Days';
-}
-
-.countdown #hour:before {
-  content: 'Hours';
-}
-
-.countdown #minute:before {
-  content: 'Minutes';
-}
-
-.countdown #second:before {
-  content: 'Seconds';
 }
 
 .login-register-box {
@@ -189,7 +25,6 @@
   border-radius: 20px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  top: -50px;
   transition: 0.5s;
 }
 
@@ -197,39 +32,9 @@
   transform: translateY(-10px);
 }
 
-.background-right {
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.background {
+  background: linear-gradient(to right, #855beb, #5576df);
   width: 100%;
-}
-
-/* Background right for the early access */
-.background-right-anticipate {
-  background-repeat: no-repeat;
-  width: 100%;
-  background: url(https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png);
-  background-size: 100%;
-}
-
-.container-message-anticipate {
-  background-color: rgba(0, 0, 0, .6);
-  border-radius: 20px;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-}
-
-.container-message-anticipate span {
-  font-size: 20px;
-  color: white;
-  line-height: 2rem;
-  text-align: center;
-  overflow: hidden;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-span.mille-premiers {
-  text-decoration: underline;
 }
 
 .read-more {
@@ -246,14 +51,6 @@ span.mille-premiers {
   color: black;
 }
 
-/* Video for the early access */
-.video-anticipate {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Logo gift for the early access */
 .container-logo-don {
   position: relative;
@@ -263,4 +60,8 @@ span.mille-premiers {
 img.logo-crypto, img.logo-paypal {
   width: 10rem;
   height: 10rem;
+}
+
+.wiins-logo {
+ position: relative;
 }
