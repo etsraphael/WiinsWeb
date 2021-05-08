@@ -53,58 +53,6 @@
   z-index: 1;
 }
 
-/* Url update on the server ✓ */
-.preload-images {
-    background: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png') no-repeat -9999px -9999px,
-    url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png') no-repeat -9999px -9999px;
-}
-
-/* Url update on the server ✓ */
-@keyframes animate{
-0%,100%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img1.jpg');
-}
-11%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img2.png');
-}
-22%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img4.jpg');
-}
-33%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img5.jpg');
-}
-44%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img6.jpg');
-}
-55%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img7.jpg');
-}
-66%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img8.jpg');
-}
-77%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img9.png');
-}
-88%{
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/img10.png');
-}
-}
-
-.setting-top-signin {
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.63);
-  overflow: hidden;
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-}
 
 /* Setting (body) for the early access */
 .setting-top-countdown {
@@ -193,23 +141,21 @@
   transition: 0.5s;
 }
 
-.login-register-box:hover {
-  transform: translateY(-10px);
+.container-footer {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  height: 4rem;
 }
 
-.background-right {
-  background-image: url('https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+.btn-term-of-use {
+  color: white;
 }
 
-/* Background right for the early access */
-.background-right-anticipate {
-  background-repeat: no-repeat;
-  width: 100%;
-  background: url(https://eps-file-default.s3.eu-west-3.amazonaws.com/bckgrnd0.png);
-  background-size: 100%;
+.bg-sign {
+  background: #FC5C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 .container-message-anticipate {
