@@ -769,7 +769,7 @@
       "Hàng hóa hoặc dịch vụ bất hợp pháp",
       "Yêu cầu độ tuổi thấp hơn",
       "Bạo lực ẩn ý / rõ ràng",
-      "Tài khoản giả",
+      "Chiếm đoạt tài sản/Bản quyền",
       "Tự tử hoặc tự làm hại bản thân",
       "Quấy rối và quyền riêng tư"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Mọi mô tả, hình ảnh hoặc văn bản, về các hành vi tình dục. Ảnh khỏa thân chỉ được phép nếu các thuộc tính tình dục, chính hoặc phụ, bị ẩn.",
-          "Không cho phép hình ảnh ẩn \"có thể nhìn thấy được (hình ảnh cương cứng, quần áo ướt với núm vú lộ rõ).",
-          "Hình ảnh trẻ em (được định nghĩa là \"có thể đứng\") khỏa thân hoặc mặc đồ lót đều bị cấm.",
-          "Cho phép chụp ảnh các bà mẹ đang cho con bú miễn là không nhìn thấy núm vú hoặc không tiết lộ thêm về giải phẫu của người đó.",
-          "Việc xuất bản các tác phẩm nghệ thuật, cho dù \"vẽ tay, kỹ thuật số hay thực\" thể hiện hoạt động tình dục rõ ràng và bất kỳ hình thức hình ảnh hoặc video nào liên quan đến nội dung khiêu dâm đều bị cấm.",
-          "Nội dung văn bản, hình ảnh, âm thanh hoặc video về các hành vi tình dục gây sốc nhằm mục đích kích dục.",
-          "Nội dung tình dục liên quan đến trẻ vị thành niên, các mối quan hệ không đồng thuận hoặc bất kỳ hành động đáng chê trách nào, dù là thực hay mô phỏng."
+          "Một số mô tả, hình ảnh hoặc văn bản nhất định, cho dù \"vẽ tay, kỹ thuật số hay thật\" về các hành vi tình dục rõ ràng cũng như bất kỳ hình thức hình ảnh hoặc video nào liên quan đến nội dung khiêu dâm hoặc liên quan đến các hành vi tình dục mô phỏng hoặc không được kiểm soát, đều bị cấm. Ảnh khoả thân chỉ được phép nếu các thuộc tính tình dục chính và phụ bị ẩn hoặc mờ ngoại trừ các hành động \"tự nhiên\" như cho con bú hoặc trong bối cảnh có nguyên nhân để bảo vệ hoặc một thông điệp mạnh mẽ không phù hợp với các trường hợp kiểm duyệt (bạo lực, khiêu dâm, v.v.)",
+          "Các bộ phận thân mật \"ẩn\" nhưng vẫn có thể nhìn thấy (cương cứng, áo thun ướt hoàn toàn trong suốt) không được phép, ngoại trừ núm vú bán rõ ràng (đồ lót).",
+          "Hình ảnh trẻ em khỏa thân hoặc trẻ em mặc đồ lót không được phép. ",
+          "Nội dung tình dục liên quan đến trẻ vị thành niên, các mối quan hệ không đồng thuận hoặc bất kỳ hành động đáng chê trách nào, dù là thực hay mô phỏng.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Tài khoản sử dụng biệt hiệu hoặc đại diện cho những người hoặc tổ chức mà họ không phải là."
+          "Tài khoản sử dụng bút danh hoặc đại diện cho những người hoặc tổ chức mà họ không phải là.",
+          "Tài khoản chiếm đoạt tài sản của người khác và bồi thường của họ"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Việc tạo một \"hồ sơ giả\" dựa trên họ và tên của một người hiện có ...",
-          "Phổ biến thông tin \"công khai\" về người dùng mà không có sự cho phép của người đó và bất kỳ thông tin nào khác đã được sửa đổi hoặc chuyển đổi."
+          "Phổ biến thông tin \"công khai\" về người dùng mà không có sự cho phép của họ và bất kỳ thông tin nào khác đã được sửa đổi hoặc thay đổi.",
+          null
         ]
       ],
       "Title-Level": [

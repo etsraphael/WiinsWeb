@@ -769,7 +769,7 @@
       "Onwettige goedere of dienste",
       "Laer ouderdomsvereiste",
       "Implisiete / eksplisiete geweld",
-      "Valse rekening",
+      "Usurpation of property/Copyright",
       "Selfmoord of selfskending",
       "Teistering en privaatheid"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Enige beskrywing, fotografies of geskrewe, van seksuele dade. Naaktheid word slegs toegelaat as die seksuele eienskappe, primêr of sekondêr, verborge is.",
-          "Versteekte \"beelde wat wel sigbaar is (oprigting, nat klere met sigbare tepel) word nie toegelaat nie.",
-          "Beelde van kinders (gedefinieer as 'in staat om te staan') is naak of in onderklere verbode.",
-          "Foto's van moeders wat borsvoed, word toegelaat solank die tepels nie sigbaar is nie of die anatomie van die persoon nie verder bekend gemaak word nie.",
-          "Die publisering van kunswerke, hetsy \"handgetekend, digitaal of werklik\" wat eksplisiete seksuele aktiwiteite voorstel, en enige vorm of beeld of video wat verband hou met pornografie, is verbode.",
-          "Tekste, beelde, klank- of video-inhoud van skokkende seksuele dade wat bedoel is om opwinding te wek.",
-          "Seksuele inhoud waarby minderjariges betrokke is, nie-toestemmende verhoudings of enige laakbare daad, hetsy werklik of gesimuleer."
+          "Sekere beskrywings, fotografiese of geskrewe, hetsy \"handgewyse, digitale of werklike\" eksplisiete seksuele dade asook enige vorm van beeld of video wat verband hou met pornografie of wat gesimuleerde of ongesimuleerde seksuele dade behels, word verbied. Naaktheid word slegs toegelaat as die primêre en sekondêre seksuele eienskappe weggesteek of vervaag word, behalwe vir \"natuurlike\" aksies soos borsvoeding of in die konteks van 'n oorsaak om te verdedig of 'n sterk boodskap wat nie pas in die gevalle van moderering (geweld, pornografie, ens.)",
+          "Intieme dele \"weggesteek\" maar nogtans sigbaar (oprigting, nat t-hemp heeltemal deursigtig) word nie toegelaat nie, met die uitsondering van semi-oënskynlike tepels (onderklere).",
+          "Beelde van naakte kinders of kinders in onderklere word nie toegelaat nie. ",
+          "Seksuele inhoud waarby minderjariges betrokke is, nie-toestemmende verhoudings of enige laakbare daad, hetsy werklik of gesimuleer.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Rekeninge wat die bynaam gebruik of mense of organisasies verteenwoordig wat hulle nie is nie."
+          "Rekeninge wat skuilname gebruik of mense of organisasies verteenwoordig wat hulle nie is nie.",
+          "Rekeninge wat die eiendom van ander en hul vergoeding bewillig"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Die skep van 'n \"vals profiel\" gebaseer op die voor- en vannaam van 'n bestaande persoon ...",
-          "Versprei \"publieke\" inligting oor 'n gebruiker sonder sy of haar toestemming en enige ander inligting wat aangepas of verander is."
+          "Versprei \"openbare\" inligting oor 'n gebruiker sonder sy of haar toestemming en enige ander inligting wat verander of verander is.",
+          null
         ]
       ],
       "Title-Level": [

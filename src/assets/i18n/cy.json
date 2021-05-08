@@ -769,7 +769,7 @@
       "Nwyddau neu wasanaethau anghyfreithlon",
       "Gofyniad oedran is",
       "Trais ymhlyg / eglur",
-      "Cyfrif ffug",
+      "Usurpation eiddo/Hawlfraint",
       "Hunanladdiad neu hunan-niweidio",
       "Aflonyddu a phreifatrwydd"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Unrhyw ddisgrifiad, ffotograffig neu ysgrifenedig, o weithredoedd rhywiol. Caniateir noethni dim ond os yw'r priodoleddau rhywiol, cynradd neu eilaidd, wedi'u cuddio.",
-          "Ni chaniateir delweddau cudd \"sydd i'w gweld (codi, dillad gwlyb gyda deth gweladwy).",
-          "Gwaherddir delweddau o blant (a ddiffinnir fel \"gallu sefyll\") yn noeth neu mewn dillad isaf.",
-          "Caniateir lluniau o famau sy'n bwydo ar y fron cyn belled nad yw'r tethau'n weladwy neu na ddatgelir anatomeg yr unigolyn ymhellach.",
-          "Gwaherddir cyhoeddi gweithiau celf, p'un a ydynt wedi'u \"tynnu â llaw, yn ddigidol neu'n real\" sy'n cynrychioli gweithgaredd rhywiol penodol ac unrhyw fath o ddelwedd neu fideo sy'n gysylltiedig â phornograffi.",
-          "Testunau, delweddau, cynnwys sain neu fideo gweithredoedd rhywiol ysgytwol y bwriedir iddynt gyffroi.",
-          "Cynnwys rhywiol sy'n cynnwys plant dan oed, perthnasoedd anghydsyniol, neu unrhyw weithred ddealladwy, boed yn real neu'n efelychiedig."
+          "Gwaherddir rhai disgrifiadau, ffotograffig neu ysgrifenedig, boed yn \"dynnu llaw, yn ddigidol neu'n real\" o weithredoedd rhywiol penodol yn ogystal ag unrhyw fath o ddelwedd neu fideo sy'n gysylltiedig â phornograffi neu sy'n cynnwys gweithredoedd rhywiol ffug neu heb eu efelychu. Dim ond os yw'r priodoleddau rhywiol sylfaenol ac eilaidd yn guddiedig neu'n aneglur ac eithrio gweithredoedd \"naturiol\" fel bwydo ar y fron neu yng nghyd-destun achos i amddiffyn neu neges gref nad yw'n cyd-fynd ag achosion cymedroli (trais, pornograffi ac ati. ...)",
+          "Ni chaniateir rhannau agos \"cudd\" ond sydd serch hynny'n weladwy (codi, crys-t gwlyb yn gwbl dryloyw), ac eithrio tethau lled-ymddangosiadol (ieithydd).",
+          "Ni chaniateir delweddau o blant noeth neu blant mewn dillad isaf. ",
+          "Cynnwys rhywiol sy'n cynnwys plant dan oed, perthnasoedd anghydsyniol, neu unrhyw weithred ddealladwy, boed yn real neu'n efelychiedig.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Cyfrifon sy'n defnyddio'r llysenw neu'n cynrychioli pobl neu sefydliadau nad ydyn nhw."
+          "Cyfrifon sy'n defnyddio pseudonyms neu'n cynrychioli pobl neu sefydliadau nad ydynt.",
+          "Cyfrifon sy'n briodol i eiddo pobl eraill a'u digollediad"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Creu \"proffil ffug\" yn seiliedig ar enw cyntaf ac enw olaf person sy'n bodoli ...",
-          "Lledaenu gwybodaeth \"gyhoeddus\" am ddefnyddiwr heb ei ganiatâd ef neu hi ac unrhyw wybodaeth arall sydd wedi'i haddasu neu ei thrawsnewid."
+          "Lledaenu gwybodaeth \"gyhoeddus\" am ddefnyddiwr heb ei ganiatâd ac unrhyw wybodaeth arall sydd wedi'i haddasu neu ei newid.",
+          null
         ]
       ],
       "Title-Level": [

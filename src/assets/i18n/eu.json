@@ -769,7 +769,7 @@
       "Legez kanpoko ondasunak edo zerbitzuak",
       "Adin baldintza txikiagoa",
       "Indarkeria inplizitua / esplizitua",
-      "Gezurrezko kontua",
+      "Jabetzaren usurpazioa / Copyright",
       "Suizidioa edo autokaltea",
       "Jazarpena eta pribatutasuna"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Sexu ekintzen edozein deskribapen, argazkiz edo idatziz. Biluztasuna sexu atributuak, lehen mailakoak edo bigarren mailakoak, ezkutatuta badaude soilik onartzen da.",
-          "Ez dira onartzen hala ere ikusgai dauden ezkutuko irudiak (muntaketa, arropa bustia titia ikusgai).",
-          "Debekatuta daude biluzik edo barruko arropekin haurren irudiak (\"zutik egoteko gai\" gisa definituak).",
-          "Edoskitzen ari diren amei argazkiak onartzen zaizkie, titiak ikusten ez direnean edo pertsonaren anatomia gehiago agerian ez badago.",
-          "Debekatuta daude artelanak argitaratzea, sexu jarduera esplizitua eta \"pornografiari lotutako edozein irudi edo bideo\" adierazten duten \"eskuz marraztutakoak, digitalak edo benetakoak\".",
-          "Piztea eragitea helburu duten sexu ekintza hunkigarrien testu, irudi, audio edo bideo edukia.",
-          "Adingabeen sexu edukia, adostasunik gabeko harremanak edo egintza salagarria den edozein, benetakoa edo simulatua."
+          "Debekatuta daude zenbait deskribapen, argazki edo idatziz, sexu-ekintza esplizituen \"eskuz egindakoak, digitalak edo benetakoak\", bai eta pornografiari lotutako edo simulatutako edo simulatu gabeko sexu-ekintzak dakartzan edozein irudi edo bideo mota ere. Biluztasuna baimentzen da lehen eta bigarren mailako sexu atributuak ezkutatuta edo lausotuta badaude, hala nola, edoskitzea edo defendatzeko kausa baten testuinguruan edo moderazio kasuetan (indarkeria, pornografia) egokitzen ez den mezu sendoa izan ezik. , etab ...)",
+          "Ez daude baimenduta \"ezkutatuta\" baina hala ere ikusgai dauden atal pribatuak (muntaketa, kamiseta bustia guztiz gardena), titi erdi ikusgarriak (lentzeria) izan ezik.",
+          "অন্তর্বাসে উলঙ্গ বাচ্চাদের বাছাই করার অনুমতি নেই।",
+          "Adingabeen sexu edukia, adostasunik gabeko harremanak edo egintza salagarria den edozein, benetakoa edo simulatua.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Ezizena erabiltzen duten edo ez diren pertsonak edo erakundeak ordezkatzen dituzten kontuak."
+          "Pseudonimoak erabiltzen dituzten edo ez diren pertsonak edo erakundeak ordezkatzen dituzten kontuak.",
+          "Besteen ondasunak eta horien kalte-ordaina egokitzen dituzten kontuak"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Lehendik zegoen pertsona baten izen-abizenetan oinarritutako \"profil faltsua\" sortzea ...",
-          "Erabiltzaile bati buruzko informazio \"publikoa\" zabaltzea bere baimenik gabe eta aldatu edo eraldatutako beste edozein informazio."
+          "Erabiltzaile bati buruzko informazio \"publikoa\" zabaltzea bere baimenik gabe eta aldatu edo aldatu den beste edozein informazio.",
+          null
         ]
       ],
       "Title-Level": [

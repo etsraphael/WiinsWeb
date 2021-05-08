@@ -769,7 +769,7 @@
       "Neteisėtos prekės ar paslaugos",
       "Mažesnio amžiaus reikalavimas",
       "Numanomas / aiškus smurtas",
-      "Netikra paskyra",
+      "Turto uzurpavimas / Autorių teisės",
       "Savižudybė ar savęs žalojimas",
       "Priekabiavimas ir privatumas"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Bet koks seksualinių veiksmų aprašymas, fotografuojamas ar parašytas. Nuogybės leidžiamos tik tuo atveju, jei seksualiniai požymiai, pirminiai ar antriniai, yra paslėpti.",
-          "Vis dėlto matomi paslėpti vaizdai (erekcija, šlapi drabužiai su matomu speneliu) neleidžiami.",
-          "Vaikų (apibrėžtų kaip „galinčių stovėti“) nuogų ar su apatiniais drabužiais atvaizdai yra draudžiami.",
-          "Žindančių motinų nuotraukos leidžiamos tol, kol spenelių nematyti arba asmens anatomija toliau neatskleidžiama.",
-          "Draudžiama skelbti „ranka pieštus, skaitmeninius ar tikrus“ meno kūrinius, vaizduojančius aiškų seksualinį gyvenimą, ir bet kokią su pornografija susijusią vaizdo ar vaizdo formą.",
-          "Šokiruojančių seksualinių aktų, skirtų sužadinti, tekstai, vaizdai, garso ar vaizdo turinys.",
-          "Seksualinis turinys, susijęs su nepilnamečiais, santykiai be sutarimo ar bet koks smerktinas veiksmas, realus ar imituotas."
+          "Draudžiami tam tikri aiškiai parašytų seksualinių veiksmų aprašymai, fotografiniai ar rašytiniai, \"ranka piešti, skaitmeniniai ar tikri\", taip pat bet kokios formos vaizdai ar vaizdo įrašai, susiję su pornografija arba susiję su imituojamais ar nesimais seksualiniais veiksmais. Nuogumas leidžiamas tik tuo atveju, jei pirminiai ir antriniai seksualiniai požymiai yra paslėpti arba neryškūs, išskyrus \"natūralius\" veiksmus, pvz., Maitinimą krūtimi arba priežasties ginti kontekste, arba stiprią žinutę, kuri netinka saikingai (smurtas, pornografija ir tt ...)",
+          "Intymios dalys \"paslėptos\", bet vis tiek matomos (erekcija, šlapi marškinėliai visiškai skaidrūs), išskyrus pusiau matomus spenelius (apatinis trikotažas).",
+          "Nuogų vaikų ar vaikų su apatiniais drabužiais vaizdai neleidžiami. ",
+          "Seksualinis turinys, susijęs su nepilnamečiais, santykiai be sutarimo ar bet koks smerktinas veiksmas, realus ar imituotas.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Paskyros, naudojančios slapyvardį arba atstovaujančios žmonėms ar organizacijoms, kurios jie nėra."
+          "Abonementai, kurie naudoja slapyvardžius arba atstovauja žmonėms ar organizacijoms, kurių jie nėra.",
+          "Sąskaitos, atitinkančios kitų asmenų turtą ir jų kompensaciją"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "„Netikro profilio“ sukūrimas pagal esamo asmens vardą ir pavardę ...",
-          "Skleiskite „viešą“ informaciją apie vartotoją be jo leidimo ir visą kitą informaciją, kuri buvo modifikuota ar transformuota."
+          "Skleisti \"viešą\" informaciją apie naudotoją be jo leidimo ir bet kokią kitą informaciją, kuri buvo pakeista ar pakeista.",
+          null
         ]
       ],
       "Title-Level": [

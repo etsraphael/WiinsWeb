@@ -769,7 +769,7 @@
       "Ólögleg vara eða þjónusta",
       "Lægri aldursþörf",
       "Óbeint / afskekkt ofbeldi",
-      "Fölsuð reikningur",
+      "Usurpation eign / höfundarréttur",
       "Sjálfsmorð eða sjálfsskaði",
       "Einelti og næði"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Sérhver lýsing, ljósmynd eða skrifuð, af kynferðislegum athöfnum. Nekt er aðeins leyfð ef kynferðislegir eiginleikar, aðal eða aukaatriði, eru falin.",
-          "Faldar \"myndir sem eru þó sýnilegar (reisn, blautur fatnaður með sýnilegri geirvörtu) eru ekki leyfð.",
-          "Myndir af börnum (skilgreindar sem „geta staðið“) naknar eða í nærbuxum eru bannaðar.",
-          "Myndir af mjólkandi mæðrum eru leyfðar svo framarlega sem geirvörturnar sjást ekki eða líffærafræði viðkomandi kemur ekki frekar í ljós.",
-          "Útgáfa á listaverkum, hvort sem það er „handteiknað, stafrænt eða raunverulegt“ sem táknar skýr kynferðislega virkni og hvers konar mynd eða myndband sem tengist klám er bannað.",
-          "Textar, myndir, hljóð- eða myndefni af átakanlegum kynferðislegum athöfnum sem ætlað er að vekja upp vakningu.",
-          "Kynferðislegt efni sem felur í sér ólögráða börn, sambönd sem ekki eru samhljóða eða einhver ámælisverður verknaður, hvort sem er raunverulegur eða hermdur."
+          "Ákveðnar lýsingar, ljósmyndun eða skrifaðar, hvort sem um er að ræða \"handteiknaðar, stafrænar eða raunverulegar\" af skýrum kynferðislegum athöfnum sem og hvers konar mynd eða myndskeiðum sem tengjast klámi eða sem felur í sér hermdar eða óeinangraðar kynferðislegar athafnir, eru bannaðar. Nekt er aðeins heimil ef aðal- og aukakynlífseiginleikar eru faldir eða óskýrir nema fyrir \"náttúrulegar\" aðgerðir eins og brjóstagjöf eða í samhengi við málstað til varnar eða sterk skilaboð sem ekki passa í þeim tilvikum sem hófsemi (ofbeldi, klám o.s.frv. ...)",
+          "Nánir hlutar \"falinn\" en engu að síður sýnilegir (stinningu, blautur bolur algerlega gegnsæ) eru ekki leyfðir, að undanskildum hálf-augljós geirvörtur (undirföt).",
+          "Myndir af naktum börnum eða börnum í nærumhverfi eru ekki leyfðar. ",
+          "Kynferðislegt efni sem felur í sér ólögráða börn, sambönd sem ekki eru samhljóða eða einhver ámælisverður verknaður, hvort sem er raunverulegur eða hermdur.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Reikningar sem nota gælunafnið eða tákna fólk eða samtök sem þeir eru ekki."
+          "Reikningar sem nota dulnefni eða tákna fólk eða stofnanir sem það er ekki.",
+          "Reikningar sem eiga við eignir annarra og bætur þeirra"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Búa til „fölsuð prófíl“ byggt á fornafni og eftirnafn núverandi manns ...",
-          "Dreifðu „opinberum“ upplýsingum um notanda án hans leyfis og annarra upplýsinga sem hefur verið breytt eða umbreytt."
+          "Miðla \"opinberum\" upplýsingum um notanda án leyfis hans og annarra upplýsinga sem hefur verið breytt eða þeim breytt.",
+          null
         ]
       ],
       "Title-Level": [

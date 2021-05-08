@@ -726,7 +726,7 @@
       "4": "Illegale Waren oder Dienstleistungen",
       "5": "Niedrigere Altersanforderung",
       "6": "Implizite / explizite Gewalt",
-      "7": "Gefälschtes Konto",
+      "7": "Usurpation von Eigentum/Copyright",
       "8": "Selbstmord oder Selbstverletzung",
       "9": "Belästigung und Privatsphäre"
     },
@@ -734,13 +734,10 @@
       "Confirmation-message": "Vielen Dank, dass Sie uns darüber informiert haben. Ihre Kommentare sind wichtig, um unsere Gemeinschaft von Wiinser zu schützen.  Wenn Sie das Profil eines Benutzers oder einer Seite gepostet haben, aber wir glauben, dass es nicht gegen die Community-Regeln verstößt, haben Sie andere Mittel zur Verfügung, um Ihre Erfahrung auf Wiin es auf die bestmögliche Weise zu verwalten.",
       "Descriptions": {
         "1": {
-          "1": "Jede Beschreibung, ob fotografisch oder schriftlich, sexuelle Handlungen. Nacktheit ist nur zulässig, wenn die primären oder sekundären sexuellen Attribute ausgeblendet sind.",
-          "2": "Versteckte\" Bilder, die jedoch sichtbar sind (Erektion, nasse Kleidung mit sichtbarer Brustwarze) sind nicht erlaubt. ",
-          "3": "Bilder von Kindern (definiert als \"stehen können\") nackt oder in Unterwäsche sind verboten. ",
-          "4": "Bilder von stillenden Müttern sind erlaubt, solange die Brustwarzen nicht sichtbar sind oder die Anatomie der Person nicht weiter enthüllt wird.",
-          "5": "Die Veröffentlichung von Kunstwerken, ob \"handgezeichnet, digital oder real\", die explizite sexuelle Aktivitäten darstellen, und jede Form von Bildern oder Videos im Zusammenhang mit Pornografie sind verboten.",
-          "6": "Texte, Bilder, Audio- oder Videoinhalte schockierender sexueller Handlungen sollen Erregung wecken.",
-          "7": "Sexuelle Inhalte, die Minderjährige, nicht einvernehmliche Beziehungen oder jede verwerfliche Handlung betreffen, ob real oder simuliert."
+          "1": "Bestimmte Beschreibungen, fotografische oder schriftliche, ob \"handgezeichnete, digitale oder reale\" explizite sexuelle Handlungen sowie jede Form von Bild oder Video im Zusammenhang mit Pornografie oder mit simulierten oder nicht simulierten sexuellen Handlungen, sind verboten. Nacktheit ist nur zulässig, wenn die primären und sekundären sexuellen Eigenschaften verborgen oder verschwommen sind, mit Ausnahme von \"natürlichen\" Handlungen wie Stillen oder im Zusammenhang mit einer Sache zu verteidigen oder eine starke Botschaft, die nicht in die Fälle von Mäßigung passt (Gewalt, Pornografie, etc.))",
+          "2": "Die \"versteckten\", aber dennoch sichtbaren Intimbereiche (Erektion, völlig durchsichtiges nasses T-Shirt) sind mit Ausnahme der halbsichtigen Brustwarzen (Dessous) nicht erlaubt.",
+          "3": "Bilder von nackten Kindern oder Kindern in Unterwäsche sind nicht erlaubt. ",
+          "4": "Sexuelle Inhalte, die Minderjährige, nicht einvernehmliche Beziehungen oder jede verwerfliche Handlung betreffen, ob real oder simuliert."
         },
         "2": {
           "1": "Fotos oder Videos, die hasserfüllte Symbole oder Sprache enthalten.",
@@ -771,15 +768,15 @@
           "3": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
         },
         "7": {
-          "1": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
+          "1": "Konten, die Pseudonyme verwenden oder Personen oder Organisationen repräsentieren, die es nicht sind.",
+          "2": "Konten, die das Eigentum anderer und deren Entschädigung aneignen"
         },
         "8": {
           "1": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
           "2": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
         },
         "9": {
-          "1": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern",
-          "2": "Die Akzeptanz von Gewalt als Mittel, um Dinge zu verändern"
+          "1": "Verbreiten Sie \"öffentliche\" Informationen über einen Benutzer ohne seine Zustimmung und alle anderen Informationen, die geändert oder geändert wurden."
         }
       },
       "Title-Level": {

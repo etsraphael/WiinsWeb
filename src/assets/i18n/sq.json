@@ -769,7 +769,7 @@
       "Mallrat ose shërbimet e paligjshme",
       "Kërkesa për moshë më të ulët",
       "Dhuna implicite / eksplicite",
-      "Llogari e rreme",
+      "Uzurpimi i pronës / E drejta e autorit",
       "Vetëvrasje ose vetë-dëmtim",
       "Ngacmimi dhe privatësia"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Çdo përshkrim, fotografik ose i shkruar, i veprimeve seksuale. Lakuriqësia lejohet vetëm nëse atributet seksuale, parësore ose dytësore, janë të fshehura.",
-          "Imazhet e fshehura \"që sidoqoftë janë të dukshme (ngritje, veshje të lagura me dalë të dukshme) nuk lejohen.",
-          "Imazhet e fëmijëve (të përcaktuar si \"të aftë të qëndrojnë\") të zhveshur ose në të brendshme janë të ndaluara.",
-          "Fotografitë e nënave që ushqejnë me gji lejohen për sa kohë që thithkat nuk janë të dukshme ose anatomia e personit nuk zbulohet më tej.",
-          "Ndalohet botimi i veprave të artit, qofshin \"të vizatuara me dorë, dixhitale ose reale\" që përfaqësojnë aktivitet të qartë seksual dhe çdo formë e imazhit ose videos në lidhje me pornografinë.",
-          "Tekste, imazhe, përmbajtje audio ose video të veprimeve tronditëse seksuale që synojnë të ngjallin zgjimin.",
-          "Përmbajtja seksuale që përfshin të mitur, marrëdhënie jo-konsensuale, ose ndonjë akt të dënueshëm, qoftë i vërtetë apo i simuluar."
+          "Ndalohen përshkrime të caktuara, fotografike ose të shkruara, qofshin \"të vizatuara me dorë, dixhitale ose reale\" të veprimeve të qarta seksuale, si dhe çdo formë e imazhit ose videos që lidhet me pornografinë ose që përfshin akte seksuale të simuluara ose jo të simuluara. Lakuriqësia lejohet vetëm nëse atributet kryesore dhe sekondare seksuale janë të fshehura ose të paqarta, përveç veprimeve \"natyrore\" të tilla si ushqyerja me gji ose në kontekstin e një kauze për të mbrojtur ose një mesazhi të fortë që nuk përshtatet në rastet e moderimit (dhunë, pornografi , etj ...)",
+          "Pjesët private \"të fshehura\" por megjithatë të dukshme (ngritja, bluza e lagur plotësisht transparente) nuk janë të autorizuara, me përjashtim të thithave gjysmë të dukshme (të brendshme).",
+          "Imazhet e fëmijëve të zhveshur ose fëmijëve në të brendshme nuk lejohen.",
+          "Përmbajtja seksuale që përfshin të mitur, marrëdhënie jo-konsensuale, ose ndonjë akt të dënueshëm, qoftë i vërtetë apo i simuluar.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Llogaritë që përdorin nofkën ose përfaqësojnë njerëz ose organizata që nuk janë."
+          "Llogaritë që përdorin pseudonime ose përfaqësojnë njerëz ose organizata që nuk janë.",
+          "Llogaritë që përvetësojnë pasurinë e të tjerëve dhe kompensimin e tyre"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Krijimi i një \"profili të rremë\" bazuar në emrin dhe mbiemrin e një personi ekzistues ...",
-          "Shpërndani informacionin \"publik\" në lidhje me një përdorues pa lejen e tij / saj dhe çdo informacion tjetër që është modifikuar ose transformuar."
+          "Shpërndani informacionin \"publik\" në lidhje me një përdorues pa lejen e tij ose të saj dhe çdo informacion tjetër që është modifikuar ose ndryshuar.",
+          null
         ]
       ],
       "Title-Level": [

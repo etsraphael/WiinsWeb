@@ -769,7 +769,7 @@
       "Nielegalne towary lub usługi",
       "Mniejszy wiek",
       "Domniemana / Wyraźna przemoc",
-      "Fałszywe konto",
+      "Uzurpacja własności/Prawa autorskie",
       "Samobójstwo lub samookaleczenie",
       "Nękanie i prywatność"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Wszelkie opisy aktów seksualnych, fotograficzne lub pisemne. Nagość jest dozwolona tylko wtedy, gdy podstawowe lub drugorzędne cechy seksualne są ukryte.",
-          "Ukryte ”obrazy, które są jednak widoczne (erekcja, mokra odzież z widocznymi sutkami) są niedozwolone.",
-          "Zdjęcia dzieci (definiowane jako „zdolne do stania”) nago lub w bieliźnie są zabronione.",
-          "Zdjęcia matek karmiących są dozwolone pod warunkiem, że sutki nie są widoczne lub anatomia osoby nie jest ujawniona.",
-          "Publikowanie dzieł sztuki „odręcznych, cyfrowych lub rzeczywistych” przedstawiających wyraźną aktywność seksualną oraz wszelkich form obrazów lub filmów związanych z pornografią jest zabronione.",
-          "Teksty, obrazy, treści audio lub wideo przedstawiające szokujące czynności seksualne mające na celu wzbudzenie podniecenia.",
-          "Treści o charakterze seksualnym dotyczące osób nieletnich, związków za przymusem lub jakichkolwiek nagannych czynów, prawdziwych lub symulowanych."
+          "Zabronione są niektóre opisy, fotograficzne lub pisemne, zarówno \"ręcznie rysowane, cyfrowe, jak i rzeczywiste\" o jawnych czynnościach seksualnych, jak również wszelkie formy obrazu lub wideo związane z pornografią lub z udziałem symulowanych lub niesymulowanych aktów seksualnych. Nagość jest dozwolona tylko wtedy, gdy podstawowe i drugorzędne atrybuty seksualne są ukryte lub zamazane, z wyjątkiem \"naturalnych\" działań, takich jak karmienie piersią lub w kontekście sprawy do obrony lub silnego przesłania, które nie mieszczą się w przypadku umiaru (przemoc, pornografia itp.)",
+          "Intymne części \"ukryte\", ale jednak widoczne (erekcja, mokry t-shirt całkowicie przezroczysty) nie są dozwolone, z wyjątkiem półwyjachanych sutków (bielizna).",
+          "Zdjęcia nagich dzieci lub dzieci w bieliźnie nie są dozwolone. ",
+          "Treści o charakterze seksualnym dotyczące osób nieletnich, związków za przymusem lub jakichkolwiek nagannych czynów, prawdziwych lub symulowanych.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Konta, które używają pseudonimu lub reprezentują osoby lub organizacje, którymi nie są."
+          "Konta, które używają pseudonimów lub reprezentują osoby lub organizacje, którymi nie są.",
+          "Rachunki, które przywłaszczają własność innych osób i ich odszkodowanie"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Stworzenie „fałszywego profilu” na podstawie imienia i nazwiska istniejącej osoby ...",
-          "Rozpowszechnianie „publicznych” informacji o użytkowniku bez jego zgody oraz wszelkich innych informacji, które zostały zmodyfikowane lub przekształcone."
+          "Rozpowszechnianie \"publicznych\" informacji o użytkowniku bez jego zgody oraz wszelkich innych informacji, które zostały zmodyfikowane lub zmienione.",
+          null
         ]
       ],
       "Title-Level": [

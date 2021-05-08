@@ -769,7 +769,7 @@
       "Olagliga varor eller tjänster",
       "Lägre ålderskrav",
       "Implicit / explicit våld",
-      "Falskt konto",
+      "Tillskansning av egendom/Upphovsrätt",
       "Självmord eller självskada",
       "Trakasserier och integritet"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Varje beskrivning, fotografisk eller skriftlig, av sexuella handlingar. Nakenhet är endast tillåtet om de sexuella attributen, primära eller sekundära, är dolda.",
-          "Dolda bilder som dock är synliga (erektion, våta kläder med synlig bröstvårta) är inte tillåtna.",
-          "Bilder av barn (definierade som \"stående\") nakna eller i underkläder är förbjudna.",
-          "Bilder av ammande mödrar är tillåtna så länge som bröstvårtorna inte syns eller personens anatomi inte avslöjas ytterligare.",
-          "Det är förbjudet att publicera konstverk, vare sig \"handritade, digitala eller verkliga\" som representerar uttrycklig sexuell aktivitet och någon form av bild eller video relaterad till pornografi.",
-          "Texter, bilder, ljud- eller videoinnehåll av chockerande sexuella handlingar som är avsedda att väcka upphetsning.",
-          "Sexuellt innehåll som involverar minderåriga, förhållanden utan samtycke eller någon förkastlig handling, vare sig det är verkligt eller simulerat."
+          "Vissa beskrivningar, fotografiska eller skrivna, oavsett om de är \"handritade, digitala eller verkliga\" av explicita sexuella handlingar samt alla former av bilder eller videor relaterade till pornografi eller som involverar simulerade eller osimulerade sexuella handlingar, är förbjudna. Nakenhet är endast tillåten om de primära och sekundära sexuella attributen är dolda eller suddiga förutom \"naturliga\" handlingar som amning eller i samband med en anledning att försvara eller ett starkt budskap som inte passar i fall av måttlighet (våld, pornografi etc. ...)",
+          "Intima delar \"dolda\" men ändå synliga (erektion, våt t-shirt helt transparent) är inte tillåtna, med undantag för semi-uppenbara bröstvårtor (underkläder).",
+          "Bilder av nakna barn eller barn i underkläder är inte tillåtna. ",
+          "Sexuellt innehåll som involverar minderåriga, förhållanden utan samtycke eller någon förkastlig handling, vare sig det är verkligt eller simulerat.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Konton som använder smeknamnet eller representerar personer eller organisationer de inte är."
+          "Konton som använder pseudonymer eller representerar personer eller organisationer som de inte är.",
+          "Konton som är lämpliga för andras egendom och deras ersättning"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Skapandet av en \"falsk profil\" baserad på för- och efternamn på en befintlig person ...",
-          "Sprid \"offentlig\" information om en användare utan hans eller hennes tillstånd och annan information som har modifierats eller transformerats."
+          "Sprida \"offentlig\" information om en användare utan hans eller hennes tillstånd och annan information som har ändrats eller ändrats.",
+          null
         ]
       ],
       "Title-Level": [

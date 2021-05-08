@@ -769,7 +769,7 @@
       "Laittomat tavarat tai palvelut",
       "Alempi ikävaatimus",
       "Epäsuora / eksplisiittinen väkivalta",
-      "Vale käyttäjä",
+      "Omaisuuden anastaminen/tekijänoikeudet",
       "Itsemurha tai itsensä vahingoittaminen",
       "Häirintä ja yksityisyys"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Mikä tahansa kuvaus, valokuva tai kirjallinen, seksuaalitoiminnasta. Alastomuus on sallittua vain, jos seksuaaliset ominaisuudet, ensisijaiset tai toissijaiset, on piilotettu.",
-          "Piilotettuja kuvia, jotka ovat kuitenkin näkyvissä (pystytys, märät vaatteet, joissa on näkyvä nänni), ei sallita.",
-          "Alastomissa tai alusvaatteissa olevien lasten kuvat (määritelty \"kykeneviksi seisomaan\") ovat kiellettyjä.",
-          "Kuvia imettävistä äideistä sallitaan niin kauan kuin nännit eivät ole näkyvissä tai henkilön anatomiaa ei paljasteta tarkemmin.",
-          "\"Käsin piirrettyjen, digitaalisten tai todellisten\" taideteosten julkaiseminen, jotka edustavat nimenomaista seksuaalista toimintaa, ja kaikenlainen pornografiaan liittyvien kuvien tai videoiden julkaiseminen on kielletty.",
-          "Tekoja, kuvia, ääni- tai videosisältöä järkyttävistä seksiteoista, joiden tarkoituksena on herättää kiihottumista.",
-          "Seksuaalinen sisältö, johon liittyy alaikäisiä, sopimukseton suhde tai mikä tahansa tuomittava teko, joko todellinen tai simuloitu."
+          "Tietyt kuvaukset, valokuvat tai kirjoitetut kuvaukset, olivatpa ne \"käsin piirrettyjä, digitaalisia tai todellisia\" eksplisiittisistä seksuaalisista teoista sekä pornografiaan liittyvästä tai simuloiduista tai stimuloimattomista seksuaalisista teoista, ovat kiellettyjä. Alastomuus on sallittua vain, jos ensisijaiset ja toissijaiset seksuaaliset ominaisuudet on piilotettu tai hämärtynyt lukuun ottamatta \"luonnollisia\" toimia, kuten imetystä tai puolustamisen syyn yhteydessä tai vahvaa viestiä, joka ei sovi maltillisuustapauksiin (väkivalta, pornografia jne.)",
+          "Intiimit osat \"piilossa\", mutta kuitenkin näkyvissä (erektio, märkä t-paita täysin läpinäkyvä) eivät ole sallittuja, lukuun ottamatta puoliksi ilmeisiä nänniä (alusvaatteita).",
+          "Kuvat alastomista lapsista tai lapsista alusvaatteissa eivät ole sallittuja. ",
+          "Seksuaalinen sisältö, johon liittyy alaikäisiä, sopimukseton suhde tai mikä tahansa tuomittava teko, joko todellinen tai simuloitu.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Tilit, jotka käyttävät lempinimeä tai edustavat ihmisiä tai organisaatioita, jotka eivät ole."
+          "Tilit, jotka käyttävät salanimiä tai edustavat ihmisiä tai organisaatioita, joita ne eivät ole.",
+          "Tilit, jotka sopivat muiden omaisuuteen ja niiden korvauksiin"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "\"Väärennetyn profiilin\" luominen olemassa olevan henkilön etu- ja sukunimeen ...",
-          "Levitä käyttäjän \"julkisia\" tietoja ilman käyttäjän lupaa ja muita tietoja, joita on muokattu tai muunnettu."
+          "Levittää \"julkisia\" tietoja käyttäjästä ilman hänen lupaansa ja muita tietoja, joita on muokattu tai muutettu.",
+          null
         ]
       ],
       "Title-Level": [

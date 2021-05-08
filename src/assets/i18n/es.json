@@ -726,7 +726,7 @@
       "4": "Bienes o servicios ilegales",
       "5": "Requisito de edad más baja",
       "6": "Violencia implícita / explícita",
-      "7": "Cuenta falsa",
+      "7": "Usurpación de bienes/derechos de autor",
       "8": "Suicidio o autolesiones",
       "9": "Acoso y privacidad"
     },
@@ -734,13 +734,10 @@
       "Confirmation-message": "Gracias por hadarnos saber. Sus comentarios son importantes para ayudarnos a proteger nuestra comunidad de Wiinser.  Si ha publicado el perfil de un usuario o una página, pero creemos que no infringe las reglas de la comunidad, tiene otros medios a su disposición para administrar su experiencia en Wiin's de la mejor manera posible.",
       "Descriptions": {
         "1": {
-          "1": "Cualquier descripción, fotográfica o escrita, de actos sexuales. La desnudez solo se permite si los atributos sexuales, primarios o secundarios, están ocultos.",
-          "2": "Las imágenes ocultas que sin embargo son visibles (erección, ropa húmeda con pezón visible) no están permitidas. ",
-          "3": "Las imágenes de niños (definidas como \"capaces de estar de pie\") desnudas o en ropa interior están prohibidas. ",
-          "4": "Se permiten imágenes de madres lactantes siempre y cuando los pezones no sean visibles o la anatomía de la persona no se revele más.",
-          "5": "Se prohíbe publicar obras de arte, ya sean \"dibujadas a mano, digitales o reales\" que representen la actividad sexual explícita y cualquier forma de imagen o vídeo relacionada con la pornografía.",
-          "6": "Textos, imágenes, contenido de audio o vídeo de actos sexuales impactantes destinados a despertar la excitación.",
-          "7": "Contenido sexual que involucre a menores, relaciones no consensuadas o cualquier acto reprobable, ya sea real o simulado."
+          "1": "Quedan prohibidas ciertas descripciones fotográficas o escritas, ya sean \"dibujadas a mano, digitales o reales\" de actos sexuales explícitos, así como cualquier forma de imagen o vídeo relacionado con la pornografía o que implique actos sexuales simulados o no. La desnudez sólo está permitida si los atributos sexuales primarios y secundarios están ocultos o borrosos, excepto por acciones \"naturales\" como la lactancia materna o en el contexto de una causa a defender o un mensaje fuerte que no encaja en los casos de moderación (violencia, pornografía, etc....)",
+          "2": "Partes íntimas \"ocultas\" pero sin embargo visibles (erección, camiseta mojada totalmente transparente) no están permitidas, con la excepción de pezones semi-aparentes (lencería).",
+          "3": "No se permiten imágenes de niños desnudos o niños en ropa interior. ",
+          "4": "Contenido sexual que involucre a menores, relaciones no consensuadas o cualquier acto reprobable, ya sea real o simulado."
         },
         "2": {
           "1": "Fotos o videos que contengan símbolos o discursos de odio.",
@@ -771,15 +768,15 @@
           "3": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
         },
         "7": {
-          "1": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
+          "1": "Cuentas que usan seudónimos o representan a personas u organizaciones que no lo son.",
+          "2": "Cuentas que se apropian de la propiedad de los demás y su compensación"
         },
         "8": {
           "1": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
           "2": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
         },
         "9": {
-          "1": "La aceptación de la violencia como medio para tratar de cambiar las cosas",
-          "2": "La aceptación de la violencia como medio para tratar de cambiar las cosas"
+          "1": "Difundir información \"pública\" sobre un usuario sin su permiso y cualquier otra información que haya sido modificada o alterada."
         }
       },
       "Title-Level": {

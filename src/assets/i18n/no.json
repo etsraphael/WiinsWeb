@@ -769,7 +769,7 @@
       "Ulovlige varer eller tjenester",
       "Lavere alderskrav",
       "Implisitt / eksplisitt vold",
-      "Falsk konto",
+      "Bruk av eiendom/opphavsrett",
       "Selvmord eller selvskading",
       "Trakassering og personvern"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Enhver beskrivelse, fotografisk eller skriftlig, av seksuelle handlinger. Nakenhet er bare tillatt hvis de seksuelle egenskapene, primære eller sekundære, er skjult.",
-          "Skjulte \"bilder som imidlertid er synlige (ereksjon, våte klær med synlig brystvorte) er ikke tillatt.",
-          "Bilder av barn (definert som \"stand til å stå\") nakne eller i undertøy er forbudt.",
-          "Bilder av ammende mødre er tillatt så lenge brystvortene ikke er synlige eller personens anatomi ikke avsløres videre.",
-          "Det er forbudt å publisere kunstverk, enten det er \"håndtegnet, digitalt eller ekte\" som representerer eksplisitt seksuell aktivitet og enhver form for bilde eller video relatert til pornografi.",
-          "Tekster, bilder, lyd- eller videoinnhold fra sjokkerende seksuelle handlinger som er ment å vekke opphisselse.",
-          "Seksuelt innhold som involverer mindreårige, ikke-samtykkelige forhold eller enhver forkastelig handling, enten den er ekte eller simulert."
+          "Visse beskrivelser, fotografiske eller skriftlige, enten \"håndtegnede, digitale eller virkelige\" av eksplisitte seksuelle handlinger, samt noen form for bilde eller video relatert til pornografi eller involverer simulerte eller usimilerte seksuelle handlinger, er forbudt. Nakenhet er bare tillatt hvis de primære og sekundære seksuelle egenskapene er skjult eller uskarpe bortsett fra \"naturlige\" handlinger som amming eller i sammenheng med en årsak til forsvar eller et sterkt budskap som ikke passer i tilfelle moderasjon (vold, pornografi, etc. ...)",
+          "Intime deler \"skjult\", men likevel synlige (ereksjon, våt t-skjorte helt gjennomsiktig) er ikke tillatt, med unntak av semi-tilsynelatende brystvorter (undertøy).",
+          "Bilder av nakne barn eller barn i undertøy er ikke tillatt. ",
+          "Seksuelt innhold som involverer mindreårige, ikke-samtykkelige forhold eller enhver forkastelig handling, enten den er ekte eller simulert.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Kontoer som bruker kallenavnet eller representerer personer eller organisasjoner de ikke er."
+          "Kontoer som bruker pseudonymer eller representerer personer eller organisasjoner som de ikke er.",
+          "Kontoer som passer andres eiendom og deres kompensasjon"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Opprettelsen av en \"falsk profil\" basert på for- og etternavnet til en eksisterende person ...",
-          "Spre \"offentlig\" informasjon om en bruker uten hans eller hennes tillatelse og annen informasjon som er endret eller transformert."
+          "Spre \"offentlig\" informasjon om en bruker uten hans eller hennes tillatelse og annen informasjon som er endret eller endret.",
+          null
         ]
       ],
       "Title-Level": [

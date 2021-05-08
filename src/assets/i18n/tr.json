@@ -769,7 +769,7 @@
       "Yasa dışı ürünler veya hizmetler",
       "Daha düşük yaş gereksinimi",
       "Örtülü / Açık Şiddet",
-      "Sahte hesap",
+      "Mülkün Gaspı/Telif Hakkı",
       "İntihar veya kendine zarar verme",
       "Taciz ve mahremiyet"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Cinsel eylemlerin fotoğraflı veya yazılı herhangi bir açıklaması. Çıplaklığa yalnızca birincil veya ikincil cinsel özellikler gizliyse izin verilir.",
-          "Ancak görünür olan gizli \"görüntülere (ereksiyon, görünür meme başı olan ıslak giysiler) izin verilmez.",
-          "Çocukların (\"ayakta durma\" olarak tanımlanan) çıplak veya iç çamaşırı içindeki görüntüleri yasaktır.",
-          "Emziren annelerin resimlerine meme uçları görünmediği veya kişinin anatomisi daha fazla ortaya çıkmadığı sürece izin verilir.",
-          "Açıkça cinsel aktiviteyi temsil eden \"elle çizilmiş, dijital veya gerçek\" sanat eserlerinin ve pornografiyle ilgili her türlü görüntü veya videonun yayınlanması yasaktır.",
-          "Uyandırmayı amaçlayan şok edici cinsel eylemler içeren metinler, resimler, ses veya video içeriği.",
-          "Reşit olmayan kişileri, rızaya dayalı olmayan ilişkileri veya kınanacak herhangi bir eylemi içeren, gerçek veya simüle edilmiş cinsel içerik."
+          "Açık cinsel eylemlerin \"elle çizilmiş, dijital veya gerçek\" olmasının yanı sıra pornografiyle ilgili veya simüle edilmiş veya basitleştirilmiş cinsel eylemler içeren herhangi bir görüntü veya video türü olsun, fotoğraflı veya yazılı bazı açıklamalar yasaktır. Çıplaklığa ancak emzirme gibi \"doğal\" eylemler veya savunma nedeni veya ılımlılık durumlarına uymayan güçlü bir mesaj (şiddet, pornografi vb.) dışında birincil ve ikincil cinsel özellikler gizli veya bulanıksa izin verilir...)",
+          "Samimi parçalar \"gizli\" ama yine de görünür (ereksiyon, ıslak tişört tamamen şeffaf), yarı belirgin meme uçları (iç çamaşırı) hariç.",
+          "Çıplak çocukların veya iç çamaşırlı çocukların görüntülerine izin verilmez. ",
+          "Reşit olmayan kişileri, rızaya dayalı olmayan ilişkileri veya kınanacak herhangi bir eylemi içeren, gerçek veya simüle edilmiş cinsel içerik.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Takma adı kullanan veya olmadıkları kişileri veya kuruluşları temsil eden hesaplar."
+          "Takma ad kullanan veya olmadıkları kişi veya kuruluşları temsil eden hesaplar.",
+          "Başkalarının mallarına ve tazminatlarına uygun hesaplar"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Mevcut bir kişinin adı ve soyadına göre \"sahte profil\" oluşturulması ...",
-          "Bir kullanıcının izni olmaksızın \"kamuya açık\" bilgileri ve değiştirilmiş veya dönüştürülmüş diğer bilgileri yaymak."
+          "Bir kullanıcı hakkında izni olmadan \"herkese açık\" bilgileri ve değiştirilmiş veya değiştirilmiş diğer bilgileri yaymak.",
+          null
         ]
       ],
       "Title-Level": [

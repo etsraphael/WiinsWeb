@@ -769,7 +769,7 @@
       "Barangan atau perkhidmatan haram",
       "Keperluan umur yang lebih rendah",
       "Keganasan Tersirat / Tersurat",
-      "Akaun palsu",
+      "Penggunaan harta/hak cipta",
       "Bunuh diri atau mencederakan diri sendiri",
       "Gangguan dan privasi"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Sebarang keterangan, fotografi atau tulisan, mengenai perbuatan seksual. Ketelanjangan hanya dibenarkan jika sifat seksual, primer atau sekunder, disembunyikan.",
-          "Gambar \"tersembunyi\" yang kelihatan (ereksi, pakaian basah dengan puting yang kelihatan) tidak dibenarkan.",
-          "Imej kanak-kanak (ditakrifkan sebagai \"mampu berdiri\") dalam keadaan telanjang atau seluar dalam dilarang.",
-          "Gambar ibu menyusu dibenarkan selagi puting tidak kelihatan atau anatomi orang itu tidak didedahkan lebih lanjut.",
-          "Menerbitkan karya seni, sama ada \"digambar tangan, digital atau nyata\" yang mewakili aktiviti seksual eksplisit dan sebarang bentuk gambar atau video yang berkaitan dengan pornografi dilarang.",
-          "Teks, gambar, kandungan audio atau video tindakan seksual yang mengejutkan bertujuan untuk membangkitkan gairah.",
-          "Kandungan seksual yang melibatkan kanak-kanak di bawah umur, hubungan tanpa persetujuan, atau tindakan yang tercela, sama ada nyata atau simulasi."
+          "Keterangan tertentu, fotografi atau bertulis, sama ada \"tangan-ditarik, digital atau sebenar\" perbuatan seksual yang jelas serta apa-apa bentuk imej atau video yang berkaitan dengan pornografi atau melibatkan perbuatan seksual simulasi atau tidak terikut-ikut, adalah dilarang. Kebogelan hanya dibenarkan jika atribut seksual utama dan sekunder tersembunyi atau kabur kecuali untuk tindakan \"semula jadi\" seperti penyusuan susu ibu atau dalam konteks sebab untuk mempertahankan atau mesej yang kuat yang tidak sesuai dengan kes-kes kes kesederhanaan (keganasan, pornografi, dan lain-lain ...)",
+          "Bahagian-bahagian intim \"tersembunyi\" tetapi bagaimanapun kelihatan (ereksi, t-shirt basah benar-benar telus) tidak dibenarkan, kecuali puting separa jelas (lingerie).",
+          "Imej kanak-kanak telanjang atau kanak-kanak dalam seluar dalam tidak dibenarkan. ",
+          "Kandungan seksual yang melibatkan kanak-kanak di bawah umur, hubungan tanpa persetujuan, atau tindakan yang tercela, sama ada nyata atau simulasi.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Akaun yang menggunakan nama samaran atau mewakili orang atau organisasi yang bukan mereka."
+          "Akaun yang menggunakan nama sama tahun atau mewakili orang atau organisasi yang mereka tidak.",
+          "Akaun yang sesuai dengan harta orang lain dan pampasan mereka"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Pembentukan \"profil palsu\" berdasarkan nama depan dan terakhir orang yang ada ...",
-          "Sebarkan maklumat \"awam\" mengenai pengguna tanpa kebenarannya dan maklumat lain yang telah diubah atau diubah."
+          "Menyebarkan maklumat \"awam\" mengenai pengguna tanpa kebenarannya dan sebarang maklumat lain yang telah diubahsuai atau diubah.",
+          null
         ]
       ],
       "Title-Level": [

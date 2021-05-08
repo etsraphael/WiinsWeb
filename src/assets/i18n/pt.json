@@ -726,7 +726,7 @@
       "4": "Bens ou serviços ilegais",
       "5": "Menor exigência de idade",
       "6": "Violência Implícita / Explícita",
-      "7": "Conta falsa",
+      "7": "Usurpação de bens/direitos autorais",
       "8": "Suicídio ou automutilação",
       "9": "Assédio e privacidade"
     },
@@ -734,13 +734,10 @@
       "Confirmation-message": "Obrigado por nos avisar. Seus comentários são importantes para nos ajudar a proteger nossa comunidade de Wiinser.  Se você postou o perfil de um usuário ou uma página, mas acreditamos que ele não viola as regras da comunidade, você tem outros meios à sua disposição para gerenciar sua experiência no Wiin da melhor maneira possível.",
       "Descriptions": {
         "1": {
-          "1": "Qualquer descrição, fotográfica ou escrita, de atos sexuais. A nudez só é permitida se os atributos sexuais, primários ou secundários, estiverem escondidos.",
-          "2": "No entanto, não são permitidas imagens ocultas que são visíveis (ereção, roupas molhadas com mamilo visível). ",
-          "3": "Imagens de crianças (definidas como \"capazes de ficar em pé\") nuas ou de cuecas são proibidas. ",
-          "4": "Fotos de mães amamentando são permitidas desde que os mamilos não sejam visíveis ou a anatomia da pessoa não seja mais revelada.",
-          "5": "São proibidas obras de arte de publicação, sejam elas \"desenhadas à mão, digitais ou reais\" que representem atividade sexual explícita e qualquer forma de imagem ou vídeo relacionado à pornografia.",
-          "6": "Textos, imagens, conteúdo de áudio ou vídeo de atos sexuais chocantes destinados a despertar.",
-          "7": "Conteúdo sexual envolvendo menores, relacionamentos não consensuais ou qualquer ato repreensível, seja real ou simulado."
+          "1": "São proibidas certas descrições, fotográficas ou escritas, sejam \"desenhadas à mão, digitais ou reais\" de atos sexuais explícitos, bem como qualquer forma de imagem ou vídeo relacionada à pornografia ou envolvendo atos sexuais simulados ou não simulados. A nudez só é permitida se os atributos sexuais primários e secundários estiverem ocultos ou borrados, exceto por ações \"naturais\", como o aleitamento materno ou no contexto de uma causa para defender ou uma mensagem forte que não se encaixa nos casos de moderação (violência, pornografia, etc.)",
+          "2": "Partes íntimas \"escondidas\" mas, no entanto, visíveis (ereção, camiseta molhada totalmente transparente) não são permitidas, com exceção de mamilos semi-aparentes (lingerie).",
+          "3": "Imagens de crianças nuas ou de cueca não são permitidas. ",
+          "4": "Conteúdo sexual envolvendo menores, relacionamentos não consensuais ou qualquer ato repreensível, seja real ou simulado."
         },
         "2": {
           "1": "Fotos ou vídeos que contenham símbolos ou discursos odiosos.",
@@ -771,15 +768,15 @@
           "3": "A aceitação da violência como um meio de tentar mudar as coisas"
         },
         "7": {
-          "1": "A aceitação da violência como um meio de tentar mudar as coisas"
+          "1": "Contas que usam pseudônimos ou representam pessoas ou organizações que não são.",
+          "2": "Contas que se apropriam da propriedade de terceiros e sua compensação"
         },
         "8": {
           "1": "A aceitação da violência como um meio de tentar mudar as coisas",
           "2": "A aceitação da violência como um meio de tentar mudar as coisas"
         },
         "9": {
-          "1": "A aceitação da violência como um meio de tentar mudar as coisas",
-          "2": "A aceitação da violência como um meio de tentar mudar as coisas"
+          "1": "Disseminar informações \"públicas\" sobre um usuário sem sua permissão e qualquer outra informação que tenha sido modificada ou alterada."
         }
       },
       "Title-Level": {

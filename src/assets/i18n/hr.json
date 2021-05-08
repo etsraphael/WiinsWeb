@@ -769,7 +769,7 @@
       "Ilegalna roba ili usluge",
       "Niži dobni zahtjev",
       "Implicitno / eksplicitno nasilje",
-      "Lažni profil",
+      "Uzurpacija imovine/Autorskih prava",
       "Samoubojstvo ili samoozljeđivanje",
       "Uznemiravanje i privatnost"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Bilo koji opis, fotografski ili pisani, seksualnih činova. Golotinja je dopuštena samo ako su seksualni atributi, primarni ili sekundarni, skriveni.",
-          "Skrivene \"slike koje su međutim vidljive (erekcija, mokra odjeća s vidljivom bradavicom) nisu dopuštene.",
-          "Zabranjene su slike djece (definirane kao \"sposobne stajati\") gole ili u donjem rublju.",
-          "Slike majki koje doje dopuštene su sve dok bradavice nisu vidljive ili se anatomija te osobe dalje ne otkriva.",
-          "Objavljivanje umjetničkih djela, bilo ručno crtanih, digitalnih ili stvarnih, koja predstavljaju eksplicitne seksualne aktivnosti i bilo koji oblik slike ili videozapisa povezan s pornografijom, zabranjeno je.",
-          "Tekstovi, slike, audio ili video sadržaji šokantnih seksualnih činova namijenjeni pobuđivanju uzbuđenja.",
-          "Seksualni sadržaj koji uključuje maloljetnike, odnose bez pristanka ili bilo kakav prijekoran čin, bio on stvarni ili simulirani."
+          "Zabranjeni su određeni opisi, fotografski ili pisani, bilo \"ručno nacrtani, digitalni ili stvarni\" eksplicitnih seksualnih činova, kao i bilo koji oblik slike ili videozapisa povezan s pornografijom ili koji uključuje simulirane ili nesimulirane seksualne radnje. Golotinja je dopuštena samo ako su primarni i sekundarni seksualni atributi skriveni ili zamagljeni osim za \"prirodne\" radnje kao što je dojenje ili u kontekstu razloga za obranu ili snažne poruke koja se ne uklapa u slučajeve umjerenosti (nasilje, pornografija itd...)",
+          "Intimni dijelovi \"skriveni\", ali ipak vidljivi (erekcija, mokra majica potpuno prozirna) nisu dopušteni, s izuzetkom poluočitih bradavica (donje rublje).",
+          "Slike gole djece ili djece u donjem rublju nisu dopuštene. ",
+          "Seksualni sadržaj koji uključuje maloljetnike, odnose bez pristanka ili bilo kakav prijekoran čin, bio on stvarni ili simulirani.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Računi koji koriste nadimak ili predstavljaju osobe ili organizacije koje nisu."
+          "Računi koji koriste pseudonime ili predstavljaju ljude ili organizacije koje nisu.",
+          "Računi koji prisvoje imovinu drugih i njihovu naknadu"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Stvaranje \"lažnog profila\" na temelju imena i prezimena postojeće osobe ...",
-          "Širite \"javne\" podatke o korisniku bez njegovog ili njezinog dopuštenja i bilo koje druge informacije koje su izmijenjene ili transformirane."
+          "Raspršite \"javne\" informacije o korisniku bez njegovog dopuštenja i bilo koje druge informacije koje su izmijenjene ili izmijenjene.",
+          null
         ]
       ],
       "Title-Level": [

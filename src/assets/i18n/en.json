@@ -726,7 +726,7 @@
       "4": "Illegal goods or services",
       "5": "Lower age requirement",
       "6": "Implicit / Explicit Violence",
-      "7": "Fake account",
+      "7": "Usurpation of property/Copyright",
       "8": "Suicide or self-harm",
       "9": "Harassment and privacy"
     },
@@ -734,13 +734,10 @@
       "Confirmation-message": "Thank you for letting us know. Your comments are important to help us protect our community of Wiinser.  If you have posted the profile of a user or a page, but we believe that it does not violate the community rules, you have other means at your disposal to manage your experience on Espace-Piin's in the best possible way.",
       "Descriptions": {
         "1": {
-          "1": "Any description, photographic or written, of sexual acts. Nudity is allowed only if the sexual attributes, primary or secondary, are hidden.",
-          "2": "Hidden\" images that are however visible (erection, wet clothing with visible nipple) are not allowed. ",
-          "3": "Images of children (defined as \"able to stand\") naked or in underwear are prohibited. ",
-          "4": "Pictures of breastfeeding mothers are allowed as long as the nipples are not visible or the person's anatomy is not further revealed.",
-          "5": "Publishing works of art, whether \"hand-drawn, digital or real\" representing explicit sexual activity and any form of image or video related to pornography are prohibited.",
-          "6": "Texts, images, audio or video content of shocking sexual acts intended to arouse arousal.",
-          "7": "Sexual content involving minors, non-consensual relationships, or any reprehensible act, whether real or simulated."
+          "1": "Certain descriptions, photographic or written, whether \"hand-drawn, digital or real\" of explicit sexual acts as well as any form of image or video related to pornography or involving simulated or unsimulated sexual acts, are prohibited. Nudity is only allowed if the primary and secondary sexual attributes are hidden or blurred except for \"natural\" actions such as breastfeeding or in the context of a cause to defend or a strong message that does not fit in the cases of moderation (violence, pornography, etc. ...)\n\nTranslated with www.DeepL.com/Translator (free version)",
+          "2": "Les parties intimes \"cachées\" mais néanmoins visibles (érection, t-shirt mouillé totalement transparent) ne sont pas autorisées, à l'exception des mamelons semi-apparents (lingerie).",
+          "3": "Images of naked children or children in underwear are not allowed. ",
+          "4": "Sexual content involving minors, non-consensual relationships, or any reprehensible act, whether real or simulated."
         },
         "2": {
           "1": "Photos or videos that contain hateful symbols or speech.",
@@ -771,15 +768,15 @@
           "3": "Direct threats of physical harm, theft, vandalism or financial loss."
         },
         "7": {
-          "1": "Accounts that use the nickname or represent people or organizations they are not."
+          "1": "Accounts that use pseudonyms or represent people or organizations that they are not.",
+          "2": "Accounts that appropriate the property of others and their compensation\n"
         },
         "8": {
           "1": "Publications encouraging or advocating self-harm, including suicide, scarification and eating disorders.",
           "2": "Comments identifying victims of self-harm if the content attacks or ridicules them."
         },
         "9": {
-          "1": "The creation of a \"fake profile\" based on the first and last name of an existing person...",
-          "2": "Disseminate \"public\" information about a user without his or her permission and any other information that has been modified or transformed."
+          "1": "Disseminate \"public\" information about a user without his or her permission and any other information that has been modified or altered."
         }
       },
       "Title-Level": {

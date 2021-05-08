@@ -726,7 +726,7 @@
       "4": "Bien ou service illégaux",
       "5": "Exigence d'âge inférieure",
       "6": "Violence implicite / explicite",
-      "7": "Faux compte",
+      "7": "Usurpation de bien/Copyright",
       "8": "Suicide ou conduite autodestructrice",
       "9": "Harcèlement et vie privée"
     },
@@ -734,23 +734,20 @@
       "Confirmation-message": "Merci de nous le faire savoir. Vos commentaires sont importants pour nous aider à protéger notre communauté de Wiinser.  Si vous avez signaler un utilisateur via sa/ses publications, sa/ses pages ou son profil, mais que nous pensons qu'il ne viole pas les règles de la communauté, vous avez d'autres moyens à votre disposition pour gérer au mieux votre expérience sur Wiin's.",
       "Descriptions": {
         "1": {
-          "1": "Toute description, photographique ou écrite, d'actes sexuels. La nudité n'est autorisée que si les attributs sexuels, primaires ou secondaires, sont cachés.",
-          "2": "Les images \"cachées\" qui sont cependant visibles (érection, vêtements mouillés avec un mamelon visible) ne sont pas autorisées. ",
-          "3": "Les images d'enfants (définis comme \"capables de se tenir debout\") nus ou en sous-vêtements sont interdites. ",
-          "4": "Les photos de mères allaitantes sont autorisées tant que les mamelons ne sont pas visibles ou que l'anatomie de la personne n'est pas révélée.",
-          "5": "Il est interdit de publier des œuvres d'art, qu'elles soient \"dessinées à la main, numériques ou réelles\", représentant une activité sexuelle explicite et toute forme d'image ou de vidéo liée à la pornographie.",
-          "6": "Textes, images, contenu audio ou vidéo d'actes sexuels choquants destinés à susciter l'excitation.",
-          "7": "Contenu sexuel impliquant des mineurs, des relations non consensuelles, ou tout acte répréhensible, qu'il soit réel ou simulé."
+          "1": "Certaines description, photographique ou écrite, qu'elles soient « dessinées à la main, numériques ou réelles » d'actes sexuels explicite ainsi que toute forme d’image ou vidéo liées à la pornographie ou impliquant des actes sexuels simulés ou non, sont interdit. La nudité n'est autorisée que si les attributs sexuels primaires et secondaires  sont cachés ou floutés hormis pour des actions “naturelles” comme donner le sein ou dans le cadre d'une cause à défendre ou d'un message fort n'allant pas dans les cas de modération (violence, pornographie, etc...)",
+          "2": "Les parties intimes “cachées” mais cependant visible (érection, t-shirt mouillé totalement transparent) ne sont pas autorisées hormis pour les tétons semi-apparent (lingerie)",
+          "3": "Les images d'enfants nus ou en sous-vêtements sont interdites. \n",
+          "4": "Les contenus à caractère sexuel impliquant des mineurs, des relations non consensuelles, ou tout acte répréhensible, qu'ils soient réels ou simulés."
         },
         "2": {
-          "1": "Photos ou vidéos qui contiennent des symboles ou des discours haineux.",
-          "2": "Publications avec des légendes qui tolèrent la violence ou attaquent une personne pour ce qu'elle est.",
-          "3": "Menaces spécifiques de dommages corporels, de vol ou de vandalisme."
+          "1": "Certaines photos ou vidéos qui contiennent des symboles ou des discours haineux.\n",
+          "2": "Les publications dont les légendes font l’apologie de la violence ou attaquent une personne pour ce qu’elle est.\n",
+          "3": "Les menaces spécifiques d’atteinte à l’intégrité physique, de vol ou de vandalisme.\n"
         },
         "3": {
-          "1": "L'acceptation de la violence comme moyen d'essayer de changer les choses",
-          "2": "Les contenus qui tentent de provoquer un climat de terreur dans l'opinion publique ou qui sapent la force d'un gouvernement ou d'un groupe.",
-          "3": "Les contenus qui profèrent ou incitent à l'utilisation de la terreur à des fins idéologiques."
+          "1": "L'acceptation de la violence comme moyen de tenter de changer les choses.\n",
+          "2": "Les contenus qui tentent de provoquer un climat de terreur au sein de l'opinion publique ou qui ébranlent la force d'un gouvernement ou d'un groupe.\n",
+          "3": "Les contenus qui profèrent ou incitent l’emploi de la terreur à des fins idéologiques.\n"
         },
         "4": {
           "1": "Vente ou achat d'un compte d'utilisateur",
@@ -766,20 +763,20 @@
           "1": "Les comptes d'utilisateur où il est raisonnablement vérifiable que l'enfant est âgé de moins de 16 ans."
         },
         "6": {
-          "1": "Photos ou vidéos montrant l'extrême violence",
-          "2": "Publications prônant la violence ou attaquant une personne en raison de sa religion, de son origine ethnique ou de sa sexualité.",
-          "3": "Menaces directes de dommages physiques, de vol, de vandalisme ou de pertes financières."
+          "1": "Les photos ou vidéos réelles affichant une violence extrême\n",
+          "2": "Les publications faisant l’apologie de la violence ou attaquant une personne en raison de sa religion, de son origine ethnique ou de sa sexualité.\n",
+          "3": "Les menaces directes d’atteinte à l’intégrité physique, vol, vandalisme ou préjudice financier.\n"
         },
         "7": {
-          "1": "Les comptes qui utilisent le surnom ou qui représentent des personnes ou des organisations qu'ils ne sont pas."
+          "1": "Les comptes qui utilisent le pseudo ou représentant des personnes ou organisations qu’ils ne sont pas.",
+          "2": "Les comptes qui s'approprient le bien d’autrui ainsi que leur rémunération\n"
         },
         "8": {
-          "1": "Publications encourageant ou préconisant l'automutilation, y compris le suicide, la scarification et les troubles alimentaires.",
-          "2": "Commentaires identifiant les victimes d'automutilation si le contenu les attaque ou les ridiculise."
+          "1": "Les publications encourageantes ou faisant l’apologie de l’automutilation, ce qui comprend le suicide, les scarifications et les troubles de l’alimentation.\n",
+          "2": "Les commentaires identifiant des victimes d’automutilation si le contenu les attaque ou les ridiculise.\n"
         },
         "9": {
-          "1": "La création d'un \"faux profil\" basé sur le nom et le prénom d'une personne existante...",
-          "2": "Diffuser des informations \"publiques\" sur un utilisateur sans son autorisation et toute autre information qui a été modifiée ou transformée."
+          "1": "Diffuser une information « publique » concernant un utilisateurs, sans son autorisation et tout autre information ayant été modifiée ou transformée."
         }
       },
       "Title-Level": {

@@ -769,7 +769,7 @@
       "Ulovlige varer eller tjenester",
       "Lavere alderskrav",
       "Implicit / eksplicit vold",
-      "Falsk konto",
+      "Tilranelse af ejendom/ophavsret",
       "Selvmord eller selvskading",
       "Chikane og privatlivets fred"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Enhver beskrivelse, fotografisk eller skriftlig, af seksuelle handlinger. Nøgenhed er kun tilladt, hvis de seksuelle attributter, primære eller sekundære, er skjulte.",
-          "Skjulte \"billeder, der dog er synlige (erektion, vådt tøj med synlig brystvorte) er ikke tilladt.",
-          "Billeder af børn (defineret som \"stand til at stå\") nøgne eller i undertøj er forbudt.",
-          "Billeder af ammende mødre er tilladt, så længe brystvorterne ikke er synlige, eller personens anatomi ikke afsløres yderligere.",
-          "Det er forbudt at udgive kunstværker, hvad enten det er \"håndtegnet, digitalt eller ægte\", der repræsenterer eksplicit seksuel aktivitet og enhver form for billede eller video relateret til pornografi.",
-          "Tekster, billeder, lyd- eller videoindhold fra chokerende seksuelle handlinger, der er beregnet til at vække ophidselse.",
-          "Seksuelt indhold, der involverer mindreårige, ikke-samtykkelige forhold eller enhver forkastelig handling, hvad enten den er reel eller simuleret."
+          "Visse beskrivelser, fotografiske eller skriftlige, hvad enten de er \"håndtegnede, digitale eller virkelige\" af eksplicitte seksuelle handlinger samt enhver form for billede eller video relateret til pornografi eller involverer simulerede eller uudsnærede seksuelle handlinger, er forbudt. Nøgenhed er kun tilladt, hvis de primære og sekundære seksuelle egenskaber er skjult eller sløret bortset fra \"naturlige\" handlinger som amning eller i forbindelse med en årsag til at forsvare eller et stærkt budskab, der ikke passer i tilfælde af moderation (vold, pornografi osv. ...)",
+          "Intime dele \"skjult\", men ikke desto mindre synlige (erektion, våd t-shirt helt gennemsigtig) er ikke tilladt, med undtagelse af semi-tilsyneladende brystvorter (lingeri).",
+          "Billeder af nøgne børn eller børn i undertøj er ikke tilladt. ",
+          "Seksuelt indhold, der involverer mindreårige, ikke-samtykkelige forhold eller enhver forkastelig handling, hvad enten den er reel eller simuleret.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Konti, der bruger kaldenavnet eller repræsenterer personer eller organisationer, de ikke er."
+          "Konti, der bruger pseudonymer eller repræsenterer personer eller organisationer, som de ikke er.",
+          "Konti, der tilegner andres ejendom og deres kompensation"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Oprettelsen af en \"falsk profil\" baseret på for- og efternavn på en eksisterende person ...",
-          "Formidle \"offentlige\" oplysninger om en bruger uden hans eller hendes tilladelse og andre oplysninger, der er blevet ændret eller transformeret."
+          "Formidle \"offentlige\" oplysninger om en bruger uden hans eller hendes tilladelse og andre oplysninger, der er blevet ændret eller ændret.",
+          null
         ]
       ],
       "Title-Level": [

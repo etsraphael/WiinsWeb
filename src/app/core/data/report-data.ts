@@ -7,9 +7,6 @@ export const reportData: ReportData[] = [
             'REPORT.Report-Modal-Message.Descriptions.1.2',
             'REPORT.Report-Modal-Message.Descriptions.1.3',
             'REPORT.Report-Modal-Message.Descriptions.1.4',
-            'REPORT.Report-Modal-Message.Descriptions.1.5',
-            'REPORT.Report-Modal-Message.Descriptions.1.6',
-            'REPORT.Report-Modal-Message.Descriptions.1.7'
         ]
     },
     {
@@ -64,7 +61,8 @@ export const reportData: ReportData[] = [
         number: 7,
         type: 'REPORT.Code-Categorie.7',
         descriptions: [
-            'REPORT.Report-Modal-Message.Descriptions.7.1'
+            'REPORT.Report-Modal-Message.Descriptions.7.1',
+            'REPORT.Report-Modal-Message.Descriptions.7.2'
         ]
     },
     {
@@ -79,8 +77,7 @@ export const reportData: ReportData[] = [
         number: 9,
         type: 'REPORT.Code-Categorie.9',
         descriptions: [
-            'REPORT.Report-Modal-Message.Descriptions.9.1',
-            'REPORT.Report-Modal-Message.Descriptions.9.2'
+            'REPORT.Report-Modal-Message.Descriptions.9.1'
         ]
     }
 ]

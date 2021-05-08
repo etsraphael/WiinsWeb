@@ -769,7 +769,7 @@
       "Nezákonný tovar alebo služby",
       "Nižšia veková požiadavka",
       "Implicitné / explicitné násilie",
-      "Falošný účet",
+      "Uzurpácia majetku/autorské práva",
       "Samovražda alebo sebapoškodzovanie",
       "Obťažovanie a ochrana súkromia"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Akýkoľvek fotografický alebo písomný popis sexuálnych aktov. Nahota je povolená, iba ak sú skryté sexuálne atribúty, primárne alebo sekundárne.",
-          "Skryté „obrázky, ktoré sú však viditeľné (erekcia, mokré oblečenie s viditeľnou bradavkou), nie sú povolené.",
-          "Obrázky detí (definovaných ako „schopné stáť“) nahých alebo v spodnom prádle sú zakázané.",
-          "Fotografie dojčiacich matiek sú povolené, pokiaľ nie sú viditeľné bradavky alebo pokiaľ sa ďalej nezverejňuje anatómia osoby.",
-          "Publikovanie umeleckých diel, či už „ručne kreslených, digitálnych alebo skutočných“ predstavujúcich explicitnú sexuálnu aktivitu a akejkoľvek formy obrázkov alebo videa súvisiacich s pornografiou, je zakázané.",
-          "Texty, obrázky, zvukový alebo obrazový obsah šokujúcich sexuálnych aktov určených na vyvolanie vzrušenia.",
-          "Sexuálny obsah zahŕňajúci maloletých, vzťahy, ktoré nie sú predmetom konsenzu, alebo akýkoľvek odsúdeniahodný čin, či už skutočný alebo simulovaný."
+          "Určité opisy explicitných sexuálnych aktov, fotografické alebo písomné, či už \"ručne nakreslené, digitálne alebo skutočné\", ako aj akákoľvek forma obrazu alebo videa súvisiaceho s pornografiou alebo zahŕňajúce simulované alebo nesimulované sexuálne akty sú zakázané. Nahota je povolená len vtedy, ak sú primárne a sekundárne sexuálne atribúty skryté alebo rozmazané s výnimkou \"prirodzených\" akcií, ako je dojčenie alebo v súvislosti s dôvodom na obranu alebo silným posolstvom, ktoré sa nezmestí do prípadov moderovania (násilie, pornografia atď.)",
+          "Intímne časti \"skryté\", ale napriek tomu viditeľné (erekcia, mokré tričko úplne priehľadné) nie sú povolené, s výnimkou poloviditeľných bradaviek (spodné prádlo).",
+          "Obrázky nahých detí alebo detí v spodnej bielizni nie sú povolené. ",
+          "Sexuálny obsah zahŕňajúci maloletých, vzťahy, ktoré nie sú predmetom konsenzu, alebo akýkoľvek odsúdeniahodný čin, či už skutočný alebo simulovaný.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Účty, ktoré používajú prezývku alebo zastupujú ľudí alebo organizácie, ktoré nie sú."
+          "Kontá, ktoré používajú pseudonymy alebo zastupujú ľudí alebo organizácie, ktoré nie sú.",
+          "Účty, ktoré prisudzujú majetok iných osôb a ich náhradu"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Vytvorenie „falošného profilu“ na základe mena a priezviska existujúcej osoby ...",
-          "Šíriť „verejné“ informácie o používateľovi bez jeho súhlasu a akékoľvek ďalšie informácie, ktoré boli zmenené alebo transformované."
+          "Šíriť \"verejné\" informácie o používateľovi bez jeho povolenia a akékoľvek iné informácie, ktoré boli upravené alebo zmenené.",
+          null
         ]
       ],
       "Title-Level": [

@@ -769,7 +769,7 @@
       "Bunuri sau servicii ilegale",
       "Cerință de vârstă mai mică",
       "Violența implicită / explicită",
-      "Cont fals",
+      "Uzurparea bunurilor/Drepturi de autor",
       "Sinucidere sau auto-vătămare",
       "Hărțuire și intimitate"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Orice descriere, fotografică sau scrisă, a actelor sexuale. Nuditatea este permisă numai dacă atributele sexuale, primare sau secundare, sunt ascunse.",
-          "Imaginile ascunse care sunt oricum vizibile (erecție, îmbrăcăminte umedă cu mamelon vizibil) nu sunt permise.",
-          "Imaginile copiilor (definiți ca „capabili să stea în picioare”) goi sau în lenjerie sunt interzise.",
-          "Imaginile mamelor care alăptează sunt permise atâta timp cât mameloanele nu sunt vizibile sau anatomia persoanei nu este mai dezvăluită.",
-          "Publicarea operelor de artă, indiferent dacă este „desenată manual, digitală sau reală”, reprezentând activitate sexuală explicită și orice formă de imagine sau videoclip legată de pornografie este interzisă.",
-          "Texte, imagini, conținut audio sau video de acte sexuale șocante menite să trezească excitare.",
-          "Conținut sexual care implică minori, relații non-consensuale sau orice act condamnabil, real sau simulat."
+          "Sunt interzise anumite descrieri, fotografice sau scrise, indiferent dacă sunt \"desenate manual, digitale sau reale\" ale actelor sexuale explicite, precum și orice formă de imagine sau videoclip legat de pornografie sau care implică acte sexuale simulate sau nesimulate. Nuditatea este permisă numai dacă atributele sexuale primare și secundare sunt ascunse sau neclare, cu excepția acțiunilor naturale, ar fi alăptarea sau în contextul unei cauze de apărat sau al unui mesaj puternic care nu se încadrează în cazurile de moderație (violență, pornografie etc....)",
+          "Părțile intime \"ascunse\", dar totuși vizibile (erecție, tricou umed complet transparent) nu sunt permise, cu excepția mameloanelor semi-aparente (lenjerie).",
+          "Imaginile cu copii goi sau copii în lenjerie intimă nu sunt permise. ",
+          "Conținut sexual care implică minori, relații non-consensuale sau orice act condamnabil, real sau simulat.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Conturi care folosesc porecla sau reprezintă persoane sau organizații care nu sunt."
+          "Conturi care utilizează pseudonime sau reprezintă persoane sau organizații care nu sunt.",
+          "Conturile care își însușesc proprietatea altora și compensația acestora"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Crearea unui „profil fals” bazat pe numele și prenumele unei persoane existente ...",
-          "Diseminați informații „publice” despre un utilizator fără permisiunea acestuia sau orice alte informații care au fost modificate sau transformate."
+          "Difuzați informații \"publice\" despre un utilizator fără permisiunea acestuia și orice alte informații care au fost modificate sau modificate.",
+          null
         ]
       ],
       "Title-Level": [

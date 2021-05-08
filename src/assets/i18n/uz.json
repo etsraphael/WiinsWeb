@@ -769,7 +769,7 @@
       "Noqonuniy tovarlar yoki xizmatlar",
       "Yoshga bo'lgan talab",
       "Aniq / aniq zo'ravonlik",
-      "Soxta hisob",
+      "Mulkni egallash / mualliflik huquqi",
       "O'z joniga qasd qilish yoki o'ziga zarar etkazish",
       "Tazyiq va shaxsiy hayot"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Jinsiy harakatlarning har qanday tavsifi, fotografik yoki yozma. Yalang'ochlikka faqat birlamchi yoki ikkilamchi jinsiy atributlar yashiringan taqdirdagina ruxsat beriladi.",
-          "Yashirin \"ko'rinadigan ko'rinishga (erektsiya, ko'krak qafasi ko'rinadigan nam kiyim) ruxsat berilmaydi.",
-          "Yalang'och yoki ichki kiyimda bolalarning tasvirlari (\"turishga qodir\" deb ta'riflanadi) taqiqlanadi.",
-          "Ko'krak qafasi ko'rinmasa yoki odamning anatomiyasi aniqlanmasa, emizikli onalarning rasmlariga ruxsat beriladi.",
-          "\"Qo'lda chizilgan, raqamli yoki haqiqiy\", aniq jinsiy faoliyatni va pornografiya bilan bog'liq har qanday rasm yoki videoni aks ettiruvchi badiiy asarlarni nashr etish taqiqlanadi.",
-          "Shov-shuvga sabab bo'lgan jinsiy harakatlarning matnlari, rasmlari, audio yoki video tarkibi.",
-          "Voyaga etmaganlar, o'zaro kelishmovchiliklar yoki har qanday haqoratli xatti-harakatlar bilan bog'liq bo'lgan shahvoniy tarkib, haqiqiy yoki taqlid qilingan."
+          "\"Qo'lda chizilgan, raqamli yoki haqiqiy\" aniq jinsiy harakatlar, shuningdek pornografiya bilan bog'liq bo'lgan yoki simulyatsiya qilingan yoki simulyatsiya qilinmagan jinsiy harakatlar bilan bog'liq har qanday rasm yoki video tasvirlarning, fotosurat yoki yozma tavsiflari taqiqlanadi. Yalang'ochlikka faqat birlamchi va ikkilamchi jinsiy alomatlar yashirilgan yoki xiralashgan holda ruxsat beriladi, masalan, emizish yoki mudofaa sababi yoki moderatsiya (zo'ravonlik, pornografiya) holatlariga to'g'ri kelmaydigan kuchli xabar. , va boshqalar. ...)",
+          "\"Yashirin\", ammo shunga qaramay ko'rinadigan maxfiy qismlarga (erektsiya, umuman shaffof nam futbolka) ruxsat berilmaydi, yarim ko'rinadigan nipellar (ichki kiyim) bundan mustasno.",
+          "Yalang'och bolalar yoki ichki kiyimdagi bolalarning rasmlariga yo'l qo'yilmaydi.",
+          "Voyaga etmaganlar, o'zaro kelishmovchiliklar yoki har qanday haqoratli xatti-harakatlar bilan bog'liq bo'lgan shahvoniy tarkib, haqiqiy yoki taqlid qilingan.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Taxallusni ishlatadigan yoki ular bo'lmagan shaxslarni yoki tashkilotlarni ko'rsatadigan hisoblar."
+          "Taxalluslardan foydalanadigan yoki ular bo'lmagan shaxslarni yoki tashkilotlarni ko'rsatadigan hisoblar.",
+          "Boshqalarning mol-mulkiga mos keladigan hisob-kitoblar va ularning tovon puli"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Mavjud shaxsning familiyasi va familiyasi asosida \"soxta profil\" yaratilishi ...",
-          "Foydalanuvchi haqidagi \"ochiq\" ma'lumotni uning ruxsatisiz tarqatish va o'zgartirilgan yoki o'zgartirilgan boshqa ma'lumotlarni tarqatish."
+          "Foydalanuvchi haqidagi \"ochiq\" ma'lumotni uning ruxsatisiz tarqatish va o'zgartirilgan yoki o'zgartirilgan boshqa ma'lumotlarni tarqatish.",
+          null
         ]
       ],
       "Title-Level": [

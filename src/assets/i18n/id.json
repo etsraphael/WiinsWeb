@@ -769,7 +769,7 @@
       "Barang atau jasa ilegal",
       "Persyaratan usia yang lebih rendah",
       "Kekerasan Implisit / Eksplisit",
-      "Akun palsu",
+      "Perampasan properti / Hak Cipta",
       "Bunuh diri atau menyakiti diri sendiri",
       "Pelecehan dan privasi"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "Deskripsi apa pun, foto atau tertulis, tentang tindakan seksual. Ketelanjangan diperbolehkan hanya jika atribut seksual, primer atau sekunder, disembunyikan.",
-          "Gambar tersembunyi \"yang bagaimanapun terlihat (ereksi, pakaian basah dengan puting yang terlihat) tidak diperbolehkan.",
-          "Gambar anak-anak (didefinisikan sebagai \"mampu berdiri\") telanjang atau dengan pakaian dalam dilarang.",
-          "Gambar ibu menyusui diperbolehkan selama puting tidak terlihat atau anatomi orang tersebut tidak terungkap lebih lanjut.",
-          "Menerbitkan karya seni, baik \"digambar tangan, digital atau nyata\" yang mewakili aktivitas seksual eksplisit dan segala bentuk gambar atau video yang terkait dengan pornografi dilarang.",
-          "Teks, gambar, konten audio atau video dari tindakan seksual yang mengejutkan dimaksudkan untuk membangkitkan gairah.",
-          "Konten seksual yang melibatkan anak di bawah umur, hubungan non-konsensual, atau tindakan tercela apa pun, baik nyata maupun simulasi."
+          "Deskripsi, foto atau tulisan tertentu, baik yang \"digambar dengan tangan, digital atau nyata\" dari tindakan seksual eksplisit serta segala bentuk gambar atau video yang terkait dengan pornografi atau yang melibatkan tindakan seksual yang disimulasikan atau tidak disimulasikan, dilarang. Ketelanjangan hanya diperbolehkan jika atribut seksual primer dan sekunder disembunyikan atau diburamkan kecuali untuk tindakan \"alami\" seperti menyusui atau dalam konteks alasan untuk membela diri atau pesan kuat yang tidak sesuai dengan kasus moderasi (kekerasan, pornografi , dll ...)",
+          "Bagian pribadi yang \"tersembunyi\" tetapi tetap terlihat (ereksi, kaos basah yang benar-benar transparan) tidak diizinkan, kecuali bagian puting yang semi-terlihat (pakaian dalam).",
+          "Gambar anak-anak telanjang atau anak-anak dengan pakaian dalam tidak diperbolehkan.",
+          "Konten seksual yang melibatkan anak di bawah umur, hubungan non-konsensual, atau tindakan tercela apa pun, baik nyata maupun simulasi.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "Akun yang menggunakan nama panggilan atau mewakili orang atau organisasi yang bukan mereka."
+          "Akun yang menggunakan nama samaran atau mewakili orang atau organisasi yang bukan mereka.",
+          "Akun yang sesuai dengan milik orang lain dan kompensasi mereka"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "Pembuatan \"profil palsu\" berdasarkan nama depan dan belakang orang yang ada ...",
-          "Menyebarluaskan informasi \"publik\" tentang pengguna tanpa izinnya dan informasi lain apa pun yang telah dimodifikasi atau diubah."
+          "Menyebarluaskan informasi \"publik\" tentang pengguna tanpa izinnya dan informasi lain apa pun yang telah dimodifikasi atau diubah.",
+          null
         ]
       ],
       "Title-Level": [

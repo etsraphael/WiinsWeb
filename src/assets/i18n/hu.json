@@ -769,7 +769,7 @@
       "Illegális termékek vagy szolgáltatások",
       "Alacsonyabb életkor követelmény",
       "Implicit / explicit erőszak",
-      "Hamis fiók",
+      "A tulajdon bitorlása/Szerzői jog",
       "Öngyilkosság vagy önkárosítás",
       "Zaklatás és magánélet"
     ],
@@ -779,13 +779,13 @@
         null,
         [
           null,
-          "A szexuális cselekmények bármilyen fényképes vagy írott leírása. Meztelenség csak akkor megengedett, ha az elsődleges vagy másodlagos szexuális tulajdonságok el vannak rejtve.",
-          "Rejtett \"képek, amelyek azonban láthatók (merevedés, nedves ruházat látható mellbimbóval), nem megengedettek.",
-          "Tilos meztelenül vagy fehérneműben ábrázolni a gyermekek képét („képesek állni”).",
-          "A szoptató anyákról készült képek addig engedélyezettek, amíg a mellbimbók nem láthatók, vagy az illető anatómiája nem derül ki tovább.",
-          "Tilos a kifejezetten szexuális tevékenységet ábrázoló \"kézzel rajzolt, digitális vagy valós\" műalkotások, valamint a pornográfiával kapcsolatos bármilyen kép- vagy videóforma közzététele.",
-          "Megdöbbentő szexuális cselekmények szövege, képe, hang- vagy videotartalma, amelynek célja az izgalom felkeltése.",
-          "Kiskorúakat érintő szexuális tartalom, konszenzuson kívüli kapcsolatok vagy bármilyen valós vagy szimulált elítélendő cselekedet."
+          "Tilos bizonyos fényképészeti vagy írásbeli leírások, akár \"kézzel rajzolt, digitális vagy valós\" explicit szexuális cselekményekről, valamint a pornográfiával kapcsolatos kép vagy videó bármilyen formájáról, akár szimulált vagy nemsimított szexuális aktusról van szó. Meztelenség csak akkor megengedett, ha az elsődleges és másodlagos szexuális attribútumok rejtett vagy homályos, kivéve a \"természetes\" intézkedések, mint a szoptatás vagy összefüggésben egy ok, hogy megvédje, vagy egy erős üzenetet, amely nem fér el abban az esetben, mértékletesség (erőszak, pornográfia, stb ...)",
+          "Intim részek \"rejtett\", de mégis látható (erekció, nedves póló teljesen átlátszó) nem megengedett, kivéve a félig látható mellbimbók (fehérnemű).",
+          "Meztelen gyermekekről vagy alsóneműs gyermekekről készült képek nem megengedettek. ",
+          "Kiskorúakat érintő szexuális tartalom, konszenzuson kívüli kapcsolatok vagy bármilyen valós vagy szimulált elítélendő cselekedet.",
+          null,
+          null,
+          null
         ],
         [
           null,
@@ -822,7 +822,8 @@
         ],
         [
           null,
-          "A becenevet használó vagy olyan embereket vagy szervezeteket képviselő fiókok, akik nem azok."
+          "Olyan fiókok, amelyek álneveket használnak, vagy olyan embereket vagy szervezeteket képviselnek, akik nem azok.",
+          "Mások tulajdonát és kártérítését megfelelő számlák"
         ],
         [
           null,
@@ -831,8 +832,8 @@
         ],
         [
           null,
-          "\"Hamis profil\" létrehozása egy meglévő személy utó- és vezetékneve alapján ...",
-          "Terjessze a felhasználóval kapcsolatos \"nyilvános\" információkat az ő engedélye nélkül, valamint bármilyen más, módosított vagy átalakított információt."
+          "A felhasználóra vonatkozó \"nyilvános\" információk terjesztése az ő engedélye nélkül, valamint minden egyéb módosított vagy módosított információ terjesztése.",
+          null
         ]
       ],
       "Title-Level": [
