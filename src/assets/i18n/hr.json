@@ -261,7 +261,17 @@
     "Save-in-phone": "Spremi u telefon",
     "No": "Ne",
     "Yes": "Da",
-    "Block-t-user": "Blokiraj ovog korisnika"
+    "Block-t-user": "Blokiraj ovog korisnika",
+    "Message": "Poruka",
+    "Friend-request": "Zahtjev za prijateljstvo",
+    "feed": "fluks",
+    "tube": "cijev",
+    "Music": "glazba, muzika",
+    "Page": "Stranica",
+    "Music-Project": "Glazbeni projekt",
+    "Group": "Skupina",
+    "Earlier": "Ranije",
+    "Notifications": "Obavijesti"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -621,7 +631,9 @@
     "you-hav-to-upgrad-a-manager-before-leave": "Prije napuštanja grupe morate unaprijediti menadžera",
     "Date-cannot-be-in-the-past": "Datum izdavanja ne može biti u prošlosti",
     "You-cannot-add-yourself": "Ne možete se dodati",
-    "T-content-does-not-exist-anymore": "Ovaj sadržaj više ne postoji"
+    "T-content-does-not-exist-anymore": "Ovaj sadržaj više ne postoji",
+    "T-publication-no-longer-exists": "Ova publikacija više ne postoji",
+    "Could-not-play-video": "Reprodukcija videozapisa nije uspjela"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografija je primljena",
@@ -935,11 +947,11 @@
       "T-b-accepted-b-t-administration": "Da ga prihvati uprava",
       "This-feature-requires-verification-to-use.": "Za korištenje ove značajke potrebna je potvrda",
       "Upload-a-photo-holding-t-ID-D": "Prenesite fotografiju na kojoj se nalazi osobni dokument s listom papira s današnjim datumom i na njemu piše \"Wiins\".",
-      "Upload-yr-password-id-identity-or-driver-license": "Prenesite lozinku, identitet identiteta ili vozačku dozvolu.",
       "Verification": "Verifikacija",
       "Verified-zone": "Provjerena zona",
       "Y-m-complet-t-following-cdt-t-b-certified": "Da biste dobili certifikat, morate ispuniti sljedeće uvjete.",
-      "Yr-profil-is-currently-being-checked-D": "Vaš se profil trenutno provjerava. Kontaktirat ćemo vas u roku od 48 sati putem e-pošte."
+      "Yr-profil-is-currently-being-checked-D": "Vaš se profil trenutno provjerava. Kontaktirat ćemo vas u roku od 48 sati putem e-pošte.",
+      "Upload-yr-passport-id-identity-or-driver-license": "Učitajte putovnicu, identitet ili vozačku dozvolu."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikacije vide samo moji prijatelji",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Ovaj je sadržaj prijavljen. Naši će ih moderatori pogledati u odgodi od 24 sata kako bi ga pregledali. Primijenit će se sankcija ako se time ne poštuju pravila zajednice.",
     "T-user-has-been-blocked-D": "Ovaj je korisnik blokiran s vašeg računa. Na vašem računu neće biti vidljiv sadržaj ovog profila.",
     "W-is-t-reason-to-report-t-post": "Koji je razlog da prijavim ovaj post?",
-    "W-is-t-reason-to-report-t-post-D": "Vaša prijava je anonimna. Odaberite samo kategoriju koja će pomoći moratorima"
+    "W-is-t-reason-to-report-t-post-D": "Vaša prijava je anonimna. Odaberite samo kategoriju koja će pomoći moratorima",
+    "A-y-s-to-unfollow-this-profile": "Jeste li sigurni da želite prestati pratiti ovaj profil?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Jeste li sigurni da ste ovog prijatelja izbrisali s popisa prijatelja?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Upozorenje. Provjerite imate li pravu adresu"

@@ -261,7 +261,17 @@
     "Save-in-phone": "Зберегти в телефоні",
     "No": "Ні",
     "Yes": "Так",
-    "Block-t-user": "Заблокувати цього користувача"
+    "Block-t-user": "Заблокувати цього користувача",
+    "Message": "повідомлення",
+    "Friend-request": "Запит друга",
+    "feed": "потік",
+    "tube": "трубки",
+    "Music": "Музика",
+    "Page": "Сторінка",
+    "Music-Project": "Музичний проект",
+    "Group": "Група",
+    "Earlier": "Раніше",
+    "Notifications": "Повідомлення"
   },
   "COUNTRY": {
     "AD": "Андорра",
@@ -621,7 +631,9 @@
     "you-hav-to-upgrad-a-manager-before-leave": "Ви повинні просувати менеджера перед тим, як вийти з групи",
     "Date-cannot-be-in-the-past": "Дата випуску не може бути минулою",
     "You-cannot-add-yourself": "Ви не можете додати себе",
-    "T-content-does-not-exist-anymore": "Цей вміст уже не існує"
+    "T-content-does-not-exist-anymore": "Цей вміст уже не існує",
+    "T-publication-no-longer-exists": "Ця публікація більше не існує",
+    "Could-not-play-video": "Не вдалося відтворити відео"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Фотографія отримана",
@@ -935,11 +947,11 @@
       "T-b-accepted-b-t-administration": "Буде прийнятий адміністрацією",
       "This-feature-requires-verification-to-use.": "Для використання цієї функції потрібна перевірка",
       "Upload-a-photo-holding-t-ID-D": "Завантажте фотографію, що тримає посвідчення особи, з аркушем паперу із сьогоднішньою датою та написом \"Wiins\".",
-      "Upload-yr-password-id-identity-or-driver-license": "Завантажте свій пароль, посвідчення особи або водійські права.",
       "Verification": "Перевірка",
       "Verified-zone": "Перевірена зона",
       "Y-m-complet-t-following-cdt-t-b-certified": "Ви повинні виконати наступні умови, щоб пройти сертифікацію.",
-      "Yr-profil-is-currently-being-checked-D": "Ваш профіль зараз перевіряється. Ми зв’яжемося з вами електронною поштою протягом 48 годин."
+      "Yr-profil-is-currently-being-checked-D": "Ваш профіль зараз перевіряється. Ми зв’яжемося з вами електронною поштою протягом 48 годин.",
+      "Upload-yr-passport-id-identity-or-driver-license": "Завантажте паспорт, посвідчення особи або водійські права."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Мої публікації бачать лише мої друзі",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Цей вміст повідомлено. Наші модератори переглянуть його за 24 години затримки. Санкція буде застосована, якщо це не відповідає правилам громади.",
     "T-user-has-been-blocked-D": "Цього користувача заблоковано у вашому обліковому записі. Жоден вміст цього профілю не буде видимим у вашому обліковому записі.",
     "W-is-t-reason-to-report-t-post": "Яка причина повідомити про цю публікацію?",
-    "W-is-t-reason-to-report-t-post-D": "Ваш звіт анонімний. Будь ласка, виберіть лише категорію, щоб допомогти мораторам"
+    "W-is-t-reason-to-report-t-post-D": "Ваш звіт анонімний. Будь ласка, виберіть лише категорію, щоб допомогти мораторам",
+    "A-y-s-to-unfollow-this-profile": "Дійсно скасувати підписку на цей профіль?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Дійсно видалити цього друга зі свого списку друзів?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Увага. Переконайтесь, що у вас є правильна адреса"

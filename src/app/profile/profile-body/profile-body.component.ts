@@ -75,7 +75,7 @@ export class ProfileBodyComponent implements OnInit, OnDestroy {
 
   prepareRoute(outlet: RouterOutlet) {
     // to animate the routing
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['Story']
   }
 
   deletefriendbtn(id: string) {

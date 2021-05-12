@@ -21,7 +21,7 @@ import { Music } from '../../models/publication/music/music.model';
 export class ReportModalComponent {
 
   // default
-  categorieSelected: number = 1
+  categorieSelected: number[] = []
   page: number = 1
 
   // list of categorie
@@ -36,11 +36,15 @@ export class ReportModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: ReportData
   ) { }
   
-
-  changeCategorie(number: number): void {
+  addOrRemoveCategorie(number: number): void {
     // to change the categorie
-    this.categorieSelected = number
+    if(this.categorieSelected.includes(number)){
+      this.categorieSelected = this.categorieSelected.filter(x => x !== number)
+    } else {
+      this.categorieSelected.push(number)
+    }
   }
+
 
   sendReport(): void {
 

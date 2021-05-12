@@ -261,7 +261,17 @@
     "Save-in-phone": "Uložiť do telefónu",
     "No": "Nie",
     "Yes": "Áno",
-    "Block-t-user": "Blokovať tohto používateľa"
+    "Block-t-user": "Blokovať tohto používateľa",
+    "Message": "Správa",
+    "Friend-request": "Žiadosť o priateľstvo",
+    "feed": "tok",
+    "tube": "trubica",
+    "Music": "Hudba",
+    "Page": "Strana",
+    "Music-Project": "Hudobný projekt",
+    "Group": "Skupina",
+    "Earlier": "Skôr",
+    "Notifications": "Oznámenia"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -621,7 +631,9 @@
     "Y-dont-have-a-conversation-yet": "Zatiaľ nemáte konverzáciu.",
     "Date-cannot-be-in-the-past": "Dátum vydania nemôže byť v minulosti",
     "You-cannot-add-yourself": "Nemôžete pridať seba",
-    "T-content-does-not-exist-anymore": "Tento obsah už neexistuje"
+    "T-content-does-not-exist-anymore": "Tento obsah už neexistuje",
+    "T-publication-no-longer-exists": "Táto publikácia už neexistuje",
+    "Could-not-play-video": "Video sa nepodarilo prehrať"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",
@@ -934,12 +946,12 @@
       "T-b-accepted-b-t-administration": "Bude prijatý správou",
       "This-feature-requires-verification-to-use.": "Táto funkcia vyžaduje použitie",
       "Upload-a-photo-holding-t-ID-D": "Nahrajte fotografiu s preukazom totožnosti s listom papiera s dnešným dátumom a nápisom „Wiins“.",
-      "Upload-yr-password-id-identity-or-driver-license": "Vložte svoje heslo, identifikačnú identitu alebo vodičský preukaz.",
       "Verification": "Overenie",
       "Verified-zone": "Overená zóna",
       "Y-m-complet-t-following-cdt-t-b-certified": "Ak chcete získať certifikát, musíte splniť nasledujúce podmienky.",
       "Yr-profil-is-currently-being-checked-D": "Váš profil sa momentálne kontroluje. Budeme vás kontaktovať do 48 hodín e-mailom.",
-      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Ak je to občiansky preukaz, nahrajte zadnú stranu karty (iba pre národnú kartu)."
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Ak je to občiansky preukaz, nahrajte zadnú stranu karty (iba pre národnú kartu).",
+      "Upload-yr-passport-id-identity-or-driver-license": "Vložte svoj pas, identifikačnú totožnosť alebo vodičský preukaz."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikácie sú viditeľné iba pre mojich priateľov",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Tento obsah bol nahlásený. Naši moderátori to skontrolujú do 24 hodín oneskorenia. Ak to nebude v súlade s pravidlami komunity, bude uložená sankcia.",
     "T-user-has-been-blocked-D": "Tento používateľ bol blokovaný z vášho účtu. Vo vašom účte nebude viditeľný žiadny obsah tohto profilu.",
     "W-is-t-reason-to-report-t-post": "Aký je dôvod nahlásiť tento príspevok?",
-    "W-is-t-reason-to-report-t-post-D": "Vaše hlásenie je anonymné. Vyberte si iba kategóriu, ktorá pomôže moratátorom"
+    "W-is-t-reason-to-report-t-post-D": "Vaše hlásenie je anonymné. Vyberte si iba kategóriu, ktorá pomôže moratátorom",
+    "A-y-s-to-unfollow-this-profile": "Naozaj chcete prestať sledovať tento profil?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Naozaj chcete odstrániť tohto priateľa zo zoznamu priateľov?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Výstraha. Uistite sa, že máte správnu adresu"

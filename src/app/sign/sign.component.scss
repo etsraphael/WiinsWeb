@@ -5,14 +5,48 @@
   display: inline-block;
 }
 
-.setting-top-signin {
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.63);
-  overflow: hidden;
-  border-left: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+.container-access-btn {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  top: 11%;
+  left: 21%;
 }
+
+.container-video-plyr {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.radio-caroussel {
+  cursor: pointer;
+}
+
+.sub-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.message-ancitipate {
+  min-height: 22rem;
+  align-items: center;
+}
+
+.container-dots { 
+  position: absolute;
+  bottom: 1rem;
+}
+
+.animation-background-signin {
+  max-width: 100%;
+  max-height: 200%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animate 60s ease-in-out infinite;
+  z-index: 1;
+}
+
 
 .term-of-use {
   color: black;
@@ -28,13 +62,41 @@
   transition: 0.5s;
 }
 
-.login-register-box:hover {
-  transform: translateY(-10px);
+.container-footer {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  height: 4rem;
 }
 
-.background {
-  background: linear-gradient(to right, #855beb, #5576df);
-  width: 100%;
+.btn-term-of-use {
+  color: white;
+}
+
+.bg-sign {
+  background: #FC5C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+.container-message-anticipate {
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 20px;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.container-message-anticipate span {
+  font-size: 20px;
+  color: white;
+  line-height: 2rem;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span.mille-premiers {
+  text-decoration: underline;
 }
 
 .read-more {

@@ -261,7 +261,17 @@
     "Save-in-phone": "Zapisz w telefonie",
     "No": "Nie",
     "Yes": "tak",
-    "Block-t-user": "Zablokuj tego użytkownika"
+    "Block-t-user": "Zablokuj tego użytkownika",
+    "Message": "Wiadomość",
+    "Friend-request": "Zaproszenie do znajomych",
+    "feed": "strumień",
+    "tube": "rura",
+    "Music": "Muzyka",
+    "Page": "Strona",
+    "Music-Project": "Projekt muzyczny",
+    "Group": "Grupa",
+    "Earlier": "Wcześniej",
+    "Notifications": "Powiadomienia"
   },
   "COUNTRY": {
     "AD": "Andora",
@@ -621,7 +631,9 @@
     "Y-dont-have-a-conversation-yet": "Nie masz jeszcze rozmowy.",
     "Date-cannot-be-in-the-past": "Data premiery nie może przypadać w przeszłości",
     "You-cannot-add-yourself": "Nie możesz dodać siebie",
-    "T-content-does-not-exist-anymore": "Ta treść już nie istnieje"
+    "T-content-does-not-exist-anymore": "Ta treść już nie istnieje",
+    "T-publication-no-longer-exists": "Ta publikacja już nie istnieje",
+    "Could-not-play-video": "Nie udało się odtworzyć wideo"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",
@@ -934,12 +946,12 @@
       "T-b-accepted-b-t-administration": "Do zaakceptowania przez administrację",
       "This-feature-requires-verification-to-use.": "Ta funkcja wymaga weryfikacji przed użyciem",
       "Upload-a-photo-holding-t-ID-D": "Prześlij zdjęcie z dowodem osobistym wraz z kartką papieru z dzisiejszą datą i napisem „Wiins”.",
-      "Upload-yr-password-id-identity-or-driver-license": "Prześlij swoje hasło, dowód tożsamości lub prawo jazdy.",
       "Verification": "Weryfikacja",
       "Verified-zone": "Strefa zweryfikowana",
       "Y-m-complet-t-following-cdt-t-b-certified": "Aby uzyskać certyfikat, musisz spełnić następujące warunki.",
       "Yr-profil-is-currently-being-checked-D": "Twój profil jest obecnie sprawdzany. W ciągu 48 godzin skontaktujemy się z Tobą mailowo.",
-      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Pamiętaj, aby przesłać odwrotną stronę karty, jeśli jest to krajowy dowód tożsamości (tylko w przypadku krajowego dowodu osobistego)"
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Pamiętaj, aby przesłać odwrotną stronę karty, jeśli jest to krajowy dowód tożsamości (tylko w przypadku krajowego dowodu osobistego)",
+      "Upload-yr-passport-id-identity-or-driver-license": "Prześlij swój paszport, dowód osobisty lub prawo jazdy."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikacje są widoczne tylko dla moich znajomych",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Ta treść została zgłoszona. Nasi moderatorzy z 24-godzinnym opóźnieniem sprawdzą to. Sankcja zostanie nałożona, jeśli nie jest to zgodne z zasadami społeczności.",
     "T-user-has-been-blocked-D": "Ten użytkownik został zablokowany na Twoim koncie. Żadna zawartość tego profilu nie będzie widoczna na Twoim koncie.",
     "W-is-t-reason-to-report-t-post": "Jaki jest powód zgłoszenia tego posta?",
-    "W-is-t-reason-to-report-t-post-D": "Twoje zgłoszenie jest anonimowe. Wybierz tylko kategorię, aby pomóc moratorom"
+    "W-is-t-reason-to-report-t-post-D": "Twoje zgłoszenie jest anonimowe. Wybierz tylko kategorię, aby pomóc moratorom",
+    "A-y-s-to-unfollow-this-profile": "Czy na pewno chcesz przestać obserwować ten profil?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Czy na pewno chcesz usunąć tego znajomego ze swojej listy znajomych?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Ostrzeżenie. Upewnij się, że masz właściwy adres"

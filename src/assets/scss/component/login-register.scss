@@ -43,7 +43,7 @@
   z-index: 2;
 }
 
-::ng-deep .header-bar-setting {
+::ng-deep .header-bar-setting, ::ng-deep .container-footer-sign  {
 
   .mat-select-panel {
     position: relative;

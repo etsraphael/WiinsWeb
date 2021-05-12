@@ -261,7 +261,17 @@
     "Save-in-phone": "Telefonda saqlang",
     "No": "Yo'q",
     "Yes": "Ha",
-    "Block-t-user": "Ushbu foydalanuvchini bloklash"
+    "Block-t-user": "Ushbu foydalanuvchini bloklash",
+    "Message": "Xabar",
+    "Friend-request": "Do'stlik so'rovi",
+    "feed": "oqim",
+    "tube": "naycha",
+    "Music": "Musiqa",
+    "Page": "Sahifa",
+    "Music-Project": "Musiqiy loyiha",
+    "Group": "Guruh",
+    "Earlier": "Oldinroq",
+    "Notifications": "Bildirishnomalar"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -621,7 +631,9 @@
     "you-hav-to-upgrad-a-manager-before-leave": "Guruhdan chiqishdan oldin menejerni lavozimga ko'tarishingiz kerak",
     "Date-cannot-be-in-the-past": "Chiqarish sanasi o'tmishda bo'lishi mumkin emas",
     "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz",
-    "T-content-does-not-exist-anymore": "Ushbu tarkib endi mavjud emas"
+    "T-content-does-not-exist-anymore": "Ushbu tarkib endi mavjud emas",
+    "T-publication-no-longer-exists": "Ushbu nashr endi mavjud emas",
+    "Could-not-play-video": "Videoni ijro qilib bo‘lmadi"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Surat qabul qilindi",
@@ -935,11 +947,11 @@
       "T-b-accepted-b-t-administration": "Ma'muriyat tomonidan qabul qilinadi",
       "This-feature-requires-verification-to-use.": "Ushbu xususiyatdan foydalanish uchun tekshirishni talab qiladi",
       "Upload-a-photo-holding-t-ID-D": "Shaxsiy guvohnomani bugungi kun yozilgan varaq bilan qog'ozga yuklang va unga \"Wiins\" yozadi.",
-      "Upload-yr-password-id-identity-or-driver-license": "Parolingizni, identifikatoringizni yoki haydovchilik guvohnomangizni yuklang.",
       "Verification": "Tekshirish",
       "Verified-zone": "Tasdiqlangan zona",
       "Y-m-complet-t-following-cdt-t-b-certified": "Sertifikat olish uchun quyidagi shartlarni bajarishingiz kerak.",
-      "Yr-profil-is-currently-being-checked-D": "Hozirda profilingiz tekshirilmoqda. Siz bilan 48 soat ichida elektron pochta orqali bog'lanamiz."
+      "Yr-profil-is-currently-being-checked-D": "Hozirda profilingiz tekshirilmoqda. Siz bilan 48 soat ichida elektron pochta orqali bog'lanamiz.",
+      "Upload-yr-passport-id-identity-or-driver-license": "Pasportingizni, identifikatoringizni yoki haydovchilik guvohnomangizni yuklang."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mening nashrlarimni faqat do'stlarim ko'rishadi",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Ushbu tarkib haqida xabar berilgan. Moderatorlarimiz uni ko'rib chiqish uchun 24 soat kechiktirishni ko'rib chiqadilar. Agar bu jamiyat qoidalariga rioya qilmasa, sanktsiya qo'llaniladi.",
     "T-user-has-been-blocked-D": "Ushbu foydalanuvchi sizning hisobingizdan bloklangan. Hisobingizda ushbu profilning hech qanday mazmuni ko'rinmaydi.",
     "W-is-t-reason-to-report-t-post": "Ushbu xabar haqida xabar berishning sababi nima?",
-    "W-is-t-reason-to-report-t-post-D": "Sizning hisobotingiz noma'lum. Iltimos, moratatorlarga yordam berish uchun faqat bitta toifani tanlang"
+    "W-is-t-reason-to-report-t-post-D": "Sizning hisobotingiz noma'lum. Iltimos, moratatorlarga yordam berish uchun faqat bitta toifani tanlang",
+    "A-y-s-to-unfollow-this-profile": "Ushbu profilni bekor qilishingizga ishonchingiz komilmi?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Ushbu do'stingizni do'stlaringiz ro'yxatidan o'chirishga ishonchingiz komilmi?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Ogohlantirish. To'g'ri manzilga ega ekanligingizga ishonch hosil qiling"

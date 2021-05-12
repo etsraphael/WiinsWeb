@@ -9,11 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 import { TubePageStoreActions, TubePageStoreSelectors } from 'src/app/root-store/tube-page-store';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ValidationsComponent } from 'src/app/core/modal/validations/validations.component';
-import { Action } from 'rxjs/internal/scheduler/Action';
-import { Actions } from '@ngrx/effects';
-import { TubeModel } from 'src/app/core/models/tube/tube.model';
 import { ReportModalComponent } from 'src/app/core/modal/report-modal/report-modal.component';
 
 @Component({

@@ -261,7 +261,17 @@
     "Save-in-phone": "Simpan di telepon",
     "No": "Tidak",
     "Yes": "Iya",
-    "Block-t-user": "Cekal pengguna ini"
+    "Block-t-user": "Cekal pengguna ini",
+    "Message": "Pesan",
+    "Friend-request": "Permintaan pertemanan",
+    "feed": "aliran",
+    "tube": "tabung",
+    "Music": "Musik",
+    "Page": "Halaman",
+    "Music-Project": "Proyek Musik",
+    "Group": "Kelompok",
+    "Earlier": "Sebelumnya",
+    "Notifications": "Notifikasi"
   },
   "COUNTRY": {
     "AD": "Andorra",
@@ -621,7 +631,9 @@
     "you-hav-to-upgrad-a-manager-before-leave": "Anda harus mempromosikan seorang manajer sebelum keluar dari grup",
     "Date-cannot-be-in-the-past": "Tanggal rilis tidak boleh di masa lalu",
     "You-cannot-add-yourself": "Anda tidak dapat menambahkan diri Anda sendiri",
-    "T-content-does-not-exist-anymore": "Konten ini sudah tidak ada"
+    "T-content-does-not-exist-anymore": "Konten ini sudah tidak ada",
+    "T-publication-no-longer-exists": "Publikasi ini sudah tidak ada",
+    "Could-not-play-video": "Tidak dapat memutar video"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto sudah diterima",
@@ -935,11 +947,11 @@
       "T-b-accepted-b-t-administration": "Untuk diterima oleh administrasi",
       "This-feature-requires-verification-to-use.": "Fitur ini memerlukan verifikasi untuk digunakan",
       "Upload-a-photo-holding-t-ID-D": "Unggah foto memegang ID dengan selembar kertas dengan tanggal hari ini dan tulisan \"Wiins\" di atasnya.",
-      "Upload-yr-password-id-identity-or-driver-license": "Unggah kata sandi, identitas id atau SIM Anda.",
       "Verification": "Verifikasi",
       "Verified-zone": "Zona terverifikasi",
       "Y-m-complet-t-following-cdt-t-b-certified": "Anda harus menyelesaikan persyaratan berikut untuk mendapatkan sertifikasi.",
-      "Yr-profil-is-currently-being-checked-D": "Profil Anda saat ini sedang diperiksa. Kami akan menghubungi Anda dalam waktu 48 jam melalui email."
+      "Yr-profil-is-currently-being-checked-D": "Profil Anda saat ini sedang diperiksa. Kami akan menghubungi Anda dalam waktu 48 jam melalui email.",
+      "Upload-yr-passport-id-identity-or-driver-license": "Unggah paspor, identitas id atau SIM Anda."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Terbitan saya hanya bisa dilihat oleh teman-teman saya",
@@ -1053,7 +1065,9 @@
     "T-content-has-been-reported": "Konten ini telah dilaporkan. Moderator kami akan memeriksa dalam 24 jam penundaan untuk memeriksanya. Sanksi akan diberikan jika tidak menghormati aturan masyarakat.",
     "T-user-has-been-blocked-D": "Pengguna ini telah diblokir dari akun Anda. Tidak ada konten dari profil ini yang akan terlihat dengan akun Anda.",
     "W-is-t-reason-to-report-t-post": "Apa alasan untuk melaporkan posting ini?",
-    "W-is-t-reason-to-report-t-post-D": "Laporan Anda bersifat anonim. Silakan pilih hanya satu kategori untuk membantu para morator"
+    "W-is-t-reason-to-report-t-post-D": "Laporan Anda bersifat anonim. Silakan pilih hanya satu kategori untuk membantu para morator",
+    "A-y-s-to-unfollow-this-profile": "Apakah Anda yakin untuk berhenti mengikuti profil ini?",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "Anda yakin ingin menghapus teman ini dari daftar teman Anda?"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "Peringatan. Pastikan Anda memiliki alamat yang benar"

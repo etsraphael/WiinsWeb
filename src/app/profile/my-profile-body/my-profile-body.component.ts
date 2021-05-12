@@ -88,7 +88,7 @@ export class MyProfileBodyComponent implements OnInit, OnDestroy {
 
   prepareRoute(outlet: RouterOutlet) {
     // to animate the router
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['Story']
   }
 
   openCrooperProfile(file: Event | any) {
