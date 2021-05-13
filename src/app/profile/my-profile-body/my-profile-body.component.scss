@@ -31,6 +31,16 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .information-profil {
+    padding: 0 !important;
+  }
+  .nav-space .btn {
+  box-shadow: 0px 0px 0px 0px !important;
+  margin-left: 0 !important;
+  }
+}
+
 .content-pseudo {
   span {
     color: white;
@@ -91,7 +101,7 @@ img {
 
   .btn {
     border-radius: 25px;
-    box-shadow: 0 1px 1rem rgba(0, 0, 0, .175) !important;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .175);
 
     i {
       border-radius: 50%;
