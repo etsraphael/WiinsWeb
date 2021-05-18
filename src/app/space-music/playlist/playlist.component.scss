@@ -5,12 +5,29 @@
   height: 100%;
 
   .playlistAndProfile {
-    height: 305px;
+    height: 335px;
   }
 
   .commentAndMusicList {
     height: 540px;
   }
 
+  @media screen and (max-width: 768px) {
+    .commentAndMusicList {margin-top: 3em !important; padding-top: 0 !important;}
+  }
 
+  @media screen and (max-width: 991px) {
+    .view-comment {display: none !important;}
+    .view-playlist {width: 95% !important; padding: 0 !important;}
+  }
+
+.view-player,
+.view-playlist {
+  width: 60%;
+}
+
+.view-profile,
+.view-comment {
+  width: 35%;
+}
 }

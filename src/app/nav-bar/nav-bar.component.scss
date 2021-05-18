@@ -34,7 +34,7 @@ nav {
     display: flex !important;
     flex-direction: column !important;
     margin: 1.125rem 0 0;
-    border-radius: 8px;
+    border-radius: 12px;
     position: absolute;
     text-align: left;
     background-clip: padding-box;
@@ -78,6 +78,16 @@ nav {
 .home-dropdown span,
 .home-dropdown-content span {
   display: none;
+}
+
+.wiinsMusic {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.wiinsGroup {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 

@@ -34,8 +34,40 @@
     }
   }
 
+  .title-filter {
+    width: 20%;
+  }
+.btn-filter {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-filter {font-size: 10px !important;}
+  .title-filter p {font-size: 15px !important;}
+  .fa-calendar, .fa-heart {display: none !important;}
+  .btn-filter span {margin-right: 0.8em !important;}
+  .btn-filter span:hover {color: #ff4b5b !important;}
+}
+
+
+.oneComment .avatar-owner {
+  width: 25%;
+}
+
+.oneComment .heart {
+  width: 25%;
+}
+
+.user-comment {
+  width: 50%;
+}
+
   .container-scroll {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
 }

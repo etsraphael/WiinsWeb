@@ -12,6 +12,12 @@
   background-color: #ececec;
 }
 
+.oneMusic {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .oneMusic:hover {
   .index p {
     display: none;
@@ -19,6 +25,10 @@
   .fa-play {
     display: block;
   }
+}
+
+.PlayOneMusic {
+  width: 10%;
 }
 
 .fa-play, .fa-pause {
@@ -36,10 +46,13 @@
   padding: 10px 11px 10px 11px;
 }
 
+.avatar-container {
+  width: 10%;
+}
+
 .avatar {
   img {
     width: 50px;
-    height: 50px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #e6e6e6;
@@ -47,9 +60,9 @@
     cursor: pointer;
   }
   img:hover{
-    width: 55px;
-    height: 55px;
-    transition: 0.3s;
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 1px solid #ff4b5b;
   }
 }
 
@@ -61,8 +74,13 @@ span {
 }
 
 .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 40%;
   .title {
-    font-size: 1.1rem
+    font-size: 1.1rem;
   }
 
   .pseudo {
@@ -71,9 +89,14 @@ span {
 }
 
 .feat {
+  width: 20%;
   .avatar:not(:first-child) {
     margin: 0px 0px 0px -16px !important;
   }
+}
+
+.fa-heart-container {
+  width: 15%;
 }
 
 .fa-heart{

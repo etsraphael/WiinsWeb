@@ -3,20 +3,20 @@
   <!-- Header Card -->
   <div class="header">
     <div class="row mx-0 my-2">
-      <div class="col-4">
+      <div class="title-filter">
         <span class="row">
           <p class="ml-4">{{"CORE.Filter"|translate}}</p>
         </span>
       </div>
-      <div class="col-8 btn-filter">
+      <div class="btn-filter">
         <div class="row mx-0">
-          <div class="ml-auto">
+          <div>
            <div class="row mx-0">
-            <div class="mx-2 row">
+            <div class="mr-3 row">
               <i class="fa fa-heart mx-2 mt-1"></i>
               <span>{{"CORE.Like"|translate}}</span>
             </div>
-            <div class="mx-2 row">
+            <div class="row">
               <i class="fa fa-calendar mx-2 mt-1"></i>
                <span>{{"CORE.Date"|translate}}</span>
             </div>
@@ -34,12 +34,12 @@
         <div class="oneComment mb-2" *ngFor="let c of (comment$ | async); let first = first; let i = index">
           <hr class="mb-2 mt-0 mx-2" *ngIf="!first">
           <div class="row mx-0">
-            <div class="col-2 pt-2 px-sm-3">
+            <div class="avatar-owner pt-2 px-sm-3">
               <a [routerLink]="'/profile/' + c.idProfil._id">
                 <img class="avatar-oneComment rounded-circle img-fluid" [src]="c.idProfil.pictureprofile">
               </a>
             </div>
-            <div class="col-8 px-0 my-auto">
+            <div class="user-comment px-0 my-auto">
               <span>
                 <h4 class="d-inline pseudo-comment" [routerLink]="'/profile/' + c.idProfil._id">{{c.idProfil._meta.pseudo}}</h4>
                 <p class="d-inline ml-1">{{c.text}}</p>
@@ -48,7 +48,7 @@
                 </div>
               </span>
             </div>
-            <div ngbDropdown class="col-2 d-flex justify-content-center my-auto px-0">
+            <div ngbDropdown class="heart d-flex justify-content-center my-auto px-0">
               <button ngbDropdownToggle  class="option-one-comment">
                 <i class="fa fa-ellipsis-h"></i>
               </button>

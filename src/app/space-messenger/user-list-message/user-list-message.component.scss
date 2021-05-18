@@ -2,6 +2,25 @@
   cursor: pointer;
 }
 
+.profil-mini-conversation {
+  width: 20%;
+}
+
+.messenger-mini-conversation {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .date-mini-conversation {display: none !important;}
+  .messenger-mini-conversation {width: 50% !important;}
+  .messenger-mini-conversation {margin-left: 3em !important;}
+  .profil-mini-conversation {margin-left: 0.5em !important;}
+}
+
+.date-mini-conversation {
+  width: 20%;
+}
+
 .mini-conversation:hover,
 .highlight {
   background: #eeeeee;
@@ -72,6 +91,9 @@ p {
     padding: 0 8px 0 10px;
     cursor: default;
   }
+
+  .btn-info 
+  {background: transparent;}
 
   .fa {
     font-size: 21px;

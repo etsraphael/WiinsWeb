@@ -1,8 +1,8 @@
 <!-- Component Body -->
 <div class="card">
-  <div class="card-container row w-100 mx-0">
+  <div class="card-container w-100 mx-0">
     <!-- Publication Container -->
-    <div class="col-md-7 px-0 bg-lighter h-100" [ngSwitch]="data.publication.type">
+    <div class="picture-container px-0 bg-lighter h-100" [ngSwitch]="data.publication.type">
       <div class="w-100 h-100">
         <div *ngSwitchCase="'PicturePublication'" class="container-picture-publication h-100 row mx-0 my-auto">
           <img [src]="data.publication.file" class="w-100 my-auto h-100">
@@ -21,18 +21,18 @@
       </div>
     </div>
     <!-- Publication Information -->
-    <div class="col-md-5 container-comment px-0">
+    <div class="container-comment px-0">
       <!-- Comment List and Header Info -->
       <div class="container-scroll container-list-comment-base">
-        <div class="card-header mx-2">
-          <div class="container">
+        <div class="card-header">
+          <div class="container px-0">
             <div class="row mx-0">
-              <div class="col-3 col-sm-4 col-md-3 px-0 my-auto">
+              <div class="col-3 col-sm-4 col-md-3 pr-3 my-auto">
                 <a [routerLink]="[link]" (click)="dialogRef.close()">
-                  <img [src]="this.avatarPublication" class="avatar-header rounded-circle img-fluid">
+                  <img [src]="this.avatarPublication" class="avatar-header rounded-circle">
                 </a>
               </div>
-              <div class="col-9 col-sm-8 col-md-9 my-auto pr-0">
+              <div class="col-9 col-sm-8 col-md-9 my-auto pl-5 pr-0">
                 <div class="container">
                   <div class="row">{{name}}</div>
                   <div class="row ">
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="card-header mx-4 py-2 px-0 container-btn-option">
+        <div class="card-header mx-2 py-2 px-0 container-btn-option">
           <div class="row mx-0">
             <div class="col">
               <button class="btn w-100 py-1 px-0" [ngClass]="{liked: isLiked}" (click)="btnLike()">
@@ -158,12 +158,12 @@
             </div>
           </div>
         </div>
-        <div class="card-footer mx-4">
-          <div class="row">
-            <div class="col-md-3 d-flex justify-content-center">
+        <div class="card-footer d-flex justify-content-center">
+          <div class="d-flex responsiv-new-comment">
+            <div class="col-md-3 d-flex picture-new-comment">
               <img class="avatar-comment rounded-circle" [src]="(myprofile|async)?.pictureprofile">
             </div>
-            <div class="col-md-9 my-auto py-2 container-new-comment" 
+            <div class="col-md-8 my-auto py-2 container-new-comment" 
              (keydown.enter)="sendComment(); false" (keydown)="writeComment($event)">
               <span class="content-comment-span w-100" #newComment contenteditable placeholder="Write your comment here.."></span>
             </div>

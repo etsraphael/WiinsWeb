@@ -42,7 +42,6 @@
 .container-btn-footer-left {
   z-index: 2;
 }
-
 ::ng-deep .header-bar-setting, ::ng-deep .container-footer-sign  {
 
   .mat-select-panel {
@@ -201,12 +200,30 @@
   }
 }
 
+.container-btn-submit-log-in {
+  width: 48%;
+}
+
 .btn-submit-log-in,
 .btn-submit-sign-up {
   background: #FF0099;
   background: -webkit-linear-gradient(to left, #493240, #FF0099);
   background: linear-gradient(to left, #493240, #FF0099);
   box-shadow: 13px 15px 21px #fa089640;
+}
+
+.container-btc {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .container-btc {width: 40% !important;}
+}
+
+@media (max-width: 768px) {
+  .container-submit-btc {flex-direction: column !important;}
+  .container-btn-submit-log-in {width: 100% !important; margin-bottom: 1em;}
+  .container-btc {width: 100% !important;}
 }
 
 .btc-image {

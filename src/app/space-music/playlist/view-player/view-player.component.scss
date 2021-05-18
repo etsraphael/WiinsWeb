@@ -10,6 +10,11 @@
   height: 60%;
 }
 
+.Picture-Info {
+  width: 83%;
+  padding: 1rem;
+}
+
 .player {
   height: 40%;
 
@@ -42,7 +47,7 @@ button {
 
 .album {
   img {
-    height: 13rem;
+    height: 15rem;
     border-radius: 11px;
     box-shadow: 2px 2px 40px -12px #999;
     object-fit: cover;
@@ -69,6 +74,17 @@ button {
   height: 38px;
   position: relative;
   transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+.btn-description {
+  display: flex !important;
+  align-items: flex-end !important;
+  padding-bottom: 2.5em !important;
+  margin: 0 !important;
+}
+.information {width: 80% !important;}
+.Picture-Info {width: 100% !important;}
+
 }
 
 .fa {

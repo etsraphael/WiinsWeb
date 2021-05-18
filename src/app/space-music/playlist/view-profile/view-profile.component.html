@@ -7,12 +7,12 @@
   <!-- Header Card -->
   <div class="header w-100">
     <div class="row p-4 m-4">
-      <div class="col-md-4">
+      <div class="w-100 d-flex containerProfile">
         <div class="row containerImgProfile">
           <img class="mx-auto img-fluid" [src]="p.pictureprofile">
         </div>
       </div>
-      <div class="col-md-8 my-auto descriptionProfile">
+      <div class="col-md-8 pt-1 my-auto descriptionProfile">
         <div class="row pseudo">
           <span>{{p._meta.pseudo}}</span>
         </div>
@@ -24,8 +24,8 @@
   </div>
   <!-- Card Footer -->
   <div class="footer container-button row my-auto w-100 mx-0">
-    <div class="row mx-auto">
-      <div class="ml-auto my-auto">
+    <div class="row mx-auto d-flex justify-content-center">
+      <div class="my-auto">
         <button [routerLink]="'/profile/' + p._id" class="mx-auto btn-create-tube">
           <i class="my-auto fa fa-leaf px-2"></i>
           <span class="mx-2">{{"CORE.Profile"| translate}}</span>

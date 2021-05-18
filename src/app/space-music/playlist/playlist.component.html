@@ -2,19 +2,19 @@
 <div class="container-card">
   <!-- Control and Artist -->
   <div *ngIf="musicList$|async" [@HeaderPlaylist]="(musicList$|async)" class="playlistAndProfile row mx-0 px-4 py-4">
-    <div class="col-md-7">
+    <div class="view-player">
       <app-view-player></app-view-player>
     </div>
-    <div class="col-md-5">
+    <div class="view-profile pl-3">
       <app-view-profile></app-view-profile>
     </div>
   </div>
   <!-- Comment and Music list -->
-  <div class="commentAndMusicList row mx-0 px-4 py-1">
-    <div class="col-md-5 mb-5">
+  <div class="commentAndMusicList row mx-0 px-4 pt-4 mt-4">
+    <div class="view-comment">
       <app-view-comment></app-view-comment>
     </div>
-    <div class="col-md-7 mb-5">
+    <div class="view-playlist pl-3">
       <app-music-list></app-music-list>
     </div>
   </div>

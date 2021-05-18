@@ -1,9 +1,10 @@
 .main-messenger {
-  height: 100%;
-  overflow-y: scroll;
+  height: 90%;
+  overflow-y: auto;
 }
 
 .conversation {
+  width: 65%;
   border-left: 1px solid #e7e7e7;
   overflow: hidden;
   height: 100%;
@@ -11,7 +12,8 @@
 }
 
 .list-user {
+  width: 35%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }

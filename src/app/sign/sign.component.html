@@ -1,19 +1,19 @@
 <!-- Body Component -->
-<div class="w-100 h-100 bg-sign">
+<div class="w-100 h-100 container-login bg-sign">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
-    <div class="row mx-0 h-100">
-      <div class="col my-auto">
+    <div class="row mx-0">
+      <div class="w-100 my-auto container-login-box">
         <div *ngIf="!(loading$ | async) && !(profileLoading$ | async)">
           <!-- Router Container -->
-          <div class="col-8 mx-auto mt-5" fxLayout fxLayoutAlign="space-between center">
-        <div class="col-3 wiins-logo-container">
-          <img class="w-100 wiins-logo" src="./../../assets/img/wiinstypo.png" alt="">
+          <div class="mx-auto mt-5 wiins-logo-container">
+        <div class="wiins-container">
+          <img class="wiins-logo" src="./../../assets/img/wiinstypo.png" alt="">
         </div>
         </div>
           <div class="pt-6 pt-md-0 mt-2 container">
             <div class="row h-100">
-              <div class="col col-sm-8 py-3 mx-auto mt-md-8 login-register-box">
+              <div class="col col-sm-8 py-3 mx-auto mb-5 login-register-box">
                 <router-outlet></router-outlet>
               </div>
             </div>
@@ -26,17 +26,17 @@
         </div>
       </div>
     </div>
+    <div class="w-100 mr-5 container-footer container-footer-sign">
+      <mat-form-field class="btn p-0">
+        <mat-select [(value)]="selectedLang">
+          <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+            {{l.language}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <a [routerLink]="['/term-of-use']" class="container-term-of-use mx-2">
+        <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
+      </a>
+    </div>
   </div>
-      <div class="container-footer container-footer-sign">
-        <mat-form-field class="btn p-0">
-          <mat-select [(value)]="selectedLang">
-            <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
-              {{l.language}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <a [routerLink]="['/term-of-use']" class="mx-2">
-          <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
-        </a>
-      </div>
 </div>

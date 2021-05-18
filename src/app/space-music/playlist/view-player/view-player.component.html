@@ -5,7 +5,7 @@
     <!-- If a music was chosen -->
     <div class="description row mx-0 h-100" *ngIf="audio$ | async; let m">
       <!-- Info -->
-      <div class="col-10">
+      <div class="Picture-Info">
         <div class="row h-100">
           <div class="col-md-7 album my-auto">
             <img class="img-fluid" [src]="m.imgUrl">
@@ -21,18 +21,6 @@
         </div>
       </div>
       <!-- Control and like -->
-      <div class="btn-description col-2 my-auto">
-        <div class="row">
-          <div class="mx-auto">
-            <button class="mx-2">
-              <i class="fa fa-heart"></i>
-            </button>
-            <button class="mx-2" *ngIf="false">
-              <i class="fa fa-random"></i>
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
