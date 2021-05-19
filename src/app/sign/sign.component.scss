@@ -1,5 +1,11 @@
   @import 'src/assets/scss/component/login-register.scss';
 
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
 .container-donation {
   display: inline-block;
 }
@@ -17,6 +23,9 @@
   overflow: hidden;
 }
 
+.container-login {
+  height: 100%;
+}
 
 .container-login-box {
   height: 90vh;
@@ -74,12 +83,12 @@
  display: flex;
  justify-content: flex-end;
  position: relative;
- top: 1em;
+ padding-right: 3em;
 }
 
 @media (max-width: 768px) {
-  .container-footer {top: 28em; position: relative; display: flex; justify-content: center;}
-  .container-login {height: 149vh !important;}
+  .container-footer-login {top: 28em; position: relative; display: flex; justify-content: center;}
+  .container-login {height: 160% !important;}
 }
 
 .btn-term-of-use {

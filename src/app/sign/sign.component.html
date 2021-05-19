@@ -1,5 +1,5 @@
 <!-- Body Component -->
-<div class="w-100 h-100 container-login bg-sign">
+<div class="w-100 container-login bg-sign">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0">
@@ -26,17 +26,18 @@
         </div>
       </div>
     </div>
-    <div class="w-100 mr-5 container-footer container-footer-sign">
-      <mat-form-field class="btn p-0">
-        <mat-select [(value)]="selectedLang">
-          <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
-            {{l.language}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      <a [routerLink]="['/term-of-use']" class="container-term-of-use mx-2">
-        <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
-      </a>
-    </div>
+  
+  </div>
+  <div class="w-100 container-footer container-footer-login">
+    <mat-form-field class="btn p-0">
+      <mat-select [(value)]="selectedLang">
+        <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+          {{l.language}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <a [routerLink]="['/term-of-use']" class="container-term-of-use mx-2">
+      <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
+    </a>
   </div>
 </div>
