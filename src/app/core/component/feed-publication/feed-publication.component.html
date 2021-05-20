@@ -151,7 +151,7 @@
                         <div class="col-9 px-0 pl-2">
                           <input #hastagContent (keydown.enter)="addHastag(); false"
                             (keypress)="omit_special_char($event)" class="col-md-11 py-1 pl-0" type="text"
-                            [placeholder]="'PLACEHOLDER.Hastags'|translate" maxlength="12">
+                            [placeholder]="'PLACEHOLDER.Hastags'|translate" maxlength="20">
                         </div>
                       </div>
                     </div>
@@ -187,7 +187,7 @@
                     <div class="col-9 px-0">
                       <input #hastagContent (keydown.enter)="addHastag(); false" (keypress)="omit_special_char($event)"
                         class="col-md-11 py-1 pl-0" type="text" [placeholder]="'PLACEHOLDER.Hastags'|translate"
-                        maxlength="12">
+                        maxlength="20">
                     </div>
                   </div>
                 </div>
