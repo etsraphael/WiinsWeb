@@ -219,7 +219,17 @@
     "Save-in-phone": "حفظ في الهاتف",
     "No": "لا",
     "Yes": "نعم",
-    "Block-t-user": "منع هذا المستخدم"
+    "Block-t-user": "منع هذا المستخدم",
+    "Message": "رسالة",
+    "Friend-request": "طلب صداقة",
+    "feed": "تدفق",
+    "tube": "الة النفخ",
+    "Music": "موسيقى",
+    "Page": "صفحة",
+    "Music-Project": "مشروع الموسيقى",
+    "Group": "مجموعة",
+    "Earlier": "سابقا",
+    "Notifications": "إشعارات"
   },
   "COUNTRY": {
     "AD": "اندورا",
@@ -579,7 +589,9 @@
     "Y-dont-have-a-conversation-yet": "ليس لديك محادثة حتى الآن.",
     "Date-cannot-be-in-the-past": "لا يمكن أن يكون تاريخ الإصدار في الماضي",
     "You-cannot-add-yourself": "لا يمكنك إضافة نفسك",
-    "T-content-does-not-exist-anymore": "هذا المحتوى غير موجود بعد الآن"
+    "T-content-does-not-exist-anymore": "هذا المحتوى غير موجود بعد الآن",
+    "T-publication-no-longer-exists": "هذا المنشور لم يعد موجودا",
+    "Could-not-play-video": "تعذر تشغيل الفيديو"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "تم استلام الصورة",
@@ -881,10 +893,10 @@
       "Yr-profil-is-currently-being-checked-D": "ملفك الشخصي قيد التحقق حاليا. سوف نتصل بك في غضون 48 ساعة عبر البريد الإلكتروني.",
       "Verification": "التحقق",
       "Pl-s-t-docs-a-complet-t-form-below": "يرجى إرسال المستندات اللازمة وإكمال النموذج أدناه.",
-      "Upload-yr-password-id-identity-or-driver-license": "قم بتحميل كلمة المرور أو الهوية الشخصية أو رخصة القيادة.",
       "Upload-a-photo-holding-t-ID-D": "قم بتحميل صورة تحمل الهوية مع ورقة عليها تاريخ اليوم وكتب عليها كلمة \"Wiins\"",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "أوافق على استخدام بياناتي للتحقق من حسابي.",
-      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "تأكد من تحميل الجانب الخلفي من البطاقة إذا كانت بطاقة الهوية الوطنية (فقط للبطاقة الوطنية)"
+      "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "تأكد من تحميل الجانب الخلفي من البطاقة إذا كانت بطاقة الهوية الوطنية (فقط للبطاقة الوطنية)",
+      "Upload-yr-passport-id-identity-or-driver-license": "قم بتحميل جواز سفرك أو بطاقة الهوية أو رخصة القيادة."
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
@@ -995,7 +1007,9 @@
     "T-content-has-been-reported": "تم الإبلاغ عن هذا المحتوى. سيقوم المشرفون لدينا بإلقاء نظرة خلال 24 ساعة تأخير لمراجعتها. سيتم تطبيق عقوبة إذا كان هذا لا يحترم قواعد المجتمع.",
     "T-user-has-been-blocked-D": "تم حظر هذا المستخدم من حسابك. لن يكون أي محتوى لهذا الملف الشخصي مرئيًا في حسابك.",
     "W-is-t-reason-to-report-t-post": "ما هو سبب الإبلاغ عن هذا المنشور؟",
-    "W-is-t-reason-to-report-t-post-D": "تقريرك مجهول. الرجاء اختيار فئة فقط لمساعدة الوقف"
+    "W-is-t-reason-to-report-t-post-D": "تقريرك مجهول. الرجاء اختيار فئة فقط لمساعدة الوقف",
+    "A-y-s-to-unfollow-this-profile": "هل أنت متأكد من إلغاء متابعة هذا الملف الشخصي؟",
+    "A-y-s-to-delete-t-friend-in-yr-friend-list": "هل أنت متأكد من حذف هذا الصديق من قائمة الأصدقاء الخاصة بك؟"
   },
   "WARNING": {
     "BC-make-sure-you-have-the-correct-address": "تحذير. تأكد من أن لديك العنوان الصحيح"

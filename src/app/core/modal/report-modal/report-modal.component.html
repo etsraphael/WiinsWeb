@@ -18,8 +18,9 @@
         <!-- List of btn categorie -->
         <div class="row d-flex justify-content-center">
           <div *ngFor="let item of categorieData">
-            <button class="btn mx-1 my-2 btn btn-secondary" [ngClass]="{'active': item.number == categorieSelected }"
-              (click)="changeCategorie(item.number)" type="button">
+            <button class="btn mx-1 my-2 btn btn-secondary"
+              [ngClass]="{'active': categorieSelected.includes(item.number) }"
+              (click)="addOrRemoveCategorie(item.number)" type="button">
               <span class="">{{item.type | translate}}</span>
             </button>
           </div>
@@ -41,9 +42,9 @@
           <button class="btn btn-secondary mx-2" (click)="closeModal()" type="button">
             <span>{{'CORE.Back'|translate}}</span>
           </button>
-            <button class="btn btn-primary" (click)="changePage(2)" type="button">
-              <span>{{'CORE.Next'|translate}}</span>
-            </button>
+          <button class="btn btn-primary" (click)="changePage(2)" type="button">
+            <span>{{'CORE.Next'|translate}}</span>
+          </button>
         </div>
       </div>
     </div>
@@ -59,9 +60,17 @@
       <!-- Card Body -->
       <div class="card-body">
         <div class="container">
-          <div class="row mx-0 my-2" *ngFor="let d of categorieData[categorieSelected - 1 ].descriptions">
+          <!-- <div class="row mx-0 my-2" *ngFor="let d of categorieData[categorieSelected - 1 ].descriptions">
             <li class="list-group-item">{{d | translate}}</li>
+          </div> -->
+
+
+          <div class="row mx-0 my-2">
+            <div *ngFor="let d of categorieSelected">
+              <li *ngFor="let d of categorieData[d-1].descriptions" class="list-group-item m-2">{{d | translate}}</li>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -71,9 +80,9 @@
           <button class="btn btn-secondary mx-2" (click)="changePage(1)" type="button">
             <span>{{'CORE.Back'|translate}}</span>
           </button>
-            <button class="btn btn-primary mx-2" (click)="sendReport()" type="button">
-              <span>{{'CORE.Confirm'|translate}}</span>
-            </button>
+          <button class="btn btn-primary mx-2" (click)="sendReport()" type="button">
+            <span>{{'CORE.Confirm'|translate}}</span>
+          </button>
         </div>
       </div>
 
@@ -105,8 +114,8 @@
             </button>
           </div>
         </div>
-      </div>      
-    
+      </div>
+
     </div>
 
   </div>

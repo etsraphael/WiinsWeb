@@ -12,7 +12,7 @@ if (environment.production) {
   enableProdMode()
 
   Sentry.init({
-    dsn: "https://ba32432a34f34ba38e7ff98731f58b99@o485463.ingest.sentry.io/5655750",
+    dsn: "https://8c1255d675444f9e8ba8bfaf4597d1b9@o833200.ingest.sentry.io/5812918",
     integrations: [
       new Integrations.BrowserTracing({
         tracingOrigins: ['localhost', 'https://www.wiins.io'],

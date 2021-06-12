@@ -1,12 +1,11 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { VerificationSpaceUnlockedComponent } from './verification-space-unlocked.component';
 
 describe('VerificationSpaceUnlockedComponent', () => {
   let component: VerificationSpaceUnlockedComponent;
   let fixture: ComponentFixture<VerificationSpaceUnlockedComponent>;
 
-  beforeEach(async(() => {
+  beforeEach((() => {
     TestBed.configureTestingModule({
       declarations: [ VerificationSpaceUnlockedComponent ]
     })
