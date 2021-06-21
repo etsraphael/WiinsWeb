@@ -1,5 +1,5 @@
 <!-- Body Component -->
-<div class="w-100 h-100 bg-sign">
+<div class="w-100 h-100 bg-sign" *ngIf="false">
   <!-- Container -->
   <div class="container-fluid px-0 h-100">
     <div class="row mx-0 h-100">
@@ -23,16 +23,39 @@
       </div>
     </div>
   </div>
-      <div class="container-footer container-footer-sign">
-        <mat-form-field class="btn p-0">
-          <mat-select [(value)]="selectedLang">
-            <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
-              {{l.language}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <a [routerLink]="['/term-of-use']" class="mx-2">
-          <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
-        </a>
+  <div class="container-footer container-footer-sign">
+    <mat-form-field class="btn p-0">
+      <mat-select [(value)]="selectedLang">
+        <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+          {{l.language}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <a [routerLink]="['/term-of-use']" class="mx-2">
+      <span class="btn-term-of-use">{{'CORE.Term-of-use'|translate}}</span>
+    </a>
+  </div>
+</div>
+
+<div class="container-fluid" *ngIf="true">
+  <div class="row">
+    <div class="col-md-12 mt-5">
+      <div class="col-md-4 col-sm-8 mx-auto mt-5">
+        <!--Home-->
+        <div class="home d-flex flex-column justify-content-center">
+          <img class="w-100 h-100" src="./../../assets/img/wiinslogo.png" alt="Wiin's Logo">
+          <div class="col-md-12 col-sm-12 mt-3">
+            <h1>Welcome</h1>
+            <div class="col w-100 mt-5 d-flex flex-column">
+              <button class="my-3">Sign in</button>
+              <button class="my-3">Create an account</button>
+            </div>
+          </div>
+          <div class="col d-flex">
+          </div>
+        </div>
+        <!--End Home-->
       </div>
+    </div>
+  </div>
 </div>
