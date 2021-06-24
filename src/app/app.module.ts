@@ -132,7 +132,7 @@ import { Router } from '@angular/router'
 import { APP_INITIALIZER, ErrorHandler } from "@angular/core";
 import { GlobalErrorHandler } from './core/interceptors/globalErrorHandler.interceptor'
 import { PlyrModule } from 'ngx-plyr';
-import { OnbordingComponent } from './sign/onbording/onbording.component';
+import { OnboardingComponent } from './sign/onboarding/onboarding.component';
 
 
 // AoT requires an exported function for factories
@@ -164,7 +164,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
     CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, 
-    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent, CreditMusicComponent, OnbordingComponent
+    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent, CreditMusicComponent, OnboardingComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,

@@ -58,6 +58,7 @@ import { ChangingPasswordComponent } from './sign/changing-password/changing-pas
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component';
+import { OnboardingComponent } from './sign/onboarding/onboarding.component';
 
 const routes: Routes = [
 
@@ -66,12 +67,12 @@ const routes: Routes = [
     path: 'sign', component: SignComponent,
     data: { animation: 'Sign' },
     children: [
-      { path: '', redirectTo: 'in', pathMatch: 'full', },
-      { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
-      { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
-      { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },
-      { path: 'password-setting', component: ForgotPasswordComponent, data: { animation: 'Password-Setting' } },
-      { path: 'changing-password/:token', component: ChangingPasswordComponent },
+      { path: '', component: OnboardingComponent },
+      // { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
+      // { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
+      // { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },
+      // { path: 'password-setting', component: ForgotPasswordComponent, data: { animation: 'Password-Setting' } },
+      // { path: 'changing-password/:token', component: ChangingPasswordComponent },
     ],
   },
 
