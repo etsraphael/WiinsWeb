@@ -1,1 +1,74 @@
 @import 'src/assets/scss/component/login-register.scss';
+
+/* Sign in */
+.connexionIn {
+  position: relative;
+  transition: All 1s;
+  opacity: 1;
+}
+
+.bi-arrow-left {
+  margin-left: 1.3em;
+  cursor: pointer;
+}
+
+
+h2 {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 1.4rem;
+  margin-top: 1em;
+}
+
+.signIn {
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.signIn p,
+.signIn ::placeholder {
+  color: #9ba6b6;
+}
+
+.signIn h1 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #002354;
+}
+
+.signIn input {
+  background: #f6f7fa;
+  border-radius: 15px;
+  padding: 0.5rem;
+  border: none;
+}
+
+.signIn input:focus {
+  outline: none;
+}
+
+.signIn span {
+  color: #a792ee;
+  cursor: pointer;
+}
+
+.signIn span:hover {
+  text-decoration: underline;
+}
+
+.signIn button {
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(45deg, #00d0f9, #008dde, #5b53e6);
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.158);
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+button:disabled {
+  background: linear-gradient(45deg, #acacac, #777777, #666666);
+}
