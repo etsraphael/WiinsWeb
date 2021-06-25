@@ -68,11 +68,11 @@ const routes: Routes = [
     data: { animation: 'Sign' },
     children: [
       { path: '', component: OnboardingComponent },
-      // { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
-      // { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
-      // { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },
-      // { path: 'password-setting', component: ForgotPasswordComponent, data: { animation: 'Password-Setting' } },
-      // { path: 'changing-password/:token', component: ChangingPasswordComponent },
+      { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
+      { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
+      { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },
+      { path: 'password-setting', component: ForgotPasswordComponent, data: { animation: 'Password-Setting' } },
+      { path: 'changing-password/:token', component: ChangingPasswordComponent },
     ],
   },
 

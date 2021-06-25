@@ -53,16 +53,28 @@
 
 
 <div *ngIf="true">
-  <div class="home d-flex flex-column justify-content-center">
-    <img class="w-100 h-100" src="./../../assets/img/wiinslogo.png" alt="Wiin's Logo">
-    <div class="col-md-12 col-sm-12 mt-3">
-      <h1>Welcome</h1>
-      <div class="col w-100 mt-5 d-flex flex-column">
-        <button class="my-3">Sign in</button>
-        <button class="my-3">Create an account</button>
-      </div>
+  <div class="connexionIn">
+    <div class="col d-flex align-items-baseline">
+        <svg [routerLink]="['../']" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="text-white bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        <h2>Sign in</h2>
     </div>
-    <div class="col d-flex">
+    <div class="signIn bg-white d-flex flex-column justify-content-center">
+        <div class="col mb-3">
+            <h1>Welcome Back</h1>
+            <p>Hello Wiiner, sign in to continue !</p>
+        </div>
+        <div class="col">
+            <p>Username or email</p>
+            <input class="inputPseudo w-100" type="text" placeholder="Enter your username or email">
+        </div>
+        <div class="col mt-4">
+            <p>Password</p>
+            <input class="inputPassword w-100" type="text" minlength="8" maxlength="20" placeholder="Enter your password">
+        </div>
+        <span class="col-md-5 mt-4">Forgot password ?</span>
+        <button class="connected col mt-3 mb-5" disabled>Sign in</button>
+        <span class="mt-5">Don-t have an account ? Create an account</span>
     </div>
-  </div>
-</div>
+</div></div>
