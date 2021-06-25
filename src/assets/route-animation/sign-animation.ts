@@ -3,37 +3,37 @@ import { jello, lightSpeedIn } from 'ngx-animate'
 
 export const SignAnimation =[
   trigger('routeAnimations', [
-    transition('SignUp => SignIn', [
+    transition('SignIn => OnBoarding', [
       query(':enter, :leave',
-        style({ position: 'fixed' }),
+        style({ }),
         { optional: true }),
       group([
         query(':enter', [
-          style({ transform: 'translateX(-100%)', top: '27.5%' }),
+          style({ transform: 'translateX(-200%)'}),
           animate('0.6s ease-in-out',
             style({ transform: 'translateX(0%)' }))
         ], { optional: true }),
         query(':leave', [
-          style({ transform: 'translateX(0%)', top: '25%' }),
+          style({ transform: 'translateX(0%)' }),
           animate('0.6s ease-in-out',
             style({ transform: 'translateX(100%)' }))
         ], { optional: true }),
       ])
     ]),
-    transition('SignIn => SignUp', [
+    transition('OnBoarding => SignIn', [
       query(':enter, :leave',
-        style({ position: 'fixed' }),
+        style({ }),
         { optional: true }),
       group([
         query(':enter', [
-          style({ transform: 'translateX(100%)', top: '25%' }),
+          style({ transform: 'translateX(100%)'}),
           animate('0.6s ease-in-out',
             style({ transform: 'translateX(0%)' }))
         ], { optional: true }),
         query(':leave', [
-          style({ transform: 'translateX(0%)', top: '27.5%' }),
+          style({ transform: 'translateX(0%)' }),
           animate('0.6s ease-in-out',
-            style({ transform: 'translateX(-100%)' }))
+            style({ transform: 'translateX(-200%)' }))
         ], { optional: true }),
       ])
     ])
