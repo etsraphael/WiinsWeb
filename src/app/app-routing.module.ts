@@ -67,7 +67,7 @@ const routes: Routes = [
     path: 'sign', component: SignComponent,
     data: { animation: 'Sign' },
     children: [
-      { path: '', component: OnboardingComponent },
+      { path: '', component: OnboardingComponent, data: { title: 'Login', animation: 'OnBoarding' } },
       { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
       { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
       { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },

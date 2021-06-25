@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { AfterViewChecked, ChangeDetectorRef, Component, OnInit } from '@angular/core'
 import { Router, RouterOutlet } from '@angular/router'
 import { TranslateService } from '@ngx-translate/core'
 import { SignAnimation } from 'src/assets/route-animation/sign-animation'
@@ -17,7 +17,7 @@ import { skipWhile, filter } from 'rxjs/operators'
   animations: [SignAnimation]
 })
 
-export class SignComponent implements OnInit {
+export class SignComponent implements OnInit, AfterViewChecked {
 
   // translate
   listSelectLang: any[] = languageList
@@ -34,8 +34,11 @@ export class SignComponent implements OnInit {
     public router: Router,
     private store$: Store<RootStoreState.State>,
     public translate: TranslateService,
-    public deviceService: DeviceDetectorService
+    public deviceService: DeviceDetectorService,
+    private changeRef: ChangeDetectorRef
   ) { }
+
+  ngAfterViewChecked(): void { this.changeRef.detectChanges(); }
 
   ngOnInit() {
 
