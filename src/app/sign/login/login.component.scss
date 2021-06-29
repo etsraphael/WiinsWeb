@@ -53,6 +53,11 @@ h2 {
   cursor: pointer;
 }
 
+.error-message {
+  color: red !important;
+  font-size: 15px;
+}
+
 .signIn span:hover {
   text-decoration: underline;
 }
