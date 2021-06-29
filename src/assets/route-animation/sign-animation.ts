@@ -12,8 +12,8 @@ import { jello, lightSpeedIn } from "ngx-animate";
 
 export const SignAnimation = [
   trigger("routeAnimations", [
-    transition("SignIn => OnBoarding", slideTo("left")),
-    transition("OnBoarding => SignIn", slideTo("right")),
+    transition("SignIn => OnBoarding, SignUp => OnBoarding", slideTo("left")),
+    transition("OnBoarding => SignIn, OnBoarding => SignUp", slideTo("right")),
   ]),
   trigger("stateLogin", [
     transition(

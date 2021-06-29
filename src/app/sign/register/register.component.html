@@ -1,5 +1,5 @@
 <!-- Form Container -->
-<div class="container" *ngIf="!(loading$|async) && !(user$|async)">
+<!-- <div class="container" *ngIf="!(loading$|async) && !(user$|async)">
   <div class="row mx-0 container-title">
     <h1 class="display-3">{{'LOGIN-REGISTRER.Registration'|translate}}</h1>
   </div>
@@ -83,9 +83,6 @@
             <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
               {{'ERROR-MESSAGE.Password-not-identical' | translate}}
             </span>
-            <!-- <div class="alert py-0" [hidden]="!f.password1.errors?.passwordNotMatch">
-              <span>{{'SETTING.password.Erorr-password-different'|translate}}</span>
-            </div> -->
           </div>
         </div>
       </div>
@@ -106,17 +103,17 @@
       </div>
     </div>
   </form>
-</div>
+</div> -->
 
 <!-- Loading Container -->
-<div class="container" *ngIf="(loading$|async)">
+<!-- <div class="container" *ngIf="(loading$|async)">
   <div class="row h-100 mx-0">
     <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
   </div>
-</div>
+</div> -->
 
 <!-- Confirmation Message -->
-<div class="container" *ngIf="(user$|async)">
+<!-- <div class="container" *ngIf="(user$|async)">
   <div class="row">
     <div class="mx-auto">
       <i class="fa fa-check-circle fa-4x"></i>
@@ -126,5 +123,59 @@
     <div class="mx-auto">
       <span>{{'LOGIN-REGISTRER.click-on-email'|translate}}</span>
     </div>
+  </div>
+</div> -->
+
+
+<div class="inscriptionIn">
+  <div class="col d-flex align-items-baseline py-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" [routerLink]="['../']" class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg>
+      <h2 class="my-auto">Create an account</h2>
+  </div>
+  <div class="signUp bg-white d-flex flex-column justify-content-center">
+      <div class="col mb-2">
+          <h1>Welcome</h1>
+          <p>Hello, Nice to meet you Wiinser</p>
+      </div>
+      <div class="form">
+          <div class="col d-flex flex-column mb-3">
+            <label for="validationPseudo" class="form-label">Pseudo</label>
+            <input type="text" class="inputPseudo" onclick="verifyPseudo()" id="validationPseudo" placeholder="Enter your pseudo" maxlength="16" required>
+            <span class="messagePseudo"></span>
+          </div>
+          <div class="col d-flex flex-column mb-3">
+            <label for="validationEmail" class="form-label">Email</label>
+            <input type="email" class="inputEmail" onclick="verifyMail()" id="validationEmail" placeholder="Enter your email" required>
+            <span class="messageEmail"></span>
+          </div>
+          <div class="col d-flex flex-column">
+            <label for="validationPassword" class="form-label">Password</label>
+            <div class="boxPswd d-flex">
+            <input type="password" class="col-11 inputPassword" onclick="verifyPassword()" minlength="8" maxlength="20" id="validationPassword" placeholder="Enter your password" required>
+            <img class="bi-eye-slash-fill" onclick="showPassword()" src="eye-slash-fill.svg" alt="Show">
+            <img class="bi-eye-fill" onclick="showNoPassword()" src="eye-fill.svg" alt="Hide">
+          </div>
+            <span class="messagePassword mt-4"></span>
+          </div>
+          <div class="col d-flex flex-column mb-3">
+            <label for="validationConfirmPassword" class="form-label">Confirm Password</label>
+            <div class="boxConfirmPswd d-flex">
+            <input type="password" class="col-11 inputConfirmPassword" onclick="verifyConfirmPassword()" minlength="8" maxlength="20" id="validationConfirmPassword" placeholder="Enter your password" minlength="8" required>
+            <img class="bi-eye-slash-fill2" onclick="showPasswordTwo()" src="eye-slash-fill.svg" alt="Show">
+            <img class="bi-eye-fill2" onclick="showNoPasswordTwo()" src="eye-fill.svg" alt="Hide">
+          </div>
+            <span class="messageConfirmPassword mt-4"></span>
+          </div>
+          <div class="termOfUse col d-flex mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            </div>
+            <span>I certify that i am 16 years or olderand i accept the user agreement and privacy policy</span>
+          </div>
+          <button class="creatNow w-100" type="submit" onclick="isCreate()" disabled>Create an account</button>
+      
+        </div>
   </div>
 </div>
