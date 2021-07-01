@@ -139,32 +139,28 @@
           <h1>Welcome</h1>
           <p>Hello, Nice to meet you Wiinser</p>
       </div>
-      <div class="form">
+      <form [formGroup]="registerForm" class="form">
           <div class="col d-flex flex-column mb-3">
             <label for="validationPseudo" class="form-label">Pseudo</label>
-            <input type="text" class="inputPseudo" onclick="verifyPseudo()" id="validationPseudo" placeholder="Enter your pseudo" maxlength="16" required>
-            <span class="messagePseudo"></span>
+            <input type="text" class="inputPseudo" formControlName="pseudo" placeholder="Enter your pseudo" [ngClass]="{'input-invalid': f.pseudo.errors && f.pseudo.touched }">
+            <span class="error-message ml-3" *ngIf="f.pseudo.errors && f.pseudo.touched">Pseudo cannot be blank</span>
           </div>
           <div class="col d-flex flex-column mb-3">
             <label for="validationEmail" class="form-label">Email</label>
-            <input type="email" class="inputEmail" onclick="verifyMail()" id="validationEmail" placeholder="Enter your email" required>
+            <input type="email" class="inputEmail" formControlName="email" placeholder="Enter your email" required>
             <span class="messageEmail"></span>
           </div>
           <div class="col d-flex flex-column">
             <label for="validationPassword" class="form-label">Password</label>
             <div class="boxPswd d-flex">
-            <input type="password" class="col-11 inputPassword" onclick="verifyPassword()" minlength="8" maxlength="20" id="validationPassword" placeholder="Enter your password" required>
-            <img class="bi-eye-slash-fill" onclick="showPassword()" src="eye-slash-fill.svg" alt="Show">
-            <img class="bi-eye-fill" onclick="showNoPassword()" src="eye-fill.svg" alt="Hide">
+            <input type="password" class="col-11 inputPassword" formControlName="password1" placeholder="Enter your password" required>
           </div>
             <span class="messagePassword mt-4"></span>
           </div>
           <div class="col d-flex flex-column mb-3">
             <label for="validationConfirmPassword" class="form-label">Confirm Password</label>
             <div class="boxConfirmPswd d-flex">
-            <input type="password" class="col-11 inputConfirmPassword" onclick="verifyConfirmPassword()" minlength="8" maxlength="20" id="validationConfirmPassword" placeholder="Enter your password" minlength="8" required>
-            <img class="bi-eye-slash-fill2" onclick="showPasswordTwo()" src="eye-slash-fill.svg" alt="Show">
-            <img class="bi-eye-fill2" onclick="showNoPasswordTwo()" src="eye-fill.svg" alt="Hide">
+            <input type="password" class="col-11 inputConfirmPassword"  formControlName="password2" id="validationConfirmPassword" placeholder="Enter your password" minlength="8" required>
           </div>
             <span class="messageConfirmPassword mt-4"></span>
           </div>
@@ -174,8 +170,7 @@
             </div>
             <span>I certify that i am 16 years or olderand i accept the user agreement and privacy policy</span>
           </div>
-          <button class="creatNow w-100" type="submit" onclick="isCreate()" disabled>Create an account</button>
-      
-        </div>
+          <button class="creatNow w-100" type="submit" disabled>Create an account</button>
+        </form>
   </div>
 </div>

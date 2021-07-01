@@ -1,13 +1,13 @@
 @import 'src/assets/scss/component/login-register.scss';
 
-// .input-url {
-//   background: #e0e0e038;
-//   cursor: pointer;
-// }
-// a:not([href]):not([class]) {
-//   cursor: pointer;
-//   text-decoration: underline;
-// }
+.error-message {
+  color: red !important;
+  font-size: 15px;
+}
+
+.input-invalid {
+  border: 1px solid red !important
+}
 
 .container-fluid {
   background: linear-gradient(145deg,#00a9ce,#167dce,#3e56d4,#ff4b5b);
