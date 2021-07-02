@@ -129,58 +129,64 @@
 
 <div class="inscriptionIn">
   <div class="col d-flex align-items-baseline py-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" [routerLink]="['../']" class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-      </svg>
-      <h2 class="my-auto">Create an account</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" [routerLink]="['../']"
+      class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+    </svg>
+    <h2 class="my-auto">Create an account</h2>
   </div>
   <div class="signUp bg-white d-flex flex-column justify-content-center">
-      <div class="col mb-2">
-          <h1>Welcome</h1>
-          <p>Hello, Nice to meet you Wiinser</p>
+    <div class="col mb-2">
+      <h1>Welcome</h1>
+      <p>Hello, Nice to meet you Wiinser</p>
+    </div>
+    <form [formGroup]="registerForm" class="form">
+      <div class="col d-flex flex-column mb-3">
+        <label for="validationPseudo" class="form-label">Pseudo</label>
+        <input #pseudo type="text" class="inputPseudo" formControlName="pseudo" placeholder="Enter your pseudo"
+          [ngClass]="{'input-invalid': f.pseudo.errors && f.pseudo.touched }">
+        <span class="error-message ml-3"
+          *ngIf="f.pseudo.errors && f.pseudo.touched">{{'ERROR-MESSAGE.Pseudo-required'| translate}}</span>
+        <span class="text-success" *ngIf="!!(pseudoValid$|async) && !f.pseudo.errors">
+          {{'VALID-MESSAGE.Pseudo-valid'| translate}}
+        </span>
+        <span class="error-message ml-3" *ngIf="((pseudoValid$|async) == false) && !f.pseudo.errors">
+          {{'ERROR-MESSAGE.Pseudo-already-exist' | translate}}
+        </span>
       </div>
-      <form [formGroup]="registerForm" class="form">
-          <div class="col d-flex flex-column mb-3">
-            <label for="validationPseudo" class="form-label">Pseudo</label>
-            <input #pseudo type="text" class="inputPseudo" formControlName="pseudo" placeholder="Enter your pseudo" [ngClass]="{'input-invalid': f.pseudo.errors && f.pseudo.touched }">
-            <span class="error-message ml-3" *ngIf="f.pseudo.errors && f.pseudo.touched">{{'ERROR-MESSAGE.Pseudo-required'| translate}}</span>
-            <span class="text-success" *ngIf="!!(pseudoValid$|async) && !f.pseudo.errors">
-              {{'VALID-MESSAGE.Pseudo-valid'| translate}}
-            </span>
-            <span class="error-message ml-3"  *ngIf="((pseudoValid$|async) == false) && !f.pseudo.errors">
-              {{'ERROR-MESSAGE.Pseudo-already-exist' | translate}}
-            </span>
-          </div>
-          <div class="col d-flex flex-column mb-3">
-            <label for="validationEmail" class="form-label">Email</label>
-            <input type="email" class="inputEmail" formControlName="email" placeholder="Enter your email" [ngClass]="{'input-invalid': f.email.errors && f.email.touched }">
-            <span class="error-message ml-3" *ngIf="f.email.errors && f.email.touched">
-              {{'ERROR-MESSAGE.Email-invalid'| translate}}
-            </span>
-          </div>
-          <div class="col d-flex flex-column">
-            <label for="validationPassword" class="form-label">Password</label>
-            <input type="password" class="col-11 inputPassword" formControlName="password1" placeholder="Enter your password">
-            <span class="text-danger" *ngIf="f.password1.errors && f.password1.touched">
-              {{'ERROR-MESSAGE.8-char-minimum' | translate}}
-            </span>
-            <span class="messagePassword mt-4"></span>
-          </div>
-          <div class="col d-flex flex-column mb-3">
-            <label for="validationConfirmPassword" class="form-label">Confirm Password</label>
-            <input type="password" class="col-11 inputConfirmPassword"  formControlName="password2" id="validationConfirmPassword" placeholder="Enter your password">
-            <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
-              {{'ERROR-MESSAGE.8-char-minimum' | translate}}
-            </span>
-            <span class="messageConfirmPassword mt-4"></span>
-          </div>
-          <div class="termOfUse col d-flex mb-4">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            </div>
-            <span>I certify that i am 16 years or olderand i accept the user agreement and privacy policy</span>
-          </div>
-          <button class="creatNow w-100" type="submit" disabled>Create an account</button>
-        </form>
+      <div class="col d-flex flex-column mb-3">
+        <label for="validationEmail" class="form-label">Email</label>
+        <input type="email" class="inputEmail" formControlName="email" placeholder="Enter your email"
+          [ngClass]="{'input-invalid': f.email.errors && f.email.touched }">
+        <span class="error-message ml-3" *ngIf="f.email.errors && f.email.touched">
+          {{'ERROR-MESSAGE.Email-invalid'| translate}}
+        </span>
+      </div>
+      <div class="col d-flex flex-column">
+        <label for="validationPassword" class="form-label">Password</label>
+        <input type="password" class="col inputPassword" formControlName="password1" placeholder="Enter your password">
+        <span class="text-danger" *ngIf="f.password1.errors && f.password1.touched">
+          {{'ERROR-MESSAGE.8-char-minimum' | translate}}
+        </span>
+        <span class="messagePassword mt-4"></span>
+      </div>
+      <div class="col d-flex flex-column mb-3">
+        <label for="validationConfirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="col inputConfirmPassword" formControlName="password2"
+          id="validationConfirmPassword" placeholder="Enter your password">
+        <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
+          {{'ERROR-MESSAGE.8-char-minimum' | translate}}
+        </span>
+        <span class="messageConfirmPassword mt-4"></span>
+      </div>
+      <div class="termOfUse col d-flex mb-4">
+        <div class="form-check">
+          <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou"></mat-checkbox>
+        </div>
+        <span>I certify that i am 16 years or olderand i accept the user agreement and privacy policy</span>
+      </div>
+      <button class="creatNow w-100" type="submit" (click)="onSubmit()">Create an account</button>
+    </form>
   </div>
 </div>
