@@ -1,104 +1,181 @@
-<div class="row mx-0 container-page ">
+<div class="row mx-0 container-page">
   <!-- Summary -->
   <div class="col-12 col-sm-4 px-0">
     <div class="container-fluid px-0 container-title">
-      <div class="row one-section mx-0 py-4" (click)="scroll(generality)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Generality'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(definitionCGU)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Definition-of-the-Tou'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(accessnav)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Access-&-nav'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(agreement)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Agreement-to-the-Tou'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(sitemanage)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Site-management'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(modification)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Modification-of-the-Tou'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(services)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Services'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(legalInformation)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Legal-information'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(responsability)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Responsability'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(definition)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Definitions'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(hyperlinks)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Hyperlinks'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(access)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Access-to-the-site'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(confidentiality)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Confidentiality'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(paymentConfirmationUnsubscribe)">
+        <span class="m-auto title text-center">{{'TERMS-OF-USE.TITLE.Payment-confirmation-unsubscribe'|translate}}</span>
       </div>
       <hr class="my-0">
-      <div class="row one-section mx-0 py-4" (click)="scroll(iproperty)">
-        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Intellectual-property'|translate}}</span>
+      <div class="row one-section mx-0 py-4" (click)="scroll(price)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Price'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(unsubscribe)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Unsubscribe'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(generalRestriction)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.General-restriction-of-use'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(personalInformation)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Personal-information'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(propertyRights)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Intellectual-property-rights'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(responsibility)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Responsibility'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(hypertextLink)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Hypertext-links'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(publication)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Publication-by-user'|translate}}</span>
+      </div>
+      <hr class="my-0">
+      <div class="row one-section mx-0 py-4" (click)="scroll(applicableLaw)">
+        <span class="m-auto title">{{'TERMS-OF-USE.TITLE.Applicable-law-and-jurisdiction'|translate}}</span>
       </div>
     </div>
   </div>
   <!-- All Sections -->
-  <div class="col-12 col-sm-8 h-100 container-description-section pb-9">
+  <div class="col-12 col-sm-8 container-description-section pb-9">
     <div class="row mx-0">
-      <div class="container-main-title my-4 ml-5">
-        <span>{{'CORE.Welcome'|translate}}</span>
+      <div class="container-main-title my-4">
+        <span class="d-flex justify-content-center mb-3">{{'TERMS-OF-USE.TITLE.Term-Of-Use'|translate}}</span>
+        <p class="d-flex justify-content-center">{{'TERMS-OF-USE.Effective-Date'|translate}}</p>
+      </div>
+      <div class="row mx-0 py-4">
+        <div class="container container-tips">
+          <span>{{'TERMS-OF-USE.Tips'|translate}}</span>
+        </div>
       </div>
     </div>
-    <div class="row mx-0 py-4">
+    <div #definitionCGU class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.Our-plateforme'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.About-plateform'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Definition-of-the-Tou'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-definition-of-the-Tou'|translate}}</span>
       </div>
     </div>
-    <div #generality class="row mx-0 py-4">
+    <div #agreement class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Generality'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Generality-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Agreement-to-the-Tou'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-agreement-to-the-Tou'|translate}}</span>
       </div>
     </div>
-    <div #accessnav class="row mx-0 py-4">
+    <div #modification class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Access-&-nav'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Access-&-nav-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Modification-of-the-Tou'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-modification-of-the-Tou'|translate}}</span>
       </div>
     </div>
-    <div #sitemanage class="row mx-0 py-4">
+    <div #legalInformation class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Site-management'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Site-management-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Legal-information'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-legal-information'|translate}}</span><br><br>
+        <span class="m-auto text-center d-flex justify-content-center">{{'TERMS-OF-USE.About-legal-information-adress'|translate}}</span>
       </div>
     </div>
-    <div #services class="row mx-0 py-4">
+    <div #definition class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Site-management'|translate}}</h1>
-        <h2 class="my-3">{{'TERMS-OF-USE.TITLE.1-REGISTRATION'|translate}}</h2>
-        <span>{{'TERMS-OF-USE.1-REGISTRATION-d'|translate}}</span>
-        <h2 class="my-3">{{'TERMS-OF-USE.TITLE.2-UNSUBSCRIBE'|translate}}</h2>
-        <span>{{'TERMS-OF-USE.2-UNSUBSCRIBE-d'|translate}}</span>
-        <h2 class="my-4">{{'TERMS-OF-USE.TITLE.3-DELETION-OF-PERSONAL-SPACE'|translate}}</h2>
-        <span>{{'TERMS-OF-USE.3-DELETION-OF-PERSONAL-SPACE-d'|translate}} </span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Definitions'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-definitions'|translate}}</span>
       </div>
     </div>
-    <div #responsability class="row mx-0 py-4">
+    <div #access class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Responsability'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Responsability-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Access-to-the-site'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-access-to-the-site'|translate}}</span>
       </div>
     </div>
-    <div #hyperlinks class="row mx-0 py-4">
+    <div #paymentConfirmationUnsubscribe class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Hyperlinks'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Hyperlinks-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Payment-confirmation-unsubscribe'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-payment-confirmation-unsubscribe'|translate}}</span>
       </div>
     </div>
-    <div #confidentiality class="row mx-0 py-4">
+    <div #price class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Confidentiality'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Confidentiality-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Price'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-price'|translate}}</span><br><br>
+        <span class="temporary">{{'TERMS-OF-USE.About-price-early-access'|translate}}</span>
       </div>
     </div>
-    <div #iproperty class="row mx-0 py-4">
+    <div #unsubscribe class="row mx-0 py-4">
       <div class="container">
-        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Intellectual-property'|translate}}</h1>
-        <span>{{'TERMS-OF-USE.Intellectual-property-d'|translate}}</span>
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Unsubscribe'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-unsubscribe'|translate}}</span>
+      </div>
+    </div>
+    <div #generalRestriction class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.General-restriction-of-use'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-general-restriction-of-use'|translate}}</span>
+      </div>
+    </div>
+    <div #personalInformation class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Personal-information'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-personal-information'|translate}}</span>
+      </div>
+    </div>
+    <div #propertyRights class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Intellectual-property-rights'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-intellectual-property-rights'|translate}}</span>
+      </div>
+    </div>
+    <div #responsibility class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Responsibility'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-responsibility'|translate}}</span>
+      </div>
+    </div>
+    <div #hypertextLink class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Hypertext-links'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-hypertext-links'|translate}}</span>
+      </div>
+    </div>
+    <div #publication class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Publication-by-user'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-publication-by-user'|translate}}</span>
+      </div>
+    </div>
+    <div #applicableLaw class="row mx-0 py-4">
+      <div class="container">
+        <h1 class="my-3">{{'TERMS-OF-USE.TITLE.Applicable-law-and-jurisdiction'|translate}}</h1>
+        <span>{{'TERMS-OF-USE.About-applicable-law-and-jurisdiction'|translate}}</span>
       </div>
     </div>
   </div>

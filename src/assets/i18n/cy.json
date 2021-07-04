@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Ni allwch ychwanegu eich hun",
     "T-content-does-not-exist-anymore": "Nid yw'r cynnwys hwn yn bodoli mwyach",
     "T-publication-no-longer-exists": "Nid yw'r cyhoeddiad hwn yn bodoli mwyach",
-    "Could-not-play-video": "Methu chwarae fideo"
+    "Could-not-play-video": "Methu chwarae fideo",
+    "Please-type-yr-pseudo-or-mail": "Rhowch gyfeiriad ffug neu e-bost"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Derbynnir y llun",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Gwirio'ch infos",
     "Create-yr-account": "Creu eich cyfrif",
     "Creating-yr-account": "Creu eich cyfrif",
-    "ForgotPassword": "Anghofiais fy nghyfrinair",
     "Log-In": "Mewngofnodi",
     "Login": "Mewngofnodi",
     "Login-first-to-continue": "Mewngofnodi yn gyntaf i barhau",
@@ -667,7 +667,30 @@
     "Registration": "Cofrestru",
     "Sign-up": "Cofrestru",
     "accept-tou": "Rwy'n tystio fy mod i'n 16 oed neu'n hŷn ac rwy'n cytuno i'r cytundeb defnyddiwr a'r polisi preifatrwydd",
-    "click-on-email": "Cliciwch ar y ddolen e-bost"
+    "click-on-email": "Cliciwch ar y ddolen e-bost",
+    "Welcome-back": "Croeso nôl",
+    "Hello-wiinser": "Helo Wiinser, arwyddo i mewn i barhau !",
+    "Dont-have-an-account-?": "Peidiwch â chael cyfrif ? Creu cyfrif",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Rhowch eich cyfeiriad e-bost i dderbyn eich cyfrinair",
+    "Forgot-password-?": "Wedi anghofio cyfrinair ?",
+    "I-forgot-my-password": "Anghofiais fy nghyfrinair",
+    "Forgot-password": "Wedi anghofio cyfrinair",
+    "Email-adress-sent": "Anfon cyfeiriad e-bost",
+    "Checking-yr-mail": "Gwiriwch eich e-bost. Peidiwch ag oedi cyn edrych yn eich sbam",
+    "Welcome": "croeso",
+    "Hello-nice-to-meet-you-wiinser": "Helo, Braf cwrdd â chi Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Prosiect diweddaraf",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Eich enw defnyddiwr",
     "Your-message": "Dy neges",
     "Confirm-your-password": "Cadarnhewch eich cyfrinair",
-    "Password-not-matching": "Nid yw'r cyfrineiriau'n cyfateb"
+    "Password-not-matching": "Nid yw'r cyfrineiriau'n cyfateb",
+    "Enter-yr-username-or-mail-adresse": "Rhowch eich enw defnyddiwr neu gyfeiriad e-bost",
+    "Enter-yr-password": "Rhowch eich cyfrinair",
+    "Enter-yr-mail": "Rhowch eich e-bost",
+    "Enter-yr-username": "Rhowch eich enw defnyddiwr"
   },
   "PLEASE": {
     "Password": "Rhowch eich cyfrinair"
@@ -980,32 +1007,44 @@
     "Better-reference": "Gwell cyfeiriad"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Mae mynediad i rai gwasanaethau yn amodol ar gofrestru defnyddiwr. Mae cofrestru a mynediad at wasanaethau'r wefan yn cael eu cadw'n unig ar gyfer pobl naturiol alluog, sydd wedi llenwi a dilysu'r ffurflen gofrestru sydd ar gael ar-lein ar safle'r Piin, yn ogystal â'r Amodau Defnyddio Cyffredinol hyn. cofrestriad, mae'r defnyddiwr yn ymrwymo i ddarparu gwybodaeth fanwl gywir, ddiffuant a chyfoes am ei berson a'i statws sifil. Bydd yn rhaid i'r defnyddiwr hefyd wirio'r data amdano yn rheolaidd er mwyn cadw ei gywirdeb.\n\nRhaid i'r defnyddiwr ddarparu cyfeiriad e-bost dilys yn hanfodol, lle bydd y wefan yn anfon cadarnhad iddo o'i gofrestriad ar gyfer ei wasanaethau. Ni ellir defnyddio cyfeiriad e-bost fwy nag unwaith i gofrestru ar gyfer gwasanaethau trwy'r un cyfrif. Dim ond un cofrestriad ar gyfer gwasanaethau safle a ganiateir i bob person naturiol. Neilltuir dynodwr i'r defnyddiwr sy'n caniatáu iddo gyrchu gofod y mae mynediad wedi'i gadw iddo, yn ogystal â nodi ei gyfrinair. Mae'r dynodwr yn unigryw i bob defnyddiwr, ond gall y defnyddiwr newid y cyfrinair ar-lein yn ei Ofod Personol.\nMae'r cyfrinair yn bersonol ac yn gyfrinachol, mae'r defnyddiwr yn ymrwymo i beidio â'i gyfathrebu i drydydd partïon. Mae Piin’s yn cadw beth bynnag, y posibilrwydd o wrthod cais am danysgrifiadau i’r gwasanaethau os na fydd y defnyddiwr yn cydymffurfio â darpariaethau’r Amodau Defnyddio Cyffredinol hyn.",
-    "2-UNSUBSCRIBE-d": "Gall y defnyddiwr cofrestredig ofyn am ei ddad-danysgrifiad ar unrhyw adeg trwy fynd i'r dudalen bwrpasol yn ei le personol. Bydd unrhyw ddad-danysgrifio o'r wefan yn effeithiol, ar ôl i'r defnyddiwr lenwi'r ffurflen a ddarperir at y diben hwn, o fewn y cyfnod uniongyrchol.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Fe'i gwneir yn hysbys i'r defnyddiwr bod y golygydd yn cadw'r hawl i ddileu gofod personol unrhyw ddefnyddiwr sy'n torri'r telerau defnyddio ac yn enwedig yn yr achosion canlynol:\n\n● Os yw'r defnyddiwr yn defnyddio'r wefan yn anghyfreithlon\n● Os yw'r defnyddiwr wrth greu gofod personol, trosglwyddwch wybodaeth anghywir i'r wefan o'i wirfodd\n● Os nad yw'r defnyddiwr wedi bod yn weithgar yn ei le personol am o leiaf 5 mlynedd.\n\nAchos Dans lle mae'r golygydd yn penderfynu tynnu gofod personol y defnyddiwr am un o'r rhesymau hyn, ni all fod yn niwed i'r defnyddiwr y mae ei gyfrif wedi'i ddileu. Nid yw'r dileu hwn yn ildio achos cyfreithiol y gall y cyhoeddwr ei gymryd yn erbyn y defnyddiwr sydd wedi torri'r rheolau hyn.",
-    "About-plateform": "Cyfryngau ar-lein yw Espace-Piin’s Inc. sy’n cynnig canoli sawl swyddogaeth ynddo mewn ffordd reddfol a rhad ac am ddim i’w ddefnyddwyr. Ar gyfer hyn, mae'r cyfryngau yn blatfform lle gall defnyddwyr sgwrsio a rhannu cynnwys gyda defnyddwyr eraill. Mae hefyd yn cynnal swyddogaeth i wrando ar gerddoriaeth yn barhaus, fel y gall ei ddefnyddwyr amsugno awyrgylch da beth bynnag yw'r sefyllfa a'r amser. Mae Espace-Piin’s Inc. hefyd yn cynnal swyddogaeth i wylio fideos yn barhaus i ddifyrru ac addysgu ei ddefnyddwyr.",
-    "Access-&-nav-d": "Mae mynediad i'r wefan a'i defnyddio wedi'i chadw ar gyfer oedolion. Bydd gan y cyhoeddwr yr hawl i ofyn am brawf o oedran y defnyddiwr mewn unrhyw fodd. Mae'r golygydd yn gweithredu'r atebion technegol sydd ar gael iddo i ganiatáu mynediad i'r wefan 24 awr y dydd, 7 diwrnod yr wythnos. Serch hynny, gall atal, cyfyngu neu dorri ar draws mynediad i'r wefan neu i rai tudalennau o hyn er mwyn bwrw ymlaen â diweddariadau, addasiadau i'w gynnwys neu unrhyw gamau eraill y bernir eu bod yn angenrheidiol i weithredu'r wefan yn iawn.\nMae cysylltiad a llywio ar safle Espace Piin yn gyfystyr â derbyn yr Amodau Defnyddio Cyffredinol hyn heb eu cadw, beth bynnag yw'r dull technegol mynediad a'r terfynellau a ddefnyddir. Mae'r Amodau Defnyddio Cyffredinol hyn yn berthnasol i unrhyw amrywiad neu estyniad o'r wefan ar rwydweithiau cymdeithasol a / neu gymunedol presennol neu yn y dyfodol a reolir gan Espace Piins Inc.",
-    "Confidentiality-d": "Yn ogystal â'r Telerau ac Amodau hyn, mae gan y wefan bolisi preifatrwydd sy'n disgrifio sut mae data personol yn cael ei brosesu pan fydd y defnyddiwr yn ymweld â'r wefan a sut mae cwcis yn cael eu defnyddio. Trwy bori ar y wefan, mae'r defnyddiwr hefyd yn honni ei fod wedi darllen y polisi preifatrwydd uchod.",
-    "Generality-d": "Mae'r holl ddulliau mynediad i'r wefan \"www.espace-piins.com\" yn ddarostyngedig i'r polisi preifatrwydd hwn. Mae Espace Piins Inc yn gyfrifol am y data personol a gesglir ar y platfform. Mae hyn yn ymwneud â defnyddio, storio, amddiffyn a lledaenu eich gwybodaeth bersonol. Mae mynediad i Espace Piins yn hollol rhad ac am ddim ac nid yw holl swyddogaethau'r platfform (ac eithrio cyhoeddi hysbysebion) yn cael eu bilio.\nMae'r golygydd yn cadw'r hawl i addasu, ar unrhyw adeg a heb rybudd, y wefan a'r gwasanaethau yn ogystal â'r Amodau Defnyddio Cyffredinol hyn, yn benodol i addasu i swyddogaethau newydd neu ddileu neu addasu swyddogaethau presennol er mwyn gwella'r platfform. Felly, argymhellir bod y defnyddiwr yn cyfeirio at y fersiwn ddiweddaraf o'r Amodau Defnyddio Cyffredinol cyn unrhyw fordwyo, sy'n hygyrch ar y wefan ar unrhyw adeg. Mewn achos o anghytuno â'r Amodau Defnyddio Cyffredinol, ni all y defnyddiwr ddefnyddio'r wefan.",
-    "Hyperlinks-d": "Gall y wefan gynnwys dolenni hyperdestun sy'n pwyntio at wefannau eraill nad oes gan Piin's reolaeth drostynt. Er gwaethaf y gwiriadau blaenorol a rheolaidd a wnaed gan y cyhoeddwr, mae'r olaf yn gwrthod yr holl gyfrifoldeb am y cynnwys y mae'n bosibl dod o hyd iddo ar y gwefannau hyn. Mae'r cyhoeddwr yn awdurdodi sefydlu dolenni hyperdestun i unrhyw dudalen neu ddogfen ar ei wefan ar yr amod na fydd y cysylltiadau hyn yn cael eu sefydlu at ddibenion masnachol neu hysbysebu. Yn ogystal, mae angen gwybodaeth flaenorol cyhoeddwr y wefan cyn sefydlu cyswllt hyperdestun. Yn cael eu heithrio o'r safleoedd awdurdodi hyn sy'n lledaenu gwybodaeth o natur anghyfreithlon, dreisgar, ddadleuol, pornograffig, senoffobig neu a allai effeithio ar sensitifrwydd y nifer fwyaf.\nYn olaf, mae Piin’s yn cadw’r hawl i gael dolen hyperdestun sy’n pwyntio at ei wefan gael ei dileu ar unrhyw adeg, os yw’r wefan yn ystyried nad yw’n cydymffurfio â’i bolisi golygyddol. Ni argymhellir pob hyperdestun y tu allan i'r platfform nad yw'n cael ei awgrymu gan gyhoeddwr y platfform.",
-    "Intellectual-property-d": "Mae strwythur y wefan ond hefyd y testunau, graffeg, delweddau, ffotograffau, synau, fideos a chymwysiadau cyfrifiadurol sy'n ei gyfansoddi yn eiddo i'r cyhoeddwr ac yn cael eu gwarchod felly gan y deddfau sydd mewn grym o dan eiddo deallusol.\n\nGwaherddir atgynhyrchu, addasu neu ecsbloetio rhannol neu gyfanswm y cynnwys, nodau masnach cofrestredig a gwasanaethau a gynigir gan y wefan, gan unrhyw broses o gwbl, heb awdurdodiad ysgrifenedig penodol y cyhoeddwr ymlaen llaw, a gallant fod yn ffug o fewn ystyr erthyglau L. 335-2 et seq. o'r Cod Eiddo Deallusol. Ac mae hyn, ac eithrio'r elfennau sydd wedi'u dynodi'n benodol yn rhydd o hawliau ar y wefan.\n\nNid yw mynediad i'r wefan yn gyfystyr â chydnabod hawl ac, yn gyffredinol, nid yw'n rhoi unrhyw hawl eiddo deallusol sy'n ymwneud ag elfen o'r wefan, sy'n parhau i fod yn eiddo unigryw i'r cyhoeddwr. Gwaherddir y defnyddiwr rhag mewnbynnu data ar y wefan a fyddai'n addasu neu a allai addasu ei gynnwys neu ei ymddangosiad.",
-    "Our-plateforme": "Ein platfform",
-    "Responsability-d": "Dim ond am y cynnwys y mae ef ei hun wedi'i olygu y mae'r cyhoeddwr yn gyfrifol. Nid yw'r cyhoeddwr yn gyfrifol am:\n\n● Os bydd problemau neu fethiannau technegol, TG neu gyfrifyddu ar y wefan gydag unrhyw galedwedd neu feddalwedd\n● Difrod uniongyrchol neu anuniongyrchol, materol neu amherthnasol, rhagweladwy neu anrhagweladwy sy'n deillio o'r defnydd neu'r anawsterau o ddefnyddio'r wefan neu ei wasanaethau\n● Nodweddion cynhenid y Rhyngrwyd, yn enwedig y rhai sy'n ymwneud ag annibynadwyedd a diffyg diogelwch y wybodaeth sy'n cylchredeg yno\n● Cynnwys neu weithgareddau anghyfreithlon sy'n defnyddio ei wefan heb iddo ddod yn ymwybodol ohono o fewn ystyr y Gyfraith mewn perthynas â phrosesu data personol.\n\nAt hynny, ni all y wefan warantu cywirdeb, cyflawnrwydd ac amseroldeb y wybodaeth a ledaenir yno.\n\nMae'r defnyddiwr yn gyfrifol am:\n● Diogelu ei offer a'i drin ar y platfform rhag dyfais nad yw'n perthyn i Espace Piins\n● Y defnydd y mae'n ei wneud o'r wefan neu ei ddata\n● Os nad yw'n parchu llythyren neu ysbryd yr amodau defnyddio cyffredinol hyn.",
-    "Responsability-d-extra": "Trwy ddarparu cynnwys i'r gwasanaeth, rydych chi'n caniatáu trosglwyddiad trosglwyddadwy trosglwyddadwy byd-eang, anghynhwysol, di-freindal i Piin i ddefnyddio'r cynnwys hwn (gan gynnwys atgynhyrchu, dosbarthu, paratoi gweithiau deilliadol, ei ledaenu a'i redeg) mewn cysylltiad â'r gwasanaeth a'r gweithgareddau. Piin's (a'i olynwyr a'i gysylltiadau), gan gynnwys hyrwyddo ac ailddosbarthu'r Gwasanaeth yn gyfan gwbl neu'n rhannol.",
-    "Site-management-d": "Er mwyn rheoli'r wefan yn iawn, caiff y cyhoeddwr ar unrhyw adeg:\n\n● Atal, torri ar draws neu gyfyngu mynediad i'r wefan gyfan neu ran ohoni, cadw mynediad i'r wefan neu i rannau penodol o'r wefan, i gategori penodol o ddefnyddwyr y Rhyngrwyd.\n● Dileu'r holl wybodaeth a allai amharu ar ei gweithrediad neu sy'n mynd yn groes i gyfreithiau cenedlaethol neu ryngwladol, neu reolau Netiquette.\n● Atal y wefan er mwyn cynnal diweddariadau. Ni fydd unrhyw awydd i addasu cynnwys ar y platfform ar gael yn ystod cyfnodau cynnal a chadw.",
     "TITLE": {
-      "1-REGISTRATION": "1. COFRESTRU",
-      "2-UNSUBSCRIBE": "2. UNSUBSCRIBE",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. DILEU GOFOD PERSONOL YN MENTER Y CYHOEDDWR SAFLE",
-      "Access-&-nav": "Mynediad a llywio",
-      "Confidentiality": "Cyfrinachedd",
-      "Generality": "Cyffredinolrwydd",
-      "Hyperlinks": "Dolenni hyperdestun",
-      "Intellectual-property": "Eiddo deallusol",
-      "Responsability": "Cyfrifoldebau",
-      "Services": "Gwasanaethau",
-      "Site-management": "Rheoli safle"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Eich dynodwr cerddoriaeth"

@@ -591,7 +591,8 @@
     "You-cannot-add-yourself": "Sie können sich nicht hinzufügen",
     "T-content-does-not-exist-anymore": "Dieser Inhalt existiert nicht mehr",
     "T-publication-no-longer-exists": "Diese Publikation existiert nicht mehr",
-    "Could-not-play-video": "Video konnte nicht abgespielt werden"
+    "Could-not-play-video": "Video konnte nicht abgespielt werden",
+    "Please-type-yr-pseudo-or-mail": "Bitte geben Sie einen Pseudo- oder eine E-Mail-Adresse ein"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Das Foto wird empfangen",
@@ -612,7 +613,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Haben bereits ein Konto",
-    "ForgotPassword": "Ich habe mein Passwort vergessen",
     "Log-In": "Einloggen",
     "Login": "Einloggen",
     "Password-recovery": "Passwort-Wiederherstellung",
@@ -625,7 +625,30 @@
     "Create-yr-account": "Erstelle deinen Account",
     "Creating-yr-account": "Erstellen von Ihrem Konto",
     "Login-first-to-continue": "Melden Sie sich zuerst an, um fortzufahren",
-    "Checking-yr-infos": "Überprüfen Sie Ihre Infos"
+    "Checking-yr-infos": "Überprüfen Sie Ihre Infos",
+    "Welcome-back": "Willkommen zurück",
+    "Hello-wiinser": "Hallo Wiinser, melden Sie sich an, um fortzufahren !",
+    "Dont-have-an-account-?": "Sie haben kein Konto ? Erstellen eines Kontos",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Geben Sie Ihre E-Mail-Adresse ein, um Ihr Passwort zu erhalten",
+    "Forgot-password-?": "Passwort vergessen ?",
+    "I-forgot-my-password": "Ich habe mein Passwort vergessen",
+    "Forgot-password": "Passwort vergessen",
+    "Email-adress-sent": "E-Mail-Adresse gesendet",
+    "Checking-yr-mail": "Bitte überprüfen Sie Ihre E-Mail. Zögern Sie nicht, in Ihrem Spam zu suchen",
+    "Welcome": "Willkommen",
+    "Hello-nice-to-meet-you-wiinser": "Hallo, Schön, Sie Wiinser zu treffen",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Letztes Projekt",
@@ -706,7 +729,11 @@
     "Your-Pseudo": "Dein Benutzername",
     "Your-message": "Deine Nachricht",
     "Confirm-your-password": "Bestätigen Sie Ihr Passwort",
-    "Password-not-matching": "Die Passwörter stimmen nicht überein"
+    "Password-not-matching": "Die Passwörter stimmen nicht überein",
+    "Enter-yr-username-or-mail-adresse": "Enter your username or email address",
+    "Enter-yr-password": "Geben Sie Ihr Passwort ein",
+    "Enter-yr-mail": "Enter your email",
+    "Enter-yr-username": "Geben Sie Ihren Benutzernamen ein"
   },
   "PLEASE": {
     "Password": "Bitte geben Sie Ihr Passwort ein"
@@ -923,32 +950,44 @@
     "Vibility": "Sichtbarkeit"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Der Zugang zu bestimmten Diensten unterliegt der Benutzerregistrierung. Die Registrierung und der Zugang zu den Diensten der Website sind ausschließlich fähigen natürlichen Personen vorbehalten, die das online auf der Piin-Website verfügbare Registrierungsformular sowie diese Allgemeinen Nutzungsbedingungen ausgefüllt und validiert haben. verpflichtet sich der Nutzer, genaue, aufrichtige und aktuelle Informationen über seine Person und seinen Personenstand zu übermitteln.\n\nDer Nutzer muss auch die ihn betreffenden Daten regelmäßig überprüfen, um deren Richtigkeit zu gewährleisten. Der Nutzer muss zwingend eine gültige E-Mail-Adresse angeben, auf der ihm die Website eine Bestätigung seiner Registrierung für seine Dienste zusendet. Eine E-Mail-Adresse kann nicht mehr als einmal verwendet werden, um sich über dasselbe Konto für Dienste zu registrieren. Pro natürliche Person ist nur eine Registrierung für Website-Services erlaubt. Dem Benutzer wird ein Bezeichner zugewiesen, der ihm den Zugriff auf einen Bereich ermöglicht, auf den der Zugriff reserviert ist, zusätzlich zur Eingabe seines Kennworts. Die Kennung ist für jeden Benutzer eindeutig, das Kennwort kann jedoch vom Benutzer in seinem persönlichen Bereich online geändert werden.\n\nDas Passwort ist persönlich und vertraulich, der Nutzer verpflichtet sich, es nicht an Dritte weiterzugeben. Piinbehält sich in jedem Fall die Möglichkeit vor, einen Antrag auf Abonnements der Dienste im Falle der Nichteinhaltung der Bestimmungen dieser Allgemeinen Nutzungsbedingungen durch den Nutzer abzulehnen.",
-    "2-UNSUBSCRIBE-d": "Der registrierte Benutzer kann jederzeit seine Abmeldung anfordern, indem er auf die dedizierte Seite in seinem persönlichen Bereich geht. Jede Abmeldung von der Website wird wirksam, nachdem der Benutzer das zu diesem Zweck bereitgestellte Formular innerhalb der unmittelbaren Frist ausgefüllt hat.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Dem Nutzer wird bekannt gegeben, dass sich der Herausgeber das Recht vorbehält, den persönlichen Bereich eines Nutzers zu löschen, der gegen die Nutzungsbedingungen verstößt, insbesondere in folgenden Fällen:\n\n● Wenn der Benutzer die Website illegal nutzt \n● Wenn der Benutzer während der Erstellung des persönlichen Bereichs freiwillig falsche Informationen an die Site überträgt\n● Wenn der Benutzer mindestens 5 Jahre lang nicht in seinem persönlichen Bereich aktiv war.\n\nIn einem Fall, in dem der Redakteur aus einem dieser Gründe entscheidet, den persönlichen Bereich des Benutzers zu entfernen, kann dies keinen Schaden für den Benutzer darstellen, dessen Konto gelöscht wurde. Diese Löschung stellt keinen Verzicht auf rechtliche Schritte dar, die der Verlag gegen den Nutzer einleiten kann, der gegen diese Regeln verstoßen hat.",
-    "About-plateform": "Espace-Piin’s Inc. ist ein Online-Medium, mit dem verschiedene Funktionen für die Benutzer intuitiv und kostenlos zentralisiert werden können. Für diesen Zweck ist das Medium eine Plattform, auf der Benutzer chatten und Inhalte für andere Benutzer freigeben können.\nEs bietet auch die Möglichkeit, kontinuierlich Musik zu hören, damit die Benutzer in jeder Situation und zu jeder Zeit eine gute Atmosphäre genießen können. Espace-Piins Inc. bietet auch eine Funktion zum kontinuierlichen Ansehen von Videos, um die Benutzer zu unterhalten und aufzuklären.",
-    "Access-&-nav-d": "Der Zugang zu und die Nutzung der Website sind Erwachsenen vorbehalten. Der Verlag hat das Recht, den Nachweis des Alters des Nutzers in jedem Fall zu verlangen. Der Herausgeber setzt die ihm zur Verfügung stehenden technischen Lösungen um, um den Zugang zur Site 24 Stunden am Tag, 7 Tage die Woche zu ermöglichen.\nEr kann jedoch jederzeit den Zugriff auf die Website oder bestimmte Seiten dieser Website unterbrechen, einschränken oder unterbrechen, um Aktualisierungen, Änderungen des Inhalts oder sonstige Maßnahmen vorzunehmen, die für das ordnungsgemäße Funktionieren der Website als notwendig erachtet werden. Durch die Verbindung und Navigation auf der Espace Piin-Website werden diese Allgemeinen Nutzungsbedingungen unabhängig von den technischen Zugangsmöglichkeiten und den verwendeten Terminals vorbehaltlos akzeptiert.\n\nDiese Allgemeinen Nutzungsbedingungen gelten für Änderungen oder Erweiterungen der Website in bestehenden oder zukünftigen sozialen und / oder Community-Netzwerken, die von Espace Piins Inc. verwaltet werden.",
-    "Confidentiality-d": "Zusätzlich zu diesen Allgemeinen Geschäftsbedingungen verfügt die Website über eine Datenschutzrichtlinie, die beschreibt, wie personenbezogene Daten verarbeitet werden, wenn der Benutzer die Website besucht, und wie Cookies verwendet werden. Durch das Durchsuchen der Website behauptet der Benutzer auch, die oben genannten Datenschutzbestimmungen gelesen zu haben.",
-    "Generality-d": "Alle Zugriffsmethoden auf die Website \"www.espace-piins.com\" unterliegen diesen Datenschutzbestimmungen. Espace Piins Inc ist verantwortlich für die auf der Plattform gesammelten persönlichen Daten. Dies betrifft die Verwendung, Speicherung, den Schutz und die Verbreitung Ihrer persönlichen Daten.\n\nDer Zugang zu Espace Piins ist völlig kostenlos und alle Funktionen der Plattform (mit Ausnahme der Veröffentlichung von Werbung) werden nicht in Rechnung gestellt. Der Herausgeber behält sich das Recht vor, die Website und die Dienste sowie diese Allgemeinen Nutzungsbedingungen jederzeit und ohne vorherige Ankündigung zu ändern, insbesondere um sie an neue Funktionalitäten anzupassen oder bestehende Funktionalitäten zu löschen oder zu ändern, um die zu verbessern Plattform.\n\nEs wird daher empfohlen, dass sich der Benutzer vor jeder Navigation, die jederzeit auf der Website verfügbar ist, auf die neueste Version der Allgemeinen Nutzungsbedingungen bezieht. Bei Widerspruch zu den Allgemeinen Nutzungsbedingungen kann der Nutzer die Website nicht nutzen.",
-    "Hyperlinks-d": "Die Website kann Hypertext-Links enthalten, die auf andere Websites verweisen, auf die Piin es keinen Einfluss hat. Trotz der vorherigen und regelmäßigen Überprüfungen durch den Herausgeber, lehnt dieser jede Verantwortung für die Inhalte, die es auf diesen Seiten zu finden ist. Der Herausgeber genehmigt die Einrichtung von Hypertext-Links zu einer Seite oder einem Dokument seiner Website, sofern die Einrichtung dieser Links nicht zu kommerziellen oder Werbezwecken erfolgt.\n\nDarüber hinaus ist die vorherige Information des Herausgebers der Website notwendig, bevor eine Hypertext-Link erstellt wird. Von dieser Autorisierungs-Sites verbreitung von Informationen von illegaler, gewalttätiger, kontroverser, pornografischer, fremdenfeindlicher Natur oder die die Empfindlichkeit der größten Anzahl beeinflussen können ausgeschlossen. Schließlich behält sich Piin es das Recht vor, einen Hypertext-Link, der auf seine Website verweist, jederzeit löschen zu lassen, wenn die Website der Ansicht ist, dass sie nicht mit ihren redaktionellen Richtlinien in Einklang steht. Es wird nicht empfohlen, alle Hypertexte außerhalb der Plattform zu verwenden, die nicht vom Plattformherausgeber vorgeschlagen werden.",
-    "Intellectual-property-d": "Die Struktur der Website, aber auch die Texte, Grafiken, Bilder, Fotografien, Sounds, Videos und Computeranwendungen, die sie zusammenstellen, sind Eigentum des Herausgebers und als solche durch die unter geistigem Eigentum geltenden Gesetze geschützt. , vervielfältigung, adaption oder teilweise oder vollständige Verwertung der Inhalte, eingetragenen Marken und Dienstleistungen, die von der Website angeboten werden, durch jegliches Verfahren, ohne die ausdrückliche vorherige schriftliche Genehmigung des Herausgebers, sind strengstens untersagt und können Fälschungen im Sinne der Artikel L.335-2 ff. des Gesetzes über geistiges Eigentum darstellen.\n\nUnd dies, mit Ausnahme der Elemente, die ausdrücklich als rechtsfrei auf der Website bezeichnet werden. Der Zugang zur Website stellt keine Anerkennung eines Rechts dar und verleiht im Allgemeinen kein geistiges Eigentum an einem Element der Website, die ausschließliches Eigentum des Herausgebers bleiben. Dem Benutzer ist es untersagt, Daten auf der Website einzugeben, die ihren Inhalt oder ihr Aussehen ändern oder ändern könnten.",
-    "Our-plateforme": "Unsere Plattform",
-    "Responsability-d": "Der Herausgeber ist nur für den Inhalt verantwortlich, den er selbst bearbeitet hat. Der Herausgeber ist nicht verantwortlich für:\n\n● Bei Problemen oder technischen, IT- oder Abrechnungsfehlern der Website mit Hardware oder Software.\n● Direkte oder indirekte, materielle oder immaterielle, vorhersehbare oder unvorhersehbare Schäden infolge der Nutzung oder Schwierigkeiten bei der Nutzung der Website oder ihrer Dienste\n●Grundlegende Merkmale des Internets, insbesondere solche, die sich auf die Unzuverlässigkeit und die mangelnde Sicherheit der dort zirkulierenden Informationen beziehen.\n● Illegale Inhalte oder Aktivitäten, die die Website oder ihre Dienste ohne ordnungsgemäße Nutzung nutzen Machen Sie sich darüber im Sinne des Gesetzes in Bezug auf die Verarbeitung personenbezogener Daten bewusst.Weiterhin kann die Website keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der dort verbreiteten Informationen übernehmen.\n\n Der Benutzer ist dafür verantwortlich :\n\n● Schutz der Ausrüstung und Manipulation auf der Plattform vor einem Gerät, das nicht zu Espace Piins gehört.\n● Verwendung der Site oder ihrer Daten.\n● Wenn dies nicht beachtet wird der Buchstabe oder der Geist dieser allgemeinen Nutzungsbedingungen.",
-    "Responsability-d-extra": "Durch die Bereitstellung von Inhalten für den Dienst gewähren Sie der Plattform eine weltweite, nicht ausschließliche, gebührenfreie, übertragbare Unterlizenz und übertragbare Lizenz zur Nutzung dieser Inhalte (einschließlich zur Vervielfältigen, Verteilung, Vorbereitung abgeleiteter Werke, Verbreitung und Ausführung im Zusammenhang mit dem Service und den Aktivitäten der Plattform (und ihrer Nachfolger und verbundenen Unternehmen), auch zum Zwecke der Förderung und Umverteilung von Dienstleistungen ganz oder teilweise.",
-    "Site-management-d": "Zur ordnungsgemäßen Verwaltung der Site kann der Herausgeber jederzeit:\n\n● den Zugriff auf die gesamte Site oder einen Teil der Site unterbrechen, unterbrechen oder beschränken, den Zugriff auf die Site oder auf bestimmte Teile der Site für eine bestimmte Site reservieren Kategorie von Internetnutzern.\n● Löschen Sie alle Informationen, die den Betrieb stören oder gegen nationale oder internationale Gesetze oder die Regeln der Netiquette verstoßen könnten.\n● Unterbrechen Sie die Site, um Aktualisierungen durchzuführen.\n\nDer Wunsch, Inhalte auf der Plattform zu ändern, ist während der Wartungsperioden nicht verfügbar.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRIERUNG",
-      "2-UNSUBSCRIBE": "2. ABMELDEN",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. LÖSCHUNG DES PERSÖNLICHEN RAUMES AUF INITIATIVE DES WEBSITE-HERAUSGEBERS",
-      "Access-&-nav": "Zugriff und Navigation",
-      "Confidentiality": "Vertraulichkeit",
-      "Generality": "Allgemeines",
-      "Hyperlinks": "Hypertext-Links",
-      "Intellectual-property": "Geistiges Eigentum",
-      "Responsability": "Verantwortung",
-      "Services": "Dienstleistungen",
-      "Site-management": "Standortverwaltung"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Ihre Musikkennung"

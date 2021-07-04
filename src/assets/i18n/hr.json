@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Ne možete se dodati",
     "T-content-does-not-exist-anymore": "Ovaj sadržaj više ne postoji",
     "T-publication-no-longer-exists": "Ova publikacija više ne postoji",
-    "Could-not-play-video": "Reprodukcija videozapisa nije uspjela"
+    "Could-not-play-video": "Reprodukcija videozapisa nije uspjela",
+    "Please-type-yr-pseudo-or-mail": "Unesite pseudo ili adresu e-pošte"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografija je primljena",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Provjeravam vašu informaciju",
     "Create-yr-account": "kreiraj svoj račun",
     "Creating-yr-account": "Izrada vašeg računa",
-    "ForgotPassword": "Zaboravio sam lozinku",
     "Log-In": "Prijaviti se",
     "Login": "Prijaviti se",
     "Login-first-to-continue": "Prvo se prijavite da biste nastavili",
@@ -667,7 +667,30 @@
     "Registration": "Registracija",
     "Sign-up": "Prijavite se",
     "accept-tou": "Potvrđujem da imam 16 ili više godina i da se slažem s korisničkim ugovorom i pravilima o privatnosti",
-    "click-on-email": "Molimo kliknite vezu e-pošte"
+    "click-on-email": "Molimo kliknite vezu e-pošte",
+    "Welcome-back": "Dobrodošao natrag",
+    "Hello-wiinser": "Pozdrav Wiinser, prijavite se za nastavak!",
+    "Dont-have-an-account-?": "Nemate račun? Stvaranje računa",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Unesite adresu e-pošte da biste primili lozinku",
+    "Forgot-password-?": "Zaboravili ste lozinku?",
+    "I-forgot-my-password": "Zaboravio sam lozinku",
+    "Forgot-password": "Zaboravljena lozinka",
+    "Email-adress-sent": "Poslana adresa e-pošte",
+    "Checking-yr-mail": "Provjerite svoju e-poštu. Ne ustručavajte se pogledati u neželjenu poštu",
+    "Welcome": "Dobrodošao",
+    "Hello-nice-to-meet-you-wiinser": "Zdravo, lijepo je upoznati vas Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Najnoviji projekt",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Vaše korisničko ime",
     "Your-message": "Tvoja poruka",
     "Confirm-your-password": "Potvrdi svoju lozinku",
-    "Password-not-matching": "Lozinke se ne podudaraju"
+    "Password-not-matching": "Lozinke se ne podudaraju",
+    "Enter-yr-username-or-mail-adresse": "Unesite korisničko ime ili adresu e-pošte",
+    "Enter-yr-password": "Unesite lozinku",
+    "Enter-yr-mail": "Unesite e-poštu",
+    "Enter-yr-username": "Unesite svoje korisničko ime"
   },
   "PLEASE": {
     "Password": "Unesite lozinku"
@@ -980,32 +1007,44 @@
     "Better-reference": "Bolja referenca"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Pristup određenim uslugama podliježe registraciji korisnika. Registracija i pristup uslugama web mjesta rezervirani su isključivo za sposobne fizičke osobe koje su ispunile i potvrdile obrazac za registraciju dostupan putem interneta na web mjestu Piin, kao i ove Opće uvjete korištenja. prilikom registracije, korisnik se obvezuje pružiti točne, iskrene i ažurne podatke o svojoj osobi i njezinom građanskom statusu. Korisnik će također morati redovito provjeravati podatke koji se odnose na njega kako bi zadržao njihovu točnost.\n\nKorisnik mora imperativno navesti valjanu adresu e-pošte na koju će mu web mjesto poslati potvrdu o registraciji za svoje usluge. Adresa e-pošte ne može se koristiti više puta za registraciju usluga putem istog računa. Dopuštena je samo jedna registracija za usluge web mjesta po fizičkoj osobi. Korisniku se uz unos lozinke dodjeljuje identifikator koji mu omogućuje pristup prostoru kojem je rezerviran pristup. Identifikator je jedinstven za svakog korisnika, međutim korisnik može promijeniti lozinku na mreži u svom Osobnom prostoru.\nLozinka je osobna i povjerljiva, korisnik se obvezuje da je neće priopćavati trećim stranama. Piinove rezerve u svakom slučaju, mogućnost odbijanja zahtjeva za pretplatu na usluge u slučaju da korisnik ne poštuje odredbe ovih Općih uvjeta korištenja.",
-    "2-UNSUBSCRIBE-d": "Registrirani korisnik može u bilo kojem trenutku zatražiti otkazivanje pretplate odlaskom na namjensku stranicu u svom osobnom prostoru. Svaka odjava s web mjesta stupit će na snagu nakon što korisnik ispuni obrazac predviđen za ovu svrhu, u neposrednom roku.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Korisniku se stavlja na znanje da urednik zadržava pravo brisanja osobnog prostora bilo kojeg korisnika koji krši uvjete korištenja, a posebno u sljedećim slučajevima:\n\n● Ako korisnik neovlašteno koristi web mjesto\n● Ako korisnik tijekom stvaranja osobnog prostora, dobrovoljno pošalje netočne podatke na web mjesto\n● Ako korisnik nije aktivan u svom osobnom prostoru najmanje 5 godina.\n\nU slučaju kada urednik odluči ukloniti osobni prostor korisnika iz jednog od ovih razloga, to ne može naštetiti korisniku čiji je račun izbrisan. Ovo brisanje ne predstavlja odricanje od pravnog postupka koji izdavač može poduzeti protiv korisnika koji je prekršio ova pravila.",
-    "About-plateform": "Espace-Piin’s Inc. mrežni je medij koji svojim korisnicima nudi mogućnost centraliziranja nekoliko funkcija u njemu na intuitivan i besplatan način. Zbog toga su mediji platforma na kojoj korisnici mogu chatati i dijeliti sadržaj s drugim korisnicima. Također ima funkciju kontinuiranog slušanja glazbe, tako da korisnici mogu upiti dobru atmosferu bez obzira na situaciju i vrijeme. Espace-Piin's Inc. također nudi funkciju kontinuiranog gledanja videozapisa radi zabave i edukacije svojih korisnika.",
-    "Access-&-nav-d": "Pristup i korištenje stranice rezervirani su za odrasle. Izdavač će na bilo koji način imati pravo zatražiti dokaz o starosti korisnika. Urednik primjenjuje tehnička rješenja koja mu stoje na raspolaganju kako bi omogućio pristup web mjestu 24 sata dnevno, 7 dana u tjednu. Unatoč tome, u bilo kojem trenutku može suspendirati, ograničiti ili prekinuti pristup web mjestu ili određenim stranicama ovoga kako bi nastavio s ažuriranjima, preinakama njegovog sadržaja ili bilo kojim drugim radnjama koje se smatraju potrebnima za pravilno funkcioniranje stranice.\nPovezivanje i navigacija na web mjestu Espace Piin predstavljaju bezrezervno prihvaćanje ovih Općih uvjeta korištenja, bez obzira na tehnička sredstva za pristup i korištene terminale. Ovi se Opći uvjeti upotrebe primjenjuju na bilo koju varijaciju ili proširenje web mjesta na postojećim ili budućim društvenim mrežama i / ili mrežama zajednice kojima upravlja Espace Piins Inc.",
-    "Confidentiality-d": "Uz ove Uvjete i odredbe, web stranica ima i politiku privatnosti koja opisuje kako se obrađuju osobni podaci kada korisnik posjeti stranicu i kako se koriste kolačići. Pregledavajući web mjesto, korisnik također tvrdi da je pročitao gore navedena pravila o privatnosti.",
-    "Generality-d": "Sve metode pristupa web mjestu \"www.espace-piins.com\" podliježu ovim pravilima o privatnosti. Espace Piins Inc odgovoran je za osobne podatke prikupljene na platformi. To se odnosi na upotrebu, pohranu, zaštitu i širenje vaših osobnih podataka. Pristup Espace Piinsu potpuno je besplatan i sve funkcije platforme (osim objavljivanja oglašavanja) ne naplaćuju se.\nUrednik zadržava pravo izmjene web mjesta i usluga, kao i ovih Općih uvjeta korištenja, u bilo koje vrijeme i bez najave, posebno radi prilagodbe novim funkcionalnostima ili brisanja ili izmjene postojećih funkcionalnosti u svrhu poboljšanja platforma. Stoga se preporučuje da se korisnik prije bilo kakve navigacije, dostupne u bilo kojem trenutku na web mjestu, poziva na najnoviju verziju Općih uvjeta korištenja. U slučaju neslaganja s Općim uvjetima korištenja, korisnik ne može koristiti web stranicu.",
-    "Hyperlinks-d": "Web stranica može sadržavati hipertekstualne poveznice koje upućuju na druge web stranice nad kojima Piin's nema kontrolu. Unatoč prethodnim i redovitim provjerama koje je izvršio izdavač, potonji odbija svaku odgovornost za sadržaj koji je moguće pronaći na tim web mjestima. Izdavač odobrava postavljanje hipertekstualnih poveznica na bilo koju stranicu ili dokument svoje web stranice, pod uvjetom da se uspostavljanje tih poveznica ne vrši u komercijalne ili reklamne svrhe. Osim toga, prethodne informacije izdavača web mjesta potrebne su prije bilo kakvog uspostavljanja hipertekstualne veze. Izuzete su s ovih web lokacija s ovlaštenjem za širenje informacija ilegalne, nasilne, kontroverzne, pornografske, ksenofobne prirode ili koje mogu utjecati na osjetljivost najvećeg broja.\nKonačno, Piin’s zadržava pravo da se hipertekstualna poveznica koja upućuje na njegovu web stranicu u bilo kojem trenutku izbriše, ako web lokacija smatra da nije u skladu s njezinom uredničkom politikom. Ne preporučuje se sav hipertekst izvan platforme koji nije predložio izdavač platforme.",
-    "Intellectual-property-d": "Struktura stranice, ali i tekstovi, grafike, slike, fotografije, zvukovi, videozapisi i računalne aplikacije koje je čine vlasništvo su izdavača i kao takve zaštićene su zakonima na snazi u vezi s intelektualnim vlasništvom.\n\nUmnožavanje, prilagodba ili djelomično ili potpuno iskorištavanje sadržaja, registriranih zaštitnih znakova i usluga koje nudi stranica, bilo kojim postupkom, bez izričitog prethodnog pismenog odobrenja izdavača, strogo je zabranjeno i može predstavljati krivotvorenje u smislu članaka L. 335-2 i dalje. Zakonika o intelektualnom vlasništvu. I to, s izuzetkom elemenata koji su izričito označeni kao bez prava na web mjestu.\n\nPristup web mjestu ne predstavlja priznavanje prava i, općenito, ne dodjeljuje nikakvo pravo intelektualnog vlasništva koje se odnosi na element web mjesta, a koje ostaje isključivo vlasništvo izdavača. Korisniku je zabranjeno unos podataka na web mjestu koji bi mogli izmijeniti ili koji bi mogli izmijeniti njegov sadržaj ili izgled.",
-    "Our-plateforme": "Naša platforma",
-    "Responsability-d": "Izdavač je odgovoran samo za sadržaj koji je sam uredio. Izdavač nije odgovoran za:\n\n● U slučaju problema ili tehničkih, informatičkih ili računovodstvenih kvarova web mjesta s bilo kojim hardverom ili softverom\n● Izravna ili neizravna, materijalna ili nematerijalna, predvidiva ili nepredvidiva šteta koja proizlazi iz upotrebe ili poteškoća korištenja web mjesta ili njegovih usluga\n● Suštinske karakteristike Interneta, posebno one koje se odnose na nepouzdanost i nedostatak sigurnosti informacija koje tamo kruže\n● Nezakonit sadržaj ili aktivnosti korištenja njegove web stranice, a da ih to nije propisno postalo svjesno u smislu Zakona u pogledu obrade osobnih podataka.\n\nNadalje, web mjesto ne može jamčiti točnost, cjelovitost i aktualnost informacija koje se tamo šire.\n\nKorisnik je odgovoran za:\n● Zaštita njegove opreme i manipulacija na platformi od uređaja koji ne pripada Espace Piinsima\n● Korištenje web mjesta ili njegovih podataka\n● Ako ne poštuje slovo ili duh ovih općih uvjeta upotrebe.",
-    "Responsability-d-extra": "Pružanjem sadržaja usluzi, dajete Piin-u svjetsku, neekskluzivnu, prenosljivu podlicencu koja se može prenositi za korištenje ovog sadržaja (uključujući reprodukciju, distribuciju, pripremu izvedenih djela, širenje i prikazivanje) u vezi sa uslugom i aktivnostima Piin's (i njegovi nasljednici i pridružene tvrtke), uključujući promicanje i preraspodjelu usluge u cijelosti ili djelomično.",
-    "Site-management-d": "Za pravilno upravljanje web stranicom, izdavač može u bilo koje vrijeme:\n\n● Obustaviti, prekinuti ili ograničiti pristup cijeloj ili dijelu web mjesta, rezervirati pristup web mjestu ili određenim dijelovima web mjesta određenoj kategoriji korisnika Interneta.\n● Izbrišite sve podatke koji bi mogli poremetiti njegov rad ili koji su u suprotnosti s nacionalnim ili međunarodnim zakonima ili pravilima Netiquette-a.\n● Obustavite web mjesto kako biste izvršili ažuriranja. Svaka želja za izmjenom sadržaja na platformi neće biti dostupna tijekom razdoblja održavanja.",
     "TITLE": {
-      "1-REGISTRATION": "1. PRIJAVA",
-      "2-UNSUBSCRIBE": "2. OTPUSTITE SE",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. BRISANJE OSOBNOG PROSTORA U INICIJATIVI IZDAVAČA STRANICE",
-      "Access-&-nav": "Pristup i navigacija",
-      "Confidentiality": "Povjerljivost",
-      "Generality": "Općenitosti",
-      "Hyperlinks": "Hipertekstualne poveznice",
-      "Intellectual-property": "Intelektualno vlasništvo",
-      "Responsability": "Odgovornosti",
-      "Services": "Usluge",
-      "Site-management": "Upravljanje gradilištem"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Vaš glazbeni identifikator"

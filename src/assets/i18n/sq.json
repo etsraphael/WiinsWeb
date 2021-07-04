@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Ju nuk mund të shtoni veten",
     "T-content-does-not-exist-anymore": "Kjo përmbajtje nuk ekziston më",
     "T-publication-no-longer-exists": "Ky botim nuk ekziston më",
-    "Could-not-play-video": "Videoja nuk mund të luhet"
+    "Could-not-play-video": "Videoja nuk mund të luhet",
+    "Please-type-yr-pseudo-or-mail": "Ju lutemi shkruani një pseudo ose një adresë emaili"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotoja është marrë",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Kontrollimi i informacioneve tuaja",
     "Create-yr-account": "Krijo llogarine tende",
     "Creating-yr-account": "Krijimi i llogarisë tuaj",
-    "ForgotPassword": "Kam harruar fjalëkalimin tim",
     "Log-In": "Hyni",
     "Login": "Hyni",
     "Login-first-to-continue": "Hyni fillimisht për të vazhduar",
@@ -667,7 +667,30 @@
     "Registration": "Regjistrimi",
     "Sign-up": "Regjistrohu",
     "accept-tou": "Unë vërtetoj se jam 16 vjeç ose më i vjetër dhe pajtohem me marrëveshjen e përdoruesit dhe politikën e privatësisë",
-    "click-on-email": "Ju lutemi klikoni në lidhjen e postës elektronike"
+    "click-on-email": "Ju lutemi klikoni në lidhjen e postës elektronike",
+    "Welcome-back": "Mirëse u ktheve",
+    "Hello-wiinser": "Përshëndetje Wiinser, identifikohu për të vazhduar!",
+    "Dont-have-an-account-?": "A nuk keni një llogari? Krijo nje llogari",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Vendosni adresën tuaj të postës elektronike për të marrë\nFjalëkalimi juaj",
+    "Forgot-password-?": "Keni harruar fjalëkalimin ?",
+    "I-forgot-my-password": "Kam harruar fjalëkalimin tim",
+    "Forgot-password": "Keni harruar fjalëkalimin",
+    "Email-adress-sent": "Adresa e postës elektronike u dërgua",
+    "Checking-yr-mail": "Ju lutem kontrolloni emailin tuaj. Mos hezitoni të shikoni në postën tuaj të bezdisshme",
+    "Welcome": "Mirëseardhje",
+    "Hello-nice-to-meet-you-wiinser": "Përshëndetje, Gëzohem që u njohëm me Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Projekti më i fundit",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Emri juaj i përdoruesit",
     "Your-message": "Mesazhi juaj",
     "Confirm-your-password": "Konfirmoni fjalëkalimin tuaj",
-    "Password-not-matching": "Fjalëkalimet nuk përputhen"
+    "Password-not-matching": "Fjalëkalimet nuk përputhen",
+    "Enter-yr-username-or-mail-adresse": "Vendosni emrin tuaj të përdoruesit ose adresën tuaj të postës elektronike",
+    "Enter-yr-password": "Vendosni fjalëkalimin tuaj",
+    "Enter-yr-mail": "Vendosni emailin tuaj",
+    "Enter-yr-username": "Vendosni emrin tuaj të përdoruesit"
   },
   "PLEASE": {
     "Password": "Ju lutem vendosni fjalëkalimin tuaj"
@@ -980,32 +1007,44 @@
     "Better-reference": "Referencë më e mirë"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Aksesi në shërbime të caktuara i nënshtrohet regjistrimit të përdoruesit. Regjistrimi dhe hyrja në shërbimet e faqes janë të rezervuara ekskluzivisht për persona fizikë të aftë, të cilët kanë plotësuar dhe vërtetuar formularin e regjistrimit në dispozicion në internet në faqen e Piin, si dhe këto Kushtet e Përgjithshme të Përdorimit. regjistrimi, përdoruesi merr përsipër të sigurojë informacion të saktë, të sinqertë dhe të azhurnuar për personin e tij dhe statusin e tij civil. Përdoruesi gjithashtu do të duhet të kontrollojë rregullisht të dhënat në lidhje me të në mënyrë që të ruajë saktësinë e tyre.\n\nPërdoruesi duhet të sigurojë një adresë të vlefshme e-mail, në të cilën faqja do t'i dërgojë atij një konfirmim të regjistrimit të tij për shërbimet e tij. Një adresë e-mail nuk mund të përdoret më shumë se një herë për t'u regjistruar për shërbime përmes së njëjtës llogari. Lejohet vetëm një regjistrim për shërbimet e faqes për person fizik. Përdoruesit i është caktuar një identifikues që i lejon atij të hyjë në një hapësirë në të cilën është e rezervuar hyrja, përveç hyrjes në fjalëkalimin e tij. Identifikuesi është unik për secilin përdorues, megjithatë fjalëkalimi mund të ndryshohet në internet nga përdoruesi në Hapësirën e tij Personale.\nFjalëkalimi është personal dhe konfidencial, përdoruesi merr përsipër të mos ia komunikojë palëve të treta. Rezervat e Piin në çdo rast, mundësia e refuzimit të një kërkese për pajtim në shërbimet në rast të mosrespektimit nga ana e përdoruesit të dispozitave të këtyre Kushteve të Përgjithshme të Përdorimit.",
-    "2-UNSUBSCRIBE-d": "Përdoruesi i regjistruar mund në çdo kohë të kërkojë çregjistrimin e tij duke shkuar në faqen e dedikuar në hapësirën e tij personale. Çdo çabonim nga faqja do të jetë efektiv, pasi përdoruesi të ketë plotësuar formularin e dhënë për këtë qëllim, brenda periudhës së menjëhershme.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Përdoruesit i bëhet e ditur se redaktori rezervon të drejtën të fshijë hapësirën personale të çdo përdoruesi që shkel kushtet e përdorimit dhe veçanërisht në rastet e mëposhtme:\n\nNëse përdoruesi bën një përdorim të paligjshëm të faqes\n● Nëse përdoruesi gjatë krijimit të hapësirës personale, transmetoni vullnetarisht informacion të pasaktë në sit\n● Nëse përdoruesi nuk ka qenë aktiv në hapësirën e tij personale për të paktën 5 vjet.\n\nDans rast kur redaktori vendos të heqë hapësirën personale të përdoruesit për një nga këto arsye, nuk mund të përbëjë dëm për përdoruesin llogaria e të cilit është fshirë. Ky fshirje nuk përbën heqje dorë nga procedurat ligjore që botuesi mund të marrë kundër përdoruesit i cili ka shkelur këto rregulla.",
-    "About-plateform": "Espace-Piin’s Inc. është një media në internet e cila ofron të centralizojë disa funksionalitete në të në një mënyrë intuitive dhe falas për përdoruesit e saj. Për këtë, media është një platformë ku përdoruesit mund të bisedojnë dhe të ndajnë përmbajtje me përdoruesit e tjerë. Ai gjithashtu pret një funksion për të dëgjuar muzikë vazhdimisht, në mënyrë që përdoruesit e saj të mund të thithin një atmosferë të mirë, pavarësisht nga situata dhe koha. Espace-Piin’s Inc. gjithashtu pret një funksion për të parë video vazhdimisht për të argëtuar dhe edukuar përdoruesit e saj.",
-    "Access-&-nav-d": "Hyrja dhe përdorimi i faqes janë të rezervuara për të rriturit. Botuesi do të ketë të drejtë të kërkojë prova të moshës së përdoruesit me çdo mënyrë. Redaktori zbaton zgjidhjet teknike në dispozicion të tij për të lejuar hyrjen në sit 24 orë në ditë, 7 ditë në javë. Sidoqoftë ai mund të pezullojë, kufizojë ose ndërpresë hyrjen në sit ose në faqe të caktuara të kësaj për të vazhduar me azhurnimet, modifikimet e përmbajtjes së saj ose ndonjë veprim tjetër që gjykohet i nevojshëm për funksionimin e duhur të faqes.\nLidhja dhe lundrimi në faqen e Espace Piin përbëjnë pranimin e pa rezervë të këtyre Kushteve të Përgjithshme të Përdorimit, pavarësisht nga mjetet teknike të hyrjes dhe terminalet e përdorura. Këto Kushtet e Përgjithshme të Përdorimit zbatohen për çdo ndryshim ose zgjerim të faqes në rrjetet ekzistuese ose të ardhshme sociale dhe / ose të komunitetit të menaxhuara nga Espace Piins Inc.",
-    "Confidentiality-d": "Përveç këtyre Kushteve dhe Kushteve, faqja ka një politikë të privatësisë e cila përshkruan se si përpunohen të dhënat personale kur përdoruesi viziton faqen dhe si përdoren cookies. Duke shfletuar sitin, përdoruesi gjithashtu pretendon të ketë lexuar politikën e mësipërme të privatësisë.",
-    "Generality-d": "Të gjitha metodat e hyrjes në sitin \"www.espace-piins.com\" i nënshtrohen kësaj politike të privatësisë. Espace Piins Inc është përgjegjëse për të dhënat personale të mbledhura në platformë. Kjo ka të bëjë me përdorimin, ruajtjen, mbrojtjen dhe shpërndarjen e informacionit tuaj personal. Aksesi në Espace Piins është plotësisht falas dhe të gjitha funksionet e platformës (përveç publikimit të reklamave) nuk faturohen.\nRedaktori rezervon të drejtën për të modifikuar, në çdo kohë dhe pa paralajmërim, sitin dhe shërbimet, si dhe këto Kushtet e Përgjithshme të Përdorimit, në veçanti për t'u përshtatur me funksionalitete të reja ose fshirjen ose modifikimin e funksionaliteteve ekzistuese me qëllim të përmirësimit të platformë Prandaj rekomandohet që përdoruesi t'i referohet versionit të fundit të Kushteve të Përgjithshme të Përdorimit përpara çdo navigimi, i mundshëm në çdo kohë në sit. Në rast mosmarrëveshjeje me Kushtet e Përgjithshme të Përdorimit, asnjë përdorim i faqes nuk mund të bëhet nga përdoruesi.",
-    "Hyperlinks-d": "Faqja mund të përmbajë lidhje me hipertekst që tregojnë faqet e internetit të tjera mbi të cilat Piin nuk ka kontroll. Pavarësisht nga verifikimet paraprake dhe të rregullta të kryera nga botuesi, ky i fundit heq të gjitha përgjegjësitë për përmbajtjen që është e mundur të gjesh në këto faqe. Botuesi autorizon krijimin e lidhjeve me hipertekst për çdo faqe ose dokument të faqes së tij me kusht që vendosja e këtyre lidhjeve të mos kryhet për qëllime komerciale ose reklamuese. Për më tepër, informacioni paraprak i botuesit të faqes është i domosdoshëm para çdo krijimi të lidhjes me hipertekst. Janë të përjashtuara nga faqet e këtij autorizimi duke shpërndarë informacione të një natyre të paligjshme, të dhunshme, të diskutueshme, pornografike, ksenofobike ose të cilat mund të ndikojnë në ndjeshmërinë e numrit më të madh.\nMë në fund, Piin rezervon të drejtën të ketë një lidhje hiperteksti që tregon faqen e saj të fshirë në çdo kohë, nëse faqja konsideron se nuk përputhet me politikën e saj editoriale. I gjithë hiperteksti i jashtëm i platformës që nuk sugjerohet nga botuesi i platformës nuk rekomandohet.",
-    "Intellectual-property-d": "Struktura e faqes, por edhe tekstet, grafikë, imazhe, fotografi, tinguj, video dhe aplikacione kompjuterike që e përbëjnë atë janë pronë e botuesit dhe mbrohen si të tilla nga ligjet në fuqi nën pronësinë intelektuale.\n\nRiprodhimi, adaptimi ose shfrytëzimi i pjesshëm ose i plotë i përmbajtjes, markave të regjistruara tregtare dhe shërbimeve të ofruara nga faqja, nga çfarëdo procesi, pa autorizimin paraprak me shkrim të botuesit, janë rreptësisht të ndaluara dhe mund të përbëjnë falsifikim brenda kuptimit të artikujve L. 335-2 etj. të Kodit të Pronës Intelektuale. Dhe kjo, me përjashtim të elementeve të përcaktuara shprehimisht si pa të drejta në sit.\n\nHyrja në sit nuk përbën njohje të një të drejte dhe, në përgjithësi, nuk jep ndonjë të drejtë të pronësisë intelektuale në lidhje me një element të faqes, e cila mbetet pronë ekskluzive e botuesit. Përdoruesit i ndalohet të futë të dhëna në sit, të cilat do të modifikojnë ose që mund të modifikojnë përmbajtjen ose pamjen e saj.",
-    "Our-plateforme": "Platforma jonë",
-    "Responsability-d": "Botuesi është përgjegjës vetëm për përmbajtjen që ai vetë ka redaktuar. Botuesi nuk është përgjegjës për:\n\nNë rast të problemeve ose dështimeve teknike, IT ose të kontabilitetit të faqes me ndonjë pajisje ose softuer\nDamage Dëme të drejtpërdrejta ose indirekte, materiale ose jomateriale, të parashikueshme ose të paparashikueshme që rezultojnë nga përdorimi ose vështirësitë e përdorimit të faqes ose shërbimeve të saj\nCharacteristics Karakteristikat e brendshme të internetit, në veçanti ato që lidhen me mosbesueshmërinë dhe mungesën e sigurisë së informacionit që qarkullon atje\nContent Përmbajtja ose aktivitetet e paligjshme që përdorin sitin e saj pa u njohur me të në mënyrën e duhur brenda kuptimit të Ligjit në lidhje me përpunimin e të dhënave personale.\n\nPër më tepër, faqja nuk mund të garantojë saktësinë, plotësinë dhe aktualitetin e informacionit të shpërndarë atje.\n\nPërdoruesi është përgjegjës për:\n● Mbrojtja e pajisjeve të saj dhe manipulimi i saj në platformë nga një pajisje që nuk i përket Espace Piins\n● Përdorimi që ai i bën faqes ose të dhënave të saj\n● Nëse nuk respekton shkronjën ose frymën e këtyre kushteve të përgjithshme të përdorimit.",
-    "Responsability-d-extra": "Duke ofruar përmbajtje për shërbimin, ju i jepni Piin-it një licensë nënligjore në të gjithë botën, jo-ekskluzive, pa të drejta të transferueshme, e transferueshme për të përdorur këtë përmbajtje (duke përfshirë riprodhimin, shpërndarjen, përgatitjen e punëve derivate, përhapjen dhe drejtimin) në lidhje me shërbimin dhe aktivitetet Piin (dhe pasardhësit dhe bashkëpunëtorët e tij), përfshirë promovimin dhe rishpërndarjen e Shërbimit plotësisht ose pjesërisht.",
-    "Site-management-d": "Për menaxhimin e duhur të faqes, botuesi mund në çdo kohë:\n\n● Pezulloni, ndërpritni ose kufizoni hyrjen në të gjithë ose një pjesë të faqes, rezervoni hyrjen në sit ose në pjesë të caktuara të faqes, për një kategori të veçantë të përdoruesve të internetit.\n● Fshini të gjithë informacionin që mund të prishë funksionimin e tij ose që bie ndesh me ligjet kombëtare ose ndërkombëtare, ose rregullat e Netiquette.\n● Pezulloni faqen në mënyrë që të bëni azhurnime. Çdo dëshirë për të modifikuar përmbajtjen në platformë nuk do të jetë në dispozicion gjatë periudhave të mirëmbajtjes.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGJISTRIMI",
-      "2-UNSUBSCRIBE": "2. PANOHENI",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. FJALIMI I HAPSIRS PERSONALE N THE Nismën e botuesit të faqes",
-      "Access-&-nav": "Hyrja dhe lundrimi",
-      "Confidentiality": "Konfidencialiteti",
-      "Generality": "Gjeneralitetet",
-      "Hyperlinks": "Lidhjet e hipertekstit",
-      "Intellectual-property": "Pronë intelektuale",
-      "Responsability": "Përgjegjësitë",
-      "Services": "Shërbimet",
-      "Site-management": "Menaxhimi i faqes"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Identifikuesi juaj i muzikës"

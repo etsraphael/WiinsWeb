@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Ezin duzu zeure burua gehitu",
     "T-content-does-not-exist-anymore": "Eduki hau ez da existitzen",
     "T-publication-no-longer-exists": "Argitalpen hau jada ez dago",
-    "Could-not-play-video": "Ezin izan da bideoa erreproduzitu"
+    "Could-not-play-video": "Ezin izan da bideoa erreproduzitu",
+    "Please-type-yr-pseudo-or-mail": "Mesedez, sartu sasi edo helbide elektronikoa"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Argazkia jaso da",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Dagoeneko kontua duzu",
-    "ForgotPassword": "Pasahitza ahaztu zait",
     "Log-In": "Saioa hasi",
     "Login": "Saioa hasi",
     "Password-recovery": "Pasahitza berreskuratzea",
@@ -667,7 +667,30 @@
     "Create-yr-account": "Sortu zure kontua",
     "Creating-yr-account": "Zure kontua sortzen",
     "Login-first-to-continue": "Hasi saioa lehenbailehen jarraitzeko",
-    "Checking-yr-infos": "Zure informazioa egiaztatzen"
+    "Checking-yr-infos": "Zure informazioa egiaztatzen",
+    "Welcome-back": "Ongi etorri",
+    "Hello-wiinser": "Kaixo Wiinser, hasi saioa jarraitzeko!",
+    "Dont-have-an-account-?": "Ez al duzu konturik? Kontu bat sortu",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Idatzi zure helbide elektronikoa jasotzeko\nzure pasahitza",
+    "Forgot-password-?": "Pasahitza ahaztua ?",
+    "I-forgot-my-password": "Pasahitza ahaztu zait",
+    "Forgot-password": "Pasahitza ahaztua",
+    "Email-adress-sent": "Helbide elektronikoa bidali da",
+    "Checking-yr-mail": "Mesedez, egiaztatu zure posta elektronikoa. Ez izan zalantzarik zure spamean begiratzeko",
+    "Welcome": "Ongi etorri",
+    "Hello-nice-to-meet-you-wiinser": "Kaixo, Pozik zurekin Wiinser ezagutzea",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Azken proiektua",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Zure erabiltzaile izena",
     "Your-message": "Zure mezua",
     "Confirm-your-password": "Berretsi zure pasahitza",
-    "Password-not-matching": "Pasahitzak ez datoz bat"
+    "Password-not-matching": "Pasahitzak ez datoz bat",
+    "Enter-yr-username-or-mail-adresse": "Idatzi zure erabiltzaile izena edo helbide elektronikoa",
+    "Enter-yr-password": "আপনার পাসওয়ার্ড লিখুন",
+    "Enter-yr-mail": "Idatzi zure posta elektronikoa",
+    "Enter-yr-username": "Idatzi zure erabiltzaile izena"
   },
   "PLEASE": {
     "Password": "Mesedez, sartu zure pasahitza"
@@ -980,32 +1007,44 @@
     "Better-reference": "Erreferentzia hobea"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Zenbait zerbitzuetarako sarbidea erabiltzaileen erregistroaren mende dago. Gunearen zerbitzuetarako erregistroa eta sarbidea gaitasuna duten pertsona fisikoei soilik gordetzen zaie, Piin gunean linean dagoen izen emate orria bete eta balioztatu baitute, baita Erabilera Baldintza Orokor hauek ere. erregistratzean, erabiltzaileak konpromisoa hartzen du bere pertsonari eta bere egoera zibilari buruzko informazio zehatza, zintzoa eta eguneratua emateko. Erabiltzaileak aldiro egiaztatu beharko ditu hari buruzko datuak, zehaztasuna mantentzeko.\n\nErabiltzaileak derrigorrez baliozko helbide elektronikoa eman behar du, eta bertan guneak zerbitzuak erregistratu izanaren berrespena bidaliko dio. Helbide elektronikoa ezin da behin baino gehiagotan erabili kontu beraren bidez zerbitzuetan izena emateko. Gune zerbitzuetarako erregistro bakarra onartzen da pertsona fisiko bakoitzeko. Erabiltzaileari pasahitza sartzeaz gain sarbidea gordeta duen espazio batera sartzeko identifikatzailea esleitzen zaio. Identifikatzailea bakarra da erabiltzaile bakoitzarentzat, hala ere, pasahitza linean alda dezake erabiltzaileak bere Espazio Pertsonalean.\nPasahitza pertsonala eta isilpekoa da, erabiltzaileak hirugarrenekin ez komunikatzeko konpromisoa hartzen du. Nolanahi ere, Piinen erreserbak, erabiltzaileari Erabilera Baldintza Orokor hauetan xedatutakoa ez betetzeagatik zerbitzuak harpidetzeko eskaerari uko egiteko aukera.",
-    "2-UNSUBSCRIBE-d": "Erabiltzaile erregistratuak edozein unetan eska dezake harpidetza etetea eskainitako orrira joanda bere espazio pertsonalean. Gunearen harpidetza etetea eraginkorra izango da, erabiltzaileak horretarako emandako inprimakia bete ondoren, berehalako epean.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Erabiltzaileari jakinarazten zaio editoreak eskubidea duela erabilera baldintzak urratzen dituen edozein erabiltzaileren espazio pertsonala ezabatzeko eta bereziki kasu hauetan:\n\n● Erabiltzaileak webgunearen legez kanpoko erabilera egiten badu\n● Erabiltzailea espazio pertsonala sortzen ari den bitartean, nahita bidali informazio okerra gunera\n● Erabiltzaileak gutxienez 5 urte daramatza bere espazio pertsonalean aktibo.\n\nEditatzaileak arrazoi hauengatik erabiltzailearen espazio pertsonala kentzea erabakitzen duen kasuetan, ezin du kalterik egin kontua ezabatu zaion erabiltzaileari. Ezabatze honek ez du argitaletxeak arau hauek urratu dituen erabiltzailearen aurka egin ditzakeen prozedura judizialak uko egiten.",
-    "About-plateform": "Espace-Piin’s Inc. lineako euskarria da, eta bertan hainbat funtzionalitate zentralizatzea eskaintzen du erabiltzaileek modu intuitibo eta doakoan. Horretarako, komunikabideak erabiltzaileek txateatu eta edukia beste erabiltzaile batzuekin partekatzeko plataforma da. Gainera, musika etengabe entzuteko funtzio bat eskaintzen du, erabiltzaileek giro ona har dezaten, egoera zein den denbora edozein dela ere. Espace-Piin's Inc. enpresak ere erabiltzaileak entretenitzeko eta hezteko bideoak etengabe ikusteko funtzioa hartzen du.",
-    "Access-&-nav-d": "Gunearen sarbidea eta erabilera helduentzako gordeta daude. Argitaletxeak erabiltzailearen adinaren egiaztagiria edozein modutan eskatzeko eskubidea izango du. Editoreak eskura dituen irtenbide teknikoak ezartzen ditu gunera eguneko 24 orduetan, astean 7 egunetan sartzeko. Hala ere, edozein unetan eten, mugatu edo eten dezake gunera edo orrialde batzuetara sartzeko sarbidea, eguneratzeak, edukiaren aldaketak edo gunea behar bezala funtzionatzeko beharrezkotzat jotzen diren beste edozein ekintzekin jarraitzeko.\nEspace Piinen webguneko konexioak eta nabigazioak Erabilera Baldintza Orokor hauek erreserbarik gabe onartzea dira, edozein dela ere sartzeko bitarteko teknikoa eta erabilitako terminalak. Erabilera Baldintza Orokor hauek Espace Piins Inc.-ek kudeatzen dituen webgunearen aldakuntza edo luzapen guztiei aplikatzen zaizkie lehendik dauden edo etorkizuneko gizarte eta / edo komunitate sareetan.",
-    "Confidentiality-d": "Baldintza eta baldintza hauetaz gain, guneak pribatutasun politika du, erabiltzaileak gunea bisitatzen duenean datu pertsonalak nola prozesatzen diren eta cookieak nola erabiltzen diren deskribatzen duena. Gunean arakatuz gero, erabiltzaileak goiko pribatutasun politika irakurri duela ere aldarrikatzen du.",
-    "Generality-d": "\"Www.espace-piins.com\" gunera sartzeko metodo guztiak pribatutasun politika honen mende daude. Espace Piins Inc arduratzen da plataforman bildutako datu pertsonalez. Zure informazio pertsonala erabiltzea, biltegiratzea, babestea eta zabaltzea da. Espace Piins-era sartzea guztiz doakoa da eta plataformaren funtzio guztiak (publizitatea argitaratzea izan ezik) ez dira fakturatzen.\nEditoreak eskubidea du gunea eta zerbitzuak nahiz Erabilera Baldintza Orokorrak, edozein unetan eta abisatu gabe aldatzeko, bereziki funtzionalitate berrietara egokitzeko edo dauden funtzionaltasunak ezabatzeko edo aldatzeko, hobetzeko helburuarekin. plataforma. Hori dela eta, erabiltzaileari Erabilera Baldintza Orokorren azken bertsioa aipatzea gomendatzen zaio edozein nabigazio baino lehen, gunean edozein unetan eskuragarri. Erabilera Baldintza Orokorrekin desadostasunik ez badago, erabiltzaileak ezin du gunearen erabilera egin.",
-    "Hyperlinks-d": "Guneak Piin-ek kontrolik ez duen beste webgune batzuetara zuzendutako hipertestuko estekak izan ditzake. Argitaletxeak aldez aurretik eta aldian behin egiaztatzen dituen arren, azken honek gune horietan aurki daitezkeen edukien gaineko erantzukizun guztia ukatzen du. Argitaletxeak baimena ematen du bere webguneko orrialde edo dokumentu batzuetarako hipertestuko estekak ezartzeko, baldin eta esteka horiek ez badira merkataritza edo publizitate helburuetarako gauzatzen. Gainera, webgunearen argitaratzailearen aldez aurretik informazioa beharrezkoa da hipertestuaren esteka ezarri aurretik. Baimen honetatik kanpo geratzen dira legez kanpoko, bortitz, eztabaidagarri, pornografiko, xenofobo izaera duten edo kopuru handienaren sentsibilitatea eragin dezaketen informazioa zabaltzen duten guneak.\nAzkenean, Piinek bere eskubidea gordetzen du bere webgunera seinalatzen duen hipertestuko esteka edozein unetan ezabatzeko eskubidea, webguneak bere editorialeko politika betetzen ez duela uste badu. Plataformaren argitaratzaileak iradokitzen ez duen plataformatik kanpoko hipertestu guztiak ez dira gomendagarriak.",
-    "Intellectual-property-d": "Gunearen egitura, baina baita berau osatzen duten testuak, grafikoak, irudiak, argazkiak, soinuak, bideoak eta aplikazio informatikoak ere editorearen jabetza dira eta jabetza intelektualaren arabera indarrean dauden legeek hala babesten dute.\n\nEdukiak, marka erregistratuak eta guneak eskaintzen dituen zerbitzuen erreprodukzioa, egokitzapena edo partzialki edo erabat ustiatzea, edozein prozesuren bidez, argitaratzailearen berariazko idatzizko baimenik gabe, erabat debekatuta daude eta faltsifikazioa izan daiteke L. artikuluetan esandakoaren arabera 335-2 eta hurrengoak. Jabetza Intelektualaren Kodearen. Eta hori, gunean eskubiderik gabe espresuki izendatutako elementuak izan ezik.\n\nGunera sartzeak ez du eskubide bat aitortzen eta, oro har, ez du webgunearen elementu bati buruzko jabetza intelektual eskubiderik ematen, argitaratzailearen jabetza esklusiboa izaten jarraitzen baitute. Erabiltzaileari debekatuta dago webgunean datuak sartzea, haren edukia edo itxura alda litezkeenak edo aldatu ditzaketenak.",
-    "Our-plateforme": "Gure plataforma",
-    "Responsability-d": "Argitaratzailea berak editatu duen edukiaren erantzule bakarra da. Argitaletxea ez da honen erantzule:\n\n● Arazoren bat edo guneko akats teknikoak, informatikoak edo kontabilitateak hardware edo software batekin\n● Zuzenekoak edo zeharkakoak, materialak edo ez-materialak, aurreikus daitezkeen edo aurreikusi ezin diren kalteak, gunea edo bere zerbitzuak erabiltzearen edo zailtasunak sortzearen ondorioz.\n● Interneten berezko ezaugarriak, batez ere fidagarritasunarekin eta bertan zirkulatzen duen informazioaren segurtasunik ezarekin lotutakoak.\n● Legez kanpoko edukia edo bere webgunea erabiltzen duten jarduerak, datu pertsonalen tratamenduari dagokionez Legearen esanahian behar bezala ezagutu gabe.\n\nGainera, guneak ezin du bermatu bertan zabaltzen den informazioaren zehaztasuna, osotasuna eta gaurkotasuna.\n\nErabiltzailea hau da:\n● Bere ekipamenduaren babesa eta plataforman manipulatzea Espace Piins-ena ez den gailu batetik\n● Gunearen edo bertako datuen erabilera\n● Erabilera baldintza orokor hauen letra edo izpiritua errespetatzen ez badu.",
-    "Responsability-d-extra": "Zerbitzuari edukia emanez, Piin-i mundu osoko lizentzia ez-esklusiboa, eskubiderik gabeko eta besterenezina besterenezina ematen zaio eduki hau erabiltzeko (besteak beste, erreproduzitu, banatu, eratorritako lanak prestatu, zabaldu eta exekutatu) zerbitzuarekin eta jarduerei lotuta Piinenak (eta haren ondorengoak eta afiliatuak), Zerbitzua osorik edo partzialki sustatu eta berriro banatzeko barne.",
-    "Site-management-d": "Gunearen kudeaketa egokia izateko, editoreak edozein unetan egin dezake:\n\n● Gunea osorik edo zati baterako sarbidea etetea, etetea edo mugatzea, gunerako edo guneko zenbait ataletarako sarbidea erreserbatzea, Interneteko erabiltzaileen kategoria jakin bati.\n● Ezabatu funtzionamendua eten dezakeen edo nazioko edo nazioarteko legeak edo Netiquette arauak urratzen dituzten informazio guztia.\n● Gunea eten eguneratzeak burutzeko. Plataformako edukia aldatzeko nahia ez da erabilgarri egongo mantentze-aldietan.",
     "TITLE": {
-      "1-REGISTRATION": "1. IZEN-EMATEA",
-      "2-UNSUBSCRIBE": "2. HARPIDETU",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. GUNE ARGITALETXEAREN EKIMENEAN PERTSONA ESPAZIOA EZABATZEA",
-      "Access-&-nav": "Sarbidea eta nabigazioa",
-      "Confidentiality": "Isilpekotasuna",
-      "Generality": "Orokortasunak",
-      "Hyperlinks": "Hipertestuko estekak",
-      "Intellectual-property": "Jabetza intelektuala",
-      "Responsability": "Erantzukizunak",
-      "Services": "Zerbitzuak",
-      "Site-management": "Gunearen kudeaketa"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Zure musika identifikatzailea"

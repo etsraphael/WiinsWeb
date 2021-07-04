@@ -25,6 +25,10 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   loading = false
   stateLogin = 'default'
 
+  //Forgot Password & Send Mail
+  forgotPwsdContainer: boolean = true
+  sendMailContainer:boolean = false
+
   constructor(
     private formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
@@ -60,6 +64,11 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
           else this.loading = false
         }
       )
+
+      if(this.forgotPwsdContainer === true) {
+        this.sendMailContainer = true
+        this.forgotPwsdContainer = false
+      }
 
   }
 

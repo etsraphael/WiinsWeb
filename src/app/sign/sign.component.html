@@ -48,3 +48,17 @@
     </div>
   </div>
 </div>
+
+
+<div class="container-footer container-footer-sign d-flex align-items-center">
+  <mat-form-field class="btn p-0">
+    <mat-select [(value)]="selectedLang">
+      <mat-option *ngFor="let l of listSelectLang" [value]="l" (click)="switchLanguage(l.code)">
+        {{l.language}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+    <span class="btn-term-of-use text-white" (click)="openTOU()">{{'CORE.Term-of-use'|translate}}</span>
+</div>
+
+

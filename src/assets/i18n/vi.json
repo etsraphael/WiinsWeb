@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Bạn không thể thêm chính mình",
     "T-content-does-not-exist-anymore": "Nội dung này không tồn tại nữa",
     "T-publication-no-longer-exists": "Ấn phẩm này không còn tồn tại",
-    "Could-not-play-video": "Không thể phát video"
+    "Could-not-play-video": "Không thể phát video",
+    "Please-type-yr-pseudo-or-mail": "Vui lòng nhập giả hoặc địa chỉ email"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ảnh được nhận",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Kiểm tra thông tin của bạn",
     "Create-yr-account": "tạo tài khoản của bạn",
     "Creating-yr-account": "Đang tạo tài khoản của bạn",
-    "ForgotPassword": "Tôi quên mật khẩu của tôi",
     "Log-In": "Đăng nhập",
     "Login": "Đăng nhập",
     "Login-first-to-continue": "Đăng nhập trước để tiếp tục",
@@ -667,7 +667,30 @@
     "Registration": "Đăng ký",
     "Sign-up": "Đăng ký",
     "accept-tou": "Tôi xác nhận rằng tôi từ 16 tuổi trở lên và tôi đồng ý với thỏa thuận người dùng và chính sách bảo mật",
-    "click-on-email": "Vui lòng nhấp vào liên kết email"
+    "click-on-email": "Vui lòng nhấp vào liên kết email",
+    "Welcome-back": "Chào mừng trở lại",
+    "Hello-wiinser": "Xin chào Wiinser, đăng nhập để tiếp tục!",
+    "Dont-have-an-account-?": "Bạn không có tài khoản? Tạo tài khoản",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Nhập địa chỉ email của bạn để nhận mật khẩu của bạn",
+    "Forgot-password-?": "Quên mật khẩu?",
+    "I-forgot-my-password": "Tôi quên mật khẩu của tôi",
+    "Forgot-password": "Quên mật khẩu",
+    "Email-adress-sent": "Địa chỉ email đã gửi",
+    "Checking-yr-mail": "Vui lòng kiểm tra email của bạn. Đừng ngần ngại nhìn vào thư rác của bạn",
+    "Welcome": "Chào mừng",
+    "Hello-nice-to-meet-you-wiinser": "Xin chào, rất vui được gặp bạn Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Dự án mới nhất",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Tên người dùng của bạn",
     "Your-message": "Tin nhắn của bạn",
     "Confirm-your-password": "Xác nhận mật khẩu của bạn",
-    "Password-not-matching": "Mật khẩu không khớp"
+    "Password-not-matching": "Mật khẩu không khớp",
+    "Enter-yr-username-or-mail-adresse": "Nhập tên người dùng hoặc địa chỉ email của bạn",
+    "Enter-yr-password": "Nhập mật khẩu của bạn",
+    "Enter-yr-mail": "Nhập email của bạn",
+    "Enter-yr-username": "Nhập tên người dùng của bạn"
   },
   "PLEASE": {
     "Password": "Xin hãy điền mật khẩu"
@@ -980,32 +1007,44 @@
     "Better-reference": "Tham khảo tốt hơn"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Quyền truy cập vào các dịch vụ nhất định tùy thuộc vào đăng ký của người dùng. Đăng ký và truy cập vào các dịch vụ của trang web được dành riêng cho những thể nhân có năng lực, những người đã hoàn thành và xác thực mẫu đăng ký có sẵn trực tuyến trên trang của Piin, cũng như các Điều kiện Sử dụng Chung này. đăng ký, người sử dụng cam kết cung cấp thông tin chính xác, trung thực và cập nhật về nhân thân và hộ tịch của mình. Người dùng cũng sẽ phải thường xuyên kiểm tra dữ liệu liên quan đến mình để giữ độ chính xác của nó.\n\nNgười dùng phải cung cấp một cách ngầm định một địa chỉ e-mail hợp lệ, trên đó trang web sẽ gửi cho anh ta xác nhận về việc đăng ký dịch vụ của anh ta. Một địa chỉ e-mail không thể được sử dụng nhiều lần để đăng ký các dịch vụ thông qua cùng một tài khoản. Mỗi người chỉ được phép đăng ký một dịch vụ trang web. Người dùng được chỉ định một số nhận dạng cho phép anh ta truy cập vào một không gian mà quyền truy cập được bảo lưu, ngoài việc nhập mật khẩu của anh ta. Giá trị nhận dạng là duy nhất cho mỗi người dùng, tuy nhiên, người dùng có thể thay đổi mật khẩu trực tuyến trong Không gian cá nhân của mình.\nMật khẩu mang tính cá nhân và bí mật, người dùng cam kết không thông báo cho bên thứ ba. Piin’s bảo lưu trong mọi trường hợp, khả năng từ chối yêu cầu đăng ký dịch vụ trong trường hợp người dùng không tuân thủ các quy định của Điều kiện sử dụng chung này.",
-    "2-UNSUBSCRIBE-d": "Người dùng đã đăng ký có thể yêu cầu hủy đăng ký bất cứ lúc nào bằng cách truy cập trang dành riêng trong không gian cá nhân của họ. Mọi hủy đăng ký khỏi trang web sẽ có hiệu lực, sau khi người dùng hoàn thành biểu mẫu được cung cấp cho mục đích này, trong thời gian tức thì.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Người dùng được biết rằng trình chỉnh sửa có quyền xóa không gian cá nhân của bất kỳ người dùng nào vi phạm điều khoản sử dụng và đặc biệt trong các trường hợp sau:\n\n● Nếu người dùng sử dụng bất hợp pháp trang web\n● Nếu người dùng trong quá trình tạo không gian cá nhân, tự ý truyền thông tin không chính xác đến trang web\n● Nếu người dùng không hoạt động trên không gian cá nhân của mình trong ít nhất 5 năm.\n\nKhông thể xảy ra trường hợp người biên tập quyết định xóa không gian cá nhân của người dùng vì một trong những lý do này, điều đó không thể gây tổn hại cho người dùng có tài khoản đã bị xóa. Việc xóa này không cấu thành sự từ bỏ các thủ tục pháp lý mà nhà xuất bản có thể thực hiện đối với người dùng đã vi phạm các quy tắc này.",
-    "About-plateform": "Espace-Piin’s Inc. là một phương tiện truyền thông trực tuyến cung cấp tập trung một số chức năng trong đó một cách trực quan và miễn phí cho người dùng. Đối với điều này, phương tiện truyền thông là một nền tảng nơi người dùng có thể trò chuyện và chia sẻ nội dung với những người dùng khác. Nó cũng có chức năng nghe nhạc liên tục, để người dùng có thể hòa mình vào bầu không khí trong lành bất kể hoàn cảnh và thời gian. Espace-Piin’s Inc. cũng tổ chức chức năng xem video liên tục để giải trí và giáo dục người dùng.",
-    "Access-&-nav-d": "Quyền truy cập và sử dụng trang web dành riêng cho người lớn. Nhà xuất bản sẽ có quyền yêu cầu bằng chứng về tuổi của người dùng bằng mọi cách. Người biên tập thực hiện các giải pháp kỹ thuật theo ý của mình để cho phép truy cập vào trang web 24 giờ một ngày, 7 ngày một tuần. Tuy nhiên, bất cứ lúc nào anh ta cũng có thể tạm dừng, hạn chế hoặc làm gián đoạn quyền truy cập vào trang web hoặc vào một số trang nhất định trong số này để tiếp tục cập nhật, sửa đổi nội dung của trang web hoặc bất kỳ hành động nào khác được cho là cần thiết để trang web hoạt động bình thường.\nKết nối và điều hướng trên trang của Espace Piin cấu thành sự chấp nhận không bảo đảm đối với các Điều kiện sử dụng chung này, bất kể phương tiện kỹ thuật truy cập và thiết bị đầu cuối được sử dụng. Các Điều kiện Sử dụng Chung này áp dụng cho bất kỳ biến thể hoặc phần mở rộng nào của trang web trên các mạng xã hội và / hoặc cộng đồng hiện tại hoặc trong tương lai do Espace Piins Inc. quản lý.",
-    "Confidentiality-d": "Ngoài các Điều khoản và Điều kiện này, trang web có chính sách bảo mật mô tả cách dữ liệu cá nhân được xử lý khi người dùng truy cập trang web và cách sử dụng cookie. Bằng cách duyệt trang web, người dùng cũng tuyên bố đã đọc chính sách bảo mật ở trên.",
-    "Generality-d": "Tất cả các phương pháp truy cập vào trang web \"www.espace-piins.com\" đều phải tuân theo chính sách bảo mật này. Espace Piins Inc chịu trách nhiệm về dữ liệu cá nhân được thu thập trên nền tảng. Điều này liên quan đến việc sử dụng, lưu trữ, bảo vệ và phổ biến thông tin cá nhân của bạn. Quyền truy cập vào Espace Piins hoàn toàn miễn phí và tất cả các chức năng của nền tảng này (ngoại trừ việc xuất bản quảng cáo) đều không phải trả phí.\nNgười biên tập có quyền sửa đổi, bất kỳ lúc nào và không cần thông báo, trang web và các dịch vụ cũng như các Điều kiện Sử dụng Chung này, cụ thể là để thích ứng với các chức năng mới hoặc xóa hoặc sửa đổi các chức năng hiện có nhằm mục đích cải thiện nền tảng. Do đó, người dùng nên tham khảo phiên bản mới nhất của Điều kiện sử dụng chung trước khi điều hướng, có thể truy cập bất kỳ lúc nào trên trang web. Trong trường hợp không đồng ý với Điều kiện sử dụng chung, người dùng không thể sử dụng trang web.",
-    "Hyperlinks-d": "Trang web có thể chứa các liên kết siêu văn bản trỏ đến các trang web khác mà Piin’s không có quyền kiểm soát. Bất chấp việc xác minh trước và thường xuyên được thực hiện bởi nhà xuất bản, nhà xuất bản từ chối mọi trách nhiệm đối với nội dung có thể tìm thấy trên các trang web này. Nhà xuất bản cho phép thiết lập các liên kết siêu văn bản đến bất kỳ trang hoặc tài liệu nào trên trang web của mình với điều kiện việc thiết lập các liên kết này không được thực hiện cho mục đích thương mại hoặc quảng cáo. Ngoài ra, thông tin trước của nhà xuất bản trang là cần thiết trước khi thiết lập liên kết siêu văn bản. Bị loại trừ khỏi các trang web ủy quyền này phổ biến thông tin có tính chất bất hợp pháp, bạo lực, gây tranh cãi, khiêu dâm, bài ngoại hoặc có thể ảnh hưởng đến độ nhạy của số lượng lớn nhất.\nCuối cùng, Piin’s có quyền xóa liên kết siêu văn bản trỏ đến trang web của mình bất cứ lúc nào, nếu trang web cho rằng nó không tuân thủ chính sách biên tập của mình. Tất cả các siêu văn bản bên ngoài nền tảng không được nhà xuất bản nền tảng đề xuất đều không được khuyến khích.",
-    "Intellectual-property-d": "Cấu trúc của trang web cũng như văn bản, đồ họa, hình ảnh, ảnh chụp, âm thanh, video và các ứng dụng máy tính tạo nên nó là tài sản của nhà xuất bản và được bảo vệ bởi luật pháp hiện hành về sở hữu trí tuệ.\n\nNghiêm cấm sao chép, phóng tác hoặc khai thác một phần hoặc toàn bộ nội dung, nhãn hiệu đã đăng ký và dịch vụ do trang web cung cấp, bằng bất kỳ quy trình nào, mà không có sự cho phép trước bằng văn bản của nhà xuất bản, và có thể cấu thành hành vi giả mạo trong ý nghĩa của điều L. 335-2 và tiếp theo. của Bộ luật Sở hữu trí tuệ. Và điều này, ngoại trừ các yếu tố được chỉ định rõ ràng là miễn phí quyền trên trang web.\n\nQuyền truy cập vào trang web không cấu thành sự công nhận quyền và nói chung, không trao bất kỳ quyền sở hữu trí tuệ nào liên quan đến một phần tử của trang web, vẫn là tài sản độc quyền của nhà xuất bản. Người dùng bị cấm nhập dữ liệu trên trang web sẽ sửa đổi hoặc có thể sửa đổi nội dung hoặc hình thức của nó.",
-    "Our-plateforme": "Nền tảng của chúng tôi",
-    "Responsability-d": "Nhà xuất bản chỉ chịu trách nhiệm về nội dung do mình tự biên tập. Nhà xuất bản không chịu trách nhiệm về:\n\n● Trong trường hợp có sự cố hoặc lỗi kỹ thuật, CNTT hoặc kế toán của trang web với bất kỳ phần cứng hoặc phần mềm nào\n● Thiệt hại trực tiếp hoặc gián tiếp, vật chất hoặc phi vật chất, có thể thấy trước hoặc không thể đoán trước do việc sử dụng hoặc những khó khăn khi sử dụng trang web hoặc các dịch vụ của nó\n● Các đặc điểm nội tại của Internet, đặc biệt là những đặc điểm liên quan đến tính không đáng tin cậy và sự thiếu an toàn của thông tin lưu hành trên đó\n● Nội dung hoặc hoạt động bất hợp pháp sử dụng trang web của mình mà không được chính quyền đó biết đến theo nghĩa của Luật liên quan đến việc xử lý dữ liệu cá nhân.\n\nHơn nữa, trang web không thể đảm bảo tính chính xác, đầy đủ và tính thời sự của thông tin được phổ biến ở đó.\n\nNgười dùng có trách nhiệm:\n● Bảo vệ thiết bị và thao tác trên nền tảng khỏi thiết bị không thuộc Espace Piins\n● Việc sử dụng trang web hoặc dữ liệu của anh ấy\n● Nếu nó không tôn trọng thư hoặc tinh thần của những điều kiện sử dụng chung này.",
-    "Responsability-d-extra": "Bằng cách cung cấp nội dung cho dịch vụ, bạn cấp cho Piin một giấy phép phụ trên toàn thế giới, không độc quyền, miễn phí bản quyền, có thể chuyển nhượng để sử dụng nội dung này (bao gồm tái tạo, phân phối, chuẩn bị các tác phẩm phái sinh, truyền bá và chạy) liên quan đến dịch vụ và các hoạt động Piin's (và những người kế nhiệm và chi nhánh của nó), bao gồm cả việc quảng bá và phân phối lại toàn bộ hoặc một phần Dịch vụ.",
-    "Site-management-d": "Để quản lý trang web một cách thích hợp, nhà xuất bản có thể:\n\n● Tạm dừng, làm gián đoạn hoặc hạn chế quyền truy cập vào toàn bộ hoặc một phần của trang web, bảo lưu quyền truy cập vào trang web hoặc một số phần nhất định của trang web, cho một nhóm người dùng Internet cụ thể.\n● Xóa tất cả thông tin có thể làm gián đoạn hoạt động của nó hoặc vi phạm luật quốc gia hoặc quốc tế, hoặc các quy tắc của Netiquette.\n● Tạm dừng trang web để tiến hành cập nhật. Mọi mong muốn sửa đổi nội dung trên nền tảng sẽ không khả dụng trong thời gian bảo trì.",
     "TITLE": {
-      "1-REGISTRATION": "1. ĐĂNG KÝ",
-      "2-UNSUBSCRIBE": "2. BỎ ĐĂNG KÝ",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. XÓA KHÔNG GIAN CÁ NHÂN TẠI BAN ĐẦU CỦA NHÀ XUẤT BẢN TRANG WEB",
-      "Access-&-nav": "Truy cập và điều hướng",
-      "Confidentiality": "Bảo mật",
-      "Generality": "Tính chung chung",
-      "Hyperlinks": "Liên kết siêu văn bản",
-      "Intellectual-property": "Sở hữu trí tuệ",
-      "Responsability": "Trách nhiệm",
-      "Services": "Dịch vụ",
-      "Site-management": "Quản lý trang web"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Mã nhận dạng âm nhạc của bạn"

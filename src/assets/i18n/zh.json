@@ -591,7 +591,8 @@
     "You-cannot-add-yourself": "您无法添加自己",
     "T-content-does-not-exist-anymore": "该内容已不存在",
     "T-publication-no-longer-exists": "该出版物不再存在",
-    "Could-not-play-video": "无法播放视频"
+    "Could-not-play-video": "无法播放视频",
+    "Please-type-yr-pseudo-or-mail": "请输入伪或电子邮件地址"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "收到照片",
@@ -612,7 +613,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "已有帐户",
-    "ForgotPassword": "我忘记了我的密码",
     "Log-In": "登录",
     "Login": "登录",
     "Password-recovery": "密码恢复",
@@ -625,7 +625,30 @@
     "Create-yr-account": "创建您的帐户",
     "Creating-yr-account": "建立您的帐户",
     "Login-first-to-continue": "首先登录以继续",
-    "Checking-yr-infos": "检查您的信息"
+    "Checking-yr-infos": "检查您的信息",
+    "Welcome-back": "欢迎回来",
+    "Hello-wiinser": "你好温瑟，登录继续！",
+    "Dont-have-an-account-?": "没有帐户？创建帐户",
+    "Enter-yr-mail-adress-to-receive-yr-password": "输入您的电子邮件地址以接收您的密码",
+    "Forgot-password-?": "忘记密码？",
+    "I-forgot-my-password": "我忘记了我的密码",
+    "Forgot-password": "忘记密码",
+    "Email-adress-sent": "已发送的电子邮件地址",
+    "Checking-yr-mail": "请检查您的电子邮件。不要犹豫，看看你的垃圾邮件",
+    "Welcome": "欢迎",
+    "Hello-nice-to-meet-you-wiinser": "你好，很高兴见到你维辛格",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "最近的项目",
@@ -706,7 +729,11 @@
     "Your-Pseudo": "您的用户名",
     "Your-message": "你的信息",
     "Confirm-your-password": "确认你的密码",
-    "Password-not-matching": "密码不匹配"
+    "Password-not-matching": "密码不匹配",
+    "Enter-yr-username-or-mail-adresse": "输入您的用户名或电子邮件地址",
+    "Enter-yr-password": "输入密码",
+    "Enter-yr-mail": "输入您的电子邮件",
+    "Enter-yr-username": "输入您的用户名"
   },
   "PLEASE": {
     "Password": "请输入您的密码"
@@ -923,32 +950,44 @@
     "Vibility": "知名度"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "访问某些服务需进行用户注册。注册和访问本网站的服务仅保留给有能力的自然人，他们已完成并验证了 Piin 网站上在线提供的注册表以及这些一般使用条件。登记时，用户承诺提供有关其个人及其公民身份的准确、真诚和最新的信息。用户还必须定期检查有关他的数据，以保持其准确性。用户必须提供有效的电子邮件地址，网站将在该地址上向他发送其服务注册确认。电子邮件地址不能多次用于通过同一帐户注册服务。每个自然人只允许注册一次现场服务。为用户分配了一个标识符，允许他访问保留访问权限的空间，此外还输入密码。该标识符对于每个用户都是唯一的，但是用户可以在他的个人空间中在线更改密码。密码是个人和保密的，用户承诺不将其传达给第三方。在任何情况下，Piin 的保留，在用户不遵守这些一般使用条件的规定时，可以拒绝订阅服务的请求。",
-    "2-UNSUBSCRIBE-d": "注册用户可以随时通过访问其个人空间中的专用页面来请求取消订阅。在用户完成为此目的提供的表单后，任何来自站点的取消订阅都将在紧要期限内生效。",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "用户知道，编辑者保留删除任何违反使用条款的用户的个人空间的权利，尤其是在以下情况下：\n●如果用户非法使用该网站\n●如果用户在创建个人空间时自愿将不正确的信息传输到站点\n●如果用户至少有5秒钟没有活动其私人空间\n\n在这种情况下，编辑者出于以下原因之一决定删除用户的个人空间时，不会对已删除其帐户的用户造成损害。 删除内容并不意味着发布者可以对违反这些规则的用户放弃法律诉讼。",
-    "About-plateform": "Espace-Piin’s Inc.是一种在线媒体，可为用户提供直观，免费的集中各种功能。 为此，媒体是用户可以与其他用户聊天和共享内容的平台。 它还具有连续听音乐的功能，因此无论情况和时间如何，用户都可以吸收良好的气氛。 Espace-Piin’s Inc.还具有连续观看视频的功能，以娱乐和教育用户。",
-    "Access-&-nav-d": "该网站仅供成人使用。 发布者有权以任何方式要求提供用户年龄的证明。 编辑者可以随意使用技术解决方案，以允许每周7天，每天24小时访问该站点。 但是，他可以随时暂停，限制或中断对网站或网站某些页面的访问，以便继续更新，修改其内容或认为网站正常运行所必需的任何其他操作。 无论访问的技术手段和所使用的终端如何，在Espace Piin站点上进行的连接和导航均构成对这些一般使用条款的保留，并不保留。 这些一般使用条件适用于Espace Piins Inc.管理的现有或将来的社交和/或社区网络上站点的任何变体或扩展。",
-    "Confidentiality-d": "除这些条款和条件外，网站还具有隐私政策，该政策描述了用户访问网站时如何处理个人数据以及如何使用Cookie。 通过浏览该网站，用户还声称已阅读上述隐私政策。",
-    "Generality-d": "网站“ www.espace-piins.com”的所有访问方法均受本隐私政策的约束。 Espace Piins Inc.负责在平台上收集的个人数据。 这涉及您个人信息的使用，存储，保护和传播。 完全免费使用Espace Piins，并且不对平台的所有功能（广告发布除外）收费。 编辑者保留随时（不经通知）修改站点和服务以及这些一般使用条款的权利，尤其是为了适应新功能或删除或修改现有功能，以改善网站的功能。 平台。 因此，建议用户在可随时在网站上进行任何导航之前，先参考最新版本的《一般使用条件》。 如果不同意“一般使用条件”，则用户无法使用该网站。",
-    "Hyperlinks-d": "该网站可能包含指向 Piin 无法控制的其他网站的超文本链接。尽管出版商事先进行了定期验证，但出版商拒绝对这些网站上可能找到的内容承担所有责任。出版商授权建立指向其网站任何页面或文档的超文本链接，前提是这些链接的建立不用于商业或广告目的。此外，在建立超文本链接之前，网站发布者必须事先提供相关信息。不得在此授权网站中传播非法、暴力、有争议的、色情、仇外的信息，或可能影响最大数量敏感度的信息。最后，如果网站认为其编辑政策不符合，Piin 保留随时删除指向其网站的超文本链接的权利。不建议平台发布者不建议平台外部的所有超文本。",
-    "Intellectual-property-d": "网站的结构，以及文本，图形，图像，照片，声音，视频和计算机应用程序组成它是出版商的财产，并因此受到知识产权下现行法律的保护。严格禁止未经出版商事先明确书面授权，以任何程序复制、改编或部分或全部或完全利用本网站提供的内容、注册商标和服务，并可能构成《知识产权法》第L.335-2条及其后条款含义中的伪造。这一点，除了明确指定为网站上没有权利的元素。访问网站并不构成对权利的承认，一般而言，并不授予与网站元素相关的任何知识产权，而该要素仍然是发布者的专有财产。禁止用户在网站上输入将修改或可能修改其内容或外观的数据。",
-    "Our-plateforme": "我们的平台",
-    "Responsability-d": "出版商只对他自己编辑的内容负责。发布者不负责:\n\n●如果网站出现任何硬件或软件的问题或技术、IT或会计故障， 则直接或间接、重大或非物质、可预见或不可预知的损坏因使用或困难而造成使用本网站或其服务 – 互联网的内在特征，特别是与在那里传播的信息不可靠和缺乏安全性相关的特征 – 非法内容或使用其网站的活动，而未经其适当规定在个人数据的处理方面，在法律意义上意识到这一点。此外，该网站无法保证在那里传播的信息的准确性、完整性和主题性。用户负责:\n\n● 保护其设备及其在平台上的操作，使其免受不属于 Espace Piins 的设备的操纵:\n● 他使用网站或数据 – 如果设备不尊重这些一般使用条件的文字或精神。",
-    "Responsability-d-extra": "通过向服务提供内容，即表示您授予平台一个全球范围、非排他性、免版税、可转让的再许可和可转让许可，以使用此内容（包括复制、分发、准备衍生作品、传播和执行与平台（及其继任者和附属机构）的服务和活动有关），包括促进和部分分发服务。",
-    "Site-management-d": "为了妥善管理网站，发布者可随时暂停、中断或限制对全部或部分网站的访问，保留对网站或网站某些部分的访问，以限制特定类别的互联网用户。\n●删除所有可能扰乱其运营或违反国家法律或国际法律或 N礼仪规则的信息。\n●暂停网站以进行更新。  在维护期间，任何修改平台上内容的愿望将不可用。",
     "TITLE": {
-      "1-REGISTRATION": "1. 注册",
-      "2-UNSUBSCRIBE": "2. 取消订阅",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. 在网站发布者的倡议下删除个人空间",
-      "Access-&-nav": "访问和导航",
-      "Confidentiality": "保密",
-      "Generality": "泛泛而谈",
-      "Hyperlinks": "超文本链接",
-      "Intellectual-property": "知识产权",
-      "Responsability": "责任",
-      "Services": "服务",
-      "Site-management": "站点管理"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "您的音乐标识符"

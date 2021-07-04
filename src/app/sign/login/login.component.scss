@@ -20,10 +20,11 @@
 h2 {
   position: relative;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
   margin-left: 1.4rem;
   margin-top: 1em;
+  font-size: 28px;
 }
 
 .signIn {
@@ -34,16 +35,18 @@ h2 {
 .signIn p,
 .signIn ::placeholder {
   color: #9ba6b6;
+  font-weight: 300;
 }
 
 .signIn h1 {
   font-size: 25px;
   font-weight: 400;
   color: #002354;
+  margin-bottom: 0.3rem;
 }
 
 .signIn input {
-  background: #f6f7fa;
+  background: rgb(232, 240, 254) !important;
   border-radius: 15px;
   border: none;
 }
@@ -66,15 +69,41 @@ h2 {
   text-decoration: underline;
 }
 
+input.inputPassword {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.inputpwrd {
+  border-radius: 15px;
+}
+
+
+.material-icons {
+  background-color: rgb(232, 240, 254);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-right: 0.5rem;
+  font-size: 1.8rem;
+  color: #9ba6b6 !important;
+}
+
+.material-icons:hover {
+  text-decoration: none !important;
+}
+
 .signIn button {
   padding: 0.5rem;
   border-radius: 20px;
   color: white;
-  background: linear-gradient(45deg, #00d0f9, #008dde, #5b53e6);
+  background: linear-gradient(45deg, #59e3ff, #008dde, #5b53e6);
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.158);
   font-size: 20px;
   outline: none;
   border: none;
+  width: 20em;
 }
 
 button:disabled {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import {
-  Router, NavigationEnd, NavigationStart, NavigationCancel,
+  Event, Router, NavigationEnd, NavigationStart, NavigationCancel,
   NavigationError, RouterOutlet
 } from '@angular/router'
 import { TranslateService } from '@ngx-translate/core'
@@ -26,17 +26,28 @@ export class AppComponent implements OnInit {
   user$: Observable<UserModel>
 
   // router
-  loading = false
+  loading = true
 
   // language
   listSelectLang: any[] = languageList
 
   constructor(
-    private router: Router,
+    private _router: Router,
     public translate: TranslateService,
     private store$: Store<RootStoreState.State>,
     private plateformState: StatePlarformService
-  ) { }
+  ) {
+    this._router.events.subscribe((routerEvent: Event) => {
+
+      if(routerEvent instanceof NavigationStart) {
+        this.loading = true;
+      }
+
+      if(routerEvent instanceof NavigationEnd || routerEvent instanceof NavigationCancel || routerEvent instanceof NavigationError) {
+        this.loading = true;
+      }
+    });
+   }
 
   ngOnInit(): void {
 
@@ -49,7 +60,6 @@ export class AppComponent implements OnInit {
 
     // setting the base
     this.setTheState()
-    this.setTheLoadingBar()
     this.setLangage()
 
   }
@@ -75,25 +85,6 @@ export class AppComponent implements OnInit {
     if (lg !== null) return this.translate.setDefaultLang(lg)
     else return this.translate.setDefaultLang('en')
 
-  }
-
-  setTheLoadingBar() {
-    // to set the loading bar animation
-    this.router.events.subscribe((event: any) => {
-      switch (true) {
-        case event instanceof NavigationStart: {
-          this.loading = true;
-          break;
-        }
-        case event instanceof NavigationEnd:
-        case event instanceof NavigationCancel:
-        case event instanceof NavigationError: {
-          this.loading = false;
-          break;
-        }
-        default: break
-      }
-    })
   }
 
   setTheState() {

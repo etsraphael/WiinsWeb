@@ -171,7 +171,32 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   openTOU() {
     // open the modal for the term of use
-    this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-7', 'col-sm-12', 'col-12'] })
+    this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-10', 'col-sm-12', 'col-12'] })
   }
+
+  public show: boolean = false;
+  public confirmShow: boolean = false;
+  public changeTypePswd: string = 'password';
+  public changeTypeConfirmPswd: string = 'password';
+
+  toggleShow(): void {
+  this.show = !this.show;
+  if(this.show){
+    this.changeTypePswd = 'text';
+  } else {
+    this.changeTypePswd = 'password';
+  }
+}
+
+toggleConfirmShow(): void {
+  this.confirmShow = !this.confirmShow;
+  if(this.confirmShow){
+    this.changeTypeConfirmPswd = 'text';
+  } else {
+    this.changeTypeConfirmPswd = 'password';
+  }
+}
+
+
 
 }

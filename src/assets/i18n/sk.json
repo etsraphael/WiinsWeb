@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Nemôžete pridať seba",
     "T-content-does-not-exist-anymore": "Tento obsah už neexistuje",
     "T-publication-no-longer-exists": "Táto publikácia už neexistuje",
-    "Could-not-play-video": "Video sa nepodarilo prehrať"
+    "Could-not-play-video": "Video sa nepodarilo prehrať",
+    "Please-type-yr-pseudo-or-mail": "Zadajte pseudo alebo e-mailovú adresu"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotka je prijatá",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Máte už účet",
-    "ForgotPassword": "Zabudol som svoje heslo",
     "Log-In": "Prihlásiť sa",
     "Login": "Prihlásiť sa",
     "Password-recovery": "Obnova hesla",
@@ -667,7 +667,30 @@
     "Create-yr-account": "Vytvor si účet",
     "Creating-yr-account": "Vytvára sa váš účet",
     "Login-first-to-continue": "Ak chcete pokračovať, najskôr sa prihláste",
-    "Checking-yr-infos": "Prebieha kontrola informácií"
+    "Checking-yr-infos": "Prebieha kontrola informácií",
+    "Welcome-back": "vitaj späť",
+    "Hello-wiinser": "Dobrý deň, Wiinser, prihláste sa a pokračujte!",
+    "Dont-have-an-account-?": "Nemáte účet? Vytvorenie účtu",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Zadajte svoju e-mailovú adresu, aby ste dostali svoje heslo",
+    "Forgot-password-?": "Zabudli ste heslo?",
+    "I-forgot-my-password": "Zabudol som svoje heslo",
+    "Forgot-password": "Zabudnuté heslo",
+    "Email-adress-sent": "Odoslaná e-mailová adresa",
+    "Checking-yr-mail": "Skontrolujte svoj e-mail. Neváhajte sa pozrieť do spamu",
+    "Welcome": "vitaj",
+    "Hello-nice-to-meet-you-wiinser": "Dobrý deň, teší ma Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Posledný projekt",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Vaše užívateľské meno",
     "Your-message": "Tvoja správa",
     "Confirm-your-password": "Potvrď svoje heslo",
-    "Password-not-matching": "Heslá sa nezhodujú"
+    "Password-not-matching": "Heslá sa nezhodujú",
+    "Enter-yr-username-or-mail-adresse": "Zadajte svoje používateľské meno alebo e-mailovú adresu",
+    "Enter-yr-password": "Zadajte heslo",
+    "Enter-yr-mail": "Zadajte svoj e-mail",
+    "Enter-yr-username": "Zadajte svoje používateľské meno"
   },
   "PLEASE": {
     "Password": "Prosím vložte heslo"
@@ -980,32 +1007,44 @@
     "Better-reference": "Lepšia referencia"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Prístup k určitým službám podlieha registrácii používateľa. Registrácia a prístup k službám tejto stránky sú vyhradené výlučne pre schopné fyzické osoby, ktoré vyplnili a potvrdili registračný formulár dostupný online na stránkach spoločnosti Piin, ako aj tieto všeobecné podmienky používania. používateľ sa zaväzuje poskytnúť presné, úprimné a aktuálne informácie o svojej osobe a jej občianskom stave. Používateľ bude tiež musieť pravidelne kontrolovať údaje, ktoré sa ho týkajú, aby bola zachovaná ich presnosť.\n\nPoužívateľ musí nevyhnutne uviesť platnú e-mailovú adresu, na ktorú mu stránka zašle potvrdenie o registrácii svojich služieb. E-mailovú adresu nemožno na registráciu služieb prostredníctvom toho istého účtu použiť viac ako raz. Na každú fyzickú osobu je povolená iba jedna registrácia služieb na webe. Používateľovi je okrem zadania hesla pridelený identifikátor, ktorý mu umožňuje prístup do priestoru, do ktorého je vyhradený prístup. Identifikátor je pre každého používateľa jedinečný, heslo si však môže používateľ zmeniť online vo svojom Osobnom priestore.\nHeslo je osobné a dôverné, používateľ sa zaväzuje, že ho nebude oznamovať tretím stranám. Rezervy spoločnosti Piin si v každom prípade vyhradzuje možnosť odmietnuť žiadosť o predplatné služieb v prípade nedodržania ustanovení týchto všeobecných podmienok používania zo strany používateľa.",
-    "2-UNSUBSCRIBE-d": "Registrovaný užívateľ môže kedykoľvek požiadať o odhlásenie tak, že prejde na vyhradenú stránku v jeho osobnom priestore. Akékoľvek odhlásenie z webu bude účinné, akonáhle užívateľ vyplní formulár poskytnutý na tento účel, v okamžitej lehote.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Používateľ je oboznámený s tým, že editor si vyhradzuje právo vymazať osobný priestor každého používateľa, ktorý porušuje podmienky používania, a to najmä v nasledujúcich prípadoch:\n\n● Ak používateľ neoprávnene používa túto stránku\n● Ak používateľ počas vytvárania osobného priestoru dobrovoľne prenáša nesprávne informácie na web\n● Ak používateľ nebol aktívny vo svojom osobnom priestore najmenej 5 rokov.\n\nV prípade, že sa editor rozhodne odstrániť osobný priestor používateľa z jedného z týchto dôvodov, nemôže to spôsobiť ujmu používateľovi, ktorého účet bol odstránený. Toto vymazanie nepredstavuje zrieknutie sa právnych krokov, ktoré môže vydavateľ podniknúť proti používateľovi, ktorý porušil tieto pravidlá.",
-    "About-plateform": "Espace-Piin’s Inc. je online médium, ktoré ponúka centralizáciu niekoľkých funkcií v ňom intuitívnym a bezplatným spôsobom pre svojich používateľov. Z tohto dôvodu sú médiá platformou, kde môžu používatelia chatovať a zdieľať obsah s ostatnými používateľmi. Je tiež hostiteľom funkcie nepretržitého počúvania hudby, aby jej používatelia mohli nasávať dobrú atmosféru bez ohľadu na situáciu a čas. Spoločnosť Espace-Piin’s Inc. tiež hostí funkciu nepretržitého sledovania videí, ktorá zabáva a vzdeláva svojich používateľov.",
-    "Access-&-nav-d": "Prístup na tieto stránky a ich použitie sú vyhradené pre dospelých. Vydavateľ bude mať právo akýmkoľvek spôsobom požadovať doklad o veku používateľa. Redaktor implementuje technické riešenia, ktoré má k dispozícii, aby umožnil prístup na stránku 24 hodín denne, 7 dní v týždni. Môže však kedykoľvek pozastaviť, obmedziť alebo prerušiť prístup na web alebo na niektoré jeho stránky, aby mohol pokračovať v aktualizáciách, úpravách jeho obsahu alebo iných akciách považovaných za nevyhnutné pre správne fungovanie webu.\nPripojenie a navigácia na stránkach spoločnosti Espace Piin predstavujú bezvýhradné prijatie týchto všeobecných podmienok použitia, bez ohľadu na technické prostriedky prístupu a použité terminály. Tieto všeobecné podmienky používania sa vzťahujú na akékoľvek variácie alebo rozšírenia stránky v existujúcich alebo budúcich sociálnych a / alebo komunitných sieťach spravovaných spoločnosťou Espace Piins Inc.",
-    "Confidentiality-d": "Okrem týchto zmluvných podmienok má web aj zásady ochrany osobných údajov, ktoré popisujú, ako sa osobné údaje spracúvajú, keď používateľ navštívi web, a ako sa používajú súbory cookie. Prehliadaním stránok používateľ tiež tvrdí, že si prečítal vyššie uvedené pravidlá ochrany osobných údajov.",
-    "Generality-d": "Všetky metódy prístupu na stránku „www.espace-piins.com“ podliehajú týmto zásadám ochrany osobných údajov. Za osobné údaje zhromaždené na platforme zodpovedá spoločnosť Espace Piins Inc. Týka sa to použitia, uchovávania, ochrany a šírenia vašich osobných údajov. Prístup k serveru Espace Piins je úplne bezplatný a všetky funkcie platformy (okrem zverejnenia reklamy) nie sú fakturované.\nRedaktor si vyhradzuje právo kedykoľvek a bez predchádzajúceho upozornenia upraviť web a služby, ako aj tieto Všeobecné podmienky používania, najmä prispôsobiť sa novým funkciám alebo vymazať alebo upraviť existujúce funkcie za účelom vylepšenia plošina. Preto sa odporúča, aby si užívateľ pred každou navigáciou prečítal najnovšiu verziu Všeobecných podmienok používania, ktorá je kedykoľvek k dispozícii na tejto stránke. V prípade nesúhlasu so Všeobecnými podmienkami používania nemôže užívateľ stránku nijako používať.",
-    "Hyperlinks-d": "Táto stránka môže obsahovať hypertextové odkazy smerujúce na iné webové stránky, nad ktorými nemá spoločnosť Piin’s kontrolu. Napriek predchádzajúcim a pravidelným overeniam, ktoré vydavateľ vykonáva, odmieta vydavateľ všetku zodpovednosť za obsah, ktorý je na týchto stránkach možné nájsť. Vydavateľ povoľuje vytváranie hypertextových odkazov na akékoľvek stránky alebo dokumenty na svojich webových stránkach za predpokladu, že vytváranie týchto odkazov sa nevykonáva na komerčné alebo reklamné účely. Pred vytvorením hypertextového odkazu sú navyše potrebné predbežné informácie vydavateľa stránky. Z tejto autorizácie nie sú vylúčené stránky šíriace informácie nezákonnej, násilnej, kontroverznej, pornografickej, xenofóbnej povahy alebo ktoré by mohli ovplyvniť citlivosť čo najväčšieho počtu osôb.\nNakoniec si spoločnosť Piin’s vyhradzuje právo na odstránenie kedykoľvek hypertextového odkazu smerujúceho na jej stránku, ak sa domnieva, že webová stránka nie je v súlade s redakčnými pravidlami. Neodporúča sa všetok hypertext mimo platformy, ktorý nie je navrhnutý vydavateľom platformy.",
-    "Intellectual-property-d": "Štruktúra stránky, ale aj texty, grafika, obrázky, fotografie, zvuky, videá a počítačové aplikácie, ktoré ju tvoria, sú majetkom vydavateľa a sú ako také chránené zákonmi duševného vlastníctva.\n\nReprodukcia, úprava alebo čiastočné alebo úplné využitie obsahu, registrovaných ochranných známok a služieb ponúkaných webom, akýmkoľvek spôsobom, bez výslovného predchádzajúceho písomného súhlasu vydavateľa, sú prísne zakázané a môžu predstavovať falšovanie v zmysle článkov L. 335-2 a nasl. zákonníka o duševnom vlastníctve. A to s výnimkou prvkov výslovne označených ako stránky bez práv na stránku.\n\nPrístup na stránku nepredstavuje uznanie práva a vo všeobecnosti neposkytuje žiadne právo duševného vlastníctva týkajúce sa časti stránky, ktorá zostáva výlučným vlastníctvom vydavateľa. Užívateľovi je zakázané zadávať na stránku údaje, ktoré by upravovali alebo ktoré by mohli meniť jej obsah alebo vzhľad.",
-    "Our-plateforme": "Naša platforma",
-    "Responsability-d": "Vydavateľ je zodpovedný iba za obsah, ktorý sám upravil. Vydavateľ nie je zodpovedný za:\n\n● V prípade problémov alebo technických, IT alebo účtovných zlyhaní stránky s hardvérom alebo softvérom\n● Priame alebo nepriame, materiálne alebo nehmotné, predvídateľné alebo nepredvídateľné škody vyplývajúce z používania alebo ťažkostí s používaním stránky alebo jej služieb\n● Základné charakteristiky internetu, najmä tie, ktoré sa týkajú nespoľahlivosti a nedostatočnej bezpečnosti informácií, ktoré tam kolujú.\n● Nezákonný obsah alebo aktivity využívajúce jeho stránku bez toho, aby o nej bola riadne informovaná v zmysle zákona, pokiaľ ide o spracúvanie osobných údajov.\n\nĎalej stránka nemôže zaručiť presnosť, úplnosť a aktuálnosť informácií tam šírených.\n\nPoužívateľ je zodpovedný za:\n● Ochrana jeho vybavenia a manipulácie s ním na platforme pred zariadením, ktoré nepatrí spoločnosti Espace Piins\n● Používanie stránok alebo ich údajov\n● Ak to nerešpektuje literu alebo ducha týchto všeobecných podmienok používania.",
-    "Responsability-d-extra": "Poskytnutím obsahu do služby udeľujete spoločnosti Piin's celosvetovú, nevýhradnú, bezplatnú a prenosnú sublicenciu prenosnú na použitie tohto obsahu (vrátane reprodukcie, distribúcie, prípravy odvodených diel, šírenia a chodu) v súvislosti so službou a aktivitami. Spoločnosti Piin (a jej nástupcov a pridružených spoločností), vrátane propagácie a ďalšej distribúcie Služby ako celku alebo jej časti.",
-    "Site-management-d": "Pre správnu správu stránok môže vydavateľ kedykoľvek:\n\n● Pozastaviť, prerušiť alebo obmedziť prístup na celú stránku alebo jej časť, vyhradiť si prístup na stránku alebo k určitým častiam stránky, pre konkrétnu kategóriu používateľov internetu.\n● Vymažte všetky informácie, ktoré by mohli narušiť jeho fungovanie alebo ktoré sú v rozpore s národnými alebo medzinárodnými zákonmi, alebo pravidlami Netikety.\n● Pozastavte web, aby ste mohli vykonávať aktualizácie. Akákoľvek vôľa upraviť obsah na platforme nebude počas období údržby k dispozícii.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRÁCIA",
-      "2-UNSUBSCRIBE": "2. NEPLATNÉ",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. VYMAZANIE OSOBNÉHO PRIESTORU Z INICIATÍVY VYDAVATEĽA STRÁNKY",
-      "Access-&-nav": "Prístup a navigácia",
-      "Confidentiality": "Dôvernosť",
-      "Generality": "Všeobecné informácie",
-      "Hyperlinks": "Hypertextové odkazy",
-      "Intellectual-property": "Duševné vlastníctvo",
-      "Responsability": "Zodpovednosti",
-      "Services": "Služby",
-      "Site-management": "Správa stránok"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Váš hudobný identifikátor"

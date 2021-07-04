@@ -2,7 +2,7 @@
 
 .container-fluid {
   background: linear-gradient(145deg, #00a9ce, #167dce, #3e56d4, #ff4b5b);
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -117,4 +117,14 @@ h2 {
 
 button:disabled {
   background: linear-gradient(45deg, #acacac, #777777, #666666);
+}
+
+.container-footer {
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+}
+
+.btn-term-of-use {
+  cursor: pointer;
 }

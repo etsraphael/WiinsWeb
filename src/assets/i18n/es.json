@@ -591,7 +591,8 @@
     "You-cannot-add-yourself": "No puedes agregarte a ti mismo",
     "T-content-does-not-exist-anymore": "Este contenido ya no existe",
     "T-publication-no-longer-exists": "Esta publicación ya no existe",
-    "Could-not-play-video": "No se pudo reproducir el video"
+    "Could-not-play-video": "No se pudo reproducir el video",
+    "Please-type-yr-pseudo-or-mail": "Introduce una pseudo dirección de correo electrónico o una dirección de correo electrónico"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "La foto es recibida",
@@ -612,7 +613,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Ya tiene una cuenta",
-    "ForgotPassword": "Olvidé mi contraseña",
     "Log-In": "Iniciar sesión",
     "Login": "Iniciar sesión",
     "Password-recovery": "Recuperación de contraseña",
@@ -625,7 +625,30 @@
     "Create-yr-account": "Crea tu cuenta",
     "Creating-yr-account": "creando tu cuenta",
     "Login-first-to-continue": "Inicie sesión primero para continuar",
-    "Checking-yr-infos": "Comprobando su información"
+    "Checking-yr-infos": "Comprobando su información",
+    "Welcome-back": "Bienvenido",
+    "Hello-wiinser": "Hola Wiinser, iniciar sesión para continuar !",
+    "Dont-have-an-account-?": "¿No tienes una cuenta? Crear una cuenta",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Introduzca su dirección de correo electrónico para recibir su contraseña",
+    "Forgot-password-?": "¿Olvidó la contraseña?",
+    "I-forgot-my-password": "Olvidé mi contraseña",
+    "Forgot-password": "Olvidó la contraseña",
+    "Email-adress-sent": "Dirección de correo electrónico enviada",
+    "Checking-yr-mail": "Por favor, revise su correo electrónico. No dudes en buscar en tu spam",
+    "Welcome": "bienvenido",
+    "Hello-nice-to-meet-you-wiinser": "Hola, Agradable conocerte Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Proyecto más reciente",
@@ -706,7 +729,11 @@
     "Your-Pseudo": "Su nombre de usuario",
     "Your-message": "Tu mensaje",
     "Confirm-your-password": "Confirmar la contraseña",
-    "Password-not-matching": "Las contraseñas no coinciden"
+    "Password-not-matching": "Las contraseñas no coinciden",
+    "Enter-yr-username-or-mail-adresse": "Introduzca su nombre de usuario o dirección de correo electrónico",
+    "Enter-yr-password": "Introduzca su contraseña",
+    "Enter-yr-mail": "Introduce tu correo electrónico",
+    "Enter-yr-username": "Introduce tu nombre de usuario"
   },
   "PLEASE": {
     "Password": "Por favor, introduzca su contraseña"
@@ -923,32 +950,44 @@
     "Vibility": "Visibilidad"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "El acceso a ciertos servicios está sujeto al registro del usuario. El registro y el acceso a los servicios del sitio están reservados exclusivamente para personas físicas capaces, que hayan completado y validado el formulario de inscripción disponible en línea en el sitio de Piin, así como las presentes Condiciones Generales de Uso.\n\nRegistro, el usuario se compromete a proporcionar información exacta, sincera y actualizada sobre su persona y su estado civil. El usuario también tendrá que comprobar regularmente los datos que le conciernen con el fin de mantener su exactitud. El usuario debe proporcionar imperativamente una dirección de correo electrónico válida, en la que el sitio le enviará una confirmación de su registro para sus servicios. Una dirección de correo electrónico no se puede utilizar más de una vez para registrarse para los servicios a través de la misma cuenta. Solo se permite un registro para los servicios del sitio por persona física.\nAl usuario se le asigna un identificador que le permite acceder a un espacio al que se reserva el acceso, además de introducir su contraseña. El identificador es único para cada usuario, sin embargo, la contraseña puede ser cambiada en línea por el usuario en su Espacio Personal.\n\nLa contraseña es personal y confidencial, el usuario se compromete a no comunicarla a terceros. Piin reserva en todo caso, la posibilidad de denegar una solicitud de suscripción a los servicios en caso de incumplimiento por parte del usuario de lo dispuesto en las presentes Condiciones Generales de Uso.",
-    "2-UNSUBSCRIBE-d": "El usuario registrado puede en cualquier momento solicitar su dessuscripción yendo a la página dedicada en su espacio personal. Cualquier dessuscripción del sitio será efectiva, después de que el usuario haya completado el formulario proporcionado para este fin, dentro del período inmediato.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Se informa al usuario que el editor se reserva el derecho de eliminar el espacio personal de cualquier usuario que viole los términos de uso y particularmente en los siguientes casos: \n\n● Si el usuario hace un uso ilegal del sitio \n● Si el usuario durante la creación de espacio personal, transmite voluntariamente información incorrecta al sitio \n● Si el usuario no ha estado activo en su espacio personal durante al menos 5 años.\n\nEn caso de que el editor decida eliminar el espacio personal del usuario por uno de estos motivos, no puede constituir un daño para el usuario cuya cuenta ha sido eliminada. Esta eliminación no constituye una renuncia a los procedimientos legales que el editor puede tomar contra el usuario que haya infringido estas reglas.",
-    "About-plateform": "Espace-Piin’s Inc. es un medio en línea que ofrece centralizar varias funcionalidades de manera intuitiva y gratuita para sus usuarios. Para esto, los medios son una plataforma donde los usuarios pueden chatear y compartir contenido con otros usuarios.\nTambién alberga una función para escuchar música continuamente, de modo que sus usuarios puedan disfrutar de un buen ambiente, sea cual sea la situación y la hora. Espace-Piin’s Inc. también alberga una función para mirar videos continuamente para entretener y educar a sus usuarios.",
-    "Access-&-nav-d": "El acceso y uso del sitio están reservados para adultos. El editor tendrá derecho a solicitar prueba de la edad del usuario por cualquier medio. El editor implementa las soluciones técnicas a su disposición para permitir el acceso al sitio las 24 horas del día, los 7 días de la semana.\n\nNo obstante, en cualquier momento puede suspender, limitar o interrumpir el acceso al sitio o a ciertas páginas de este para proceder con actualizaciones, modificaciones de su contenido o cualquier otra acción que se considere necesaria para el correcto funcionamiento del sitio. La conexión y navegación en el sitio de Espace Piin constituyen la aceptación sin reservas de estas Condiciones Generales de Uso, independientemente de los medios técnicos de acceso y los terminales utilizados.\n\nEstas Condiciones Generales de Uso se aplican a cualquier variación o extensión del sitio en redes sociales o comunitarias existentes o futuras administradas por Espace Piins Inc.",
-    "Confidentiality-d": "Además de estos Términos y condiciones, el sitio tiene una política de privacidad que describe cómo se procesan los datos personales cuando el usuario visita el sitio y cómo se utilizan las cookies. Al navegar por el sitio, el usuario también afirma haber leído la política de privacidad anterior.",
-    "Generality-d": "Todos los métodos de acceso al sitio \"www.espace-piins.com\" están sujetos a esta política de privacidad. Espace Piins Inc es responsable de los datos personales recopilados en la plataforma. Esto se refiere al uso, almacenamiento, protección y difusión de su información personal. El acceso a Espace Piins es completamente gratuito y no se facturan todas las funciones de la plataforma (excepto la publicación de publicidad).\n\nEl editor se reserva el derecho de modificar, en cualquier momento y sin previo aviso, el sitio y los servicios, así como estas Condiciones Generales de Uso, en particular para adaptarse a nuevas funcionalidades o la eliminación o modificación de funcionalidades existentes con el fin de mejorar el plataforma. Por lo tanto, se recomienda que el usuario consulte la última versión de las Condiciones Generales de Uso antes de cualquier navegación, accesible en cualquier momento en el sitio. En caso de desacuerdo con las Condiciones Generales de Uso, el usuario no puede utilizar el sitio.",
-    "Hyperlinks-d": "El sitio puede contener enlaces de hipertexto que apuntan a otros sitios web sobre los que Piin's no tiene control. A pesar de las verificaciones previas y regulares realizadas por el editor, este último declina toda responsabilidad por el contenido que es posible encontrar en estos sitios. El editor autoriza el establecimiento de enlaces de hipertexto a cualquier página o documento de su sitio siempre que el establecimiento de estos enlaces no se lleve a cabo con fines comerciales o publicitarios.\n\nAdemás, la información previa del editor del sitio es necesaria antes de cualquier establecimiento de enlace de hipertexto. Quedan excluidos de esta autorización sitios que difundan información de carácter ilegal, violento, controvertido, pornográfico, xenófobo o que pueda afectar a la sensibilidad del mayor número. Por último, Piin's se reserva el derecho de que se elimine un enlace de hipertexto que apunte a su sitio en cualquier momento, si el sitio considera que no cumple con su política editorial. No se recomienda todo el hipertexto externo a la plataforma que no es sugerido por el editor de la plataforma.",
-    "Intellectual-property-d": "La estructura del sitio, pero también los textos, gráficos, imágenes, fotografías, sonidos, vídeos y aplicaciones informáticas que lo componen son propiedad del editor y están protegidos como tales por las leyes vigentes bajo propiedad intelectual.\n\nLa reproducción, adaptación o explotación parcial o total de los contenidos, marcas registradas y servicios ofrecidos por el sitio, por cualquier proceso, sin la autorización previa expresa por escrito del editor, están estrictamente prohibidos y pueden constituyen la falsificación en el sentido de los artículos L.335-2 y siguientes del Código de Propiedad Intelectual. Y esto, con la excepción de los elementos expresamente designados como libres de derechos en el sitio.\n\nEl acceso al sitio no constituye el reconocimiento de un derecho y, en general, no confiere ningún derecho de propiedad intelectual relativo a un elemento del sitio, que sigue siendo propiedad exclusiva del editor. El usuario tiene prohibido introducir datos en el sitio que modifiquen o que puedan modificar su contenido o apariencia.",
-    "Our-plateforme": "Nuestra plataforma",
-    "Responsability-d": "El editor solo es responsable del contenido que él mismo ha editado. El editor no es responsable de:\n\n● En caso de problemas o fallas técnicas, informáticas o contables del sitio con cualquier hardware o software\n● Daños directos o indirectos, materiales o inmateriales, previsibles o impredecibles resultantes del uso o dificultades del uso del sitio o sus servicios\n● Características intrínsecas de Internet, en particular las relacionadas con la falta de fiabilidad y la falta de seguridad de la información que circula allí\n● Contenido o actividades ilegales que utilizan su sitio sin haberlo entendido debidamente en el sentido de la Ley con respecto al procesamiento de datos personales.\n\nAdemás, el sitio no puede garantizar la exactitud, integridad y actualidad de información difundida allí.\n\nEl usuario es responsable de:\n● La protección de su equipo y su manipulación en la plataforma de un dispositivo que no pertenece a Espace Piins\n● El uso que hace del sitio o sus datos\n● Si no respeta la letra o el espíritu de estas condiciones generales de uso.",
-    "Responsability-d-extra": "Al proporcionar contenido al servicio, usted otorga a la plataforma una licencia sublicencia inaplicable, libre de regalías y transferible mundial para utilizar este contenido (incluyendo reproducir, distribuir, preparar obras derivadas, difundir y ejecutar en relación con el servicio y las actividades de la plataforma (y sus sucesores y afiliados), incluso con el fin de promover y redistribuir el servicio en su totalidad o en parte.",
-    "Site-management-d": "Para la correcta gestión del sitio, el editor puede en cualquier momento:\n\n● Suspender, interrumpir o limitar el acceso a todo o parte del sitio, reservar el acceso al sitio o a ciertas partes del sitio, a una categoría específica de usuarios de Internet.   \n● Eliminar toda la información que pueda interrumpir su funcionamiento o que contravenga las leyes nacionales o internacionales, o las reglas de la Netiquette.\n● Suspenda el sitio para llevar a cabo actualizaciones.\n\nCualquier deseo de modificar el contenido de la plataforma no estará disponible durante los períodos de mantenimiento.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRO",
-      "2-UNSUBSCRIBE": "2. CANCELAR LA SUSCRIPCIÓN",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. ELIMINACIÓN DEL ESPACIO PERSONAL POR INICIATIVA DEL EDITOR DEL SITIO",
-      "Access-&-nav": "Acceso y navegación",
-      "Confidentiality": "Confidencialidad",
-      "Generality": "Generalidades",
-      "Hyperlinks": "Enlaces de hipertexto",
-      "Intellectual-property": "Propiedad intelectual",
-      "Responsability": "Responsabilidades",
-      "Services": "Servicios",
-      "Site-management": "Gestión del sitio"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Su identificador de música"

@@ -115,3 +115,13 @@ h2 {
 button:disabled {
   background: linear-gradient(45deg, #acacac, #777777, #666666);
 }
+
+.iconLink {
+  justify-content: space-evenly;
+}
+
+.handshake,.handholding {
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+}

@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "U kan nie uself byvoeg nie",
     "T-content-does-not-exist-anymore": "Hierdie inhoud bestaan nie meer nie",
     "T-publication-no-longer-exists": "Hierdie publikasie bestaan nie meer nie",
-    "Could-not-play-video": "Kon nie video speel nie"
+    "Could-not-play-video": "Kon nie video speel nie",
+    "Please-type-yr-pseudo-or-mail": "Tik asseblief 'n pseudo of 'n e-posadres in"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Die foto word ontvang",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Reeds 'n rekening",
-    "ForgotPassword": "ek het my wagwoord vergeet",
     "Log-In": "Teken aan",
     "Login": "Teken aan",
     "Password-recovery": "Wagwoord herwinning",
@@ -667,7 +667,30 @@
     "Create-yr-account": "Skep jou rekening",
     "Creating-yr-account": "Maak u rekening",
     "Login-first-to-continue": "Meld eers aan om voort te gaan",
-    "Checking-yr-infos": "Kontroleer u inligting"
+    "Checking-yr-infos": "Kontroleer u inligting",
+    "Welcome-back": "Welkom terug",
+    "Hello-wiinser": "Hallo Wiinser, teken aan om voort te gaan !",
+    "Dont-have-an-account-?": "Het jy nie 'n rekening nie? Skep 'n rekening",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Voer jou e-posadres in om jou wagwoord te ontvang",
+    "Forgot-password-?": "Wagwoord vergeet?",
+    "I-forgot-my-password": "ek het my wagwoord vergeet",
+    "Forgot-password": "Wagwoord vergeet",
+    "Email-adress-sent": "E-posadres gestuur",
+    "Checking-yr-mail": "Gaan asseblief jou e-pos na. Moenie huiwer om in jou strooipos te kyk nie",
+    "Welcome": "Welkom",
+    "Hello-nice-to-meet-you-wiinser": "Hallo, lekker om jou te ontmoet Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Laaste projek",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Jou verbruikersnaam",
     "Your-message": "Jou boodskap",
     "Confirm-your-password": "Bevestig jou wagwoord",
-    "Password-not-matching": "Die wagwoorde stem nie ooreen nie"
+    "Password-not-matching": "Die wagwoorde stem nie ooreen nie",
+    "Enter-yr-username-or-mail-adresse": "Tik jou gebruikersnaam of e-posadres in",
+    "Enter-yr-password": "Tik jou wagwoord in",
+    "Enter-yr-mail": "Voer jou e-pos in",
+    "Enter-yr-username": "Tik jou gebruikersnaam in"
   },
   "PLEASE": {
     "Password": "Tik asseblief jou wagwoord"
@@ -980,32 +1007,44 @@
     "Better-reference": "Beter verwysing"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Toegang tot sekere dienste is onderhewig aan gebruikersregistrasie. Registrasie en toegang tot die dienste van die werf is uitsluitlik gereserveer vir bekwame natuurlike persone wat die registrasievorm wat aanlyn op die Piin-webwerf beskikbaar is, ingevul en bekragtig het, asook hierdie Algemene Gebruiksvoorwaardes. registrasie, onderneem die gebruiker om presiese, opregte en bygewerkte inligting oor sy persoon en sy burgerlike status te verskaf. Die gebruiker sal ook gereeld die gegewens oor hom moet nagaan om die akkuraatheid daarvan te behou.\n\nDie gebruiker moet noodwendig 'n geldige e-posadres verstrek waarop die webwerf 'n bevestiging van sy registrasie vir sy dienste aan hom sal stuur. 'N E-posadres kan nie meer as een keer gebruik word om vir dienste via dieselfde rekening te registreer nie. Slegs een registrasie vir werfdienste word per natuurlike persoon toegelaat. Aan die gebruiker word 'n identifiseerder toegeken wat hom toelaat om toegang te verkry tot 'n ruimte waartoe toegang voorbehou word, benewens die invoer van sy wagwoord. Die identifiseerder is uniek vir elke gebruiker, maar die wagwoord kan aanlyn verander word deur die gebruiker in sy Persoonlike Ruimte.\nDie wagwoord is persoonlik en vertroulik, die gebruiker onderneem om dit nie aan derdes te kommunikeer nie. Piin se voorbehoude is in elk geval die moontlikheid om 'n versoek vir intekeninge op die dienste te weier in geval van nie-nakoming deur die gebruiker van die bepalings van hierdie Algemene Gebruiksvoorwaardes.",
-    "2-UNSUBSCRIBE-d": "Die geregistreerde gebruiker kan te eniger tyd hul uitteken versoek deur na die toegewyde bladsy in hul persoonlike ruimte te gaan. Enige intekening op die webwerf sal van krag wees, nadat die gebruiker die vorm wat hiervoor verskaf is, binne die onmiddellike tydperk voltooi het.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Aan die gebruiker word bekend gemaak dat die redakteur die reg behou om die persoonlike ruimte van enige gebruiker wat die gebruiksvoorwaardes oortree, te verwyder, en veral in die volgende gevalle:\n\n● As die gebruiker die webwerf onwettig gebruik\n● As die gebruiker tydens die skepping van persoonlike ruimte vrywillig verkeerde inligting na die webwerf stuur\n● As die gebruiker minstens 5 jaar nie aktief in sy persoonlike ruimte is nie.\n\nIn geval waar die redakteur om een van hierdie redes besluit om die gebruiker se persoonlike ruimte te verwyder, kan dit nie skade berokken vir die gebruiker wie se rekening verwyder is nie. Hierdie skrapping behels nie 'n afstanddoening van regsgedinge wat die uitgewer kan teen die gebruiker wat hierdie reëls oortree het nie.",
-    "About-plateform": "Espace-Piin's Inc. is 'n aanlynmedia wat bied om verskeie funksies daarin te sentraliseer op 'n intuïtiewe en gratis manier vir sy gebruikers. Hiervoor is die media 'n platform waar gebruikers kan gesels en inhoud met ander gebruikers kan deel. Dit bied ook 'n funksie om deurlopend na musiek te luister, sodat die gebruikers 'n goeie atmosfeer kan geniet, ongeag die situasie en die tyd. Espace-Piin's Inc. bied ook 'n funksie aan om deurlopend na video's te kyk om gebruikers te vermaak en op te voed.",
-    "Access-&-nav-d": "Toegang tot en gebruik van die webwerf is gereserveer vir volwassenes. Die uitgewer het die reg om op enige manier bewys te lewer van die ouderdom van die gebruiker. Die redakteur implementeer die tegniese oplossings tot sy beskikking om toegang tot die werf 24 uur per dag, 7 dae per week, moontlik te maak. Hy kan nietemin op enige tydstip toegang tot die webwerf of tot sekere bladsye hiervan opskort, beperk of onderbreek om voort te gaan met opdaterings, wysigings van die inhoud daarvan of enige ander aksies wat nodig geag word vir die behoorlike funksionering van die webwerf.\nVerbinding en navigasie op die Espace Piin-webwerf behels onvoorwaardelike aanvaarding van hierdie Algemene Gebruiksvoorwaardes, ongeag die tegniese toegangsmiddele en die terminale wat gebruik word. Hierdie algemene gebruiksvoorwaardes is van toepassing op enige verandering of uitbreiding van die webwerf op bestaande of toekomstige sosiale en / of gemeenskapsnetwerke wat deur Espace Piins Inc.",
-    "Confidentiality-d": "Benewens hierdie bepalings en voorwaardes, het die webwerf 'n privaatheidsbeleid wat beskryf hoe persoonlike data verwerk word wanneer die gebruiker die webwerf besoek en hoe koekies gebruik word. Deur op die webwerf te blaai, beweer die gebruiker ook dat hy die bogenoemde privaatheidsbeleid gelees het.",
-    "Generality-d": "Alle toegangsmetodes tot die webwerf \"www.espace-piins.com\" is onderhewig aan hierdie privaatheidsbeleid. Espace Piins Inc is verantwoordelik vir die persoonlike data wat op die platform versamel word. Dit gaan oor die gebruik, berging, beskerming en verspreiding van u persoonlike inligting. Toegang tot Espace Piins is heeltemal gratis en alle funksies van die platform (behalwe die publikasie van advertensies) word nie gefaktureer nie.\nDie redakteur behou die reg voor om, te eniger tyd en sonder kennisgewing, die webwerf en die dienste sowel as hierdie Algemene gebruiksvoorwaardes te verander, veral om aan te pas by nuwe funksies of die verwydering of wysiging van bestaande funksies met die doel om die platform. Dit word dus aanbeveel dat die gebruiker die nuutste weergawe van die Algemene Gebruiksvoorwaardes raadpleeg voor enige navigasie, wat op enige tydstip op die webwerf beskikbaar is. In geval van onenigheid met die Algemene Gebruiksvoorwaardes, kan die gebruiker geen gebruik maak van die webwerf nie.",
-    "Hyperlinks-d": "Die webwerf kan hiperteksskakels bevat wat na ander webwerwe wys waaroor Piin's geen beheer het nie. Ten spyte van die voorafgaande en gereelde verifikasies wat deur die uitgewer uitgevoer is, wys hy nie die verantwoordelikheid op die inhoud wat op hierdie webwerwe gevind kan word nie. Die uitgewer magtig die aanbring van hiperteksskakels na enige bladsy of dokument op sy webwerf, mits die aanbring van hierdie skakels nie vir kommersiële of advertensiedoeleindes uitgevoer word nie. Daarbenewens is die voorafgaande inligting van die uitgewer van die webwerf nodig voordat enige hiperteksskakel aangebring word. Word uitgesluit van hierdie magtigingswebwerwe wat inligting versprei van 'n onwettige, gewelddadige, omstrede, pornografiese, xenofobiese aard of wat die sensitiwiteit van die meeste kan beïnvloed.\nLaastens behou Piin's die reg voor om te eniger tyd 'n hiperteksskakel na sy webwerf te laat verwyder, as die webwerf van mening is dat dit nie aan sy redaksionele beleid voldoen nie. Alle hiperteks buite die platform wat nie deur die platformuitgewer voorgestel word nie, word nie aanbeveel nie.",
-    "Intellectual-property-d": "Die struktuur van die webwerf, maar ook die tekste, grafieke, beelde, foto's, geluide, video's en rekenaartoepassings wat dit saamstel, is die eiendom van die uitgewer en word as sodanig beskerm deur die wette wat onder intellektuele eiendom geld.\n\nReproduksie, aanpassing of gedeeltelike of totale ontginning van die inhoud, geregistreerde handelsmerke en dienste wat deur die webwerf aangebied word, deur enige proses hoegenaamd, sonder die uitdruklike skriftelike toestemming van die uitgewer, is streng verbode en kan vervalsing in die sin van artikels L. uitmaak. 335-2 ev. van die Wet op die Intellektuele Eiendom. En dit, met die uitsondering van die elemente wat uitdruklik as vry van regte op die webwerf aangewys word.\n\nToegang tot die webwerf behels nie die erkenning van 'n reg nie en verleen in die algemeen geen intellektuele eiendomsreg met betrekking tot 'n element van die webwerf nie, wat die eksklusiewe eiendom van die uitgewer bly. Die gebruiker word verbied om data op die webwerf in te voer wat sou verander of wat die inhoud of voorkoms daarvan sou kon verander.",
-    "Our-plateforme": "Ons platform",
-    "Responsability-d": "Die uitgewer is slegs verantwoordelik vir die inhoud wat hy self geredigeer het. Die uitgewer is nie verantwoordelik vir:\n\n● In die geval van probleme met tegniese, IT- of rekeningkundige mislukkings van die webwerf met enige hardeware of sagteware\n● Direkte of indirekte, materiële of onbeduidende, voorsienbare of onvoorspelbare skade as gevolg van die gebruik of probleme met die gebruik van die webwerf of sy dienste\n● Intrinsieke eienskappe van die internet, veral die wat verband hou met die onbetroubaarheid en die gebrek aan sekuriteit van die inligting wat daar sirkuleer\n● Onwettige inhoud of aktiwiteite wat die webwerf gebruik, sonder dat dit behoorlik daarvan bewus geword het in die sin van die wet met betrekking tot die verwerking van persoonlike data.\n\nVerder kan die webwerf nie die akkuraatheid, volledigheid en aktualiteit van die inligting wat daar versprei word, waarborg nie.\n\nDie gebruiker is verantwoordelik vir:\n● Die beskerming van sy toerusting en die manipulering daarvan op die platform teen 'n toestel wat nie aan Espace Piins behoort nie\n● Die gebruik wat hy van die webwerf of sy data maak\n● As dit nie die letter of die gees van hierdie algemene gebruiksvoorwaardes respekteer nie.",
-    "Responsability-d-extra": "Deur inhoud aan die diens te lewer, verleen u aan Piin 'n wêreldwye, nie-eksklusiewe, royalty-vrye, oordraagbare sublisensie wat oordraagbaar is om hierdie inhoud te gebruik (insluitend reproduseer, versprei, voorberei afgeleide werke, die verspreiding en gebruik) in verband met die diens en aktiwiteite Piin's (en sy opvolgers en affiliasies), insluitend om die diens geheel of gedeeltelik te bevorder en te herverdeel.",
-    "Site-management-d": "Vir die behoorlike bestuur van die webwerf kan die uitgewer te eniger tyd:\n\n● Skors, onderbreek of beperk toegang tot die hele of 'n gedeelte van die webwerf, hou toegang tot die webwerf of tot sekere dele van die webwerf, tot 'n spesifieke kategorie internetgebruikers, voor.\n● Skrap alle inligting wat die werking daarvan kan ontwrig of wat die nasionale of internasionale wette, of die reëls van Netiquette oortree.\n● Skors die webwerf op om opdaterings uit te voer. Enige begeerte om inhoud op die platform te wysig, sal nie gedurende onderhoudstydperke beskikbaar wees nie.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRASIE",
-      "2-UNSUBSCRIBE": "2. ONTSKRYF",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. WIS VAN PERSOONLIKE RUIMTE BY DIE INISIATIEF VAN DIE UITGEWER",
-      "Access-&-nav": "Toegang en navigasie",
-      "Confidentiality": "Vertroulikheid",
-      "Generality": "Algemeenhede",
-      "Hyperlinks": "Hiperteksskakels",
-      "Intellectual-property": "Intellektuele eiendom",
-      "Responsability": "Verantwoordelikhede",
-      "Services": "Dienste",
-      "Site-management": "Terreinbestuur"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Jou musiek-identifiseerder"

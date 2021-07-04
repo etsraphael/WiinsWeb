@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Anda tidak dapat menambahkan diri Anda sendiri",
     "T-content-does-not-exist-anymore": "Konten ini sudah tidak ada",
     "T-publication-no-longer-exists": "Publikasi ini sudah tidak ada",
-    "Could-not-play-video": "Tidak dapat memutar video"
+    "Could-not-play-video": "Tidak dapat memutar video",
+    "Please-type-yr-pseudo-or-mail": "Silakan masukkan pseudo atau alamat email"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto sudah diterima",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Memeriksa info Anda",
     "Create-yr-account": "buat akunmu",
     "Creating-yr-account": "Membuat akun Anda",
-    "ForgotPassword": "Saya lupa kata sandi saya",
     "Log-In": "Gabung",
     "Login": "Gabung",
     "Login-first-to-continue": "Login dulu untuk melanjutkan",
@@ -667,7 +667,30 @@
     "Registration": "Registrasi",
     "Sign-up": "Daftar",
     "accept-tou": "Saya menyatakan bahwa saya berusia 16 tahun atau lebih dan saya menyetujui perjanjian pengguna dan kebijakan privasi",
-    "click-on-email": "Silakan klik tautan email"
+    "click-on-email": "Silakan klik tautan email",
+    "Welcome-back": "Selamat Datang kembali",
+    "Hello-wiinser": "Halo Wiinser, masuk untuk melanjutkan!",
+    "Dont-have-an-account-?": "Belum punya akun? Buat sebuah akun",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Masukkan alamat email Anda untuk menerima\nkata sandi Anda",
+    "Forgot-password-?": "Tidak ingat kata sandi ?",
+    "I-forgot-my-password": "Saya lupa kata sandi saya",
+    "Forgot-password": "Tidak ingat kata sandi",
+    "Email-adress-sent": "Alamat email terkirim",
+    "Checking-yr-mail": "Silakan periksa email Anda. Jangan ragu untuk mencari di spam Anda",
+    "Welcome": "Selamat datang",
+    "Hello-nice-to-meet-you-wiinser": "Halo, Senang bertemu denganmu Winser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Proyek terbaru",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Nama pengguna Anda",
     "Your-message": "Pesan Anda",
     "Confirm-your-password": "Konfirmasi password Anda",
-    "Password-not-matching": "Kata sandi tidak cocok"
+    "Password-not-matching": "Kata sandi tidak cocok",
+    "Enter-yr-username-or-mail-adresse": "Masukkan nama pengguna atau alamat email Anda",
+    "Enter-yr-password": "Masukkan kata sandi Anda",
+    "Enter-yr-mail": "Masukkan email Anda",
+    "Enter-yr-username": "Masukkan nama pengguna Anda"
   },
   "PLEASE": {
     "Password": "Silakan masukkan kata sandi Anda"
@@ -980,32 +1007,44 @@
     "Better-reference": "Referensi yang lebih baik"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Akses ke layanan tertentu tunduk pada pendaftaran pengguna. Pendaftaran dan akses ke layanan situs dicadangkan secara eksklusif untuk perorangan yang mampu, yang telah melengkapi dan memvalidasi formulir pendaftaran yang tersedia secara online di situs Piin, serta Ketentuan Umum Penggunaan ini. pendaftaran, pengguna berjanji untuk memberikan informasi yang tepat, tulus dan terkini tentang dirinya dan status sipilnya. Pengguna juga harus secara teratur memeriksa data tentang dirinya untuk menjaga keakuratannya.\n\nPengguna harus memberikan alamat email yang valid, di mana situs tersebut akan mengirimkan konfirmasi pendaftarannya untuk layanannya. Alamat email tidak dapat digunakan lebih dari sekali untuk mendaftar layanan melalui akun yang sama. Hanya satu pendaftaran untuk layanan situs yang diperbolehkan per orang. Pengguna diberi pengenal yang memungkinkannya mengakses ruang yang aksesnya dicadangkan, selain memasukkan sandinya. Pengenal itu unik untuk setiap pengguna, namun kata sandi dapat diubah secara online oleh pengguna di Ruang Pribadinya.\nKata sandi bersifat pribadi dan rahasia, pengguna berjanji untuk tidak mengkomunikasikannya kepada pihak ketiga. Piin memiliki cadangan dalam hal apapun, kemungkinan menolak permintaan untuk berlangganan layanan dalam hal ketidakpatuhan oleh pengguna dengan ketentuan Ketentuan Umum Penggunaan ini.",
-    "2-UNSUBSCRIBE-d": "Pengguna terdaftar dapat setiap saat meminta berhenti berlangganan dengan membuka halaman khusus di ruang pribadi mereka. Setiap pembatalan langganan dari situs akan efektif, setelah pengguna melengkapi formulir yang disediakan untuk tujuan ini, dalam waktu dekat.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Diberitahukan kepada pengguna bahwa editor berhak menghapus ruang pribadi pengguna mana pun yang melanggar persyaratan penggunaan dan terutama dalam kasus berikut:\n\n● Jika pengguna menggunakan situs secara ilegal\n● Jika pengguna selama pembuatan ruang pribadi, secara sukarela mengirimkan informasi yang salah ke situs\n● Jika pengguna tidak aktif di ruang pribadinya setidaknya selama 5 tahun.\n\nKasus Dans di mana editor memutuskan untuk menghapus ruang pribadi pengguna karena salah satu alasan ini, itu tidak dapat membahayakan pengguna yang akunnya telah dihapus. Penghapusan ini bukan merupakan pengesampingan proses hukum yang mungkin dilakukan penerbit terhadap pengguna yang melanggar aturan ini.",
-    "About-plateform": "Espace-Piin's Inc. adalah media online yang menawarkan untuk memusatkan beberapa fungsi di dalamnya secara intuitif dan gratis bagi penggunanya. Untuk itu, media merupakan platform tempat pengguna dapat mengobrol dan berbagi konten dengan pengguna lain. Ini juga memiliki fungsi untuk mendengarkan musik secara terus menerus, sehingga penggunanya dapat menikmati suasana yang baik apa pun situasi dan waktu. Espace-Piin's Inc. juga menyelenggarakan fungsi untuk menonton video terus menerus untuk menghibur dan mendidik penggunanya.",
-    "Access-&-nav-d": "Akses ke dan penggunaan situs disediakan untuk orang dewasa. Penerbit berhak meminta bukti usia pengguna dengan cara apa pun. Editor menerapkan solusi teknis yang dimilikinya untuk memungkinkan akses ke situs 24 jam sehari, 7 hari seminggu. Namun demikian, ia dapat setiap saat menangguhkan, membatasi, atau mengganggu akses ke situs atau halaman tertentu ini untuk melanjutkan dengan pembaruan, modifikasi konten atau tindakan lain yang dianggap perlu untuk berfungsinya situs dengan benar.\nSambungan dan navigasi di situs Espace Piin merupakan penerimaan tanpa pamrih dari Ketentuan Umum Penggunaan ini, apa pun sarana teknis akses dan terminal yang digunakan. Ketentuan Umum Penggunaan ini berlaku untuk variasi atau perluasan situs pada jaringan sosial dan / atau komunitas yang ada atau yang akan datang yang dikelola oleh Espace Piins Inc.",
-    "Confidentiality-d": "Selain Syarat dan Ketentuan ini, situs memiliki kebijakan privasi yang menjelaskan bagaimana data pribadi diproses ketika pengguna mengunjungi situs dan bagaimana cookie digunakan. Dengan menjelajahi situs tersebut, pengguna juga mengklaim telah membaca kebijakan privasi di atas.",
-    "Generality-d": "Semua metode akses ke situs \"www.espace-piins.com\" tunduk pada kebijakan privasi ini. Espace Piins Inc bertanggung jawab atas data pribadi yang dikumpulkan di platform. Ini menyangkut penggunaan, penyimpanan, perlindungan, dan penyebaran informasi pribadi Anda. Akses ke Espace Piins sepenuhnya gratis dan semua fungsi platform (kecuali publikasi iklan) tidak ditagih.\nEditor berhak untuk mengubah, setiap saat dan tanpa pemberitahuan, situs dan layanan serta Ketentuan Umum Penggunaan ini, khususnya untuk menyesuaikan dengan fungsi baru atau penghapusan atau modifikasi fungsi yang ada untuk tujuan meningkatkan peron. Oleh karena itu, disarankan agar pengguna merujuk ke versi terbaru dari Ketentuan Umum Penggunaan sebelum navigasi apa pun, yang dapat diakses kapan saja di situs. Dalam kasus ketidaksepakatan dengan Ketentuan Umum Penggunaan, tidak ada penggunaan situs yang dapat dilakukan oleh pengguna.",
-    "Hyperlinks-d": "Situs tersebut mungkin berisi tautan hiperteks yang mengarah ke situs web lain di mana Piin's tidak memiliki kendali. Terlepas dari verifikasi sebelumnya dan rutin yang dilakukan oleh penerbit, penerbit menolak semua tanggung jawab atas konten yang mungkin ditemukan di situs ini. Penerbit mengizinkan pembuatan tautan hypertext ke halaman atau dokumen apa pun di situsnya asalkan pembuatan tautan ini tidak dilakukan untuk tujuan komersial atau periklanan. Selain itu, informasi sebelumnya dari penerbit situs diperlukan sebelum pembentukan tautan hypertext. Dikecualikan dari situs otorisasi ini yang menyebarkan informasi yang ilegal, penuh kekerasan, kontroversial, pornografi, xenofobia, atau yang dapat memengaruhi sensitivitas paling banyak.\nTerakhir, Piin berhak untuk menghapus tautan hypertext yang mengarah ke situsnya kapan saja, jika situs tersebut menganggap bahwa ia tidak mematuhi kebijakan editorialnya. Semua hypertext di luar platform yang tidak disarankan oleh penerbit platform tidak direkomendasikan.",
-    "Intellectual-property-d": "Struktur situs tetapi juga teks, grafik, gambar, foto, suara, video dan aplikasi komputer yang menyusunnya adalah milik penerbit dan dilindungi oleh hukum yang berlaku di bawah kekayaan intelektual.\n\nReproduksi, adaptasi, atau eksploitasi sebagian atau total konten, merek dagang terdaftar dan layanan yang ditawarkan oleh situs, dengan proses apa pun, tanpa izin tertulis sebelumnya dari penerbit, dilarang keras dan mungkin merupakan pemalsuan dalam arti artikel L. 335-2 et seq. dari Kode Kekayaan Intelektual. Dan ini, dengan pengecualian elemen yang secara tegas ditetapkan sebagai bebas dari hak di situs.\n\nAkses ke situs bukan merupakan pengakuan atas hak dan, secara umum, tidak memberikan hak kekayaan intelektual apa pun yang berkaitan dengan elemen situs, yang tetap menjadi milik eksklusif penerbit. Pengguna dilarang memasukkan data di situs yang akan mengubah atau yang dapat mengubah konten atau tampilannya.",
-    "Our-plateforme": "Platform kami",
-    "Responsability-d": "Penerbit hanya bertanggung jawab atas konten yang telah ia edit sendiri. Penerbit tidak bertanggung jawab untuk:\n\n● Jika terjadi masalah atau teknis, IT atau kegagalan akuntansi situs dengan perangkat keras atau perangkat lunak apa pun\n● Kerusakan langsung atau tidak langsung, material atau tidak material, yang dapat diperkirakan atau tidak dapat diprediksi akibat penggunaan atau kesulitan dalam menggunakan situs atau layanannya\n● Karakteristik intrinsik Internet, khususnya yang berkaitan dengan tidak dapat diandalkan dan kurangnya keamanan informasi yang beredar di sana\n● Konten atau aktivitas ilegal menggunakan situsnya tanpa sepatutnya mengetahuinya sesuai dengan pengertian Undang-Undang yang berkaitan dengan pemrosesan data pribadi.\n\nSelain itu, situs tidak dapat menjamin keakuratan, kelengkapan, dan topikalitas informasi yang disebarkan di sana.\n\nPengguna bertanggung jawab untuk:\n● Perlindungan peralatannya dan manipulasinya pada platform dari perangkat yang bukan milik Espace Piins\n● Penggunaan yang dia buat atas situs atau datanya\n● Jika tidak menghormati huruf atau semangat kondisi umum penggunaan ini.",
-    "Responsability-d-extra": "Dengan menyediakan konten ke layanan, Anda memberi Piin sublisensi di seluruh dunia, non-eksklusif, bebas royalti, dan dapat dialihkan yang dapat dialihkan untuk menggunakan konten ini (termasuk mereproduksi, mendistribusikan, menyiapkan karya turunan, menyebar, dan menjalankan) sehubungan dengan layanan dan aktivitas Piin's (beserta penerus dan afiliasinya), termasuk untuk mempromosikan dan mendistribusikan kembali Layanan secara keseluruhan atau sebagian.",
-    "Site-management-d": "Untuk pengelolaan situs yang tepat, penerbit dapat setiap saat:\n\n● Menangguhkan, mengganggu, atau membatasi akses ke semua atau sebagian situs, memesan akses ke situs atau ke bagian tertentu dari situs, untuk kategori pengguna Internet tertentu.\n● Hapus semua informasi yang dapat mengganggu operasinya atau yang bertentangan dengan hukum nasional atau internasional, atau aturan Netiquette.\n● Tangguhkan situs untuk melakukan pembaruan. Setiap keinginan untuk mengubah konten di platform tidak akan tersedia selama periode pemeliharaan.",
     "TITLE": {
-      "1-REGISTRATION": "1. PENDAFTARAN",
-      "2-UNSUBSCRIBE": "2. BERHENTI BERHENTI",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. PENGHAPUSAN RUANG PRIBADI ATAS INISIATIF PENERBIT SITUS",
-      "Access-&-nav": "Akses dan navigasi",
-      "Confidentiality": "Kerahasiaan",
-      "Generality": "Umum",
-      "Hyperlinks": "Tautan hiperteks",
-      "Intellectual-property": "Kekayaan intelektual",
-      "Responsability": "Tanggung jawab",
-      "Services": "Jasa",
-      "Site-management": "Manajemen situs"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Pengenal musik Anda"

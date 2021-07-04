@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Nem adhatja hozzá magát",
     "T-content-does-not-exist-anymore": "Ez a tartalom már nem létezik",
     "T-publication-no-longer-exists": "Ez a kiadvány már nem létezik",
-    "Could-not-play-video": "Nem sikerült lejátszani a videót"
+    "Could-not-play-video": "Nem sikerült lejátszani a videót",
+    "Please-type-yr-pseudo-or-mail": "Adjon meg egy pszeudo- vagy e-mail-címet"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "A fénykép beérkezett",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Az infók ellenőrzése",
     "Create-yr-account": "Hozd létre fiókodat",
     "Creating-yr-account": "A fiók létrehozása",
-    "ForgotPassword": "elfelejtettem a jelszavamat",
     "Log-In": "Belépés",
     "Login": "Belépés",
     "Login-first-to-continue": "Először jelentkezzen be a folytatáshoz",
@@ -667,7 +667,30 @@
     "Registration": "Bejegyzés",
     "Sign-up": "Regisztrálj",
     "accept-tou": "Igazolom, hogy 16 éves vagy idősebb vagyok, és elfogadom a felhasználói megállapodást és az adatvédelmi irányelveket",
-    "click-on-email": "Kattintson az e-mail linkre"
+    "click-on-email": "Kattintson az e-mail linkre",
+    "Welcome-back": "üdv ismét",
+    "Hello-wiinser": "Hello Wiinser, jelentkezzen be a folytatáshoz!",
+    "Dont-have-an-account-?": "Nincs számlája? Fiók létrehozása",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Adja meg e-mail címét a jelszó fogadásához",
+    "Forgot-password-?": "Elfelejtett jelszó ?",
+    "I-forgot-my-password": "elfelejtettem a jelszavamat",
+    "Forgot-password": "Elfelejtett jelszó",
+    "Email-adress-sent": "Elküldött e-mail cím",
+    "Checking-yr-mail": "Kérjük, ellenőrizze az e-mailjét. Ne habozzon, nézze meg a spam",
+    "Welcome": "Isten hozott",
+    "Hello-nice-to-meet-you-wiinser": "Hello, Örülök, hogy találkoztunk Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Legutóbbi projekt",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Felhasználóneved",
     "Your-message": "Az üzeneted",
     "Confirm-your-password": "Erősítse meg a jelszót",
-    "Password-not-matching": "A jelszavak nem egyeznek"
+    "Password-not-matching": "A jelszavak nem egyeznek",
+    "Enter-yr-username-or-mail-adresse": "Adja meg felhasználónevét vagy e-mail címét",
+    "Enter-yr-password": "Adja meg jelszavát",
+    "Enter-yr-mail": "Adja meg e-mail címét",
+    "Enter-yr-username": "Adja meg felhasználónevét"
   },
   "PLEASE": {
     "Password": "Kérem írja be a jelszavát"
@@ -980,32 +1007,44 @@
     "Better-reference": "Jobb hivatkozás"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Bizonyos szolgáltatásokhoz való hozzáférés felhasználói regisztrációhoz kötött. A regisztráció és a webhely szolgáltatásaihoz való hozzáférés kizárólag alkalmas természetes személyek számára van fenntartva, akik kitöltötték és validálták a Piin webhelyén online elérhető regisztrációs űrlapot, valamint ezen Általános Felhasználási Feltételeket. A regisztráció során a felhasználó vállalja, hogy pontos, őszinte és naprakész információkat szolgáltat személyéről és családi állapotáról. A felhasználónak rendszeresen ellenőriznie kell a rá vonatkozó adatokat is, hogy megőrizze azok pontosságát.\n\nA felhasználónak feltétlenül meg kell adnia egy érvényes e-mail címet, amelyen a webhely visszaigazolja neki a szolgáltatásaiba való regisztrációját. Az e-mail címet nem lehet többször használni, ha ugyanazon a számlán keresztül regisztrálják a szolgáltatásokat. Természetes személyenként csak egy regisztráció engedélyezett a helyszíni szolgáltatásokhoz. A felhasználóhoz hozzárendelnek egy azonosítót, amely lehetővé teszi számára, hogy hozzáférjen egy helyhez, amelyhez hozzáférés van fenntartva, a jelszavának megadása mellett. Az azonosító minden felhasználó számára egyedi, azonban a felhasználó online módon módosíthatja a jelszót a személyes terében.\nA jelszó személyes és bizalmas, a felhasználó vállalja, hogy nem közli azt harmadik felekkel. A Piin fenntartja mindenesetre annak lehetőségét, hogy elutasítsa a szolgáltatások előfizetésére vonatkozó kérelmet abban az esetben, ha a felhasználó nem tartja be ezen Általános Felhasználási Feltételek rendelkezéseit.",
-    "2-UNSUBSCRIBE-d": "A regisztrált felhasználó bármikor kérheti leiratkozását, ha felkeresi a saját oldalán található dedikált oldalt. A webhelyről történő leiratkozás akkor lép hatályba, miután a felhasználó kitöltötte az erre a célra szolgáló űrlapot, az azonnali határidőn belül.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "A felhasználó tudomására jut, hogy a szerkesztő fenntartja a jogot, hogy törölje minden olyan felhasználó személyes terét, aki megszegi a felhasználási feltételeket, különösen a következő esetekben:\n\n● Ha a felhasználó illegálisan használja a webhelyet\n● Ha a felhasználó a személyes tér létrehozása során önként továbbítja a helytelen információkat a webhelyre\n● Ha a felhasználó legalább 5 éve nem aktív a személyes terében.\n\nMegtiltja azt az esetet, amikor a szerkesztő a fenti okok miatt úgy dönt, hogy eltávolítja a felhasználó személyes terét, ez nem jelenthet kárt annak a felhasználónak, akinek a fiókját törölték. Ez a törlés nem jelenti a jogi eljárások alóli felmentést, amelyet a kiadó a szabályokat megsértő felhasználóval szemben megtehet.",
-    "About-plateform": "Az Espace-Piin's Inc. egy online média, amely intuitív és ingyenes módon központosítja a benne található számos funkciót. Ehhez a média olyan platform, ahol a felhasználók cseveghetnek és tartalmat oszthatnak meg más felhasználókkal. Ez egy olyan funkció is, amely folyamatosan hallgatja a zenét, hogy a felhasználók jó helyzetet élvezhessenek, függetlenül attól, hogy milyen a helyzet és az idő. Az Espace-Piin's Inc. a videók folyamatos megtekintésére is szolgál, hogy szórakoztassa és oktassa a felhasználókat.",
-    "Access-&-nav-d": "A weboldal hozzáférését és használatát felnőttek számára fenntartják. A kiadónak bármilyen módon joga van kérni a felhasználó életkorának igazolását. A szerkesztő a rendelkezésére álló technikai megoldásokat úgy hajtja végre, hogy a hét minden napján a nap 24 órájában hozzáférhessen az oldalhoz. Mindazonáltal bármikor felfüggesztheti, korlátozhatja vagy megszakíthatja a webhelyhez vagy ennek bizonyos oldalaihoz való hozzáférést annak érdekében, hogy folytassa a frissítéseket, a tartalom módosítását vagy a webhely megfelelő működéséhez szükségesnek ítélt egyéb intézkedéseket.\nAz Espace Piin webhelyén történő csatlakozás és navigáció a jelen Általános Felhasználási Feltételek fenntartás nélküli elfogadását jelenti, függetlenül a hozzáférés technikai eszközeitől és az alkalmazott termináloktól. Ezek az Általános Felhasználási Feltételek a webhely bármely variációjára vagy kiterjesztésére vonatkoznak az Espace Piins Inc. által kezelt meglévő vagy jövőbeni közösségi és / vagy közösségi hálózatokon.",
-    "Confidentiality-d": "A jelen Általános Szerződési Feltételek mellett a webhely rendelkezik adatvédelmi irányelvekkel, amelyek leírják, hogyan kezelik a személyes adatokat, amikor a felhasználó felkeresi a webhelyet, és hogyan használják a sütiket. A webhely böngészésével a felhasználó azt is állítja, hogy elolvasta a fenti adatvédelmi irányelveket.",
-    "Generality-d": "A \"www.espace-piins.com\" webhely minden hozzáférési módjára ez az adatvédelmi irányelv vonatkozik. Az Espace Piins Inc. felelős a platformon gyűjtött személyes adatokért. Ez az Ön személyes adatainak felhasználására, tárolására, védelmére és terjesztésére vonatkozik. Az Espace Piins szolgáltatáshoz való hozzáférés teljesen ingyenes, és a platform minden funkcióját (a reklámok közzétételét leszámítva) nem számlázzák.\nA szerkesztő fenntartja a jogot, hogy bármikor és előzetes értesítés nélkül módosítsa a webhelyet és a szolgáltatásokat, valamint a jelen Általános Felhasználási Feltételeket, különösen az új funkciókhoz való alkalmazkodáshoz, vagy a meglévő funkciók törléséhez vagy módosításához a weblap javítása céljából. felület. Ezért javasoljuk, hogy a felhasználó minden navigáció előtt olvassa el az Általános Felhasználási Feltételek legújabb verzióját, amely bármikor elérhető a webhelyen. Amennyiben nem ért egyet az Általános Felhasználási Feltételekkel, a felhasználó nem használhatja az oldalt.",
-    "Hyperlinks-d": "A webhely tartalmazhat olyan hipertext linkeket, amelyek más webhelyekre mutatnak, amelyek felett a Piin-nek nincs befolyása. A kiadó előzetes és rendszeres ellenőrzése ellenére a kiadó nem vállal felelősséget az ezeken a webhelyeken található tartalomért. A kiadó engedélyezi hipertext linkek létrehozását webhelyének bármely oldalára vagy dokumentumára, feltéve, hogy ezeket a linkeket nem kereskedelmi vagy reklámcélokból hozzák létre. Ezen túlmenően a webhely megjelenítőjének előzetes tájékoztatása szükséges a hipertext link létrehozása előtt. Az engedély alól kizárják azokat a webhelyeket, amelyek illegális, erőszakos, ellentmondásos, pornográfiai, idegengyűlölő jellegű információkat terjesztenek, vagy amelyek a legnagyobb számban befolyásolhatják az érzékenységet.\nVégül a Piin fenntartja magának a jogot, hogy a webhelyére mutató hipertext linket bármikor törölje, ha a webhely úgy ítéli meg, hogy nem felel meg szerkesztési irányelveinek. A platformon kívüli minden olyan hiperszöveg, amelyet a platform megjelenítője nem javasol, nem ajánlott.",
-    "Intellectual-property-d": "A webhely felépítése, valamint az azt alkotó szövegek, grafikák, képek, fényképek, hangok, videók és számítógépes alkalmazások a kiadó tulajdonát képezik, és a szellemi tulajdon alatt hatályos törvények védik őket.\n\nA weboldal tartalmának, bejegyzett védjegyeinek és szolgáltatásainak bármilyen módon történő sokszorosítása, adaptálása vagy részleges vagy teljes hasznosítása bármilyen módon, a kiadó kifejezett előzetes írásbeli engedélye nélkül szigorúan tilos, és hamisításnak minősülhet az L. cikk értelmében. 335-2. a szellemi tulajdon kódexének. És ez, kivéve azokat az elemeket, amelyeket a webhelyen kifejezetten jogmentesen jelöltek meg.\n\nA webhelyre való belépés nem jelenti a jog elismerését, és általában nem ruház fel semmilyen szellemi tulajdonjogot a webhely valamely elemére vonatkozóan, amelyek a kiadó kizárólagos tulajdonában maradnak. A felhasználónak tilos olyan adatokat bevinni a webhelyre, amelyek módosíthatják vagy módosíthatják annak tartalmát vagy megjelenését.",
-    "Our-plateforme": "Platformunk",
-    "Responsability-d": "A kiadó csak az általa szerkesztett tartalomért felel. A kiadó nem felelős a következőkért:\n\n● Probléma, technikai, informatikai vagy könyvelési hiba esetén a webhely bármely hardverrel vagy szoftverrel\n● Közvetlen vagy közvetett, anyagi vagy immateriális, előre látható vagy kiszámíthatatlan kár, amely a webhely vagy szolgáltatásainak használatából vagy használatának nehézségeiből származik\n● Az internet belső jellemzői, különös tekintettel az ott keringő információk megbízhatatlanságára és biztonságának hiányára\n● Illegális tartalom vagy tevékenységek, amelyek a webhelyét használják anélkül, hogy erről a törvény értelmében megfelelő tudomást szereznének a személyes adatok feldolgozása tekintetében.\n\nEzenkívül a webhely nem garantálja az ott terjesztett információk pontosságát, teljességét és aktualitását.\n\nA felhasználó felelős:\n● Berendezéseinek védelme és a peronon történő kezelése az Espace Piins-hez nem tartozó készülékektől\n● A webhely vagy annak adatainak felhasználása\n● Ha nem tartja be az általános használati feltételek betűjét vagy szellemét.",
-    "Responsability-d-extra": "A szolgáltatás tartalmának biztosításával megadod a Piin's számára egy világszerte elérhető, nem kizárólagos, jogdíjmentes, átruházható allicencet, amely átruházható e tartalom használatára (beleértve a művek reprodukcióját, terjesztését, származékos művek előkészítését, terjesztését és futtatását) a szolgáltatással és a tevékenységekkel kapcsolatban Piin (és utódai és leányvállalatai), ideértve a szolgáltatás teljes vagy részleges népszerűsítését és újraelosztását.",
-    "Site-management-d": "A webhely megfelelő kezelése érdekében a kiadó bármikor:\n\n● Felfüggeszti, megszakítja vagy korlátozza a hozzáférést a webhely egészéhez vagy egészéhez, fenntartja a hozzáférést a webhelyhez vagy a webhely bizonyos részeihez, az internetfelhasználók meghatározott kategóriájához.\n● Töröljön minden olyan információt, amely megzavarhatja működését, vagy ellentétes a nemzeti vagy nemzetközi törvényekkel, vagy a Nettó szabályokkal.\n● A frissítések végrehajtása érdekében függessze fel a webhely felfüggesztését. A platform tartalmának módosítására irányuló vágy nem lesz elérhető a karbantartási időszakokban.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISZTRÁCIÓ",
-      "2-UNSUBSCRIBE": "2. FELIRATKOZÁS",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. A SZEMÉLYES TERÜLET TÖRLÉSE A HELYSZÍN KIADÓ KEZDEMÉNYEZÉSÉBEN",
-      "Access-&-nav": "Hozzáférés és navigáció",
-      "Confidentiality": "Titoktartás",
-      "Generality": "Általánosságok",
-      "Hyperlinks": "Hypertext linkek",
-      "Intellectual-property": "Szellemi tulajdon",
-      "Responsability": "Feladatok",
-      "Services": "Szolgáltatások",
-      "Site-management": "A webhely kezelése"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "A zenei azonosítója"

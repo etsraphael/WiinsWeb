@@ -110,4 +110,16 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.errorSubscription) this.errorSubscription.unsubscribe()
   }
 
+  public show: boolean = false;
+  public changeType: string = 'password';
+
+  toggleShow(): void {
+  this.show = !this.show;
+  if(this.show){
+    this.changeType = 'text';
+  } else {
+    this.changeType = 'password';
+  }
+}
+
 }

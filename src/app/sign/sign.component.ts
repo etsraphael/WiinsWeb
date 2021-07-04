@@ -12,6 +12,8 @@ import { DeviceDetectorService } from "ngx-device-detector";
 import { Observable, Subscription } from "rxjs";
 import { UserModel } from "../core/models/baseUser/user.model";
 import { Store, select } from "@ngrx/store";
+import { ModalTOUComponent } from 'src/app/core/modal/modal-t-o-u/modal-t-o-u.component';
+import { MatDialog } from '@angular/material/dialog';
 import {
   RootStoreState,
   MyUserStoreSelectors,
@@ -42,7 +44,8 @@ export class SignComponent implements OnInit, AfterViewChecked {
     private store$: Store<RootStoreState.State>,
     public translate: TranslateService,
     public deviceService: DeviceDetectorService,
-    private changeRef: ChangeDetectorRef
+    private changeRef: ChangeDetectorRef,
+    public dialog: MatDialog
   ) {}
 
   ngAfterViewChecked(): void {
@@ -120,5 +123,10 @@ export class SignComponent implements OnInit, AfterViewChecked {
       outlet.activatedRouteData &&
       outlet.activatedRouteData["animation"]
     );
+  }
+
+  openTOU() {
+    // open the modal for the term of use
+    this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-10', 'col-sm-12', 'col-12'] })
   }
 }

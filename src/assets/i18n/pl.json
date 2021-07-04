@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Nie możesz dodać siebie",
     "T-content-does-not-exist-anymore": "Ta treść już nie istnieje",
     "T-publication-no-longer-exists": "Ta publikacja już nie istnieje",
-    "Could-not-play-video": "Nie udało się odtworzyć wideo"
+    "Could-not-play-video": "Nie udało się odtworzyć wideo",
+    "Please-type-yr-pseudo-or-mail": "Podaj pseudo lub adres e-mail"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Zdjęcie zostało odebrane",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Posiadasz już konto",
-    "ForgotPassword": "zapomniałem hasła",
     "Log-In": "Zaloguj sie",
     "Login": "Zaloguj sie",
     "Password-recovery": "Odzyskiwanie hasła",
@@ -667,7 +667,30 @@
     "Create-yr-account": "Utwórz swoje konto",
     "Creating-yr-account": "Tworzenie Twojego konta",
     "Login-first-to-continue": "Zaloguj się najpierw, aby kontynuować",
-    "Checking-yr-infos": "Sprawdzam Twoje informacje"
+    "Checking-yr-infos": "Sprawdzam Twoje informacje",
+    "Welcome-back": "Witamy ponownie",
+    "Hello-wiinser": "Witam Wiinser, zaloguj się, aby kontynuować!",
+    "Dont-have-an-account-?": "Don-t mieć konto? Tworzenie konta",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Wpisz swój adres e-mail, aby otrzymać hasło",
+    "Forgot-password-?": "Nie pamiętasz hasła?",
+    "I-forgot-my-password": "zapomniałem hasła",
+    "Forgot-password": "Nie pamiętasz hasła",
+    "Email-adress-sent": "Wysłany adres e-mail",
+    "Checking-yr-mail": "Sprawdź swój adres e-mail. Nie wahaj się spojrzeć w spamie",
+    "Welcome": "mile widziany",
+    "Hello-nice-to-meet-you-wiinser": "Witam, Miło cię poznać Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": ""
+    }
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Ostatni projekt",
@@ -748,7 +771,11 @@
     "Your-Pseudo": "Twoja nazwa użytkownika",
     "Your-message": "Twoja wiadomość",
     "Confirm-your-password": "Potwierdź swoje hasło",
-    "Password-not-matching": "Hasła nie pasują"
+    "Password-not-matching": "Hasła nie pasują",
+    "Enter-yr-username-or-mail-adresse": "Wpisz swoją nazwę użytkownika lub adres e-mail",
+    "Enter-yr-password": "Wprowadź hasło",
+    "Enter-yr-mail": "Wpisz swój adres e-mail",
+    "Enter-yr-username": "Wpisz swoją nazwę użytkownika"
   },
   "PLEASE": {
     "Password": "Wprowadź hasło"
@@ -980,32 +1007,44 @@
     "Better-reference": "Lepsze odniesienie"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Dostęp do niektórych usług podlega rejestracji użytkownika. Rejestracja i dostęp do usług serwisu są zastrzeżone wyłącznie dla zdolnych osób fizycznych, które wypełniły i zatwierdziły formularz rejestracyjny dostępny online na stronie Piin, a także niniejsze Ogólne Warunki Użytkowania. rejestrując się, użytkownik zobowiązuje się do podania dokładnych, szczerych i aktualnych informacji o swojej osobie i stanie cywilnym. Użytkownik będzie również musiał regularnie sprawdzać dotyczące go dane w celu zachowania ich dokładności.\n\nUżytkownik musi bezwzględnie podać aktualny adres e-mail, na który strona wyśle mu potwierdzenie rejestracji do jego usług. Adres e-mail nie może być użyty więcej niż jeden raz do rejestracji usług za pośrednictwem tego samego konta. Jedna osoba fizyczna może zarejestrować się tylko na usługi serwisu. Użytkownikowi, poza wpisaniem hasła, przypisywany jest identyfikator umożliwiający mu dostęp do przestrzeni, do której dostęp jest zarezerwowany. Identyfikator jest unikalny dla każdego użytkownika, jednak hasło może zostać zmienione online przez użytkownika w jego Przestrzeni osobistej.\nHasło jest osobiste i poufne, użytkownik zobowiązuje się nie przekazywać go osobom trzecim. Piin zastrzega sobie w każdym przypadku możliwość odrzucenia prośby o subskrypcję usług w przypadku nieprzestrzegania przez użytkownika postanowień niniejszych Ogólnych warunków użytkowania.",
-    "2-UNSUBSCRIBE-d": "Zarejestrowany użytkownik może w każdej chwili zażądać rezygnacji z subskrypcji, przechodząc do dedykowanej strony w swojej osobistej przestrzeni. Rezygnacja z subskrypcji serwisu będzie skuteczna po wypełnieniu przez użytkownika przeznaczonego w tym celu formularza, w najbliższym czasie.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Informuje się użytkownika, że redaktor zastrzega sobie prawo do usunięcia przestrzeni osobistej każdego użytkownika, który naruszy regulamin, aw szczególności w następujących przypadkach:\n\n● Jeśli użytkownik korzysta z witryny w sposób niezgodny z prawem\n● Jeśli użytkownik podczas tworzenia przestrzeni osobistej, dobrowolnie przekazuje nieprawidłowe informacje do serwisu\n● Jeśli użytkownik nie był aktywny w swojej przestrzeni osobistej przez co najmniej 5 lat.\n\nDans przypadek, w którym redaktor zdecyduje się usunąć przestrzeń osobistą użytkownika z jednego z tych powodów, nie może stanowić szkody dla użytkownika, którego konto zostało usunięte. To usunięcie nie stanowi zrzeczenia się postępowania sądowego, które wydawca może wszcząć przeciwko użytkownikowi, który naruszył niniejsze zasady.",
-    "About-plateform": "Espace-Piin's Inc. to media internetowe, które oferują użytkownikom możliwość centralizacji kilku funkcji w intuicyjny i bezpłatny sposób. W tym celu media są platformą, na której użytkownicy mogą rozmawiać i udostępniać treści innym użytkownikom. Posiada również funkcję ciągłego słuchania muzyki, dzięki czemu użytkownicy mogą chłonąć dobrą atmosferę niezależnie od sytuacji i czasu. Espace-Piin's Inc. udostępnia również funkcję ciągłego oglądania filmów w celu rozrywki i edukacji swoich użytkowników.",
-    "Access-&-nav-d": "Dostęp do strony i korzystanie z niej są zastrzeżone dla dorosłych. Wydawca będzie miał prawo zażądać potwierdzenia wieku użytkownika w dowolny sposób. Redaktor wdraża dostępne mu rozwiązania techniczne umożliwiające dostęp do serwisu 24 godziny na dobę, 7 dni w tygodniu. Może jednak w każdej chwili zawiesić, ograniczyć lub przerwać dostęp do serwisu lub niektórych jego stron w celu dokonywania aktualizacji, modyfikacji jego treści lub wszelkich innych działań uznanych za niezbędne do prawidłowego funkcjonowania serwisu.\nPołączenie i nawigacja w witrynie Espace Piin oznacza bezwarunkową akceptację niniejszych Ogólnych warunków użytkowania, niezależnie od technicznych środków dostępu i używanych terminali. Niniejsze Ogólne Warunki Użytkowania mają zastosowanie do wszelkich zmian lub rozszerzeń witryny w istniejących lub przyszłych sieciach społecznościowych i / lub społecznościowych zarządzanych przez Espace Piins Inc.",
-    "Confidentiality-d": "Oprócz niniejszego Regulaminu w witrynie obowiązuje polityka prywatności, która opisuje, w jaki sposób przetwarzane są dane osobowe, gdy użytkownik odwiedza witrynę i jak wykorzystywane są pliki cookie. Przeglądając witrynę, użytkownik twierdzi również, że zapoznał się z powyższą polityką prywatności.",
-    "Generality-d": "Wszystkie metody dostępu do witryny „www.espace-piins.com” podlegają niniejszej polityce prywatności. Za dane osobowe gromadzone na platformie odpowiada Espace Piins Inc. Dotyczy to wykorzystania, przechowywania, ochrony i rozpowszechniania Twoich danych osobowych. Dostęp do Espace Piins jest całkowicie darmowy, a wszystkie funkcje platformy (z wyjątkiem publikacji reklam) nie są rozliczane.\nRedaktor zastrzega sobie prawo do modyfikowania w dowolnym czasie i bez uprzedzenia strony i usług oraz niniejszych Ogólnych Warunków Korzystania, w szczególności w celu dostosowania do nowych funkcjonalności lub usunięcia lub modyfikacji istniejących funkcjonalności w celu ulepszenia Platforma. Dlatego zaleca się, aby użytkownik zapoznał się z najnowszą wersją Ogólnych warunków użytkowania przed jakąkolwiek nawigacją, dostępną w dowolnym momencie na stronie. W przypadku braku zgody na Ogólne Warunki Korzystania użytkownik nie może korzystać z serwisu.",
-    "Hyperlinks-d": "Witryna może zawierać łącza hipertekstowe prowadzące do innych witryn internetowych, nad którymi firma Piin nie ma kontroli. Pomimo wcześniejszych i regularnych weryfikacji przeprowadzanych przez wydawcę, wydawca zrzeka się wszelkiej odpowiedzialności za treści, które można znaleźć na tych stronach. Wydawca zezwala na tworzenie linków hipertekstowych do dowolnej strony lub dokumentu w swojej witrynie, pod warunkiem że tworzenie tych linków nie jest dokonywane w celach komercyjnych lub reklamowych. Ponadto przed ustanowieniem łącza hipertekstowego konieczne jest wcześniejsze poinformowanie wydawcy witryny. Są wyłączone z tej autoryzacji strony rozpowszechniające informacje o charakterze nielegalnym, brutalnym, kontrowersyjnym, pornograficznym, ksenofobicznym lub które mogą mieć wpływ na wrażliwość jak największej liczby.\nWreszcie, Piin zastrzega sobie prawo do usunięcia hiperłącza hipertekstowego kierującego do jego witryny w dowolnym momencie, jeśli witryna uzna, że jest niezgodna z jej polityką redakcyjną. Wszelkie hiperteksty spoza platformy, które nie są sugerowane przez wydawcę platformy, nie są zalecane.",
-    "Intellectual-property-d": "Struktura witryny, ale także teksty, grafika, obrazy, fotografie, dźwięki, filmy i aplikacje komputerowe, które ją tworzą, są własnością wydawcy i jako takie są chronione przez obowiązujące przepisy prawa własności intelektualnej.\n\nPowielanie, adaptacja lub częściowe lub całkowite wykorzystanie treści, zarejestrowanych znaków towarowych i usług oferowanych przez witrynę, w jakikolwiek sposób, bez wyraźnej uprzedniej pisemnej zgody wydawcy, jest surowo zabronione i może stanowić podrabianie w rozumieniu artykułów L. 335-2 i nast. Kodeksu własności intelektualnej. I to z wyjątkiem elementów wyraźnie oznaczonych na stronie jako wolne od praw.\n\nDostęp do serwisu nie oznacza uznania prawa i generalnie nie daje żadnych praw własności intelektualnej do elementu serwisu, który pozostaje wyłączną własnością wydawcy. Zabrania się użytkownikowi wprowadzania do serwisu danych, które mogłyby modyfikować lub modyfikować jego zawartość lub wygląd.",
-    "Our-plateforme": "Nasza platforma",
-    "Responsability-d": "Wydawca jest odpowiedzialny tylko za treść, którą sam zredagował. Wydawca nie ponosi odpowiedzialności za:\n\n● W przypadku problemów lub awarii technicznych, informatycznych lub księgowych witryny z jakimkolwiek sprzętem lub oprogramowaniem\n● Bezpośrednie lub pośrednie, materialne lub niematerialne, przewidywalne lub nieprzewidywalne szkody wynikające z użytkowania lub trudności w korzystaniu z witryny lub jej usług\n● Wewnętrzne cechy Internetu, w szczególności te związane z zawodnością i brakiem bezpieczeństwa krążących w nim informacji\n● Nielegalne treści lub działania z wykorzystaniem serwisu bez wiedzy o nich w rozumieniu przepisów prawa o przetwarzaniu danych osobowych.\n\nPonadto strona nie może zagwarantować dokładności, kompletności i aktualności rozpowszechnianych tam informacji.\n\nUżytkownik jest odpowiedzialny za:\n● Ochrona sprzętu i manipulowanie nim na platformie przed urządzeniem nienależącym do Espace Piins\n● Sposób, w jaki korzysta z witryny lub jej danych\n● Jeśli nie jest zgodny z literą lub duchem niniejszych ogólnych warunków użytkowania.",
-    "Responsability-d-extra": "Dostarczając treści do usługi, udzielasz Piin's ogólnoświatowej, niewyłącznej, wolnej od opłat, zbywalnej sublicencji z możliwością przeniesienia na korzystanie z tej treści (w tym reprodukcji, dystrybucji, przygotowywania prac pochodnych, rozpowszechniania i uruchamiania) w związku z usługą i działaniami Piin's (oraz jej następców i podmiotów stowarzyszonych), w tym w celu promowania i redystrybucji Usługi w całości lub w części.",
-    "Site-management-d": "W celu prawidłowego zarządzania stroną wydawca może w dowolnym momencie:\n\n● Zawieszać, przerywać lub ograniczać dostęp do całości lub części serwisu, zastrzegać dostęp do serwisu lub niektórych części serwisu dla określonej kategorii użytkowników Internetu.\n● Usuń wszystkie informacje, które mogą zakłócić jego działanie lub które są sprzeczne z prawem krajowym lub międzynarodowym bądź zasadami Netykiety.\n● Zawieś witrynę w celu przeprowadzenia aktualizacji. Żadna chęć modyfikowania treści na platformie nie będzie dostępna w okresach konserwacji.",
     "TITLE": {
-      "1-REGISTRATION": "1. REJESTRACJA",
-      "2-UNSUBSCRIBE": "2. ANULUJ SUBSKRYPCJĘ",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. USUNIĘCIE MIEJSCA OSOBISTEGO Z INICJATYWY WYDAWCY STRONY",
-      "Access-&-nav": "Dostęp i nawigacja",
-      "Confidentiality": "Poufność",
-      "Generality": "Ogólne",
-      "Hyperlinks": "Linki hipertekstowe",
-      "Intellectual-property": "Własność intelektualna",
-      "Responsability": "Obowiązki",
-      "Services": "Usługi",
-      "Site-management": "Zarządzanie witryną"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Twój identyfikator muzyki"
