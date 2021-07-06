@@ -165,7 +165,7 @@
       <div class="col d-flex flex-column">
         <label for="validationPassword" class="form-label">{{'PLACEHOLDER.Your-Password'| translate}}</label>
         <!--NgClasse must be in this div (inputpwrd)-->
-        <div class="inputpwrd d-flex">
+        <div class="inputpwrd d-flex"  [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
         <input [type]="changeTypePswd" class="inputPassword w-100 pl-3 p-3" formControlName="password1" placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
         <span (click)="toggleShow()" class="material-icons d-flex align-items-center"> {{show ? 'visibility' : 'visibility_off'}}</span>
       </div>
@@ -177,13 +177,13 @@
       <div class="col d-flex flex-column mb-3">
         <label for="validationConfirmPassword" class="form-label">{{'PLACEHOLDER.Confirm-your-password'| translate}}</label>
         <!--NgClasse must be in this div (inputpwrd)-->
-        <div class="inputpwrd d-flex">
+        <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
         <input [type]="changeTypeConfirmPswd" class="inputPassword w-100 pl-3 p-3" formControlName="password2"
           id="validationConfirmPassword" placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
           <span (click)="toggleConfirmShow()" class="material-icons d-flex align-items-center"> {{confirmShow ? 'visibility' : 'visibility_off'}}</span>
         </div>
         <span class="error-message ml-3" *ngIf="f.password2.errors && f.password2.touched">
-          {{'ERROR-MESSAGE.8-char-minimum' | translate}}
+          {{ 'SETTING.password.Error-password-different' | translate }}
         </span>
         <span class="messageConfirmPassword mt-4"></span>
       </div>
@@ -195,5 +195,6 @@
       </div>
       <button class="creatNow d-flex justify-content-center mt-4 mx-auto mb-5 py-3" type="submit" (click)="onSubmit()">{{'LOGIN-REGISTRER.Create-yr-account'| translate}}</button>
     </form>
+    <span class="mt-5 d-flex justify-content-center" [routerLink]="['/sign/confirmation/:id']">Go to Confirmation Account</span>
   </div>
 </div>

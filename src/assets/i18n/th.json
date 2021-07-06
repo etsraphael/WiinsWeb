@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "โครงการล่าสุด",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "การยืนยันรหัสผ่านใหม่",
       "Edit-t-password": "เปลี่ยนรหัสผ่าน",
-      "Erorr-password-different": "รหัสผ่านแตกต่างกัน",
       "Error-min-5-char": "รหัสผ่านใหม่ต้องมีอักขระอย่างน้อย 5 ตัว",
       "New-password": "รหัสผ่านใหม่",
       "New-password-r": "ต้องระบุรหัสผ่านใหม่",
       "Old-password": "รหัสผ่านเก่า",
       "Old-password-is-invalid": "รหัสผ่านเก่าไม่ถูกต้อง",
       "Old-password-r": "ต้องใช้รหัสผ่านเก่า",
-      "Setting-password": "การแก้ไขรหัสผ่าน"
+      "Setting-password": "การแก้ไขรหัสผ่าน",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "รหัสผ่านแตกต่างกัน"
     },
     "profile": {
       "Edit-t-profile": "แก้ไขโปรไฟล์ของคุณ",

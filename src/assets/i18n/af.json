@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Laaste projek",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Bevestiging van nuwe wagwoord",
       "Edit-t-password": "Verander die wagwoord",
-      "Erorr-password-different": "Wagwoorde verskil",
       "Error-min-5-char": "Die nuwe wagwoord moet minstens 5 karakters bevat",
       "New-password": "Nuwe Wagwoord",
       "New-password-r": "Nuwe wagwoord is nodig",
       "Old-password": "Ou wagwoord",
       "Old-password-is-invalid": "Die ou wagwoord is ongeldig",
       "Old-password-r": "Ou wagwoord is nodig",
-      "Setting-password": "Wysiging van wagwoord"
+      "Setting-password": "Wysiging van wagwoord",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Wagwoorde verskil"
     },
     "profile": {
       "Edit-t-profile": "wysig jou profiel",

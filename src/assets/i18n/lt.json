@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Naujausias projektas",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Naujo slaptažodžio patvirtinimas",
       "Edit-t-password": "Pakeiskite slaptažodį",
-      "Erorr-password-different": "Slaptažodžiai yra skirtingi",
       "Error-min-5-char": "Naujajame slaptažodyje turi būti bent 5 simboliai",
       "New-password": "Naujas Slaptažodis",
       "New-password-r": "Būtinas naujas slaptažodis",
       "Old-password": "Senas slaptažodis",
       "Old-password-is-invalid": "Senas slaptažodis neteisingas",
       "Old-password-r": "Būtinas senas slaptažodis",
-      "Setting-password": "Slaptažodžio keitimas"
+      "Setting-password": "Slaptažodžio keitimas",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Slaptažodžiai yra skirtingi"
     },
     "profile": {
       "Edit-t-profile": "Redaguokite savo profilį",

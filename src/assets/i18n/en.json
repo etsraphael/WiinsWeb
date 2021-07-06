@@ -648,7 +648,8 @@
       "Coming-Soon": "Coming soon",
       "We-need-yr-help": "Wiin's wants to revolutionize the relationship you have with your phone !",
       "We-need-yr-help-2": "We need your help to improve our services and offer you an exclusive experience that will be 𝘁𝗼𝘁𝗮𝗹𝗹𝘆 𝗙𝗥𝗘𝗘 during this period until the official launch, which will take place no later than January 1st 2022."
-    }
+    },
+    "Inscription-successful": "A confirmation email has been sent to you. Your nickname is reserved for 30 days. if you do not confirm your account within this period, your nickname will be released and your email adress will be deleted from our database"
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Lastest project",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "Confirmation of new password",
       "Edit-t-password": "Change the password",
-      "Erorr-password-different": "Passwords are different",
       "Error-min-5-char": "The new password must contain at least 5 characters",
       "New-password": "New Password",
       "New-password-r": "New password is required",
       "Old-password": "Old password",
       "Old-password-is-invalid": "The old password is invalid",
       "Old-password-r": "Old password is required",
-      "Setting-password": "Password modification"
+      "Setting-password": "Password modification",
+      "C-new-password-subtitle": "Hello Wiinser, we have heard that the most intelligent people have no memory !",
+      "Error-password-different": "Passwords are different"
     },
     "profile": {
       "Edit-t-profile": "Edit your profile",

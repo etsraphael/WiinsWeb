@@ -648,7 +648,8 @@
       "Coming-Soon": "Prochainement",
       "We-need-yr-help": "Wiin’s souhaite révolutionner la relation que tu as avec ton téléphone !",
       "We-need-yr-help-2": "Nous avons pour cela besoin de ton aide afin d’améliorer nos services et t’offrir une expérience exclusive qui sera 𝘁𝗼𝘁𝗮𝗹𝗲𝗺𝗲𝗻𝘁 𝗚𝗥𝗔𝗧𝗨𝗜𝗧𝗘 pendant cette période jusqu'au lancement officiel qui refera au plus tard au 1er Janvier 2022."
-    }
+    },
+    "Inscription-successful": "Un courriel de confirmation vous a été envoyé. Votre pseudo est réservé pour 30 jours. Si vous ne confirmez pas votre compte pendant cette période, votre pseudo sera libéré et votre adresse e-mail sera supprimée de notre base de données"
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Derniers projet",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "Confirmation du nouveau mot de passe",
       "Edit-t-password": "Modifier le mot de passe",
-      "Erorr-password-different": "Les mots de passe sont différents",
       "Error-min-5-char": "Le nouveau mot de passe doit contenir au moins 5 caractères",
       "New-password": "Nouveau mot de passe",
       "New-password-r": "Le nouveau mot de passe est requis",
       "Old-password": "Ancien mot de passe",
       "Old-password-is-invalid": "L'ancien mot de passe est incorrect",
       "Old-password-r": "L'ancien mot de passe est requis",
-      "Setting-password": "Changement de mot de passe"
+      "Setting-password": "Changement de mot de passe",
+      "C-new-password-subtitle": "Bonjour Wiinser, nous avons entendu dire que les personnes les plus intelligentes n'ont pas de mémoire !",
+      "Error-password-different": "Les mots de passe sont différents"
     },
     "profile": {
       "Edit-t-profile": "Modifier votre profile",

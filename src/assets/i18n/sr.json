@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Најновији пројекат",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Потврда нове лозинке",
       "Edit-t-password": "Промените лозинку",
-      "Erorr-password-different": "Лозинке се разликују",
       "Error-min-5-char": "Нова лозинка мора садржавати најмање 5 знакова",
       "New-password": "Нова лозинка",
       "New-password-r": "Потребна је нова лозинка",
       "Old-password": "Стара шифра",
       "Old-password-is-invalid": "Стара лозинка је неважећа",
       "Old-password-r": "Потребна је стара лозинка",
-      "Setting-password": "Измена лозинке"
+      "Setting-password": "Измена лозинке",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Лозинке се разликују"
     },
     "profile": {
       "Edit-t-profile": "Уредите свој профил",

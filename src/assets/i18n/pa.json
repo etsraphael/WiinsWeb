@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "ਤਾਜ਼ਾ ਪ੍ਰੋਜੈਕਟ",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "ਨਵੇਂ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ",
       "Edit-t-password": "ਪਾਸਵਰਡ ਬਦਲੋ",
-      "Erorr-password-different": "ਪਾਸਵਰਡ ਵੱਖਰੇ ਹਨ",
       "Error-min-5-char": "ਨਵੇਂ ਪਾਸਵਰਡ ਵਿੱਚ ਘੱਟੋ ਘੱਟ 5 ਅੱਖਰ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ",
       "New-password": "ਨਵਾਂ ਪਾਸਵਰਡ",
       "New-password-r": "ਨਵਾਂ ਪਾਸਵਰਡ ਲੋੜੀਂਦਾ ਹੈ",
       "Old-password": "ਪੁਰਾਣਾ ਪਾਸਵਰਡ",
       "Old-password-is-invalid": "ਪੁਰਾਣਾ ਪਾਸਵਰਡ ਗਲਤ ਹੈ",
       "Old-password-r": "ਪੁਰਾਣਾ ਪਾਸਵਰਡ ਲੋੜੀਂਦਾ ਹੈ",
-      "Setting-password": "ਪਾਸਵਰਡ ਸੋਧ"
+      "Setting-password": "ਪਾਸਵਰਡ ਸੋਧ",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "ਪਾਸਵਰਡ ਵੱਖਰੇ ਹਨ"
     },
     "profile": {
       "Edit-t-profile": "ਆਪਣਾ ਪ੍ਰੋਫਾਈਲ ਸੋਧੋ",

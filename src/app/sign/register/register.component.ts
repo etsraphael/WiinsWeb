@@ -38,6 +38,12 @@ export class RegisterComponent implements OnInit, OnDestroy {
   // subscription
   userErrorSubscription: Subscription
 
+  // Password & COnfirm Password
+  show: boolean = false;
+  confirmShow: boolean = false;
+  changeTypePswd: string = 'password';
+  changeTypeConfirmPswd: string = 'password';
+
   constructor(
     private formBuilder: FormBuilder,
     public translate: TranslateService,
@@ -174,11 +180,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
     this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-10', 'col-sm-12', 'col-12'] })
   }
 
-  public show: boolean = false;
-  public confirmShow: boolean = false;
-  public changeTypePswd: string = 'password';
-  public changeTypeConfirmPswd: string = 'password';
-
   toggleShow(): void {
   this.show = !this.show;
   if(this.show){
@@ -188,7 +189,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
   }
 }
 
-toggleConfirmShow(): void {
+  toggleConfirmShow(): void {
   this.confirmShow = !this.confirmShow;
   if(this.confirmShow){
     this.changeTypeConfirmPswd = 'text';

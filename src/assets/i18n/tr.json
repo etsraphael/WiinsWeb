@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "En son proje",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Yeni şifrenin onayı",
       "Edit-t-password": "Şifreyi değiştir",
-      "Erorr-password-different": "Şifreler farklı",
       "Error-min-5-char": "Yeni şifre en az 5 karakter içermelidir",
       "New-password": "Yeni Şifre",
       "New-password-r": "Yeni şifre gerekli",
       "Old-password": "Eski şifre",
       "Old-password-is-invalid": "Eski şifre geçersiz",
       "Old-password-r": "Eski şifre gerekli",
-      "Setting-password": "Parola değişikliği"
+      "Setting-password": "Parola değişikliği",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Şifreler farklı"
     },
     "profile": {
       "Edit-t-profile": "Profilinizi düzenleyin",

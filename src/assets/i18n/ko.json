@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "가장 마지막 프로젝트",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "새 암호 확인",
       "Edit-t-password": "암호 변경",
-      "Erorr-password-different": "암호는 다릅니다.",
       "Error-min-5-char": "새 암호에는 5자 이상이 포함되어야 합니다.",
       "New-password": "새 암호",
       "New-password-r": "새 암호가 필요합니다.",
       "Old-password": "이전 암호",
       "Old-password-is-invalid": "이전 암호가 유효하지 않습니다.",
       "Old-password-r": "이전 암호가 필요합니다.",
-      "Setting-password": "암호 수정"
+      "Setting-password": "암호 수정",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "암호는 다릅니다."
     },
     "profile": {
       "Edit-t-profile": "프로필 편집",

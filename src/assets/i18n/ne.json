@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "सबैभन्दा पछिल्लो परियोजना",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "नयाँ पासवर्डको पुष्टिकरण",
       "Edit-t-password": "पासवर्ड परिवर्तन गर्नुहोस्",
-      "Erorr-password-different": "पासवर्डहरू फरक छन्",
       "Error-min-5-char": "नयाँ पासवर्ड कम्तिमा characters अक्षरको हुनु पर्छ",
       "New-password": "नया पासवर्ड",
       "New-password-r": "नयाँ पासवर्ड आवाश्यक छ",
       "Old-password": "पुरानो पासवर्ड",
       "Old-password-is-invalid": "पुरानो पासवर्ड अवैध छ",
       "Old-password-r": "पुरानो पासवर्ड आवश्यक छ",
-      "Setting-password": "पासवर्ड परिमार्जन"
+      "Setting-password": "पासवर्ड परिमार्जन",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "पासवर्डहरू फरक छन्"
     },
     "profile": {
       "Edit-t-profile": "तपाईको प्रोफाइल सम्पादन गर्नुहोस्",

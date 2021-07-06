@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Azken proiektua",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Pasahitz berria berrestea",
       "Edit-t-password": "Aldatu pasahitza",
-      "Erorr-password-different": "Pasahitzak desberdinak dira",
       "Error-min-5-char": "Pasahitz berriak gutxienez 5 karaktere izan behar ditu",
       "New-password": "pasahitz berria",
       "New-password-r": "Pasahitz berria behar da",
       "Old-password": "Pasahitz Zaharra",
       "Old-password-is-invalid": "Pasahitz zaharra baliogabea da",
       "Old-password-r": "Pasahitz zaharra behar da",
-      "Setting-password": "Pasahitz aldaketa"
+      "Setting-password": "Pasahitz aldaketa",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Pasahitzak desberdinak dira"
     },
     "profile": {
       "Edit-t-profile": "Editatu zure profila",

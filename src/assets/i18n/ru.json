@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Последний проект",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "Подтверждение нового пароля",
       "Edit-t-password": "Изменение пароля",
-      "Erorr-password-different": "Пароли разные",
       "Error-min-5-char": "Новый пароль должен содержать не менее 5 символов",
       "New-password": "Новый пароль",
       "New-password-r": "Требуется новый пароль",
       "Old-password": "Старый пароль",
       "Old-password-is-invalid": "Старый пароль недействителен",
       "Old-password-r": "Требуется старый пароль",
-      "Setting-password": "Изменение пароля"
+      "Setting-password": "Изменение пароля",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Пароли разные"
     },
     "profile": {
       "Edit-t-profile": "Изменить свой профиль",

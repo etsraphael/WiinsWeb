@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Proyek terbaru",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Konfirmasi kata sandi baru",
       "Edit-t-password": "Ubah kata sandi",
-      "Erorr-password-different": "Kata sandi berbeda",
       "Error-min-5-char": "Kata sandi baru harus terdiri dari setidaknya 5 karakter",
       "New-password": "kata sandi baru",
       "New-password-r": "Kata sandi baru diperlukan",
       "Old-password": "Password lama",
       "Old-password-is-invalid": "Kata sandi lama tidak valid",
       "Old-password-r": "Kata sandi lama diperlukan",
-      "Setting-password": "Modifikasi kata sandi"
+      "Setting-password": "Modifikasi kata sandi",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Kata sandi berbeda"
     },
     "profile": {
       "Edit-t-profile": "sunting profilmu",

@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Sidste projekt",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Bekræftelse af nyt kodeord",
       "Edit-t-password": "Skift adgangskode",
-      "Erorr-password-different": "Adgangskoder er forskellige",
       "Error-min-5-char": "Den nye adgangskode skal indeholde mindst 5 tegn",
       "New-password": "nyt kodeord",
       "New-password-r": "Ny adgangskode er påkrævet",
       "Old-password": "Gammelt kodeord",
       "Old-password-is-invalid": "Den gamle adgangskode er ugyldig",
       "Old-password-r": "Gammel adgangskode er påkrævet",
-      "Setting-password": "Ændring af adgangskode"
+      "Setting-password": "Ændring af adgangskode",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Adgangskoder er forskellige"
     },
     "profile": {
       "Edit-t-profile": "Rediger din profil",

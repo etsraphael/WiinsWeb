@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "An tionscadal is déanaí",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Pasfhocal nua a dhaingniú",
       "Edit-t-password": "Athraigh an focal faire",
-      "Erorr-password-different": "Tá pasfhocail difriúil",
       "Error-min-5-char": "Caithfidh 5 charachtar ar a laghad a bheith sa phasfhocal nua",
       "New-password": "Focal Faire Nua",
       "New-password-r": "Teastaíonn pasfhocal nua",
       "Old-password": "Sean Pasfhocal",
       "Old-password-is-invalid": "Tá an seanfhocal faire neamhbhailí",
       "Old-password-r": "Teastaíonn seanfhocal faire",
-      "Setting-password": "Modhnú pasfhocal"
+      "Setting-password": "Modhnú pasfhocal",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Tá pasfhocail difriúil"
     },
     "profile": {
       "Edit-t-profile": "Cuir do phróifíl in eagar",

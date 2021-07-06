@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Viimeisin projekti",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Uuden salasanan vahvistus",
       "Edit-t-password": "Vaihda salasana",
-      "Erorr-password-different": "Salasanat ovat erilaisia",
       "Error-min-5-char": "Uudessa salasanassa on oltava vähintään 5 merkkiä",
       "New-password": "uusi salasana",
       "New-password-r": "Uusi salasana vaaditaan",
       "Old-password": "Vanha salasana",
       "Old-password-is-invalid": "Vanha salasana on virheellinen",
       "Old-password-r": "Vanha salasana vaaditaan",
-      "Setting-password": "Salasanan muuttaminen"
+      "Setting-password": "Salasanan muuttaminen",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Salasanat ovat erilaisia"
     },
     "profile": {
       "Edit-t-profile": "Muokkaa profiiliasi",

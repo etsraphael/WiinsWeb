@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "最近的项目",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "确认新密码",
       "Edit-t-password": "更改密码",
-      "Erorr-password-different": "密码不同",
       "Error-min-5-char": "新密码必须至少包含 5 个字符",
       "New-password": "新密码",
       "New-password-r": "需要新密码",
       "Old-password": "旧密码",
       "Old-password-is-invalid": "旧密码无效",
       "Old-password-r": "需要旧密码",
-      "Setting-password": "密码修改"
+      "Setting-password": "密码修改",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "密码不同"
     },
     "profile": {
       "Edit-t-profile": "编辑您的个人资料",

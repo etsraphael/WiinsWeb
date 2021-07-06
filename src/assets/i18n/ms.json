@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Projek terakhir",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Pengesahan kata laluan baru",
       "Edit-t-password": "Tukar kata laluan",
-      "Erorr-password-different": "Kata laluan berbeza",
       "Error-min-5-char": "Kata laluan baru mesti mengandungi sekurang-kurangnya 5 aksara",
       "New-password": "Kata laluan baharu",
       "New-password-r": "Kata laluan baru diperlukan",
       "Old-password": "Kata laluan lama",
       "Old-password-is-invalid": "Kata laluan lama tidak sah",
       "Old-password-r": "Kata laluan lama diperlukan",
-      "Setting-password": "Pengubahsuaian kata laluan"
+      "Setting-password": "Pengubahsuaian kata laluan",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Kata laluan berbeza"
     },
     "profile": {
       "Edit-t-profile": "Ubah profil anda",

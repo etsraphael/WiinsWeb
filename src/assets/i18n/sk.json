@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Posledný projekt",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Potvrdenie nového hesla",
       "Edit-t-password": "Zmeňte heslo",
-      "Erorr-password-different": "Heslá sú rôzne",
       "Error-min-5-char": "Nové heslo musí obsahovať najmenej 5 znakov",
       "New-password": "Nové heslo",
       "New-password-r": "Vyžaduje sa nové heslo",
       "Old-password": "Staré heslo",
       "Old-password-is-invalid": "Staré heslo je neplatné",
       "Old-password-r": "Vyžaduje sa staré heslo",
-      "Setting-password": "Zmena hesla"
+      "Setting-password": "Zmena hesla",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Heslá sú rôzne"
     },
     "profile": {
       "Edit-t-profile": "Upravte svoj profil",

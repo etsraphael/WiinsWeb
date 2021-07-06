@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Projekti më i fundit",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Konfirmimi i fjalëkalimit të ri",
       "Edit-t-password": "Ndryshoni fjalëkalimin",
-      "Erorr-password-different": "Fjalëkalimet janë të ndryshme",
       "Error-min-5-char": "Fjalëkalimi i ri duhet të përmbajë të paktën 5 karaktere",
       "New-password": "Fjalëkalim i ri",
       "New-password-r": "Kërkohet fjalëkalim i ri",
       "Old-password": "Fjalëkalimi i vjetër",
       "Old-password-is-invalid": "Fjalëkalimi i vjetër është i pavlefshëm",
       "Old-password-r": "Kërkohet fjalëkalimi i vjetër",
-      "Setting-password": "Modifikimi i fjalëkalimit"
+      "Setting-password": "Modifikimi i fjalëkalimit",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Fjalëkalimet janë të ndryshme"
     },
     "profile": {
       "Edit-t-profile": "Redaktoni profilin tuaj",

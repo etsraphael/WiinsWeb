@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "آخر مشروع",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "تأكيد كلمة المرور الجديدة",
       "Edit-t-password": "تغيير كلمة المرور",
-      "Erorr-password-different": "كلمات المرور مختلفة",
       "Error-min-5-char": "يجب أن تحتوي كلمة المرور الجديدة على 5 أحرف على الأقل",
       "New-password": "كلمة مرور جديدة",
       "New-password-r": "كلمة مرور جديدة مطلوبة",
       "Old-password": "كلمة المرور القديمة",
       "Old-password-is-invalid": "كلمة المرور القديمة غير صالحة",
       "Old-password-r": "كلمة المرور القديمة مطلوبة",
-      "Setting-password": "تعديل كلمة المرور"
+      "Setting-password": "تعديل كلمة المرور",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "كلمات المرور مختلفة"
     },
     "profile": {
       "Edit-t-profile": "تحرير ملفك الشخصي",

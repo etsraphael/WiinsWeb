@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Oxirgi loyiha",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Yangi parolni tasdiqlash",
       "Edit-t-password": "Parolni o'zgartiring",
-      "Erorr-password-different": "Parollar har xil",
       "Error-min-5-char": "Yangi parol kamida 5 ta belgidan iborat bo'lishi kerak",
       "New-password": "Yangi Parol",
       "New-password-r": "Yangi parol talab qilinadi",
       "Old-password": "Eski parol",
       "Old-password-is-invalid": "Eski parol yaroqsiz",
       "Old-password-r": "Eski parol talab qilinadi",
-      "Setting-password": "Parolni o'zgartirish"
+      "Setting-password": "Parolni o'zgartirish",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Parollar har xil"
     },
     "profile": {
       "Edit-t-profile": "Profilingizni tahrirlash",

@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Legutóbbi projekt",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Új jelszó megerősítése",
       "Edit-t-password": "Változtassa meg a jelszót",
-      "Erorr-password-different": "A jelszavak különböznek",
       "Error-min-5-char": "Az új jelszónak legalább 5 karakterből kell állnia",
       "New-password": "új jelszó",
       "New-password-r": "Új jelszó szükséges",
       "Old-password": "Régi jelszó",
       "Old-password-is-invalid": "A régi jelszó érvénytelen",
       "Old-password-r": "Régi jelszó szükséges",
-      "Setting-password": "Jelszó módosítása"
+      "Setting-password": "Jelszó módosítása",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "A jelszavak különböznek"
     },
     "profile": {
       "Edit-t-profile": "Profil szerkesztése",

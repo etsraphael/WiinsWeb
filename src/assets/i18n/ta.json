@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "கடைசி திட்டம்",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "புதிய கடவுச்சொல்லின் உறுதிப்படுத்தல்",
       "Edit-t-password": "கடவுச்சொல்லை மாற்றவும்",
-      "Erorr-password-different": "கடவுச்சொற்கள் வேறு",
       "Error-min-5-char": "புதிய கடவுச்சொல்லில் குறைந்தது 5 எழுத்துக்கள் இருக்க வேண்டும்",
       "New-password": "புதிய கடவுச்சொல்",
       "New-password-r": "புதிய கடவுச்சொல் தேவை",
       "Old-password": "பழைய கடவுச்சொல்",
       "Old-password-is-invalid": "பழைய கடவுச்சொல் தவறானது",
       "Old-password-r": "பழைய கடவுச்சொல் தேவை",
-      "Setting-password": "கடவுச்சொல் மாற்றம்"
+      "Setting-password": "கடவுச்சொல் மாற்றம்",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "கடவுச்சொற்கள் வேறு"
     },
     "profile": {
       "Edit-t-profile": "உங்கள் சுயவிவரத்தைத் திருத்தவும்",

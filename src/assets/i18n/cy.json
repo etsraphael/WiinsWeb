@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Prosiect diweddaraf",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Cadarnhau cyfrinair newydd",
       "Edit-t-password": "Newid y cyfrinair",
-      "Erorr-password-different": "Mae cyfrineiriau'n wahanol",
       "Error-min-5-char": "Rhaid i'r cyfrinair newydd gynnwys o leiaf 5 nod",
       "New-password": "Cyfrinair newydd",
       "New-password-r": "Mae angen cyfrinair newydd",
       "Old-password": "Hen gyfrinair",
       "Old-password-is-invalid": "Mae'r hen gyfrinair yn annilys",
       "Old-password-r": "Mae angen hen gyfrinair",
-      "Setting-password": "Addasu cyfrinair"
+      "Setting-password": "Addasu cyfrinair",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Mae cyfrineiriau'n wahanol"
     },
     "profile": {
       "Edit-t-profile": "Golygu eich proffil",

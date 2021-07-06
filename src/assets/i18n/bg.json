@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Последен проект",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Потвърждение на нова парола",
       "Edit-t-password": "Променете паролата",
-      "Erorr-password-different": "Паролите са различни",
       "Error-min-5-char": "Новата парола трябва да съдържа поне 5 знака",
       "New-password": "нова парола",
       "New-password-r": "Необходима е нова парола",
       "Old-password": "Стара парола",
       "Old-password-is-invalid": "Старата парола е невалидна",
       "Old-password-r": "Изисква се стара парола",
-      "Setting-password": "Промяна на парола"
+      "Setting-password": "Промяна на парола",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Паролите са различни"
     },
     "profile": {
       "Edit-t-profile": "редактирай профила си",

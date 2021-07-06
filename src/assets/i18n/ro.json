@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Ultimul proiect",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Confirmarea noii parole",
       "Edit-t-password": "Schimbați parola",
-      "Erorr-password-different": "Parolele sunt diferite",
       "Error-min-5-char": "Noua parolă trebuie să conțină cel puțin 5 caractere",
       "New-password": "Parolă Nouă",
       "New-password-r": "Este necesară o nouă parolă",
       "Old-password": "Parola veche",
       "Old-password-is-invalid": "Parola veche nu este validă",
       "Old-password-r": "Este necesară o parolă veche",
-      "Setting-password": "Modificare parolă"
+      "Setting-password": "Modificare parolă",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Parolele sunt diferite"
     },
     "profile": {
       "Edit-t-profile": "Editeaza-ti profilul",

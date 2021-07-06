@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "അവസാനത്തെ പ്രോജക്റ്റ്",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "പുതിയ പാസ്‌വേഡിന്റെ സ്ഥിരീകരണം",
       "Edit-t-password": "പാസ്‌വേഡ് മാറ്റുക",
-      "Erorr-password-different": "പാസ്‌വേഡുകൾ വ്യത്യസ്തമാണ്",
       "Error-min-5-char": "പുതിയ പാസ്‌വേഡിൽ കുറഞ്ഞത് 5 പ്രതീകങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം",
       "New-password": "പുതിയ പാസ്വേഡ്",
       "New-password-r": "പുതിയ പാസ്‌വേഡ് ആവശ്യമാണ്",
       "Old-password": "പഴയ പാസ്വേഡ്",
       "Old-password-is-invalid": "പഴയ പാസ്‌വേഡ് അസാധുവാണ്",
       "Old-password-r": "പഴയ പാസ്‌വേഡ് ആവശ്യമാണ്",
-      "Setting-password": "പാസ്‌വേഡ് പരിഷ്‌ക്കരണം"
+      "Setting-password": "പാസ്‌വേഡ് പരിഷ്‌ക്കരണം",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "പാസ്‌വേഡുകൾ വ്യത്യസ്തമാണ്"
     },
     "profile": {
       "Edit-t-profile": "നിങ്ങളുടെ പ്രൊഫൈൽ എഡിറ്റുചെയ്യുക",

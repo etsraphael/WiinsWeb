@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Dự án mới nhất",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Xác nhận mật khẩu mới",
       "Edit-t-password": "Thay đổi mật khẩu",
-      "Erorr-password-different": "Mật khẩu khác nhau",
       "Error-min-5-char": "Mật khẩu mới phải chứa ít nhất 5 ký tự",
       "New-password": "mật khẩu mới",
       "New-password-r": "Mật khẩu mới là bắt buộc",
       "Old-password": "Mật khẩu cũ",
       "Old-password-is-invalid": "Mật khẩu cũ không hợp lệ",
       "Old-password-r": "Mật khẩu cũ là bắt buộc",
-      "Setting-password": "Sửa đổi mật khẩu"
+      "Setting-password": "Sửa đổi mật khẩu",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Mật khẩu khác nhau"
     },
     "profile": {
       "Edit-t-profile": "Chỉnh sửa hồ sơ của bạn",

@@ -76,7 +76,7 @@
       <div class="col mt-4">
         <p>{{ 'PLACEHOLDER.Your-Password' | translate }}</p>
         <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password.errors && f.password.touched }">
-        <input [type]="changeType" formControlName="password" class="inputPassword w-100 pl-3 p-3" placeholder="{{'PLACEHOLDER.Enter-yr-password' | translate }}">
+        <input [type]="changeTypePswd" formControlName="password" class="inputPassword w-100 pl-3 p-3" placeholder="{{'PLACEHOLDER.Enter-yr-password' | translate }}">
           <span (click)="toggleShow()" class="material-icons d-flex align-items-center"> {{show ? 'visibility' : 'visibility_off'}}</span>
         </div>
         <span class="error-message ml-3" *ngIf="f.password.errors && f.password.touched">{{'ERROR-MESSAGE.Please-type-yr-password'| translate}}</span>

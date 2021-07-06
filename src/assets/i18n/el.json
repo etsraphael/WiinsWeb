@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Τελευταίο έργο",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Επιβεβαίωση νέου κωδικού πρόσβασης",
       "Edit-t-password": "Αλλάξτε τον κωδικό πρόσβασης",
-      "Erorr-password-different": "Οι κωδικοί πρόσβασης είναι διαφορετικοί",
       "Error-min-5-char": "Ο νέος κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον 5 χαρακτήρες",
       "New-password": "Νέος Κωδικός",
       "New-password-r": "Απαιτείται νέος κωδικός πρόσβασης",
       "Old-password": "ΠΑΛΙΟΣ ΚΩΔΙΚΟΣ",
       "Old-password-is-invalid": "Ο παλιός κωδικός πρόσβασης δεν είναι έγκυρος",
       "Old-password-r": "Απαιτείται παλιός κωδικός πρόσβασης",
-      "Setting-password": "Τροποποίηση κωδικού πρόσβασης"
+      "Setting-password": "Τροποποίηση κωδικού πρόσβασης",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Οι κωδικοί πρόσβασης είναι διαφορετικοί"
     },
     "profile": {
       "Edit-t-profile": "Επεξεργαστείτε το προφίλ σας",

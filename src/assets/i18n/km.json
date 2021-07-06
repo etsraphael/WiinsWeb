@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "គម្រោងចុងក្រោយ",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "ការបញ្ជាក់លេខសម្ងាត់ថ្មី",
       "Edit-t-password": "ផ្លាស់ប្តូរពាក្យសម្ងាត់",
-      "Erorr-password-different": "លេខសម្ងាត់ខុសគ្នា",
       "Error-min-5-char": "លេខសំងាត់ថ្មីត្រូវមានយ៉ាងហោចណាស់ ៥ តួអក្សរ",
       "New-password": "ពាក្យសម្ងាត់​ថ្មី",
       "New-password-r": "ទាមទារពាក្យសម្ងាត់ថ្មី",
       "Old-password": "លេខសំងាត់​ចាស់",
       "Old-password-is-invalid": "ពាក្យសម្ងាត់ចាស់មិនត្រឹមត្រូវ",
       "Old-password-r": "ទាមទារពាក្យសម្ងាត់ចាស់",
-      "Setting-password": "ការកែប្រែលេខសម្ងាត់"
+      "Setting-password": "ការកែប្រែលេខសម្ងាត់",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "លេខសម្ងាត់ខុសគ្នា"
     },
     "profile": {
       "Edit-t-profile": "កែសម្រួលប្រវត្តិរូបរបស់អ្នក",

@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "最後のプロジェクト",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "新しいパスワードの確認",
       "Edit-t-password": "パスワードを変更する",
-      "Erorr-password-different": "パスワードが異なる",
       "Error-min-5-char": "新しいパスワードには 5 文字以上を含める必要があります",
       "New-password": "新しいパスワード",
       "New-password-r": "新しいパスワードが必要です",
       "Old-password": "古いパスワード",
       "Old-password-is-invalid": "古いパスワードが無効です",
       "Old-password-r": "古いパスワードが必要です",
-      "Setting-password": "パスワードの変更"
+      "Setting-password": "パスワードの変更",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "パスワードが異なる"
     },
     "profile": {
       "Edit-t-profile": "プロフィールを編集する",

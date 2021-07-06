@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Síðasta verkefnið",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Staðfesting á nýju lykilorði",
       "Edit-t-password": "Breyttu lykilorðinu",
-      "Erorr-password-different": "Lykilorð eru mismunandi",
       "Error-min-5-char": "Nýja lykilorðið verður að innihalda að minnsta kosti 5 stafi",
       "New-password": "nýtt lykilorð",
       "New-password-r": "Nýtt lykilorð er krafist",
       "Old-password": "Gamalt lykilorð",
       "Old-password-is-invalid": "Gamla lykilorðið er ógilt",
       "Old-password-r": "Gamalt lykilorð er krafist",
-      "Setting-password": "Lykilorðabreyting"
+      "Setting-password": "Lykilorðabreyting",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Lykilorð eru mismunandi"
     },
     "profile": {
       "Edit-t-profile": "Breyttu prófílnum þínum",

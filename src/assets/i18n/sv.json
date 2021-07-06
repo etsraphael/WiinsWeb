@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Senaste projektet",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Bekräftelse av nytt lösenord",
       "Edit-t-password": "Ändra lösenordet",
-      "Erorr-password-different": "Lösenord är olika",
       "Error-min-5-char": "Det nya lösenordet måste innehålla minst 5 tecken",
       "New-password": "nytt lösenord",
       "New-password-r": "Nytt lösenord krävs",
       "Old-password": "Gammalt lösenord",
       "Old-password-is-invalid": "Det gamla lösenordet är ogiltigt",
       "Old-password-r": "Gammalt lösenord krävs",
-      "Setting-password": "Lösenordsändring"
+      "Setting-password": "Lösenordsändring",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Lösenord är olika"
     },
     "profile": {
       "Edit-t-profile": "Redigera din profil",

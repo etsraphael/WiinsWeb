@@ -648,7 +648,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Último projeto",
@@ -880,14 +881,15 @@
     "password": {
       "C-new-password": "Confirmação de nova senha",
       "Edit-t-password": "Alterar a senha",
-      "Erorr-password-different": "Senhas são diferentes",
       "Error-min-5-char": "A nova senha deve conter pelo menos 5 caracteres",
       "New-password": "Nova Senha",
       "New-password-r": "Nova senha é necessária",
       "Old-password": "Senha antiga",
       "Old-password-is-invalid": "A senha antiga é inválida",
       "Old-password-r": "Senha antiga é necessária",
-      "Setting-password": "Modificação de senha"
+      "Setting-password": "Modificação de senha",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Senhas são diferentes"
     },
     "profile": {
       "Edit-t-profile": "Edite seu perfil",

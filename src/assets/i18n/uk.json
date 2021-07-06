@@ -690,7 +690,8 @@
       "Coming-Soon": "",
       "We-need-yr-help": "",
       "We-need-yr-help-2": ""
-    }
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Останній проект",
@@ -934,14 +935,15 @@
     "password": {
       "C-new-password": "Підтвердження нового пароля",
       "Edit-t-password": "Змініть пароль",
-      "Erorr-password-different": "Паролі різні",
       "Error-min-5-char": "Новий пароль повинен містити щонайменше 5 символів",
       "New-password": "Новий пароль",
       "New-password-r": "Потрібен новий пароль",
       "Old-password": "Старий пароль",
       "Old-password-is-invalid": "Старий пароль недійсний",
       "Old-password-r": "Потрібен старий пароль",
-      "Setting-password": "Зміна пароля"
+      "Setting-password": "Зміна пароля",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Паролі різні"
     },
     "profile": {
       "Edit-t-profile": "Редагуйте свій профіль",
