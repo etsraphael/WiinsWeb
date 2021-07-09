@@ -142,7 +142,7 @@
     </div>
     <form [formGroup]="registerForm" class="form">
       <div class="col d-flex flex-column mb-3">
-        <label for="validationPseudo" class="form-label">{{'PLACEHOLDER.Your-Pseudo'| translate}}</label>
+        <label class="form-label">{{'PLACEHOLDER.Your-Pseudo'| translate}}</label>
         <input #pseudo type="text" class="inputPseudo w-100 pl-3 p-3" formControlName="pseudo" placeholder="{{'PLACEHOLDER.Enter-yr-username'| translate}}"
           [ngClass]="{'input-invalid': f.pseudo.errors && f.pseudo.touched }">
         <span class="error-message ml-3"
@@ -155,7 +155,7 @@
         </span>
       </div>
       <div class="col d-flex flex-column mb-3">
-        <label for="validationEmail" class="form-label">{{'PLACEHOLDER.Your-Email'| translate}}</label>
+        <label class="form-label">{{'PLACEHOLDER.Your-Email'| translate}}</label>
         <input type="email" class="inputEmail w-100 pl-3 p-3" formControlName="email" placeholder="{{'PLACEHOLDER.Enter-yr-mail'| translate}}"
           [ngClass]="{'input-invalid': f.email.errors && f.email.touched }">
         <span class="error-message ml-3" *ngIf="f.email.errors && f.email.touched">
