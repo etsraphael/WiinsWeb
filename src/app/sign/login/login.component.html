@@ -51,7 +51,7 @@
   </div>
 </div>
 
-<div *ngIf="true">
+<div *ngIf="!(loading$|async)">
   <div class="connexionIn">
     <div class="col d-flex align-items-baseline py-3">
       <svg [routerLink]="['../']" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -86,5 +86,16 @@
       <button class="connected col mt-4 mx-auto mb-5 py-3" (click)="onSubmit()">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</button>
       <span class="mt-5 d-flex justify-content-center" [routerLink]="['/sign/up']">{{ 'LOGIN-REGISTRER.Dont-have-an-account-?' | translate }}</span>
     </form>
+  </div>
+</div>
+
+<div *ngIf="(loading$|async)" class="loading-container">
+  <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
   </div>
 </div>
