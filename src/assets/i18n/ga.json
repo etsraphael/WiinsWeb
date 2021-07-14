@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Ní féidir leat tú féin a chur leis",
     "T-content-does-not-exist-anymore": "Níl an t-ábhar seo ann níos mó",
     "T-publication-no-longer-exists": "Níl an foilseachán seo ann a thuilleadh",
-    "Could-not-play-video": "Níorbh fhéidir físeán a imirt"
+    "Could-not-play-video": "Níorbh fhéidir físeán a imirt",
+    "Please-type-yr-pseudo-or-mail": "Iontráil bréag nó seoladh ríomhphoist le do thoil"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Faightear an grianghraf",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Seiceáil do infos",
     "Create-yr-account": "Cruthaigh do chuntas",
     "Creating-yr-account": "Ag cruthú do chuntas",
-    "ForgotPassword": "Rinne mé dearmad ar mo phasfhocal",
     "Log-In": "Logáil isteach",
     "Login": "Logáil isteach",
     "Login-first-to-continue": "Logáil isteach ar dtús chun leanúint ar aghaidh",
@@ -667,7 +667,33 @@
     "Registration": "Clárú",
     "Sign-up": "Clarú",
     "accept-tou": "Deimhním go bhfuil mé 16 bliana d’aois nó níos sine agus aontaím leis an gcomhaontú úsáideora agus leis an mbeartas príobháideachta",
-    "click-on-email": "Cliceáil ar an nasc ríomhphoist le do thoil"
+    "click-on-email": "Cliceáil ar an nasc ríomhphoist le do thoil",
+    "Welcome-back": "Fáilte ar ais",
+    "Hello-wiinser": "Dia duit Wiinser, sínigh isteach chun leanúint ar aghaidh!",
+    "Dont-have-an-account-?": "Nach bhfuil cuntas agat? Cruthaigh cuntas",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Cuir isteach do sheoladh ríomhphoist le fáil\ndo phasfhocal",
+    "Forgot-password-?": "Dearmad ar pasfhocal ?",
+    "I-forgot-my-password": "Rinne mé dearmad ar mo phasfhocal",
+    "Forgot-password": "Dearmad ar pasfhocal",
+    "Email-adress-sent": "Seoladh ríomhphoist seolta",
+    "Checking-yr-mail": "Seiceáil do r-phost le do thoil. Ná bíodh aon leisce ort breathnú i do thurscar",
+    "Welcome": "Fáilte",
+    "Hello-nice-to-meet-you-wiinser": "Dia duit, Nice bualadh leat Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "An tionscadal is déanaí",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "D'ainm úsáideora",
     "Your-message": "Do theachtaireacht",
     "Confirm-your-password": "Deimhnigh do phasfhocal",
-    "Password-not-matching": "Níl na pasfhocail comhoiriúnach"
+    "Password-not-matching": "Níl na pasfhocail comhoiriúnach",
+    "Enter-yr-username-or-mail-adresse": "Iontráil d’ainm úsáideora nó do sheoladh ríomhphoist",
+    "Enter-yr-password": "Iontráil do phasfhocal",
+    "Enter-yr-mail": "Iontráil do r-phost",
+    "Enter-yr-username": "Iontráil d’ainm úsáideora"
   },
   "PLEASE": {
     "Password": "Iontráil do phasfhocal le do thoil"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Pasfhocal nua a dhaingniú",
       "Edit-t-password": "Athraigh an focal faire",
-      "Erorr-password-different": "Tá pasfhocail difriúil",
       "Error-min-5-char": "Caithfidh 5 charachtar ar a laghad a bheith sa phasfhocal nua",
       "New-password": "Focal Faire Nua",
       "New-password-r": "Teastaíonn pasfhocal nua",
       "Old-password": "Sean Pasfhocal",
       "Old-password-is-invalid": "Tá an seanfhocal faire neamhbhailí",
       "Old-password-r": "Teastaíonn seanfhocal faire",
-      "Setting-password": "Modhnú pasfhocal"
+      "Setting-password": "Modhnú pasfhocal",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Tá pasfhocail difriúil"
     },
     "profile": {
       "Edit-t-profile": "Cuir do phróifíl in eagar",
@@ -980,32 +1011,44 @@
     "Better-reference": "Tagairt níos fearr"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Tá rochtain ar sheirbhísí áirithe faoi réir chlárú úsáideora. Forchoimeádtar clárú agus rochtain ar sheirbhísí an láithreáin go heisiach do dhaoine nádúrtha cumasacha, a chomhlánaigh agus a bhailíochtaigh an fhoirm chlárúcháin atá ar fáil ar líne ar shuíomh Piin, chomh maith leis na Coinníollacha Úsáide Ginearálta seo. cláraíonn an t-úsáideoir faisnéis bheacht, chroíúil agus cothrom le dáta a sholáthar maidir lena dhuine agus a stádas sibhialta. Beidh ar an úsáideoir na sonraí a bhaineann leis a sheiceáil go rialta d’fhonn a chruinneas a choinneáil.\n\nCaithfidh an t-úsáideoir seoladh bailí ríomhphoist a sholáthar go riachtanach, ar a gcuirfidh an láithreán dearbhú chuige maidir lena chlárú dá sheirbhísí. Ní féidir seoladh ríomhphoist a úsáid níos mó ná uair amháin chun clárú le haghaidh seirbhísí tríd an gcuntas céanna. Ní cheadaítear ach clárú amháin le haghaidh seirbhísí láithreáin in aghaidh an duine nádúrtha. Sanntar aitheantóir don úsáideoir a ligeann dó rochtain a fháil ar spás a bhfuil rochtain curtha in áirithe dó, chomh maith lena phasfhocal a iontráil. Tá an t-aitheantóir uathúil do gach úsáideoir, ach is féidir leis an úsáideoir an focal faire a athrú ar líne ina Spás Pearsanta.\nTá an focal faire pearsanta agus faoi rún, geallann an t-úsáideoir gan é a chur in iúl do thríú páirtithe. Forchoimeádann Piin ar aon chuma, an fhéidearthacht iarraidh ar shíntiúis do na seirbhísí a dhiúltú i gcás nach gcomhlíonfaidh an t-úsáideoir forálacha na gCoinníollacha Úsáide Ginearálta seo.",
-    "2-UNSUBSCRIBE-d": "Is féidir leis an úsáideoir cláraithe a dhíliostáil a iarraidh tráth ar bith trí dhul chuig an leathanach tiomnaithe ina spás pearsanta. Beidh éifeacht le haon díliostáil ón láithreán, tar éis don úsáideoir an fhoirm a sholáthraítear chun na críche seo a chomhlánú, laistigh den tréimhse láithreach.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Cuirtear in iúl don úsáideoir go gcoimeádann an t-eagarthóir an ceart spás pearsanta aon úsáideora a sháraíonn na téarmaí úsáide a scriosadh agus go háirithe sna cásanna seo a leanas:\n\n● Má bhaineann an t-úsáideoir úsáid mhídhleathach as an suíomh\n● Má dhéanann an t-úsáideoir le linn spás pearsanta a chruthú, tarchuirfidh sé faisnéis mhícheart go deonach chuig an láithreán\n● Mura raibh an t-úsáideoir gníomhach ar a spás pearsanta le 5 bliana ar a laghad.\n\nCás dans nuair a chinneann an t-eagarthóir spás pearsanta an úsáideora a bhaint ar cheann de na cúiseanna seo, ní fhéadfaidh sé dochar a dhéanamh don úsáideoir a bhfuil a chuntas scriosta. Ní hionann an scriosadh seo agus tarscaoileadh imeachtaí dlí a fhéadfaidh an foilsitheoir a thionscnamh i gcoinne an úsáideora a sháraigh na rialacha seo.",
-    "About-plateform": "Is meán ar líne é Espace-Piin’s Inc. a thairgeann roinnt feidhmiúlachtaí ann a lárú ar bhealach iomasach agus saor in aisce dá úsáideoirí. Chuige seo, is ardán iad na meáin inar féidir le húsáideoirí comhrá a dhéanamh agus ábhar a roinnt le húsáideoirí eile. Bíonn feidhm aige freisin chun éisteacht le ceol go leanúnach, ionas gur féidir lena úsáideoirí atmaisféar maith a mhúscailt is cuma cén cás agus an t-am é. Freastalaíonn Espace-Piin’s Inc. ar fheidhm chun féachaint ar fhíseáin go leanúnach chun siamsaíocht a thabhairt agus oideachas a chur ar a gcuid úsáideoirí.",
-    "Access-&-nav-d": "Tá rochtain ar an láithreán agus úsáid an láithreáin in áirithe do dhaoine fásta. Beidh sé de cheart ag an bhfoilsitheoir cruthúnas ar aois an úsáideora a iarraidh ar bhealach ar bith. Cuireann an t-eagarthóir na réitigh theicniúla atá ar fáil aige i bhfeidhm chun rochtain ar an láithreán a cheadú 24 uair sa lá, 7 lá sa tseachtain. Mar sin féin is féidir leis rochtain ar an láithreán nó ar leathanaigh áirithe de seo a chur ar fionraí, a theorannú nó cur isteach air d’fhonn dul ar aghaidh le nuashonruithe, modhnuithe ar a ábhar nó aon ghníomhartha eile a mheastar a bheith riachtanach chun go bhfeidhmeoidh an láithreán i gceart.\nIs ionann glacadh agus nascleanúint ar shuíomh Espace Piin agus glacadh gan choinníoll leis na Coinníollacha Úsáide Ginearálta seo, is cuma cén modh rochtana teicniúil agus na críochfoirt a úsáidtear. Baineann na Coinníollacha Úsáide Ginearálta seo le haon athrú nó leathnú ar an láithreán ar líonraí sóisialta agus / nó pobail atá ann cheana nó a bheidh ann amach anseo arna mbainistiú ag Espace Piins Inc.",
-    "Confidentiality-d": "Chomh maith leis na Téarmaí agus Coinníollacha seo, tá beartas príobháideachta ag an suíomh a chuireann síos ar an gcaoi a ndéantar sonraí pearsanta a phróiseáil nuair a thugann an t-úsáideoir cuairt ar an láithreán agus conas a úsáidtear fianáin. Trí bhrabhsáil a dhéanamh ar an suíomh, éilíonn an t-úsáideoir freisin gur léigh sé an beartas príobháideachta thuas.",
-    "Generality-d": "Tá gach modh rochtana ar an láithreán \"www.espace-piins.com\" faoi réir an bheartais phríobháideachta seo. Tá Espace Piins Inc freagrach as na sonraí pearsanta a bhailítear ar an ardán. Baineann sé seo le húsáid, stóráil, cosaint agus scaipeadh do chuid faisnéise pearsanta. Tá rochtain ar Espace Piins go hiomlán saor in aisce agus ní chuirtear billí ar fheidhmeanna uile an ardáin (seachas fógraíocht a fhoilsiú).\nForchoimeádann an t-eagarthóir an ceart an láithreán agus na seirbhísí chomh maith leis na Coinníollacha Úsáide Ginearálta seo a mhodhnú, tráth ar bith agus gan fógra, go háirithe chun oiriúnú d’fheidhmiúlachtaí nua nó chun feidhmiúlachtaí atá ann cheana a scriosadh nó a mhodhnú chun an ardán. Mar sin moltar go ndéanfadh an t-úsáideoir tagairt don leagan is déanaí de na Coinníollacha Úsáide Ginearálta roimh aon nascleanúint, atá inrochtana ag an am ar bith ar an láithreán. I gcás easaontais leis na Coinníollacha Úsáide Ginearálta, ní féidir leis an úsáideoir aon úsáid a bhaint as an suíomh.",
-    "Hyperlinks-d": "D’fhéadfadh go mbeadh naisc hipirtéacs ar an láithreán a dhíríonn ar láithreáin ghréasáin eile nach bhfuil aon smacht ag Piin orthu. In ainneoin na bhfíorúchán rialta agus rialta a rinne an foilsitheoir, diúltaíonn an dara ceann an fhreagracht go léir as an ábhar is féidir a fháil ar na suíomhanna seo. Údaraíonn an foilsitheoir naisc hipirtéacs a bhunú le haon leathanach nó doiciméad dá shuíomh ar choinníoll nach ndéantar na naisc seo a bhunú chun críocha tráchtála nó fógraíochta. Ina theannta sin, is gá faisnéis a fháil roimh ré ó fhoilsitheoir an láithreáin sula mbunaítear nasc hipirtéacs. Déantar iad a eisiamh ó shuíomhanna an údaraithe seo ag scaipeadh faisnéise de chineál mídhleathach, foréigneach, conspóideach, pornagrafach, seineafóbach nó a d’fhéadfadh dul i bhfeidhm ar íogaireacht an líon is mó.\nFaoi dheireadh, forchoimeádann Piin an ceart go ndéanfaí nasc hipirtéacs a dhíríonn ar a shuíomh a scriosadh ag am ar bith, má mheasann an láithreán nach gcomhlíonann sé a bheartas eagarthóireachta. Ní mholtar gach hipirtéacs lasmuigh den ardán nach molann foilsitheoir an ardáin.",
-    "Intellectual-property-d": "Is leis an bhfoilsitheoir struchtúr an láithreáin ach freisin na téacsanna, grafaicí, íomhánna, grianghraif, fuaimeanna, físeáin agus feidhmchláir ríomhaire a chuimsíonn é agus tá siad cosanta mar sin ag na dlíthe atá i bhfeidhm faoi mhaoin intleachtúil.\n\nTá cosc iomlán ar atáirgeadh, oiriúnú nó saothrú páirteach nó iomlán an ábhair, na dtrádmharcanna cláraithe agus na seirbhísí a thairgeann an láithreán, trí phróiseas ar bith, gan údarú i scríbhinn roimh ré ón bhfoilsitheoir, agus d’fhéadfadh sé a bheith góchumtha de réir bhrí airteagail L. 335-2 et seq. den Chód Maoine Intleachtúla. Agus seo, cé is moite de na heilimintí a ainmnítear go sainráite mar shaor ó chearta ar an láithreán.\n\nNí hionann rochtain ar an láithreán agus aitheantas ar cheart agus, go ginearálta, ní thugann sé aon cheart maoine intleachtúla a bhaineann le gné den láithreán, a fhanann mar mhaoin eisiach an fhoilsitheora. Tá cosc ar an úsáideoir sonraí a iontráil ar an láithreán a dhéanfadh modhnú orthu nó a d’fhéadfadh a ábhar nó a gcuma a mhodhnú.",
-    "Our-plateforme": "Ár n-ardán",
-    "Responsability-d": "Níl an foilsitheoir freagrach ach as an ábhar atá curtha in eagar aige féin. Níl an foilsitheoir freagrach as:\n\n● I gcás fadhbanna nó teipeanna teicniúla, TF nó cuntasaíochta ar an láithreán le haon chrua-earraí nó bogearraí\n● Damáiste díreach nó indíreach, ábhartha nó neamhábhartha, intuartha nó intuartha a eascróidh as úsáid nó deacrachtaí an láithreáin nó a sheirbhísí a úsáid\n● Saintréithe intreacha an Idirlín, go háirithe iad siúd a bhaineann le neamhiontaofacht agus easpa slándála na faisnéise a scaiptear ann\n● Ábhar nó gníomhaíochtaí mídhleathacha a úsáideann a shuíomh gan é a bheith ar an eolas go cuí de réir bhrí an Dlí maidir le sonraí pearsanta a phróiseáil.\n\nIna theannta sin, ní féidir leis an láithreán cruinneas, iomláine agus tráthúlacht na faisnéise a scaiptear ann a ráthú.\n\nTá an t-úsáideoir freagrach as:\n● A threalamh a chosaint agus a ionramháil ar an ardán ó ghaireas nach le Espace Piins é\n● An úsáid a bhaineann sé as an láithreán nó as a chuid sonraí\n● Mura n-urramaíonn sé litir nó spiorad na gcoinníollacha úsáide ginearálta seo.",
-    "Responsability-d-extra": "Trí ábhar a sholáthar don tseirbhís, tugann tú fo-cheadúnas inaistrithe ar fud an domhain, neamh-eisiatach, saor ó ríchíosa, inaistrithe chun an t-ábhar seo a úsáid (lena n-áirítear saothair dhíorthacha a atáirgeadh, a dháileadh, a ullmhú, a scaipeadh agus a rith) i dtaca leis an tseirbhís agus na gníomhaíochtaí Piin's (agus a chomharbaí agus a chleamhnaithe), lena n-áirítear an tSeirbhís a chur chun cinn agus a athdháileadh go hiomlán nó go páirteach.",
-    "Site-management-d": "Chun an láithreán a bhainistiú i gceart, féadfaidh an foilsitheoir tráth ar bith:\n\n● Rochtain ar an láithreán go léir nó cuid de a chur ar fionraí, cur isteach air nó a theorannú, rochtain a chur in áirithe ar an láithreán nó ar chodanna áirithe den láithreán, chuig catagóir ar leith d’úsáideoirí Idirlín.\n● Scrios gach faisnéis a d’fhéadfadh cur isteach ar a hoibriú nó a sháraíonn dlíthe náisiúnta nó idirnáisiúnta, nó rialacha Netiquette.\n● An suíomh a chur ar fionraí chun nuashonruithe a dhéanamh. Ní bheidh fonn ar bith ábhar ar an ardán a mhodhnú le linn tréimhsí cothabhála.",
     "TITLE": {
-      "1-REGISTRATION": "1. CLÁRÚ",
-      "2-UNSUBSCRIBE": "2. UNSUBSCRIBE",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. SPÁS PEARSANTA A LÍONADH AG TIONSCNAMH PHOIBLÍ AN LÁITHREÁIN",
-      "Access-&-nav": "Rochtain agus nascleanúint",
-      "Confidentiality": "Rúndacht",
-      "Generality": "Ginearáltachtaí",
-      "Hyperlinks": "Naisc hipirtéacs",
-      "Intellectual-property": "Maoin Intleachtúil",
-      "Responsability": "Freagrachtaí",
-      "Services": "Seirbhísí",
-      "Site-management": "Bainistíocht láithreáin"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Aitheantóir ceoil"

@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Anda tidak boleh menambah diri anda",
     "T-content-does-not-exist-anymore": "Kandungan ini sudah tidak ada lagi",
     "T-publication-no-longer-exists": "Penerbitan ini tidak lagi wujud",
-    "Could-not-play-video": "Tidak dapat memainkan video"
+    "Could-not-play-video": "Tidak dapat memainkan video",
+    "Please-type-yr-pseudo-or-mail": "Sila masukkan pseudo atau alamat e-mel"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Foto itu diterima",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Memeriksa maklumat anda",
     "Create-yr-account": "cipta akaun anda",
     "Creating-yr-account": "Membuat akaun anda",
-    "ForgotPassword": "Saya terlupa kata laluan saya",
     "Log-In": "Log masuk",
     "Login": "Log masuk",
     "Login-first-to-continue": "Log masuk dahulu untuk meneruskan",
@@ -667,7 +667,33 @@
     "Registration": "Pendaftaran",
     "Sign-up": "Mendaftar",
     "accept-tou": "Saya mengesahkan bahawa saya berumur 16 tahun ke atas dan saya bersetuju dengan perjanjian pengguna dan dasar privasi",
-    "click-on-email": "Sila klik pada pautan e-mel"
+    "click-on-email": "Sila klik pada pautan e-mel",
+    "Welcome-back": "Selamat kembali",
+    "Hello-wiinser": "Hello Wiinser, daftar masuk untuk meneruskan!",
+    "Dont-have-an-account-?": "Don-t mempunyai akaun? Cipta akaun",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Masukkan alamat e-mel anda untuk menerima kata laluan anda",
+    "Forgot-password-?": "Terlupa kata laluan?",
+    "I-forgot-my-password": "Saya terlupa kata laluan saya",
+    "Forgot-password": "Terlupa kata laluan",
+    "Email-adress-sent": "Alamat e-mel dihantar",
+    "Checking-yr-mail": "Sila semak e-mel anda. Jangan teragak-agak untuk melihat dalam spam anda",
+    "Welcome": "Selamat datang",
+    "Hello-nice-to-meet-you-wiinser": "Hello, Bagus untuk bertemu dengan anda Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Projek terakhir",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Nama pengguna anda",
     "Your-message": "Mesej anda",
     "Confirm-your-password": "Mengesahkan kata laluan anda",
-    "Password-not-matching": "Kata laluan tidak sepadan"
+    "Password-not-matching": "Kata laluan tidak sepadan",
+    "Enter-yr-username-or-mail-adresse": "Masukkan nama pengguna atau alamat e-mel anda",
+    "Enter-yr-password": "Masukkan kata laluan anda",
+    "Enter-yr-mail": "Masukkan e-mel anda",
+    "Enter-yr-username": "Masukkan nama pengguna anda"
   },
   "PLEASE": {
     "Password": "Sila masukkan kata laluan anda"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Pengesahan kata laluan baru",
       "Edit-t-password": "Tukar kata laluan",
-      "Erorr-password-different": "Kata laluan berbeza",
       "Error-min-5-char": "Kata laluan baru mesti mengandungi sekurang-kurangnya 5 aksara",
       "New-password": "Kata laluan baharu",
       "New-password-r": "Kata laluan baru diperlukan",
       "Old-password": "Kata laluan lama",
       "Old-password-is-invalid": "Kata laluan lama tidak sah",
       "Old-password-r": "Kata laluan lama diperlukan",
-      "Setting-password": "Pengubahsuaian kata laluan"
+      "Setting-password": "Pengubahsuaian kata laluan",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Kata laluan berbeza"
     },
     "profile": {
       "Edit-t-profile": "Ubah profil anda",
@@ -980,32 +1011,44 @@
     "Better-reference": "Rujukan yang lebih baik"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Akses ke perkhidmatan tertentu bergantung kepada pendaftaran pengguna. Pendaftaran dan akses ke perkhidmatan laman web dikhaskan secara eksklusif untuk orang yang berkemampuan, yang telah melengkapkan dan mengesahkan borang pendaftaran yang tersedia dalam talian di laman web Piin, serta Syarat Umum Penggunaan ini. pendaftaran, pengguna berjanji untuk memberikan maklumat yang tepat, tulus dan terkini mengenai orang dan status sivilnya. Pengguna juga harus selalu memeriksa data yang berkaitan dengannya untuk menjaga ketepatannya.\n\nPengguna mesti memberikan alamat e-mel yang sah, di mana laman web akan menghantarnya pengesahan pendaftarannya untuk perkhidmatannya. Alamat e-mel tidak boleh digunakan lebih dari sekali untuk mendaftar perkhidmatan melalui akaun yang sama. Hanya satu pendaftaran untuk perkhidmatan laman web yang dibenarkan bagi setiap orang semula jadi. Pengguna diberi pengecam yang membolehkannya mengakses ruang yang disediakan akses, selain memasukkan kata laluannya. Pengecamnya unik untuk setiap pengguna, namun kata laluan dapat ditukar secara dalam talian oleh pengguna di Ruang Peribadinya.\nKata laluan adalah peribadi dan rahsia, pengguna berjanji untuk tidak menyampaikannya kepada pihak ketiga. Walau bagaimanapun, cadangan Piin kemungkinan menolak permintaan langganan perkhidmatan sekiranya pengguna tidak mematuhi ketentuan Syarat Penggunaan Umum ini.",
-    "2-UNSUBSCRIBE-d": "Pengguna yang berdaftar boleh membuat langganan mereka pada bila-bila masa dengan pergi ke halaman khusus di ruang peribadi mereka. Sebarang langganan dari laman web akan berkesan, setelah pengguna melengkapkan borang yang disediakan untuk tujuan ini, dalam jangka masa terdekat.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Dimaklumkan kepada pengguna bahawa editor berhak untuk menghapus ruang peribadi setiap pengguna yang melanggar syarat penggunaan dan terutama dalam kes berikut:\n\n● Sekiranya pengguna menggunakan laman web secara haram\n● Sekiranya pengguna semasa membuat ruang peribadi, menghantar maklumat yang salah secara sukarela ke laman web ini\n● Sekiranya pengguna tidak aktif di ruang peribadinya selama sekurang-kurangnya 5 tahun.\n\nDans sekiranya editor memutuskan untuk membuang ruang peribadi pengguna kerana salah satu sebab ini, ia tidak boleh membahayakan pengguna yang akaunnya telah dihapus. Penghapusan ini bukan merupakan pengecualian dari proses undang-undang yang mungkin dilakukan oleh penerbit terhadap pengguna yang telah melanggar peraturan ini.",
-    "About-plateform": "Espace-Piin's Inc. adalah media dalam talian yang menawarkan untuk memusatkan beberapa fungsi di dalamnya dengan cara yang intuitif dan percuma untuk penggunanya. Untuk ini, media adalah platform di mana pengguna boleh berbual dan berkongsi kandungan dengan pengguna lain. Ini juga berfungsi untuk mendengarkan muzik secara berterusan, sehingga penggunanya dapat menikmati suasana yang baik apa pun keadaan dan masa. Espace-Piin's Inc. juga mengadakan fungsi untuk menonton video secara berterusan untuk menghiburkan dan mendidik penggunanya.",
-    "Access-&-nav-d": "Akses dan penggunaan laman web ini disediakan untuk orang dewasa. Penerbit berhak untuk meminta bukti usia pengguna dengan cara apa pun. Editor menggunakan penyelesaian teknikal yang ada untuk membolehkan akses ke laman web ini 24 jam sehari, 7 hari seminggu. Meskipun demikian, dia dapat menangguhkan, membatasi atau mengganggu akses ke laman web ini atau ke halaman-halaman tertentu untuk setiap saat untuk meneruskan pembaruan, pengubahsuaian kandungannya atau tindakan lain yang dianggap perlu untuk berfungsi dengan baik laman web ini.\nSambungan dan navigasi di laman Espace Piin merupakan penerimaan tanpa syarat terhadap Syarat-Syarat Umum Penggunaan ini, apa pun cara teknikal akses dan terminal yang digunakan. Syarat Umum Penggunaan ini berlaku untuk setiap variasi atau peluasan laman web pada rangkaian sosial dan / atau komuniti yang ada atau yang akan datang yang diuruskan oleh Espace Piins Inc.",
-    "Confidentiality-d": "Sebagai tambahan kepada Terma dan Syarat ini, laman web ini mempunyai dasar privasi yang menerangkan bagaimana data peribadi diproses ketika pengguna mengunjungi laman web ini dan bagaimana kuki digunakan. Dengan melayari laman web tersebut, pengguna juga mengaku telah membaca dasar privasi di atas.",
-    "Generality-d": "Semua kaedah akses ke laman web \"www.espace-piins.com\" tertakluk pada dasar privasi ini. Espace Piins Inc bertanggungjawab untuk data peribadi yang dikumpulkan di platform. Ini berkaitan dengan penggunaan, penyimpanan, perlindungan dan penyebaran maklumat peribadi anda. Akses ke Espace Piins adalah percuma dan semua fungsi platform (kecuali penerbitan iklan) tidak dikenakan bayaran.\nEditor berhak untuk mengubah, pada bila-bila masa dan tanpa pemberitahuan, laman web dan perkhidmatan serta Syarat-Syarat Penggunaan Umum ini, khususnya untuk menyesuaikan diri dengan fungsi baru atau penghapusan atau pengubahsuaian fungsi yang ada dengan tujuan meningkatkan pelantar. Oleh itu, disarankan agar pengguna merujuk kepada versi terkini Syarat Penggunaan Umum sebelum navigasi, dapat diakses pada bila-bila masa di laman web ini. Sekiranya tidak bersetuju dengan Syarat Penggunaan Umum, pengguna tidak boleh menggunakan laman web ini.",
-    "Hyperlinks-d": "Laman web ini mungkin mengandungi pautan hiperteks yang menunjuk ke laman web lain di mana Piin tidak mempunyai kawalan. Walaupun terdapat pengesahan sebelumnya dan berkala yang dilakukan oleh penerbit, yang terakhir menolak semua tanggung jawab atas kandungan yang mungkin dapat dijumpai di laman web ini. Penerbit memberi kebenaran untuk membuat pautan hiperteks ke mana-mana halaman atau dokumen di laman webnya dengan syarat bahawa pautan ini tidak dilakukan untuk tujuan komersial atau pengiklanan. Di samping itu, maklumat awal penerbit laman web ini diperlukan sebelum wujudnya pautan hiperteks. Dikecualikan dari laman web kebenaran ini yang menyebarkan maklumat yang menyalahi undang-undang, ganas, kontroversial, pornografi, xenofobia atau yang boleh mempengaruhi kepekaan bilangan terbanyak.\nAkhirnya, Piin berhak untuk menghapuskan pautan hiperteks yang menunjuk ke laman webnya pada bila-bila masa, jika laman web tersebut menganggap bahawa ia tidak mematuhi dasar editorialnya. Semua hiperteks luaran ke platform yang tidak dicadangkan oleh penerbit platform tidak digalakkan.",
-    "Intellectual-property-d": "Struktur laman web ini tetapi juga teks, grafik, gambar, gambar, suara, video dan aplikasi komputer yang menyusunnya adalah hak milik penerbit dan dilindungi oleh undang-undang yang berlaku di bawah harta intelek.\n\nPengeluaran semula, penyesuaian atau eksploitasi sebahagian atau keseluruhan kandungan, cap dagang berdaftar dan perkhidmatan yang ditawarkan oleh laman web ini, dengan proses apa pun, tanpa kebenaran bertulis daripada penerbit terlebih dahulu, dilarang sama sekali dan boleh menjadi pemalsuan dalam arti artikel L. 335-2 et seq. Kod Harta Intelek. Dan ini, dengan pengecualian unsur-unsur yang dinyatakan sebagai hak bebas di laman web ini.\n\nAkses ke laman web ini bukan merupakan pengakuan hak dan, secara umum, tidak memberikan hak harta intelek yang berkaitan dengan elemen laman web, yang tetap menjadi hak milik eksklusif penerbit. Pengguna dilarang memasukkan data di laman web yang akan mengubah suai atau yang dapat mengubah isi atau penampilannya.",
-    "Our-plateforme": "Platform kami",
-    "Responsability-d": "Penerbit hanya bertanggungjawab untuk kandungan yang telah dia edit. Penerbit tidak bertanggungjawab untuk:\n\n● Sekiranya terdapat masalah atau kegagalan teknikal, IT atau perakaunan laman web dengan sebarang perkakasan atau perisian\n● Kerosakan langsung atau tidak langsung, material atau tidak material, jangkaan atau tidak dapat diramalkan akibat penggunaan atau kesukaran menggunakan laman web atau perkhidmatannya\n● Ciri-ciri intrinsik Internet, khususnya yang berkaitan dengan ketidakpercayaan dan kurangnya keselamatan maklumat yang beredar di sana\n● Kandungan atau kegiatan yang tidak sah menggunakan laman webnya tanpa harus menyadarinya dalam arti Undang-undang berkenaan dengan pemprosesan data peribadi.\n\nSelanjutnya, laman web ini tidak dapat menjamin ketepatan, kelengkapan, dan maklumat terkini yang disebarkan di sana.\n\nPengguna bertanggungjawab untuk:\n● Perlindungan peralatannya dan manipulasi pada platform dari peranti yang bukan milik Espace Piins\n● Penggunaan yang dibuatnya dari laman web atau datanya\n● Sekiranya tidak menghormati surat atau semangat syarat penggunaan umum ini.",
-    "Responsability-d-extra": "Dengan memberikan kandungan kepada perkhidmatan tersebut, anda memberikan Piin sublesen di seluruh dunia, tidak eksklusif, bebas royalti, boleh dipindah milik untuk menggunakan kandungan ini (termasuk menghasilkan semula, menyebarkan, menyiapkan karya terbitan, penyebaran dan menjalankan) sehubungan dengan perkhidmatan dan aktiviti Piin's (dan penggantinya dan gabungannya), termasuk untuk mempromosikan dan mengagihkan semula Perkhidmatan secara keseluruhan atau sebahagian.",
-    "Site-management-d": "Untuk pengurusan laman web yang betul, penerbit boleh pada bila-bila masa:\n\n● Menangguhkan, mengganggu atau menghadkan akses ke semua atau sebahagian laman web, menempah akses ke laman web atau ke bahagian laman web tertentu, ke kategori pengguna Internet tertentu.\n● Hapus semua maklumat yang boleh mengganggu operasinya atau yang melanggar undang-undang nasional atau antarabangsa, atau peraturan Netiquette.\n● Tangguhkan laman web untuk melakukan kemas kini. Segala keinginan untuk mengubah kandungan di platform tidak akan tersedia semasa tempoh penyelenggaraan.",
     "TITLE": {
-      "1-REGISTRATION": "1. PENDAFTARAN",
-      "2-UNSUBSCRIBE": "2. UNSUBSCRIBE",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. PENGHAPUSAN RUANG PERIBADI DI INISIATIF PENERBIT LAMAN",
-      "Access-&-nav": "Akses dan pelayaran",
-      "Confidentiality": "Kerahsiaan",
-      "Generality": "Keketaraan",
-      "Hyperlinks": "Pautan hiperteks",
-      "Intellectual-property": "Harta intelek",
-      "Responsability": "Tanggungjawab",
-      "Services": "Perkhidmatan",
-      "Site-management": "Pengurusan laman web"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Pengecam muzik anda"

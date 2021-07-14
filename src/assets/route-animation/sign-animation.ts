@@ -14,6 +14,13 @@ export const SignAnimation = [
   trigger("routeAnimations", [
     transition("SignIn => OnBoarding, SignUp => OnBoarding", slideTo("left")),
     transition("OnBoarding => SignIn, OnBoarding => SignUp", slideTo("right")),
+    transition("SignIn => Password-Setting", slideTo("right")),
+    transition("Password-Setting => SignIn", slideTo("left")),
+    transition("SignIn => SignUp", slideTo("left")),
+    transition("OnBoarding => To-Discord", slideTo("right")),
+    transition("To-Discord => OnBoarding", slideTo("left")),
+    transition("OnBoarding => To-Stripe", slideTo("right")),
+    transition("To-Stripe => OnBoarding", slideTo("left")),
   ]),
   trigger("stateLogin", [
     transition(
@@ -44,14 +51,14 @@ function slideTo(direction: string) {
       ],
       optional
     ),
-    query(":enter", [style({ [direction]: "-100%" })]),
+    query(":enter", [style({ [direction]: "-200%" })]),
     group([
       query(
         ":leave",
-        [animate("600ms ease", style({ [direction]: "200%", opacity: 0 }))],
+        [animate("800ms ease", style({ [direction]: "200%", opacity: 0 }))],
         optional
       ),
-      query(":enter", [animate("600ms ease", style({ [direction]: "0%" }))]),
+      query(":enter", [animate("800ms ease", style({ [direction]: "0%" }))]),
     ]),
     query(":leave", animateChild()),
     query(":enter", animateChild()),

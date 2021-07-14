@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Þú getur ekki bætt þér við",
     "T-content-does-not-exist-anymore": "Þetta innihald er ekki til lengur",
     "T-publication-no-longer-exists": "Þetta rit er ekki lengur til",
-    "Could-not-play-video": "Gat ekki spilað myndband"
+    "Could-not-play-video": "Gat ekki spilað myndband",
+    "Please-type-yr-pseudo-or-mail": "Vinsamlegast sláðu inn gervi eða netfang"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Ljósmyndin er móttekin",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Er þegar með reikning",
-    "ForgotPassword": "ég gleymdi lykilorðinu mínu",
     "Log-In": "Skrá inn",
     "Login": "Skrá inn",
     "Password-recovery": "Endurheimt lykilorðs",
@@ -667,7 +667,33 @@
     "Create-yr-account": "Búðu til reikninginn þinn",
     "Creating-yr-account": "Að búa til reikninginn þinn",
     "Login-first-to-continue": "Skráðu þig fyrst inn til að halda áfram",
-    "Checking-yr-infos": "Athugaðu upplýsingar þínar"
+    "Checking-yr-infos": "Athugaðu upplýsingar þínar",
+    "Welcome-back": "Velkomin aftur",
+    "Hello-wiinser": "Halló Wiinser, skráðu þig inn til að halda áfram!",
+    "Dont-have-an-account-?": "Ertu ekki með reikning? Stofna reikning",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Sláðu inn netfangið þitt til að fá lykilorðið þitt",
+    "Forgot-password-?": "Gleymt lykilorð?",
+    "I-forgot-my-password": "ég gleymdi lykilorðinu mínu",
+    "Forgot-password": "Gleymt lykilorð",
+    "Email-adress-sent": "Netfang sent",
+    "Checking-yr-mail": "Vinsamlegast athugaðu tölvupóstinn þinn. Ekki hika við að líta í ruslpóstinn þinn",
+    "Welcome": "Velkominn",
+    "Hello-nice-to-meet-you-wiinser": "Halló, gaman að kynnast þér Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Síðasta verkefnið",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Notendanafnið þitt",
     "Your-message": "Skilaboð þín",
     "Confirm-your-password": "Staðfestu lykilorðið þitt",
-    "Password-not-matching": "Lykilorðin passa ekki saman"
+    "Password-not-matching": "Lykilorðin passa ekki saman",
+    "Enter-yr-username-or-mail-adresse": "Sláðu inn notandanafn þitt eða netfang",
+    "Enter-yr-password": "Sláðu inn aðgangsorðið þitt",
+    "Enter-yr-mail": "Sláðu inn tölvupóstinn þinn",
+    "Enter-yr-username": "Sláðu inn notandanafn þitt"
   },
   "PLEASE": {
     "Password": "Vinsamlegast sláðu inn lykilorðið þitt"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Staðfesting á nýju lykilorði",
       "Edit-t-password": "Breyttu lykilorðinu",
-      "Erorr-password-different": "Lykilorð eru mismunandi",
       "Error-min-5-char": "Nýja lykilorðið verður að innihalda að minnsta kosti 5 stafi",
       "New-password": "nýtt lykilorð",
       "New-password-r": "Nýtt lykilorð er krafist",
       "Old-password": "Gamalt lykilorð",
       "Old-password-is-invalid": "Gamla lykilorðið er ógilt",
       "Old-password-r": "Gamalt lykilorð er krafist",
-      "Setting-password": "Lykilorðabreyting"
+      "Setting-password": "Lykilorðabreyting",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Lykilorð eru mismunandi"
     },
     "profile": {
       "Edit-t-profile": "Breyttu prófílnum þínum",
@@ -980,32 +1011,44 @@
     "Better-reference": "Betri tilvísun"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Aðgangur að tiltekinni þjónustu er háð notendaskráningu. Skráning og aðgangur að þjónustu síðunnar er eingöngu áskilinn hæfum einstaklingum, sem hafa fyllt út og fullgilt skráningarformið sem er aðgengilegt á netinu á síðu Piin, sem og þessum almennu notkunarskilmálum. skráning, skuldbindur notandinn sig til að veita nákvæmar, einlægar og uppfærðar upplýsingar um persónu sína og borgaralega stöðu hans. Notandinn verður einnig að athuga reglulega gögnin varðandi hann til að halda nákvæmni þeirra.\n\nNotandinn verður að gefa upp gilt netfang þar sem vefurinn sendir honum staðfestingu á skráningu sinni fyrir þjónustu sína. Ekki er hægt að nota netfang oftar en einu sinni til að skrá þig fyrir þjónustu í gegnum sama reikning. Aðeins ein skráning fyrir þjónustu þjónustu er leyfð á hvern einstakling. Notandanum er úthlutað auðkenni sem gerir honum kleift að fá aðgang að rými sem aðgangur er áskilinn fyrir, auk þess að slá inn lykilorð sitt. Auðkennið er einstakt fyrir hvern notanda, en þó er hægt að breyta lykilorðinu á netinu af notandanum í persónulegu rými hans.\nLykilorðið er persónulegt og trúnaðarmál, notandinn skuldbindur sig til að miðla því ekki til þriðja aðila. Varasjóður Piin í öllum tilvikum, möguleiki á að hafna beiðni um áskrift að þjónustunni ef notandi fer ekki eftir ákvæðum þessara almennu notkunarskilyrða.",
-    "2-UNSUBSCRIBE-d": "Skráði notandinn getur hvenær sem er óskað eftir afskráningu sinni með því að fara á sérstöku síðuna í sínu persónulega rými. Öll áskrift frá vefnum mun virka, eftir að notandinn hefur fyllt út eyðublaðið í þessu skyni, innan nánasta tímabils.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Notandanum er gert kunnugt um að ritstjórinn áskilur sér rétt til að eyða persónulegu rými hvers notanda sem brýtur í bága við notkunarskilmála og sérstaklega í eftirfarandi tilvikum:\n\n● Ef notandinn notar ólöglega notkun á síðunni\n● Ef notandinn við stofnun persónulegs rýmis, sendu sjálfviljug rangar upplýsingar á síðuna\n● Ef notandinn hefur ekki verið virkur á persónulegu rými sínu í að minnsta kosti 5 ár.\n\nDans þegar ritstjórinn ákveður að fjarlægja persónulegt rými notandans af einni af þessum ástæðum getur það ekki verið skaði fyrir notandann sem hefur verið eytt. Þessi eyðing felur ekki í sér afsal fyrir málsmeðferð sem útgefandinn getur farið gegn notandanum sem hefur brotið gegn þessum reglum.",
-    "About-plateform": "Espace-Piin’s Inc. er netmiðill sem býður upp á að miðstýra nokkrum virkni í honum á innsæi og ókeypis hátt fyrir notendur sína. Fyrir þetta er fjölmiðill vettvangur þar sem notendur geta spjallað og deilt efni með öðrum notendum. Það hýsir einnig aðgerð til að hlusta á tónlist stöðugt, svo að notendur þess geti sótt í sig gott andrúmsloft, hvort sem er aðstæðum og tíma. Espace-Piin’s Inc. hýsir einnig aðgerð til að horfa á myndbönd stöðugt til að skemmta og fræða notendur sína.",
-    "Access-&-nav-d": "Aðgangur að og notkun síðunnar er áskilinn fullorðnum. Útgefandinn mun hafa rétt til að biðja um sönnun á aldri notandans með hvaða hætti sem er. Ritstjórinn útfærir tæknilausnirnar sem hann hefur til að leyfa aðgang að síðunni allan sólarhringinn, 7 daga vikunnar. Hann getur engu að síður hvenær sem er stöðvað, takmarkað eða truflað aðgang að vefnum eða að tilteknum síðum þess til að halda áfram með uppfærslur, breytingar á efni þess eða aðrar aðgerðir sem talnar eru nauðsynlegar til að vefurinn virki rétt.\nTenging og flakk á vefsíðu Espace Piin fela í sér ósamþykkt samþykki fyrir þessum almennu notkunarskilyrðum, óháð tæknilegum aðgangsleiðum og skautanna sem notaðir eru. Þessar almennu notkunarskilmálar eiga við allar breytingar eða viðbyggingar á síðunni á núverandi eða framtíðar félagslegu og / eða samfélagsneti sem stjórnað er af Espace Piins Inc.",
-    "Confidentiality-d": "Til viðbótar þessum skilmálum og skilyrðum hefur vefurinn persónuverndarstefnu sem lýsir því hvernig unnið er með persónulegar upplýsingar þegar notandinn heimsækir síðuna og hvernig fótspor eru notuð. Með því að vafra um síðuna segist notandinn einnig hafa lesið ofangreinda persónuverndarstefnu.",
-    "Generality-d": "Allar aðferðir við aðgang að síðunni „www.espace-piins.com“ eru háðar þessari persónuverndarstefnu. Espace Piins Inc er ábyrgur fyrir persónulegum gögnum sem safnað er á pallinum. Þetta varðar notkun, geymslu, vernd og miðlun persónuupplýsinga þinna. Aðgangur að Espace Piins er algjörlega ókeypis og allar aðgerðir vettvangsins (nema birting auglýsinga) eru ekki gjaldfærðar.\nRitstjórinn áskilur sér rétt til að breyta, hvenær sem er og án fyrirvara, vefsíðunni og þjónustunni sem og þessum almennu notkunarskilyrðum, einkum til að laga sig að nýjum virkni eða eyða eða breyta núverandi virkni í þeim tilgangi að bæta pallur. Því er mælt með því að notandinn vísi í nýjustu útgáfuna af almennu notkunarskilmálunum fyrir hvaða flakk sem er aðgengilegt hvenær sem er á síðunni. Ef ágreiningur er um almennar notkunarskilyrði er ekki hægt að nota síðuna af notanda.",
-    "Hyperlinks-d": "Vefsíðan getur innihaldið hypertext tengla sem vísa á aðrar vefsíður sem Piin’s hefur ekki stjórn á. Þrátt fyrir fyrri og reglulegar sannprófanir sem útgefandinn hefur framkvæmt hafnar sá síðarnefndi allri ábyrgð á því efni sem hægt er að finna á þessum vefsvæðum. Útgefandinn heimilar stofnun hátextatengla á hvaða síðu eða skjal sem er á vefsíðu sinni að því tilskildu að stofnun þessara tengla sé ekki framkvæmd í viðskipta- eða auglýsingaskyni. Að auki eru fyrri upplýsingar útgefanda síðunnar nauðsynlegar áður en tengsl eru sett á hátexta. Eru útilokaðir frá þessum heimildarsíðum sem dreifa upplýsingum af ólöglegu, ofbeldisfullu, umdeildu, klámfengnu, útlendingahatur eða sem geta haft áhrif á næmi flestra.\nAð lokum áskilur Piin’s sér rétt til að láta eyða hypertextatengli sem vísar á vefsíðu sína hvenær sem er, ef vefsíðan telur að hún samræmist ekki ritstjórnarstefnu sinni. Ekki er mælt með öllum hátexta utan vettvangsins sem ekki er stungið upp á af vettvangsútgefanda.",
-    "Intellectual-property-d": "Uppbygging síðunnar en einnig textar, grafík, myndir, ljósmyndir, hljóð, myndskeið og tölvuforrit sem semja hana eru eign útgefandans og eru vernduð sem slík með gildandi lögum samkvæmt hugverkarétti.\n\nFjölföldun, aðlögun eða nýting að hluta eða öllu leyti á innihaldi, skráðum vörumerkjum og þjónustu sem boðið er upp á á síðunni, með hvaða hætti sem er, án skriflegs fyrirfram skriflegs leyfis útgefanda, er stranglega bönnuð og getur falið í sér fölsun í skilningi L. greina. 335-2 o.fl. hugverkalaga. Og þetta, að undanskildum þeim þáttum sem sérstaklega eru tilnefndir án réttinda á síðunni.\n\nAðgangur að síðunni felur ekki í sér viðurkenningu á rétti og veitir almennt ekki hugverkarétt sem tengist þætti á síðunni, sem er áfram einkarétt útgefandans. Notandanum er bannað að slá inn gögn á vefnum sem gætu breytt eða breytt efni eða útliti þess.",
-    "Our-plateforme": "Pallurinn okkar",
-    "Responsability-d": "Útgefandinn ber aðeins ábyrgð á því efni sem hann sjálfur hefur ritstýrt. Útgefandinn ber ekki ábyrgð á:\n\n● Komi upp vandamál eða tæknileg, upplýsingatæknileg eða bókhaldsleg bilun á vefnum með vélbúnað eða hugbúnað\n● Beint eða óbeint, efnislegt eða óverulegt, fyrirsjáanlegt eða ófyrirsjáanlegt tjón sem stafar af notkun eða erfiðleikum við að nota síðuna eða þjónustu hennar\n● Innri eiginleikar netsins, einkum þeir sem tengjast óáreiðanleika og skorti á öryggi upplýsinganna sem þar streyma fram\n● Ólöglegt efni eða athafnir sem nota vefsíðu þess án þess að það hafi fengið tilhlýðilega vitneskju um það í skilningi laganna varðandi vinnslu persónuupplýsinga.\n\nEnnfremur getur vefsvæðið ekki ábyrgst nákvæmni, fullkomleika og umtal þeirra upplýsinga sem þar er dreift.\n\nNotandinn ber ábyrgð á:\n● Verndun búnaðarins og meðferð hans á pallinum frá tæki sem ekki tilheyrir Espace Piins\n● Notkunin sem hann gerir á síðunni eða gögnum hennar\n● Ef það virðir ekki bókstafinn eða andann í þessum almennu notkunarskilyrðum.",
-    "Responsability-d-extra": "Með því að veita þjónustu til þjónustunnar veitir þú Piin um allan heim, ekki einkarétt, kóngafrítt, framseljanlegt undirleyfi sem framseljanlegt er til að nota þetta efni (þ.m.t. endurskapa, dreifa, útbúa afleidd verk, útbreiðslu og rekstur) í tengslum við þjónustuna og athafnirnar Piin (og eftirmenn þess og hlutdeildarfélaga), þar á meðal til að kynna og dreifa þjónustu að öllu leyti eða að hluta.",
-    "Site-management-d": "Fyrir rétta stjórnun vefsins getur útgefandinn hvenær sem er:\n\n● Stöðva, trufla eða takmarka aðgang að allri eða hluta síðunnar, áskilja sér aðgang að síðunni eða að ákveðnum hlutum síðunnar, að tilteknum flokki netnotenda.\n● Eyða öllum upplýsingum sem geta truflað starfsemi þeirra eða sem brjóta í bága við landslög eða alþjóðalög, eða reglur Netiquette.\n● Stöðva síðuna til að framkvæma uppfærslur. Allir lönganir til að breyta efni á vettvangi verða ekki til staðar á viðhaldstímabilinu.",
     "TITLE": {
-      "1-REGISTRATION": "1. SKRÁNING",
-      "2-UNSUBSCRIBE": "2. ÁSKRIFT",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. Eyðing persónulegs rýmis við frumkvæði útgefanda staðarins",
-      "Access-&-nav": "Aðgangur og leiðsögn",
-      "Confidentiality": "Trúnaður",
-      "Generality": "Almennt",
-      "Hyperlinks": "Hypertext tenglar",
-      "Intellectual-property": "Hugverk",
-      "Responsability": "Skyldur",
-      "Services": "Þjónusta",
-      "Site-management": "Stjórnun vefsvæða"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Auðkenni tónlistar þinnar"

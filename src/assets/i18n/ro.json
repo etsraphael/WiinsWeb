@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Nu te poți adăuga singur",
     "T-content-does-not-exist-anymore": "Acest conținut nu mai există",
     "T-publication-no-longer-exists": "Această publicație nu mai există",
-    "Could-not-play-video": "Nu s-a putut reda videoclipul"
+    "Could-not-play-video": "Nu s-a putut reda videoclipul",
+    "Please-type-yr-pseudo-or-mail": "Introduceți un pseudo sau o adresă de e-mail"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Fotografia este primită",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Ai deja un cont",
-    "ForgotPassword": "Am uitat parola",
     "Log-In": "Autentificare",
     "Login": "Autentificare",
     "Password-recovery": "Recuperare parola",
@@ -667,7 +667,33 @@
     "Create-yr-account": "Creeaza-ti contul",
     "Creating-yr-account": "Crearea contului dvs.",
     "Login-first-to-continue": "Conectați-vă mai întâi pentru a continua",
-    "Checking-yr-infos": "Verificarea informațiilor"
+    "Checking-yr-infos": "Verificarea informațiilor",
+    "Welcome-back": "bine ai revenit",
+    "Hello-wiinser": "Bună ziua Wiinser, conectați-vă pentru a continua!",
+    "Dont-have-an-account-?": "Nu ai un cont? Crearea unui cont",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Introduceți adresa de e-mail pentru a primi parola",
+    "Forgot-password-?": "Ai uitat parola?",
+    "I-forgot-my-password": "Am uitat parola",
+    "Forgot-password": "Parolă uitată",
+    "Email-adress-sent": "Adresa de e-mail trimisă",
+    "Checking-yr-mail": "Vă rugăm să verificați e-mailul. Nu ezitați să vă uitați în spam",
+    "Welcome": "bun venit",
+    "Hello-nice-to-meet-you-wiinser": "Bună ziua, Mă bucur să te cunosc Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Ultimul proiect",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Nume de utilizator",
     "Your-message": "Mesajul tau",
     "Confirm-your-password": "Confirmă parola",
-    "Password-not-matching": "Parolele nu se potrivesc"
+    "Password-not-matching": "Parolele nu se potrivesc",
+    "Enter-yr-username-or-mail-adresse": "Introduceți numele de utilizator sau adresa de e-mail",
+    "Enter-yr-password": "Introduceți parola",
+    "Enter-yr-mail": "Introduceți e-mailul",
+    "Enter-yr-username": "Introduceți numele de utilizator"
   },
   "PLEASE": {
     "Password": "Va rugam sa introduceti parola"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Confirmarea noii parole",
       "Edit-t-password": "Schimbați parola",
-      "Erorr-password-different": "Parolele sunt diferite",
       "Error-min-5-char": "Noua parolă trebuie să conțină cel puțin 5 caractere",
       "New-password": "Parolă Nouă",
       "New-password-r": "Este necesară o nouă parolă",
       "Old-password": "Parola veche",
       "Old-password-is-invalid": "Parola veche nu este validă",
       "Old-password-r": "Este necesară o parolă veche",
-      "Setting-password": "Modificare parolă"
+      "Setting-password": "Modificare parolă",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Parolele sunt diferite"
     },
     "profile": {
       "Edit-t-profile": "Editeaza-ti profilul",
@@ -980,32 +1011,44 @@
     "Better-reference": "O referință mai bună"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Accesul la anumite servicii este supus înregistrării utilizatorului. Înregistrarea și accesul la serviciile site-ului sunt rezervate exclusiv persoanelor fizice capabile, care au completat și validat formularul de înregistrare disponibil online pe site-ul Piin, precum și aceste Condiții generale de utilizare. la înregistrare, utilizatorul se obligă să furnizeze informații exacte, sincere și actualizate despre persoana sa și starea sa civilă. De asemenea, utilizatorul va trebui să verifice în mod regulat datele care îl privesc pentru a-și păstra acuratețea.\n\nUtilizatorul trebuie să furnizeze în mod imperativ o adresă de e-mail validă, pe care site-ul să-i trimită o confirmare a înregistrării sale pentru serviciile sale. O adresă de e-mail nu poate fi utilizată de mai multe ori pentru a vă înregistra pentru servicii prin același cont. Este permisă o singură înregistrare pentru serviciile site-ului pe persoană fizică. Utilizatorului i se atribuie un identificator care să îi permită să acceseze un spațiu în care este rezervat accesul, pe lângă introducerea parolei sale. Identificatorul este unic pentru fiecare utilizator, cu toate acestea parola poate fi schimbată online de către utilizator în spațiul său personal.\nParola este personală și confidențială, utilizatorul se obligă să nu o comunice terților. Piin’s își rezervă în orice caz posibilitatea de a refuza o cerere de abonamente la servicii în cazul nerespectării de către utilizator a prevederilor acestor Condiții generale de utilizare.",
-    "2-UNSUBSCRIBE-d": "Utilizatorul înregistrat își poate solicita în orice moment dezabonarea accesând pagina dedicată din spațiul său personal. Orice dezabonare de pe site va fi efectivă, după ce utilizatorul a completat formularul furnizat în acest scop, în perioada imediată.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Utilizatorului i se spune că editorul își rezervă dreptul de a șterge spațiul personal al oricărui utilizator care încalcă condițiile de utilizare și în special în următoarele cazuri:\n\n● Dacă utilizatorul face o utilizare ilegală a site-ului\n● Dacă utilizatorul în timpul creării spațiului personal, transmite în mod voluntar informații incorecte către site\n● Dacă utilizatorul nu a fost activ pe spațiul său personal de cel puțin 5 ani.\n\nÎn cazul în care editorul decide să elimine spațiul personal al utilizatorului din unul dintre aceste motive, acesta nu poate constitui un prejudiciu pentru utilizatorul al cărui cont a fost șters. Această ștergere nu constituie o renunțare la procedurile legale pe care editorul le poate lua împotriva utilizatorului care a încălcat aceste reguli.",
-    "About-plateform": "Espace-Piin’s Inc. este un media online care oferă centralizarea mai multor funcționalități într-un mod intuitiv și gratuit pentru utilizatorii săi. Pentru aceasta, mass-media este o platformă în care utilizatorii pot conversa prin chat și partaja conținut cu alți utilizatori. De asemenea, găzduiește o funcție de a asculta muzică continuu, astfel încât utilizatorii săi să poată absorbi o atmosferă bună indiferent de situație și de timp. Espace-Piin’s Inc. găzduiește, de asemenea, o funcție de vizionare continuă a videoclipurilor pentru a distra și educa utilizatorii săi.",
-    "Access-&-nav-d": "Accesul și utilizarea site-ului sunt rezervate adulților. Editorul va avea dreptul de a solicita dovada vârstei utilizatorului prin orice mijloace. Editorul implementează soluțiile tehnice de care dispune pentru a permite accesul la site 24 de ore pe zi, 7 zile pe săptămână. Cu toate acestea, el poate suspenda, limita sau întrerupe în orice moment accesul la site sau la anumite pagini ale acestuia pentru a continua cu actualizări, modificări ale conținutului sau orice alte acțiuni considerate necesare pentru buna funcționare a site-ului.\nConexiunea și navigarea pe site-ul Espace Piin constituie acceptarea fără rezerve a acestor Condiții generale de utilizare, indiferent de mijloacele tehnice de acces și de terminalele utilizate. Aceste Condiții generale de utilizare se aplică oricărei variații sau extensii a site-ului pe rețelele sociale și / sau comunitare existente sau viitoare administrate de Espace Piins Inc.",
-    "Confidentiality-d": "În plus față de acești Termeni și condiții, site-ul are o politică de confidențialitate care descrie modul în care datele personale sunt procesate atunci când utilizatorul vizitează site-ul și modul în care sunt utilizate cookie-urile. Navigând pe site, utilizatorul susține, de asemenea, că a citit politica de confidențialitate de mai sus.",
-    "Generality-d": "Toate metodele de acces la site-ul „www.espace-piins.com” sunt supuse acestei politici de confidențialitate. Espace Piins Inc este responsabil pentru datele personale colectate pe platformă. Aceasta se referă la utilizarea, stocarea, protecția și difuzarea informațiilor dvs. personale. Accesul la Espace Piins este complet gratuit și toate funcțiile platformei (cu excepția publicării publicității) nu sunt facturate.\nEditorul își rezervă dreptul de a modifica, în orice moment și fără notificare prealabilă, site-ul și serviciile, precum și aceste Condiții generale de utilizare, în special pentru a se adapta la noile funcționalități sau la ștergerea sau modificarea funcționalităților existente în scopul îmbunătățirii platformă. Prin urmare, se recomandă ca utilizatorul să se refere la cea mai recentă versiune a Condițiilor generale de utilizare înainte de orice navigare, accesibilă în orice moment pe site. În caz de dezacord cu Condițiile generale de utilizare, utilizatorul nu poate face nicio utilizare a site-ului.",
-    "Hyperlinks-d": "Site-ul poate conține linkuri hipertext care indică alte site-uri web asupra cărora Piin’s nu are control. În ciuda verificărilor periodice și periodice efectuate de editor, acesta din urmă își declină orice responsabilitate pentru conținutul pe care este posibil să îl găsiți pe aceste site-uri. Editorul autorizează stabilirea de legături hipertext către orice pagină sau document al site-ului său, cu condiția ca stabilirea acestor legături să nu fie efectuată în scopuri comerciale sau publicitare. În plus, informațiile prealabile ale editorului site-ului sunt necesare înainte de orice stabilire a linkului hipertext. Sunt excluse din această autorizare site-urile care diseminează informații cu caracter ilegal, violent, controversat, pornografic, xenofob sau care pot afecta sensibilitatea celui mai mare număr.\nÎn cele din urmă, Piin’s își rezervă dreptul de a șterge în orice moment un link hipertext care indică site-ul său, dacă site-ul consideră că nu respectă politica sa editorială. Nu este recomandat niciun hipertext extern platformei care nu este sugerat de editorul platformei.",
-    "Intellectual-property-d": "Structura site-ului dar și textele, grafica, imaginile, fotografiile, sunetele, videoclipurile și aplicațiile informatice care îl compun sunt proprietatea editorului și sunt protejate ca atare de legile în vigoare în temeiul proprietății intelectuale.\n\nReproducerea, adaptarea sau exploatarea parțială sau totală a conținutului, mărcilor înregistrate și a serviciilor oferite de site, prin orice proces, fără autorizarea expresă prealabilă scrisă a editorului, sunt strict interzise și pot constitui contrafacere în sensul articolelor L. 335-2 și urm. din Codul de proprietate intelectuală. Și aceasta, cu excepția elementelor desemnate în mod expres drept libere de drepturi pe site.\n\nAccesul la site nu constituie recunoașterea unui drept și, în general, nu conferă niciun drept de proprietate intelectuală referitor la un element al site-ului, care rămâne proprietatea exclusivă a editorului. Utilizatorului i se interzice să introducă date pe site care ar putea modifica sau care i-ar putea modifica conținutul sau aspectul.",
-    "Our-plateforme": "Platforma noastră",
-    "Responsability-d": "Editorul este responsabil doar de conținutul pe care el însuși l-a editat. Editorul nu este responsabil pentru:\n\n● În caz de probleme sau defecțiuni tehnice, IT sau contabile ale site-ului cu orice hardware sau software\n● Daune directe sau indirecte, materiale sau imateriale, previzibile sau imprevizibile rezultate din utilizarea sau dificultățile de utilizare a site-ului sau a serviciilor sale\n● Caracteristicile intrinseci ale internetului, în special cele referitoare la fiabilitatea și lipsa de securitate a informațiilor care circulă acolo\n● Conținut sau activități ilegale care utilizează site-ul său fără ca acesta să fi luat la cunoștință în mod corespunzător în sensul legii cu privire la prelucrarea datelor cu caracter personal.\n\nÎn plus, site-ul nu poate garanta acuratețea, exhaustivitatea și actualitatea informațiilor diseminate acolo.\n\nUtilizatorul este responsabil pentru:\n● Protecția echipamentului său și manipularea acestuia pe platformă de la un dispozitiv care nu aparține lui Espace Piins\n● Utilizarea pe care o face de site sau de datele sale\n● Dacă nu respectă litera sau spiritul acestor condiții generale de utilizare.",
-    "Responsability-d-extra": "Prin furnizarea de conținut pentru serviciu, acordați lui Piin o sublicență mondială, neexclusivă, fără redevențe, transferabilă pentru a utiliza acest conținut (inclusiv reproducerea, distribuirea, pregătirea lucrărilor derivate, răspândirea și rularea) în legătură cu serviciul și activitățile Piin's (și succesorii și afiliații săi), inclusiv pentru promovarea și redistribuirea Serviciului în totalitate sau parțial.",
-    "Site-management-d": "Pentru gestionarea corectă a site-ului, editorul poate în orice moment:\n\n● Suspendați, întrerupeți sau limitați accesul la tot sau la o parte din site, rezervați accesul la site sau la anumite părți ale site-ului, la o anumită categorie de utilizatori de Internet.\n● Ștergeți toate informațiile care ar putea perturba funcționarea sa sau care contravin legilor naționale sau internaționale sau regulilor Netiquette.\n● Suspendați site-ul pentru a efectua actualizări. Orice dorință de modificare a conținutului de pe platformă nu va fi disponibilă în perioadele de întreținere.",
     "TITLE": {
-      "1-REGISTRATION": "1. ÎNREGISTRARE",
-      "2-UNSUBSCRIBE": "2. DESCRIERE",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. ȘTERGEREA SPATIULUI PERSONAL LA INIȚIATIVA EDITORULUI SITE-ULUI",
-      "Access-&-nav": "Acces și navigare",
-      "Confidentiality": "Confidențialitate",
-      "Generality": "Generalități",
-      "Hyperlinks": "Linkuri hipertext",
-      "Intellectual-property": "Proprietate intelectuală",
-      "Responsability": "Responsabilități",
-      "Services": "Servicii",
-      "Site-management": "Managementul site-ului"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Identificatorul dvs. de muzică"

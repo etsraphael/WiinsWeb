@@ -1,0 +1,20 @@
+@import 'src/assets/scss/component/login-register.scss';
+@import 'src/app/sign/sign.component.scss';
+
+img.stripe {
+    border-radius: 15px;
+}
+
+button:disabled {
+    background: linear-gradient(45deg, #acacac, #777777, #666666) !important;
+  }
+
+  a {
+      font-size: 18px;
+      font-weight: 300;
+  }
+
+  .externLink {
+      background-color: #f6f7fa;
+      border-radius: 15px;
+  }
