@@ -1,6 +1,5 @@
       <!-- Account activated -->
-      <!-- ***WARNING Change this *ngIf="true" to *ngIf="profileReceived == 'profileReceived'" after you are done-->
-        <div *ngIf="true">
+        <div *ngIf="profileReceived == 'profileReceived'">
           <div class="mb-5 connexionIn">
             <div class="col d-flex align-items-baseline py-3">
               <h2 class="my-auto">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</h2>
@@ -11,7 +10,7 @@
                 <p>{{ 'LOGIN-REGISTRER.Hello-wiinser' | translate }}</p>
               </div>
                 <div class="col justify-content-center d-flex"> 
-                  <img class="checked mb-4" src="assets/img/checked.png" alt="Mail Sent">
+                  <img class="checked mb-4" src="assets/img/checked.svg" alt="Mail Sent">
                 </div>
                 <p class="mx-auto text-center">{{ 'LOGIN-REGISTRER.Inscription-successful' | translate }}</p>
                 <span class="mt-5 d-flex justify-content-center" (click)="navigateToSign()">

@@ -126,7 +126,7 @@
   </div>
 </div> -->
 
-<div class="inscriptionIn mb-5" *ngIf="true">
+<div class="inscriptionIn mb-5" *ngIf="!(loading$|async)">
   <div class="col d-flex align-items-baseline py-3">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" [routerLink]="['../']"
       class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
@@ -163,8 +163,7 @@
         </span>
       </div>
       <div class="col d-flex flex-column">
-        <label for="validationPassword" class="form-label">{{'PLACEHOLDER.Your-Password'| translate}}</label>
-        <!--NgClasse must be in this div (inputpwrd)-->
+        <label class="form-label">{{'PLACEHOLDER.Your-Password'| translate}}</label>
         <div class="inputpwrd d-flex"  [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
         <input [type]="changeTypePswd" class="inputPassword w-100 pl-3 p-3" formControlName="password1" placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
         <span (click)="toggleShow()" class="material-icons d-flex align-items-center"> {{show ? 'visibility' : 'visibility_off'}}</span>
@@ -175,8 +174,7 @@
         <span class="messagePassword mt-4"></span>
       </div>
       <div class="col d-flex flex-column mb-3">
-        <label for="validationConfirmPassword" class="form-label">{{'PLACEHOLDER.Confirm-your-password'| translate}}</label>
-        <!--NgClasse must be in this div (inputpwrd)-->
+        <label class="form-label">{{'PLACEHOLDER.Confirm-your-password'| translate}}</label>
         <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
         <input [type]="changeTypeConfirmPswd" class="inputPassword w-100 pl-3 p-3" formControlName="password2"
           id="validationConfirmPassword" placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
@@ -195,6 +193,16 @@
       </div>
       <button class="creatNow d-flex justify-content-center mt-4 mx-auto mb-5 py-3" type="submit" (click)="onSubmit()">{{'LOGIN-REGISTRER.Create-yr-account'| translate}}</button>
     </form>
-    <span class="mt-5 d-flex justify-content-center" [routerLink]="['/sign/confirmation/:id']">Go to Confirmation Account</span>
+  </div>
+</div>
+
+<div *ngIf="(loading$|async)" class="loading-container d-flex justify-content-center align-items-center">
+  <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
   </div>
 </div>

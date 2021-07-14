@@ -4,9 +4,10 @@
 
 .loading-container {
     .sk-chase {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         position: relative;
+        top: 12em;
         animation: sk-chase 2.5s infinite linear both;
       }
       
@@ -24,7 +25,7 @@
         display: block;
         width: 25%;
         height: 25%;
-        background-color: #fff;
+        background-color: white;
         border-radius: 100%;
         animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
       }
