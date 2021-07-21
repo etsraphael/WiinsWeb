@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Du kan ikke legge deg til",
     "T-content-does-not-exist-anymore": "Dette innholdet eksisterer ikke lenger",
     "T-publication-no-longer-exists": "Denne publikasjonen eksisterer ikke lenger",
-    "Could-not-play-video": "Kunne ikke spille av video"
+    "Could-not-play-video": "Kunne ikke spille av video",
+    "Please-type-yr-pseudo-or-mail": "Skriv inn en pseudo- eller e-postadresse"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Bildet er mottatt",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Har du allerede en konto",
-    "ForgotPassword": "jeg glemte passordet mitt",
     "Log-In": "Logg Inn",
     "Login": "Logg Inn",
     "Password-recovery": "Passordgjenoppretting",
@@ -667,7 +667,33 @@
     "Create-yr-account": "lag din konto",
     "Creating-yr-account": "Opprette kontoen din",
     "Login-first-to-continue": "Logg inn først for å fortsette",
-    "Checking-yr-infos": "Kontrollerer informasjonen din"
+    "Checking-yr-infos": "Kontrollerer informasjonen din",
+    "Welcome-back": "velkommen tilbake",
+    "Hello-wiinser": "Hei Wiinser, logg inn for å fortsette!",
+    "Dont-have-an-account-?": "Har du ikke en konto? Opprette en konto",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Skriv inn e-postadressen din for å motta passordet ditt",
+    "Forgot-password-?": "Glemt passord?",
+    "I-forgot-my-password": "jeg glemte passordet mitt",
+    "Forgot-password": "Glemt passord",
+    "Email-adress-sent": "E-postadresse sendt",
+    "Checking-yr-mail": "Vennligst sjekk e-posten din. Ikke nøl med å se i spam",
+    "Welcome": "velkommen",
+    "Hello-nice-to-meet-you-wiinser": "Hei, hyggelig å møte deg Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Siste prosjekt",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Ditt brukernavn",
     "Your-message": "Din beskjed",
     "Confirm-your-password": "Bekreft passordet ditt",
-    "Password-not-matching": "Passordene samsvarer ikke"
+    "Password-not-matching": "Passordene samsvarer ikke",
+    "Enter-yr-username-or-mail-adresse": "Skriv inn brukernavn eller e-postadresse",
+    "Enter-yr-password": "Skriv inn passordet ditt",
+    "Enter-yr-mail": "Skriv inn e-postadressen din",
+    "Enter-yr-username": "Skriv inn brukernavnet ditt"
   },
   "PLEASE": {
     "Password": "Vennligst skriv inn passordet ditt"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Bekreftelse av nytt passord",
       "Edit-t-password": "Endre passordet",
-      "Erorr-password-different": "Passord er forskjellige",
       "Error-min-5-char": "Det nye passordet må inneholde minst 5 tegn",
       "New-password": "Nytt passord",
       "New-password-r": "Nytt passord kreves",
       "Old-password": "Gammelt passord",
       "Old-password-is-invalid": "Det gamle passordet er ugyldig",
       "Old-password-r": "Gammelt passord kreves",
-      "Setting-password": "Passordendring"
+      "Setting-password": "Passordendring",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Passord er forskjellige"
     },
     "profile": {
       "Edit-t-profile": "Rediger profilen din",
@@ -980,32 +1011,44 @@
     "Better-reference": "Bedre referanse"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Tilgang til visse tjenester er underlagt brukerregistrering. Registrering og tilgang til nettstedets tjenester er eksklusivt forbeholdt dyktige fysiske personer, som har fylt ut og validert registreringsskjemaet som er tilgjengelig online på Piins nettsted, samt disse generelle bruksvilkårene. registrering, forplikter brukeren seg til å gi nøyaktig, oppriktig og oppdatert informasjon om sin person og hans sivile status. Brukeren må også regelmessig sjekke dataene om ham for å beholde nøyaktigheten.\n\nBrukeren må absolutt oppgi en gyldig e-postadresse, der siden vil sende ham en bekreftelse på at han er registrert for sine tjenester. En e-postadresse kan ikke brukes mer enn én gang for å registrere deg for tjenester via samme konto. Bare en registrering for tjenestene på stedet er tillatt per fysisk person. Brukeren tildeles en identifikator som tillater ham å få tilgang til et område der tilgang er reservert, i tillegg til å oppgi passordet. Identifikatoren er unik for hver bruker, men passordet kan endres online av brukeren i hans personlige rom.\nPassordet er personlig og konfidensielt, brukeren forplikter seg til ikke å kommunisere det til tredjepart. Piins reserver forbeholder seg under alle omstendigheter muligheten for å avvise en forespørsel om abonnement på tjenestene i tilfelle brukeren ikke overholder bestemmelsene i disse generelle bruksbetingelsene.",
-    "2-UNSUBSCRIBE-d": "Den registrerte brukeren kan når som helst be om avmelding ved å gå til den dedikerte siden i deres personlige rom. Eventuell oppmelding fra nettstedet vil tre i kraft, etter at brukeren har fylt ut skjemaet som er gitt for dette formålet, innen den umiddelbare perioden.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Det blir gjort kjent for brukeren at redaktøren forbeholder seg retten til å slette den personlige plassen til enhver bruker som bryter bruksvilkårene, og spesielt i følgende tilfeller:\n\n● Hvis brukeren ulovlig bruker nettstedet\n● Hvis brukeren under oppretting av personlig plass, frivillig overføre feil informasjon til nettstedet\n● Hvis brukeren ikke har vært aktiv på sitt personlige rom i minst 5 år.\n\nI tilfeller der redaktøren bestemmer seg for å fjerne brukerens personlige plass av en av disse grunnene, kan det ikke utgjøre en skade for brukeren hvis konto er slettet. Denne slettingen utgjør ikke et frafall av rettslige prosedyrer som utgiveren kan ta mot brukeren som har brutt disse reglene.",
-    "About-plateform": "Espace-Piin’s Inc. er et online media som tilbyr å sentralisere flere funksjoner i det på en intuitiv og gratis måte for brukerne. For dette er media en plattform der brukere kan chatte og dele innhold med andre brukere. Det er også vert for en funksjon for å lytte til musikk kontinuerlig, slik at brukerne kan suge opp en god atmosfære uansett situasjon og tid. Espace-Piin’s Inc. er også vert for en funksjon for kontinuerlig å se på videoer for å underholde og utdanne brukerne.",
-    "Access-&-nav-d": "Tilgang til og bruk av nettstedet er forbeholdt voksne. Utgiveren vil ha rett til å be om bevis på brukerens alder på noen måte. Redaktøren implementerer de tekniske løsningene han har til rådighet for å gi tilgang til nettstedet 24 timer i døgnet, 7 dager i uken. Han kan likevel når som helst suspendere, begrense eller avbryte tilgangen til nettstedet eller til visse sider av dette for å fortsette med oppdateringer, modifikasjoner av innholdet eller andre handlinger som anses nødvendige for at nettstedet skal fungere korrekt.\nTilkobling og navigering på Espace Piins nettsted utgjør uforbeholden aksept av disse generelle bruksvilkårene, uansett hvilket teknisk tilgangsmiddel og terminaler som brukes. Disse generelle bruksbetingelsene gjelder enhver variasjon eller utvidelse av nettstedet på eksisterende eller fremtidige sosiale og / eller fellesskapsnettverk som administreres av Espace Piins Inc.",
-    "Confidentiality-d": "I tillegg til disse vilkårene har nettstedet en personvernpolicy som beskriver hvordan personopplysninger behandles når brukeren besøker nettstedet og hvordan informasjonskapsler brukes. Ved å surfe på nettstedet, hevder brukeren også å ha lest personvernreglene ovenfor.",
-    "Generality-d": "Alle tilgangsmetoder til nettstedet \"www.espace-piins.com\" er underlagt denne personvernpolicyen. Espace Piins Inc er ansvarlig for personopplysningene som samles inn på plattformen. Dette gjelder bruk, lagring, beskyttelse og formidling av din personlige informasjon. Tilgang til Espace Piins er helt gratis, og alle funksjonene til plattformen (bortsett fra publisering av reklame) blir ikke fakturert.\nRedaktøren forbeholder seg retten til å endre, når som helst og uten varsel, nettstedet og tjenestene samt disse generelle bruksvilkårene, spesielt for å tilpasse seg nye funksjoner eller sletting eller modifisering av eksisterende funksjoner med det formål å forbedre plattform. Det anbefales derfor at brukeren henviser til den nyeste versjonen av de generelle bruksvilkårene før navigering, tilgjengelig når som helst på nettstedet. I tilfelle uenighet med de generelle bruksvilkårene, kan brukeren ikke bruke nettstedet.",
-    "Hyperlinks-d": "Nettstedet kan inneholde hypertekstlenker som peker til andre nettsteder som Piin’s ikke har noen kontroll over. Til tross for tidligere og regelmessige verifikasjoner utført av utgiveren, avviser sistnevnte alt ansvar for innholdet som det er mulig å finne på disse nettstedene. Forlaget godkjenner etablering av hypertekstlenker til en hvilken som helst side eller et dokument på nettstedet hans, forutsatt at etableringen av disse koblingene ikke utføres for kommersielle eller reklameformål. I tillegg er forhåndsinformasjonen fra utgiveren av nettstedet nødvendig før det opprettes hypertekstlink. Er ekskludert fra denne autorisasjonsnettstedet som sprer informasjon av ulovlig, voldelig, kontroversiell, pornografisk, fremmedfrykt karakter eller som kan påvirke følsomheten til flest mulig.\nTil slutt forbeholder Piin’s seg retten til å når som helst slette en hypertekstlink som peker til nettstedet, hvis nettstedet mener at det ikke overholder redaksjonens policy. All hypertekst utenfor plattformen som ikke er foreslått av plattformutgiveren anbefales ikke.",
-    "Intellectual-property-d": "Strukturen på nettstedet, men også tekstene, grafikk, bilder, fotografier, lyder, videoer og dataprogrammer som komponerer det, tilhører utgiveren og er beskyttet som sådan av lovene som er i kraft under immateriell eiendom.\n\nReproduksjon, tilpasning eller delvis eller fullstendig utnyttelse av innholdet, registrerte varemerker og tjenester som tilbys av nettstedet, uansett prosess, uten uttrykkelig skriftlig forhåndsgodkjenning fra forlaget, er strengt forbudt og kan utgjøre forfalskning i henhold til artiklene L. 335-2 ff. av intellektuell eiendomsregel. Og dette, med unntak av elementene som uttrykkelig er utpekt som fri for rettigheter på nettstedet.\n\nTilgang til nettstedet utgjør ikke anerkjennelse av en rettighet og gir generelt ikke noen immaterielle rettigheter knyttet til et element på nettstedet, som forblir utgiverens eksklusive eiendom. Det er forbudt for brukeren å legge inn data på nettstedet som vil endre eller som kan endre innholdet eller utseendet.",
-    "Our-plateforme": "Vår plattform",
-    "Responsability-d": "Forlaget er kun ansvarlig for innholdet som han selv har redigert. Forlaget er ikke ansvarlig for:\n\n● I tilfelle problemer eller tekniske, IT- eller regnskapsfeil på nettstedet med maskinvare eller programvare\n● Direkte eller indirekte, materiell eller immateriell, forutsigbar eller uforutsigbar skade som skyldes bruk eller vanskeligheter med å bruke nettstedet eller dets tjenester\n● Internets karakteristiske egenskaper, særlig de som er pålitelige og manglende sikkerhet for informasjonen som sirkulerer der\n● Ulovlig innhold eller aktiviteter som bruker nettstedet, uten at det er blitt behørig kjent med det i lovens forstand med hensyn til behandling av personopplysninger.\n\nVidere kan nettstedet ikke garantere nøyaktigheten, fullstendigheten og aktualiteten til informasjonen som blir spredt der.\n\nBrukeren er ansvarlig for:\n● Beskyttelse av utstyret og manipulering på plattformen mot en enhet som ikke tilhører Espace Piins\n● Bruken han gjør av nettstedet eller dets data\n● Hvis den ikke respekterer bokstaven eller ånden i disse generelle bruksbetingelsene.",
-    "Responsability-d-extra": "Ved å tilby innhold til tjenesten gir du Piin en verdensomspennende, ikke-eksklusiv, royaltyfri, overførbar underlisens som kan overføres til å bruke dette innholdet (inkludert reprodusere, distribuere, utarbeide avledede verk, spredning og kjøring) i forbindelse med tjenesten og aktivitetene Piins (og dets etterfølgere og tilknyttede selskaper), inkludert for å markedsføre og distribuere Service helt eller delvis.",
-    "Site-management-d": "For riktig administrasjon av nettstedet kan utgiveren når som helst:\n\n● Suspendere, avbryte eller begrense tilgangen til hele eller deler av nettstedet, reservere tilgang til nettstedet eller til visse deler av nettstedet, til en bestemt kategori av Internett-brukere.\n● Slett all informasjon som kan forstyrre driften av den, eller som bryter med nasjonale eller internasjonale lover, eller reglene i Netiquette.\n● Suspender nettstedet for å utføre oppdateringer. Ethvert ønske om å endre innhold på plattformen vil ikke være tilgjengelig i vedlikeholdsperioder.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRERING",
-      "2-UNSUBSCRIBE": "2. PÅMELDING",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. SLETTING AV PERSONLIGT RUM PÅ INITIATIVET FOR STEDSUTGIVEREN",
-      "Access-&-nav": "Tilgang og navigering",
-      "Confidentiality": "konfidensialitet",
-      "Generality": "Generelt",
-      "Hyperlinks": "Hypertekstlenker",
-      "Intellectual-property": "Åndsverk",
-      "Responsability": "Ansvar",
-      "Services": "Tjenester",
-      "Site-management": "Webområdeadministrasjon"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Musikkidentifikatoren din"

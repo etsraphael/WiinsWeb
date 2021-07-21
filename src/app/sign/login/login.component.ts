@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   loading$: Observable<boolean>
   profileLoading$: Observable<boolean>
 
+  //Password 
+  show: boolean = false;
+  changeTypePswd: string = 'password';
+
   constructor(
     private store$: Store<RootStoreState.State>,
     private formBuilder: FormBuilder,
@@ -109,5 +113,14 @@ export class LoginComponent implements OnInit, OnDestroy {
     // unsubscribe all var
     if (this.errorSubscription) this.errorSubscription.unsubscribe()
   }
+
+  toggleShow(): void {
+  this.show = !this.show;
+  if(this.show){
+    this.changeTypePswd = 'text';
+  } else {
+    this.changeTypePswd = 'password';
+  }
+}
 
 }

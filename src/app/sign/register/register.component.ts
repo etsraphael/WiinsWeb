@@ -38,6 +38,12 @@ export class RegisterComponent implements OnInit, OnDestroy {
   // subscription
   userErrorSubscription: Subscription
 
+  // Password & COnfirm Password
+  show: boolean = false;
+  confirmShow: boolean = false;
+  changeTypePswd: string = 'password';
+  changeTypeConfirmPswd: string = 'password';
+
   constructor(
     private formBuilder: FormBuilder,
     public translate: TranslateService,
@@ -171,7 +177,27 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   openTOU() {
     // open the modal for the term of use
-    this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-7', 'col-sm-12', 'col-12'] })
+    this.dialog.open(ModalTOUComponent, { panelClass: ['col-md-10', 'col-sm-12', 'col-12'] })
   }
+
+  toggleShow(): void {
+  this.show = !this.show;
+  if(this.show){
+    this.changeTypePswd = 'text';
+  } else {
+    this.changeTypePswd = 'password';
+  }
+}
+
+  toggleConfirmShow(): void {
+  this.confirmShow = !this.confirmShow;
+  if(this.confirmShow){
+    this.changeTypeConfirmPswd = 'text';
+  } else {
+    this.changeTypeConfirmPswd = 'password';
+  }
+}
+
+
 
 }

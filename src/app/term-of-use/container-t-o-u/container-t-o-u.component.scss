@@ -1,6 +1,4 @@
-.container-scroll {
-  overflow-y: scroll;
-}
+
 
 .container-page {
   height: calc(100% - 4rem);
@@ -9,9 +7,10 @@
 .container-description-section {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   overflow-y: scroll;
+  height: 57vh;
 
   h1 {
-    color: #9d66e4;
+    color: #002354;
   }
 
   span {
@@ -22,6 +21,8 @@
 }
 
 .container-title {
+  overflow-y: scroll;
+  height: 57vh;
   .title {
     font-size: 1.2rem;
     font-weight: 500;
@@ -38,7 +39,11 @@
 
 .container-main-title {
   span {
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #002354;
+    text-align: center;
   }
 }
 
@@ -48,4 +53,8 @@
 
 .container-description-section h2 {
   color: #de6b9a;
+}
+
+span.temporary {
+font-style: italic;
 }

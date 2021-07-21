@@ -28,8 +28,9 @@ export class RegisterConfirmationComponent implements OnInit, OnDestroy {
     private translate: TranslateService
   ) { }
 
+  
   ngOnInit() {
-
+/*
     // get the id in the url
     this.idConfirm = this.route.snapshot.paramMap.get('id');
 
@@ -52,7 +53,7 @@ export class RegisterConfirmationComponent implements OnInit, OnDestroy {
           this.translate.instant('ERROR-MESSAGE.A-err-has-occurred'), null,
           { horizontalPosition: 'center', verticalPosition: 'bottom', duration: 5000 }
         )
-      })
+      })*/
   }
 
   navigateToSign() {

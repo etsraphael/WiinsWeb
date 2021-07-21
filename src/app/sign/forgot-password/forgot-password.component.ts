@@ -6,6 +6,7 @@ import { SettingUserService } from 'src/app/core/services/setting-user/setting-u
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-password',
@@ -25,8 +26,11 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   loading = false
   stateLogin = 'default'
 
+  confirmationSended = false
+
   constructor(
     private formBuilder: FormBuilder,
+    private router: Router,
     private _snackBar: MatSnackBar,
     private translate: TranslateService,
     private settingUserService: SettingUserService
@@ -41,11 +45,13 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
   }
 
+  get f() { return this.emailForm.controls; }
+
   onSubmit() {
 
     // check if the mail is valid
     if (this.emailForm.invalid) return this.invalidMessageAlert()
-    this.loading = true
+    this.loading = false
 
     // send the request
     this.passwordSub = this.settingUserService.resetPasswordEmail(this.emailForm.get('email').value)
@@ -53,14 +59,15 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
       .subscribe(
         () => {
           this.emailSended = true
-          this.loading = false
+          this.loading = true
+          setTimeout(() => { this.loading = false }, 3000);
+          setTimeout(() => { this.confirmationSended = true }, 3000);
         },
         error => {
           if (error == 'address_invalid') return this.invalidMessageAlert()
           else this.loading = false
         }
       )
-
   }
 
   invalidMessageAlert(): | MatSnackBarRef<SimpleSnackBar> {
