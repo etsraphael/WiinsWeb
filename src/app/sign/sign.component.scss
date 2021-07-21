@@ -159,3 +159,9 @@ button:disabled {
   top: 1rem;
   right: 5rem;
 }
+
+::ng-deep {
+  .container-footer-sign .mat-select-arrow {
+    color: white !important;
+  }
+}
