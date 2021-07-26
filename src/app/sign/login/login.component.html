@@ -1,5 +1,5 @@
 <!-- Card -->
-<div class="container container-form">
+<div class="container container-form" *ngIf="false">
   <div class="row mx-0 container-title">
     <h1 class="display-3">{{ 'LOGIN-REGISTRER.Login' | translate}}</h1>
   </div>
@@ -48,5 +48,54 @@
         <span class="text-white">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</span>
       </button>
     </div>
+  </div>
+</div>
+
+<div *ngIf="!(loading$|async)">
+  <div class="connexionIn">
+    <div class="col d-flex align-items-baseline py-3">
+      <svg [routerLink]="['../']" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+      </svg>
+      <h2 class="my-auto">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</h2>
+    </div>
+    <form [formGroup]="loginForm" class="signIn bg-white d-flex flex-column justify-content-center">
+      <div class="col mb-3">
+        <h1>{{ 'LOGIN-REGISTRER.Welcome-back' | translate }}</h1>
+        <p>{{ 'LOGIN-REGISTRER.Hello-wiinser' | translate }}</p>
+      </div>
+      <div class="col">
+        <p>{{ 'LOGIN-REGISTRER.PseudoOrEmail' | translate }}</p>
+        <input formControlName="email" class="inputPseudo w-100 pl-3 p-3" type="text" [ngClass]="{'input-invalid': f.email.errors && f.email.touched }"
+          placeholder="{{ 'PLACEHOLDER.Enter-yr-username-or-mail-adresse' | translate }}">
+        <span class="error-message ml-3" *ngIf="f.email.errors && f.email.touched">{{'ERROR-MESSAGE.Please-type-yr-pseudo-or-mail'| translate}}</span>
+      </div>
+
+      <div class="col mt-4">
+        <p>{{ 'PLACEHOLDER.Your-Password' | translate }}</p>
+        <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password.errors && f.password.touched }">
+        <input [type]="changeTypePswd" formControlName="password" class="inputPassword w-100 pl-3 p-3" placeholder="{{'PLACEHOLDER.Enter-yr-password' | translate }}">
+          <span (click)="toggleShow()" class="material-icons d-flex align-items-center"> {{show ? 'visibility' : 'visibility_off'}}</span>
+        </div>
+        <span class="error-message ml-3" *ngIf="f.password.errors && f.password.touched">{{'ERROR-MESSAGE.Please-type-yr-password'| translate}}</span>
+      </div>
+
+      <span class="col-md-12 mt-4" [routerLink]="['/sign/password-setting']">{{ 'LOGIN-REGISTRER.Forgot-password-?' | translate }}</span>
+      <button class="connected col mt-4 mx-auto mb-5 py-3" (click)="onSubmit()">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</button>
+      <span class="mt-5 d-flex justify-content-center" [routerLink]="['/sign/up']">{{ 'LOGIN-REGISTRER.Dont-have-an-account-?' | translate }}</span>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="(loading$|async)" class="loading-container d-flex justify-content-center align-items-center">
+  <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
   </div>
 </div>

@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Jūs negalite pridėti savęs",
     "T-content-does-not-exist-anymore": "Šio turinio nebėra",
     "T-publication-no-longer-exists": "Šio leidinio nebėra",
-    "Could-not-play-video": "Nepavyko paleisti vaizdo įrašo"
+    "Could-not-play-video": "Nepavyko paleisti vaizdo įrašo",
+    "Please-type-yr-pseudo-or-mail": "Įveskite pseudo arba el. pašto adresą"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Nuotrauka gauta",
@@ -654,7 +655,6 @@
   },
   "LOGIN-REGISTRER": {
     "Already-have-an-account": "Jau turite paskyrą",
-    "ForgotPassword": "Pamiršau slaptažodį",
     "Log-In": "Prisijungti",
     "Login": "Prisijungti",
     "Password-recovery": "Slaptažodžio grąžinimas",
@@ -667,7 +667,33 @@
     "Create-yr-account": "Susikurkite savo paskyrą",
     "Creating-yr-account": "Jūsų paskyros kūrimas",
     "Login-first-to-continue": "Pirmiausia prisijunkite, jei norite tęsti",
-    "Checking-yr-infos": "Tikrinti savo informaciją"
+    "Checking-yr-infos": "Tikrinti savo informaciją",
+    "Welcome-back": "sveikas sugrįžęs",
+    "Hello-wiinser": "Sveiki Wiinser, prisijunkite tęsti!",
+    "Dont-have-an-account-?": "Neturite paskyros? Abonemento kūrimas",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Įveskite savo el. pašto adresą, kad gautumėte slaptažodį",
+    "Forgot-password-?": "Pamiršote slaptažodį?",
+    "I-forgot-my-password": "Pamiršau slaptažodį",
+    "Forgot-password": "Pamiršau slaptažodį",
+    "Email-adress-sent": "Išsiųstas el. pašto adresas",
+    "Checking-yr-mail": "Patikrinkite savo elektroninio pašto adresą. Nedvejodami pažvelkite į savo šlamštą",
+    "Welcome": "sveikas atvykęs",
+    "Hello-nice-to-meet-you-wiinser": "Sveiki, Nicos susitikti su jumis Wiinser",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Naujausias projektas",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Jūsų slapyvardis",
     "Your-message": "Tavo žinutė",
     "Confirm-your-password": "Patvirtinkite savo slaptažodį",
-    "Password-not-matching": "Slaptažodžiai nesutampa"
+    "Password-not-matching": "Slaptažodžiai nesutampa",
+    "Enter-yr-username-or-mail-adresse": "Įveskite naudotojo vardą arba el. pašto adresą",
+    "Enter-yr-password": "Įveskite slaptažodį",
+    "Enter-yr-mail": "Įveskite savo elektroninio pašto adresą",
+    "Enter-yr-username": "Įveskite savo vartotojo vardą"
   },
   "PLEASE": {
     "Password": "Prašome įvesti savo slaptažodį"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Naujo slaptažodžio patvirtinimas",
       "Edit-t-password": "Pakeiskite slaptažodį",
-      "Erorr-password-different": "Slaptažodžiai yra skirtingi",
       "Error-min-5-char": "Naujajame slaptažodyje turi būti bent 5 simboliai",
       "New-password": "Naujas Slaptažodis",
       "New-password-r": "Būtinas naujas slaptažodis",
       "Old-password": "Senas slaptažodis",
       "Old-password-is-invalid": "Senas slaptažodis neteisingas",
       "Old-password-r": "Būtinas senas slaptažodis",
-      "Setting-password": "Slaptažodžio keitimas"
+      "Setting-password": "Slaptažodžio keitimas",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Slaptažodžiai yra skirtingi"
     },
     "profile": {
       "Edit-t-profile": "Redaguokite savo profilį",
@@ -980,32 +1011,44 @@
     "Better-reference": "Geresnė nuoroda"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Prieiga prie tam tikrų paslaugų priklauso nuo vartotojo registracijos. Registracija ir prieiga prie svetainės paslaugų yra rezervuota tik fiziniams asmenims, užpildžiusiems ir patvirtinusiems „Piin“ svetainėje prieinamą registracijos formą, taip pat šias bendrąsias naudojimo sąlygas. registruodamasis vartotojas įsipareigoja pateikti tikslią, nuoširdžią ir naujausią informaciją apie savo asmenį ir jo civilinę padėtį. Vartotojas taip pat turės reguliariai tikrinti su juo susijusius duomenis, kad išlaikytų jų tikslumą.\n\nVartotojas būtinai turi nurodyti galiojantį el. Pašto adresą, kuriuo svetainė atsiųs jam registraciją į savo paslaugas patvirtinimą. El. Pašto adresas negali būti naudojamas daugiau nei vieną kartą registruojantis paslaugoms per tą pačią sąskaitą. Kiekvienam fiziniam asmeniui leidžiama registruotis tik už svetainės paslaugas. Vartotojui, be slaptažodžio įvedimo, yra priskirtas identifikatorius, leidžiantis jam pasiekti erdvę, prie kurios yra prieinama. Kiekvienam vartotojui identifikatorius yra unikalus, tačiau slaptažodį vartotojas gali pakeisti savo asmeninėje erdvėje.\nSlaptažodis yra asmeninis ir konfidencialus, vartotojas įsipareigoja jo neperduoti trečiosioms šalims. „Piin“ rezervai bet kuriuo atveju, galimybė atmesti prašymą užsisakyti paslaugas, jei vartotojas nesilaiko šių bendrųjų naudojimo sąlygų nuostatų.",
-    "2-UNSUBSCRIBE-d": "Registruotas vartotojas gali bet kada paprašyti atsisakyti prenumeratos, eidamas į tam skirtą puslapį savo asmeninėje erdvėje. Bet koks svetainės atsisakymas įsigalios, kai vartotojas užpildys šiam tikslui skirtą formą per artimiausią laikotarpį.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Vartotojui pranešama, kad redaktorius pasilieka teisę ištrinti bet kokio vartotojo, pažeidžiančio naudojimo sąlygas, asmeninę erdvę, ypač šiais atvejais:\n\n● Jei vartotojas neteisėtai naudojasi svetaine\n● Jei vartotojas kuria asmeninę erdvę, savo noru perduokite neteisingą informaciją svetainei\n● Jei vartotojas bent 5 metus nebuvo aktyvus savo asmeninėje erdvėje.\n\nDansas, kai redaktorius nusprendžia pašalinti vartotojo asmeninę erdvę dėl vienos iš šių priežasčių, tai negali būti žala vartotojui, kurio paskyra buvo ištrinta. Šis išbraukimas nereiškia, kad atsisakoma teisinių procedūrų, kurių leidėjas gali imtis prieš vartotoją, kuris pažeidė šias taisykles.",
-    "About-plateform": "„Espace-Piin's Inc.“ yra internetinė žiniasklaida, siūlanti intuityviai ir nemokamai savo vartotojams centralizuoti keletą funkcijų. Tam žiniasklaida yra platforma, kurioje vartotojai gali kalbėtis ir dalytis turiniu su kitais vartotojais. Jame taip pat yra funkcija nuolat klausytis muzikos, kad jos vartotojai galėtų įsisavinti gerą atmosferą, kad ir kokia būtų situacija ar laikas. „Espace-Piin's Inc.“ taip pat turi funkciją nuolat žiūrėti vaizdo įrašus, kad linksmintų ir šviestų savo vartotojus.",
-    "Access-&-nav-d": "Prieiga prie svetainės ir jos naudojimas yra rezervuoti suaugusiesiems. Leidėjas turės teisę bet kokiomis priemonėmis paprašyti vartotojo amžiaus įrodymo. Redaktorius įgyvendina turimus techninius sprendimus, kad būtų galima patekti į svetainę 24 valandas per parą, 7 dienas per savaitę. Nepaisant to, jis gali bet kuriuo metu sustabdyti, apriboti ar nutraukti prieigą prie svetainės ar tam tikrų jos puslapių, kad galėtų atnaujinti, modifikuoti jos turinį ar atlikti kitus veiksmus, kurie yra būtini tinkamam svetainės veikimui.\nPrisijungimas ir naršymas „Espace Piin“ svetainėje yra be išlygų priimtas šių Bendrųjų naudojimo sąlygų, nepaisant techninių prieigos būdų ir naudojamų terminalų. Šios bendrosios naudojimo sąlygos taikomos bet kokiems esamo ar būsimo socialinio ir (arba) bendruomenės tinklo, kurį valdo „Espace Piins Inc.“, svetainei ar jos išplėtimui.",
-    "Confidentiality-d": "Be šių Taisyklių ir sąlygų, svetainėje yra privatumo politika, kurioje aprašoma, kaip tvarkomi asmens duomenys, kai vartotojas lankosi svetainėje, ir kaip naudojami slapukai. Naršydamas svetainėje vartotojas taip pat teigia perskaitęs aukščiau pateiktą privatumo politiką.",
-    "Generality-d": "Visiems prieigos prie svetainės „www.espace-piins.com“ būdams taikoma ši privatumo politika. „Espace Piins Inc“ yra atsakinga už platformoje surinktus asmens duomenis. Tai susiję su jūsų asmeninės informacijos naudojimu, saugojimu, apsauga ir platinimu. Prieiga prie „Espace Piins“ yra visiškai nemokama ir visos platformos funkcijos (išskyrus reklamos skelbimą) nėra apmokestinamos.\nRedaktorius pasilieka teisę bet kada ir be išankstinio įspėjimo keisti svetainę ir paslaugas, taip pat šias bendrąsias naudojimo sąlygas, visų pirma prisitaikyti prie naujų funkcijų arba ištrinti ar modifikuoti esamas funkcijas, siekiant patobulinti platforma. Todėl prieš bet kokią naršymą, bet kuriuo metu svetainėje prieinamą, vartotojui rekomenduojama perskaityti naujausią Bendrųjų naudojimo sąlygų versiją. Jei nesutinkama su Bendrosiomis naudojimo sąlygomis, vartotojas negali naudotis svetaine.",
-    "Hyperlinks-d": "Svetainėje gali būti hiperteksto nuorodų, nukreipiančių į kitas svetaines, kurių „Piin“ nekontroliuoja. Nepaisant išankstinių ir reguliarių leidėjo patikrinimų, jis atsisako visos atsakomybės už turinį, kurį galima rasti šiose svetainėse. Leidėjas leidžia sukurti hiperteksto nuorodas į bet kurį savo svetainės puslapį ar dokumentą, jei šios nuorodos nėra nustatomos komerciniais ar reklaminiais tikslais. Be to, prieš nustatant hiperteksto nuorodą būtina išankstinė svetainės leidėjo informacija. Netaikomos šio leidimo svetainės, kuriose platinama neteisėto, smurtinio, prieštaringo, pornografinio, ksenofobiško pobūdžio informacija arba kuri gali paveikti daugumos jautrumą.\nGaliausiai „Piin“ pasilieka teisę bet kada ištrinti hiperteksto nuorodą, nukreipiančią į jos svetainę, jei svetainė mano, kad ji neatitinka jos redakcijos politikos. Nerekomenduojamas visas išorinis platformos hipertekstas, kurio nepasiūlo platformos leidėjas.",
-    "Intellectual-property-d": "Svetainės struktūra, taip pat tekstai, grafika, vaizdai, nuotraukos, garsai, vaizdo įrašai ir kompiuterinės programos, kurios ją sudaro, yra leidėjo nuosavybė ir yra saugomos pagal intelektinę nuosavybę galiojančių įstatymų.\n\nBet kokio proceso būdu be aiškaus išankstinio rašytinio leidėjo leidimo kopijavimas, pritaikymas ar dalinis ar visiškas svetainės siūlomų paslaugų, registruotų prekių ženklų ir paslaugų naudojimas yra griežtai draudžiamas ir gali būti klastojimas, kaip apibrėžta L straipsniuose. 335-2 ir paskesni. intelektinės nuosavybės kodekso. Tai, išskyrus tuos elementus, kurie svetainėje aiškiai nurodyti kaip neturintys teisių.\n\nPriėjimas prie svetainės nėra teisės pripažinimas ir apskritai nesuteikia jokios intelektinės nuosavybės teisės, susijusios su svetainės elementu, kuris lieka išimtine leidėjo nuosavybe. Vartotojui draudžiama į svetainę įvesti duomenis, kurie pakeistų arba galėtų pakeisti jos turinį ar išvaizdą.",
-    "Our-plateforme": "Mūsų platforma",
-    "Responsability-d": "Leidėjas yra atsakingas tik už turinį, kurį pats redagavo. Leidėjas neatsako už:\n\n● Kilus problemų ar techninių, IT ar apskaitos gedimų svetainėje naudojant bet kokią techninę ar programinę įrangą\n● Tiesioginė ar netiesioginė, materiali ar nemateriali, numatoma ar nenuspėjama žala, kurią sukelia naudojimasis svetaine ar jos paslaugos ar jos paslaugų sunkumai\n● Esminės interneto ypatybės, ypač susijusios su jame cirkuliuojančios informacijos nepatikimumu ir saugumo trūkumu\n● Neteisėtas turinys ar veikla, naudojant jos svetainę, apie tai tinkamai nežinant, kaip apibrėžta Įstatyme, tvarkant asmens duomenis.\n\nBe to, svetainė negali garantuoti joje paskleistos informacijos tikslumo, išsamumo ir aktualumo.\n\nVartotojas yra atsakingas už:\n● Jo įrangos apsauga ir manipuliavimas platforma nuo įrenginio, nepriklausančio „Espace Piins“\n● Jis naudojasi svetaine ar jos duomenimis\n● Jei jis neatitinka šių bendrųjų naudojimo sąlygų raidės ar dvasios.",
-    "Responsability-d-extra": "Pateikdami paslaugos turinį, jūs suteikiate „Piin's“ visuotinę, neišimtinę, nemokamą autorių teisių perleidžiamą sublicenciją, kurią galima perduoti naudoti šį turinį (įskaitant reprodukciją, platinimą, paruošimą išvestinių darbų, sklaidą ir vykdymą), susijusius su paslauga ir veikla „Piin“ (ir jo teisių perėmėjai ir patronuojamosios įmonės), be kita ko, siekiant visiškai ar iš dalies skatinti ir perskirstyti tarnybą.",
-    "Site-management-d": "Norėdamas tinkamai valdyti svetainę, leidėjas gali bet kada:\n\n● Sustabdyti, nutraukti ar apriboti prieigą prie visos svetainės ar jos dalies, rezervuoti prieigą prie svetainės ar tam tikrų jos dalių tam tikrai interneto vartotojų kategorijai.\n● Ištrinkite visą informaciją, kuri gali sutrikdyti jos veikimą arba prieštarauti nacionaliniams ar tarptautiniams įstatymams ar etiketo taisyklėms.\n● Laikinai sustabdykite svetainės atnaujinimą. Bet koks noras modifikuoti turinį platformoje nebus prieinamas priežiūros laikotarpiais.",
     "TITLE": {
-      "1-REGISTRATION": "1. REGISTRACIJA",
-      "2-UNSUBSCRIBE": "2. NEPRENORAMUOTI",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. ASMENINĖS ERDVĖS IŠTRINIMAS SVETAINĖS LEIDĖJO INICIATYVOJE",
-      "Access-&-nav": "Prieiga ir navigacija",
-      "Confidentiality": "Konfidencialumas",
-      "Generality": "Bendrai",
-      "Hyperlinks": "Hiperteksto nuorodos",
-      "Intellectual-property": "Intelektinė nuosavybė",
-      "Responsability": "Atsakomybė",
-      "Services": "Paslaugos",
-      "Site-management": "Svetainės valdymas"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Jūsų muzikos identifikatorius"

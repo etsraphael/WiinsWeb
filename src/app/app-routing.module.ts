@@ -58,6 +58,10 @@ import { ChangingPasswordComponent } from './sign/changing-password/changing-pas
 import { CommunityListComponent } from './core/component/community-list/community-list.component';
 import { CertificationMenuComponent } from './home-setting/certification-menu/certification-menu.component';
 import { LedgerComponent } from './home-setting/ledger/ledger.component';
+import { OnboardingComponent } from './sign/onboarding/onboarding.component';
+import { ToDiscordComponent } from './sign/to-discord/to-discord.component';
+import { ToStripeComponent } from './sign/to-stripe/to-stripe.component';
+import { ForgotPasswordConfirmationComponent } from './sign/forgot-password-confirmation/forgot-password-confirmation.component';
 
 const routes: Routes = [
 
@@ -66,11 +70,14 @@ const routes: Routes = [
     path: 'sign', component: SignComponent,
     data: { animation: 'Sign' },
     children: [
-      { path: '', redirectTo: 'in', pathMatch: 'full', },
+      { path: '', component: OnboardingComponent, data: { title: 'Login', animation: 'OnBoarding' } },
       { path: 'in', component: LoginComponent, data: { title: 'Login', animation: 'SignIn' } },
       { path: 'up', component: RegisterComponent, data: { title: 'Register', animation: 'SignUp' } },
       { path: 'confirmation/:id', component: RegisterConfirmationComponent, data: { title: 'Confirmation' } },
+      { path: 'password-confirmation-sended', component: ForgotPasswordConfirmationComponent, data: { animation: 'Password-Confirmation-Sended' } },
       { path: 'password-setting', component: ForgotPasswordComponent, data: { animation: 'Password-Setting' } },
+      { path: 'to-discord', component: ToDiscordComponent, data: { animation: 'To-Discord' } },
+      { path: 'to-stripe', component: ToStripeComponent, data: { animation: 'To-Stripe' } },
       { path: 'changing-password/:token', component: ChangingPasswordComponent },
     ],
   },

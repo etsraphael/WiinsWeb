@@ -1,51 +1,38 @@
-<!-- Component Body -->
-<div class="row h-100">
-  <div class="m-auto col-11 col-sm-9 col-md-5 ">
-    <div class="row mx-0">
-      <!-- State of the response -->
-      <div class="px-0 card mx-auto w-100">
-        <!-- Account activated -->
-        <div *ngIf="profileReceived == 'profileReceived'">
-          <div class="card-body">
-            <span class="title row mx-0">{{'CORE.Welcome'| translate }}</span>
-            <span class="row mx-0">{{'VALID-MESSAGE.Yr-account-is-activated'| translate}}</span>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="ml-auto mr-4">
-                <button class="btn-log-in py-2" (click)="logIn()">
-                  <i class="fa fa-bolt px-2"></i>
-                  <span class="pr-2"> {{'LOGIN-REGISTRER.Log-In' | translate }} </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Loading Request -->
-        <div *ngIf="profileReceived == 'pending'" class="my-auto">
-          <div class="h-100" id="preloader">
-            <div id="loader"></div>
-          </div>
-        </div>
-        <!-- Error Response  -->
-        <div *ngIf="profileReceived == 'profileFailed'">
-          <div class="card-body">
-            <span class="title row mx-0 mb-2">{{'ERROR-MESSAGE.A-err-has-occurred'| translate }}</span>
-            <span
-              class="row mx-0">{{'ERROR-MESSAGE.An-error-h-occurred-Yr-profile-must-already-be-activated,-or-this-profile-does-nt-exist'| translate }}</span>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="ml-auto mr-4">
-                <button class="btn-log-in py-2" (click)="navigateToSign()">
-                  <i class="fa fa-bolt px-2"></i>
-                  <span class="pr-2"> {{'LOGIN-REGISTRER.Register' | translate }} </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Account activated -->
+<div class="container-card bg-white" *ngIf="profileReceived == 'profileReceived'">
+  <div class="mb-5 connexionIn">
+    <div class="col d-flex align-items-baseline py-3">
+      <h2 class="my-auto">{{ 'LOGIN-REGISTRER.Log-In' | translate }}</h2>
     </div>
+    <div class="signIn bg-white">
+      <div class="col mb-3">
+        <h1>{{ 'LOGIN-REGISTRER.Welcome' | translate }}</h1>
+        <p>{{ 'LOGIN-REGISTRER.Hello-wiinser' | translate }}</p>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <img class="checked mb-4" src="assets/img/checked.svg" alt="Mail Sent">
+      </div>
+      <p class="mx-auto text-center">{{ 'LOGIN-REGISTRER.Inscription-successful' | translate }}</p>
+      <span class="mt-5 d-flex justify-content-center" (click)="logIn()">
+        {{ 'LOGIN-REGISTRER.Log-In' | translate }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Error Response  -->
+<div class="container-card bg-white" *ngIf="profileReceived == 'profileFailed'">
+  <div class="card-body">
+    <h3 class="title row mx-0 mb-2">{{'ERROR-MESSAGE.A-err-has-occurred'| translate }}</h3>
+    <span
+      class="row mx-0">{{'ERROR-MESSAGE.An-error-h-occurred-Yr-profile-must-already-be-activated,-or-this-profile-does-nt-exist'| translate }}</span>
+  </div>
+    <div class="row">
+      <div class="mx-auto">
+        <button class="btn-log-in py-3" (click)="navigateToSign()">
+          <i class="fa fa-bolt px-2"></i>
+          <span class="pr-2"> {{'LOGIN-REGISTRER.Register' | translate }} </span>
+        </button>
+      </div>
   </div>
 </div>

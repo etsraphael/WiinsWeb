@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Et voi lisätä itseäsi",
     "T-content-does-not-exist-anymore": "Tätä sisältöä ei ole enää olemassa",
     "T-publication-no-longer-exists": "Tätä julkaisua ei ole enää olemassa",
-    "Could-not-play-video": "Videota ei voitu toistaa"
+    "Could-not-play-video": "Videota ei voitu toistaa",
+    "Please-type-yr-pseudo-or-mail": "Kirjoita pseudo tai sähköpostiosoite"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Kuva on vastaanotettu",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Tarkistaa tietosi",
     "Create-yr-account": "luo tilisi",
     "Creating-yr-account": "Tilisi luominen",
-    "ForgotPassword": "unohdin salasanani",
     "Log-In": "Kirjaudu sisään",
     "Login": "Kirjaudu sisään",
     "Login-first-to-continue": "Kirjaudu ensin jatkaaksesi",
@@ -667,7 +667,33 @@
     "Registration": "Rekisteröinti",
     "Sign-up": "Kirjaudu",
     "accept-tou": "Vakuutan olevani 16-vuotias tai vanhempi ja hyväksyn käyttäjän sopimuksen ja tietosuojakäytännön",
-    "click-on-email": "Napsauta sähköpostilinkkiä"
+    "click-on-email": "Napsauta sähköpostilinkkiä",
+    "Welcome-back": "Tervetuloa takaisin",
+    "Hello-wiinser": "Hei Wiinser, kirjaudu sisään jatkaaksesi!",
+    "Dont-have-an-account-?": "Eikö sinulla ole tiliä? Tilin luominen",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Anna sähköpostiosoitteesi saadaksesi salasanasi",
+    "Forgot-password-?": "Unohditko salasanan?",
+    "I-forgot-my-password": "unohdin salasanani",
+    "Forgot-password": "Unohtunut salasana",
+    "Email-adress-sent": "Sähköpostiosoite lähetetty",
+    "Checking-yr-mail": "Tarkista sähköpostisi. Älä epäröi katsoa roskapostiisi",
+    "Welcome": "Tervetuloa",
+    "Hello-nice-to-meet-you-wiinser": "Hei, hauska tavata, Wiinser.",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Viimeisin projekti",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Sinun käyttäjä nimesi",
     "Your-message": "Viestisi",
     "Confirm-your-password": "Vahvista salasana",
-    "Password-not-matching": "Salasanat eivät täsmää"
+    "Password-not-matching": "Salasanat eivät täsmää",
+    "Enter-yr-username-or-mail-adresse": "Anna käyttäjätunnuksesi tai sähköpostiosoitteesi",
+    "Enter-yr-password": "Anna salasanasi",
+    "Enter-yr-mail": "Sähköpostin syöttäminen",
+    "Enter-yr-username": "Anna käyttäjätunnuksesi"
   },
   "PLEASE": {
     "Password": "Anna salasanasi"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Uuden salasanan vahvistus",
       "Edit-t-password": "Vaihda salasana",
-      "Erorr-password-different": "Salasanat ovat erilaisia",
       "Error-min-5-char": "Uudessa salasanassa on oltava vähintään 5 merkkiä",
       "New-password": "uusi salasana",
       "New-password-r": "Uusi salasana vaaditaan",
       "Old-password": "Vanha salasana",
       "Old-password-is-invalid": "Vanha salasana on virheellinen",
       "Old-password-r": "Vanha salasana vaaditaan",
-      "Setting-password": "Salasanan muuttaminen"
+      "Setting-password": "Salasanan muuttaminen",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Salasanat ovat erilaisia"
     },
     "profile": {
       "Edit-t-profile": "Muokkaa profiiliasi",
@@ -980,32 +1011,44 @@
     "Better-reference": "Parempi viite"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Tiettyjen palvelujen käyttö edellyttää käyttäjän rekisteröintiä. Rekisteröinti ja pääsy sivuston palveluihin on varattu yksinomaan päteville luonnollisille henkilöille, jotka ovat täyttäneet ja vahvistaneet Piinin verkkosivustolla verkossa olevan rekisteröintilomakkeen sekä nämä yleiset käyttöehdot. Rekisteröitymisen yhteydessä käyttäjä sitoutuu toimittamaan tarkkoja, vilpittömiä ja ajantasaisia tietoja henkilöstään ja hänen siviilisäädystään. Käyttäjän on myös tarkistettava säännöllisesti häntä koskevat tiedot niiden tarkkuuden säilyttämiseksi.\n\nKäyttäjän on ehdottomasti annettava voimassa oleva sähköpostiosoite, jolla sivusto lähettää hänelle vahvistuksen rekisteröinnistä palveluihinsa. Sähköpostiosoitetta ei voi käyttää useammin kuin kerran palvelujen rekisteröintiin saman tilin kautta. Vain yksi rekisteröinti sivuston palveluihin on sallittua luonnollista henkilöä kohden. Käyttäjälle on määritetty tunniste, jonka avulla hän voi käyttää salasanan antamisen lisäksi tilaa, johon pääsy on varattu. Tunniste on yksilöllinen jokaiselle käyttäjälle, mutta salasanan voi vaihtaa verkossa henkilökohtaisessa tilassaan.\nSalasana on henkilökohtainen ja luottamuksellinen, käyttäjä sitoutuu olemaan välittämättä sitä kolmansille osapuolille. Piin pidättää joka tapauksessa mahdollisuuden hylätä palvelujen tilaamista koskeva pyyntö, jos käyttäjä ei noudata näiden yleisten käyttöehtojen määräyksiä.",
-    "2-UNSUBSCRIBE-d": "Rekisteröitynyt käyttäjä voi milloin tahansa pyytää tilauksen peruuttamista siirtymällä omalle tilalleen omistetulle sivulle. Sivuston peruuttaminen tulee voimaan heti, kun käyttäjä on täyttänyt tätä tarkoitusta varten annetun lomakkeen välittömässä ajassa.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Käyttäjälle ilmoitetaan, että toimittaja pidättää oikeuden poistaa käyttäjän henkilökohtaisen tilan, joka rikkoo käyttöehtoja ja erityisesti seuraavissa tapauksissa:\n\n● Jos käyttäjä käyttää laitonta laitetta\n● Jos käyttäjä luo henkilökohtaista tilaa luodessaan vapaaehtoisesti virheellisiä tietoja sivustolle\n● Jos käyttäjä ei ole ollut aktiivinen henkilökohtaisella tilallaan vähintään 5 vuotta.\n\nKielletyt tapaukset, joissa toimittaja päättää poistaa käyttäjän henkilökohtaisen tilan jostakin näistä syistä, se ei voi olla haittaa käyttäjälle, jonka tili on poistettu. Tämä poistaminen ei merkitse oikeudenkäynneistä luopumista, jonka kustantaja voi ryhtyä näitä sääntöjä rikkovaan käyttäjään.",
-    "About-plateform": "Espace-Piin's Inc. on online-media, joka tarjoaa mahdollisuuden keskittää siihen useita toimintoja intuitiivisella ja ilmaisella tavalla käyttäjilleen. Tätä varten media on foorumi, jossa käyttäjät voivat keskustella ja jakaa sisältöä muiden käyttäjien kanssa. Siinä on myös toiminto kuunnella musiikkia jatkuvasti, jotta sen käyttäjät voivat imeä hyvän ilmapiirin tilanteesta ja ajasta riippumatta. Espace-Piin's Inc. isännöi myös toimintoa videoiden katseluun jatkuvasti käyttäjien viihdyttämiseksi ja kouluttamiseksi.",
-    "Access-&-nav-d": "Pääsy sivustolle ja sen käyttö on varattu aikuisille. Kustantajalla on oikeus pyytää todisteita käyttäjän iästä millä tahansa tavalla. Toimittaja toteuttaa käytössään olevat tekniset ratkaisut, jotka mahdollistavat pääsyn sivustoon 24 tuntia vuorokaudessa, 7 päivää viikossa. Hän voi kuitenkin milloin tahansa keskeyttää, rajoittaa tai keskeyttää pääsyn sivustolle tai sen tietyille sivuille jatkaakseen päivityksiä, sen sisällön muokkauksia tai muita toimia, joita pidetään välttämättöminä sivuston moitteettoman toiminnan kannalta.\nYhteydet ja navigointi Espace Piinin sivustolla merkitsevät näiden yleisten käyttöehtojen varaumatonta hyväksymistä riippumatta käytetyistä tekniikoista ja käytetyistä päätelaitteista. Nämä yleiset käyttöehdot koskevat kaikkia sivuston muunnelmia tai laajennuksia nykyisissä tai tulevissa sosiaalisissa ja / tai yhteisöverkoissa, joita Espace Piins Inc. hallinnoi.",
-    "Confidentiality-d": "Näiden ehtojen lisäksi sivustolla on tietosuojakäytäntö, joka kuvaa kuinka henkilötietoja käsitellään käyttäjän käydessä sivustolla ja kuinka evästeitä käytetään. Sivustoa selaamalla käyttäjä väittää lukeneensa myös yllä olevan tietosuojakäytännön.",
-    "Generality-d": "Kaikkiin \"www.espace-piins.com\" -sivuston käyttömenetelmiin sovelletaan tätä tietosuojakäytäntöä. Espace Piins Inc vastaa alustalla kerätyistä henkilötiedoista. Tämä koskee henkilötietojesi käyttöä, säilyttämistä, suojaamista ja levittämistä. Pääsy Espace Piinsiin on täysin ilmainen, eikä kaikkia alustan toimintoja (lukuun ottamatta mainonnan julkaisemista) laskuteta.\nToimittaja pidättää oikeuden muuttaa milloin tahansa ja ilman erillistä ilmoitusta sivustoa ja palveluja sekä näitä yleisiä käyttöehtoja, erityisesti mukautuakseen uusiin toimintoihin tai olemassa olevien toimintojen poistamiseen tai muokkaamiseen sivuston parantamiseksi. foorumi. Siksi on suositeltavaa, että käyttäjä tutustuu yleisten käyttöehtojen uusimpaan versioon ennen navigointia, joka on käytettävissä milloin tahansa sivustolla. Jos yleiset käyttöehdot ovat eri mieltä, käyttäjä ei voi käyttää sivustoa.",
-    "Hyperlinks-d": "Sivusto voi sisältää hypertekstilinkkejä, jotka viittaavat muihin verkkosivustoihin, joihin Piinillä ei ole valtaa. Julkaisijan aikaisemmista ja säännöllisistä tarkastuksista huolimatta julkaisija kieltäytyy kaikesta vastuusta sisällöstä, jonka se voi löytää näiltä sivustoilta. Kustantaja sallii hypertekstilinkkien perustamisen mihin tahansa verkkosivuston sivuun tai asiakirjaan edellyttäen, että näitä linkkejä ei perusteta kaupallisiin tai mainostarkoituksiin. Lisäksi sivuston julkaisijan ennakkotiedot ovat välttämättömiä ennen hypertekstilinkin luomista. Ne suljetaan tämän valtuutuksen ulkopuolelle. Sivustot levittävät laitonta, väkivaltaista, kiistanalaista, pornografista tai muukalaisvihamielistä tietoa tai jotka voivat vaikuttaa eniten herkkyyteen.\nLopuksi Piin's pidättää oikeuden poistaa sivustoon osoittava hypertekstilinkki milloin tahansa, jos sivusto katsoo, että se ei noudata toimituksellista käytäntöään. Kaikkia alustan ulkopuolisia hypertekstejä, joita alustan julkaisija ei ehdota, ei suositella.",
-    "Intellectual-property-d": "Sivuston rakenne, mutta myös sen muodostavat tekstit, grafiikat, kuvat, valokuvat, äänet, videot ja tietokonesovellukset ovat kustantajan omaisuutta, ja niitä suojaavat sellaisina immateriaalioikeuksien alaiset lait.\n\nSivuston tarjoaman sisällön, rekisteröityjen tavaramerkkien ja palvelujen jäljentäminen, mukauttaminen tai osittainen tai täydellinen hyödyntäminen millä tahansa prosessilla ilman julkaisijan nimenomaista etukäteen antamaa kirjallista lupaa on ehdottomasti kielletty ja voi olla väärennös artikkeleissa L. 335-2 ja sitä seuraavat. henkisen omaisuuden säännöstön mukaisesti. Ja tämä, lukuun ottamatta elementtejä, jotka on nimenomaisesti määritelty vapaiksi sivustolla.\n\nPääsy sivustolle ei merkitse oikeuden tunnustamista eikä yleensä anna mitään immateriaalioikeuksia, jotka liittyvät sivuston osaan, jotka pysyvät kustantajan yksinomaisena omaisuutena. Käyttäjällä on kielletty syöttämästä tietoja sivustolle, joka muuttaisi tai voisi muuttaa sen sisältöä tai ulkonäköä.",
-    "Our-plateforme": "Alustamme",
-    "Responsability-d": "Kustantaja on vastuussa vain itse muokkaamastaan sisällöstä. Kustantaja ei ole vastuussa:\n\n● Jos laitteistolla tai ohjelmistolla on ongelmia tai sivuston teknisiä, IT- tai kirjanpitovikoja\n● Suora tai epäsuora, aineellinen tai aineeton, ennakoitavissa oleva tai arvaamaton vahinko, joka johtuu sivuston tai sen palvelujen käytöstä tai sen käytön vaikeuksista\n● Internetin ominaispiirteet, erityisesti ne, jotka liittyvät siellä liikkuvien tietojen epäluotettavuuteen ja turvallisuuden puutteeseen\n● laiton sisältö tai toiminta, joka käyttää sen verkkosivustoa ilman, että se on tietoinen siitä lain mukaisesti henkilötietojen käsittelyssä.\n\nLisäksi sivusto ei voi taata siellä levitetyn tiedon paikkansapitävyyttä, täydellisyyttä ja ajankohtaisuutta.\n\nKäyttäjä on vastuussa:\n● Sen laitteiden suojaaminen ja alustalla manipulointi laitteelta, joka ei kuulu Espace Piinsiin\n● Sivuston tai sen tietojen käyttö\n● Jos se ei noudata näiden yleisten käyttöehtojen kirjainta tai henkeä.",
-    "Responsability-d-extra": "Tarjoamalla palvelulle sisältöä annat Piin'sille maailmanlaajuisen, ei-yksinomaisen, rojaltittoman, siirrettävän alilisenssin, joka on siirrettävissä käyttämään tätä sisältöä (mukaan lukien jäljentämään, jakamaan, valmistamaan johdannaisia, levittämään ja ajamaan) palvelun ja toiminnan yhteydessä Piinin (ja sen seuraajien ja tytäryhtiöiden) palvelujen mainostaminen ja jakaminen kokonaan tai osittain.",
-    "Site-management-d": "Sivuston asianmukaista hallintaa varten julkaisija voi milloin tahansa:\n\n● Keskeytä, keskeytä tai rajoita pääsy koko sivustoon tai sen osaan, varaa pääsy sivustolle tai tietyille sivuston osille tietylle Internet-käyttäjäryhmälle.\n● Poista kaikki tiedot, jotka saattavat häiritä sen toimintaa tai rikkovat kansallisia tai kansainvälisiä lakeja tai etiketin sääntöjä.\n● Keskeytä sivusto päivitysten tekemiseksi. Halua muokata alustan sisältöä ei ole käytettävissä huoltojaksojen aikana.",
     "TITLE": {
-      "1-REGISTRATION": "1. REKISTERÖINTI",
-      "2-UNSUBSCRIBE": "2. TILAA",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. HENKILÖKOHDAN POISTAMINEN SIVUSTON JULKAISIJAN ALOITTEESTA",
-      "Access-&-nav": "Pääsy ja navigointi",
-      "Confidentiality": "Luottamuksellisuus",
-      "Generality": "Yleistä",
-      "Hyperlinks": "Hypertekstilinkit",
-      "Intellectual-property": "Henkinen omaisuus",
-      "Responsability": "Vastuut",
-      "Services": "Palvelut",
-      "Site-management": "Sivun hallinta"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Musiikkitunnuksesi"

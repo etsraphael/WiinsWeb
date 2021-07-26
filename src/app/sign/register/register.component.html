@@ -1,130 +1,105 @@
-<!-- Form Container -->
-<div class="container" *ngIf="!(loading$|async) && !(user$|async)">
-  <div class="row mx-0 container-title">
-    <h1 class="display-3">{{'LOGIN-REGISTRER.Registration'|translate}}</h1>
+<div class="inscriptionIn mb-5" *ngIf="!(loading$|async)">
+  <div class="col d-flex align-items-baseline py-3">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" [routerLink]="['../']"
+      class="text-white bi bi-arrow-left my-auto" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+    </svg>
+    <h2 class="my-auto">{{'LOGIN-REGISTRER.Creating-yr-account'| translate}}</h2>
   </div>
-  <div class="row mx-0">
-    <div class="col-md-6 col-12 my-2">
-      <button class="w-100 btn-choice p-3" [routerLink]="['/sign/in']" routerLinkActive="active">
-        <span>{{ 'LOGIN-REGISTRER.Already-have-an-account' | translate}}</span>
-      </button>
+  <div class="signIn bg-white d-flex flex-column justify-content-center">
+    <div class="col mb-2">
+      <h1>{{'LOGIN-REGISTRER.Welcome'| translate}}</h1>
+      <p>{{'LOGIN-REGISTRER.Hello-nice-to-meet-you-wiinser'| translate}}</p>
     </div>
-    <div class="col-md-6 col-12 my-2">
-      <button class="w-100 btn-choice p-3" [routerLink]="['/sign/up']" routerLinkActive="active">
-        <span>{{ 'LOGIN-REGISTRER.Sign-up' | translate}}</span>
-      </button>
-    </div>
-  </div>
-  <form [formGroup]="registerForm" class="row mx-0 container-form my-2">
-    <div class="row mx-0">
-      <div class="col-md-6 col-12 my-2">
-        <div class="container">
-          <div class="row">
-            <p class="h5">{{'PLACEHOLDER.Your-Pseudo' | translate}}</p>
-          </div>
-          <div class="row">
-            <input #pseudo class="w-100 p-3" type="text" formControlName="pseudo">
-          </div>
-          <div class="pseudo-response row mx-auto">
-            <span class="text-success" *ngIf="!!(pseudoValid$|async) && !f.pseudo.errors">
-              {{'VALID-MESSAGE.Pseudo-valid'| translate}}
-            </span>
-            <span class="text-danger" *ngIf="((pseudoValid$|async) == false) && !f.pseudo.errors">
-              {{'ERROR-MESSAGE.Pseudo-already-exist' | translate}}
-            </span>
-            <span class="text-danger" *ngIf="pseudo.value == '' && f.pseudo.touched">
-              {{'ERROR-MESSAGE.Pseudo-required'| translate}}
-            </span>
-            <span class="text-danger" *ngIf="pseudo.value.length !== 0 && pseudo.value.length < 3 && f.pseudo.touched">
-              {{'ERROR-MESSAGE.Your-username-must-have-at-least-4-char'| translate}}
-            </span>
-          </div>
-        </div>
+    <form [formGroup]="registerForm" class="form">
+      <div class="col d-flex flex-column mb-3">
+        <label class="form-label">{{'PLACEHOLDER.Your-Pseudo'| translate}}</label>
+        <input #pseudo type="text" class="inputPseudo w-100 pl-3 p-3" formControlName="pseudo"
+          placeholder="{{'PLACEHOLDER.Enter-yr-username'| translate}}"
+          [ngClass]="{'input-invalid': f.pseudo.errors && f.pseudo.touched }">
+        <span class="error-message ml-3"
+          *ngIf="f.pseudo.errors && f.pseudo.touched">{{'ERROR-MESSAGE.Pseudo-required'| translate}}</span>
+        <span class="text-success" *ngIf="!!(pseudoValid$|async) && !f.pseudo.errors">
+          {{'VALID-MESSAGE.Pseudo-valid'| translate}}
+        </span>
+        <span class="error-message ml-3" *ngIf="((pseudoValid$|async) == false) && !f.pseudo.errors">
+          {{'ERROR-MESSAGE.Pseudo-already-exist' | translate}}
+        </span>
       </div>
-      <div class="col-md-6 col-12 my-2">
-        <div class="container">
-          <div class="row">
-            <p class="h5">{{'PLACEHOLDER.Your-Email' | translate}}</p>
-          </div>
-          <div class="row">
-            <input class="w-100 p-3" type="email" formControlName="email">
-          </div>
-          <div class="email-response row">
-            <span class="text-danger" *ngIf="f.email.errors && f.email.touched">
-              {{'ERROR-MESSAGE.Email-invalid'| translate}}
-            </span>
-          </div>
-        </div>
+      <div class="col d-flex flex-column mb-3">
+        <label class="form-label">{{'PLACEHOLDER.Your-Email'| translate}}</label>
+        <input type="email" class="inputEmail w-100 pl-3 p-3" formControlName="email"
+          placeholder="{{'PLACEHOLDER.Enter-yr-mail'| translate}}"
+          [ngClass]="{'input-invalid': f.email.errors && f.email.touched }">
+        <span class="error-message ml-3" *ngIf="f.email.errors && f.email.touched">
+          {{'ERROR-MESSAGE.Email-invalid'| translate}}
+        </span>
       </div>
-      <div class="col-md-6 col-12 my-2">
-        <div class="container">
-          <div class="row">
-            <p class="h5">{{'PLACEHOLDER.Your-Password' | translate}}</p>
-          </div>
-          <div class="row">
-            <input class="w-100 p-3" type="password" formControlName="password1">
-          </div>
-          <div class="password-response row">
-            <span class="text-danger" *ngIf="f.password1.errors && f.password1.touched">
-              {{'ERROR-MESSAGE.8-char-minimum' | translate}}
-            </span>
-          </div>
+      <div class="col d-flex flex-column">
+        <label class="form-label">{{'PLACEHOLDER.Your-Password'| translate}}</label>
+        <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
+          <input [type]="changeTypePswd" class="inputPassword w-100 pl-3 p-3" formControlName="password1"
+            placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
+          <span (click)="toggleShow()" class="material-icons d-flex align-items-center">
+            {{show ? 'visibility' : 'visibility_off'}}</span>
         </div>
+        <span class="error-message ml-3" *ngIf="f.password1.errors && f.password1.touched">
+          {{'ERROR-MESSAGE.8-char-minimum' | translate}}
+        </span>
+        <span class="messagePassword mt-4"></span>
       </div>
-      <div class="col-md-6 col-12 my-2">
-        <div class="container">
-          <div class="row">
-            <p class="h5">{{'PLACEHOLDER.Confirm-your-password' | translate}}</p>
-          </div>
-          <div class="row">
-            <input class="w-100 p-3" type="password" formControlName="password2">
-          </div>
-          <div class="password-response row">
-            <span class="text-danger" *ngIf="f.password2.errors && f.password2.touched">
-              {{'ERROR-MESSAGE.Password-not-identical' | translate}}
-            </span>
-            <!-- <div class="alert py-0" [hidden]="!f.password1.errors?.passwordNotMatch">
-              <span>{{'SETTING.password.Erorr-password-different'|translate}}</span>
-            </div> -->
-          </div>
+      <div class="col d-flex flex-column mb-3">
+        <label class="form-label">{{'PLACEHOLDER.Confirm-your-password'| translate}}</label>
+        <div class="inputpwrd d-flex" [ngClass]="{'input-invalid': f.password1.errors && f.password1.touched }">
+          <input [type]="changeTypeConfirmPswd" class="inputPassword w-100 pl-3 p-3" formControlName="password2"
+            id="validationConfirmPassword" placeholder="{{'PLACEHOLDER.Enter-yr-password'| translate}}">
+          <span (click)="toggleConfirmShow()" class="material-icons d-flex align-items-center">
+            {{confirmShow ? 'visibility' : 'visibility_off'}}</span>
         </div>
+        <span class="error-message ml-3" *ngIf="f.password2.errors && f.password2.touched">
+          {{ 'SETTING.password.Error-password-different' | translate }}
+        </span>
+        <span class="messageConfirmPassword mt-4"></span>
       </div>
-    </div>
-    <div class="container">
-      <div class="row mx-0 my-3 term-of-use">
-        <div class="col-1 my-auto">
+      <div class="termOfUse col d-flex mb-4">
+        <div class="form-check">
           <mat-checkbox class="mx-2" [checked]="f.tou.value" formControlName="tou"></mat-checkbox>
         </div>
-        <div class="col-11">
-          <a (click)=openTOU()>{{'LOGIN-REGISTRER.accept-tou'|translate}}</a>
-        </div>
+        <span (click)="openTOU()">{{'LOGIN-REGISTRER.accept-tou'| translate}}</span>
       </div>
-      <div class="row mx-0 mt-4">
-        <button class="col-6 btn-choice btn-submit-sign-up p-3" (click)="onSubmit()">
-          <span class="text-white">{{'LOGIN-REGISTRER.Register'|translate}}</span>
-        </button>
-      </div>
-    </div>
-  </form>
+      <button class="creatNow d-flex justify-content-center mt-4 mx-auto mb-5 py-3" type="submit"
+        (click)="onSubmit()">{{'LOGIN-REGISTRER.Create-yr-account'| translate}}</button>
+    </form>
+  </div>
 </div>
 
-<!-- Loading Container -->
-<div class="container" *ngIf="(loading$|async)">
-  <div class="row h-100 mx-0">
-    <div class="loader m-auto">{{'CORE.Loading'|translate}}</div>
+<div *ngIf="(loading$|async)" class="loading-container d-flex justify-content-center align-items-center">
+  <div class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
   </div>
 </div>
 
 <!-- Confirmation Message -->
-<div class="container" *ngIf="(user$|async)">
-  <div class="row">
-    <div class="mx-auto">
-      <i class="fa fa-check-circle fa-4x"></i>
+<div class="mb-5 connexionIn" *ngIf="(user$|async)">
+  <div class="signIn bg-white">
+    <div class="col mb-3">
+      <h1>{{ 'LOGIN-REGISTRER.Welcome' | translate }}</h1>
+      <p>{{ 'LOGIN-REGISTRER.Hello-wiinser' | translate }}</p>
     </div>
-  </div>
-  <div class="row my-3">
-    <div class="mx-auto">
-      <span>{{'LOGIN-REGISTRER.click-on-email'|translate}}</span>
+    <div class="col justify-content-center d-flex">
+      <img class="checked mb-4" src="assets/img/checked.svg" alt="Mail Sent">
     </div>
+    <p class="mx-auto text-center">{{ 'LOGIN-REGISTRER.Inscription-successful' | translate }}</p>
+    <a [routerLink]="['../']">
+      <span class="mt-5 d-flex justify-content-center">
+        {{ 'LOGIN-REGISTRER.Log-In' | translate }}
+      </span>
+    </a>
   </div>
 </div>

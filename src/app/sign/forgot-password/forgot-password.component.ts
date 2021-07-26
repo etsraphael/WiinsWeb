@@ -6,6 +6,7 @@ import { SettingUserService } from 'src/app/core/services/setting-user/setting-u
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-forgot-password',
@@ -25,6 +26,8 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
   loading = false
   stateLogin = 'default'
 
+  confirmationSended = false
+
   constructor(
     private formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
@@ -41,6 +44,8 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
   }
 
+  get f() { return this.emailForm.controls; }
+
   onSubmit() {
 
     // check if the mail is valid
@@ -52,15 +57,15 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
       .pipe(take(1))
       .subscribe(
         () => {
-          this.emailSended = true
           this.loading = false
+          setTimeout(() => { this.loading = false }, 3000);
+          setTimeout(() => { this.confirmationSended = true }, 3000);
         },
-        error => {
-          if (error == 'address_invalid') return this.invalidMessageAlert()
+        (response: HttpErrorResponse) => {
+          if (response.error.message == 'address_invalid') return this.invalidMessageAlert()
           else this.loading = false
         }
       )
-
   }
 
   invalidMessageAlert(): | MatSnackBarRef<SimpleSnackBar> {

@@ -633,7 +633,8 @@
     "You-cannot-add-yourself": "Siz o'zingizni qo'sha olmaysiz",
     "T-content-does-not-exist-anymore": "Ushbu tarkib endi mavjud emas",
     "T-publication-no-longer-exists": "Ushbu nashr endi mavjud emas",
-    "Could-not-play-video": "Videoni ijro qilib bo‘lmadi"
+    "Could-not-play-video": "Videoni ijro qilib bo‘lmadi",
+    "Please-type-yr-pseudo-or-mail": "Iltimos, psevdo yoki elektron pochta manzilini kiriting"
   },
   "FEED-PUBLICATION": {
     "Picture-received": "Surat qabul qilindi",
@@ -657,7 +658,6 @@
     "Checking-yr-infos": "Ma'lumotlaringiz tekshirilmoqda",
     "Create-yr-account": "Hisob qaydnomangizni yarating",
     "Creating-yr-account": "Hisobingizni yaratish",
-    "ForgotPassword": "Parolimni unutibman",
     "Log-In": "Kirish",
     "Login": "Kirish",
     "Login-first-to-continue": "Davom etish uchun avval tizimga kiring",
@@ -667,7 +667,33 @@
     "Registration": "Ro'yxatdan o'tish",
     "Sign-up": "Ro'yxatdan o'tish",
     "accept-tou": "Men 16 yoshga to'lganligimni tasdiqlayman va foydalanuvchi shartnomasi va maxfiylik siyosatiga roziman",
-    "click-on-email": "Iltimos, elektron pochta havolasini bosing"
+    "click-on-email": "Iltimos, elektron pochta havolasini bosing",
+    "Welcome-back": "Qaytib kelganingizdan xursandmiz",
+    "Hello-wiinser": "Salom Wiinser, davom etish uchun tizimga kiring!",
+    "Dont-have-an-account-?": "Hisobingiz bormi? Hisob ochish",
+    "Enter-yr-mail-adress-to-receive-yr-password": "Qabul qilish uchun elektron pochta manzilingizni kiriting\nparolingiz",
+    "Forgot-password-?": "Parolni unutdingizmi ?",
+    "I-forgot-my-password": "Parolimni unutibman",
+    "Forgot-password": "Parolni unutdingizmi",
+    "Email-adress-sent": "Elektron pochta manzili yuborildi",
+    "Checking-yr-mail": "Iltimos, elektron pochtangizni tekshiring. O'zingizning spam-manzilingizni ko'rib chiqishda ikkilanmang",
+    "Welcome": "Xush kelibsiz",
+    "Hello-nice-to-meet-you-wiinser": "Salom, Wiinser bilan tanishganimdan xursandman",
+    "Login-again": "",
+    "To-Discord": {
+      "Wiinser-community": "",
+      "We-need-yr-help": "",
+      "Join-us-in-this-adventure": "",
+      "We-need-yr-help-2": ""
+    },
+    "To-Stripe": {
+      "Coming-Soon": "",
+      "We-need-yr-help": "",
+      "We-need-yr-help-2": "",
+      "Cryptocurrency": "",
+      "Credit-Card": ""
+    },
+    "Inscription-successful": ""
   },
   "MAIN-MUSIC": {
     "Lastest-Project": "Oxirgi loyiha",
@@ -748,7 +774,11 @@
     "Your-Pseudo": "Sizning foydalanuvchi ismingiz",
     "Your-message": "Sizning xatingiz",
     "Confirm-your-password": "Parolingizni tasdiqlang",
-    "Password-not-matching": "Parollar mos kelmayapti"
+    "Password-not-matching": "Parollar mos kelmayapti",
+    "Enter-yr-username-or-mail-adresse": "Foydalanuvchi ismingizni yoki elektron pochta manzilingizni kiriting",
+    "Enter-yr-password": "Parolingizni kiriting",
+    "Enter-yr-mail": "Elektron pochtangizni kiriting",
+    "Enter-yr-username": "Foydalanuvchi nomingizni kiriting"
   },
   "PLEASE": {
     "Password": "Parolingizni kiriting"
@@ -907,14 +937,15 @@
     "password": {
       "C-new-password": "Yangi parolni tasdiqlash",
       "Edit-t-password": "Parolni o'zgartiring",
-      "Erorr-password-different": "Parollar har xil",
       "Error-min-5-char": "Yangi parol kamida 5 ta belgidan iborat bo'lishi kerak",
       "New-password": "Yangi Parol",
       "New-password-r": "Yangi parol talab qilinadi",
       "Old-password": "Eski parol",
       "Old-password-is-invalid": "Eski parol yaroqsiz",
       "Old-password-r": "Eski parol talab qilinadi",
-      "Setting-password": "Parolni o'zgartirish"
+      "Setting-password": "Parolni o'zgartirish",
+      "C-new-password-subtitle": "",
+      "Error-password-different": "Parollar har xil"
     },
     "profile": {
       "Edit-t-profile": "Profilingizni tahrirlash",
@@ -980,32 +1011,44 @@
     "Better-reference": "Yaxshi ma'lumotnoma"
   },
   "TERMS-OF-USE": {
-    "1-REGISTRATION-d": "Muayyan xizmatlarga kirish foydalanuvchi tomonidan ro'yxatdan o'tkazilishi shart. Sayt xizmatlarini ro'yxatdan o'tkazish va ulardan foydalanish faqat Piin saytida onlayn ro'yxatdan o'tish formasini to'ldirgan va tasdiqlagan, shuningdek ushbu Foydalanish Umumiy Shartlari bilan ishlaydigan jismoniy shaxslar uchun saqlanadi. ro'yxatdan o'tishda foydalanuvchi o'z shaxsiyati va uning fuqarolik holati to'g'risida aniq, samimiy va dolzarb ma'lumotlarni taqdim etishga majburdir. Shuningdek, foydalanuvchi aniqligini saqlash uchun unga tegishli ma'lumotlarni muntazam ravishda tekshirib turishi kerak.\n\nFoydalanuvchi majburiy ravishda elektron pochta manzilini ko'rsatishi kerak, unda sayt unga o'z xizmatlari uchun ro'yxatdan o'tganligi haqidagi tasdiqnomani yuboradi. Elektron pochta manzilini bitta hisob orqali xizmatlarga ro'yxatdan o'tish uchun bir necha marta ishlatish mumkin emas. Jismoniy shaxs uchun sayt xizmatlari uchun faqat bitta ro'yxatdan o'tishga ruxsat beriladi. Foydalanuvchiga parolini kiritishdan tashqari unga kirish huquqi saqlanadigan bo'shliqqa kirishga ruxsat beruvchi identifikator beriladi. Identifikator har bir foydalanuvchi uchun o'ziga xosdir, ammo foydalanuvchi o'z shaxsiy maydonida parolni onlayn ravishda o'zgartirishi mumkin.\nParol shaxsiy va maxfiydir, foydalanuvchi uni uchinchi shaxslarga etkazmaslik majburiyatini oladi. Piyinning zaxiralari har qanday holatda ham, foydalanuvchi ushbu Foydalanish shartlarining qoidalariga rioya qilmagan taqdirda xizmatlarga obuna bo'lish uchun so'rovni rad etish ehtimoli.",
-    "2-UNSUBSCRIBE-d": "Ro'yxatdan o'tgan foydalanuvchi istalgan vaqtda shaxsiy makonidagi maxsus sahifaga kirib, obunani bekor qilishni so'rashi mumkin. Saytdagi har qanday obunani bekor qilish, foydalanuvchi ushbu maqsad uchun taqdim etilgan shaklni yaqin vaqt ichida to'ldirgandan so'ng samarali bo'ladi.",
-    "3-DELETION-OF-PERSONAL-SPACE-d": "Foydalanuvchiga ma'lum bo'lishicha, muharrir foydalanish shartlarini buzgan har qanday foydalanuvchining shaxsiy maydonini o'chirish huquqini o'zida saqlab qoladi, ayniqsa quyidagi hollarda:\n\n● Agar foydalanuvchi saytdan noqonuniy foydalangan bo'lsa\n● Agar foydalanuvchi shaxsiy makon yaratishda bo'lsa, ixtiyoriy ravishda saytga noto'g'ri ma'lumot uzatadi\n● Agar foydalanuvchi o'zining shaxsiy maydonida kamida 5 yil davomida faol bo'lmagan bo'lsa.\n\nDans ishi, agar muharrir ushbu sabablardan biri tufayli foydalanuvchining shaxsiy maydonini olib tashlashga qaror qilsa, bu hisob qaydnomasi o'chirilgan foydalanuvchiga zarar etkazishi mumkin emas. Ushbu o'chirish noshir ushbu qoidalarga zid bo'lgan foydalanuvchiga nisbatan qabul qilishi mumkin bo'lgan sud jarayonidan voz kechishni anglatmaydi.",
-    "About-plateform": "Espace-Piin's Inc - bu o'z foydalanuvchilariga intuitiv va bepul tarzda bir nechta funktsional imkoniyatlarni markazlashtirishni taklif qiluvchi onlayn ommaviy axborot vositasi. Buning uchun ommaviy axborot vositalari foydalanuvchilarning suhbatlashishi va boshqa foydalanuvchilar bilan tarkib almashishi mumkin bo'lgan platformadir. Shuningdek, u doimiy ravishda musiqa tinglash funktsiyasini bajaradi, shunda uning foydalanuvchilari har qanday vaziyatda va vaqtda bo'lishidan qat'i nazar yaxshi muhitni ko'tarishlari mumkin. Espace-Piin Inc., shuningdek, foydalanuvchilarga ko'ngil ochish va o'qitish uchun doimiy ravishda video tomosha qilish funktsiyasiga ega.",
-    "Access-&-nav-d": "Saytga kirish va undan foydalanish kattalar uchun mo'ljallangan. Nashriyot har qanday usul bilan foydalanuvchi yoshini tasdiqlovchi hujjatlarni talab qilishga haqli. Saytga haftasiga 7 kun, tunu-kun kirish huquqini berish uchun muharrir texnik echimlarni amalga oshiradi. Shunga qaramay, u istalgan vaqtda saytga yoki uning ba'zi sahifalariga kirishni to'xtatishi, cheklashi yoki to'xtatishi mumkin, uning yangilanishi, tarkibidagi o'zgartirishlar yoki saytning to'g'ri ishlashi uchun zarur bo'lgan boshqa harakatlarni davom ettiradi.\nEspace Piin saytidagi ulanish va navigatsiya, kirishning texnik vositalari va ishlatilgan terminallardan qat'i nazar, ushbu foydalanishning umumiy shartlarini mutlaqo qabul qilinishini anglatadi. Ushbu umumiy foydalanish shartlari saytning har qanday o'zgarishi yoki kengaytirilishi uchun mavjud yoki kelajakdagi Espace Piins Inc tomonidan boshqariladigan ijtimoiy va / yoki ijtimoiy tarmoqlarda qo'llaniladi.",
-    "Confidentiality-d": "Ushbu Shartlar va Shartlarga qo'shimcha ravishda, sayt shaxsiy ma'lumotlarga ega bo'lib, unda foydalanuvchi saytga kirganda shaxsiy ma'lumotlar qanday ishlashini va cookie-fayllardan qanday foydalanilishini tavsiflaydi. Saytni ko'rib chiqish orqali foydalanuvchi, shuningdek, yuqoridagi maxfiylik siyosatini o'qiganligini da'vo qiladi.",
-    "Generality-d": "\"Www.espace-piins.com\" saytiga kirishning barcha usullari ushbu maxfiylik siyosatiga bo'ysunadi. Espace Piins Inc platformada to'plangan shaxsiy ma'lumotlar uchun javobgardir. Bu sizning shaxsiy ma'lumotlaringizdan foydalanish, saqlash, himoya qilish va tarqatish bilan bog'liq. Espace Piins-ga kirish butunlay bepul va platformaning barcha funktsiyalari (reklama nashridan tashqari) hisob-kitob qilinmaydi.\nMuharrir har qanday vaqtda va ogohlantirmasdan saytni va xizmatlarni, shuningdek ushbu Umumiy foydalanish shartlarini o'zgartirish huquqini o'zida saqlab qoladi, xususan yangi funktsiyalarga moslashish yoki mavjud funktsiyalarni o'chirish yoki o'zgartirish uchun platforma. Shuning uchun foydalanuvchiga har qanday navigatsiyadan oldin saytdan istalgan vaqtda kirish uchun foydalanishning umumiy shartlarining so'nggi versiyasiga murojaat qilish tavsiya etiladi. Foydalanishning umumiy shartlari bilan rozi bo'lmagan taqdirda, foydalanuvchi tomonidan saytdan foydalanish mumkin emas.",
-    "Hyperlinks-d": "Saytda boshqa veb-saytlarga ishora qiluvchi gipermatnli havolalar bo'lishi mumkin, ularda Piin nazorat qila olmaydi. Nashriyot tomonidan o'tkazilgan oldindan va muntazam tekshiruvlarga qaramay, ikkinchisi ushbu saytlarda topilishi mumkin bo'lgan tarkib uchun barcha javobgarlikni rad etadi. Nashriyotchi o'z saytining biron bir sahifasi yoki hujjatiga gipermatnli havolalar o'rnatishga ruxsat beradi, agar ushbu havolalarni o'rnatish tijorat yoki reklama maqsadida amalga oshirilmasa. Bundan tashqari, gipermatnli havola o'rnatilishidan oldin sayt noshirining oldindan ma'lumoti zarur. Noqonuniy, zo'ravonlik, ziddiyatli, pornografik, ksenofobik xarakterdagi yoki ko'pchilikning sezgirligiga ta'sir qilishi mumkin bo'lgan ma'lumotlarni tarqatadigan ushbu avtorizatsiya saytlaridan chiqarib tashlangan.\nVa nihoyat, Piin o'z saytiga ishora qiluvchi gipermatnli havolani istalgan vaqtda o'chirib tashlash huquqini o'zida saqlab qoladi, agar sayt tahririyat siyosatiga mos kelmasa deb hisoblasa. Platformaning noshiri tomonidan tavsiya etilmagan platformaga tashqi barcha gipermatnlar tavsiya etilmaydi.",
-    "Intellectual-property-d": "Saytning tuzilishi, shuningdek uni yaratadigan matnlar, grafikalar, rasmlar, fotosuratlar, tovushlar, videofilmlar va kompyuter dasturlari noshirning mulki hisoblanadi va intellektual mulk qonunlari bilan himoyalangan.\n\nSayt tomonidan taqdim etilgan tarkibni, ro'yxatdan o'tgan savdo belgilarini va xizmatlarini ko'paytirish, moslashtirish yoki qisman yoki to'liq ekspluatatsiya qilish, noshirning oldindan yozma ruxsatisiz, har qanday jarayon bilan qat'iyan man etiladi va L maqolalari ma'nosida qalbakilashtirishni anglatishi mumkin. 335-2 va boshq. Intellektual mulk kodeksining. Va bu, saytdagi huquqlarsiz deb aniq belgilangan elementlar bundan mustasno.\n\nSaytga kirish huquqni e'tirof etishni anglatmaydi va umuman olganda, saytning biron bir elementiga tegishli bo'lgan, nashriyotning eksklyuziv mulki bo'lib qoladigan intellektual mulk huquqiga ega bo'lmaydi. Foydalanuvchiga saytga uning tarkibini yoki ko'rinishini o'zgartiradigan yoki o'zgartirishi mumkin bo'lgan ma'lumotlarni kiritish taqiqlanadi.",
-    "Our-plateforme": "Bizning platformamiz",
-    "Responsability-d": "Nashriyotchi faqat o'zi tahrir qilgan tarkib uchun javobgardir. Noshir javobgar emas:\n\n● Saytda biron bir qo'shimcha yoki dasturiy ta'minot bilan bog'liq muammolar yoki texnik, IT yoki buxgalteriya ishlamay qolganda\n● Saytdan yoki uning xizmatlaridan foydalanish yoki foydalanishdagi qiyinchiliklar natijasida to'g'ridan-to'g'ri yoki bilvosita, moddiy yoki moddiy bo'lmagan, taxmin qilinadigan yoki oldindan aytib bo'lmaydigan zarar.\n● Internetning o'ziga xos xususiyatlari, xususan u erda aylanayotgan ma'lumotlarning ishonchsizligi va xavfsizligining yo'qligi bilan bog'liq.\n● Shaxsiy ma'lumotlarni qayta ishlashga oid qonun doirasida o'z veb-saytidan o'z vaqtida xabardor bo'lmasdan turib, noqonuniy tarkib yoki faoliyat.\n\nBundan tashqari, sayt u erda tarqatilgan ma'lumotlarning to'g'riligi, to'liqligi va dolzarbligiga kafolat bera olmaydi.\n\nFoydalanuvchi quyidagilar uchun javobgardir:\n● Uning uskunalarini himoya qilish va platformadagi manipulyatsiya Espace Piins-ga tegishli bo'lmagan qurilmadan\n● U sayt yoki uning ma'lumotlaridan foydalanishi\n● Agar u ushbu umumiy foydalanish shartlarining xatini yoki ruhini hurmat qilmasa.",
-    "Responsability-d-extra": "Xizmatga tarkib berish orqali siz Piin-ga xizmat va faoliyat bilan bog'liq holda ushbu tarkibdan foydalanish (shu jumladan, ko'paytirish, tarqatish, lotin asarlarini tayyorlash, tarqatish va chop etish) uchun butun dunyo bo'ylab eksklyuziv bo'lmagan, royalti bo'lmagan, o'tkaziladigan sublienziyani berasiz. Piin (va uning vorislari va filiallari), shu jumladan Xizmatni to'liq yoki qisman targ'ib qilish va qayta tarqatish.",
-    "Site-management-d": "Saytni to'g'ri boshqarish uchun noshir istagan vaqtda:\n\n● Saytning to'liq yoki bir qismiga kirishni to'xtatib qo'yish, to'xtatish yoki cheklash, saytga yoki saytning ayrim qismlariga, Internet foydalanuvchilarining ma'lum bir toifasiga kirishni zaxiralash.\n● Uning ishlashini buzishi mumkin bo'lgan yoki milliy yoki xalqaro qonunlarga yoki Netiquette qoidalariga zid bo'lgan barcha ma'lumotlarni o'chirib tashlang.\n● Yangilanishlarni amalga oshirish uchun saytni to'xtatib turing. Platformadagi tarkibni o'zgartirish istagi texnik xizmat ko'rsatish davrida mavjud bo'lmaydi.",
     "TITLE": {
-      "1-REGISTRATION": "1. Ro'yxatdan o'tish",
-      "2-UNSUBSCRIBE": "2. OBUNA BO'LISH",
-      "3-DELETION-OF-PERSONAL-SPACE": "3. ShAXSIY BO'LIMNI OB-NASHDARNING TASABBUSIDA O'CHIRISH",
-      "Access-&-nav": "Kirish va navigatsiya",
-      "Confidentiality": "Maxfiylik",
-      "Generality": "Umumiyliklar",
-      "Hyperlinks": "Gipermatnli havolalar",
-      "Intellectual-property": "Intellektual mulk",
-      "Responsability": "Mas'uliyat",
-      "Services": "Xizmatlar",
-      "Site-management": "Saytlarni boshqarish"
-    }
+      "Term-Of-Use": "",
+      "Definition-of-the-Tou": "",
+      "Agreement-to-the-Tou": "",
+      "Modification-of-the-Tou": "",
+      "Legal-information": "",
+      "Definitions": "",
+      "Access-to-the-site": "",
+      "Price": "",
+      "Unsubscribe": "",
+      "General-restriction-of-use": "",
+      "Personal-information": "",
+      "Intellectual-property-rights": "",
+      "Responsibility": "",
+      "Hypertext-links": "",
+      "Publication-by-user": "",
+      "Applicable-law-and-jurisdiction": ""
+    },
+    "Effective-Date": "",
+    "Tips": "",
+    "About-definition-of-the-Tou": "",
+    "About-agreement-to-the-Tou": "",
+    "About-modification-of-the-Tou": "",
+    "About-legal-information": "",
+    "About-legal-information-adress": "",
+    "About-definitions": "",
+    "About-access-to-the-site": "",
+    "About-payment-confirmation-unsubscribe": "",
+    "About-price": "",
+    "About-unsubscribe": "",
+    "About-price-early-access": "",
+    "About-general-restriction-of-use": "",
+    "About-personal-information": "",
+    "About-intellectual-property-rights": "",
+    "About-responsibility": "",
+    "About-hypertext-links": "",
+    "About-publication-by-user": "",
+    "About-applicable-law-and-jurisdiction": ""
   },
   "THIS-IS": {
     "id-of-t-music": "Sizning musiqa identifikatoringiz"

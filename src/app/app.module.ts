@@ -132,6 +132,11 @@ import { Router } from '@angular/router'
 import { APP_INITIALIZER, ErrorHandler } from "@angular/core";
 import { GlobalErrorHandler } from './core/interceptors/globalErrorHandler.interceptor'
 import { PlyrModule } from 'ngx-plyr';
+import { OnboardingComponent } from './sign/onboarding/onboarding.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { ToDiscordComponent } from './sign/to-discord/to-discord.component';
+import { ToStripeComponent } from './sign/to-stripe/to-stripe.component';
+import { ForgotPasswordConfirmationComponent } from './sign/forgot-password-confirmation/forgot-password-confirmation.component';
 
 
 // AoT requires an exported function for factories
@@ -163,13 +168,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ManagementTeamComponent, GroupValidationComponent, ReportMessageComponent, FooterCoreComponent,
     ForgotPasswordComponent, CommunityListComponent, ReportModalComponent, VerificationSpaceUnlockedComponent,
     CertificationMenuComponent, LedgerComponent, CreateMusicProjectComponent, NotfoundComponent, 
-    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent, CreditMusicComponent
+    VeritificationStepsComponent, MyProfileBodyComponent, ProfileBodyComponent, CreditMusicComponent, OnboardingComponent, ToDiscordComponent, ToStripeComponent, ForgotPasswordConfirmationComponent
   ],
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
     HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
     MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
-    InfiniteScrollModule, RoundProgressModule, DragDropModule, PlyrModule, ImageCropperModule, QRCodeModule,
+    InfiniteScrollModule, RoundProgressModule, DragDropModule, MatProgressSpinnerModule, PlyrModule, ImageCropperModule, QRCodeModule,
     DeviceDetectorModule.forRoot(),
     TranslateModule.forRoot({ 
       loader: { 
