@@ -6,7 +6,7 @@ import { SettingUserService } from 'src/app/core/services/setting-user/setting-u
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { MatSnackBar, MatSnackBarRef, SimpleSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-forgot-password',
@@ -30,7 +30,6 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router,
     private _snackBar: MatSnackBar,
     private translate: TranslateService,
     private settingUserService: SettingUserService
@@ -51,20 +50,19 @@ export class ForgotPasswordComponent implements OnInit, OnDestroy {
 
     // check if the mail is valid
     if (this.emailForm.invalid) return this.invalidMessageAlert()
-    this.loading = false
+    this.loading = true
 
     // send the request
     this.passwordSub = this.settingUserService.resetPasswordEmail(this.emailForm.get('email').value)
       .pipe(take(1))
       .subscribe(
         () => {
-          this.emailSended = true
-          this.loading = true
+          this.loading = false
           setTimeout(() => { this.loading = false }, 3000);
           setTimeout(() => { this.confirmationSended = true }, 3000);
         },
-        error => {
-          if (error == 'address_invalid') return this.invalidMessageAlert()
+        (response: HttpErrorResponse) => {
+          if (response.error.message == 'address_invalid') return this.invalidMessageAlert()
           else this.loading = false
         }
       )
