@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import * as featureActions from './actions'
 import { catchError, map, switchMap, tap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
@@ -20,17 +20,15 @@ export class GroupEffects {
     private dialogRef: MatDialog, private router: Router, private translate: TranslateService
   ) { }
 
-  @Effect()
-  loadGroupAdmin: Observable<ActionsGroup> = this.actions$.pipe(
+  loadGroupAdmin$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadGroupAdmin>(featureActions.ActionTypes.LOAD_GROUP),
     switchMap(action => this.dataService.GetGroupForAdmin(action.id).pipe(
       map(items => new featureActions.LoadGroupAdminSuccess(items.group)),
       catchError(error => observableOf(new featureActions.LoadGroupAdminFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  updateGroup: Observable<ActionsGroup> = this.actions$.pipe(
+  updateGroup$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UpdateGroup>(featureActions.ActionTypes.UPDATE_GROUP),
     switchMap(action => this.dataService.UpdateGroup(action.payload).pipe(
       tap(() => this._snackBar.open(
@@ -43,40 +41,36 @@ export class GroupEffects {
       map(items => new featureActions.UpdateGroupSuccess(items.group)),
       catchError(error => observableOf(new featureActions.UpdateGroupFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  loadMember: Observable<ActionsGroup> = this.actions$.pipe(
+  loadMember$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadMember>(featureActions.ActionTypes.LOAD_MEMBER),
     switchMap(action => this.profileService.GetGroupMembers(action.id, action.page, action.total).pipe(
       map( items => new featureActions.LoadMemberSuccess(items.results)),
       catchError(error => observableOf(new featureActions.LoadMemberFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  addRequestMember: Observable<ActionsGroup> = this.actions$.pipe(
+  addRequestMember$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.SendRequestMember>(featureActions.ActionTypes.SEND_REQUEST_MEMBER),
     switchMap(action => this.dataService.AddRequestGroup(action.teamID, action.profileID).pipe(
       map( items => new featureActions.SendRequestMemberSuccess(items.profile)),
       catchError(error => observableOf(new featureActions.SendRequestMemberFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  deleteMember: Observable<ActionsGroup> = this.actions$.pipe(
+  deleteMember$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.deleteMember>(featureActions.ActionTypes.DELETE_MEMBER),
     switchMap(action => this.dataService.DeleteMemberGroup(action.groupID, action.profileID).pipe(
       map( items => new featureActions.deleteMemberSuccess(items.profile)),
       catchError(error => observableOf(new featureActions.deleteMemberFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  udpateTeam: Observable<ActionsGroup> = this.actions$.pipe(
+  udpateTeam$: Observable<ActionsGroup> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.ChangeRole>(featureActions.ActionTypes.CHANGE_ROLE),
     switchMap(action => this.catagorieOfChange(action.update, action.password)),
-  )
+  ))
 
   catagorieOfChange(update: TeamUpdate, password: string) {
     switch (update.catagorie) {

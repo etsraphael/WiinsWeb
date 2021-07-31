@@ -1,6 +1,6 @@
 import { SearchService } from '../../core/services/search/search.service';
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Action, Store } from '@ngrx/store';
 import { Observable, of as observableOf, empty } from 'rxjs';
 import { catchError, map, startWith, switchMap, filter, mergeMap, withLatestFrom } from 'rxjs/operators';
@@ -14,8 +14,7 @@ export class SearchPageStoreEffects {
     private actions$: Actions
   ) {}
 
-  @Effect()
-  searchPageEffect$: Observable<Action> = this.actions$.pipe(
+  searchPageEffect$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.SearchPage>(featureActions.ActionTypes.SEARCH_PAGE),
     switchMap((action: featureActions.SearchPage) => {
       return this.dataService
@@ -35,5 +34,5 @@ export class SearchPageStoreEffects {
           )
         );
     })
-  );
+  ));
 }

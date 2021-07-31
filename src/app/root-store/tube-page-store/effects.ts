@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import { map, switchMap, catchError, mergeMap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
 import { PageTubeActions } from './actions'
@@ -20,17 +20,16 @@ export class TubePageStoreEffects {
     private friendService: FriendService
   ) { }
 
-  @Effect()
-  loadMenu: Observable<PageTubeActions> = this.actions$.pipe(
+  loadMenu$: Observable<PageTubeActions> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadPageTube>(featureActions.ActionTypes.LOAD_TUBE_PAGE),
     switchMap(action => this.dataService.getTubePage(action.id).pipe(
       map( items => new featureActions.LoadPageTubeSuccess(items.page)),
       catchError(error => observableOf(new featureActions.LoadPageTubeFail(error)))
-    ))
+    )))
   )
 
-  @Effect()
-  deleteFriends$: Observable<Action> = this.actions$.pipe(
+
+  deleteFriends$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeleteFriend>(featureActions.ActionTypes.DELETE_FRIEND),
     switchMap((action: featureActions.DeleteFriend) => this.friendService.DeleteFriend(action.id).pipe(
       mergeMap((response) => [
@@ -38,23 +37,21 @@ export class TubePageStoreEffects {
         new CurrentRoomStoreActions.deleteRoomByProfile(response.friendId)
       ]),
       catchError(err => observableOf(new featureActions.DeleteFriendFail(err)))
-    ))
+    )))
   )
 
-  @Effect()
-  followProfile$: Observable<Action> = this.actions$.pipe(
+  followProfile$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.FollowProfile>(featureActions.ActionTypes.FOLLOW_PROFILE),
     switchMap(action => this.coreService.FollowProfile(action.id).pipe(
       map((response) => new featureActions.FollowProfileSuccess(response.message)),
       catchError(err => observableOf(new featureActions.FollowProfileFail(err)))))
-  )
+  ))
 
-  @Effect()
-  unfollowProfile$: Observable<Action> = this.actions$.pipe(
+  unfollowProfile$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UnFollowProfile>(featureActions.ActionTypes.UNFOLLOW_PROFILE),
     switchMap(action => this.coreService.UnFollowProfile(action.id).pipe(
       map((response) => new featureActions.UnFollowProfileSuccess(response.message)),
       catchError(err => observableOf(new featureActions.UnFollowProfileFail(err)))))
-  )
+  ))
 
 }

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import * as featureActions from './actions'
 import { catchError, map, switchMap, tap, mergeMap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
@@ -24,20 +24,18 @@ export class AdminsFeatureEffects {
     private translate: TranslateService
   ) { }
 
-  @Effect()
-  loadAdmins: Observable<ActionsPage> = this.actions$.pipe(
+  loadAdmins$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadAdmins>(featureActions.ActionTypes.LOAD_ADMINS),
     switchMap(action => this.dataService.GetAdmins(action.pageId).pipe(
       map(items => new featureActions.LoadAdminsSuccess(items.result)),
       catchError(error => observableOf(new featureActions.LoadAdminsFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  udpateTeam: Observable<Action> = this.actions$.pipe(
+  udpateTeam$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.ChangeRole>(featureActions.ActionTypes.CHANGE_ROLE),
     switchMap(action => this.catagorieOfChange(action.update, action.password)),
-  )
+  ))
 
   catagorieOfChange(update: TeamUpdate, password: string) {
     switch (update.catagorie) {

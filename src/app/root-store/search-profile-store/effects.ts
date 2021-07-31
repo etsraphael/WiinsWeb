@@ -1,7 +1,7 @@
 import { CoreService } from 'src/app/core/services/core/core.service';
 import { SearchService } from './../../core/services/search/search.service';
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Action, Store } from '@ngrx/store';
 import { Observable, of as observableOf, empty } from 'rxjs';
 import { catchError, map, startWith, switchMap, filter, mergeMap, withLatestFrom, tap } from 'rxjs/operators';
@@ -15,8 +15,8 @@ export class SearchFeatureStoreEffects {
     private actions$: Actions
   ) { }
 
-  @Effect()
-  searchProfileEffect$: Observable<Action> = this.actions$.pipe(
+
+  searchProfileEffect$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.SearchProfile>(featureActions.ActionTypes.SEARCH_PROFILE),
     switchMap((action: featureActions.SearchProfile) => {
       return this.dataService
@@ -35,10 +35,10 @@ export class SearchFeatureStoreEffects {
           )
         );
     })
-  )
+  ))
 
-  @Effect()
-  searchFriendsEffect$: Observable<Action> = this.actions$.pipe(
+
+  searchFriendsEffect$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.SearchFriends>(featureActions.ActionTypes.SEARCH_FRIENDS),
     switchMap((action: featureActions.SearchFriends) => {
       return this.dataService
@@ -57,6 +57,6 @@ export class SearchFeatureStoreEffects {
           )
         );
     })
-  )
+  ))
 
 }
