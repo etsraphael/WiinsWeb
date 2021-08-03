@@ -25,7 +25,7 @@
     "@angular/platform-browser-dynamic": "^11.2.14",
     "@angular/router": "^11.2.14",
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "@ng-bootstrap/ng-bootstrap": "^8.0.4",
+    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@ngrx/effects": "^12.3.0",
     "@ngrx/entity": "^10.1.2",
     "@ngrx/store": "^10.1.2",
