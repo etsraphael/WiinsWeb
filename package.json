@@ -56,7 +56,7 @@
     "ngx-google-places-autocomplete": "^2.0.5",
     "ngx-image-compress": "^11.0.3",
     "ngx-image-cropper": "^2.1.2",
-    "ngx-infinite-scroll": "^8.0.2",
+    "ngx-infinite-scroll": "^10.0.1",
     "ngx-masonry": "^1.1.4",
     "ngx-plyr": "^4.0.0",
     "ngx-textarea-autosize": "^2.0.3",
