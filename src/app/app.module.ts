@@ -52,7 +52,6 @@ import { CreateTubePublicationComponent } from './space-creative/create-tube-pub
 import { CreateMusicProjectComponent } from './space-creative/create-music-project/create-music-project.component'
 import { NotfoundComponent } from './notfound/notfound.component'
 import { NoprofileComponent } from './notfound/noprofile/noprofile.component'
-import { SiPipeModule } from 'ng-si'
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { RegisterConfirmationComponent } from './sign/register-confirmation/register-confirmation.component'
@@ -173,7 +172,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   imports: [
     RootStoreModule, BrowserModule, NgxMasonryModule, AppRoutingModule, NgbModule, HttpClientModule,
     HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
-    MaterialModule, ReactiveFormsModule, SiPipeModule, ClickOutsideModule, GooglePlaceModule,
+    MaterialModule, ReactiveFormsModule, ClickOutsideModule, GooglePlaceModule,
     InfiniteScrollModule, RoundProgressModule, DragDropModule, MatProgressSpinnerModule, PlyrModule, ImageCropperModule, QRCodeModule,
     DeviceDetectorModule.forRoot(),
     TranslateModule.forRoot({ 
