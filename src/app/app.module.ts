@@ -110,7 +110,6 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { ForgotPasswordComponent } from './sign/forgot-password/forgot-password.component';
 import { ChangingPasswordComponent } from './sign/changing-password/changing-password.component';
 import { FeedPageAdminStandardComponent } from './mypage/feed-page-admin-standard/feed-page-admin-standard.component';
-import { DeviceDetectorModule } from 'ngx-device-detector';
 import { CommunityListComponent } from './core/component/community-list/community-list.component'
 import { ReportModalComponent } from './core/modal/report-modal/report-modal.component'
 import { ReportMessageComponent } from './core/modal/report-message/report-message.component';
@@ -174,7 +173,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HttpClientJsonpModule, CoreModule, BrowserAnimationsModule, FormsModule, AutosizeModule,
     MaterialModule, ReactiveFormsModule, ClickOutsideModule, GooglePlaceModule,
     InfiniteScrollModule, RoundProgressModule, DragDropModule, MatProgressSpinnerModule, PlyrModule, ImageCropperModule, QRCodeModule,
-    DeviceDetectorModule.forRoot(),
     TranslateModule.forRoot({ 
       loader: { 
         provide: TranslateLoader,
