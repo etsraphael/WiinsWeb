@@ -24,7 +24,6 @@ export class PageStoryComponent implements OnInit, OnDestroy {
 
   // masonry
   optionMasonry: NgxMasonryOptions = {
-    transitionDuration: '0.8s',
     resize: true,
     horizontalOrder: true,
     originLeft: false

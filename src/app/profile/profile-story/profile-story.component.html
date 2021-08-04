@@ -8,7 +8,7 @@
 <div class=" px-0" *ngIf="(publication$|async)">
 
   <!-- If we have publication -->
-  <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
+  <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100"
     [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"
     (scrolled)="onScroll()" [infiniteScrollContainer]="'.container-router'" [fromRoot]="true">
     <app-feed-publication *ngIf="(publication$ | async)?.length > 0" ngxMasonryItem
