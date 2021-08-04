@@ -49,7 +49,6 @@
     "lodash": "^4.17.21",
     "material-icons": "^0.7.7",
     "ng-click-outside": "^5.3.0",
-    "ngx-animate": "^1.0.1",
     "ngx-autosize": "^1.8.4",
     "ngx-bootstrap": "^5.6.2",
     "ngx-device-detector": "^2.1.1",

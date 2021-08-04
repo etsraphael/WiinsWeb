@@ -1,9 +1,8 @@
 import { transition, trigger, useAnimation, query, group, style, animate } from '@angular/animations'
-import { zoomIn, zoomOut } from 'ngx-animate'
 
 export const TubeAnimation = [
   trigger('Tube', [
-    transition('Home => Watching', useAnimation(zoomIn,{ params: { timing: 0.7 }})),
+    // transition('Home => Watching', useAnimation(zoomIn,{ params: { timing: 0.7 }})),
     transition('Watching => Home', [
       query(':enter, :leave',
         style({ position: 'fixed', width: '100%', height: '100%'}),
