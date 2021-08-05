@@ -55,7 +55,7 @@
     "ngx-device-detector": "^2.1.1",
     "ngx-google-places-autocomplete": "^2.0.5",
     "ngx-image-compress": "^11.0.3",
-    "ngx-image-cropper": "^2.1.2",
+    "ngx-image-cropper": "^4.0.1",
     "ngx-infinite-scroll": "^10.0.1",
     "ngx-masonry": "^11.0.2",
     "ngx-plyr": "^4.0.0",
