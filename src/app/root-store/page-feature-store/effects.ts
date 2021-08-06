@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
 import * as featureActions from './actions';
 import { catchError, map, switchMap, tap, mergeMap } from 'rxjs/operators';
 import { Observable, of as observableOf } from 'rxjs';
@@ -21,17 +21,15 @@ export class PageFeatureEffects {
     private translate: TranslateService
   ) { }
 
-  @Effect()
-  loadPage: Observable<ActionsPage> = this.actions$.pipe(
+  loadPage$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadPage>(featureActions.ActionTypes.LOAD_PAGE),
     switchMap(action => this.dataService.GetPage(action.name).pipe(
       map(items => new featureActions.LoadPageSuccess(items.page)),
       catchError(error => observableOf(new featureActions.LoadPageFail(error)))
     ))
-  );
+  ));
 
-  @Effect()
-  creatPage: Observable<Action> = this.actions$.pipe(
+  creatPage$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.CreatPage>(featureActions.ActionTypes.CREAT_PAGE),
     switchMap(action => this.dataService.CreatPage(action.page).pipe(
       tap(items => this.router.navigate([`/mypage/${items.page._id}`])),
@@ -41,10 +39,9 @@ export class PageFeatureEffects {
       ]),
       catchError(error => observableOf(new featureActions.CreatPageFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  deletePage: Observable<ActionsPage> = this.actions$.pipe(
+  deletePage$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeletePage>(featureActions.ActionTypes.DELETE_PAGE),
     switchMap(action => this.dataService.DeletePage(action.pageId, action.password).pipe(
       tap(() => {
@@ -58,14 +55,13 @@ export class PageFeatureEffects {
       map(items => new featureActions.DeletePageSuccess(items.message)),
       catchError(error => observableOf(new featureActions.DeletePageFail(error)))
     ))
-  );
+  ));
 
-  @Effect()
-  changeVisibility: Observable<ActionsPage> = this.actions$.pipe(
+  changeVisibility$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.ChangeVisibility>(featureActions.ActionTypes.CHANGE_VISIBILITY),
     switchMap(event => this.getAction(event)),
     catchError(error => observableOf(new featureActions.ChangeVisibilityFail(error)))
-  );
+  ));
 
   getAction(event) {
     switch (event.categorie) {
@@ -81,23 +77,21 @@ export class PageFeatureEffects {
   }
 
 
-  @Effect()
-  followPage: Observable<ActionsPage> = this.actions$.pipe(
+  followPage$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.FollowPage>(featureActions.ActionTypes.FOLLOW_PAGE),
     switchMap(action => this.dataService.FollowPage(action.id).pipe(
       map(items => new featureActions.FollowPageSuccess(items.status)),
       catchError(error => observableOf(new featureActions.FollowPageFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  unfollowPage: Observable<ActionsPage> = this.actions$.pipe(
+  unfollowPage$: Observable<ActionsPage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UnFollowPage>(featureActions.ActionTypes.UNFOLLOW_PAGE),
     switchMap(action => this.dataService.UnfollowPage(action.id).pipe(
       map(items => new featureActions.UnFollowPageSuccess(items.status)),
       catchError(error => observableOf(new featureActions.UnFollowPageFail(error)))
     ))
-  )
+  ))
 
 
 }

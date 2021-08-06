@@ -21,7 +21,6 @@ export class GroupStoryComponent implements OnInit, OnDestroy {
 
   // masonry
   optionMasonry: NgxMasonryOptions = {
-    transitionDuration: '0.8s',
     resize: true,
     originLeft: false
   }

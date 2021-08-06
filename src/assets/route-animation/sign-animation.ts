@@ -8,7 +8,6 @@ import {
   trigger,
   useAnimation,
 } from "@angular/animations";
-import { jello, lightSpeedIn } from "ngx-animate";
 
 export const SignAnimation = [
   trigger("routeAnimations", [
@@ -21,19 +20,7 @@ export const SignAnimation = [
     transition("To-Discord => OnBoarding", slideTo("left")),
     transition("OnBoarding => To-Stripe", slideTo("right")),
     transition("To-Stripe => OnBoarding", slideTo("left")),
-  ]),
-  trigger("stateLogin", [
-    transition(
-      "default => error",
-      useAnimation(jello, { params: { timing: 1.2 } })
-    ),
-  ]),
-  trigger("donation", [
-    transition(
-      "* => true",
-      useAnimation(lightSpeedIn, { params: { timing: 0.5 } })
-    ),
-  ]),
+  ])
 ];
 
 function slideTo(direction: string) {

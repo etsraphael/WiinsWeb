@@ -1,6 +1,6 @@
 import { LikeService } from '../../core/services/publications/like/like.service'
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import * as featureActions from './actions'
 import { catchError, map, switchMap, mergeMap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
@@ -16,26 +16,26 @@ export class PushLikeFeatureEffects {
     private actions$: Actions
   ) { }
 
-  @Effect()
-  addLike$: Observable<ActionsPushLike> = this.actions$.pipe(
+
+  addLike$: Observable<ActionsPushLike> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.AddLike>(featureActions.ActionTypes.ADD_LIKE),
     switchMap( data => this.dataLikeService.addFeedPublicationLike(data.payload).pipe(
       map(items => new featureActions.AddLikeSuccess(items.status)),
       catchError(error => observableOf(new featureActions.AddLikeFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  deleteLike$: Observable<Action> = this.actions$.pipe(
+
+  deleteLike$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeleteLike>(featureActions.ActionTypes.DELETE_LIKE),
     switchMap( data => this.dataLikeService.deleteFeedPublicationLike(data.id).pipe(
       map(items => new featureActions.DeleteLikeSuccess(items.status)),
       catchError(error => observableOf(new featureActions.DeleteLikeFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  addLikeComment$: Observable<Action> = this.actions$.pipe(
+
+  addLikeComment$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.AddLikeComment>(featureActions.ActionTypes.ADD_LIKE_COMMENT),
     switchMap( data => this.dataLikeService.addLikeComment(data.payload).pipe(
       mergeMap(items => [
@@ -44,10 +44,9 @@ export class PushLikeFeatureEffects {
       ]),
       catchError(error => observableOf(new featureActions.AddLikeCommentFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  deleteLikeComment$: Observable<Action> = this.actions$.pipe(
+  deleteLikeComment$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeleteLikeComment>(featureActions.ActionTypes.DELETE_LIKE_COMMENT),
     switchMap( data => this.dataLikeService.deleteLikeComment(data.id).pipe(
       mergeMap(items => [
@@ -56,6 +55,6 @@ export class PushLikeFeatureEffects {
       ]),
       catchError(error => observableOf(new featureActions.DeleteLikeCommentFail(error)))
     ))
-  )
+  ))
 
 }

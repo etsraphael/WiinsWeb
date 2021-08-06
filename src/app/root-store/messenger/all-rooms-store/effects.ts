@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import { catchError, map, switchMap, tap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
 import { MessengerService } from 'src/app/core/services/messenger/messenger.service'
@@ -17,15 +17,14 @@ export class AllRoomsEffects {
     private actions$: Actions
   ) { }
 
-  @Effect()
-  loadAllRooms: Observable<featureActions.ActionsMessage> = this.actions$.pipe(
+  loadAllRooms$: Observable<featureActions.ActionsMessage> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.loadAllRoomsByPage>(featureActions.ActionTypes.LOAD_ALL_ROOMS_BY_PAGE),
     switchMap(action => this.dataService.GetAllRoomsByPage(action.page).pipe(
       tap(data => this.plateformState.changeState({all_rooms: data.results.map(x => x._id)})),
       map(data => new featureActions.loadAllRoomsByPageSuccess(data.results)),
       catchError(error => observableOf(new featureActions.loadAllRoomsByPageFail(error)))
     ))
-  )
+  ))
 
 
 }
