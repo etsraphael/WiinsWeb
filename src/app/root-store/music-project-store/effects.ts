@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import { map, switchMap, tap, catchError, mergeMap } from 'rxjs/operators'
 import { Observable, of as observableOf } from 'rxjs'
 import * as featureActions from './actions'
@@ -23,8 +23,7 @@ export class MusicProjectStoreEffects {
     private translate: TranslateService
   ) { }
 
-  @Effect()
-  creatMusic: Observable<Action> = this.actions$.pipe(
+  creatMusic$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.AddMusicProject>(featureActions.ActionTypes.ADD_MUSIC_PROJECT),
     switchMap(action => this.dataService.createFeedPublication(action.payload).pipe(
       tap((action: MusicProjectResponse) => this.router.navigate(['/profile/'+ action.musicProject.profile._id + '/Music'])),
@@ -40,28 +39,25 @@ export class MusicProjectStoreEffects {
         return observableOf(new featureActions.AddMusicProjectFail(error))
         })
     ))
-  )
+  ))
 
-  @Effect()
-  loadMusicByProfile: Observable<ActionsMusicProject> = this.actions$.pipe(
+  loadMusicByProfile$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadMusicProjectByProfile>(featureActions.ActionTypes.LOAD_MUSIC_PROJECT_BY_PROFILE),
     switchMap(action => this.dataService.LoadMusicByProfile(action.id).pipe(
       map(items => new featureActions.LoadMusicProjectByProfileSuccess(items.results)),
       catchError(error => observableOf(new featureActions.LoadMusicProjectByProfileFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  loadMusicByMyProfile: Observable<ActionsMusicProject> = this.actions$.pipe(
+  loadMusicByMyProfile$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadMusicProjectByMyProfile>(featureActions.ActionTypes.LOAD_MUSIC_PROJECT_BY_MY_PROFILE),
     switchMap(() => this.dataService.LoadMusicByMyProfile().pipe(
       map(items => new featureActions.LoadMusicProjectByMyProfileSuccess(items.results)),
       catchError(error => observableOf(new featureActions.LoadMusicProjectByMyProfileFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  updateMusic: Observable<ActionsMusicProject> = this.actions$.pipe(
+  updateMusic$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UpdateMusic>(featureActions.ActionTypes.UPDATE_MUSIC),
     switchMap(action => this.dataService.UpdateMusic(action.payload, action.categorie).pipe(
       tap(() => 
@@ -72,43 +68,39 @@ export class MusicProjectStoreEffects {
       map(items => new featureActions.UpdateMusicSuccess(items.musicProject)),
       catchError(error => observableOf(new featureActions.UpdateMusicFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  updateMusicProject: Observable<ActionsMusicProject> = this.actions$.pipe(
+  updateMusicProject$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UpdateMusicProject>(featureActions.ActionTypes.UPDATE_MUSIC_PROJECT),
     switchMap(action => this.dataService.UpdateMusicProject(action.payload, action.password).pipe(
       map(items => new featureActions.UpdateMusicProjectSuccess(items.musicProject)),
       catchError(error => observableOf(new featureActions.UpdateMusicProjectFail(error)))
     ))
-  )
+  ))
 
-  @Effect()
-  deletePlaylist: Observable<ActionsMusicProject> = this.actions$.pipe(
+  deletePlaylist$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeletePlaylist>(featureActions.ActionTypes.DELETE_PLAYLIST),
     switchMap(action => this.dataService.DeletePlaylist(action.id, action.password).pipe(
       map(items => new featureActions.DeletePlaylistSuccess(items.musicProject)),
       catchError((response: HttpErrorResponse) => observableOf(new featureActions.DeletePlaylistFail(response.error.message)))
     ))
-  )
+  ))
 
-  @Effect()
-  deleteMusic: Observable<ActionsMusicProject> = this.actions$.pipe(
+  deleteMusic$: Observable<ActionsMusicProject> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.DeleteMusic>(featureActions.ActionTypes.DELETE_MUSIC),
     switchMap(action => this.dataService.DeleteMusic(action.publicationID, action.musicID, action.password).pipe(
       map(items => new featureActions.DeleteMusicSuccess(items.musicProject)),
       catchError((response: HttpErrorResponse) => observableOf(new featureActions.DeleteMusicFail(response.error.message)))
     ))
-  )
+  ))
 
-  @Effect()
-  deleteMusicProject: Observable<Action> = this.actions$.pipe(
+  deleteMusicProject$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.deleteMusicProject>(featureActions.ActionTypes.DELETE_MUSIC_PROJECT),
     switchMap(action => this.dataService.DeleteMusicProject(action.id, action.password).pipe(
       map((item: MusicProjectResponse) => new featureActions.deleteMusicProjectSuccess(item.musicProject._id)),
       catchError((response: HttpErrorResponse) => observableOf(new featureActions.deleteMusicProjectFail(response.error.message)))
     ))
-  )
+  ))
 
 }
 

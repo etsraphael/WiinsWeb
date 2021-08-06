@@ -11,7 +11,7 @@
       </div>
       <div class="container mt-3 publications-space" *ngIf="!(loading$ | async) && (groups$|async)">
         <!-- If we have publication -->
-        <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100" [useImagesLoaded]="true"
+        <ngx-masonry *ngIf="(publication$ | async)?.length > 0" class="row mx-0 w-100"
           [options]="optionMasonry" infiniteScroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="50"
           (scrolled)="onScroll()" [infiniteScrollContainer]="'.list-publication'" [fromRoot]="true">
           <app-card-feed-group-publication *ngIf="(publication$ | async)?.length > 0" ngxMasonryItem [space]="'group-story'"

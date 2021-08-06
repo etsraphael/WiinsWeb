@@ -31,7 +31,6 @@ export class SpaceDiscoverComponent implements OnInit {
   // masonry
   optionMasonry: NgxMasonryOptions = {
     horizontalOrder: true,
-    transitionDuration: '0.8s',
     resize: true,
   }
 

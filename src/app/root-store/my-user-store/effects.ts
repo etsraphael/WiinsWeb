@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store'
 import { Injectable } from '@angular/core'
-import { Actions, Effect, ofType } from '@ngrx/effects'
+import { Actions, createEffect, ofType } from '@ngrx/effects'
 import { Observable, of as observableOf, of } from 'rxjs'
 import { catchError, map, switchMap, tap, mergeMap } from 'rxjs/operators'
 import * as featureActions from './actions'
@@ -33,8 +33,7 @@ export class MyUserEffects {
     private router: Router
   ) { }
 
-  @Effect()
-  loadMyUser$: Observable<Action> = this.actions$.pipe(
+  loadMyUser$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadUser>(featureActions.ActionTypes.LOAD_USER),
     switchMap((action: featureActions.LoadUser) => this.auth.login(action.emailOrPseudo, action.password).pipe(
       tap((response: ResponseGetUserAndProfile) => {
@@ -48,19 +47,17 @@ export class MyUserEffects {
       tap(() => this.router.navigate(['/SpaceDiscover/#'])),
       catchError((response: HttpErrorResponse) => observableOf(new featureActions.LoadUserFail(response.error.message)))
     ))
-  )
+  ))
 
-  @Effect()
-  loadMyUserWithToken$: Observable<Action> = this.actions$.pipe(
+  loadMyUserWithToken$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.LoadUserWithToken>(featureActions.ActionTypes.LOAD_USER_WITH_TOKEN),
     switchMap(action => this.auth.getUserWithToken(action.token).pipe(
       map(response => new featureActions.LoadUserWithTokenSuccess(response.user)),
       catchError(err => observableOf(new featureActions.LoadUserWithTokenFail(err)))
     ))
-  )
+  ))
 
-  @Effect()
-  updateMyUser$: Observable<Action> = this.actions$.pipe(
+  updateMyUser$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.UpdateUser>(featureActions.ActionTypes.UPDATE_USER),
     switchMap(action => this.userUpdate.UserUpdate(action.payload).pipe(
       tap(data => {
@@ -78,17 +75,16 @@ export class MyUserEffects {
       map(response => new featureActions.UpdateUserSuccess(response.user)),
       catchError(err => observableOf(new featureActions.UpdateUserFail(err))),
     ))
-  )
+  ))
 
-  @Effect()
-  messageWs$: Observable<Action> = this.actions$.pipe(
+  messageWs$: Observable<Action> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.WebSocketConnect>(featureActions.ActionTypes.CONNECT_WEB_SOCKET),
     mergeMap(action => of(this.ws.createConnexion(action.token)).pipe(
       mergeMap(socket => this.ws.handleOnMessage(socket)),
       mergeMap(data => { return this.updatePlateform(data) }),
       catchError(err => observableOf(new featureActions.WebSocketConnectFail(err))),
     ))
-  )
+  ))
 
 
   updatePlateform(data: Message): Action[] {

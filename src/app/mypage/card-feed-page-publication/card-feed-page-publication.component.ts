@@ -303,7 +303,7 @@ export class CardFeedPagePublicationComponent implements OnInit, OnDestroy {
   }
 
   // to upload a file and compress
-  uploadFileAndCompress(bucketName: string, file: File, reader: ArrayBuffer | String) {
+  uploadFileAndCompress(bucketName: string, file: File, reader: ArrayBuffer | String | any) {
 
     // create the object to get the signed url from the backend
     const urlSigned: UrlSigned = {

@@ -36,7 +36,7 @@
 <!-- Publication List -->
 <div class="mx-3 pt-3">
   <div class="container publications-space">
-    <ngx-masonry class="row mx-0 w-100" [useImagesLoaded]="true" [options]="optionMasonry" infiniteScroll
+    <ngx-masonry class="row mx-0 w-100" [options]="optionMasonry" infiniteScroll
       [infiniteScrollDistance]="1" [infiniteScrollThrottle]="50" [infiniteScrollContainer]="'.container-router'"
       [fromRoot]="true" (scrolled)="onScroll()">
       <div ngxMasonryItem *ngFor="let p of publication$ | async; let i = index" class="col-md-4 item">

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
 import * as featureActions from './actions';
 import { catchError, map, switchMap, tap } from 'rxjs/operators';
 import { Observable, of as observableOf } from 'rxjs';
@@ -17,15 +17,14 @@ export class ReportEffects {
     private _snackBar: MatSnackBar
   ) { }
 
-  @Effect()
-  sendReport: Observable<ActionsReport> = this.actions$.pipe(
+  sendReport$: Observable<ActionsReport> = createEffect(() => this.actions$.pipe(
     ofType<featureActions.Report>(featureActions.ActionTypes.REPORT),
     switchMap(action => this.dataService.sendReport(action.payload).pipe(
       tap((response) => this.showSnackBar(response.message)),
       map(data => new featureActions.ReportSuccess(data.message)),
       catchError(error => observableOf(new featureActions.ReportFail(error)))
     ))
-  )
+  ))
 
   showSnackBar(message: string): MatSnackBarRef<SimpleSnackBar> {
     return this._snackBar.open(
