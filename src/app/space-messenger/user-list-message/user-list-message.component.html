@@ -1,63 +1,43 @@
-<!-- Search Bar-->
-<div class="input-group col-md-11 mx-auto my-1 searchBar">
-  <input [formControl]="searchField" type="text" class="form-control input-lg"
-    [placeholder]="'MINI-CHAT.text-a-friend'| translate" />
-  <span class="input-group-btn my-auto">
-    <button class="btn btn-info btn-lg" type="button">
-      <i class="fa fa-commenting-o"></i>
-    </button>
-  </span>
-</div>
-
-<!-- List of profile -->
-<div class="container" *ngIf="(resultsProfile$ | async) && searchField.value !== ''">
-  <div class="row">
-    <div *ngFor="let p of resultsProfile$ | async" class="col-md-3 mx-auto">
-      <a class="row px-0 container-avatar" (click)="getRoom(p)">
-        <img class="mx-auto avatar my-2 rounded-circle" [src]="p.pictureprofile">
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- List of room -->
-<div class="list-user" *ngIf="(room$| async); let room">
-  <div *ngFor="let r of room; let i = index" class="mini-conversation row py-2 mx-0"
-    [ngClass]="{'highlight': (roomSelected$ | async)?._id === r._id}" (click)="selectRoom(i, r._id)">
-    <div class="col-md-3 pr-0">
-      <div [ngSwitch]="r.participants.length" class="w-100 h-100">
-        <div class="container-avatar" *ngSwitchCase="1">
-          <img class="img-responsive d-flex mx-auto rounded-circle"
-            [src]="r.participants[0].pictureprofile">
-        </div>
-        <div class="container-divided-picture rounded-circle d-flex mx-auto" *ngSwitchCase="2">
-          <img class="w-50 h-100 m-auto avatar my-2 left-picture"
-            [src]="r.participants[0].pictureprofile">
-          <img class="w-50 h-100 m-auto avatar my-2 right-picture"
-            [src]="r.participants[1].pictureprofile">
-        </div>
+<div class="chat-lists">
+  <div class="header-section pa-0 sticky">
+    <div>
+      <div class="input-group col-md-9 mx-auto my-1 searchBar">
+        <input [formControl]="searchField" type="text" class="form-control input-lg"
+               [placeholder]="'MINI-CHAT.text-a-friend'| translate" />
+        <span class="input-group-btn my-auto">
+          <span class="addChat">
+            +
+          </span>
+        </span>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="pt-1">
-        <p *ngIf="r.participants.length == 1">{{r.participants[0]._meta.pseudo}}</p>
-        <p *ngIf="r.participants.length == 2">{{r.participants[0]._meta.pseudo}}, {{r.participants[1]._meta.pseudo}}</p>
-        <p *ngIf="r.participants.length > 2">{{r.participants[0]._meta.pseudo}}, {{r.participants[1]._meta.pseudo}}...
-        </p>
-        <p class="last-msg">{{r.lastMessage.text}}</p>
-      </div>
-    </div>
-    <div class="col-md-3 mt-4 px-0" *ngIf="r.roomOption.participants[0].notification == 0">
-      <div class="date">
-        <p>{{translateService.getDateTranslated(r.updatedAt)}}</p>
-      </div>
-    </div>
-    <div class="col-md-3 mt-4 px-0" *ngIf="r.roomOption.participants[0].notification > 0">
-      <div class="badge-notif mx-auto">
-        <div class="number-msg">
-          <span>{{r.roomOption.participants[0].notification}}</span>
-        </div>
+    <div class="mt-4 pr-0 ml-4 pb-0 mb-0">
+      <div class="chat-categories mx-auto pb-0 mb-0">
+        <span class="col-md-4 mx-auto cat-option">Best</span>
+        <span class="col-md-4 mx-auto cat-option">Second</span>
+        <span class="col-md-4 mx-auto requests cat-option">0 Requests</span>
       </div>
     </div>
   </div>
+  <ul class="px-0 pt-0 pb-0 mb-0 mx-o ml-4 list-user">
+    <li class="row chat-card pt-4" *ngFor="let i of [1,2,3,4,5,6,7]">
+      <div class="col-md-2 container-avatar">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar"
+             class="avatar rounded-circle">
+      </div>
+      <div class="col-md-10 row text-sm chat-body">
+        <div class="col-md-12 chat-head">
+          <span class="chat-name">John Doe</span>
+          <span class="chat-time">Now</span>
+        </div>
+        <div class="col-md-12 pt-1">
+          <div class="chart-message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            molestiae quas vel sint commodi repudiandae consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            molestiae quas vel sint commodi repudiandae consequuntur
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
