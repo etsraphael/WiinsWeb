@@ -1,13 +1,39 @@
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 0;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #eeeeee;
+  border-radius: 8px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eeeeee;
+}
+
 .header-conversation {
-  border-bottom: 1px solid #e7e7e7;
-  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1em;
 
-  p {
-    font-size: 1.2rem;
-  }
-
-  i {
-    cursor: pointer;
+  .chat-name {
+    font-family: Montserrat !important;
+    font-weight: bold;
+    font-size: 1.2em;
   }
 
   .container-btn-header {
@@ -38,21 +64,20 @@
   overflow: hidden;
   border: 0;
   border-radius: 15px;
-  box-shadow:
-    0 11px 15px -7px rgba(0, 0, 0, .2),
-    0 24px 38px 3px rgba(0, 0, 0, .14),
-    0 9px 46px 8px rgba(0, 0, 0, .12);
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2),
+  0 24px 38px 3px rgba(0, 0, 0, .14),
+  0 9px 46px 8px rgba(0, 0, 0, .12);
 }
 
-.container-adv {
-  .title {
-    color: #4A90E2;
-  }
+.dropdown-button {
+  background-color: unset;
+  border: 0;
 }
 
-.trend-conversation {
-  height: calc(100% - 169px);  
-  overflow: auto;
+.chat-messages {
+  height: 65vh;
+  overflow: hidden;
+  overflow-y: scroll;
 
   img {
     width: 40px;
@@ -62,127 +87,156 @@
     object-fit: cover;
   }
 
-  .content-text p {
-    display: inline-block;
-  }
-
-  .content-text:hover {
-    .btn-delete-message i {
-      display: block;
-    }
+  .auto-delete-message {
+    background-color: #eeeeee;
+    border-radius: .8em;
   }
 
   .message-received {
+    border: .01em solid #00a9ce;
+    border-radius: .8em;
+
     img {
       bottom: 0;
       position: absolute;
       right: 0;
     }
-
-    p {
-      border-radius: 20px 20px 20px 5px;
-      background: #eee;
-    }
   }
 
-  .message-sended {
-    .content-text {
-      text-align: right;
-    }
+  .message-sent {
+    color: white;
+    background-color: #00a9ce;
+    border-radius: .8em;
 
     img {
       float: left;
     }
+  }
+}
 
-    p {
-      border-radius: 20px 20px 5px 20px;
-      background: #3578e5;
-      color: white;
-      text-align: left;
-    }
+.commenting {
+  font-size: 2em;
+  color: #eeeeee;
+}
+
+.container-adv {
+  .title {
+    color: #4A90E2;
   }
 }
 
 .container-input {
   border-top: 1px solid #e7e7e7;
-  height: 100px;
 
-  .button-footer i {
-    padding: 18px;
-    font-size: 19px;
-    color: #6c757d;
-    cursor: pointer;
+  textarea {
+    border: none;
+    width: 47vw;
+    padding: 0;
   }
 
-  .message-box .message-input {
-    background: none;
-    border: none;
-    resize: none;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 16px;
-    height: 24px;
-    margin: 0;
-    padding-right: 20px;
-    width: 265px;
-    color: #444;
+  .minimize-btn {
+    background-color: #167DCE;
+    font-size: 0.8em;
+    border-radius: 20px;
+    border: 0;
+    color: white;
   }
 
-  .message-submit {
-    z-index: 1;
-    color: #4A90E2;
+  .message-container {
+    border-radius: 15px;
+    border: 1px solid #C9C9C9;
+    min-height: 2.6em;
+  }
+
+  .message-inputs {
+    font-size: 1em;
+    background-color: unset;
     border: none;
-    background: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 1;
-    border-radius: 5px;
-    outline: none !important;
-    cursor: pointer;
+  }
+
+  .bi-paperclip {
+    transform: rotate(33deg);
+  }
+
+  .send-message-btn {
+    border-radius: 15px;
+    background: linear-gradient(#167DCE, #3E56D4);
+    border: none;
+    color: white;
+    height: 2em;
+    width: auto !important;
+    text-align: center;
+  }
+
+  .bi-cursor-fill {
+    transition: all 0.3s;
+  }
+
+  .send-message-btn:hover .bi-cursor-fill {
+    transform: rotate(47deg);
+  }
+
+  .fa {
+    font-size: 1.2em;
+  }
+}
+
+.container-typing {
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+
+  img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: white solid 1px;
   }
 }
 
 .container-avatar {
   transition: 0.5s;
   cursor: pointer;
-  position: relative;
+  margin: 0;
+  padding: 0;
 
   img {
     object-fit: cover;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
-    border: white solid 2px;
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
-    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
+    border: white solid 1px;
+    margin-right: 0;
   }
-
 }
 
 .container-divided-picture {
-  transition: 0.5s;
-  width: 65px;
-  height: 60px;
-  position: relative;
-  overflow: hidden;
-  border: white solid 2px;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
-  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
   cursor: pointer;
-
+  margin: 1.3em 0 0;
+  padding: 0;
+  font-family: Montserrat !important;
 
   img {
-    position: absolute;
     object-fit: cover;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border: white solid 1px;
+    margin-right: 0;
   }
 
-  .left-picture {
-    left: 0;
-    border-right: white solid 1px;
-  }
-
-  .right-picture {
-    right: 0;
-    border-left: white solid 1px;
+  .other-members {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border: white solid 1px;
+    margin-right: 0;
+    background-color: #eeeeee;
+    left: 2.3em;
+    bottom: 1em;
   }
 }
 
@@ -198,29 +252,6 @@
     color: #8d8d8d;
     border: solid 1px #E4E4E4;
   }
-}
-
-.suggest-friend {
-  img {
-    object-fit: cover;
-    width: 30px;
-    height: 30px;
-    border: white solid 2px;
-  }
-
-  .container-pseudo-suggest {
-    p {
-      flex: 0 1 auto;
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  }
-}
-
-.container-bubble-message {
-  position: relative;
 }
 
 .container-message-deletion span {
@@ -282,12 +313,14 @@
   button {
     border: 0;
   }
+
   i {
     cursor: pointer;
     display: none;
     font-size: 1.2rem;
     color: #c1c1c1;
   }
+
   i:hover {
     color: #666666;
   }
@@ -311,5 +344,111 @@
 
 .bi-clock-history {
   font-size: 1.5rem;
+}
+
+.bi-three-dots {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.container-adv {
+  .title {
+    color: #4A90E2;
+  }
+}
+
+.trend-conversation {
+  height: calc(100% - 169px);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border: white solid 1px;
+    padding: 1px;
+    object-fit: cover;
+  }
+
+  .content-text p {
+    display: inline-block;
+  }
+
+  .content-text:hover {
+    .btn-delete-message i {
+      display: block;
+    }
+  }
+}
+
+.container-avatar {
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 2px solid white;
+  }
+
+}
+
+.container-divided-picture {
+  transition: 0.5s;
+  width: 65px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border: white solid 2px;
+  cursor: pointer;
+
+
+  img {
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .left-picture {
+    left: 0;
+    border-right: white solid 1px;
+  }
+
+  .right-picture {
+    right: 0;
+    border-left: white solid 1px;
+  }
+}
+
+
+.btn-delete-message {
+  button {
+    border: 0;
+  }
+
+  i {
+    cursor: pointer;
+    display: none;
+    font-size: 1.2rem;
+    color: #c1c1c1;
+  }
+
+  i:hover {
+    color: #666666;
+  }
+}
+
+.tag {
+  position: relative;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .chat-messages {
+    height: 69vh;
+  }
 }
 

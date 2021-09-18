@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Sláðu inn notandanafn þitt eða netfang",
     "Enter-yr-password": "Sláðu inn aðgangsorðið þitt",
     "Enter-yr-mail": "Sláðu inn tölvupóstinn þinn",
-    "Enter-yr-username": "Sláðu inn notandanafn þitt"
+    "Enter-yr-username": "Sláðu inn notandanafn þitt",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Vinsamlegast sláðu inn lykilorðið þitt"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Tungumál fyrir hnappa, titla og aðra texta pallsins á þessu tæki",
-      "lang-of-plateforme": "Pallamál"
+      "lang-of-plateforme": "Pallamál",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Reikningur tímabundið óvirkur, þú ert ósýnilegur á vettvangi núna. Ef reikningurinn þinn er óvirkur fyrir næstu greiðslu verður 4,99 dregið út af næstu seldu til að njóta næstu 30 daga.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ef þessi reitur er merktur getur enginn notandi borið kennsl á prófílinn þinn.",
       "T-people-w-not-be-able-to-access-your-profile": "Þetta fólk mun ekki fá aðgang að prófílnum þínum",
       "T-people-w-not-be-able-to-access-your-profile-D": "Notendur á þessum lista geta ekki séð prófílinn þinn.",
-      "btn-followers": "Gerðu „fylgja“ hnappinn tiltækan",
-      "btn-friend": "Gerðu vinabeiðni hnappinn tiltækan",
-      "h-can-b-yr-description": "Þú getur sett lýsingu"
+      "h-can-b-yr-description": "Þú getur sett lýsingu",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Gerðu vinabeiðni hnappinn tiltækan",
+      "Follow-request-available": "Gerðu „fylgja“ hnappinn tiltækan",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Nú þegar vottað",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Þú verður að uppfylla eftirfarandi skilyrði til að fá vottun.",
       "Yr-profil-is-currently-being-checked-D": "Nú er verið að athuga prófílinn þinn. Við munum hafa samband við þig innan 48 klukkustunda með tölvupósti.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Gakktu úr skugga um að hlaða upp bakhlið kortsins ef það er ríkisskírteini (aðeins fyrir landsskírteini)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Settu inn vegabréf, persónuskilríki eða ökuskírteini."
+      "Upload-yr-passport-id-identity-or-driver-license": "Settu inn vegabréf, persónuskilríki eða ökuskírteini.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Rit mín eru aðeins sýnileg af vinum mínum",
       "my-publications-are-visible-to-every-one": "Rit mín eru öllum sýnileg",
       "who-c-find-me": "Hver getur fundið mig?",
       "who-c-find-me-d": "Þegar notendanafnið þitt er slegið inn í leitarstikuna getur þetta fólk séð prófílinn þinn birtan."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Reikningnum þínum hefur verið eytt",
     "Yr-account-is-activated": "Reikningurinn þinn er virkur! Þú getur nú nýtt þér miðstýrðu aðgerðir espace-piin til að eiga samskipti, skemmta þér eða láta vita af þér.",
     "activated-after-15min-payment": "Herferð þín verður staðfest eftir um það bil fimmtán mínútur eftir að greiðsla hefur verið staðfest.",
-    "update-is-done": "Uppfærslunni er lokið"
+    "update-is-done": "Uppfærslunni er lokið",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Ertu viss um að breyta útgáfudegi verkefnis þíns?",

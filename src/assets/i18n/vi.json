@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Nhập tên người dùng hoặc địa chỉ email của bạn",
     "Enter-yr-password": "Nhập mật khẩu của bạn",
     "Enter-yr-mail": "Nhập email của bạn",
-    "Enter-yr-username": "Nhập tên người dùng của bạn"
+    "Enter-yr-username": "Nhập tên người dùng của bạn",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Xin hãy điền mật khẩu"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Ngôn ngữ cho các nút, tiêu đề và các văn bản khác của nền tảng trên thiết bị này",
-      "lang-of-plateforme": "Ngôn ngữ nền tảng"
+      "lang-of-plateforme": "Ngôn ngữ nền tảng",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Tài khoản tạm thời bị vô hiệu hóa, bạn hiện đang ẩn trên bản xếp hạng. Nếu tài khoản của bạn không hoạt động cho lần thanh toán tiếp theo, 4,99 sẽ được rút trong lần bán tiếp theo của bạn để tận hưởng 30 ngày tiếp theo.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Nếu hộp này được chọn, không người dùng nào có thể xác định hồ sơ của bạn.",
       "T-people-w-not-be-able-to-access-your-profile": "Những người này sẽ không thể truy cập hồ sơ của bạn",
       "T-people-w-not-be-able-to-access-your-profile-D": "Người dùng trong danh sách này sẽ không thể xem hồ sơ của bạn.",
-      "btn-followers": "Cung cấp nút \"theo dõi\"",
-      "btn-friend": "Đặt nút yêu cầu kết bạn có sẵn",
-      "h-can-b-yr-description": "Bạn có thể đặt một mô tả"
+      "h-can-b-yr-description": "Bạn có thể đặt một mô tả",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Đặt nút yêu cầu kết bạn có sẵn",
+      "Follow-request-available": "Cung cấp nút \"theo dõi\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Đã được chứng nhận",
@@ -981,13 +992,31 @@
       "Verified-zone": "Khu vực đã xác minh",
       "Y-m-complet-t-following-cdt-t-b-certified": "Bạn phải hoàn thành các điều kiện sau để được chứng nhận.",
       "Yr-profil-is-currently-being-checked-D": "Hồ sơ của bạn hiện đang được kiểm tra. Chúng tôi sẽ liên hệ với bạn trong vòng 48 giờ qua email.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Tải lên hộ chiếu, danh tính id hoặc bằng lái xe của bạn."
+      "Upload-yr-passport-id-identity-or-driver-license": "Tải lên hộ chiếu, danh tính id hoặc bằng lái xe của bạn.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Các ấn phẩm của tôi chỉ được hiển thị bởi bạn bè của tôi",
       "my-publications-are-visible-to-every-one": "Các ấn phẩm của tôi được hiển thị cho mọi người",
       "who-c-find-me": "Ai có thể tìm thấy tôi?",
       "who-c-find-me-d": "Khi tên người dùng của bạn được nhập vào thanh tìm kiếm, những người này sẽ có thể thấy hồ sơ của bạn được hiển thị."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Tài khoản của bạn đã bị xóa",
     "Yr-account-is-activated": "Tài khoản của bạn đã được kích hoạt! Giờ đây, bạn có thể tận dụng các chức năng tập trung của espace-piin để giao tiếp, giải trí hoặc làm cho bản thân được biết đến.",
     "activated-after-15min-payment": "Chiến dịch của bạn sẽ được xác thực trong khoảng mười lăm phút sau khi xác thực thanh toán.",
-    "update-is-done": "Cập nhật xong"
+    "update-is-done": "Cập nhật xong",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Bạn có chắc chắn thay đổi ngày phát hành dự án của mình không?",

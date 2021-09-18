@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Введіть ім'я користувача або адресу електронної пошти",
     "Enter-yr-password": "Введіть пароль",
     "Enter-yr-mail": "Введіть свою адресу електронної пошти",
-    "Enter-yr-username": "Введіть ім'я користувача"
+    "Enter-yr-username": "Введіть ім'я користувача",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Введіть свій пароль"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Мова для кнопок, заголовків та інших текстів платформи на цьому пристрої",
-      "lang-of-plateforme": "Мова платформи"
+      "lang-of-plateforme": "Мова платформи",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Обліковий запис тимчасово вимкнено, зараз ви невидимі на платформі. Якщо ваш рахунок неактивний для наступного платежу, з вашого наступного проданого буде знято 4.99, щоб насолоджуватися наступними 30 днями.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Якщо встановити цей прапорець, жоден користувач не зможе ідентифікувати ваш профіль.",
       "T-people-w-not-be-able-to-access-your-profile": "Ці люди не зможуть отримати доступ до вашого профілю",
       "T-people-w-not-be-able-to-access-your-profile-D": "Користувачі цього списку не зможуть побачити ваш профіль.",
-      "btn-followers": "Зробіть доступною кнопку \"стежити\"",
-      "btn-friend": "Зробіть доступною кнопку запиту друзів",
-      "h-can-b-yr-description": "Можна помістити опис"
+      "h-can-b-yr-description": "Можна помістити опис",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Зробіть доступною кнопку запиту друзів",
+      "Follow-request-available": "Зробіть доступною кнопку \"стежити\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Вже сертифіковано",
@@ -981,13 +992,31 @@
       "Verified-zone": "Перевірена зона",
       "Y-m-complet-t-following-cdt-t-b-certified": "Ви повинні виконати наступні умови, щоб пройти сертифікацію.",
       "Yr-profil-is-currently-being-checked-D": "Ваш профіль зараз перевіряється. Ми зв’яжемося з вами електронною поштою протягом 48 годин.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Завантажте паспорт, посвідчення особи або водійські права."
+      "Upload-yr-passport-id-identity-or-driver-license": "Завантажте паспорт, посвідчення особи або водійські права.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Мої публікації бачать лише мої друзі",
       "my-publications-are-visible-to-every-one": "Мої публікації бачать усі",
       "who-c-find-me": "Хто може мене знайти?",
       "who-c-find-me-d": "Коли ваше ім’я користувача буде введено в рядок пошуку, ці люди зможуть бачити ваш профіль."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Ваш обліковий запис видалено",
     "Yr-account-is-activated": "Ваш рахунок активовано! Тепер ви можете скористатися централізованими функціями espace-piin's, щоб спілкуватися, розважати себе або давати про себе знати.",
     "activated-after-15min-payment": "Ваша кампанія буде підтверджена приблизно через п’ятнадцять хвилин після підтвердження платежу.",
-    "update-is-done": "Оновлення виконано"
+    "update-is-done": "Оновлення виконано",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Ви впевнені, що змінили дату випуску свого проекту?",

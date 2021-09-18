@@ -1,13 +1,16 @@
 .main-messenger {
-  height: 95%;
-  //overflow-y: scroll;
-}
-
-.conversation {
-  border-left: 1px solid #e7e7e7;
   overflow: hidden;
-  height: 95%;
-  z-index: 1
+  padding: 0;
 }
 
+.chat-listing {
+  border: none;
+  margin-top: 0;
+  border-right: 0.1em solid #eee;
+  padding-right: 0;
+  padding-top: 0;
+}
 
+.message-room {
+
+}

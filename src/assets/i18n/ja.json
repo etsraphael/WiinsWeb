@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "ユーザー名またはメールアドレスを入力してください",
     "Enter-yr-password": "パスワードを入力してください",
     "Enter-yr-mail": "メールを入力してください",
-    "Enter-yr-username": "ユーザー名を入力してください"
+    "Enter-yr-username": "ユーザー名を入力してください",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "パスワードを入力してください"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "このデバイスのプラットフォームのボタン、タイトル、その他のテキストの言語",
-      "lang-of-plateforme": "プラットフォーム言語"
+      "lang-of-plateforme": "プラットフォーム言語",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "アカウントは一時的に無効にされ、あなたは今プラットホームで見えません。次の支払いのためにアカウントが無効になっている場合、次の30日間を楽しむために、次の販売の4.99が取り消されます。",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "このチェックボックスをオンにすると、ユーザーはプロファイルを識別できません。",
       "T-people-w-not-be-able-to-access-your-profile": "これらのユーザーは、あなたのプロフィールにアクセスすることはできません",
       "T-people-w-not-be-able-to-access-your-profile-D": "このリストのユーザーはプロフィールを見ることができなくなります。",
-      "btn-followers": "「フォロー」ボタンを使用可能にする",
-      "btn-friend": "フレンドリクエストボタンを使用可能にする",
-      "h-can-b-yr-description": "説明を入力できます。"
+      "h-can-b-yr-description": "説明を入力できます。",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "フレンドリクエストボタンを使用可能にする",
+      "Follow-request-available": "「フォロー」ボタンを使用可能にする",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "この機能を使用するには、検証が必要です。",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "IDを保持している写真を、今日の日付と「Wiins」と書かれた紙にアップロードします。",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "私のデータが私のアカウントのチェックに使用される可能性があることに同意します。",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "国民IDカードの場合は、必ずカードの裏面をアップロードしてください（国民カードのみ）",
-      "Upload-yr-passport-id-identity-or-driver-license": "パスポート、ID ID、または運転免許証をアップロードします。"
+      "Upload-yr-passport-id-identity-or-driver-license": "パスポート、ID ID、または運転免許証をアップロードします。",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "物事を変えようとする手段としての暴力の受け入れ",
       "my-publications-are-visible-to-every-one": "物事を変えようとする手段としての暴力の受け入れ",
       "who-c-find-me": "誰が私を見つけることができますか?",
       "who-c-find-me-d": "検索バーにユーザー名を入力すると、プロフィールが表示されます。"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "アカウントが削除されました",
     "Yr-account-is-activated": "アカウントが有効になります。あなたは今、コミュニケーション、自分自身を楽しませたり、自分自身を知らせるために、espace-piinの集中管理機能を利用することができます。",
     "activated-after-15min-payment": "キャンペーンは、支払いの検証後約 15 分で検証されます。",
-    "update-is-done": "更新が完了しました"
+    "update-is-done": "更新が完了しました",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "プロジェクトのリリース日を変更しますか ?",

@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "तपाईंको प्रयोगकर्ता नाम वा ईमेल ठेगाना प्रविष्ट गर्नुहोस्",
     "Enter-yr-password": "तपाईको पासवर्ड प्रविष्ट गर्नुहोस्",
     "Enter-yr-mail": "तपाईंको ईमेल प्रविष्ट गर्नुहोस्",
-    "Enter-yr-username": "तपाईंको प्रयोगकर्ता नाम प्रविष्ट गर्नुहोस्"
+    "Enter-yr-username": "तपाईंको प्रयोगकर्ता नाम प्रविष्ट गर्नुहोस्",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "कृपया तपाईको पासवर्ड प्रविष्ट गर्नुहोस्"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "बटन, शीर्षक र यस उपकरणमा प्लेटफर्मको अन्य पाठहरूको लागि भाषा",
-      "lang-of-plateforme": "प्लेटफर्म भाषा"
+      "lang-of-plateforme": "प्लेटफर्म भाषा",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "खाता अस्थायी रूपमा असक्षम पारियो, तपाईं अब प्लेटफर्ममा अदृश्य हुनुहुन्छ। यदि तपाईंको खाता अर्को भुक्तानीको लागि निष्क्रिय छ, 99.9999 तपाईंको अर्को बेचेको 30० दिनको मजा लिनको लागि फिर्ता हुनेछ।",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "यदि यो बाकस जाँच गरियो भने, कुनै पनि प्रयोगकर्ताले तपाईंको प्रोफाइल पहिचान गर्न सक्दैन।",
       "T-people-w-not-be-able-to-access-your-profile": "यी व्यक्तिहरू तपाईंको प्रोफाइल पहुँच गर्न सक्षम हुनेछन्",
       "T-people-w-not-be-able-to-access-your-profile-D": "यस सूचीमा प्रयोगकर्ताहरूले तपाईंको प्रोफाइल हेर्न सक्नेछैनन्।",
-      "btn-followers": "\"अनुसरण गर्नुहोस्\" बटन उपलब्ध गर्नुहोस्",
-      "btn-friend": "मित्र अनुरोध बटन उपलब्ध गराउनुहोस्",
-      "h-can-b-yr-description": "तपाईं एक वर्णन राख्न सक्नुहुन्छ"
+      "h-can-b-yr-description": "तपाईं एक वर्णन राख्न सक्नुहुन्छ",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "मित्र अनुरोध बटन उपलब्ध गराउनुहोस्",
+      "Follow-request-available": "\"अनुसरण गर्नुहोस्\" बटन उपलब्ध गर्नुहोस्",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "पहिले नै प्रमाणित",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "तपाईंले प्रमाणित हुनका लागि निम्न सर्तहरू पूर्ण गर्नुपर्दछ।",
       "Yr-profil-is-currently-being-checked-D": "तपाईंको प्रोफाइल हाल जाँच भइरहेको छ। हामी तपाईंलाई ईमेल द्वारा hours 48 घण्टा भित्र सम्पर्क गर्नेछौं।",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "निश्चित गर्नुहोस् कार्डको पछाडि अपलोड गर्नुहोस् यदि यो राष्ट्रिय परिचय पत्र हो भने (राष्ट्रिय कार्डका लागि मात्र)",
-      "Upload-yr-passport-id-identity-or-driver-license": "तपाईंको पासपोर्ट, आईडी परिचय वा ड्राइभर इजाजतपत्र अपलोड गर्नुहोस्।"
+      "Upload-yr-passport-id-identity-or-driver-license": "तपाईंको पासपोर्ट, आईडी परिचय वा ड्राइभर इजाजतपत्र अपलोड गर्नुहोस्।",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "मेरा प्रकाशनहरू मेरो साथीहरू द्वारा मात्र देख्न सकिन्छ",
       "my-publications-are-visible-to-every-one": "मेरा प्रकाशनहरू सबैले देख्न सक्दछन्",
       "who-c-find-me": "मलाई कसले भेट्टाउन सक्छ?",
       "who-c-find-me-d": "जब तपाइँको प्रयोगकर्तानाम खोज पट्टी मा प्रविष्टि गरिन्छ, यी व्यक्तिहरु तपाइँको प्रोफाइल प्रदर्शित देख्न को लागी सक्षम हुनेछ।"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "तपाईंको खाता हटाइएको छ",
     "Yr-account-is-activated": "तपाईंको खाता सक्रिय गरिएको छ! अब तपाई espace-piin को केन्द्रीकृत कार्यको फाइदा लिन सक्नुहुन्छ कुराकानी गर्न, तपाईलाई मनोरन्जन गर्न वा आफैलाई चिन्नको लागि।",
     "activated-after-15min-payment": "तपाईंको अभियान भुक्तानी को वैधता पछि पन्ध्र मिनेटमा मान्य हुनेछ।",
-    "update-is-done": "अद्यावधिक भयो"
+    "update-is-done": "अद्यावधिक भयो",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "के तपाइँ तपाइँको परियोजनाको रिलीज मिति परिवर्तन गर्न निश्चित हुनुहुन्छ?",

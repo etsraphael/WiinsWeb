@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Introduceți numele de utilizator sau adresa de e-mail",
     "Enter-yr-password": "Introduceți parola",
     "Enter-yr-mail": "Introduceți e-mailul",
-    "Enter-yr-username": "Introduceți numele de utilizator"
+    "Enter-yr-username": "Introduceți numele de utilizator",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Va rugam sa introduceti parola"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Limba pentru butoane, titluri și alte texte ale platformei de pe acest dispozitiv",
-      "lang-of-plateforme": "Limbajul platformei"
+      "lang-of-plateforme": "Limbajul platformei",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Contul este dezactivat temporar, acum sunteți invizibil pe platformă. Dacă contul dvs. este inactiv pentru următoarea plată, 4,99 vor fi retrase din următoarea dvs. vânzare pentru a vă bucura de următoarele 30 de zile.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Dacă această casetă este bifată, niciun utilizator nu vă poate identifica profilul.",
       "T-people-w-not-be-able-to-access-your-profile": "Aceste persoane nu vor putea accesa profilul dvs.",
       "T-people-w-not-be-able-to-access-your-profile-D": "Utilizatorii din această listă nu vă vor putea vedea profilul.",
-      "btn-followers": "Faceți disponibil butonul „urmați”",
-      "btn-friend": "Faceți disponibil butonul de solicitare a prietenilor",
-      "h-can-b-yr-description": "Puteți pune o descriere"
+      "h-can-b-yr-description": "Puteți pune o descriere",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Faceți disponibil butonul de solicitare a prietenilor",
+      "Follow-request-available": "Faceți disponibil butonul „urmați”",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Deja certificat",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Trebuie să îndepliniți următoarele condiții pentru a fi certificat.",
       "Yr-profil-is-currently-being-checked-D": "Profilul dvs. este în prezent verificat. Vă vom contacta în 48 de ore prin e-mail.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Asigurați-vă că încărcați partea din spate a cardului dacă este o carte de identitate națională (numai pentru cardul național)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Încărcați pașaportul, identitatea de identitate sau permisul de conducere."
+      "Upload-yr-passport-id-identity-or-driver-license": "Încărcați pașaportul, identitatea de identitate sau permisul de conducere.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Publicațiile mele sunt vizibile doar de prietenii mei",
       "my-publications-are-visible-to-every-one": "Publicațiile mele sunt vizibile pentru toată lumea",
       "who-c-find-me": "Cine mă poate găsi?",
       "who-c-find-me-d": "Când numele dvs. de utilizator este introdus în bara de căutare, aceste persoane vor putea vedea profilul dvs. afișat."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Contul dvs. a fost șters",
     "Yr-account-is-activated": "Contul dvs. este activat! Acum puteți profita de funcțiile centralizate ale spațiului-piin pentru a comunica, a vă distra sau a vă face cunoscut.",
     "activated-after-15min-payment": "Campania dvs. va fi validată în aproximativ cincisprezece minute de la validarea plății.",
-    "update-is-done": "Actualizarea este gata"
+    "update-is-done": "Actualizarea este gata",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Sigur modificați data lansării proiectului dvs.?",

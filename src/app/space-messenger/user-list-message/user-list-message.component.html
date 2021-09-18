@@ -1,43 +1,59 @@
-<div class="chat-lists">
-  <div class="header-section pa-0 sticky">
-    <div>
-      <div class="input-group col-md-9 mx-auto my-1 searchBar">
-        <input [formControl]="searchField" type="text" class="form-control input-lg"
-               [placeholder]="'MINI-CHAT.text-a-friend'| translate" />
-        <span class="input-group-btn my-auto">
-          <span class="addChat">
-            +
-          </span>
-        </span>
-      </div>
-    </div>
-    <div class="mt-4 pr-0 ml-4 pb-0 mb-0">
-      <div class="chat-categories mx-auto pb-0 mb-0">
-        <span class="col-md-4 mx-auto cat-option">Best</span>
-        <span class="col-md-4 mx-auto cat-option">Second</span>
-        <span class="col-md-4 mx-auto requests cat-option">0 Requests</span>
-      </div>
+<div class="container header-section mt-2 position-sticky">
+  <div class="row justify-content-center searchBar">
+    <div class="col-8 mr-0 d-flex flex-row">
+      <input
+        [formControl]="searchField" class="form-control input-lg mr-0"
+        placeholder="Search friend / Create chat group"
+        type="text"
+      />
+      <span class="mt-1">
+        <img alt="Add-someone" class="add-someone pb-2" src="../../../assets/img/Star.svg">
+      </span>
     </div>
   </div>
-  <ul class="px-0 pt-0 pb-0 mb-0 mx-o ml-4 list-user">
-    <li class="row chat-card pt-4" *ngFor="let i of [1,2,3,4,5,6,7]">
-      <div class="col-md-2 container-avatar">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" alt="avatar"
-             class="avatar rounded-circle">
-      </div>
-      <div class="col-md-10 row text-sm chat-body">
-        <div class="col-md-12 chat-head">
-          <span class="chat-name">John Doe</span>
-          <span class="chat-time">Now</span>
+  <!-- Best & Second-->
+  <div class="row justify-content-between chat-categories ml-2 mt-3">
+    <div class="col-3 cat-option pb-3">Best</div>
+    <div class="col-3 cat-option pb-3">Second</div>
+    <div class="col-3 cat-option pb-3 requests">0 Requests</div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row justify-content-between list-user">
+    <div *ngFor="let i of [1,2,3,4,5,6,7]" class="col-12 chat-card">
+      <div class="d-flex flex-row justify-content-between mr-1 my-2">
+        <div class="col-2">
+          <div *ngIf="i !== 2" class="container-avatar">
+            <img alt="avatar" class="avatar rounded-circle"
+                 src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg">
+          </div>
+          <div *ngIf="i === 2" class="container-avatar container-divided-picture d-flex flex-row">
+            <img alt="avatar" class="avatar rounded-circle position-relative"
+                 src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg">
+            <img alt="avatar" class="avatar rounded-circle position-absolute left-img"
+                 src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg">
+            <div class="avatar rounded-circle other-members  position-absolute d-flex align-center">
+              <p class="align-self-center text-center px-auto mx-auto my-auto py-auto">+5</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-12 pt-1">
-          <div class="chart-message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur
+        <div class="col-10 d-flex flex-row mx-0 px-0 pr-md-2 pr-4">
+          <div class="col-1 d-flex align-center justify-content-end mx-0 px-0">
+            <i [hidden]="(i === 1 || i === 2)" class="fa fa-circle align-self-center active-chat pr-2"></i>
+          </div>
+          <div class="mx-0 px-0">
+            <div class="d-flex flex-direction-row w-100 ml-0">
+              <div class="chat-name">John Doe</div>
+              <div class="chat-time ml-auto">Now</div>
+            </div>
+            <div class="chat-message ml-0 my-2 position-relative w-100">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+              Lorem ipsum dolor sit amet consectetur
+            </div>
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
+

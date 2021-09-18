@@ -1,16 +1,23 @@
-import { Component, OnInit, ViewChildren, ViewChild, QueryList, ElementRef } from '@angular/core';
-import { Store, select } from '@ngrx/store';
-import { RootStoreState, ProfileFeatureStoreSelectors, FullRoomByIdStoreSelectors,FullRoomByIdStoreActions, SearchProfileStoreActions, SearchProfileStoreSelectors } from '../../root-store';
-import { Observable, combineLatest } from 'rxjs';
-import { ProfileModel } from '../../core/models/baseUser/profile.model';
-import { filter, skipWhile, take, debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
-import { MessageText } from 'src/app/core/models/messenger/message.model';
-import { FormControl } from '@angular/forms';
-import { UserModel } from 'src/app/core/models/baseUser/user.model';
-import { ActivatedRoute } from '@angular/router';
-import { Room } from 'src/app/core/models/messenger/room.model';
-import { TranslateService } from '@ngx-translate/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import {Component, ElementRef, OnInit, QueryList, ViewChild, ViewChildren} from '@angular/core';
+import {select, Store} from '@ngrx/store';
+import {
+  FullRoomByIdStoreActions,
+  FullRoomByIdStoreSelectors,
+  ProfileFeatureStoreSelectors,
+  RootStoreState,
+  SearchProfileStoreActions,
+  SearchProfileStoreSelectors
+} from '../../root-store';
+import {combineLatest, Observable} from 'rxjs';
+import {ProfileModel} from '../../core/models/baseUser/profile.model';
+import {debounceTime, distinctUntilChanged, filter, map, skipWhile, take} from 'rxjs/operators';
+import {MessageText} from 'src/app/core/models/messenger/message.model';
+import {FormControl} from '@angular/forms';
+import {UserModel} from 'src/app/core/models/baseUser/user.model';
+import {ActivatedRoute} from '@angular/router';
+import {Room} from 'src/app/core/models/messenger/room.model';
+import {TranslateService} from '@ngx-translate/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-thread-message',
@@ -45,7 +52,7 @@ export class ThreadMessageComponent implements OnInit {
 
   // ref
   @ViewChildren('messagesMain') messages: QueryList<any>;
-  @ViewChild('contentMain', { static: false }) content: ElementRef;
+  @ViewChild('contentMain', {static: false}) content: ElementRef;
 
   // my user
   user: UserModel
@@ -76,9 +83,13 @@ export class ThreadMessageComponent implements OnInit {
     // to set the searchfield
     this.searchField = new FormControl()
     this.searchField.valueChanges.pipe(debounceTime(200), distinctUntilChanged())
-      .subscribe(v => { if (v === '') { this.store$.dispatch(new SearchProfileStoreActions.ResetSearch) } })
+      .subscribe(v => {
+        if (v === '') {
+          this.store$.dispatch(new SearchProfileStoreActions.ResetSearch)
+        }
+      })
 
-    // to listen the search bar  
+    // to listen the search bar
     this.searchField.valueChanges.pipe(
       filter(value => !!value),
       filter(value => value.length > 3),
@@ -105,7 +116,7 @@ export class ThreadMessageComponent implements OnInit {
   }
 
   changeMode(modifMode: string) {
-    // to change the mode 
+    // to change the mode
     this.mode = modifMode
   }
 
@@ -166,12 +177,13 @@ export class ThreadMessageComponent implements OnInit {
   }
 
   scrollToBottom = () => {
-        // to scrool at the bottom
+    // to scrool at the bottom
     try {
       if (this.counterPage == 1) {
         this.content.nativeElement.scrollTop = this.content.nativeElement.scrollHeight;
       }
-    } catch (err) { }
+    } catch (err) {
+    }
   }
 
   unMuteRoom() {
@@ -196,7 +208,7 @@ export class ThreadMessageComponent implements OnInit {
     this.mode = 'default'
   }
 
-  toogleSearch() {
+  toggleSearch() {
     // to show the search bar
     // this.participantAdded = []
     // this.search = !this.search
@@ -224,10 +236,10 @@ export class ThreadMessageComponent implements OnInit {
         [...this.participantAdded, ...val.participants]
       ))
     })
-    this.toogleSearch()
+    this.toggleSearch()
   }
 
-  deleteMessage(roomID: string, messageID: string){
+  deleteMessage(roomID: string, messageID: string) {
     // to delete the message
     this.store$.dispatch(new FullRoomByIdStoreActions.deleteMessage(roomID, messageID))
   }
@@ -236,10 +248,10 @@ export class ThreadMessageComponent implements OnInit {
     const errorModal = this._snackBar.open(
       this.translate.instant('DONATION.Function-unavailable-at-the-moment-join-our-discord-to-help-with-creation'),
       this.translate.instant('CORE.Join'), {
-      horizontalPosition: 'center',
-      verticalPosition: 'bottom',
-      duration: 8000
-    })
+        horizontalPosition: 'center',
+        verticalPosition: 'bottom',
+        duration: 8000
+      })
 
     errorModal.onAction().subscribe(() => window.open('https://discord.gg/jMyc443', '_blank'))
   }

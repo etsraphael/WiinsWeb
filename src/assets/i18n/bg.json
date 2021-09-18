@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Въведете потребителското име или имейл адреса си",
     "Enter-yr-password": "Въведете паролата си",
     "Enter-yr-mail": "Въведете вашия имейл",
-    "Enter-yr-username": "Въведете потребителското си име"
+    "Enter-yr-username": "Въведете потребителското си име",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Моля въведете паролата си"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Език за бутоните, заглавията и други текстове на платформата на това устройство",
-      "lang-of-plateforme": "Език на платформата"
+      "lang-of-plateforme": "Език на платформата",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Временно деактивиран акаунт, сега сте невидими на платформата. Ако вашият акаунт е неактивен за следващото плащане, 4.99 ще бъде изтеглено от следващата ви продадена, за да се насладите през следващите 30 дни.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ако това поле е отметнато, никой потребител не може да идентифицира вашия профил.",
       "T-people-w-not-be-able-to-access-your-profile": "Тези хора няма да имат достъп до вашия профил",
       "T-people-w-not-be-able-to-access-your-profile-D": "Потребителите в този списък няма да могат да видят вашия профил.",
-      "btn-followers": "Направете бутон „следване“ на разположение",
-      "btn-friend": "Направете бутона за заявка за приятелство достъпен",
-      "h-can-b-yr-description": "Можете да сложите описание"
+      "h-can-b-yr-description": "Можете да сложите описание",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Направете бутона за заявка за приятелство достъпен",
+      "Follow-request-available": "Направете бутон „следване“ на разположение",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Вече е сертифициран",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Трябва да изпълните следните условия, за да бъдете сертифицирани.",
       "Yr-profil-is-currently-being-checked-D": "Понастоящем вашият профил се проверява. Ще се свържем с вас в рамките на 48 часа по имейл.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Не забравяйте да качите задната страна на картата, ако това е националната лична карта (само за националната карта)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Качете паспорта си, самоличност или шофьорска книжка."
+      "Upload-yr-passport-id-identity-or-driver-license": "Качете паспорта си, самоличност или шофьорска книжка.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Публикациите ми се виждат само от приятелите ми",
       "my-publications-are-visible-to-every-one": "Публикациите ми са видими за всички",
       "who-c-find-me": "Кой може да ме намери?",
       "who-c-find-me-d": "Когато вашето потребителско име бъде въведено в лентата за търсене, тези хора ще могат да виждат вашия профил показан."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Вашият акаунт е изтрит",
     "Yr-account-is-activated": "Вашият акаунт е активиран! Вече можете да се възползвате от централизираните функции на espace-piin's, за да общувате, да се забавлявате или да се изявявате.",
     "activated-after-15min-payment": "Вашата кампания ще бъде потвърдена след около петнадесет минути след потвърждаване на плащането.",
-    "update-is-done": "Актуализацията е направена"
+    "update-is-done": "Актуализацията е направена",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Наистина ли сте променили датата на издаване на вашия проект?",

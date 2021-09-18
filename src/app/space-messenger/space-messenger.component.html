@@ -1,11 +1,12 @@
 <!-- Component Body -->
-<div class="row mx-0 main-messenger w-100">
-  <!-- User List & SearchBar-->
-  <div class="col-md-4 px-0">
-    <app-user-list-message></app-user-list-message>
-  </div>
-  <!-- Conversation Actif -->
-  <div class="col-md-8">
-    <app-thread-message></app-thread-message>
+<div class="container-fluid main-messenger my-0 py-0">
+  <div class="row">
+    <div class="col-12 col-md-4 chat-listing">
+      <app-user-list-message></app-user-list-message>
+    </div>
+    <div class="col-12 col-md-8 message-room">
+      <app-thread-message></app-thread-message>
+    </div>
   </div>
 </div>
+

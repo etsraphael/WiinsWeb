@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "உங்கள் பயனர்பெயர் அல்லது மின்னஞ்சல் முகவரியை உள்ளிடவும்",
     "Enter-yr-password": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
     "Enter-yr-mail": "மின்னஞ்சலை பதிவுசெய்",
-    "Enter-yr-username": "உங்கள் பயனர்பெயரை உள்ளிடவும்"
+    "Enter-yr-username": "உங்கள் பயனர்பெயரை உள்ளிடவும்",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "தங்கள் கடவு சொல்லை பதிவு செய்யவும்"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "இந்த சாதனத்தில் உள்ள தளத்தின் பொத்தான்கள், தலைப்புகள் மற்றும் பிற நூல்களுக்கான மொழி",
-      "lang-of-plateforme": "மேடை மொழி"
+      "lang-of-plateforme": "மேடை மொழி",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "கணக்கு தற்காலிகமாக முடக்கப்பட்டுள்ளது, நீங்கள் இப்போது மேடையில் கண்ணுக்கு தெரியாதவர்கள். அடுத்த கட்டணம் செலுத்துவதற்கு உங்கள் கணக்கு செயலற்றதாக இருந்தால், அடுத்த 30 நாட்களை அனுபவிக்க உங்கள் அடுத்த விற்பனையிலிருந்து 4.99 திரும்பப் பெறப்படும்.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "இந்த பெட்டி சரிபார்க்கப்பட்டால், எந்தவொரு பயனரும் உங்கள் சுயவிவரத்தை அடையாளம் காண முடியாது.",
       "T-people-w-not-be-able-to-access-your-profile": "இந்த நபர்களால் உங்கள் சுயவிவரத்தை அணுக முடியாது",
       "T-people-w-not-be-able-to-access-your-profile-D": "இந்த பட்டியலில் உள்ள பயனர்கள் உங்கள் சுயவிவரத்தைக் காண முடியாது.",
-      "btn-followers": "\"பின்தொடர்\" பொத்தானைக் கிடைக்கச் செய்யுங்கள்",
-      "btn-friend": "நண்பர் கோரிக்கை பொத்தானைக் கிடைக்கச் செய்யுங்கள்",
-      "h-can-b-yr-description": "நீங்கள் ஒரு விளக்கத்தை வைக்கலாம்"
+      "h-can-b-yr-description": "நீங்கள் ஒரு விளக்கத்தை வைக்கலாம்",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "நண்பர் கோரிக்கை பொத்தானைக் கிடைக்கச் செய்யுங்கள்",
+      "Follow-request-available": "\"பின்தொடர்\" பொத்தானைக் கிடைக்கச் செய்யுங்கள்",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "ஏற்கனவே சான்றிதழ்",
@@ -981,13 +992,31 @@
       "Verified-zone": "சரிபார்க்கப்பட்ட மண்டலம்",
       "Y-m-complet-t-following-cdt-t-b-certified": "சான்றிதழ் பெற பின்வரும் நிபந்தனைகளை நீங்கள் பூர்த்தி செய்ய வேண்டும்.",
       "Yr-profil-is-currently-being-checked-D": "உங்கள் சுயவிவரம் தற்போது சரிபார்க்கப்படுகிறது. மின்னஞ்சல் மூலம் 48 மணி நேரத்திற்குள் உங்களை தொடர்புகொள்வோம்.",
-      "Upload-yr-passport-id-identity-or-driver-license": "உங்கள் பாஸ்போர்ட், ஐடி அடையாளம் அல்லது ஓட்டுநர் உரிமத்தை பதிவேற்றவும்."
+      "Upload-yr-passport-id-identity-or-driver-license": "உங்கள் பாஸ்போர்ட், ஐடி அடையாளம் அல்லது ஓட்டுநர் உரிமத்தை பதிவேற்றவும்.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "எனது வெளியீடுகள் எனது நண்பர்களால் மட்டுமே தெரியும்",
       "my-publications-are-visible-to-every-one": "எனது வெளியீடுகள் அனைவருக்கும் தெரியும்",
       "who-c-find-me": "என்னை யார் கண்டுபிடிக்க முடியும்?",
       "who-c-find-me-d": "தேடல் பட்டியில் உங்கள் பயனர்பெயர் உள்ளிடப்பட்டால், இந்த நபர்கள் உங்கள் சுயவிவரத்தைக் காண்பிப்பதைக் காண முடியும்."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "உங்கள் கணக்கு நீக்கப்பட்டது",
     "Yr-account-is-activated": "உங்கள் கணக்கு செயல்படுத்தப்பட்டது! தொடர்பு கொள்ளவும், உங்களை மகிழ்விக்கவும் அல்லது உங்களை அறியவும் எஸ்பேஸ்-பைனின் மையப்படுத்தப்பட்ட செயல்பாடுகளை நீங்கள் இப்போது பயன்படுத்திக் கொள்ளலாம்.",
     "activated-after-15min-payment": "கட்டணம் சரிபார்த்த பிறகு சுமார் பதினைந்து நிமிடங்களில் உங்கள் பிரச்சாரம் சரிபார்க்கப்படும்.",
-    "update-is-done": "புதுப்பிப்பு முடிந்தது"
+    "update-is-done": "புதுப்பிப்பு முடிந்தது",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "உங்கள் திட்டத்தின் வெளியீட்டு தேதியை மாற்றுவது உறுதி?",

@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "Введите имя пользователя или адрес электронной почты",
     "Enter-yr-password": "Введите пароль",
     "Enter-yr-mail": "Введите электронную почту",
-    "Enter-yr-username": "Введите имя пользователя"
+    "Enter-yr-username": "Введите имя пользователя",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Пожалуйста, введите пароль"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Язык кнопок, названий и других текстов платформы на этом устройстве",
-      "lang-of-plateforme": "Язык платформы"
+      "lang-of-plateforme": "Язык платформы",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Учетная запись временно отключена, вы невидимы на платформе сейчас. Если ваша учетная запись неактивна для следующего платежа, 4.99 будут сняты с вашего следующего проданного, чтобы наслаждаться следующими 30 днями.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "Если эта коробка проверена, ни один пользователь не может идентифицировать ваш профиль.",
       "T-people-w-not-be-able-to-access-your-profile": "Эти люди не смогут получить доступ к вашему профилю",
       "T-people-w-not-be-able-to-access-your-profile-D": "Пользователи этого списка не смогут видеть ваш профиль.",
-      "btn-followers": "Сделать кнопку «следовать»",
-      "btn-friend": "Сделайте кнопку запроса друзей доступной",
-      "h-can-b-yr-description": "Вы можете поместить описание"
+      "h-can-b-yr-description": "Вы можете поместить описание",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Сделайте кнопку запроса друзей доступной",
+      "Follow-request-available": "Сделать кнопку «следовать»",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Эта функция требует проверки для использования",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "Загрузите фотографию с удостоверением личности с листом бумаги с сегодняшней датой и надписью «Wiins».",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "Я согласен с тем, что мои данные могут быть использованы для проверки моей учетной записи.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Не забудьте загрузить обратную сторону карты, если это национальная идентификационная карта (только для национальной карты).",
-      "Upload-yr-passport-id-identity-or-driver-license": "Загрузите свой паспорт, удостоверение личности или водительские права."
+      "Upload-yr-passport-id-identity-or-driver-license": "Загрузите свой паспорт, удостоверение личности или водительские права.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Принятие насилия как средства, пытаясь изменить ситуацию",
       "my-publications-are-visible-to-every-one": "Принятие насилия как средства, пытаясь изменить ситуацию",
       "who-c-find-me": "Кто может найти меня?",
       "who-c-find-me-d": "Когда ваше имя пользователя будет введено в панель поиска, эти люди смогут видеть ваш профиль отображается.  "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "Ваша учетная запись была удалена",
     "Yr-account-is-activated": "Ваша учетная запись активирована! Теперь вы можете воспользоваться централизованными функциями espace-piin для того, чтобы общаться, развлекать себя или заставить себя быть известным.",
     "activated-after-15min-payment": "Ваша кампания будет проверена примерно через пятнадцать минут после проверки платежа.",
-    "update-is-done": "Обновление выполнено"
+    "update-is-done": "Обновление выполнено",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Вы уверены, что измените дату релиза вашего проекта ?",

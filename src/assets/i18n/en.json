@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "Enter your username or email address",
     "Enter-yr-password": "Enter your password",
     "Enter-yr-mail": "Enter your email",
-    "Enter-yr-username": "Enter your username"
+    "Enter-yr-username": "Enter your username",
+    "Password-required": "Password (required to apply the changes)"
   },
   "PLEASE": {
     "Password": "Please enter your password"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Language for the buttons, titles and other texts of the platform on this device",
-      "lang-of-plateforme": "Platform language"
+      "lang-of-plateforme": "Platform language",
+      "Langage-not-available-here-?": "Your langage is not available here ?",
+      "Help-us-to-add-it": "Please help us to add it !"
     },
     "ledger": {
       "Account-disable-now-description": "Account temporarily disabled, you are invisible on the platforme now. If  your account is inactive for the next payment, 4.99 will be withdrawn of your next sold to enjoy the next 30 days.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "If this box is checked, no user can identify your profile.",
       "T-people-w-not-be-able-to-access-your-profile": "These people will not be able to access your profile",
       "T-people-w-not-be-able-to-access-your-profile-D": "Users in this list will not be able to see your profile.",
-      "btn-followers": "Make the \"follow\" button available",
-      "btn-friend": "Make the friend request button available",
-      "h-can-b-yr-description": "You can put a description"
+      "h-can-b-yr-description": "You can put a description",
+      "General-information": "General information",
+      "Confidentiality": "Confidentiality",
+      "List-of-blocked-person": "List of blocked persons",
+      "List-of-close-friends": "List of close friends",
+      "Blocked-since": "Blocked since",
+      "CloseFriend-since": "friend since",
+      "Friend-request-available": "Make the friend request button available",
+      "Follow-request-available": "Make the \"follow\" button available",
+      "Post-visible-only-community": "Make my publication visible only to my community",
+      "Show-online-status": "Show online status to my community"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "This feature requires verification to use",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "Upload a photo holding the ID with a sheet of paper with today’s date and \"Wiins\" writes on it.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "I agree that my data may be used to check my account.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Make sure to upload the back side of the card if it's the a national id card (only for the national card)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Upload your passport, id identity or driver license."
+      "Upload-yr-passport-id-identity-or-driver-license": "Upload your passport, id identity or driver license.",
+      "With-smile": "With a smile :)"
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "My publications are visible only by my friends",
       "my-publications-are-visible-to-every-one": "My publications are visible to everyone",
       "who-c-find-me": "Who can find me ?",
       "who-c-find-me-d": "When your username is entered in the search bar, these people will be able to see your profile displayed.  "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "Pseudo can be changed only once, choose wisely !\nNo change of pseudo can be for a certified and verified account.",
+      "Pseudo-cannot-be-same": "Pseudo cannot be the same",
+      "Pseudo-change-no-turning-back": "No turning back now. Are you sure you want to change your pseudo ?"
+    },
+    "Email": {
+      "Email-changed": "For email change , a verification of your new email adress will be necessary.",
+      "7-days-request-change": "Wiin's sent you a email for vrification. You have 7 days to confirm your email before the request is cancelled. Don't hesitate to look in your spam."
+    },
+    "General-information": "General information",
+    "Download-data": {
+      "Download": "Download",
+      "Download-data-title": "Download data",
+      "Descriptions": "Download a copy of what you have shard on Wiin's, we will send you an email with a link to a file containing your photos, comment, and profile information.\nIt may take up to 48h hours to collect and send this data.",
+      "Email-by-default": "The data will be sent to your default email",
+      "Descriptions-modal": "Wiin's will sent you an email for download your data, it will take at least 48h. Don't hesitate to watch in your spams."
     }
   },
   "SIDEBAR-HOME": {
@@ -1022,7 +1051,8 @@
     "Yr-account-has-been-deleted": "Your account has been deleted",
     "Yr-account-is-activated": "Your account is activated! You can now take advantage of the centralized functions of espace-piin's in order to communicate, entertain yourself or make yourself known.",
     "activated-after-15min-payment": "Your campaign will be validated in about fifteen minutes after the validation of the payment.",
-    "update-is-done": "The update is done"
+    "update-is-done": "The update is done",
+    "Yes-im-sur": "Yes, I'm sure of it"
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Are you sure to change the release date of your project ?",

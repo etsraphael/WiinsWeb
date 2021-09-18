@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Foydalanuvchi ismingizni yoki elektron pochta manzilingizni kiriting",
     "Enter-yr-password": "Parolingizni kiriting",
     "Enter-yr-mail": "Elektron pochtangizni kiriting",
-    "Enter-yr-username": "Foydalanuvchi nomingizni kiriting"
+    "Enter-yr-username": "Foydalanuvchi nomingizni kiriting",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Parolingizni kiriting"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Ushbu qurilmadagi tugmachalar, sarlavhalar va platformaning boshqa matnlari uchun til",
-      "lang-of-plateforme": "Platforma tili"
+      "lang-of-plateforme": "Platforma tili",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Hisob vaqtincha o'chirib qo'yildi, endi siz platformada ko'rinmaysiz. Agar sizning hisob qaydnomangiz keyingi to'lov uchun faol bo'lmasa, keyingi 30 kun ichida bahramand bo'lish uchun 4.99-dan keyingi sotilganingiz olinadi.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Agar ushbu katak belgilansa, biron bir foydalanuvchi sizning profilingizni aniqlay olmaydi.",
       "T-people-w-not-be-able-to-access-your-profile": "Ushbu odamlar sizning profilingizga kira olmaydilar",
       "T-people-w-not-be-able-to-access-your-profile-D": "Ushbu ro'yxatdagi foydalanuvchilar sizning profilingizni ko'ra olmaydilar.",
-      "btn-followers": "\"Kuzatuv\" tugmachasini mavjud qiling",
-      "btn-friend": "Do'stlik so'rovi tugmachasini oching",
-      "h-can-b-yr-description": "Siz tavsifni qo'yishingiz mumkin"
+      "h-can-b-yr-description": "Siz tavsifni qo'yishingiz mumkin",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Do'stlik so'rovi tugmachasini oching",
+      "Follow-request-available": "\"Kuzatuv\" tugmachasini mavjud qiling",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Allaqachon sertifikatlangan",
@@ -981,13 +992,31 @@
       "Verified-zone": "Tasdiqlangan zona",
       "Y-m-complet-t-following-cdt-t-b-certified": "Sertifikat olish uchun quyidagi shartlarni bajarishingiz kerak.",
       "Yr-profil-is-currently-being-checked-D": "Hozirda profilingiz tekshirilmoqda. Siz bilan 48 soat ichida elektron pochta orqali bog'lanamiz.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Pasportingizni, identifikatoringizni yoki haydovchilik guvohnomangizni yuklang."
+      "Upload-yr-passport-id-identity-or-driver-license": "Pasportingizni, identifikatoringizni yoki haydovchilik guvohnomangizni yuklang.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mening nashrlarimni faqat do'stlarim ko'rishadi",
       "my-publications-are-visible-to-every-one": "Mening nashrlarim hamma uchun ko'rinadi",
       "who-c-find-me": "Meni kim topa oladi?",
       "who-c-find-me-d": "Qidiruv satrida foydalanuvchi ismingiz kiritilganda, bu odamlar sizning profilingizni ko'rishni ko'rishlari mumkin."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Sizning hisob qaydnomangiz o'chirildi",
     "Yr-account-is-activated": "Sizning hisobingiz faollashtirildi! Endi siz muloqot qilish, ko'ngil ochish yoki o'zingizni tanitish uchun espace-piinning markazlashtirilgan funktsiyalaridan foydalanishingiz mumkin.",
     "activated-after-15min-payment": "Sizning kampaniyangiz to'lov tasdiqlangandan keyin taxminan o'n besh daqiqada tasdiqlanadi.",
-    "update-is-done": "Yangilanish tugadi"
+    "update-is-done": "Yangilanish tugadi",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Loyihangizning chiqish sanasini o'zgartirganingizga ishonchingiz komilmi?",

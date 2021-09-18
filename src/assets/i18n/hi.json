@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "अपना उपयोगकर्ता नाम या ईमेल पता दर्ज करें",
     "Enter-yr-password": "अपना पासवर्ड डालें",
     "Enter-yr-mail": "अपना ईमेल दर्ज करें",
-    "Enter-yr-username": "अपना उपयोगकर्ता नाम दर्ज करें"
+    "Enter-yr-username": "अपना उपयोगकर्ता नाम दर्ज करें",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "अपना पासवर्ड दर्ज करें"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "इस डिवाइस पर बटन, शीर्षक और मंच के अन्य ग्रंथों के लिए भाषा",
-      "lang-of-plateforme": "मंच की भाषा"
+      "lang-of-plateforme": "मंच की भाषा",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "खाता अस्थायी रूप से अक्षम है, अब आप प्लेटफ़ॉर्म पर अदृश्य हैं। अगर आपका खाता अगले भुगतान के लिए निष्क्रिय है, तो अगले 30 दिनों का आनंद लेने के लिए 4.99 आपके अगले बेचे गए हिस्से को वापस ले लिया जाएगा.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "अगर इस बॉक्स को चेक किया जाता है तो कोई भी यूजर आपकी प्रोफाइल की पहचान नहीं कर सकता।",
       "T-people-w-not-be-able-to-access-your-profile": "ये लोग आपकी प्रोफ़ाइल तक नहीं पहुंच पाएंगे",
       "T-people-w-not-be-able-to-access-your-profile-D": "इस लिस्ट में यूजर्स आपकी प्रोफाइल नहीं देख पाएंगे।",
-      "btn-followers": "\"फॉलो\" बटन उपलब्ध कराएं",
-      "btn-friend": "फ्रेंड रिक्वेस्ट बटन उपलब्ध कराएं",
-      "h-can-b-yr-description": "आप विवरण डाल सकते हैं"
+      "h-can-b-yr-description": "आप विवरण डाल सकते हैं",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "फ्रेंड रिक्वेस्ट बटन उपलब्ध कराएं",
+      "Follow-request-available": "\"फॉलो\" बटन उपलब्ध कराएं",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "इस सुविधा का उपयोग करने के लिए सत्यापन की आवश्यकता है",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "आज की तारीख के साथ कागज की एक शीट के साथ आईडी रखने वाली एक तस्वीर अपलोड करें और उस पर \"वाईन्स\" लिखता है।",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "मैं सहमत हूं कि मेरे खाते की जांच के लिए मेरे डेटा का उपयोग किया जा सकता है।",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "यदि यह राष्ट्रीय आईडी कार्ड है (तो केवल राष्ट्रीय कार्ड के लिए) कार्ड के पीछे की ओर अपलोड करना सुनिश्चित करें",
-      "Upload-yr-passport-id-identity-or-driver-license": "अपना पासपोर्ट, आईडी पहचान या चालक लाइसेंस अपलोड करें।"
+      "Upload-yr-passport-id-identity-or-driver-license": "अपना पासपोर्ट, आईडी पहचान या चालक लाइसेंस अपलोड करें।",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
       "my-publications-are-visible-to-every-one": "चीजों को बदलने की कोशिश के एक साधन के रूप में हिंसा की स्वीकृति",
       "who-c-find-me": "मुझे कौन पा सकता है ?",
       "who-c-find-me-d": "जब आपका उपयोगकर्ता नाम खोज बार में दर्ज हो जाएगा, तो ये लोग आपकी प्रोफ़ाइल प्रदर्शित देख पाएंगे।  "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "आपका खाता हटा दिया गया है",
     "Yr-account-is-activated": "आपका खाता सक्रिय है! अब आप संवाद करने, अपने आप को मनोरंजन करने या खुद को ज्ञात करने के लिए ईस्पेस-पिइन के केंद्रीकृत कार्यों का लाभ उठा सकते हैं।",
     "activated-after-15min-payment": "भुगतान के सत्यापन के बाद लगभग पंद्रह मिनट में आपका अभियान मान्य हो जाएगा.",
-    "update-is-done": "अपडेट किया जाता है"
+    "update-is-done": "अपडेट किया जाता है",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "क्या आप अपनी परियोजना की रिलीज की तारीख को बदलना सुनिश्चित करते हैं ?",

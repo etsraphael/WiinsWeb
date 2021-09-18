@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Įveskite naudotojo vardą arba el. pašto adresą",
     "Enter-yr-password": "Įveskite slaptažodį",
     "Enter-yr-mail": "Įveskite savo elektroninio pašto adresą",
-    "Enter-yr-username": "Įveskite savo vartotojo vardą"
+    "Enter-yr-username": "Įveskite savo vartotojo vardą",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Prašome įvesti savo slaptažodį"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Kalba mygtukams, pavadinimams ir kitiems platformos tekstams šiame įrenginyje",
-      "lang-of-plateforme": "Platformos kalba"
+      "lang-of-plateforme": "Platformos kalba",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Paskyra laikinai išjungta, dabar esate nematomas platformoje. Jei jūsų paskyra neaktyvi kitam mokėjimui, 4,99 bus atsiimta iš jūsų kito parduoto, kad galėtumėte mėgautis kitas 30 dienų.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Jei šis langelis pažymėtas, nė vienas vartotojas negali identifikuoti jūsų profilio.",
       "T-people-w-not-be-able-to-access-your-profile": "Šie žmonės negalės pasiekti jūsų profilio",
       "T-people-w-not-be-able-to-access-your-profile-D": "Šiame sąraše esantys vartotojai negalės matyti jūsų profilio.",
-      "btn-followers": "Padarykite prieinamą mygtuką „sekti“",
-      "btn-friend": "Padarykite draugo užklausos mygtuką prieinamą",
-      "h-can-b-yr-description": "Galite įdėti aprašą"
+      "h-can-b-yr-description": "Galite įdėti aprašą",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Padarykite draugo užklausos mygtuką prieinamą",
+      "Follow-request-available": "Padarykite prieinamą mygtuką „sekti“",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Jau sertifikuota",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Norėdami būti sertifikuoti, turite įvykdyti šias sąlygas.",
       "Yr-profil-is-currently-being-checked-D": "Jūsų profilis šiuo metu tikrinamas. Mes susisieksime su jumis per 48 valandas el. Paštu.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Būtinai įkelkite galinę kortelės pusę, jei tai yra nacionalinė asmens tapatybės kortelė (skirta tik nacionalinei kortelei)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Įkelkite savo pasą, asmens tapatybę ar vairuotojo pažymėjimą."
+      "Upload-yr-passport-id-identity-or-driver-license": "Įkelkite savo pasą, asmens tapatybę ar vairuotojo pažymėjimą.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mano leidinius mato tik mano draugai",
       "my-publications-are-visible-to-every-one": "Mano publikacijos yra matomos visiems",
       "who-c-find-me": "Kas gali mane rasti?",
       "who-c-find-me-d": "Kai paieškos juostoje įvesite savo vartotojo vardą, šie žmonės galės matyti jūsų profilį."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Jūsų paskyra ištrinta",
     "Yr-account-is-activated": "Jūsų paskyra suaktyvinta! Dabar galite pasinaudoti centralizuotomis „espace-piin“ funkcijomis, kad galėtumėte bendrauti, linksmintis ar pranešti apie save.",
     "activated-after-15min-payment": "Patvirtinus mokėjimą, jūsų kampanija bus patvirtinta maždaug po penkiolikos minučių.",
-    "update-is-done": "Atnaujinimas atliktas"
+    "update-is-done": "Atnaujinimas atliktas",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Ar tikrai pakeisite savo projekto išleidimo datą?",

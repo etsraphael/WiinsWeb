@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Skriv inn brukernavn eller e-postadresse",
     "Enter-yr-password": "Skriv inn passordet ditt",
     "Enter-yr-mail": "Skriv inn e-postadressen din",
-    "Enter-yr-username": "Skriv inn brukernavnet ditt"
+    "Enter-yr-username": "Skriv inn brukernavnet ditt",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Vennligst skriv inn passordet ditt"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Språk for knappene, titlene og andre tekster på plattformen på denne enheten",
-      "lang-of-plateforme": "Plattformspråk"
+      "lang-of-plateforme": "Plattformspråk",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Kontoen er midlertidig deaktivert, du er usynlig på plattformen nå. Hvis kontoen din er inaktiv for neste betaling, trekkes 4,99 av din neste solgte for å nyte de neste 30 dagene.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Hvis denne boksen er merket av, kan ingen brukere identifisere profilen din.",
       "T-people-w-not-be-able-to-access-your-profile": "Disse menneskene får ikke tilgang til profilen din",
       "T-people-w-not-be-able-to-access-your-profile-D": "Brukere i denne listen vil ikke kunne se profilen din.",
-      "btn-followers": "Gjør \"følg\" -knappen tilgjengelig",
-      "btn-friend": "Gjør venneforespørselsknappen tilgjengelig",
-      "h-can-b-yr-description": "Du kan legge inn en beskrivelse"
+      "h-can-b-yr-description": "Du kan legge inn en beskrivelse",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Gjør venneforespørselsknappen tilgjengelig",
+      "Follow-request-available": "Gjør \"følg\" -knappen tilgjengelig",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Allerede sertifisert",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Du må fullføre følgende betingelser for å bli sertifisert.",
       "Yr-profil-is-currently-being-checked-D": "Profilen din blir nå sjekket. Vi vil kontakte deg innen 48 timer via e-post.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Sørg for å laste opp baksiden av kortet hvis det er et nasjonalt ID-kort (bare for det nasjonale kortet)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Last opp pass, ID-identitet eller førerkort."
+      "Upload-yr-passport-id-identity-or-driver-license": "Last opp pass, ID-identitet eller førerkort.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Publikasjonene mine er bare synlige av vennene mine",
       "my-publications-are-visible-to-every-one": "Publikasjonene mine er synlige for alle",
       "who-c-find-me": "Hvem kan finne meg?",
       "who-c-find-me-d": "Når brukernavnet ditt er oppgitt i søkefeltet, vil disse personene kunne se profilen din vises."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Kontoen din er slettet",
     "Yr-account-is-activated": "Kontoen din er aktivert! Du kan nå dra nytte av de sentraliserte funksjonene til espace-piin for å kommunisere, underholde deg selv eller gjøre deg kjent.",
     "activated-after-15min-payment": "Kampanjen din blir validert om femten minutter etter validering av betalingen.",
-    "update-is-done": "Oppdateringen er ferdig"
+    "update-is-done": "Oppdateringen er ferdig",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Er du sikker på å endre utgivelsesdatoen for prosjektet ditt?",

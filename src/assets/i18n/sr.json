@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Unesite svoje korisničko ime ili e-adresu",
     "Enter-yr-password": "Unesite lozinku",
     "Enter-yr-mail": "Unesite e-poruku",
-    "Enter-yr-username": "Unesite svoje korisničko ime"
+    "Enter-yr-username": "Unesite svoje korisničko ime",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Молим вас унесите вашу шифру"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Језик за дугмад, наслове и остале текстове платформе на овом уређају",
-      "lang-of-plateforme": "Језик платформе"
+      "lang-of-plateforme": "Језик платформе",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Налог је привремено онемогућен, сада сте невидљиви на платформи. Ако је ваш рачун неактиван за следећу уплату, повући ће се 4,99 за следећу продају како бисте уживали у следећих 30 дана.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ако је ово поље означено, ниједан корисник не може да идентификује ваш профил.",
       "T-people-w-not-be-able-to-access-your-profile": "Ови људи неће моћи да приступе вашем профилу",
       "T-people-w-not-be-able-to-access-your-profile-D": "Корисници са ове листе неће моћи да виде ваш профил.",
-      "btn-followers": "Омогућите дугме „праћење“",
-      "btn-friend": "Омогућите дугме за захтев за пријатељство",
-      "h-can-b-yr-description": "Можете ставити опис"
+      "h-can-b-yr-description": "Можете ставити опис",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Омогућите дугме за захтев за пријатељство",
+      "Follow-request-available": "Омогућите дугме „праћење“",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Већ сертификовано",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Морате испунити следеће услове да бисте били сертификовани.",
       "Yr-profil-is-currently-being-checked-D": "Ваш профил се тренутно проверава. Контактираћемо вас у року од 48 сати путем е-поште.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Обавезно отпремите задњу страну картице ако је то национална лична карта (само за националну картицу)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Отпремите пасош, идентитет или возачку дозволу."
+      "Upload-yr-passport-id-identity-or-driver-license": "Отпремите пасош, идентитет или возачку дозволу.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Моје публикације виде само моји пријатељи",
       "my-publications-are-visible-to-every-one": "Моје публикације су видљиве свима",
       "who-c-find-me": "Ко ме може наћи?",
       "who-c-find-me-d": "Када се ваше корисничко име унесе у траку за претрагу, ови људи ће моћи да виде ваш профил приказан."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Ваш рачун је избрисан",
     "Yr-account-is-activated": "Ваш рачун је активиран! Сада можете да искористите централизоване функције еспаце-пиин-а како бисте комуницирали, забављали се или откривали.",
     "activated-after-15min-payment": "Ваша кампања ће бити потврђена за отприлике петнаест минута након потврде уплате.",
-    "update-is-done": "Ажурирање је завршено"
+    "update-is-done": "Ажурирање је завршено",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Да ли сте сигурни да сте променили датум изласка свог пројекта?",

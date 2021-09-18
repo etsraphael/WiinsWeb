@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Adja meg felhasználónevét vagy e-mail címét",
     "Enter-yr-password": "Adja meg jelszavát",
     "Enter-yr-mail": "Adja meg e-mail címét",
-    "Enter-yr-username": "Adja meg felhasználónevét"
+    "Enter-yr-username": "Adja meg felhasználónevét",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Kérem írja be a jelszavát"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Az eszközön található gombok, címek és a platform egyéb szövegeinek nyelve",
-      "lang-of-plateforme": "Platform nyelve"
+      "lang-of-plateforme": "Platform nyelve",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "A fiók ideiglenesen letiltva, most láthatatlan vagy a platformon. Ha számlája inaktív a következő befizetéshez, akkor a következő 30 nap után 4,99-et vonnak vissza a következő eladásából.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ha ez a négyzet be van jelölve, egyetlen felhasználó sem tudja azonosítani a profilját.",
       "T-people-w-not-be-able-to-access-your-profile": "Ezek az emberek nem férhetnek hozzá az Ön profiljához",
       "T-people-w-not-be-able-to-access-your-profile-D": "Az ebben a listában szereplő felhasználók nem láthatják az Ön profilját.",
-      "btn-followers": "Tegye elérhetővé a \"követés\" gombot",
-      "btn-friend": "Tegye elérhetővé a barátkérés gombot",
-      "h-can-b-yr-description": "Írhat leírást"
+      "h-can-b-yr-description": "Írhat leírást",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Tegye elérhetővé a barátkérés gombot",
+      "Follow-request-available": "Tegye elérhetővé a \"követés\" gombot",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Már tanúsított",
@@ -981,13 +992,31 @@
       "Verified-zone": "Ellenőrzött zóna",
       "Y-m-complet-t-following-cdt-t-b-certified": "A tanúsításhoz a következő feltételeket kell teljesítenie.",
       "Yr-profil-is-currently-being-checked-D": "Profilod ellenőrzése folyamatban van. 48 órán belül e-mailben felvesszük Önnel a kapcsolatot.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Töltse fel útlevelét, személyi igazolványát vagy vezetői engedélyét."
+      "Upload-yr-passport-id-identity-or-driver-license": "Töltse fel útlevelét, személyi igazolványát vagy vezetői engedélyét.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Kiadványaimat csak a barátaim láthatják",
       "my-publications-are-visible-to-every-one": "Kiadványaim mindenki számára láthatók",
       "who-c-find-me": "Ki talál meg engem?",
       "who-c-find-me-d": "Amikor a felhasználónevét beírja a keresősávba, ezek az emberek láthatják a profilját."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Fiókját töröltük",
     "Yr-account-is-activated": "Fiókja aktiválva van! Mostantól kihasználhatja az espace-piin központosított funkcióinak előnyeit kommunikáció, szórakoztatás vagy önmagunk megismertetése érdekében.",
     "activated-after-15min-payment": "Kampányát a fizetés érvényesítését követően körülbelül tizenöt percen belül érvényesítjük.",
-    "update-is-done": "A frissítés kész"
+    "update-is-done": "A frissítés kész",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Biztosan módosítja a projekt megjelenési dátumát?",

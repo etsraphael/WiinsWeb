@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Unesite korisničko ime ili adresu e-pošte",
     "Enter-yr-password": "Unesite lozinku",
     "Enter-yr-mail": "Unesite e-poštu",
-    "Enter-yr-username": "Unesite svoje korisničko ime"
+    "Enter-yr-username": "Unesite svoje korisničko ime",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Unesite lozinku"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Jezik za gumbe, naslove i ostale tekstove platforme na ovom uređaju",
-      "lang-of-plateforme": "Jezik platforme"
+      "lang-of-plateforme": "Jezik platforme",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Račun je privremeno onemogućen, sada ste nevidljivi na platformi. Ako je vaš račun neaktivan za sljedeću uplatu, povući će se 4,99 za sljedeću prodaju kako biste uživali u sljedećih 30 dana.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ako je ovaj okvir označen, nijedan korisnik ne može identificirati vaš profil.",
       "T-people-w-not-be-able-to-access-your-profile": "Te osobe neće moći pristupiti vašem profilu",
       "T-people-w-not-be-able-to-access-your-profile-D": "Korisnici s ovog popisa neće moći vidjeti vaš profil.",
-      "btn-followers": "Učinite dostupnim gumb \"slijedi\"",
-      "btn-friend": "Omogućite gumb zahtjeva za prijateljstvo",
-      "h-can-b-yr-description": "Možete staviti opis"
+      "h-can-b-yr-description": "Možete staviti opis",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Omogućite gumb zahtjeva za prijateljstvo",
+      "Follow-request-available": "Učinite dostupnim gumb \"slijedi\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Već certificirano",
@@ -981,13 +992,31 @@
       "Verified-zone": "Provjerena zona",
       "Y-m-complet-t-following-cdt-t-b-certified": "Da biste dobili certifikat, morate ispuniti sljedeće uvjete.",
       "Yr-profil-is-currently-being-checked-D": "Vaš se profil trenutno provjerava. Kontaktirat ćemo vas u roku od 48 sati putem e-pošte.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Učitajte putovnicu, identitet ili vozačku dozvolu."
+      "Upload-yr-passport-id-identity-or-driver-license": "Učitajte putovnicu, identitet ili vozačku dozvolu.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikacije vide samo moji prijatelji",
       "my-publications-are-visible-to-every-one": "Moje publikacije su vidljive svima",
       "who-c-find-me": "Tko me može naći?",
       "who-c-find-me-d": "Kada se vaše korisničko ime unese u traku za pretraživanje, ti će ljudi moći vidjeti vaš profil prikazan."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Vaš račun je izbrisan",
     "Yr-account-is-activated": "Vaš račun je aktiviran! Sada možete iskoristiti centralizirane funkcije espace-piina kako biste komunicirali, zabavljali se ili bili poznati.",
     "activated-after-15min-payment": "Vaša kampanja bit će potvrđena za otprilike petnaest minuta nakon potvrde plaćanja.",
-    "update-is-done": "Ažuriranje je gotovo"
+    "update-is-done": "Ažuriranje je gotovo",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Jeste li sigurni da ste promijenili datum izlaska svog projekta?",

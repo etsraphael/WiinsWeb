@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Rhowch eich enw defnyddiwr neu gyfeiriad e-bost",
     "Enter-yr-password": "Rhowch eich cyfrinair",
     "Enter-yr-mail": "Rhowch eich e-bost",
-    "Enter-yr-username": "Rhowch eich enw defnyddiwr"
+    "Enter-yr-username": "Rhowch eich enw defnyddiwr",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Rhowch eich cyfrinair"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Iaith ar gyfer botymau, teitlau a thestunau eraill y platfform ar y ddyfais hon",
-      "lang-of-plateforme": "Iaith y platfform"
+      "lang-of-plateforme": "Iaith y platfform",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Cyfrifwch yn anabl dros dro, rydych chi'n anweledig ar y platfform nawr. Os yw'ch cyfrif yn anactif ar gyfer y taliad nesaf, bydd 4.99 yn cael ei dynnu'n ôl o'ch gwerthiant nesaf i'w fwynhau yn ystod y 30 diwrnod nesaf.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Os gwirir y blwch hwn, ni all unrhyw ddefnyddiwr adnabod eich proffil.",
       "T-people-w-not-be-able-to-access-your-profile": "Ni fydd y bobl hyn yn gallu cyrchu'ch proffil",
       "T-people-w-not-be-able-to-access-your-profile-D": "Ni fydd defnyddwyr ar y rhestr hon yn gallu gweld eich proffil.",
-      "btn-followers": "Sicrhewch fod y botwm \"dilyn\" ar gael",
-      "btn-friend": "Sicrhewch fod y botwm cais ffrind ar gael",
-      "h-can-b-yr-description": "Gallwch chi roi disgrifiad"
+      "h-can-b-yr-description": "Gallwch chi roi disgrifiad",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Sicrhewch fod y botwm cais ffrind ar gael",
+      "Follow-request-available": "Sicrhewch fod y botwm \"dilyn\" ar gael",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Eisoes wedi'i ardystio",
@@ -981,13 +992,31 @@
       "Verified-zone": "Parth wedi'i wirio",
       "Y-m-complet-t-following-cdt-t-b-certified": "Rhaid i chi gwblhau'r amodau canlynol i gael eich ardystio.",
       "Yr-profil-is-currently-being-checked-D": "Mae'ch proffil yn cael ei wirio ar hyn o bryd. Byddwn yn cysylltu â chi cyn pen 48 awr trwy e-bost.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Llwythwch i fyny eich pasbort, hunaniaeth id neu'ch trwydded yrru."
+      "Upload-yr-passport-id-identity-or-driver-license": "Llwythwch i fyny eich pasbort, hunaniaeth id neu'ch trwydded yrru.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mae fy nghyhoeddiadau i'w gweld gan fy ffrindiau yn unig",
       "my-publications-are-visible-to-every-one": "Mae fy nghyhoeddiadau yn weladwy i bawb",
       "who-c-find-me": "Pwy all ddod o hyd i mi?",
       "who-c-find-me-d": "Pan fydd eich enw defnyddiwr wedi'i nodi yn y bar chwilio, bydd y bobl hyn yn gallu gweld eich proffil yn cael ei arddangos."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Mae eich cyfrif wedi'i ddileu",
     "Yr-account-is-activated": "Mae eich cyfrif wedi'i actifadu! Nawr gallwch chi fanteisio ar swyddogaethau canolog espace-piin's er mwyn cyfathrebu, difyrru'ch hun neu wneud eich hun yn hysbys.",
     "activated-after-15min-payment": "Bydd eich ymgyrch yn cael ei dilysu ymhen rhyw bymtheg munud ar ôl dilysu'r taliad.",
-    "update-is-done": "Mae'r diweddariad yn cael ei wneud"
+    "update-is-done": "Mae'r diweddariad yn cael ei wneud",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Ydych chi'n sicr o newid dyddiad rhyddhau eich prosiect?",

@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Idatzi zure erabiltzaile izena edo helbide elektronikoa",
     "Enter-yr-password": "আপনার পাসওয়ার্ড লিখুন",
     "Enter-yr-mail": "Idatzi zure posta elektronikoa",
-    "Enter-yr-username": "Idatzi zure erabiltzaile izena"
+    "Enter-yr-username": "Idatzi zure erabiltzaile izena",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Mesedez, sartu zure pasahitza"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Gailu honetako plataformako botoien, izenburuen eta gainerako testuen hizkuntza",
-      "lang-of-plateforme": "Plataformaren hizkuntza"
+      "lang-of-plateforme": "Plataformaren hizkuntza",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Kontua aldi baterako desgaituta dago, plataforman ikusezina zara orain. Zure kontua hurrengo ordainketarako inaktibo badago, 4,99 kenduko dira hurrengo saldutik hurrengo 30 egunetan gozatzeko.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Lauki hau markatuta badago, inork ezin du zure profila identifikatu.",
       "T-people-w-not-be-able-to-access-your-profile": "Pertsona hauek ezin izango dute zure profilera sartu",
       "T-people-w-not-be-able-to-access-your-profile-D": "Zerrenda honetako erabiltzaileek ezin izango dute zure profila ikusi.",
-      "btn-followers": "Jarri \"jarraitu\" botoia erabilgarri",
-      "btn-friend": "Jarri lagun eskaera botoia erabilgarri",
-      "h-can-b-yr-description": "Deskribapena jar dezakezu"
+      "h-can-b-yr-description": "Deskribapena jar dezakezu",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Jarri lagun eskaera botoia erabilgarri",
+      "Follow-request-available": "Jarri \"jarraitu\" botoia erabilgarri",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Ziurtatua dagoeneko",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Ziurtagiria lortzeko honako baldintza hauek bete behar dituzu.",
       "Yr-profil-is-currently-being-checked-D": "Zure profila egiaztatzen ari da. 48 orduko epean zurekin harremanetan jarriko gara posta elektronikoz.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Ziurtatu txartelaren atzealdea kargatzen duzula nortasun agiri nazionala bada (txartel nazionalerako soilik)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Kargatu pasaportea, nortasun agiria edo gidabaimena."
+      "Upload-yr-passport-id-identity-or-driver-license": "Kargatu pasaportea, nortasun agiria edo gidabaimena.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Nire argitalpenak lagunek soilik ikus ditzakete",
       "my-publications-are-visible-to-every-one": "Nire argitalpenak denentzat ikusgai daude",
       "who-c-find-me": "Nork aurki dezake?",
       "who-c-find-me-d": "Zure erabiltzaile izena bilaketa barran sartzean, pertsona horiek zure profila bistaratuta ikusi ahal izango dute."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Zure kontua ezabatu da",
     "Yr-account-is-activated": "Zure kontua aktibatuta dago! Espace-piin-en funtzio zentralizatuak aprobetxatu ditzakezu komunikatzeko, entretenitzeko edo zure burua ezagutzera emateko.",
     "activated-after-15min-payment": "Ordainketa balioztatu eta hamabost minutu inguru barru balioztatuko da zure kanpaina.",
-    "update-is-done": "Eguneraketa amaitu da"
+    "update-is-done": "Eguneraketa amaitu da",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Ziur al zaude zure proiektuaren kaleratze data aldatuko duzula?",

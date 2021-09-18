@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Iontráil d’ainm úsáideora nó do sheoladh ríomhphoist",
     "Enter-yr-password": "Iontráil do phasfhocal",
     "Enter-yr-mail": "Iontráil do r-phost",
-    "Enter-yr-username": "Iontráil d’ainm úsáideora"
+    "Enter-yr-username": "Iontráil d’ainm úsáideora",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Iontráil do phasfhocal le do thoil"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Teanga do na cnaipí, na teidil agus téacsanna eile an ardáin ar an bhfeiste seo",
-      "lang-of-plateforme": "Teanga an ardáin"
+      "lang-of-plateforme": "Teanga an ardáin",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Cuntas faoi mhíchumas sealadach, tá tú dofheicthe ar an platforme anois. Má tá do chuntas neamhghníomhach don chéad íocaíocht eile, tarraingeofar siar 4.99 de do chéad díolachán eile chun taitneamh a bhaint as an 30 lá dar gcionn.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Má dhéantar an bosca seo a sheiceáil, ní féidir le haon úsáideoir do phróifíl a aithint.",
       "T-people-w-not-be-able-to-access-your-profile": "Ní bheidh na daoine seo in ann rochtain a fháil ar do phróifíl",
       "T-people-w-not-be-able-to-access-your-profile-D": "Ní bheidh úsáideoirí ar an liosta seo in ann do phróifíl a fheiceáil.",
-      "btn-followers": "Cuir an cnaipe \"lean\" ar fáil",
-      "btn-friend": "Cuir an cnaipe iarratais ar chara ar fáil",
-      "h-can-b-yr-description": "Is féidir leat tuairisc a chur"
+      "h-can-b-yr-description": "Is féidir leat tuairisc a chur",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Cuir an cnaipe iarratais ar chara ar fáil",
+      "Follow-request-available": "Cuir an cnaipe \"lean\" ar fáil",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Deimhnithe cheana féin",
@@ -981,13 +992,31 @@
       "Verified-zone": "Crios fíoraithe",
       "Y-m-complet-t-following-cdt-t-b-certified": "Caithfidh tú na coinníollacha seo a leanas a chomhlíonadh chun a dheimhniú.",
       "Yr-profil-is-currently-being-checked-D": "Tá do phróifíl á seiceáil faoi láthair. Déanfaimid teagmháil leat laistigh de 48 uair an chloig trí ríomhphost.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Uaslódáil do phas, d’aitheantas id nó do cheadúnas tiomána."
+      "Upload-yr-passport-id-identity-or-driver-license": "Uaslódáil do phas, d’aitheantas id nó do cheadúnas tiomána.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Níl mo chuid foilseachán le feiceáil ach ag mo chairde",
       "my-publications-are-visible-to-every-one": "Tá mo chuid foilseachán le feiceáil ag gach duine",
       "who-c-find-me": "Cé atá in ann teacht orm?",
       "who-c-find-me-d": "Nuair a chuirtear d’ainm úsáideora isteach sa bharra cuardaigh, beidh na daoine seo in ann do phróifíl a thaispeáint."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Scriosadh do chuntas",
     "Yr-account-is-activated": "Cuirtear do chuntas i ngníomh! Is féidir leat leas a bhaint anois as feidhmeanna láraithe espace-piin d’fhonn cumarsáid a dhéanamh, siamsaíocht a chur ort féin nó tú féin a chur ar an eolas.",
     "activated-after-15min-payment": "Déanfar d’fheachtas a bhailíochtú i gceann cúig nóiméad déag tar éis an íocaíocht a bhailíochtú.",
-    "update-is-done": "Déantar an nuashonrú"
+    "update-is-done": "Déantar an nuashonrú",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "An bhfuil tú cinnte go n-athróidh tú dáta scaoilte do thionscadail?",

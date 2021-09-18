@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "أدخل اسم المستخدم أو عنوان البريد الإلكتروني",
     "Enter-yr-password": "أدخل كلمة المرور",
     "Enter-yr-mail": "أدخل بريدك الإلكتروني",
-    "Enter-yr-username": "أدخل اسم المستخدم"
+    "Enter-yr-username": "أدخل اسم المستخدم",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "من فضلك أدخل رقمك السري"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "لغة الأزرار والعناوين والنصوص الأخرى للمنصة على هذا الجهاز",
-      "lang-of-plateforme": "لغة المنبر"
+      "lang-of-plateforme": "لغة المنبر",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "تم تعطيل الحساب مؤقتًا، فأنت غير مرئي على النظام الأساسي الآن. إذا كان حسابك غير نشط للدفعة التالية، سيتم سحب 4.99 من بيعك المقبل للاستمتاع بالـ 30 يومًا التالية.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "إذا تم تحديد هذا المربع، لا يمكن لأي مستخدم تحديد ملف التعريف الخاص بك.",
       "T-people-w-not-be-able-to-access-your-profile": "لن يتمكن هؤلاء الأشخاص من الوصول إلى ملفك الشخصي",
       "T-people-w-not-be-able-to-access-your-profile-D": "لن يتمكن المستخدمون في هذه القائمة من رؤية ملف التعريف الخاص بك.",
-      "btn-followers": "جعل زر \"متابعة\" متاحًا",
-      "btn-friend": "جعل زر طلب الصداقة متاحًا",
-      "h-can-b-yr-description": "يمكنك وضع وصف"
+      "h-can-b-yr-description": "يمكنك وضع وصف",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "جعل زر طلب الصداقة متاحًا",
+      "Follow-request-available": "جعل زر \"متابعة\" متاحًا",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "تتطلب هذه الميزة التحقق من استخدامها",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "قم بتحميل صورة تحمل الهوية مع ورقة عليها تاريخ اليوم وكتب عليها كلمة \"Wiins\"",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "أوافق على استخدام بياناتي للتحقق من حسابي.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "تأكد من تحميل الجانب الخلفي من البطاقة إذا كانت بطاقة الهوية الوطنية (فقط للبطاقة الوطنية)",
-      "Upload-yr-passport-id-identity-or-driver-license": "قم بتحميل جواز سفرك أو بطاقة الهوية أو رخصة القيادة."
+      "Upload-yr-passport-id-identity-or-driver-license": "قم بتحميل جواز سفرك أو بطاقة الهوية أو رخصة القيادة.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
       "my-publications-are-visible-to-every-one": "قبول العنف كوسيلة لمحاولة تغيير الأمور",
       "who-c-find-me": "من يستطيع أن يجدني؟",
       "who-c-find-me-d": "عند إدخال اسم المستخدم الخاص بك في شريط البحث، سيتمكن هؤلاء الأشخاص من مشاهدة ملفك الشخصي معروضًا.  "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "تم حذف حسابك您的帐户已被删除",
     "Yr-account-is-activated": "تم تنشيط حسابك! يمكنك الآن الاستفادة من الوظائف المركزية لإسباس بين من أجل التواصل، والترفيه نفسك أو جعل نفسك معروفة.",
     "activated-after-15min-payment": "سيتم التحقق من صحة حملتك بعد حوالي 15 دقيقة من التحقق من صحة الدفع.",
-    "update-is-done": "يتم التحديث"
+    "update-is-done": "يتم التحديث",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "هل أنت متأكد من تغيير تاريخ الإصدار من المشروع الخاص بك ؟",

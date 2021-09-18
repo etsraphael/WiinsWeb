@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "បញ្ចូលឈ្មោះអ្នកប្រើឬអាសយដ្ឋានអ៊ីមែលរបស់អ្នក",
     "Enter-yr-password": "បញ្ចូលពាក្យសម្ងាត់របស់អ្នក",
     "Enter-yr-mail": "បញ្ចូលអ៊ីមែលរបស់អ្នក",
-    "Enter-yr-username": "បញ្ចូលឈ្មោះអ្នកប្រើរបស់អ្នក"
+    "Enter-yr-username": "បញ្ចូលឈ្មោះអ្នកប្រើរបស់អ្នក",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "សូម​បញ្ចូល​ពាក្យ​សម្ងាត់​របស់​អ្នក"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "ភាសាសម្រាប់ប៊ូតុងចំណងជើងនិងអត្ថបទផ្សេងទៀតនៃវេទិកានៅលើឧបករណ៍នេះ",
-      "lang-of-plateforme": "ភាសាវេទិកា"
+      "lang-of-plateforme": "ភាសាវេទិកា",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "បានបិទគណនីជាបណ្តោះអាសន្នអ្នកមិនអាចមើលឃើញនៅលើវេទិកាឥឡូវនេះទេ។ ប្រសិនបើគណនីរបស់អ្នកអសកម្មសម្រាប់ការទូទាត់បន្ទាប់ 4.99 នឹងត្រូវបានដកចេញពីការលក់បន្ទាប់របស់អ្នកដើម្បីរីករាយក្នុងរយៈពេល 30 ថ្ងៃបន្ទាប់។",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "ប្រសិនបើប្រអប់នេះត្រូវបានធីកអ្នកប្រើមិនអាចកំណត់អត្តសញ្ញាណប្រវត្តិរូបរបស់អ្នកបានទេ។",
       "T-people-w-not-be-able-to-access-your-profile": "មនុស្សទាំងនេះនឹងមិនអាចចូលប្រើប្រវត្តិរូបរបស់អ្នកបានទេ",
       "T-people-w-not-be-able-to-access-your-profile-D": "អ្នកប្រើប្រាស់នៅក្នុងបញ្ជីនេះនឹងមិនអាចមើលឃើញទម្រង់របស់អ្នកទេ។",
-      "btn-followers": "ធ្វើឱ្យប៊ូតុង \"តាមដាន\" អាចប្រើបាន",
-      "btn-friend": "ធ្វើឱ្យប៊ូតុងសំណើមិត្តភក្តិអាចប្រើបាន",
-      "h-can-b-yr-description": "អ្នកអាចដាក់ការពិពណ៌នា"
+      "h-can-b-yr-description": "អ្នកអាចដាក់ការពិពណ៌នា",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "ធ្វើឱ្យប៊ូតុងសំណើមិត្តភក្តិអាចប្រើបាន",
+      "Follow-request-available": "ធ្វើឱ្យប៊ូតុង \"តាមដាន\" អាចប្រើបាន",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "បញ្ជាក់រួចហើយ",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "អ្នកត្រូវតែបំពេញលក្ខខណ្ឌដូចខាងក្រោមដើម្បីបញ្ជាក់។",
       "Yr-profil-is-currently-being-checked-D": "ប្រវត្តិរូបរបស់អ្នកកំពុងត្រូវបានត្រួតពិនិត្យ។ យើងនឹងទាក់ទងអ្នកក្នុងរយៈពេល ៤៨ ម៉ោងតាមអ៊ីមែល។",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "ត្រូវប្រាកដថាបញ្ចូលសន្លឹកបៀរខាងក្រោយប្រសិនបើវាជាអត្តសញ្ញាណប័ណ្ណជាតិ (សម្រាប់តែអត្តសញ្ញាណប័ណ្ណ)",
-      "Upload-yr-passport-id-identity-or-driver-license": "បញ្ចូលលិខិតឆ្លងដែនអត្តសញ្ញាណប័ណ្ណឬប័ណ្ណបើកបរ។"
+      "Upload-yr-passport-id-identity-or-driver-license": "បញ្ចូលលិខិតឆ្លងដែនអត្តសញ្ញាណប័ណ្ណឬប័ណ្ណបើកបរ។",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "ការបោះពុម្ពផ្សាយរបស់ខ្ញុំអាចមើលឃើញដោយមិត្តភក្តិរបស់ខ្ញុំតែប៉ុណ្ណោះ",
       "my-publications-are-visible-to-every-one": "ការបោះពុម្ពផ្សាយរបស់ខ្ញុំអាចមើលឃើញដោយអ្នករាល់គ្នា",
       "who-c-find-me": "តើអ្នកណាអាចរកខ្ញុំបាន?",
       "who-c-find-me-d": "នៅពេលដែលឈ្មោះអ្នកប្រើរបស់អ្នកត្រូវបានបញ្ចូលក្នុងប្រអប់ស្វែងរកមនុស្សទាំងនេះនឹងអាចមើលឃើញទម្រង់របស់អ្នក។"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "គណនីរបស់អ្នកត្រូវបានលុបចោល",
     "Yr-account-is-activated": "គណនីរបស់អ្នកត្រូវបានធ្វើឱ្យសកម្ម! ឥឡូវអ្នកអាចទាញយកអត្ថប្រយោជន៍ពីមុខងារកណ្តាលនៃអេសភីសភីនដើម្បីទំនាក់ទំនងធ្វើឱ្យរីករាយឬធ្វើឱ្យខ្លួនអ្នកស្គាល់។",
     "activated-after-15min-payment": "យុទ្ធនាការរបស់អ្នកនឹងត្រូវបានធ្វើឱ្យមានសុពលភាពក្នុងរយៈពេលប្រហែលដប់ប្រាំនាទីបន្ទាប់ពីសុពលភាពនៃការទូទាត់។",
-    "update-is-done": "ការធ្វើបច្ចុប្បន្នភាពត្រូវបានធ្វើ"
+    "update-is-done": "ការធ្វើបច្ចុប្បន្នភាពត្រូវបានធ្វើ",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "តើអ្នកប្រាកដជាផ្លាស់ប្តូរកាលបរិច្ឆេទចេញផ្សាយគំរោងរបស់អ្នកទេ?",

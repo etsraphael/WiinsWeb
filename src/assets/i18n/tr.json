@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Kullanıcı adınızı veya e-posta adresinizi girin",
     "Enter-yr-password": "Parolanızı girin",
     "Enter-yr-mail": "E-postanızı girin",
-    "Enter-yr-username": "Kullanıcı adınızı girin"
+    "Enter-yr-username": "Kullanıcı adınızı girin",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Şifrenizi giriniz Lütfen"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Bu cihazdaki platformun düğmelerinin, başlıklarının ve diğer metinlerinin dili",
-      "lang-of-plateforme": "Platform dili"
+      "lang-of-plateforme": "Platform dili",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Hesap geçici olarak devre dışı bırakıldı, artık platformda görünmezsiniz. Hesabınız bir sonraki ödeme için aktif değilse, sonraki 30 günün keyfini çıkarmak için bir sonraki satışınızdan 4,99 geri çekilecektir.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Bu kutu işaretlenirse, hiçbir kullanıcı profilinizi tanımlayamaz.",
       "T-people-w-not-be-able-to-access-your-profile": "Bu kişiler profilinize erişemeyecek",
       "T-people-w-not-be-able-to-access-your-profile-D": "Bu listedeki kullanıcılar profilinizi göremeyecek.",
-      "btn-followers": "\"Takip et\" düğmesini kullanılabilir hale getirin",
-      "btn-friend": "Arkadaşlık isteği düğmesini kullanılabilir hale getirin",
-      "h-can-b-yr-description": "Bir açıklama koyabilirsiniz"
+      "h-can-b-yr-description": "Bir açıklama koyabilirsiniz",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Arkadaşlık isteği düğmesini kullanılabilir hale getirin",
+      "Follow-request-available": "\"Takip et\" düğmesini kullanılabilir hale getirin",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Zaten sertifikalı",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Sertifika almak için aşağıdaki koşulları yerine getirmelisiniz.",
       "Yr-profil-is-currently-being-checked-D": "Profiliniz şu anda kontrol ediliyor. 48 saat içinde sizinle e-posta yoluyla iletişime geçeceğiz.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Ulusal kimlik kartı ise kartın arka yüzünü yüklediğinizden emin olun (sadece ulusal kart için)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Pasaportunuzu, kimlik kimliğinizi veya ehliyetinizi yükleyin."
+      "Upload-yr-passport-id-identity-or-driver-license": "Pasaportunuzu, kimlik kimliğinizi veya ehliyetinizi yükleyin.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Yayınlarım sadece arkadaşlarım tarafından görülebilir",
       "my-publications-are-visible-to-every-one": "Yayınlarım herkes tarafından görülebilir",
       "who-c-find-me": "Beni kim bulabilir?",
       "who-c-find-me-d": "Kullanıcı adınız arama çubuğuna girildiğinde, bu kişiler görüntülenen profilinizi görebilir."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "hesabınız silinmiştir",
     "Yr-account-is-activated": "Hesabınız etkinleştirildi! Artık iletişim kurmak, kendinizi eğlendirmek veya kendinizi tanıtmak için espace-piin'in merkezi işlevlerinden yararlanabilirsiniz.",
     "activated-after-15min-payment": "Ödemenizin onaylanmasından sonra yaklaşık on beş dakika içinde kampanyanız doğrulanacaktır.",
-    "update-is-done": "Güncelleme tamamlandı"
+    "update-is-done": "Güncelleme tamamlandı",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Projenizin çıkış tarihini değiştireceğinizden emin misiniz?",

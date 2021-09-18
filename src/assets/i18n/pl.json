@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Wpisz swoją nazwę użytkownika lub adres e-mail",
     "Enter-yr-password": "Wprowadź hasło",
     "Enter-yr-mail": "Wpisz swój adres e-mail",
-    "Enter-yr-username": "Wpisz swoją nazwę użytkownika"
+    "Enter-yr-username": "Wpisz swoją nazwę użytkownika",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Wprowadź hasło"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Język przycisków, tytułów i innych tekstów platformy na tym urządzeniu",
-      "lang-of-plateforme": "Język platformy"
+      "lang-of-plateforme": "Język platformy",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Konto tymczasowo wyłączone, jesteś teraz niewidoczny na platformie. Jeśli twoje konto jest nieaktywne dla następnej płatności, 4,99 zostanie wycofane z następnej sprzedaży, aby cieszyć się następnymi 30 dniami.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Jeśli to pole jest zaznaczone, żaden użytkownik nie może zidentyfikować Twojego profilu.",
       "T-people-w-not-be-able-to-access-your-profile": "Te osoby nie będą miały dostępu do Twojego profilu",
       "T-people-w-not-be-able-to-access-your-profile-D": "Użytkownicy na tej liście nie będą mogli zobaczyć Twojego profilu.",
-      "btn-followers": "Udostępnij przycisk „obserwuj”",
-      "btn-friend": "Udostępnij przycisk zaproszenia do znajomych",
-      "h-can-b-yr-description": "Możesz umieścić opis"
+      "h-can-b-yr-description": "Możesz umieścić opis",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Udostępnij przycisk zaproszenia do znajomych",
+      "Follow-request-available": "Udostępnij przycisk „obserwuj”",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Już certyfikowany",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Aby uzyskać certyfikat, musisz spełnić następujące warunki.",
       "Yr-profil-is-currently-being-checked-D": "Twój profil jest obecnie sprawdzany. W ciągu 48 godzin skontaktujemy się z Tobą mailowo.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Pamiętaj, aby przesłać odwrotną stronę karty, jeśli jest to krajowy dowód tożsamości (tylko w przypadku krajowego dowodu osobistego)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Prześlij swój paszport, dowód osobisty lub prawo jazdy."
+      "Upload-yr-passport-id-identity-or-driver-license": "Prześlij swój paszport, dowód osobisty lub prawo jazdy.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikacje są widoczne tylko dla moich znajomych",
       "my-publications-are-visible-to-every-one": "Moje publikacje są widoczne dla wszystkich",
       "who-c-find-me": "Kto może mnie znaleźć?",
       "who-c-find-me-d": "Gdy Twoja nazwa użytkownika zostanie wprowadzona w pasku wyszukiwania, te osoby będą mogły zobaczyć Twój profil."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Twoje konto zostało usunięte",
     "Yr-account-is-activated": "Twoje konto jest aktywowane! Możesz teraz skorzystać ze scentralizowanych funkcji espace-piin, aby komunikować się, bawić się lub dać się poznać.",
     "activated-after-15min-payment": "Twoja kampania zostanie zweryfikowana w około piętnaście minut po zatwierdzeniu płatności.",
-    "update-is-done": "Aktualizacja jest zakończona"
+    "update-is-done": "Aktualizacja jest zakończona",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Czy na pewno chcesz zmienić datę wydania swojego projektu?",

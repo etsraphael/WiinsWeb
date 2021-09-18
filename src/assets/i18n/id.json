@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Masukkan nama pengguna atau alamat email Anda",
     "Enter-yr-password": "Masukkan kata sandi Anda",
     "Enter-yr-mail": "Masukkan email Anda",
-    "Enter-yr-username": "Masukkan nama pengguna Anda"
+    "Enter-yr-username": "Masukkan nama pengguna Anda",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Silakan masukkan kata sandi Anda"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Bahasa untuk tombol, judul, dan teks lain dari platform pada perangkat ini",
-      "lang-of-plateforme": "Bahasa platform"
+      "lang-of-plateforme": "Bahasa platform",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Akun untuk sementara dinonaktifkan, Anda tidak terlihat di platform sekarang. Jika akun Anda tidak aktif untuk pembayaran berikutnya, 4.99 akan ditarik dari penjualan Anda berikutnya untuk menikmati 30 hari berikutnya.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Jika kotak ini dicentang, tidak ada pengguna yang dapat mengidentifikasi profil Anda.",
       "T-people-w-not-be-able-to-access-your-profile": "Orang-orang ini tidak akan dapat mengakses profil Anda",
       "T-people-w-not-be-able-to-access-your-profile-D": "Pengguna dalam daftar ini tidak akan dapat melihat profil Anda.",
-      "btn-followers": "Sediakan tombol \"ikuti\"",
-      "btn-friend": "Sediakan tombol permintaan pertemanan",
-      "h-can-b-yr-description": "Anda bisa memberi deskripsi"
+      "h-can-b-yr-description": "Anda bisa memberi deskripsi",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Sediakan tombol permintaan pertemanan",
+      "Follow-request-available": "Sediakan tombol \"ikuti\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Sudah bersertifikat",
@@ -981,13 +992,31 @@
       "Verified-zone": "Zona terverifikasi",
       "Y-m-complet-t-following-cdt-t-b-certified": "Anda harus menyelesaikan persyaratan berikut untuk mendapatkan sertifikasi.",
       "Yr-profil-is-currently-being-checked-D": "Profil Anda saat ini sedang diperiksa. Kami akan menghubungi Anda dalam waktu 48 jam melalui email.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Unggah paspor, identitas id atau SIM Anda."
+      "Upload-yr-passport-id-identity-or-driver-license": "Unggah paspor, identitas id atau SIM Anda.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Terbitan saya hanya bisa dilihat oleh teman-teman saya",
       "my-publications-are-visible-to-every-one": "Terbitan saya dapat dilihat oleh semua orang",
       "who-c-find-me": "Siapa yang bisa menemukan saya?",
       "who-c-find-me-d": "Ketika nama pengguna Anda dimasukkan di bilah pencarian, orang-orang ini akan dapat melihat profil Anda ditampilkan."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Akun Anda telah dihapus",
     "Yr-account-is-activated": "Akun Anda diaktifkan! Sekarang Anda dapat memanfaatkan fungsi terpusat dari espace-piin untuk berkomunikasi, menghibur diri sendiri, atau membuat diri Anda dikenal.",
     "activated-after-15min-payment": "Kampanye Anda akan divalidasi dalam waktu sekitar lima belas menit setelah validasi pembayaran.",
-    "update-is-done": "Pembaruan selesai"
+    "update-is-done": "Pembaruan selesai",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Apakah Anda yakin untuk mengubah tanggal rilis proyek Anda?",

@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Tik jou gebruikersnaam of e-posadres in",
     "Enter-yr-password": "Tik jou wagwoord in",
     "Enter-yr-mail": "Voer jou e-pos in",
-    "Enter-yr-username": "Tik jou gebruikersnaam in"
+    "Enter-yr-username": "Tik jou gebruikersnaam in",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Tik asseblief jou wagwoord"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Taal vir die knoppies, titels en ander tekste van die platform op hierdie toestel",
-      "lang-of-plateforme": "Platformtaal"
+      "lang-of-plateforme": "Platformtaal",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Rekening is tydelik uitgeskakel. U is nou onsigbaar op die platform. As u rekening onaktief is vir die volgende betaling, word u volgende verkoop verkoop 4,99 om die volgende 30 dae te geniet.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "As hierdie vakkie aangeskakel is, kan geen gebruiker u profiel identifiseer nie.",
       "T-people-w-not-be-able-to-access-your-profile": "Hierdie mense het nie toegang tot u profiel nie",
       "T-people-w-not-be-able-to-access-your-profile-D": "Gebruikers in hierdie lys sal nie u profiel kan sien nie.",
-      "btn-followers": "Stel die \"volg\" -knoppie beskikbaar",
-      "btn-friend": "Stel die vriendsknoppie-knoppie beskikbaar",
-      "h-can-b-yr-description": "U kan 'n beskrywing daarstel"
+      "h-can-b-yr-description": "U kan 'n beskrywing daarstel",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Stel die vriendsknoppie-knoppie beskikbaar",
+      "Follow-request-available": "Stel die \"volg\" -knoppie beskikbaar",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Reeds gesertifiseer",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "U moet die volgende voorwaardes nakom om gesertifiseer te word.",
       "Yr-profil-is-currently-being-checked-D": "U profiel word tans nagegaan. Ons sal u binne 48 uur per e-pos kontak.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Maak seker dat u die agterkant van die kaart oplaai as dit 'n nasionale ID-kaart is (slegs vir die nasionale kaart)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Laai u paspoort, ID-identiteit of bestuurderslisensie op."
+      "Upload-yr-passport-id-identity-or-driver-license": "Laai u paspoort, ID-identiteit of bestuurderslisensie op.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "My publikasies is slegs deur my vriende sigbaar",
       "my-publications-are-visible-to-every-one": "My publikasies is vir almal sigbaar",
       "who-c-find-me": "Wie kan my kry?",
       "who-c-find-me-d": "Wanneer u gebruikersnaam in die soekbalk ingevoer word, sal hierdie mense u profiel kan sien vertoon."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "U rekening is uitgevee",
     "Yr-account-is-activated": "U rekening is geaktiveer! U kan nou gebruik maak van die sentrale funksies van espace-piin's om te kommunikeer, jouself te vermaak of om u bekend te maak.",
     "activated-after-15min-payment": "U veldtog sal binne vyftien minute na die bekragtiging van die betaling bekragtig word.",
-    "update-is-done": "Die opdatering is gedoen"
+    "update-is-done": "Die opdatering is gedoen",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Is u seker dat u die vrystellingsdatum van u projek sal verander?",

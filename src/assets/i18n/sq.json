@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Vendosni emrin tuaj të përdoruesit ose adresën tuaj të postës elektronike",
     "Enter-yr-password": "Vendosni fjalëkalimin tuaj",
     "Enter-yr-mail": "Vendosni emailin tuaj",
-    "Enter-yr-username": "Vendosni emrin tuaj të përdoruesit"
+    "Enter-yr-username": "Vendosni emrin tuaj të përdoruesit",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Ju lutem vendosni fjalëkalimin tuaj"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Gjuha për butonat, titujt dhe tekstet e tjera të platformës në këtë pajisje",
-      "lang-of-plateforme": "Gjuha e platformës"
+      "lang-of-plateforme": "Gjuha e platformës",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Llogaria është çaktivizuar përkohësisht, tani jeni i padukshëm në platformë. Nëse llogaria juaj është joaktive për pagesën tjetër, 4.99 do të tërhiqet nga shitja juaj e radhës për të shijuar 30 ditët e ardhshme.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Nëse kjo kuti është e zgjedhur, asnjë përdorues nuk mund të identifikojë profilin tuaj.",
       "T-people-w-not-be-able-to-access-your-profile": "Këta njerëz nuk do të kenë mundësi të hyjnë në profilin tuaj",
       "T-people-w-not-be-able-to-access-your-profile-D": "Përdoruesit në këtë listë nuk do të mund të shohin profilin tuaj.",
-      "btn-followers": "Bëni të disponueshëm butonin \"ndiq\"",
-      "btn-friend": "Bëni të disponueshëm butonin e kërkesës për mik",
-      "h-can-b-yr-description": "Mund të vendosni një përshkrim"
+      "h-can-b-yr-description": "Mund të vendosni një përshkrim",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Bëni të disponueshëm butonin e kërkesës për mik",
+      "Follow-request-available": "Bëni të disponueshëm butonin \"ndiq\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Tashmë e çertifikuar",
@@ -981,13 +992,31 @@
       "Verified-zone": "Zona e verifikuar",
       "Y-m-complet-t-following-cdt-t-b-certified": "Ju duhet të plotësoni kushtet e mëposhtme për t'u çertifikuar.",
       "Yr-profil-is-currently-being-checked-D": "Profili juaj aktualisht po kontrollohet. Ne do t'ju kontaktojmë brenda 48 orëve me email.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Ngarko pasaportën, identitetin e identitetit ose patentën e shoferit."
+      "Upload-yr-passport-id-identity-or-driver-license": "Ngarko pasaportën, identitetin e identitetit ose patentën e shoferit.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Publikimet e mia janë të dukshme vetëm nga miqtë e mi",
       "my-publications-are-visible-to-every-one": "Botimet e mia janë të dukshme për të gjithë",
       "who-c-find-me": "Kush mund të më gjejë mua?",
       "who-c-find-me-d": "Kur emri juaj i përdoruesit futet në shiritin e kërkimit, këta njerëz do të jenë në gjendje të shohin profilin tuaj të shfaqur."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Llogaria juaj është fshirë",
     "Yr-account-is-activated": "Llogaria juaj është aktivizuar! Tani mund të përfitoni nga funksionet e centralizuara të espace-piin's në mënyrë që të komunikoni, të argëtoheni ose të bëheni të njohur.",
     "activated-after-15min-payment": "Fushata juaj do të vërtetohet në rreth pesëmbëdhjetë minuta pas vërtetimit të pagesës.",
-    "update-is-done": "Përditësimi është bërë"
+    "update-is-done": "Përditësimi është bërë",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "A jeni i sigurt për të ndryshuar datën e lëshimit të projektit tuaj?",

@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "ਆਪਣਾ ਉਪਭੋਗਤਾ ਨਾਮ ਜਾਂ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰੋ",
     "Enter-yr-password": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
     "Enter-yr-mail": "ਆਪਣਾ ਈ - ਮੇਲ ਭਰੋ",
-    "Enter-yr-username": "ਆਪਣਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਦਰਜ ਕਰੋ"
+    "Enter-yr-username": "ਆਪਣਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਦਰਜ ਕਰੋ",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪਾਸਵਰਡ ਦਿਓ"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "ਇਸ ਡਿਵਾਈਸ ਤੇ ਪਲੇਟਫਾਰਮ ਦੇ ਬਟਨਾਂ, ਸਿਰਲੇਖਾਂ ਅਤੇ ਹੋਰ ਟੈਕਸਟ ਲਈ ਭਾਸ਼ਾ",
-      "lang-of-plateforme": "ਪਲੇਟਫਾਰਮ ਭਾਸ਼ਾ"
+      "lang-of-plateforme": "ਪਲੇਟਫਾਰਮ ਭਾਸ਼ਾ",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "ਖਾਤਾ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਅਸਮਰੱਥ ਹੈ, ਤੁਸੀਂ ਹੁਣ ਪਲੇਟਫਾਰਮ' ਤੇ ਅਦਿੱਖ ਹੋ. ਜੇ ਤੁਹਾਡਾ ਖਾਤਾ ਅਗਲੀ ਭੁਗਤਾਨ ਲਈ ਕਿਰਿਆਸ਼ੀਲ ਹੈ, ਤਾਂ ਅਗਲੇ 30 ਦਿਨਾਂ ਦਾ ਆਨੰਦ ਮਾਣਨ ਲਈ ਤੁਹਾਡੀ ਅਗਲੀ ਵਿਕਰੀ ਵਿੱਚੋਂ 4.99 ਵਾਪਸ ਲੈ ਲਿਆ ਜਾਵੇਗਾ.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "ਜੇ ਇਹ ਬਾਕਸ ਚੁਣਿਆ ਗਿਆ ਤਾਂ ਕੋਈ ਵੀ ਉਪਭੋਗਤਾ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਦੀ ਪਛਾਣ ਨਹੀਂ ਕਰ ਸਕਦਾ.",
       "T-people-w-not-be-able-to-access-your-profile": "ਇਹ ਲੋਕ ਤੁਹਾਡੇ ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਐਕਸੈਸ ਨਹੀਂ ਕਰ ਸਕਣਗੇ",
       "T-people-w-not-be-able-to-access-your-profile-D": "ਇਸ ਸੂਚੀ ਵਿਚਲੇ ਉਪਭੋਗਤਾ ਤੁਹਾਡਾ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ ਵੇਖ ਸਕਣਗੇ.",
-      "btn-followers": "\"ਫਾਲੋ\" ਬਟਨ ਉਪਲਬਧ ਕਰੋ",
-      "btn-friend": "ਮਿੱਤਰਤਾ ਬੇਨਤੀ ਬਟਨ ਉਪਲਬਧ ਕਰਵਾਉ",
-      "h-can-b-yr-description": "ਤੁਸੀਂ ਵੇਰਵਾ ਦੇ ਸਕਦੇ ਹੋ"
+      "h-can-b-yr-description": "ਤੁਸੀਂ ਵੇਰਵਾ ਦੇ ਸਕਦੇ ਹੋ",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "ਮਿੱਤਰਤਾ ਬੇਨਤੀ ਬਟਨ ਉਪਲਬਧ ਕਰਵਾਉ",
+      "Follow-request-available": "\"ਫਾਲੋ\" ਬਟਨ ਉਪਲਬਧ ਕਰੋ",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਵਰਤਣ ਲਈ ਤਸਦੀਕ ਦੀ ਲੋੜ ਹੈ",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "ਅੱਜ ਦੀ ਮਿਤੀ ਦੇ ਨਾਲ ਕਾਗਜ਼ ਦੀ ਸ਼ੀਟ ਨਾਲ ਆਈਡੀ ਵਾਲੀ ਫੋਟੋ ਨੂੰ ਅਪਲੋਡ ਕਰੋ ਅਤੇ ਇਸ 'ਤੇ \"ਵਿਨਜ਼\" ਲਿਖਦੇ ਹਨ.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "ਮੈਂ ਸਹਿਮਤ ਹਾਂ ਕਿ ਮੇਰਾ ਡਾਟਾ ਮੇਰੇ ਖਾਤੇ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "ਕਾਰਡ ਦੇ ਪਿਛਲੇ ਪਾਸੇ ਅਪਲੋਡ ਕਰਨਾ ਨਿਸ਼ਚਤ ਕਰੋ ਜੇ ਇਹ ਰਾਸ਼ਟਰੀ ਆਈਡੀ ਕਾਰਡ ਹੈ (ਸਿਰਫ ਰਾਸ਼ਟਰੀ ਕਾਰਡ ਲਈ)",
-      "Upload-yr-passport-id-identity-or-driver-license": "ਆਪਣਾ ਪਾਸਪੋਰਟ, ID ਪਛਾਣ ਜਾਂ ਡਰਾਈਵਰ ਲਾਇਸੈਂਸ ਅਪਲੋਡ ਕਰੋ."
+      "Upload-yr-passport-id-identity-or-driver-license": "ਆਪਣਾ ਪਾਸਪੋਰਟ, ID ਪਛਾਣ ਜਾਂ ਡਰਾਈਵਰ ਲਾਇਸੈਂਸ ਅਪਲੋਡ ਕਰੋ.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਸਿਰਫ ਮੇਰੇ ਦੋਸਤਾਂ ਦੁਆਰਾ ਦ੍ਰਿਸ਼ਮਾਨ ਹਨ",
       "my-publications-are-visible-to-every-one": "ਮੇਰੇ ਪ੍ਰਕਾਸ਼ਨ ਹਰ ਕਿਸੇ ਨੂੰ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ",
       "who-c-find-me": "ਮੈਨੂੰ ਕੌਣ ਲੱਭ ਸਕਦਾ ਹੈ ?",
       "who-c-find-me-d": "ਜਦੋਂ ਤੁਹਾਡਾ ਉਪਯੋਗਕਰਤਾ ਨਾਮ ਸਰਚ ਬਾਰ ਵਿੱਚ ਦਾਖਲ ਹੁੰਦਾ ਹੈ, ਇਹ ਲੋਕ ਤੁਹਾਡੀ ਪ੍ਰੋਫਾਈਲ ਨੂੰ ਪ੍ਰਦਰਸ਼ਤ ਕਰਨ ਦੇ ਯੋਗ ਹੋਣਗੇ."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "ਤੁਹਾਡਾ ਖਾਤਾ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ",
     "Yr-account-is-activated": "ਤੁਹਾਡਾ ਖਾਤਾ ਚਾਲੂ ਹੋ ਗਿਆ ਹੈ! ਸੰਚਾਰ ਕਰਨ, ਆਪਣੇ ਆਪ ਨੂੰ ਮਨੋਰੰਜਨ ਕਰਨ ਜਾਂ ਆਪਣੇ ਆਪ ਨੂੰ ਜਾਣੂ ਕਰਾਉਣ ਲਈ ਤੁਸੀਂ ਹੁਣ ਐਸਪੇਸ ਪਾਇਨਸ ਦੇ ਕੇਂਦਰੀ ਕਾਰਜਾਂ ਦਾ ਲਾਭ ਲੈ ਸਕਦੇ ਹੋ.",
     "activated-after-15min-payment": "ਤੁਹਾਡੀ ਮੁਹਿੰਮ ਭੁਗਤਾਨ ਦੀ ਵੈਧਤਾ ਦੇ ਲਗਭਗ ਪੰਦਰਾਂ ਮਿੰਟਾਂ ਵਿੱਚ ਪ੍ਰਮਾਣਿਤ ਹੋ ਜਾਵੇਗੀ.",
-    "update-is-done": "ਅਪਡੇਟ ਹੋ ਗਿਆ ਹੈ"
+    "update-is-done": "ਅਪਡੇਟ ਹੋ ਗਿਆ ਹੈ",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਪ੍ਰੋਜੈਕਟ ਦੀ ਰਿਲੀਜ਼ ਮਿਤੀ ਨੂੰ ਬਦਲਣਾ ਨਿਸ਼ਚਤ ਹੋ ?",

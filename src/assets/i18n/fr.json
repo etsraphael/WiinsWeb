@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "Entrez votre nom d'utilisateur ou votre adresse email",
     "Enter-yr-password": "Entrez votre mot de passe",
     "Enter-yr-mail": "Entrez votre email",
-    "Enter-yr-username": "Entrez votre nom d'utilisateur"
+    "Enter-yr-username": "Entrez votre nom d'utilisateur",
+    "Password-required": "Mot de passe (obligatoire pour appliquer les changements)"
   },
   "PLEASE": {
     "Password": "Veuillez taper votre mot de passe"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Langue pour les boutons, titres et autres textes de la plateforme sur cet appareil",
-      "lang-of-plateforme": "Langage de la plateforme"
+      "lang-of-plateforme": "Langage de la plateforme",
+      "Langage-not-available-here-?": "Votre langue n'est pas disponible ici ?",
+      "Help-us-to-add-it": "Aidez-nous à l'ajouter !"
     },
     "ledger": {
       "Account-disable-now-description": "Compte temporairement désactivé, vous êtes invisible sur la plate-forme maintenant. Si votre compte est inactif pour le prochain paiement, 4,99 seront retirés de votre prochaine vente pour profiter des 30 prochains jours.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "Si cette case est cocher, aucun utilisateur ne peut identifier votre profil",
       "T-people-w-not-be-able-to-access-your-profile": "Ces personnes pourrons pas accéder à votre profil",
       "T-people-w-not-be-able-to-access-your-profile-D": "Les utilisateurs présents dans cette liste ne pourront pas voir votre profil",
-      "btn-followers": "Rendre disponible le bouton \"suivre\"",
-      "btn-friend": "Rendre disponible le bouton de demande en ami",
-      "h-can-b-yr-description": "Vous pouvez vous mettre une description"
+      "h-can-b-yr-description": "Vous pouvez vous mettre une description",
+      "General-information": "Informations générales",
+      "Confidentiality": "Confidentialité",
+      "List-of-blocked-person": "Liste des personnes bloquées",
+      "List-of-close-friends": "Liste d'amis proches",
+      "Blocked-since": "Bloquer depuis le",
+      "CloseFriend-since": "ami(e) depuis le",
+      "Friend-request-available": "Rendre disponible le bouton de demande en ami",
+      "Follow-request-available": "Rendre disponible le bouton \"suivre\"",
+      "Post-visible-only-community": "Rendre mes publications visible uniquement pour ma communauté",
+      "Show-online-status": "Montrer le statut en ligne à ma communauté"
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Cette fonctionnalité nécessite une vérification pour être utilisée",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "Téléchargez une photo contenant la pièce d'identité avec une feuille de papier avec la date du jour et l'inscription \"Wiins\" dessus.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "J'accepte que mes données soient utilisées pour vérifier mon compte.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Assurez-vous de télécharger le verso de la carte s'il s'agit d'une carte d'identité nationale (uniquement pour la carte nationale)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Téléchargez votre passeport, votre pièce d'identité ou votre permis de conduire."
+      "Upload-yr-passport-id-identity-or-driver-license": "Téléchargez votre passeport, votre pièce d'identité ou votre permis de conduire.",
+      "With-smile": "Avec le sourire :)"
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mes publications sont visible uniquement par mes amis",
       "my-publications-are-visible-to-every-one": "Mes publications sont visible par tout le monde",
       "who-c-find-me": "Qui peut me trouver ?",
       "who-c-find-me-d": "Lorsque votre pseudo est écrit dans la barre de recherche ces personnes pourront voir votre profile affiché. "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "Le pseudo ne peut être changé qu'une seule fois, choisissez judicieusement !\naucun changement de pseudo ne peut être effectué pour un compte certifié et vérifié.",
+      "Pseudo-cannot-be-same": "Le pseudo ne peut pas être le même",
+      "Pseudo-change-no-turning-back": "Pas de retour en arrière possible. Êtes vous sûr de vouloir changer de pseudo ?"
+    },
+    "Email": {
+      "Email-changed": "Pour un changement d'adresse e-mail, une vérification de votre nouvelle adresse e-mail sera nécessaire.",
+      "7-days-request-change": "Wiin vous a envoyé un email de vérification. Vous avez 7 jours pour confirmer votre email avant que la demande ne soit annulée. N'hésitez pas à regarder dans vos spams."
+    },
+    "General-information": "Informations générales",
+    "Download-data": {
+      "Download": "Télécharger",
+      "Download-data-title": "Télécharger les données",
+      "Descriptions": "Téléchargez une copie de ce que vous avez shardé sur Wiin's, nous vous enverrons un email avec un lien vers un fichier contenant vos photos, votre commentaire et les informations de votre profil.\nLa collecte et l'envoi de ces données peuvent prendre jusqu'à 48h.",
+      "Email-by-default": "Les données seront envoyées sur votre email par défaut",
+      "Descriptions-modal": "Wiin's vous enverra un email pour télécharger vos données, cela prendra au moins 48h. N'hésitez pas à surveiller dans vos spams."
     }
   },
   "SIDEBAR-HOME": {
@@ -1022,7 +1051,8 @@
     "Yr-account-has-been-deleted": "Votre compte a été supprimé",
     "Yr-account-is-activated": "Votre compte est activé ! Vous pouvez désormais profiter des fonctions centralisés d'Espace-piin's afin de communiquer, vous divertir ou vous faire connaitre.",
     "activated-after-15min-payment": "Votre campagne sera validé dans une quinzaine de minutes après la validation du paiement.",
-    "update-is-done": "La mise à jour est faite"
+    "update-is-done": "La mise à jour est faite",
+    "Yes-im-sur": "Oui, j'en suis sûr"
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Êtes vous sûre de changer la date de sortie de votre projet ?",

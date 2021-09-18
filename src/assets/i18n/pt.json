@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "Digite seu nome de usuário ou endereço de e-mail",
     "Enter-yr-password": "Digite sua senha",
     "Enter-yr-mail": "Insira seu e-mail",
-    "Enter-yr-username": "Digite seu nome de usuário"
+    "Enter-yr-username": "Digite seu nome de usuário",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Por favor, insira sua senha"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Idioma dos botões, títulos e outros textos da plataforma neste dispositivo",
-      "lang-of-plateforme": "Linguagem da plataforma"
+      "lang-of-plateforme": "Linguagem da plataforma",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Conta temporariamente desativada, você está invisível na plataforma agora. Se sua conta estiver inativa para o próximo pagamento, 4,99 serão retirados do seu próximo vendido para desfrutar dos próximos 30 dias.",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "Se esta caixa for verificada, nenhum usuário poderá identificar seu perfil.",
       "T-people-w-not-be-able-to-access-your-profile": "Essas pessoas não poderão acessar seu perfil",
       "T-people-w-not-be-able-to-access-your-profile-D": "Os usuários desta lista não poderão ver seu perfil.",
-      "btn-followers": "Disponibilizar o botão \"seguir\"",
-      "btn-friend": "Disponibilizar o botão de solicitação do amigo",
-      "h-can-b-yr-description": "Você pode colocar uma descrição"
+      "h-can-b-yr-description": "Você pode colocar uma descrição",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Disponibilizar o botão de solicitação do amigo",
+      "Follow-request-available": "Disponibilizar o botão \"seguir\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "Este recurso requer verificação para usar",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "Faça upload de uma foto segurando o documento de identidade com uma folha de papel com a data de hoje e \"Wiins\" escrito nela.",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "Eu concordo que meus dados podem ser usados para verificar minha conta.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Certifique-se de carregar o verso do cartão se for um cartão de identificação nacional (apenas para o cartão nacional)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Carregue seu passaporte, identidade ou carteira de motorista."
+      "Upload-yr-passport-id-identity-or-driver-license": "Carregue seu passaporte, identidade ou carteira de motorista.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "A aceitação da violência como um meio de tentar mudar as coisas",
       "my-publications-are-visible-to-every-one": "A aceitação da violência como um meio de tentar mudar as coisas",
       "who-c-find-me": "Quem pode me encontrar?",
       "who-c-find-me-d": "Quando seu nome de usuário for inserido na barra de pesquisa, essas pessoas poderão ver seu perfil exibido.  "
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "Sua conta foi excluída",
     "Yr-account-is-activated": "Sua conta está ativada! Agora você pode aproveitar as funções centralizadas do espace-piin's para se comunicar, entreter-se ou tornar-se conhecido.",
     "activated-after-15min-payment": "Sua campanha será validada em cerca de quinze minutos após a validação do pagamento.",
-    "update-is-done": "A atualização está feita"
+    "update-is-done": "A atualização está feita",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Você tem certeza de mudar a data de lançamento do seu projeto ?",

@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Εισαγάγετε το όνομα χρήστη ή τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας",
     "Enter-yr-password": "Εισαγάγετε τον κωδικό πρόσβασής σας",
     "Enter-yr-mail": "Εισαγάγετε το email σας",
-    "Enter-yr-username": "Εισαγάγετε το όνομα χρήστη σας"
+    "Enter-yr-username": "Εισαγάγετε το όνομα χρήστη σας",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Παρακαλώ εισάγετε τον κωδικό σας"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Γλώσσα για τα κουμπιά, τους τίτλους και άλλα κείμενα της πλατφόρμας σε αυτήν τη συσκευή",
-      "lang-of-plateforme": "Γλώσσα πλατφόρμας"
+      "lang-of-plateforme": "Γλώσσα πλατφόρμας",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Ο λογαριασμός απενεργοποιήθηκε προσωρινά, δεν είστε ορατοί στην πλατφόρμα τώρα. Εάν ο λογαριασμός σας είναι ανενεργός για την επόμενη πληρωμή, 4,99 θα αποσυρθούν από τις επόμενες πωλήσεις σας για να απολαύσετε τις επόμενες 30 ημέρες.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Εάν είναι επιλεγμένο αυτό το πλαίσιο, κανένας χρήστης δεν μπορεί να αναγνωρίσει το προφίλ σας.",
       "T-people-w-not-be-able-to-access-your-profile": "Αυτά τα άτομα δεν θα έχουν πρόσβαση στο προφίλ σας",
       "T-people-w-not-be-able-to-access-your-profile-D": "Οι χρήστες σε αυτήν τη λίστα δεν θα μπορούν να δουν το προφίλ σας.",
-      "btn-followers": "Κάντε το κουμπί \"follow\" διαθέσιμο",
-      "btn-friend": "Κάντε το κουμπί αιτήματος φιλίας διαθέσιμο",
-      "h-can-b-yr-description": "Μπορείτε να βάλετε μια περιγραφή"
+      "h-can-b-yr-description": "Μπορείτε να βάλετε μια περιγραφή",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Κάντε το κουμπί αιτήματος φιλίας διαθέσιμο",
+      "Follow-request-available": "Κάντε το κουμπί \"follow\" διαθέσιμο",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Ήδη πιστοποιημένο",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Πρέπει να συμπληρώσετε τις ακόλουθες προϋποθέσεις για πιστοποίηση.",
       "Yr-profil-is-currently-being-checked-D": "Το προφίλ σας ελέγχεται αυτήν τη στιγμή. Θα επικοινωνήσουμε μαζί σας εντός 48 ωρών μέσω email.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Φροντίστε να ανεβάσετε την πίσω πλευρά της κάρτας εάν είναι η εθνική ταυτότητα (μόνο για την εθνική κάρτα)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Ανεβάστε το διαβατήριό σας, την ταυτότητα ή την άδεια οδήγησης"
+      "Upload-yr-passport-id-identity-or-driver-license": "Ανεβάστε το διαβατήριό σας, την ταυτότητα ή την άδεια οδήγησης",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Οι δημοσιεύσεις μου είναι ορατές μόνο από τους φίλους μου",
       "my-publications-are-visible-to-every-one": "Οι δημοσιεύσεις μου είναι ορατές σε όλους",
       "who-c-find-me": "Ποιος μπορεί να με βρει;",
       "who-c-find-me-d": "Όταν το όνομα χρήστη σας εισαχθεί στη γραμμή αναζήτησης, αυτά τα άτομα θα μπορούν να δουν το προφίλ σας να εμφανίζεται."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Ο λογαριασμός σας έχει διαγραφεί",
     "Yr-account-is-activated": "Ο λογαριασμός σας είναι ενεργοποιημένος! Τώρα μπορείτε να επωφεληθείτε από τις κεντρικές λειτουργίες του espace-piin για να επικοινωνήσετε, να διασκεδάσετε ή να κάνετε τον εαυτό σας γνωστό.",
     "activated-after-15min-payment": "Η καμπάνια σας θα επικυρωθεί σε περίπου δεκαπέντε λεπτά μετά την επικύρωση της πληρωμής.",
-    "update-is-done": "Η ενημέρωση ολοκληρώθηκε"
+    "update-is-done": "Η ενημέρωση ολοκληρώθηκε",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Είστε βέβαιοι ότι θα αλλάξετε την ημερομηνία κυκλοφορίας του έργου σας;",

@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "আপনার ব্যবহারকারীর নাম বা ইমেল ঠিকানা লিখুন",
     "Enter-yr-password": "আপনার পাসওয়ার্ড লিখুন",
     "Enter-yr-mail": "তুমার ইমেইল প্রবেশ করাও",
-    "Enter-yr-username": "আপনার ব্যবহারকারীর নাম লিখুন"
+    "Enter-yr-username": "আপনার ব্যবহারকারীর নাম লিখুন",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "আপনার পাসওয়ার্ড দিন"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "এই ডিভাইসে প্ল্যাটফর্মের বোতাম, শিরোনাম এবং অন্যান্য পাঠ্যগুলির জন্য ভাষা",
-      "lang-of-plateforme": "প্ল্যাটফর্মের ভাষা"
+      "lang-of-plateforme": "প্ল্যাটফর্মের ভাষা",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "অ্যাকাউন্ট অস্থায়ীভাবে অক্ষম, আপনি এখন প্ল্যাটফর্মে অদৃশ্য। যদি আপনার অ্যাকাউন্টটি পরবর্তী অর্থ প্রদানের জন্য নিষ্ক্রিয় থাকে, তবে পরবর্তী 30 দিন উপভোগ করার জন্য আপনার পরবর্তী বিক্রয় থেকে 4.99 প্রত্যাহার করা হবে।",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "যদি এই বাক্সটি চেক করা থাকে তবে কোনও ব্যবহারকারী আপনার প্রোফাইল সনাক্ত করতে পারবেন না।",
       "T-people-w-not-be-able-to-access-your-profile": "এই ব্যক্তিরা আপনার প্রোফাইল অ্যাক্সেস করতে সক্ষম হবে না",
       "T-people-w-not-be-able-to-access-your-profile-D": "এই তালিকার ব্যবহারকারীরা আপনার প্রোফাইল দেখতে পাবে না।",
-      "btn-followers": "\"অনুসরণ\" বোতামটি উপলব্ধ করুন",
-      "btn-friend": "বন্ধুর অনুরোধ বোতামটি উপলব্ধ করুন",
-      "h-can-b-yr-description": "আপনি একটি বিবরণ রাখতে পারেন"
+      "h-can-b-yr-description": "আপনি একটি বিবরণ রাখতে পারেন",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "বন্ধুর অনুরোধ বোতামটি উপলব্ধ করুন",
+      "Follow-request-available": "\"অনুসরণ\" বোতামটি উপলব্ধ করুন",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "এই বৈশিষ্ট্যটির ব্যবহারের জন্য যাচাইকরণ প্রয়োজন",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "আজকের তারিখ সহ কাগজের একটি শীটযুক্ত আইডি সম্বলিত একটি ছবি আপলোড করুন এবং এতে \"উইনস\" লিখেছেন।",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "আমি সম্মত হই যে আমার ডেটা আমার অ্যাকাউন্টটি পরীক্ষা করতে ব্যবহৃত হতে পারে।",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "যদি এটি জাতীয় পরিচয়পত্র (কেবল জাতীয় কার্ডের জন্য) থাকে তবে কার্ডটির পিছনের দিকটি আপলোড করতে ভুলবেন না",
-      "Upload-yr-passport-id-identity-or-driver-license": "আপনার পাসপোর্ট, আইডি পরিচয় বা ড্রাইভার লাইসেন্স আপলোড করুন।"
+      "Upload-yr-passport-id-identity-or-driver-license": "আপনার পাসপোর্ট, আইডি পরিচয় বা ড্রাইভার লাইসেন্স আপলোড করুন।",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "আমার প্রকাশনাগুলি কেবলমাত্র আমার বন্ধুদের দ্বারা দৃশ্যমান",
       "my-publications-are-visible-to-every-one": "আমার প্রকাশনা সকলের কাছে দৃশ্যমান",
       "who-c-find-me": "কে আমাকে খুঁজে পাবে?",
       "who-c-find-me-d": "যখন আপনার ব্যবহারকারীর নাম অনুসন্ধান বারে প্রবেশ করা হবে তখন এই ব্যক্তিরা আপনার প্রোফাইল প্রদর্শিত দেখতে সক্ষম হবেন।"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "আপনার অ্যাকাউন্ট মুছে ফেলা হয়েছে",
     "Yr-account-is-activated": "আপনার অ্যাকাউন্ট সক্রিয় করা হয়েছে! যোগাযোগ করার জন্য, নিজেকে বিনোদন দেওয়ার জন্য বা নিজেকে পরিচিত করার জন্য আপনি এখন এসপেস-পাইনের কেন্দ্রিয়করণের ফাংশনগুলির সুবিধা নিতে পারেন।",
     "activated-after-15min-payment": "আপনার প্রচারটি অর্থ প্রদানের বৈধতার পরে প্রায় পনের মিনিটে বৈধ হবে।",
-    "update-is-done": "আপডেট হয়ে গেছে"
+    "update-is-done": "আপডেট হয়ে গেছে",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "আপনি কি আপনার প্রকল্পের প্রকাশের তারিখটি পরিবর্তন করার বিষয়ে নিশ্চিত ?",

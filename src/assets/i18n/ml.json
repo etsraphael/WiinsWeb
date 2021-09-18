@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "നിങ്ങളുടെ ഉപയോക്തൃനാമം അല്ലെങ്കിൽ ഇമെയിൽ വിലാസം നൽകുക",
     "Enter-yr-password": "നിങ്ങളുടെ പാസ്‌വേഡ് നൽകുക",
     "Enter-yr-mail": "നിങ്ങളുടെ ഇമെയിൽ നൽകുക",
-    "Enter-yr-username": "നിങ്ങളുടെ ഉപയോക്തൃനാമം നൽകുക"
+    "Enter-yr-username": "നിങ്ങളുടെ ഉപയോക്തൃനാമം നൽകുക",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "നിങ്ങളുടെ പാസ്‌വേഡ് നൽകുക"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "ഈ ഉപകരണത്തിലെ പ്ലാറ്റ്‌ഫോമിലെ ബട്ടണുകൾ, ശീർഷകങ്ങൾ, മറ്റ് വാചകങ്ങൾ എന്നിവയ്‌ക്കായുള്ള ഭാഷ",
-      "lang-of-plateforme": "പ്ലാറ്റ്ഫോം ഭാഷ"
+      "lang-of-plateforme": "പ്ലാറ്റ്ഫോം ഭാഷ",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "അക്കൗണ്ട് താൽ‌ക്കാലികമായി അപ്രാപ്‌തമാക്കി, നിങ്ങൾ ഇപ്പോൾ പ്ലാറ്റ്‌ഫോമിൽ അദൃശ്യനാണ്. അടുത്ത പേയ്‌മെന്റിനായി നിങ്ങളുടെ അക്കൗണ്ട് നിഷ്‌ക്രിയമാണെങ്കിൽ, അടുത്ത 30 ദിവസം ആസ്വദിക്കാനായി നിങ്ങളുടെ അടുത്ത വിൽപ്പനയിൽ നിന്ന് 4.99 പിൻവലിക്കും.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "ഈ ബോക്സ് ചെക്കുചെയ്തിട്ടുണ്ടെങ്കിൽ, ഒരു ഉപയോക്താവിനും നിങ്ങളുടെ പ്രൊഫൈൽ തിരിച്ചറിയാൻ കഴിയില്ല.",
       "T-people-w-not-be-able-to-access-your-profile": "ഈ ആളുകൾ‌ക്ക് നിങ്ങളുടെ പ്രൊഫൈൽ‌ ആക്‌സസ് ചെയ്യാൻ‌ കഴിയില്ല",
       "T-people-w-not-be-able-to-access-your-profile-D": "ഈ ലിസ്റ്റിലെ ഉപയോക്താക്കൾക്ക് നിങ്ങളുടെ പ്രൊഫൈൽ കാണാൻ കഴിയില്ല.",
-      "btn-followers": "\"പിന്തുടരുക\" ബട്ടൺ ലഭ്യമാക്കുക",
-      "btn-friend": "ചങ്ങാതി അഭ്യർത്ഥന ബട്ടൺ ലഭ്യമാക്കുക",
-      "h-can-b-yr-description": "നിങ്ങൾക്ക് ഒരു വിവരണം നൽകാം"
+      "h-can-b-yr-description": "നിങ്ങൾക്ക് ഒരു വിവരണം നൽകാം",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "ചങ്ങാതി അഭ്യർത്ഥന ബട്ടൺ ലഭ്യമാക്കുക",
+      "Follow-request-available": "\"പിന്തുടരുക\" ബട്ടൺ ലഭ്യമാക്കുക",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "ഇതിനകം സാക്ഷ്യപ്പെടുത്തി",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "സാക്ഷ്യപ്പെടുത്തുന്നതിന് നിങ്ങൾ ഇനിപ്പറയുന്ന നിബന്ധനകൾ പൂർത്തിയാക്കണം.",
       "Yr-profil-is-currently-being-checked-D": "നിങ്ങളുടെ പ്രൊഫൈൽ നിലവിൽ പരിശോധിക്കുന്നു. ഇമെയിൽ വഴി 48 മണിക്കൂറിനുള്ളിൽ ഞങ്ങൾ നിങ്ങളെ ബന്ധപ്പെടും.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "ദേശീയ ഐഡി കാർഡാണെങ്കിൽ (ദേശീയ കാർഡിന് മാത്രം) കാർഡിന്റെ പിൻഭാഗം അപ്‌ലോഡുചെയ്യുന്നത് ഉറപ്പാക്കുക.",
-      "Upload-yr-passport-id-identity-or-driver-license": "നിങ്ങളുടെ പാസ്‌പോർട്ട്, ഐഡി ഐഡന്റിറ്റി അല്ലെങ്കിൽ ഡ്രൈവർ ലൈസൻസ് അപ്‌ലോഡ് ചെയ്യുക."
+      "Upload-yr-passport-id-identity-or-driver-license": "നിങ്ങളുടെ പാസ്‌പോർട്ട്, ഐഡി ഐഡന്റിറ്റി അല്ലെങ്കിൽ ഡ്രൈവർ ലൈസൻസ് അപ്‌ലോഡ് ചെയ്യുക.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "എന്റെ പ്രസിദ്ധീകരണങ്ങൾ‌ എന്റെ ചങ്ങാതിമാർ‌ക്ക് മാത്രമേ കാണാനാകൂ",
       "my-publications-are-visible-to-every-one": "എന്റെ പ്രസിദ്ധീകരണങ്ങൾ എല്ലാവർക്കും കാണാനാകും",
       "who-c-find-me": "ആർക്കാണ് എന്നെ കണ്ടെത്താൻ കഴിയുക?",
       "who-c-find-me-d": "തിരയൽ ബാറിൽ നിങ്ങളുടെ ഉപയോക്തൃനാമം നൽകുമ്പോൾ, ഈ ആളുകൾക്ക് നിങ്ങളുടെ പ്രൊഫൈൽ പ്രദർശിപ്പിക്കുന്നത് കാണാൻ കഴിയും."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കി",
     "Yr-account-is-activated": "നിങ്ങളുടെ അക്കൗണ്ട് സജീവമാക്കി! ആശയവിനിമയം നടത്താനും സ്വയം രസിപ്പിക്കാനും സ്വയം അറിയാനും എസ്പേസ്-പൈനിന്റെ കേന്ദ്രീകൃത പ്രവർത്തനങ്ങൾ നിങ്ങൾക്ക് ഇപ്പോൾ പ്രയോജനപ്പെടുത്താം.",
     "activated-after-15min-payment": "പേയ്‌മെന്റ് സാധൂകരിച്ചതിന് ശേഷം ഏകദേശം പതിനഞ്ച് മിനിറ്റിനുള്ളിൽ നിങ്ങളുടെ കാമ്പെയ്‌ൻ സാധൂകരിക്കപ്പെടും.",
-    "update-is-done": "അപ്‌ഡേറ്റ് ചെയ്‌തു"
+    "update-is-done": "അപ്‌ഡേറ്റ് ചെയ്‌തു",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "നിങ്ങളുടെ പ്രോജക്റ്റിന്റെ റിലീസ് തീയതി മാറ്റുമെന്ന് ഉറപ്പാണോ?",

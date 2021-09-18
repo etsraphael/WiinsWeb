@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Ange ditt användarnamn eller din e-postadress",
     "Enter-yr-password": "Ange ditt lösenord",
     "Enter-yr-mail": "Ange din e-postadress",
-    "Enter-yr-username": "Ange ditt användarnamn"
+    "Enter-yr-username": "Ange ditt användarnamn",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Vänligen ange ditt lösenord"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Språk för knapparna, titlarna och andra texter på plattformen på den här enheten",
-      "lang-of-plateforme": "Plattformsspråk"
+      "lang-of-plateforme": "Plattformsspråk",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Kontot är tillfälligt inaktiverat, du är osynlig på plattformen nu. Om ditt konto är inaktivt för nästa betalning dras 4,99 av din nästa sålda för att njuta av de kommande 30 dagarna.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Om den här rutan är markerad kan ingen användare identifiera din profil.",
       "T-people-w-not-be-able-to-access-your-profile": "Dessa personer kommer inte att kunna komma åt din profil",
       "T-people-w-not-be-able-to-access-your-profile-D": "Användare i den här listan kommer inte att kunna se din profil.",
-      "btn-followers": "Gör \"följ\" -knappen tillgänglig",
-      "btn-friend": "Gör vänförfrågan-knappen tillgänglig",
-      "h-can-b-yr-description": "Du kan lägga till en beskrivning"
+      "h-can-b-yr-description": "Du kan lägga till en beskrivning",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Gör vänförfrågan-knappen tillgänglig",
+      "Follow-request-available": "Gör \"följ\" -knappen tillgänglig",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Redan certifierad",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Du måste fylla i följande villkor för att bli certifierad.",
       "Yr-profil-is-currently-being-checked-D": "Din profil kontrolleras för närvarande. Vi kontaktar dig inom 48 timmar via e-post.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Se till att ladda upp baksidan av kortet om det är ett nationellt id-kort (endast för det nationella kortet)",
-      "Upload-yr-passport-id-identity-or-driver-license": "Ladda upp ditt pass, ID-identitet eller körkort."
+      "Upload-yr-passport-id-identity-or-driver-license": "Ladda upp ditt pass, ID-identitet eller körkort.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Mina publikationer är endast synliga av mina vänner",
       "my-publications-are-visible-to-every-one": "Mina publikationer är synliga för alla",
       "who-c-find-me": "Vem kan hitta mig?",
       "who-c-find-me-d": "När ditt användarnamn anges i sökfältet kan dessa personer se din profil visas."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Ditt konto har tagits bort",
     "Yr-account-is-activated": "Ditt konto är aktiverat! Du kan nu dra nytta av espace-piins centraliserade funktioner för att kommunicera, underhålla dig själv eller göra dig känd.",
     "activated-after-15min-payment": "Din kampanj kommer att valideras inom cirka femton minuter efter validering av betalningen.",
-    "update-is-done": "Uppdateringen är klar"
+    "update-is-done": "Uppdateringen är klar",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Är du säker på att ändra utgivningsdatumet för ditt projekt?",

@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Masukkan nama pengguna atau alamat e-mel anda",
     "Enter-yr-password": "Masukkan kata laluan anda",
     "Enter-yr-mail": "Masukkan e-mel anda",
-    "Enter-yr-username": "Masukkan nama pengguna anda"
+    "Enter-yr-username": "Masukkan nama pengguna anda",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Sila masukkan kata laluan anda"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Bahasa untuk butang, tajuk dan teks lain dari platform pada peranti ini",
-      "lang-of-plateforme": "Bahasa platform"
+      "lang-of-plateforme": "Bahasa platform",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Akaun dilumpuhkan buat sementara waktu, anda tidak dapat dilihat di platform sekarang Sekiranya akaun anda tidak aktif untuk pembayaran seterusnya, 4.99 akan dikeluarkan dari penjualan anda seterusnya untuk menikmati 30 hari berikutnya.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Sekiranya kotak ini dicentang, tidak ada pengguna yang dapat mengenal pasti profil anda.",
       "T-people-w-not-be-able-to-access-your-profile": "Orang-orang ini tidak akan dapat mengakses profil anda",
       "T-people-w-not-be-able-to-access-your-profile-D": "Pengguna dalam senarai ini tidak akan dapat melihat profil anda.",
-      "btn-followers": "Sediakan butang \"ikuti\"",
-      "btn-friend": "Buat butang permintaan rakan tersedia",
-      "h-can-b-yr-description": "Anda boleh meletakkan keterangan"
+      "h-can-b-yr-description": "Anda boleh meletakkan keterangan",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Buat butang permintaan rakan tersedia",
+      "Follow-request-available": "Sediakan butang \"ikuti\"",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Sudah diperakui",
@@ -981,13 +992,31 @@
       "Verified-zone": "Zon yang disahkan",
       "Y-m-complet-t-following-cdt-t-b-certified": "Anda mesti melengkapkan syarat berikut untuk disahkan.",
       "Yr-profil-is-currently-being-checked-D": "Profil anda sedang diperiksa. Kami akan menghubungi anda dalam masa 48 jam melalui e-mel.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Muat naik pasport, identiti id atau lesen memandu anda."
+      "Upload-yr-passport-id-identity-or-driver-license": "Muat naik pasport, identiti id atau lesen memandu anda.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Penerbitan saya hanya dapat dilihat oleh rakan-rakan saya",
       "my-publications-are-visible-to-every-one": "Penerbitan saya dapat dilihat oleh semua orang",
       "who-c-find-me": "Siapa yang boleh mencari saya?",
       "who-c-find-me-d": "Apabila nama pengguna anda dimasukkan di bar carian, orang-orang ini akan dapat melihat profil anda dipaparkan."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Akaun anda telah dipadamkan",
     "Yr-account-is-activated": "Akaun anda diaktifkan! Anda kini boleh memanfaatkan fungsi terpusat espace-piin untuk berkomunikasi, menghiburkan diri atau mengenali diri anda.",
     "activated-after-15min-payment": "Kempen anda akan disahkan dalam kira-kira lima belas minit setelah pengesahan pembayaran.",
-    "update-is-done": "Kemas kini selesai"
+    "update-is-done": "Kemas kini selesai",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Adakah anda pasti mengubah tarikh pelepasan projek anda?",

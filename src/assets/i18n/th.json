@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "ใส่ชื่อผู้ใช้หรือที่อยู่อีเมลของคุณ",
     "Enter-yr-password": "ใส่รหัสผ่านของคุณ",
     "Enter-yr-mail": "ป้อนอีเมลของคุณ",
-    "Enter-yr-username": "ป้อนชื่อผู้ใช้ของคุณ"
+    "Enter-yr-username": "ป้อนชื่อผู้ใช้ของคุณ",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "กรุณาใส่รหัสผ่านของคุณ"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "ภาษาสำหรับปุ่มชื่อและข้อความอื่น ๆ ของแพลตฟอร์มบนอุปกรณ์นี้",
-      "lang-of-plateforme": "ภาษาแพลตฟอร์ม"
+      "lang-of-plateforme": "ภาษาแพลตฟอร์ม",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "บัญชีถูกปิดใช้งานชั่วคราวคุณจะมองไม่เห็นบนแพลตฟอร์มในขณะนี้ หากบัญชีของคุณไม่มีการใช้งานสำหรับการชำระเงินครั้งถัดไประบบจะถอน 4.99 จากการขายครั้งต่อไปของคุณเพื่อใช้ใน 30 วันถัดไป",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "หากเลือกช่องนี้จะไม่มีผู้ใช้ใดสามารถระบุโปรไฟล์ของคุณได้",
       "T-people-w-not-be-able-to-access-your-profile": "บุคคลเหล่านี้จะไม่สามารถเข้าถึงโปรไฟล์ของคุณได้",
       "T-people-w-not-be-able-to-access-your-profile-D": "ผู้ใช้ในรายการนี้จะไม่สามารถเห็นโปรไฟล์ของคุณ",
-      "btn-followers": "ทำให้ปุ่ม \"ติดตาม\" พร้อมใช้งาน",
-      "btn-friend": "ทำให้ปุ่มขอเป็นเพื่อนพร้อมใช้งาน",
-      "h-can-b-yr-description": "คุณสามารถใส่คำอธิบาย"
+      "h-can-b-yr-description": "คุณสามารถใส่คำอธิบาย",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "ทำให้ปุ่มขอเป็นเพื่อนพร้อมใช้งาน",
+      "Follow-request-available": "ทำให้ปุ่ม \"ติดตาม\" พร้อมใช้งาน",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "รับรองแล้ว",
@@ -981,13 +992,31 @@
       "Verified-zone": "โซนที่ตรวจสอบแล้ว",
       "Y-m-complet-t-following-cdt-t-b-certified": "คุณต้องทำตามเงื่อนไขต่อไปนี้จึงจะได้รับการรับรอง",
       "Yr-profil-is-currently-being-checked-D": "กำลังตรวจสอบโปรไฟล์ของคุณ เราจะติดต่อคุณภายใน 48 ชั่วโมงทางอีเมล",
-      "Upload-yr-passport-id-identity-or-driver-license": "อัปโหลดหนังสือเดินทางรหัสประจำตัวหรือใบขับขี่"
+      "Upload-yr-passport-id-identity-or-driver-license": "อัปโหลดหนังสือเดินทางรหัสประจำตัวหรือใบขับขี่",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "สิ่งพิมพ์ของฉันจะมองเห็นได้โดยเพื่อนของฉันเท่านั้น",
       "my-publications-are-visible-to-every-one": "สิ่งพิมพ์ของฉันปรากฏแก่ทุกคน",
       "who-c-find-me": "ใครสามารถหาฉันเจอ?",
       "who-c-find-me-d": "เมื่อป้อนชื่อผู้ใช้ของคุณในแถบค้นหาบุคคลเหล่านี้จะสามารถเห็นโปรไฟล์ของคุณปรากฏขึ้น"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "บัญชีของคุณถูกลบ",
     "Yr-account-is-activated": "บัญชีของคุณเปิดใช้งานแล้ว! ตอนนี้คุณสามารถใช้ประโยชน์จากฟังก์ชั่นส่วนกลางของ espace-piin เพื่อสื่อสารสร้างความบันเทิงให้ตัวเองหรือทำให้ตัวเองเป็นที่รู้จัก",
     "activated-after-15min-payment": "แคมเปญของคุณจะได้รับการตรวจสอบในเวลาประมาณสิบห้านาทีหลังจากการตรวจสอบการชำระเงิน",
-    "update-is-done": "การอัปเดตเสร็จสิ้น"
+    "update-is-done": "การอัปเดตเสร็จสิ้น",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "คุณแน่ใจหรือไม่ว่าจะเปลี่ยนวันที่เผยแพร่โครงการของคุณ",

@@ -1,11 +1,12 @@
 <!-- Component Body -->
-<div class="wrapper">
+<div class="wrapper w-100 h-100">
   <!-- NavBar -->
   <app-nav-bar></app-nav-bar>
   <!-- Space Actif -->
-  <div [@mainSpace]="prepareRoute(outlet)" class="container-router h-100">
+  <div [@mainSpace]="prepareRoute(outlet)" [style]="{overflow: router.url === '/Messenger' && 'hidden'}"
+       class="container-router w-100 mt-0 pt-0">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <!-- Footer -->
-  <app-footer-core></app-footer-core>
+  <app-footer-core *ngIf="router.url !== '/Messenger'"></app-footer-core>
 </div>

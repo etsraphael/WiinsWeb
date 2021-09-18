@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Zadajte svoje používateľské meno alebo e-mailovú adresu",
     "Enter-yr-password": "Zadajte heslo",
     "Enter-yr-mail": "Zadajte svoj e-mail",
-    "Enter-yr-username": "Zadajte svoje používateľské meno"
+    "Enter-yr-username": "Zadajte svoje používateľské meno",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Prosím vložte heslo"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Jazyk pre tlačidlá, názvy a ďalšie texty platformy na tomto zariadení",
-      "lang-of-plateforme": "Jazyk platformy"
+      "lang-of-plateforme": "Jazyk platformy",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Účet je dočasne deaktivovaný, na platforme ste teraz neviditeľný. Ak je váš účet neaktívny pre ďalšiu platbu, z vášho ďalšieho predaja bude stiahnutých 4,99, aby ste si mohli vychutnať nasledujúcich 30 dní.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Ak je toto políčko začiarknuté, žiadny používateľ nebude môcť identifikovať váš profil.",
       "T-people-w-not-be-able-to-access-your-profile": "Títo ľudia nebudú mať prístup k vášmu profilu",
       "T-people-w-not-be-able-to-access-your-profile-D": "Používatelia v tomto zozname neuvidia váš profil.",
-      "btn-followers": "Sprístupnite tlačidlo „sledovať“",
-      "btn-friend": "Sprístupniť tlačidlo žiadosti o priateľstvo",
-      "h-can-b-yr-description": "Môžete uviesť popis"
+      "h-can-b-yr-description": "Môžete uviesť popis",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Sprístupniť tlačidlo žiadosti o priateľstvo",
+      "Follow-request-available": "Sprístupnite tlačidlo „sledovať“",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Už certifikované",
@@ -981,13 +992,31 @@
       "Y-m-complet-t-following-cdt-t-b-certified": "Ak chcete získať certifikát, musíte splniť nasledujúce podmienky.",
       "Yr-profil-is-currently-being-checked-D": "Váš profil sa momentálne kontroluje. Budeme vás kontaktovať do 48 hodín e-mailom.",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "Ak je to občiansky preukaz, nahrajte zadnú stranu karty (iba pre národnú kartu).",
-      "Upload-yr-passport-id-identity-or-driver-license": "Vložte svoj pas, identifikačnú totožnosť alebo vodičský preukaz."
+      "Upload-yr-passport-id-identity-or-driver-license": "Vložte svoj pas, identifikačnú totožnosť alebo vodičský preukaz.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Moje publikácie sú viditeľné iba pre mojich priateľov",
       "my-publications-are-visible-to-every-one": "Moje publikácie sú viditeľné pre všetkých",
       "who-c-find-me": "Kto ma môže nájsť?",
       "who-c-find-me-d": "Ak na vyhľadávacom paneli zadáte svoje používateľské meno, uvidia títo ľudia váš profil."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Váš účet bol odstránený",
     "Yr-account-is-activated": "Váš účet je aktivovaný! Teraz môžete využívať centralizované funkcie espace-piin na komunikáciu, zábavu alebo dávanie o sebe vedieť.",
     "activated-after-15min-payment": "Vaša kampaň bude overená asi za pätnásť minút po overení platby.",
-    "update-is-done": "Aktualizácia je hotová"
+    "update-is-done": "Aktualizácia je hotová",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Naozaj chcete zmeniť dátum vydania svojho projektu?",

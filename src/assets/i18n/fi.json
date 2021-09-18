@@ -778,7 +778,8 @@
     "Enter-yr-username-or-mail-adresse": "Anna käyttäjätunnuksesi tai sähköpostiosoitteesi",
     "Enter-yr-password": "Anna salasanasi",
     "Enter-yr-mail": "Sähköpostin syöttäminen",
-    "Enter-yr-username": "Anna käyttäjätunnuksesi"
+    "Enter-yr-username": "Anna käyttäjätunnuksesi",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "Anna salasanasi"
@@ -898,7 +899,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "Tämän laitteen alustan painikkeiden, otsikoiden ja muiden tekstien kieli",
-      "lang-of-plateforme": "Alustan kieli"
+      "lang-of-plateforme": "Alustan kieli",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "Tili on tilapäisesti poistettu käytöstä. Olet nyt näkymätön alustalla. Jos tilisi ei ole aktiivinen seuraavaa maksua varten, seuraavasta 30 päivästä nostetaan seuraavasta myydystä 4,99.",
@@ -957,9 +960,17 @@
       "My-nobody-can-identify-me-D": "Jos tämä ruutu on valittu, kukaan käyttäjä ei voi tunnistaa profiiliasi.",
       "T-people-w-not-be-able-to-access-your-profile": "Nämä ihmiset eivät voi käyttää profiiliasi",
       "T-people-w-not-be-able-to-access-your-profile-D": "Tämän luettelon käyttäjät eivät näe profiiliasi.",
-      "btn-followers": "Aseta \"seuraa\" -painike saataville",
-      "btn-friend": "Ota kaveripyyntöpainike saataville",
-      "h-can-b-yr-description": "Voit laittaa kuvauksen"
+      "h-can-b-yr-description": "Voit laittaa kuvauksen",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "Ota kaveripyyntöpainike saataville",
+      "Follow-request-available": "Aseta \"seuraa\" -painike saataville",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "Already-certified": "Jo sertifioitu",
@@ -981,13 +992,31 @@
       "Verified-zone": "Vahvistettu vyöhyke",
       "Y-m-complet-t-following-cdt-t-b-certified": "Sinun on täytettävä seuraavat ehdot saadaksesi sertifioinnin.",
       "Yr-profil-is-currently-being-checked-D": "Profiiliasi tarkistetaan parhaillaan. Otamme sinuun yhteyttä 48 tunnin sisällä sähköpostitse.",
-      "Upload-yr-passport-id-identity-or-driver-license": "Lataa passi, henkilöllisyystodistus tai ajokortti."
+      "Upload-yr-passport-id-identity-or-driver-license": "Lataa passi, henkilöllisyystodistus tai ajokortti.",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "Ainoastaan ystäväni näkevät julkaisuni",
       "my-publications-are-visible-to-every-one": "Julkaisuni ovat kaikkien nähtävissä",
       "who-c-find-me": "Kuka voi löytää minut?",
       "who-c-find-me-d": "Kun käyttäjänimesi on syötetty hakupalkkiin, nämä ihmiset näkevät profiilisi näkyvissä."
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1078,7 +1107,8 @@
     "Yr-account-has-been-deleted": "Tilisi on poistettu",
     "Yr-account-is-activated": "Tilisi on aktivoitu! Nyt voit hyödyntää espace-piin-palvelujen keskitettyjä toimintoja kommunikoida, viihdyttää itseäsi tai tehdä itsestäsi tunnetuksi.",
     "activated-after-15min-payment": "Kampanjasi vahvistetaan noin viidentoista minuutin kuluttua maksun vahvistamisesta.",
-    "update-is-done": "Päivitys on valmis"
+    "update-is-done": "Päivitys on valmis",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "Haluatko varmasti muuttaa projektisi julkaisupäivää?",

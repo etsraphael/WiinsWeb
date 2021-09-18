@@ -736,7 +736,8 @@
     "Enter-yr-username-or-mail-adresse": "输入您的用户名或电子邮件地址",
     "Enter-yr-password": "输入密码",
     "Enter-yr-mail": "输入您的电子邮件",
-    "Enter-yr-username": "输入您的用户名"
+    "Enter-yr-username": "输入您的用户名",
+    "Password-required": ""
   },
   "PLEASE": {
     "Password": "请输入您的密码"
@@ -844,7 +845,9 @@
   "SETTING": {
     "lang": {
       "lang-of-btn-title-others": "该设备上平台的按钮，标题和其他文本的语言",
-      "lang-of-plateforme": "平台语言"
+      "lang-of-plateforme": "平台语言",
+      "Langage-not-available-here-?": "",
+      "Help-us-to-add-it": ""
     },
     "ledger": {
       "Account-disable-now-description": "帐户暂时禁用，您现在在平台上不可见。如果您的帐户在下次付款时处于非活动状态，则 4.99 将提取您下一笔售出的账户，以享受接下来的 30 天。",
@@ -903,9 +906,17 @@
       "My-nobody-can-identify-me-D": "如果选中此框，则任何用户都无法识别您的个人资料。",
       "T-people-w-not-be-able-to-access-your-profile": "这些人将无法访问您的个人资料",
       "T-people-w-not-be-able-to-access-your-profile-D": "此列表中的用户将看不到您的个人资料。",
-      "btn-followers": "使\"关注\"按钮可用",
-      "btn-friend": "使好友请求按钮可用",
-      "h-can-b-yr-description": "您可以放置说明"
+      "h-can-b-yr-description": "您可以放置说明",
+      "General-information": "",
+      "Confidentiality": "",
+      "List-of-blocked-person": "",
+      "List-of-close-friends": "",
+      "Blocked-since": "",
+      "CloseFriend-since": "",
+      "Friend-request-available": "使好友请求按钮可用",
+      "Follow-request-available": "使\"关注\"按钮可用",
+      "Post-visible-only-community": "",
+      "Show-online-status": ""
     },
     "verified": {
       "This-feature-requires-verification-to-use.": "此功能需要验证才能使用",
@@ -927,13 +938,31 @@
       "Upload-a-photo-holding-t-ID-D": "上传带有ID的照片和一张带有今天日期的纸，并在上面写上“空白”。",
       "I-agree-t-m-data-may-b-used-t-check-my-account": "我同意我的数据可用于检查我的帐户。",
       "M-s-t-upload-t-back-of-the-card-if-its-a-national-id-card": "如果是身份证，请确保上传卡的背面（仅适用于身份证）",
-      "Upload-yr-passport-id-identity-or-driver-license": "上传您的护照，身份证件或驾驶执照。"
+      "Upload-yr-passport-id-identity-or-driver-license": "上传您的护照，身份证件或驾驶执照。",
+      "With-smile": ""
     },
     "visibility": {
       "my-publications-are-visible-b-m-friends": "接受暴力作为试图改变事物的手段",
       "my-publications-are-visible-to-every-one": "接受暴力作为试图改变事物的手段",
       "who-c-find-me": "谁能找到我 ？",
       "who-c-find-me-d": "当您的用户名在搜索栏中输入时，这些人将能够看到显示您的个人资料。"
+    },
+    "Pseudo": {
+      "Pseudo-changed-once": "",
+      "Pseudo-cannot-be-same": "",
+      "Pseudo-change-no-turning-back": ""
+    },
+    "Email": {
+      "Email-changed": "",
+      "7-days-request-change": ""
+    },
+    "General-information": "",
+    "Download-data": {
+      "Download": "",
+      "Download-data-title": "",
+      "Descriptions": "",
+      "Email-by-default": "",
+      "Descriptions-modal": ""
     }
   },
   "SIDEBAR-HOME": {
@@ -1021,7 +1050,8 @@
     "Yr-account-has-been-deleted": "您的帐户已被删除",
     "Yr-account-is-activated": "您的帐户已激活！现在，您可以利用电子空间 piin 的集中功能来沟通、娱乐自己或使自己出名。",
     "activated-after-15min-payment": "您的广告系列将在付款验证后约十五分钟内得到验证。",
-    "update-is-done": "更新已完成"
+    "update-is-done": "更新已完成",
+    "Yes-im-sur": ""
   },
   "VALIDATION": {
     "A-y-s-to-change-t-date-project": "是否确实要更改项目的发布日期 ？",
