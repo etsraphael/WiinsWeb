@@ -1,6 +1,0 @@
-image:
-  file: .gitpod.Dockerfile
-
-tasks:
-  - init: npm install && npm install -g @angular/cli
-    command: ng serve --disable-host-check --host 0.0.0.0
